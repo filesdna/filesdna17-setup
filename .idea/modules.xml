@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../inhouse_addons/branding_filesdna/.idea/branding_filesdna.iml" filepath="$PROJECT_DIR$/../inhouse_addons/branding_filesdna/.idea/branding_filesdna.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../borderless/MOD/facility_management/.idea/facility_management.iml" filepath="$PROJECT_DIR$/../borderless/MOD/facility_management/.idea/facility_management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/filesdna17.iml" filepath="$PROJECT_DIR$/.idea/filesdna17.iml" />
+    </modules>
+  </component>
+</project>
