@@ -29,7 +29,7 @@
                             <div class="content-group">
                                 <div class="row mt8">
                                     <label class="col-lg-3" string="Domain" for="website_domain"/>
-                                    <field name="website_domain" placeholder="https://www.odoo.com" title="Display this website when users visit this domain"/>
+                                    <field name="website_domain" placeholder="https://www.filesdna.com" title="Display this website when users visit this domain"/>
                                 </div>
                                 <div class="row mt8">
                                     <label class="col-lg-3" string="Homepage URL" for="website_homepage_url"/>
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                             <div invisible="not has_google_analytics">
-                                <a href="https://www.odoo.com/documentation/17.0/applications/websites/website/optimize/google_analytics.html"
+                                <a href="https://www.filesdna.com/documentation/17.0/applications/websites/website/optimize/google_analytics.html"
                                         class="oe_link" target="_blank">
                                     <i class="oi oi-arrow-right"/>
                                     How to get my Measurement ID
@@ -175,7 +175,7 @@
                                 </div>
                             </div>
                             <div invisible="not has_plausible_shared_key">
-                                <a href="https://www.odoo.com/documentation/17.0/applications/websites/website/reporting/plausible.html"
+                                <a href="https://www.filesdna.com/documentation/17.0/applications/websites/website/reporting/plausible.html"
                                         class="oe_link" target="_blank">
                                     <i class="oi oi-arrow-right"/>
                                     How to create my Plausible Shared Link

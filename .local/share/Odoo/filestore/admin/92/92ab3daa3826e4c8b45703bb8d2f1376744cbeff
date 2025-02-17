@@ -10173,7 +10173,7 @@ beforeOpen(){return this.props.record.save();}}
 const attachDocumentWidget=__exports.attachDocumentWidget={component:AttachDocumentWidget,extractProps:({attrs})=>{const{action,highlight,string}=attrs;return{action,highlight:!!highlight,string,};},};registry.category("view_widgets").add("attach_document",attachDocumentWidget);return __exports;});;
 
 /* /web/static/src/views/widgets/documentation_link/documentation_link.js */
-odoo.define('@web/views/widgets/documentation_link/documentation_link',['@web/session','@web/views/widgets/standard_widget_props','@odoo/owl','@web/core/registry'],function(require){'use strict';let __exports={};const{session}=require("@web/session");const{standardWidgetProps}=require("@web/views/widgets/standard_widget_props");const{Component}=require("@odoo/owl");const{registry}=require("@web/core/registry");const LINK_REGEX=new RegExp("^https?://");const DocumentationLink=__exports.DocumentationLink=class DocumentationLink extends Component{static template="web.DocumentationLink";static props={...standardWidgetProps,record:{type:Object,optional:1},path:{type:String},};get url(){if(LINK_REGEX.test(this.props.path)){return this.props.path;}else{const serverVersion=session.server_version_info.includes("final")?`${session.server_version_info[0]}.${session.server_version_info[1]}`.replace("~","-"):"master";return"https://www.odoo.com/documentation/"+serverVersion+this.props.path;}}}
+odoo.define('@web/views/widgets/documentation_link/documentation_link',['@web/session','@web/views/widgets/standard_widget_props','@odoo/owl','@web/core/registry'],function(require){'use strict';let __exports={};const{session}=require("@web/session");const{standardWidgetProps}=require("@web/views/widgets/standard_widget_props");const{Component}=require("@odoo/owl");const{registry}=require("@web/core/registry");const LINK_REGEX=new RegExp("^https?://");const DocumentationLink=__exports.DocumentationLink=class DocumentationLink extends Component{static template="web.DocumentationLink";static props={...standardWidgetProps,record:{type:Object,optional:1},path:{type:String},};get url(){if(LINK_REGEX.test(this.props.path)){return this.props.path;}else{const serverVersion=session.server_version_info.includes("final")?`${session.server_version_info[0]}.${session.server_version_info[1]}`.replace("~","-"):"master";return"https://www.filesdna.com/documentation/"+serverVersion+this.props.path;}}}
 const documentationLink=__exports.documentationLink={component:DocumentationLink,extractProps:({attrs})=>{const{path}=attrs;return{path,};},additionalClasses:["d-inline"],};registry.category("view_widgets").add("documentation_link",documentationLink);return __exports;});;
 
 /* /web/static/src/views/widgets/notification_alert/notification_alert.js */
@@ -10600,7 +10600,7 @@ const upgradeBooleanField=__exports.upgradeBooleanField={...booleanField,compone
 
 /* /web/static/src/webclient/settings_form_view/fields/upgrade_dialog.js */
 odoo.define('@web/webclient/settings_form_view/fields/upgrade_dialog',['@web/core/dialog/dialog','@web/core/utils/hooks','@odoo/owl'],function(require){'use strict';let __exports={};const{Dialog}=require("@web/core/dialog/dialog");const{useService}=require("@web/core/utils/hooks");const{Component}=require("@odoo/owl");const UpgradeDialog=__exports.UpgradeDialog=class UpgradeDialog extends Component{setup(){this.orm=useService("orm");this.router=useService("router");}
-async _confirmUpgrade(){const usersCount=await this.orm.call("res.users","search_count",[[["share","=",false]],]);window.open("https://www.odoo.com/odoo-enterprise/upgrade?num_users="+usersCount,"_blank");this.props.close();}}
+async _confirmUpgrade(){const usersCount=await this.orm.call("res.users","search_count",[[["share","=",false]],]);window.open("https://www.filesdna.com/odoo-enterprise/upgrade?num_users="+usersCount,"_blank");this.props.close();}}
 UpgradeDialog.template="web.UpgradeDialog";UpgradeDialog.components={Dialog};return __exports;});;
 
 /* /web/static/src/webclient/settings_form_view/highlight_text/form_label_highlight_text.js */
@@ -10766,7 +10766,7 @@ getElements(){const sortedItems=userMenuRegistry.getAll().map((element)=>element
 UserMenu.template="web.UserMenu";UserMenu.components={Dropdown,DropdownItem,CheckBox};UserMenu.props={};const systrayItem=__exports.systrayItem={Component:UserMenu,};registry.category("systray").add("web.user_menu",systrayItem,{sequence:0});return __exports;});;
 
 /* /web/static/src/webclient/user_menu/user_menu_items.js */
-odoo.define('@web/webclient/user_menu/user_menu_items',['@odoo/owl','@web/core/browser/feature_detection','@web/core/l10n/translation','@web/core/utils/strings','@web/session','@web/core/browser/browser','@web/core/registry'],function(require){'use strict';let __exports={};const{Component,markup}=require("@odoo/owl");const{isMacOS}=require("@web/core/browser/feature_detection");const{_t}=require("@web/core/l10n/translation");const{escape}=require("@web/core/utils/strings");const{session}=require("@web/session");const{browser}=require("@web/core/browser/browser");const{registry}=require("@web/core/registry");function documentationItem(env){const documentationURL="https://www.odoo.com/documentation/17.0";return{type:"item",id:"documentation",description:_t("Documentation"),href:documentationURL,callback:()=>{browser.open(documentationURL,"_blank");},sequence:10,};}
+odoo.define('@web/webclient/user_menu/user_menu_items',['@odoo/owl','@web/core/browser/feature_detection','@web/core/l10n/translation','@web/core/utils/strings','@web/session','@web/core/browser/browser','@web/core/registry'],function(require){'use strict';let __exports={};const{Component,markup}=require("@odoo/owl");const{isMacOS}=require("@web/core/browser/feature_detection");const{_t}=require("@web/core/l10n/translation");const{escape}=require("@web/core/utils/strings");const{session}=require("@web/session");const{browser}=require("@web/core/browser/browser");const{registry}=require("@web/core/registry");function documentationItem(env){const documentationURL="https://www.filesdna.com/documentation/17.0";return{type:"item",id:"documentation",description:_t("Documentation"),href:documentationURL,callback:()=>{browser.open(documentationURL,"_blank");},sequence:10,};}
 function supportItem(env){const url=session.support_url;return{type:"item",id:"support",description:_t("Support"),href:url,callback:()=>{browser.open(url,"_blank");},sequence:20,};}
 class ShortcutsFooterComponent extends Component{setup(){this.runShortcutKey=isMacOS()?"CONTROL":"ALT";}}
 ShortcutsFooterComponent.template="web.UserMenu.ShortcutsFooterComponent";function shortCutsItem(env){const translatedText=_t("Shortcuts");return{type:"item",id:"shortcuts",hide:env.isSmall,description:markup(`<div class="d-flex align-items-center justify-content-between">
@@ -11615,7 +11615,7 @@ __exports[Symbol.for("default")]=HistoryDialog;return __exports;});;
 
 /* /web_editor/static/src/components/media_dialog/document_selector.js */
 odoo.define('@web_editor/components/media_dialog/document_selector',['@web/core/l10n/translation','@web_editor/components/media_dialog/file_selector'],function(require){'use strict';let __exports={};const{_t}=require("@web/core/l10n/translation");const{Attachment,FileSelector,IMAGE_MIMETYPES}=require("@web_editor/components/media_dialog/file_selector");const DocumentAttachment=__exports.DocumentAttachment=class DocumentAttachment extends Attachment{}
-DocumentAttachment.template='web_editor.DocumentAttachment';const DocumentSelector=__exports.DocumentSelector=class DocumentSelector extends FileSelector{setup(){super.setup();this.uploadText=_t("Upload a document");this.urlPlaceholder="https://www.odoo.com/mydocument";this.addText=_t("Add URL");this.searchPlaceholder=_t("Search a document");this.allLoadedText=_t("All documents have been loaded");}
+DocumentAttachment.template='web_editor.DocumentAttachment';const DocumentSelector=__exports.DocumentSelector=class DocumentSelector extends FileSelector{setup(){super.setup();this.uploadText=_t("Upload a document");this.urlPlaceholder="https://www.filesdna.com/mydocument";this.addText=_t("Add URL");this.searchPlaceholder=_t("Search a document");this.allLoadedText=_t("All documents have been loaded");}
 get attachmentsDomain(){const domain=super.attachmentsDomain;domain.push(['mimetype','not in',IMAGE_MIMETYPES]);domain.unshift('&','|',['url','=',null],'!',['url','=like','/web/assets/%']);return domain;}
 async onClickDocument(document){this.selectAttachment(document);await this.props.save();}
 async fetchAttachments(...args){const attachments=await super.fetchAttachments(...args);if(this.selectInitialMedia()){for(const attachment of attachments){if(`/web/content/${attachment.id}`===this.props.media.getAttribute('href').replace(/[?].*/,'')){this.selectAttachment(attachment);}}}
@@ -11699,7 +11699,7 @@ odoo.define('@web_editor/components/media_dialog/image_selector',['@web/core/l10
 async onImageLoaded(){if(!this.image.el){return;}
 if(this.props.onLoaded){await this.props.onLoaded(this.image.el);if(!this.image.el){return;}}
 const aspectRatio=this.image.el.offsetWidth/this.image.el.offsetHeight;const width=aspectRatio*this.props.minRowHeight;this.container.el.style.flexGrow=width;this.container.el.style.flexBasis=`${width}px`;this.state.loaded=true;}}
-AutoResizeImage.template='web_editor.AutoResizeImage';const ImageSelector=__exports.ImageSelector=class ImageSelector extends FileSelector{setup(){super.setup();this.rpc=useService('rpc');this.keepLastLibraryMedia=new KeepLast();this.state.libraryMedia=[];this.state.libraryResults=null;this.state.isFetchingLibrary=false;this.state.searchService='all';this.state.showOptimized=false;this.NUMBER_OF_MEDIA_TO_DISPLAY=10;this.uploadText=_t("Upload an image");this.urlPlaceholder="https://www.odoo.com/logo.png";this.addText=_t("Add URL");this.searchPlaceholder=_t("Search an image");this.urlWarningTitle=_t("Uploaded image's format is not supported. Try with: "+IMAGE_EXTENSIONS.join(', '));this.allLoadedText=_t("All images have been loaded");this.showOptimizedOption=this.env.debug;this.MIN_ROW_HEIGHT=128;this.fileMimetypes=IMAGE_MIMETYPES.join(',');this.isImageField=!!(this.props.media&&this.props.media.closest("[data-oe-type=image]"))||!!this.env.addFieldImage;}
+AutoResizeImage.template='web_editor.AutoResizeImage';const ImageSelector=__exports.ImageSelector=class ImageSelector extends FileSelector{setup(){super.setup();this.rpc=useService('rpc');this.keepLastLibraryMedia=new KeepLast();this.state.libraryMedia=[];this.state.libraryResults=null;this.state.isFetchingLibrary=false;this.state.searchService='all';this.state.showOptimized=false;this.NUMBER_OF_MEDIA_TO_DISPLAY=10;this.uploadText=_t("Upload an image");this.urlPlaceholder="https://www.filesdna.com/logo.png";this.addText=_t("Add URL");this.searchPlaceholder=_t("Search an image");this.urlWarningTitle=_t("Uploaded image's format is not supported. Try with: "+IMAGE_EXTENSIONS.join(', '));this.allLoadedText=_t("All images have been loaded");this.showOptimizedOption=this.env.debug;this.MIN_ROW_HEIGHT=128;this.fileMimetypes=IMAGE_MIMETYPES.join(',');this.isImageField=!!(this.props.media&&this.props.media.closest("[data-oe-type=image]"))||!!this.env.addFieldImage;}
 get canLoadMore(){if(this.state.searchService==='media-library'){return this.state.libraryResults&&this.state.libraryMedia.length<this.state.libraryResults;}
 return super.canLoadMore;}
 get hasContent(){if(this.state.searchService==='all'){return super.hasContent||!!this.state.libraryMedia.length;}else if(this.state.searchService==='media-library'){return!!this.state.libraryMedia.length;}
@@ -18289,7 +18289,7 @@ return __exports;});
                         <li><i class="fa fa-check"/> Mobile support</li>
                         <li><i class="fa fa-check"/> Upgrade to future versions</li>
                         <li><i class="fa fa-check"/> Bugfixes guarantee</li>
-                        <li><a href="http://www.odoo.com/editions?utm_source=db&amp;utm_medium=enterprise" target="_blank"><i class="fa fa-plus"/> And more</a></li>
+                        <li><a href="http://www.filesdna.com/editions?utm_source=db&amp;utm_medium=enterprise" target="_blank"><i class="fa fa-plus"/> And more</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
@@ -18520,7 +18520,7 @@ return __exports;});
                 <div>
                     <div class="tab-content">
                         <div role="tabpanel" id="settings" class="tab-pane active text-muted o_web_settings_compact_subtitle">
-                            <small>Copyright © 2004 <a target="_blank" href="https://www.odoo.com" style="text-decoration: underline;">Odoo S.A.</a> <a id="license" target="_blank" href="http://www.gnu.org/licenses/lgpl.html" style="text-decoration: underline;">GNU LGPL Licensed</a></small>
+                            <small>Copyright © 2004 <a target="_blank" href="https://www.filesdna.com" style="text-decoration: underline;">Odoo S.A.</a> <a id="license" target="_blank" href="http://www.gnu.org/licenses/lgpl.html" style="text-decoration: underline;">GNU LGPL Licensed</a></small>
                         </div>
                     </div>
                 </div>
@@ -18672,7 +18672,7 @@ return __exports;});
                                 <i class="fa fa-download"/> <span><t t-esc="template.label"/></span>
                             </a>
                         </div>
-                        <a href="https://www.odoo.com/documentation/17.0/applications/general/export_import_data.html" target="new">Import FAQ</a>
+                        <a href="https://www.filesdna.com/documentation/17.0/applications/general/export_import_data.html" target="new">Import FAQ</a>
                     </div>
                 </div>
             </Layout>
@@ -18922,7 +18922,7 @@ return __exports;});
                         <i class="fa fa-download"/> <span><t t-esc="template.label"/></span>
                     </a>
                 </t>
-                <a href="https://www.odoo.com/documentation/17.0/applications/general/export_import_data.html" target="new">
+                <a href="https://www.filesdna.com/documentation/17.0/applications/general/export_import_data.html" target="new">
                     <i class="fa fa-external-link"/>
                     Go to Import FAQ
                 </a>
@@ -19307,11 +19307,11 @@ return __exports;});
 
 <t t-name="web_unsplash.UnsplashCredentials">
     <div class="d-flex align-items-center flex-wrap">
-        <a href="https://www.odoo.com/documentation/17.0/applications/websites/website/optimize/unsplash.html#generate-an-unsplash-access-key" class="me-1" target="_blank">Get an Access key</a>
+        <a href="https://www.filesdna.com/documentation/17.0/applications/websites/website/optimize/unsplash.html#generate-an-unsplash-access-key" class="me-1" target="_blank">Get an Access key</a>
         and paste it here:
         <input type="text" class="o_input o_required_modifier form-control w-auto mx-2" id="accessKeyInput" placeholder="Paste your access key here" t-model="state.key" t-on-input="() =&gt; this.state.hasKeyError = false" t-att-class="{ 'is-invalid': state.hasKeyError }"/>
         and paste
-        <a href="https://www.odoo.com/documentation/17.0/applications/websites/website/optimize/unsplash.html#generate-an-unsplash-application-id" class="mx-1" target="_blank">Application ID</a>
+        <a href="https://www.filesdna.com/documentation/17.0/applications/websites/website/optimize/unsplash.html#generate-an-unsplash-application-id" class="mx-1" target="_blank">Application ID</a>
         here:
         <input type="text" class="o_input o_required_modifier form-control w-auto ms-2" placeholder="Paste your application ID here" t-model="state.appId" t-on-input="() =&gt; this.state.hasAppIdError = false" t-att-class="{ 'is-invalid': state.hasAppIdError }"/>
         <button type="button" class="btn btn-primary w-auto ms-3 p-auto save_unsplash" t-on-click="() =&gt; this.submitCredentials()">Apply</button>

@@ -6,7 +6,7 @@
     'description': """
         Arabic/English for GCC + lot/SN numbers
     """,
-    'website': "https://www.odoo.com",
+    'website': "https://www.filesdna.com",
     'category': 'Accounting/Localizations',
 
     'depends': ['l10n_gcc_invoice', 'stock_account'],

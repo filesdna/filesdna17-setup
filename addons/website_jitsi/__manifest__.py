@@ -7,7 +7,7 @@
     'category': 'Hidden',
     'version': '1.0',
     "summary": "Create Jitsi room on website.",
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://www.filesdna.com/app/events',
     "description": "Create Jitsi room on website.",
     "depends": [
         "website"

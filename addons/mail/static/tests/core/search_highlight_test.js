@@ -17,18 +17,18 @@ QUnit.test("Search highlight", async (assert) => {
             searchTerm: "odoo",
         },
         {
-            input: '<a href="https://www.odoo.com">https://www.odoo.com</a>',
-            output: `<a href="https://www.odoo.com">https://www.<span class="${HIGHLIGHT_CLASS}">odoo</span>.com</a>`,
+            input: '<a href="https://www.filesdna.com">https://www.filesdna.com</a>',
+            output: `<a href="https://www.filesdna.com">https://www.<span class="${HIGHLIGHT_CLASS}">odoo</span>.com</a>`,
             searchTerm: "odoo",
         },
         {
-            input: '<a href="https://www.odoo.com">Odoo</a>',
-            output: `<a href="https://www.odoo.com"><span class="${HIGHLIGHT_CLASS}">Odoo</span></a>`,
+            input: '<a href="https://www.filesdna.com">Odoo</a>',
+            output: `<a href="https://www.filesdna.com"><span class="${HIGHLIGHT_CLASS}">Odoo</span></a>`,
             searchTerm: "odoo",
         },
         {
-            input: '<a href="https://www.odoo.com">Odoo</a> Odoo is a free software',
-            output: `<a href="https://www.odoo.com"><span class="${HIGHLIGHT_CLASS}">Odoo</span></a> <span class="${HIGHLIGHT_CLASS}">Odoo</span> is a free software`,
+            input: '<a href="https://www.filesdna.com">Odoo</a> Odoo is a free software',
+            output: `<a href="https://www.filesdna.com"><span class="${HIGHLIGHT_CLASS}">Odoo</span></a> <span class="${HIGHLIGHT_CLASS}">Odoo</span> is a free software`,
             searchTerm: "odoo",
         },
         {

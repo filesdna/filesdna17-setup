@@ -154,7 +154,7 @@ msgstr ""
 #: code:addons/mail_bot/models/res_users.py:0
 #, python-format
 msgid ""
-"Odoo's chat helps employees collaborate efficiently. I'm here to help you "
+"FilesDNA's chat helps employees collaborate efficiently. I'm here to help you "
 "discover its features."
 msgstr ""
 
@@ -207,10 +207,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@FilednaBot</span> and select me."
 msgstr ""
 "Ho sento, no estic escoltant. Per cridar l'atenció d'algú,<b>ping a ell</b>."
-" Escriu <span class=\"o_odoobot_command\">@OdooBot</span> i selecciona'm."
+" Escriu <span class=\"o_odoobot_command\">@FilednaBot</span> i selecciona'm."
 
 #. module: mail_bot
 #. odoo-python
@@ -251,14 +251,14 @@ msgstr ""
 msgid ""
 "Unfortunately, I'm just a bot 😞 I don't understand! If you need help "
 "discovering our product, please check <a "
-"href=\"https://www.odoo.com/documentation\" target=\"_blank\">our "
-"documentation</a> or <a href=\"https://www.odoo.com/slides\" "
+"href=\"https://www.filesdna.com/documentation\" target=\"_blank\">our "
+"documentation</a> or <a href=\"https://www.filesdna.com/slides\" "
 "target=\"_blank\">our videos</a>."
 msgstr ""
 "Per desgràcia, només soc un bot 😞No ho entenc! Si necessites ajuda per "
 "descobrir el nostre producte, comprova<a "
-"href=\"https://www.odoo.com/documentation\" target=\"_blank\">la nostra "
-"documentació</a> or <a href=\"https://www.odoo.com/slides\" "
+"href=\"https://www.filesdna.com/documentation\" target=\"_blank\">la nostra "
+"documentació</a> or <a href=\"https://www.filesdna.com/slides\" "
 "target=\"_blank\">o els nostres vídeos</a>."
 
 #. module: mail_bot
@@ -273,11 +273,11 @@ msgstr "Usuari"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@FilednaBot</span> in a sentence."
 msgstr ""
 "Vaja, tens un talent natural<br/>Fes ping a algú amb @nomd'usuario per a "
 "cridar la seva atenció.<b>Prova d'enviarme un ping fent servir</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> en una frase."
+"class=\"o_odoobot_command\">@FilednaBot</span> en una frase."
 
 #. module: mail_bot
 #. odoo-python

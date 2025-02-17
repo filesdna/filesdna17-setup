@@ -27,7 +27,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/timesheet_grid.png</field>
-            <field name="website">https://www.odoo.com/app/timesheet?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/timesheet?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_account_accountant">
@@ -41,7 +41,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/account_accountant.png</field>
-            <field name="website">https://www.odoo.com/app/accounting?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/accounting?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_knowledge">
@@ -55,7 +55,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/knowledge.png</field>
-            <field name="website">https://www.odoo.com/app/knowledge?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/knowledge?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_industry_fsm">
@@ -69,7 +69,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/industry_fsm.png</field>
-            <field name="website">https://www.odoo.com/app/field-service?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/field-service?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_helpdesk">
@@ -83,7 +83,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/helpdesk.png</field>
-            <field name="website">https://www.odoo.com/app/helpdesk?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/helpdesk?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_hr_appraisal">
@@ -97,7 +97,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/hr_appraisal.png</field>
-            <field name="website">https://www.odoo.com/app/appraisals?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/appraisals?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_marketing_automation">
@@ -111,7 +111,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/marketing_automation.png</field>
-            <field name="website">https://www.odoo.com/app/marketing-automation?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/marketing-automation?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_mrp_plm">
@@ -125,7 +125,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/mrp_plm.png</field>
-            <field name="website">https://www.odoo.com/app/plm?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/plm?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_quality_control">
@@ -139,7 +139,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/quality_control.png</field>
-            <field name="website">https://www.odoo.com/app/quality?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/quality?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_sale_amazon">
@@ -153,7 +153,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/sale_amazon.png</field>
-            <field name="website">https://www.odoo.com/app/amazon-connector?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/amazon-connector?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_sale_ebay">
@@ -167,7 +167,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/sale_ebay.png</field>
-            <field name="website">https://www.odoo.com/app/sales?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/sales?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_planning">
@@ -181,7 +181,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/planning.png</field>
-            <field name="website">https://www.odoo.com/app/planning?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/planning?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_sale_subscription">
@@ -195,7 +195,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/sale_subscription.png</field>
-            <field name="website">https://www.odoo.com/app/subscriptions?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/subscriptions?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_sign">
@@ -209,7 +209,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/sign.png</field>
-            <field name="website">https://www.odoo.com/app/sign?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/sign?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_stock_barcode">
@@ -223,7 +223,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/stock_barcode.png</field>
-            <field name="website">https://www.odoo.com/app/inventory?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/inventory?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_voip">
@@ -237,7 +237,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/voip.png</field>
-            <field name="website">https://www.odoo.com/app/crm?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/crm?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_appointment">
@@ -251,7 +251,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/appointment.png</field>
-            <field name="website">https://www.odoo.com/app/appointments?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/app/appointments?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_social">
@@ -265,7 +265,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/social.png</field>
-            <field name="website">https://www.odoo.com/app/social-marketing</field>
+            <field name="website">https://www.filesdna.com/app/social-marketing</field>
         </record>
 
         <record model="ir.module.module" id="base.module_mrp_workorder">
@@ -279,7 +279,7 @@
             <field name="author">Odoo S.A.</field>
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/mrp_workorder.png</field>
-            <field name="website">https://www.odoo.com/page/manufacturing?utm_source=db&amp;utm_medium=module</field>
+            <field name="website">https://www.filesdna.com/page/manufacturing?utm_source=db&amp;utm_medium=module</field>
         </record>
 
         <record model="ir.module.module" id="base.module_web_mobile">

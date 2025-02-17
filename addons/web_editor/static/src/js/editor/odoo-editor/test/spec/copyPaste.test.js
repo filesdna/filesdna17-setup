@@ -2481,9 +2481,9 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[]\u200B</a></p>',
                     stepFunction: async editor => {
-                        await pasteText(editor, 'abc www.odoo.com xyz');
+                        await pasteText(editor, 'abc www.filesdna.com xyz');
                     },
-                    contentAfter: '<p>abc <a href="http://www.odoo.com">www.odoo.com</a> xyz[]</p>',
+                    contentAfter: '<p>abc <a href="http://www.filesdna.com">www.filesdna.com</a> xyz[]</p>',
                 });
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[]\u200B</a></p>',
@@ -2498,13 +2498,13 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[]\u200B</a></p>',
                     stepFunction: async editor => {
-                        await pasteHtml(editor, '<a href="www.odoo.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
+                        await pasteHtml(editor, '<a href="www.filesdna.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
                     },
-                    contentAfter: '<p><a href="www.odoo.com">odoo.com</a></p><p><a href="www.google.com">google.com</a>[]</p>',
+                    contentAfter: '<p><a href="www.filesdna.com">odoo.com</a></p><p><a href="www.google.com">google.com</a>[]</p>',
                 });
             });
             it('should paste and transform URL among text', async () => {
-                const url = 'https://www.odoo.com';
+                const url = 'https://www.filesdna.com';
                 const imgUrl = 'https://download.odoocdn.com/icons/website/static/description/icon.png';
                 const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                 await testEditor(BasicEditor, {
@@ -2536,7 +2536,7 @@ describe('Paste', () => {
                 });
             });
             it('should paste and transform multiple URLs', async () => {
-                const url = 'https://www.odoo.com';
+                const url = 'https://www.filesdna.com';
                 const imgUrl = 'https://download.odoocdn.com/icons/website/static/description/icon.png';
                 const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                 await testEditor(BasicEditor, {
@@ -2626,7 +2626,7 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p>[abc]</p>',
                     stepFunction: async editor => {
-                        await pasteText(editor, 'www.odoo.com');
+                        await pasteText(editor, 'www.filesdna.com');
                         editor.historyUndo();
                     },
                     contentAfter: '<p>[abc]</p>',
@@ -2634,7 +2634,7 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p>[abc]</p>',
                     stepFunction: async editor => {
-                        await pasteText(editor, 'def www.odoo.com xyz');
+                        await pasteText(editor, 'def www.filesdna.com xyz');
                         editor.historyUndo();
                     },
                     contentAfter: '<p>[abc]</p>',
@@ -2644,14 +2644,14 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p>[abc]</p>',
                     stepFunction: async editor => {
-                        await pasteHtml(editor, '<a href="www.odoo.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
+                        await pasteHtml(editor, '<a href="www.filesdna.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
                         editor.historyUndo();
                     },
                     contentAfter: '<p>[abc]</p>',
                 });
             });
             it('should paste and transform URLs among text or multiple URLs', async () => {
-                const url = 'https://www.odoo.com';
+                const url = 'https://www.filesdna.com';
                 const imgUrl = 'https://download.odoocdn.com/icons/website/static/description/icon.png';
                 const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                 await testEditor(BasicEditor, {
@@ -2713,16 +2713,16 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[xyz]</a></p>',
                     stepFunction: async editor => {
-                        await pasteText(editor, 'www.odoo.com');
+                        await pasteText(editor, 'www.filesdna.com');
                     },
-                    contentAfter: '<p><a href="http://www.odoo.com">www.odoo.com</a>[]</p>',
+                    contentAfter: '<p><a href="http://www.filesdna.com">www.filesdna.com</a>[]</p>',
                 });
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[xyz]</a></p>',
                     stepFunction: async editor => {
-                        await pasteText(editor, 'abc www.odoo.com xyz');
+                        await pasteText(editor, 'abc www.filesdna.com xyz');
                     },
-                    contentAfter: '<p>abc <a href="http://www.odoo.com">www.odoo.com</a> xyz[]</p>',
+                    contentAfter: '<p>abc <a href="http://www.filesdna.com">www.filesdna.com</a> xyz[]</p>',
                 });
                 const imageUrl = 'https://download.odoocdn.com/icons/website/static/description/icon.png';
                 await testEditor(BasicEditor, {
@@ -2753,9 +2753,9 @@ describe('Paste', () => {
                 await testEditor(BasicEditor, {
                     contentBefore: '<p><a href="#">[xyz]</a></p>',
                     stepFunction: async editor => {
-                        await pasteHtml(editor, '<a href="www.odoo.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
+                        await pasteHtml(editor, '<a href="www.filesdna.com">odoo.com</a><br><a href="www.google.com">google.com</a>');
                     },
-                    contentAfter: '<p><a href="www.odoo.com">odoo.com</a></p><p><a href="www.google.com">google.com</a>[]</p>',
+                    contentAfter: '<p><a href="www.filesdna.com">odoo.com</a></p><p><a href="www.google.com">google.com</a>[]</p>',
                 });
             });
         });

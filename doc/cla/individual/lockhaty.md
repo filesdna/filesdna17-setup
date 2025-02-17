@@ -1,4 +1,4 @@
-I confirm I have signed the CLA and read the PR guidelines at www.odoo.com/submit-pr
+I confirm I have signed the CLA and read the PR guidelines at www.filesdna.com/submit-pr
 
 South Africa, 2020-01-22
 

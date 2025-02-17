@@ -163,11 +163,11 @@ class TestLinkPreview(MailCommon):
             urls = [
                 ("http://localhost:8069/", "http://localhost:8069/chat/5/bFtIfYHRco", 0),
                 ("http://localhost:8069/", "http://localhost:8069/web/test", 0),
-                ("https://www.odoo.com/", "https://www.odoo.com/chat/", 0),
-                ("https://www.odoo.com/", "https://www.odoo.com/chat/5/bFtIfYHRco", 0),
-                ("https://www.odoo.com/", "https://www.odoo.com/web/", 0),
-                ("http://www.odoo.com/", "https://www.odoo.com/chat/5/bFtIfYHRco", 1),
-                ("https://clients.odoo.com/", "https://www.odoo.com/chat/5/bFtIfYHRco", 1),
+                ("https://www.filesdna.com/", "https://www.filesdna.com/chat/", 0),
+                ("https://www.filesdna.com/", "https://www.filesdna.com/chat/5/bFtIfYHRco", 0),
+                ("https://www.filesdna.com/", "https://www.filesdna.com/web/", 0),
+                ("http://www.filesdna.com/", "https://www.filesdna.com/chat/5/bFtIfYHRco", 1),
+                ("https://clients.odoo.com/", "https://www.filesdna.com/chat/5/bFtIfYHRco", 1),
             ]
             for request_url, url, counter in urls:
                 with self.subTest(request_url=request_url, url=url, counter=counter):

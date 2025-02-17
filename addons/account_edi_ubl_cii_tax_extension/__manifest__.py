@@ -8,7 +8,7 @@
     These fields will be read when generating Peppol Bis 3 or Factur-X xml, for instance.
     """,
     'category': 'Accounting/Accounting',
-    'website': 'https://www.odoo.com/app/invoicing',
+    'website': 'https://www.filesdna.com/app/invoicing',
     'depends': ['account_edi_ubl_cii'],
     'data': [
         'views/account_tax_views.xml',

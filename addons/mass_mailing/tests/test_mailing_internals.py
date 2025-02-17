@@ -692,7 +692,7 @@ class TestMassMailFeatures(MassMailCommon, CronMixinCase):
             'subject': 'TestShortener',
             'body_html': """<div>
 Hi,
-<t t-set="url" t-value="'www.odoo.com'"/>
+<t t-set="url" t-value="'www.filesdna.com'"/>
 <t t-set="httpurl" t-value="'https://www.odoo.eu'"/>
 Website0: <a id="url0" t-attf-href="https://www.odoo.tz/my/{{object.name}}">https://www.odoo.tz/my/<t t-esc="object.name"/></a>
 Website1: <a id="url1" href="https://www.odoo.be">https://www.odoo.be</a>
@@ -723,7 +723,7 @@ Email: <a id="url5" href="mailto:test@odoo.com">test@odoo.com</a></div>""",
             new_mail = self._find_mail_mail_wrecord(contact)
             for link_info in [('url0', 'https://www.odoo.tz/my/%s' % contact.name, True),
                               ('url1', 'https://www.odoo.be', True),
-                              ('url2', 'https://www.odoo.com', True),
+                              ('url2', 'https://www.filesdna.com', True),
                               ('url3', 'https://www.odoo.eu', True),
                               ('url4', 'https://www.example.com/foo/bar?baz=qux', True),
                               ('url5', 'mailto:test@odoo.com', False)]:

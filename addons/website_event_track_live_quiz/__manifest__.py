@@ -7,7 +7,7 @@
     'category': 'Hidden',
     'version': '1.0',
     'summary': 'Bridge module to support quiz features during "live" tracks. ',
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://www.filesdna.com/app/events',
     'depends': [
         'website_event_track_live',
         'website_event_track_quiz',

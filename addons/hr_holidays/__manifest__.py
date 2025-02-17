@@ -7,7 +7,7 @@
     'category': 'Human Resources/Time Off',
     'sequence': 85,
     'summary': 'Allocate PTOs and follow leaves requests',
-    'website': 'https://www.odoo.com/app/time-off',
+    'website': 'https://www.filesdna.com/app/time-off',
     'description': """
 Manage time off requests and allocations
 =====================================

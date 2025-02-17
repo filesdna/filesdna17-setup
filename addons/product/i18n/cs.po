@@ -2126,7 +2126,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Please enter a valid URL.\n"
-"Example: https://www.odoo.com\n"
+"Example: https://www.filesdna.com\n"
 "\n"
 "Invalid URL: %s"
 msgstr ""

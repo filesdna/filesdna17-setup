@@ -31,10 +31,10 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"You may need the Enterprise version to install the data module. Please visit https://www.odoo.com/pricing-plan for more information.\n"
+"You may need the Enterprise version to install the data module. Please visit https://www.filesdna.com/pricing-plan for more information.\n"
 "If you need Website themes, it can be downloaded from https://github.com/odoo/design-themes.\n"
 msgstr ""
-"برای نصب ماژول داده ممکن است به نسخه سازمانی نیاز داشته باشید. لطفاً برای کسب اطلاعات بیشتر به https://www.odoo.com/pricing-plan مراجعه کنید.\n"
+"برای نصب ماژول داده ممکن است به نسخه سازمانی نیاز داشته باشید. لطفاً برای کسب اطلاعات بیشتر به https://www.filesdna.com/pricing-plan مراجعه کنید.\n"
 "اگر به تم‌های وب‌سایت نیاز دارید، می‌توانید آن را از https://github.com/odoo/design-themes دانلود کنید."
 
 #. module: base_import_module

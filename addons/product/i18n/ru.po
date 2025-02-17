@@ -2165,12 +2165,12 @@ msgstr "Пожалуйста, введите целое положительно
 #, python-format
 msgid ""
 "Please enter a valid URL.\n"
-"Example: https://www.odoo.com\n"
+"Example: https://www.filesdna.com\n"
 "\n"
 "Invalid URL: %s"
 msgstr ""
 "Введите действительный URL-адрес.\n"
-"Пример: https://www.odoo.com\n"
+"Пример: https://www.filesdna.com\n"
 "\n"
 "Недопустимый URL: %s"
 

@@ -8,7 +8,7 @@
     'sequence': 1006,
     'version': '1.0',
     'summary': 'Support live tracks: streaming, participation, youtube',
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://www.filesdna.com/app/events',
     'depends': [
         'website_event_track',
     ],

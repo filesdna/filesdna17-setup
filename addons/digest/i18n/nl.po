@@ -464,10 +464,10 @@ msgstr "Titel"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @FilednaBot to test the feature."
 msgstr ""
 "Typ \"@\" om iemand in een bericht op de hoogte te stellen, of \"#\" om naar"
-" een kanaal te linken. Probeer @OdooBot op de hoogte te stellen om de "
+" een kanaal te linken. Probeer @FilednaBot op de hoogte te stellen om de "
 "functie te testen."
 
 #. module: digest

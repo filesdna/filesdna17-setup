@@ -474,10 +474,10 @@ msgstr "Otsikko"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @FilednaBot to test the feature."
 msgstr ""
 "Kirjoita \"@\", jos haluat merkitä toisen käyttäjän viestiin, tai \"#\", jos"
-" haluat linkittää kanavan. Kokeile kirjoittaa @OdooBot testataksesi "
+" haluat linkittää kanavan. Kokeile kirjoittaa @FilednaBot testataksesi "
 "ominaisuutta."
 
 #. module: digest

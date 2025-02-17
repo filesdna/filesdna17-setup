@@ -7,7 +7,7 @@
     'category': 'Accounting/Localizations/Account Charts',
     'version': '1.1',
     'author': 'Odoo PS',
-    'website': 'https://www.odoo.com/documentation/17.0/applications/finance/fiscal_localizations/philippines.html',
+    'website': 'https://www.filesdna.com/documentation/17.0/applications/finance/fiscal_localizations/philippines.html',
     'depends': [
         'account',
         'base_vat',

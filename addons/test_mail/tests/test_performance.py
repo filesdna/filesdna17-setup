@@ -1180,7 +1180,7 @@ class TestMailFormattersPerformance(BaseMailPerformance):
                 'email_from': cls.partners[msg_idx].email_formatted,
                 'link_preview_ids': [
                     (0, 0, {
-                        'source_url': 'https://www.odoo.com',
+                        'source_url': 'https://www.filesdna.com',
                     }), (0, 0, {
                         'source_url': 'https://www.example.com',
                     }),

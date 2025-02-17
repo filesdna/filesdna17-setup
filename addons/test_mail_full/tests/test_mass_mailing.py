@@ -129,7 +129,7 @@ class TestMassMailing(TestMailFullCommon):
                 mail_links_info=[[
                     ('url0', 'https://www.odoo.tz/my/%s' % recipient.name, True, {}),
                     ('url1', 'https://www.odoo.be', True, {}),
-                    ('url2', 'https://www.odoo.com', True, {}),
+                    ('url2', 'https://www.filesdna.com', True, {}),
                     ('url3', 'https://www.odoo.eu', True, {}),
                     ('url4', 'https://www.example.com/foo/bar?baz=qux', True, {'baz': 'qux'}),
                     ('url5', '%s/event/dummy-event-0' % mailing.get_base_url(), True, {}),

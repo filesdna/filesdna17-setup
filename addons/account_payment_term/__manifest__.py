@@ -7,7 +7,7 @@
     'description': """
 Bridge module to add a new payment term - Days end of month on the
 """,
-    'website': 'https://www.odoo.com/app/invoicing',
+    'website': 'https://www.filesdna.com/app/invoicing',
     'depends': ['account'],
     'data': [
         'views/account_payment_term_views.xml',

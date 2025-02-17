@@ -5,7 +5,7 @@
     'name': 'Event CRM',
     'version': '1.0',
     'category': 'Marketing/Events',
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://www.filesdna.com/app/events',
     'description': "Create leads from event registrations.",
     'depends': ['event', 'crm'],
     'data': [

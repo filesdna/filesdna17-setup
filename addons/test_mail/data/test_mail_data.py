@@ -758,7 +758,7 @@ Soup
 Odoo S.A.
 Chaussée de Namur, 40
 B-1367 Grand Rosière
-Web: http://www.odoo.com
+Web: http://www.filesdna.com
 
 
 --------------1F2D18B1129FC2F0B9EECF50
@@ -781,7 +781,7 @@ Soup
 Odoo S.A.
 Chaussée de Namur, 40
 B-1367 Grand Rosière
-Web: <a class="moz-txt-link-freetext" href="http://www.odoo.com">http://www.odoo.com</a> </pre>
+Web: <a class="moz-txt-link-freetext" href="http://www.filesdna.com">http://www.filesdna.com</a> </pre>
   </body>
 </html>
 
@@ -1074,7 +1074,7 @@ aa.com" style=3D"text-decoration:none; color: white;">info@aust-mfg.com</a>=
                       </tr>
                       <tr>
                         <td align=3D"center">
-                            Powered by <a href=3D"https://www.odoo.com">Odo=
+                            Powered by <a href=3D"https://www.filesdna.com">Odo=
 o</a>.
                         </td>
                       </tr>

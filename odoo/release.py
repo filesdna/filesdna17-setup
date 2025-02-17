@@ -29,7 +29,7 @@ License :: OSI Approved :: GNU Lesser General Public License v3
 
 Programming Language :: Python
 """
-url = 'https://www.odoo.com'
+url = 'https://www.filesdna.com'
 author = 'OpenERP S.A.'
 author_email = 'info@odoo.com'
 license = 'LGPL-3'

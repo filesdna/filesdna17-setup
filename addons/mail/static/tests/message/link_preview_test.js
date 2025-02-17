@@ -60,7 +60,7 @@ QUnit.test("simplest card layout", async () => {
         og_description: "Description",
         og_title: "Article title",
         og_type: "article",
-        source_url: "https://www.odoo.com",
+        source_url: "https://www.filesdna.com",
     });
     const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
     pyEnv["mail.message"].create({
@@ -84,7 +84,7 @@ QUnit.test("simplest card layout with image", async () => {
         og_image: "https://c.tenor.com/B_zYdea4l-4AAAAC/yay-minions.gif",
         og_title: "Article title",
         og_type: "article",
-        source_url: "https://www.odoo.com",
+        source_url: "https://www.filesdna.com",
     });
     const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
     pyEnv["mail.message"].create({
@@ -109,7 +109,7 @@ QUnit.test("Link preview video layout", async () => {
         og_image: "https://c.tenor.com/B_zYdea4l-4AAAAC/yay-minions.gif",
         og_title: "video title",
         og_type: "video.other",
-        source_url: "https://www.odoo.com",
+        source_url: "https://www.filesdna.com",
     });
     const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
     pyEnv["mail.message"].create({
@@ -179,7 +179,7 @@ QUnit.test("Remove link preview card", async () => {
         og_description: "Description",
         og_title: "Article title",
         og_type: "article",
-        source_url: "https://www.odoo.com",
+        source_url: "https://www.filesdna.com",
     });
     const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
     pyEnv["mail.message"].create({
@@ -204,7 +204,7 @@ QUnit.test("Remove link preview video", async () => {
         og_image: "https://c.tenor.com/B_zYdea4l-4AAAAC/yay-minions.gif",
         og_title: "video title",
         og_type: "video.other",
-        source_url: "https://www.odoo.com",
+        source_url: "https://www.filesdna.com",
     });
     const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
     pyEnv["mail.message"].create({
@@ -300,7 +300,7 @@ QUnit.test(
             og_description: "Description",
             og_title: "Article title",
             og_type: "article",
-            source_url: "https://www.odoo.com",
+            source_url: "https://www.filesdna.com",
         });
         const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
         pyEnv["mail.message"].create({
@@ -356,7 +356,7 @@ QUnit.test("Delete all link previews at once", async () => {
             og_description: "Description",
             og_title: "Article title 1",
             og_type: "article",
-            source_url: "https://www.odoo.com",
+            source_url: "https://www.filesdna.com",
         },
         {
             image_mimetype: "image/jpg",

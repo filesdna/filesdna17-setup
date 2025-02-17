@@ -339,8 +339,8 @@ msgstr "например, LinkedIn, Facebook, Leads, ..."
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
-msgid "e.g. https://www.odoo.com/contactus"
-msgstr "например, https://www.odoo.com/contactus"
+msgid "e.g. https://www.filesdna.com/contactus"
+msgstr "например, https://www.filesdna.com/contactus"
 
 #. module: website_links
 #. odoo-javascript

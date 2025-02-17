@@ -90,8 +90,8 @@ print the CLA, complete it, sign it, scan it and send it by email to
 `cla-submission` `at` `odoo.com`.  In that case someone from the Odoo team will
 make the pull request on your behalf.
 
-* Printable Odoo CCLA v1.0 https://www.odoo.com/files/legal/Odoo-CCLA-v1.0.pdf
-* Printable Odoo ICLA v1.0 https://www.odoo.com/files/legal/Odoo-ICLA-v1.0.pdf
+* Printable Odoo CCLA v1.0 https://www.filesdna.com/files/legal/Odoo-CCLA-v1.0.pdf
+* Printable Odoo ICLA v1.0 https://www.filesdna.com/files/legal/Odoo-ICLA-v1.0.pdf
 
 # FAQ
 

@@ -110,7 +110,7 @@ QUnit.test(
                 name: "url.example",
                 mimetype: "text/plain",
                 type: "url",
-                url: "https://www.odoo.com",
+                url: "https://www.filesdna.com",
             },
             {
                 name: "test.txt",

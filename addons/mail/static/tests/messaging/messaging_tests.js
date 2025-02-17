@@ -75,7 +75,7 @@ QUnit.test(
         });
         const { openDiscuss, openFormView } = await start();
         await openDiscuss(channelId);
-        await insertText(".o-mail-Composer-input", "test https://www.odoo.com/");
+        await insertText(".o-mail-Composer-input", "test https://www.filesdna.com/");
         await click(".o-mail-Composer-send:enabled");
         // leaving discuss.
         await openFormView("res.partner", partnerId);

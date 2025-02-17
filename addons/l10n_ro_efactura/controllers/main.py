@@ -59,7 +59,7 @@ class L10nRoEdiController(http.Controller):
                 },
                 headers={
                     'accept': 'application/json',
-                    'user-agent': 'Odoo (http://www.odoo.com/contactus)',
+                    'user-agent': 'Odoo (http://www.filesdna.com/contactus)',
                 },
                 timeout=10,
             )

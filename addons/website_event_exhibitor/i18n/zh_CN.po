@@ -1073,8 +1073,8 @@ msgstr "例如：OpenWood Decoration"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
-msgid "e.g. : https://www.odoo.com"
-msgstr "例如：https://www.odoo.com"
+msgid "e.g. : https://www.filesdna.com"
+msgstr "例如：https://www.filesdna.com"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form

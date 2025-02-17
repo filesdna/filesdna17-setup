@@ -142,9 +142,9 @@ QUnit.test("Posting message should transform links.", async () => {
     });
     const { openDiscuss } = await start();
     openDiscuss(channelId);
-    await insertText(".o-mail-Composer-input", "test https://www.odoo.com/");
+    await insertText(".o-mail-Composer-input", "test https://www.filesdna.com/");
     await click(".o-mail-Composer-send:enabled");
-    await contains("a[href='https://www.odoo.com/']");
+    await contains("a[href='https://www.filesdna.com/']");
 });
 
 QUnit.test("Posting message should transform relevant data to emoji.", async () => {

@@ -29,11 +29,11 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"You may need the Enterprise version to install the data module. Please visit https://www.odoo.com/pricing-plan for more information.\n"
+"You may need the Enterprise version to install the data module. Please visit https://www.filesdna.com/pricing-plan for more information.\n"
 "If you need Website themes, it can be downloaded from https://github.com/odoo/design-themes.\n"
 msgstr ""
 "\n"
-"您可能需要企业版才能安装数据模块。请访问 https://www.odoo.com/pricing-plan 获取更多信息。\n"
+"您可能需要企业版才能安装数据模块。请访问 https://www.filesdna.com/pricing-plan 获取更多信息。\n"
 "如果需要网站主题，可从 https://github.com/odoo/design-themes 下载。\n"
 
 #. module: base_import_module

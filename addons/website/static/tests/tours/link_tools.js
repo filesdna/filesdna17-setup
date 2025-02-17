@@ -225,11 +225,11 @@ wTourUtils.registerWebsitePreviewTour('link_tools', {
     {
         content: "Enter an URL",
         trigger: "#o_link_dialog_url_input",
-        run: "text https://www.odoo.com",
+        run: "text https://www.filesdna.com",
     },
     {
         content: "Check nothing is lost",
-        trigger: "iframe header .s_mega_menu_cards a[href='https://www.odoo.com']:has(img):has(h4):has(span)",
+        trigger: "iframe header .s_mega_menu_cards a[href='https://www.filesdna.com']:has(img):has(h4):has(span)",
         isCheck: true,
     },
     // 7. Create new a link from a URL-like text.

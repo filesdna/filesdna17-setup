@@ -321,7 +321,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'summary': 'coucou',
             'start': {'date': str(event.start_date), 'dateTime': None},
             'end': {'date': str(event.stop_date + relativedelta(days=1)), 'dateTime': None},
-            'attendees': [{'email': 'odoobot@example.com', 'responseStatus': 'declined'}],
+            'attendees': [{'email': 'filesdna@example.com', 'responseStatus': 'declined'}],
             'extendedProperties': {'private': {'%s_odoo_id' % self.env.cr.dbname: event.id}},
             'reminders': {'overrides': [], 'useDefault': False},
         })
@@ -654,7 +654,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'reminders': {'useDefault': True},
             "attendees": [
                 {
-                    "email": "odoobot@example.com", "responseStatus": "accepted",
+                    "email": "filesdna@example.com", "responseStatus": "accepted",
                 },
             ],
             'updated': self.now,
@@ -698,7 +698,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'reminders': {'useDefault': True},
             "attendees": [
                 {
-                    "email": "odoobot@example.com", "responseStatus": "accepted",
+                    "email": "filesdna@example.com", "responseStatus": "accepted",
                 },
             ],
             'updated': self.now,
@@ -751,7 +751,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'reminders': {'useDefault': True},
             "attendees": [
                 {
-                    "email": "odoobot@example.com", "responseStatus": "accepted",
+                    "email": "filesdna@example.com", "responseStatus": "accepted",
                 },
             ],
             'updated': self.now,
@@ -801,7 +801,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'reminders': {'useDefault': True},
             "attendees": [
                 {
-                    "email": "odoobot@example.com", "responseStatus": "accepted",
+                    "email": "filesdna@example.com", "responseStatus": "accepted",
                 },
             ],
             'updated': self.now,
@@ -1361,7 +1361,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'guestsCanModify': True,
             'organizer': {'email': 'c.c@example.com', 'self': False},
             'attendees': [{'email': 'c.c@example.com', 'responseStatus': 'needsAction'},
-                          {'email': 'odoobot@example.com', 'responseStatus': 'accepted'},],
+                          {'email': 'filesdna@example.com', 'responseStatus': 'accepted'},],
             'extendedProperties': {'shared': {'%s_odoo_id' % self.env.cr.dbname: event.id,
                                               '%s_owner_id' % self.env.cr.dbname: other_user.id}},
             'reminders': {'overrides': [], 'useDefault': False},
@@ -1475,12 +1475,12 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
         recurrence._apply_recurrence()
         recurrence.calendar_event_ids.attendee_ids.state = 'accepted'
         mails = sorted(set(event.attendee_ids.mapped('email')))
-        self.assertEqual(mails, ['dalton@example.com', 'odoobot@example.com'])
+        self.assertEqual(mails, ['dalton@example.com', 'filesdna@example.com'])
         gevent = GoogleEvent([{
             'id': google_id,
             'description': 'coucou',
             "updated": self.now,
-            'organizer': {'email': 'odoobot@example.com', 'self': True},
+            'organizer': {'email': 'filesdna@example.com', 'self': True},
             'summary': False,
             'visibility': 'public',
             'attendees': [],
@@ -1516,7 +1516,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
             'id': "abcd",
             'description': 'coucou',
             "updated": self.now,
-            'organizer': {'email': 'odoobot@example.com', 'self': True},
+            'organizer': {'email': 'filesdna@example.com', 'self': True},
             'summary': False,
             'visibility': 'public',
             'attendees': [{'email': 'test@example.com', 'responseStatus': 'accepted'}, {'email': 'test2@example.com', 'responseStatus': 'accepted'}],

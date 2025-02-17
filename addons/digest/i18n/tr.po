@@ -477,10 +477,10 @@ msgstr "Başlık"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @FilednaBot to test the feature."
 msgstr ""
 "Bir mesajda birisini bilgilendirmek için \"@\" veya bir kanala bağlantı "
-"vermek için \"#\" yazın. Özelliği test etmek için @OdooBot'u deneyin "
+"vermek için \"#\" yazın. Özelliği test etmek için @FilednaBot'u deneyin "
 "deneyin."
 
 #. module: digest

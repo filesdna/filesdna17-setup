@@ -2,7 +2,7 @@
 {
     'name': "Italy - Stock DDT",
     'countries': ['it'],
-    'website': 'https://www.odoo.com',
+    'website': 'https://www.filesdna.com',
     'category': 'Accounting/Localizations/EDI',
     'version': '0.1',
     'description': """
