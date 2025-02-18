@@ -549,7 +549,7 @@ msgstr "شما با موفقیت از اشتراک خارج شده‌اید از
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "خلاصه‌ی دوره‌ای اودووی شما"
 
 #. module: digest

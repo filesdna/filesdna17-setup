@@ -5413,8 +5413,8 @@ msgstr "Powered by"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
-msgid "Powered by Odoo"
-msgstr "Powered by Odoo"
+msgid "Powered by FilesDNA"
+msgstr "Powered by FilesDNA"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__module_pos_preparation_display

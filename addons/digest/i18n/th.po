@@ -536,7 +536,7 @@ msgstr "คุณได้ยกเลิกการสมัครเรีย
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "ข้อมูลสรุปเป็นระยะของ Odoo ของคุณ"
 
 #. module: digest

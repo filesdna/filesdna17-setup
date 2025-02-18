@@ -540,7 +540,7 @@ msgstr "ألغيت اشتراكك بنجاح من: <br/> "
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "موجزك الدوري من أودو "
 
 #. module: digest

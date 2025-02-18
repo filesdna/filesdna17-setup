@@ -5411,7 +5411,7 @@ msgstr "Con la tecnología de"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
-msgid "Powered by Odoo"
+msgid "Powered by FilesDNA"
 msgstr "Con la tecnología de Odoo"
 
 #. module: point_of_sale

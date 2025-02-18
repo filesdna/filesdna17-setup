@@ -524,7 +524,7 @@ msgstr "以下からの登録解除が完了しました:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Odoo期間ダイジェスト"
 
 #. module: digest

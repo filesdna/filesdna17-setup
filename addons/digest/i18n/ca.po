@@ -551,7 +551,7 @@ msgstr "Us heu donat de baixa correctament des de:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "El vostre resum periòdic d'Odoo"
 
 #. module: digest

@@ -536,7 +536,7 @@ msgstr "구독 취소가 완료되었습니다:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Odoo 정기 요약"
 
 #. module: digest

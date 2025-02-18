@@ -541,7 +541,7 @@ msgstr "Sua inscrição foi cancelada com sucesso: <br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Seu boletim periódico do Odoo"
 
 #. module: digest

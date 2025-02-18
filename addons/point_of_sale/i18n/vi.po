@@ -5379,7 +5379,7 @@ msgstr "Cung cấp bởi"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
-msgid "Powered by Odoo"
+msgid "Powered by FilesDNA"
 msgstr "Cung cấp bởi Odoo"
 
 #. module: point_of_sale

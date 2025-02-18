@@ -523,7 +523,7 @@ msgstr "您已成功退訂:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "你的 Odoo 定期摘要"
 
 #. module: digest

@@ -545,7 +545,7 @@ msgstr "Vous avez été désabonné avec succès de : <br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Votre digest périodique Odoo"
 
 #. module: digest

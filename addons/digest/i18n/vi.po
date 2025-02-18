@@ -537,8 +537,8 @@ msgstr "Bạn đã hủy đăng ký thành công khỏi:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
-msgstr "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
+msgstr "Your FilesDNA Periodic Digest"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

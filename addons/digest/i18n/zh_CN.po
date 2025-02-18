@@ -524,7 +524,7 @@ msgstr "您已成功退订<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "系统各功能状态日报"
 
 #. module: digest

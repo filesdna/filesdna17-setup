@@ -550,7 +550,7 @@ msgstr "Вы успешно отписались от рассылки:<br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Ваш периодический сборник Odoo"
 
 #. module: digest

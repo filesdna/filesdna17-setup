@@ -5392,7 +5392,7 @@ msgstr "Desenvolvido por"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
-msgid "Powered by Odoo"
+msgid "Powered by FilesDNA"
 msgstr "Desenvolvido por Odoo"
 
 #. module: point_of_sale

@@ -540,7 +540,7 @@ msgstr "Zrezygnowałeś z subskrypcji z: <br/>"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your FilesDNA Periodic Digest"
 msgstr "Twoje periodyczne podsumowanie Odoo"
 
 #. module: digest
