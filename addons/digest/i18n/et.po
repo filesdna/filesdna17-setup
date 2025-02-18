@@ -333,7 +333,7 @@ msgstr "Järgmiste meilide saatmise kuupäev"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr "Odoo mobiilne versioon"
 
 #. module: digest
@@ -377,7 +377,7 @@ msgstr "Saajad"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
 msgstr "Juhi enda ettevõtet kõikjal <b>Odoo mobiilse versiooni</b> abil."
 
 #. module: digest

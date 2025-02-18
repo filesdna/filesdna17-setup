@@ -321,7 +321,7 @@ msgstr "Дата наступної розсилки"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr "Мобільна версія Odoo"
 
 #. module: digest
@@ -365,7 +365,7 @@ msgstr "Одержувачі"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
 msgstr "Запускайте ваш бізнес будь-де з <b>Мобільною версією Odoo</b>."
 
 #. module: digest

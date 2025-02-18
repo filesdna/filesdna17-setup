@@ -321,7 +321,7 @@ msgstr "Data prossima e-mail"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr "Odoo per dispositivo mobile"
 
 #. module: digest
@@ -365,8 +365,8 @@ msgstr "Destinatari"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Gestisci il tuo business da qualsiasi luogo con <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
+msgstr "Gestisci il tuo business da qualsiasi luogo con <b>FilesDNA Mobile</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

@@ -321,7 +321,7 @@ msgstr ""
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr ""
 
 #. module: digest
@@ -363,8 +363,8 @@ msgstr "Saņēmēji"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Vadiet Jūsu biznesu no jebkuras vietas ar <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
+msgstr "Vadiet Jūsu biznesu no jebkuras vietas ar <b>FilesDNA Mobile</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

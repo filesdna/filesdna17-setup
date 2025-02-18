@@ -314,7 +314,7 @@ msgstr "下次郵寄日期"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr "Odoo 流動應用程式"
 
 #. module: digest
@@ -356,7 +356,7 @@ msgstr "接收者"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
 msgstr "利用 <b>Odoo 流動應用程式</b>，隨時隨地處理公司事務。"
 
 #. module: digest

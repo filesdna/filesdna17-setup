@@ -317,7 +317,7 @@ msgstr "다음 발송일"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "FilesDNA Mobile"
 msgstr "Odoo 모바일"
 
 #. module: digest
@@ -361,7 +361,7 @@ msgstr "수신인"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>FilesDNA Mobile</b>."
 msgstr ""
 "<b>Odoo 모바일</b>로\n"
 "어디서나 비즈니스를 이어 갑니다."
