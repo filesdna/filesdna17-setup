@@ -1,0 +1,95 @@
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_oi_fin_datatmpl_form">
+			<field name="name">oi_fin.datatmpl form</field>
+			<field name="model">oi_fin.datatmpl</field>
+			<field name="inherit_id" ref="view_oi_fin_filter_form"/>
+			<field name="mode">primary</field>
+			<field name="arch" type="xml">
+				<data>
+					<sheet position="before">
+						<header>
+							<button name="create_menu" class="oe_highlight" type="object" string="Create Menu" invisible="menu_id"/>
+							<button name="drop_menu" class="oe_highlight" type="object" string="Drop Menu" invisible="not menu_id"/>
+						</header>
+					</sheet>
+					<separator name="filters" position="before">
+						<group>
+							<group>
+								<field name="menu_id" invisible="1"/>
+								<field name="name"/>
+								<field name="target_move"/>
+								<field name="group_by"/>
+								<field name="include_empty" invisible="not group_by"/>
+							</group>
+							<group>
+								<field name="begin_balance"/>
+							</group>
+						</group>
+						<separator string="Columns"/>
+						<group col="6">
+							<group>
+								<field name="col_move_name"/>
+								<field name="col_move_ref"/>
+								<field name="col_move_date"/>					
+								<field name="col_move_month"/>				
+								<field name="col_move_line_name"/>									
+								<field name="col_move_state"/>
+								<field name="col_move_narration"/>
+							</group>
+							<group>
+								<field name="col_company" string="Company" groups="base.group_multi_company"/>
+								<field name="col_journal"/>							
+								<field name="col_account_name"/>
+								<field name="col_account_code"/>
+								<field name="col_account_type"/>
+								<field name="col_account_tag"/>
+							</group>
+							<group>
+								<field name="col_debit"/>
+								<field name="col_credit"/>
+								<field name="col_balance"/>
+								<field name="balance_acc" invisible="not col_balance"/>
+								<field name="col_analytic_code"/>
+								<field name="col_analytic_name"/>
+								<field name="col_analytic_group_name"/>
+								<field name="col_analytic_tag"/>
+							</group>
+						</group>
+						<group col="6">
+							<group>
+								<field name="col_partner_name"/>
+								<field name="col_partner_ref"/>
+								<field name="col_partner_country"/>
+								<field name="col_partner_tag" string="Partner Tags"/>
+							</group>
+							<group>
+								<field name="col_product_code"/>
+								<field name="col_product_name"/>
+								<field name="col_product_category"/>
+								<field name="col_product_quantity"/>
+								<field name="col_product_uom"/>
+							</group>
+							<group>
+								<field name="col_bank_statement_name"/>
+								<field name="col_bank_statement_date"/>
+								<field name="col_bank_statement_line_date"/>
+								<field name="col_bank_statement_line_name"/>
+								<field name="col_bank_statement_line_ref"/>
+								<field name="col_bank_statement_line_note"/>
+							</group>							
+						</group>
+					</separator>
+				</data>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="act_oi_fin_datatmpl">
+			<field name="name">Entry Details Template</field>
+			<field name="res_model">oi_fin.datatmpl</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+	</data>
+</openerp>

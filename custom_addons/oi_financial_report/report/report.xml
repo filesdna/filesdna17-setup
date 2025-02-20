@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<record id="act_report_oi_fin_report" model="ir.actions.report">
+		<field name="model">oi_fin.report</field>
+		<field name="name">Financial Report</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">oi_financial_report.report_oi_fin_report</field>
+		<field name="report_file">oi_financial_report.report_oi_fin_report</field>
+		<field name="print_report_name">object.name</field>
+	</record>
+
+</odoo>

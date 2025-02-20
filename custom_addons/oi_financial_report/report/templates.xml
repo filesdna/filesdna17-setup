@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="report_oi_fin_report_page">
+		<div class="page">
+			<style>
+tr {
+ border-bottom: solid 1px #bbbbbb;
+}			
+th, td {
+    padding-left : 0.2rem;    
+    padding-right : 0.2rem;    
+}
+.tr_title {
+  font-weight: bold;
+  border-bottom: double 3px black;
+  background-color: #fafafa;
+}
+.tr_empty {
+   border-bottom: none !important;
+}
+.tr_empty th, .tr_empty td {
+    padding:  0.75rem;    
+}
+.tr_summary {
+	font-weight: bold;
+}
+.tr_group {
+	font-weight: bold;
+	background-color: #f1f1f1;
+}
+.tr_header {
+	font-weight: bold;	
+}
+.td_right {
+	text-align: right;
+}
+.tr_collapse {
+	
+}
+.tr_outlines {
+	
+}
+.tr_footer {
+	font-weight: bold;	
+	background-color: #f1f1f1;
+}
+.margin_auto {
+    margin-left:auto; 
+    margin-right:auto;
+}
+.modal-dialog {
+	max-width : 98% !important;
+	width : max-content !important;
+}
+.cursor_pointer {
+	cursor:  pointer;
+}
+			</style>
+			<script t-if="report_type=='html'">
+$( document ).ready(function() {
+	$('.tr_collapse').click(function(){
+		var $item = $(this);
+		var $span = $item.find('td:first-child span');
+		console.log($span);
+        var collapsed = $span.hasClass('fa-caret-right');
+        if (collapsed) {
+        	$span.addClass('fa-caret-down');
+        	$span.removeClass('fa-caret-right');        	
+        }
+        else {
+        	$span.addClass('fa-caret-right');
+        	$span.removeClass('fa-caret-down');
+        }
+         
+        
+		while($item.length) {			
+			$item = $item.next('.tr_outlines');
+			$item.toggle();
+		}
+	});
+    $('.tr_collapse').trigger( "click" );
+});
+			</script>			
+			<h1 class="text-center" t-esc="wizard.name"></h1>		
+<!-- 			<p><t t-esc="hidden_columns" /></p>
+ -->			<table id="table1" class="margin_auto">				
+				<t t-foreach="enumerate(rows)" t-as="_row">
+					<t t-set="row_idx" t-value="_row[0]" />
+					<t t-set="row" t-value="_row[1]" />
+					<t t-set="row" t-value="list(map(lambda i : None if i=='_' else i, row))" />
+					<t t-set="tr_classes" t-value="[]" />
+					<t t-set="dummy" t-if="row_idx in title_rows" t-value="tr_classes.append('tr_title')" />
+					<t t-set="dummy" t-if="row_idx in empty_rows or not any(row)" t-value="tr_classes.append('tr_empty')" />
+					<t t-set="dummy" t-if="row_idx in summary_rows" t-value="tr_classes.append('tr_summary')" />
+					<t t-set="dummy" t-if="row_idx in group_rows" t-value="tr_classes.append('tr_group')" />
+					<t t-set="dummy" t-if="row_idx in total_rows" t-value="tr_classes.append('tr_total')" />
+					<t t-set="dummy" t-if="row_idx in percentage_rows" t-value="tr_classes.append('tr_percentage')" />
+					<t t-set="dummy" t-if="row_idx &lt;header_rows_count" t-value="tr_classes.append('tr_header')" />
+					<t t-set="dummy" t-if="row_idx in collapse_row" t-value="tr_classes.append('tr_collapse')" />
+					<t t-set="dummy" t-if="row_idx in outlines_row" t-value="tr_classes.append('tr_outlines')" />
+					<t t-set="dummy" t-if="not any(filter(lambda i : i is not None ,row)) or row_idx in hidden_rows" t-value="tr_classes.append('oe_hidden')" />					
+					
+				<!-- <t t-set="dummy" t-if="not any(filter(lambda i : i is not None ,row))" t-value="tr_classes.append('oe_hidden')" />		-->			
+					<t t-set="tr_class" t-value="' '.join(tr_classes)" />
+					<tr t-att-class="tr_class">
+						<td t-if="report_type=='html'">
+							<span class="fa" />
+						</td>
+						<t t-set="lst" t-value="[]" />
+						<t t-foreach="enumerate(row)" t-as="_cell">
+							<t t-set="col_idx" t-value="_cell[0]" />
+							<t t-set="value" t-value="_cell[1]" />
+							<t t-set="dummy" t-value="lst.append(value)" t-if="isinstance(value,(float, int))" />
+							<t t-set="number_cell" t-value="col_idx &gt;= header_columns_count and row_idx &gt;=header_rows_count" />
+							<t t-set="percentage_cell" t-value="col_idx in percentage_columns or row_idx in percentage_rows" />
+							<t t-set="td_classes" t-value="[]" />
+							<t t-set="dummy" t-if="number_cell" t-value="td_classes.append('td_right')" />
+							<t t-set="dummy" t-if="row_idx &lt;header_rows_count and col_idx &gt;=header_columns_count" t-value="td_classes.append('td_right')" />
+							<t t-set="dummy" t-if="[row_idx, col_idx] in data_source_cell" t-value="td_classes.append('cursor_pointer')" />
+							<t t-set="dummy" t-if="col_idx in hidden_columns" t-value="td_classes.append('oe_hidden')" />
+							<t t-set="td_class" t-value="' '.join(td_classes)" />
+							<td t-att-class="td_class" data-toggle="modal" t-att-data-target="'#data_source_%s_%s' % (row_idx, col_idx)">
+								<span t-if="percentage_cell and value is not None" t-esc="'%%%0.1f' % (value * 100)" />
+								<span t-elif="number_cell and isinstance(value, (int, float))" t-esc="value" t-options="{'widget' : 'monetary','display_currency' : currency}" />
+								<span t-else="" t-esc="value" />
+							</td>
+						</t>
+						<td t-if="add_column_total" class="td_right o_bold">
+							<t t-set="percentage_cell" t-value="row_idx in percentage_rows" />
+							<t t-set="value" t-value="None" />
+							<t t-set="value" t-value="sum(lst)" t-if="(add_column_total is True or add_column_total=='SUM') and lst" />
+							<t t-set="value" t-value="sum(lst)/len(lst)" t-if="add_column_total=='AVERAGE' and lst" />
+							<t t-set="value" t-value="min(lst)" t-if="add_column_total=='MIN' and lst" />
+							<t t-set="value" t-value="max(lst)" t-if="add_column_total=='MAX' and lst" />
+							<span t-if="percentage_cell and value is not None" t-esc="'%%%0.1f' % (value * 100)" />
+							<span t-elif="value is not None" t-esc="value" t-options="{'widget' : 'monetary', 'display_currency' : currency}" />
+							<span t-else="" t-esc="value" />													
+						</td>
+					</tr>
+				</t>				
+				<tr t-if="add_row_total" class="tr_footer">
+					<td t-if="report_type=='html'">
+					</td>					
+					<t t-set="lst_all" t-value="[]" />
+					<t t-foreach="range(col_count)" t-as="col_idx">
+						<t t-set="percentage_cell" t-value="col_idx in percentage_columns" />			
+							
+						<t t-set="td_classes" t-value="['td_right']" />
+						<t t-set="dummy" t-if="col_idx in hidden_columns" t-value="td_classes.append('oe_hidden')" />
+						<t t-set="td_class" t-value="' '.join(td_classes)" />
+								
+						<td t-att-class="td_class">
+							<t t-set="lst" t-value="[]" />
+							<t t-foreach="rows" t-as="row">
+								<t t-set="dummy" t-value="lst.append(row[col_idx])" t-if="isinstance(row[col_idx],(float, int))" />
+							</t>
+							<t t-set="dummy" t-value="lst_all.extend(lst)" />
+							<t t-set="value" t-value="None" />
+							<t t-set="value" t-value="sum(lst)" t-if="(add_row_total is True or add_row_total=='SUM') and lst" />
+							<t t-set="value" t-value="sum(lst)/len(lst)" t-if="add_row_total=='AVERAGE' and lst" />
+							<t t-set="value" t-value="min(lst)" t-if="add_row_total=='MIN' and lst" />
+							<t t-set="value" t-value="max(lst)" t-if="add_row_total=='MAX' and lst" />
+							<span t-if="percentage_cell and value is not None" t-esc="'%%%0.1f' % (value * 100)" />
+							<span t-elif="value is not None" t-esc="value" t-options="{'widget' : 'monetary', 'display_currency' : currency}" />
+							<span t-else="" t-esc="value" />							
+						</td>					
+					</t>
+					<td t-if="add_column_total" class="td_right">
+						<t t-set="percentage_cell" t-value="False" />
+						<t t-set="lst" t-value="lst_all" />
+						<t t-set="value" t-value="None" />
+						<t t-set="value" t-value="sum(lst)" t-if="(add_column_total is True or add_column_total=='SUM') and lst" />
+						<t t-set="value" t-value="sum(lst)/len(lst)" t-if="add_column_total=='AVERAGE' and lst" />
+						<t t-set="value" t-value="min(lst)" t-if="add_column_total=='MIN' and lst" />
+						<t t-set="value" t-value="max(lst)" t-if="add_column_total=='MAX' and lst" />
+						<span t-if="percentage_cell and value is not None" t-esc="'%%%0.1f' % (value * 100)" />
+						<span t-elif="value is not None" t-esc="value" t-options="{'widget' : 'monetary', 'display_currency' : currency}" />
+						<span t-else="" t-esc="value" />													
+					</td>					
+				</tr>				
+			</table>	
+			
+			<t t-foreach="data_source or []" t-as="source">
+				<t t-set="row_no" t-value="source[0]" />
+				<t t-set="col_no" t-value="source[1]" />
+				<t t-set="details_rows" t-value="source[2]" />
+				<t t-set="move_ids" t-value="source[3]" />
+				<div class="modal fade" t-att-id="'data_source_%s_%s' % (row_no, col_no)" tabindex="-1" role="dialog"
+				  aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <table class="margin_auto">
+				        	<thead>
+				        		<tr>
+				        			<th t-foreach="details_rows[0]" t-as="cell" t-att-class="cell in ['Amount', 'Amount in Currency', 'Debit', 'Credit'] and 'td_right' or ''" >
+				        				<span t-esc="cell" />
+				        			</th>
+				        		</tr>
+				        	</thead>
+				        	<tbody>
+				        		<tr t-foreach="enumerate(details_rows[1:])" t-as="_row">
+			        				<t t-set="row_idx" t-value="_row[0]" />
+			        				<t t-set="row" t-value="_row[1]" />			
+			        				<t t-set="model_name" t-value="len(row) > 7 and 'account.move' or 'account.budget.move'" />	        		
+				        			<t t-foreach="enumerate(row)" t-as="cell">
+				        				<t t-set="idx" t-value="cell[0]" />
+				        				<t t-set="value" t-value="cell[1]" />
+				        				<td t-if="idx==1 and row_idx &lt; len(move_ids) and move_ids[row_idx]">
+				        					<a t-att-href="'/web#id=%d&amp;model=%s&amp;view_type=form' % (move_ids[row_idx],model_name)" target="_blank">
+				        						<span t-esc="value" />
+				        					</a>
+				        				</td>
+					        			<td t-else=""  t-att-class="isinstance(value, (float, int)) and 'td_right' or ''">
+					        				<span t-if="isinstance(value, datetime.date)" t-esc="value" t-options="{'widget' : 'date'}" />
+					        				<span t-elif="isinstance(value, (float, int))" t-esc="value" t-options="{'widget' : 'float', 'precision' : decimal_places}" />
+											<span t-else="" t-esc="value" />	
+					        			</td>				        			
+				        			</t>
+				        		</tr>
+				        	</tbody>
+				        </table>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>				
+			</t>
+			
+		</div>
+	</template>
+
+	<template id="report_oi_fin_report">
+		<t t-call="web.html_container">
+			<t t-set="wizard" t-value="env['oi_fin.report'].browse(wizard_id)" />
+			<t t-set="currency" t-value="wizard.currency_id" />
+			<t t-if="not pdf" t-call="web.basic_layout">
+				<t t-call="oi_financial_report.report_oi_fin_report_page" />
+			</t>
+			<t  t-if="pdf" t-call="web.internal_layout">
+				<t t-call="oi_financial_report.report_oi_fin_report_page" />
+			</t>			
+		</t>
+	</template>
+
+</odoo>

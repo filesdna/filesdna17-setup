@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_oi_fin_filter_form">
+			<field name="name">oi_fin.filter</field>
+			<field name="model">oi_fin.filter</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<div class="oe_button_box" name="button_box">
+						
+						</div>
+						<separator string="Filters" name="filters" />
+						<notebook>
+							<page string="Companies" groups="base.group_multi_company">
+								<group>
+									<field name="company_ids" nolabel="1" widget="many2many_checkboxes" options="{'no_create_edit' : True}" colspan="2" />
+								</group>
+							</page>
+							<page string="Journal">
+								<group>
+									<field name="journal_ids" nolabel="1" colspan="2">
+										<tree create="true" delete="true" edit="false">
+											<field name="code" />
+											<field name="name" />
+											<field name="type" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Accounts">
+								<group>
+									<field name="account_domain" />
+								</group>
+								<group>
+									<group>
+										<separator string="Account Types" colspan="2" />
+										<field name="account_type_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="name" />
+											</tree>
+										</field>
+										<separator string="Account Tags" colspan="2" />
+										<field name="account_tag_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="name" />
+											</tree>
+										</field>
+									</group>
+									<group>
+										<separator string="Account Groups" colspan="2" />
+										<field name="account_group_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="code_prefix_start" />
+												<field name="name" />
+											</tree>
+										</field>
+										<separator string="Accounts" colspan="2" />
+										<field name="account_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="code" />
+												<field name="name" />
+											</tree>
+										</field>										
+									</group>
+								</group>
+							</page>
+							<page string="Analytic">
+								<group>
+									<field name="analytic_plan_ids" widget="many2many_tags" options="{'no_create' : True}" />
+								</group>
+								<group>
+									<field name="analytic_ids" colspan="2">
+										<tree create="true" delete="true" edit="false">
+											<field name="code" />
+											<field name="name" />
+										</tree>
+									</field>								
+								</group>
+							</page>
+							<page string="Partners">
+								<group>
+									<group>
+										<separator string="Tags" colspan="2" />
+										<field name="partner_category_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="name" />
+											</tree>
+										</field>
+										<separator string="Country" colspan="2" />
+										<field name="country_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="code" />
+												<field name="name" />
+											</tree>
+										</field>
+									</group>
+									<group string="Partners">
+										<field name="partner_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="display_name" />
+											</tree>
+										</field>
+									</group>
+								</group>
+							</page>
+							<page string="Products">
+								<group>
+									<group string="Product Categories">
+										<field name="product_category_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="name" />
+											</tree>
+										</field>
+									</group>
+									<group string="Products">
+										<field name="product_ids" nolabel="1" colspan="2">
+											<tree create="true" delete="true" edit="false">
+												<field name="name" />
+											</tree>
+										</field>
+									</group>
+								</group>
+							</page>
+							<page string="Other">
+								<group col="4">
+									<field name="credit" />
+									<field name="debit" />
+									<field name="special_filter" />
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</openerp>

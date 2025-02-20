@@ -1,0 +1,107 @@
+<odoo>
+
+	<record id="view_oi_fin_template_source_tree" model="ir.ui.view">
+		<field name="name">oi_fin.template_source.tree</field>
+		<field name="model">oi_fin.template_source</field>
+		<field name="arch" type="xml">
+			<tree default_order="sequence">
+				<field name="sequence"/>
+				<field name="name"/>
+				<field name="source_type"/>
+				<field name="report_source_id"/>
+				<field name="amount_type"/>
+				<field name="calc_type"/>
+				<field name="operand1"/>
+				<field name="operand2"/>
+				<field name="balance_type" invisible="1"/>
+				<field name="special_filter" invisible="1"/>
+				<field name="none_zero" invisible="1"/>
+				<field name="operand_type" invisible="1"/>
+				<field name="date_from"/>
+				<field name="date_to"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="view_oi_fin_template_row_tree" model="ir.ui.view">
+		<field name="name">oi_fin.template_row.tree</field>
+		<field name="model">oi_fin.template_row</field>
+		<field name="inherit_id" ref="view_oi_fin_template_source_tree"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+
+			</data>
+		</field>
+	</record>
+
+	<record id="view_oi_fin_template_column_tree" model="ir.ui.view">
+		<field name="name">oi_fin.template_column.tree</field>
+		<field name="model">oi_fin.template_column</field>
+		<field name="inherit_id" ref="view_oi_fin_template_source_tree"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+
+			</data>
+		</field>
+	</record>
+
+
+
+	<record id="view_oi_fin_template_source_form" model="ir.ui.view">
+		<field name="name">oi_fin.template_source.form</field>
+		<field name="model">oi_fin.template_source</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+						<group>
+							<field name="sequence"/>
+							<field name="name"/>
+							<field name="source_type"/>
+							<field name="none_zero"/>
+							<field name="date_from"/>
+							<field name="date_to"/>
+						</group>
+						<group>
+							<field name="calc_type" required="source_type == 'calc'" invisible="source_type != 'calc'"/>
+							<field name="operand_type" required="source_type == 'calc'" invisible="source_type != 'calc'"/>
+							<field name="operand1" invisible="source_type != 'calc'"/>
+							<field name="operand2" invisible="source_type != 'calc' or operand_type == '1'"/>
+							<field name="report_source_id" required="source_type == 'amount'" invisible="source_type != 'amount'"/>
+							<field name="amount_type" invisible="source_type != 'amount'"/>
+							<field name="balance_type" invisible="source_type != 'amount'"/>
+							<field name="special_filter"/>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="view_oi_fin_template_row_form" model="ir.ui.view">
+		<field name="name">oi_fin.template_row.form</field>
+		<field name="model">oi_fin.template_row</field>
+		<field name="inherit_id" ref="view_oi_fin_template_source_form"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+
+			</data>
+		</field>
+	</record>
+
+	<record id="view_oi_fin_template_column_form" model="ir.ui.view">
+		<field name="name">oi_fin.template_column.form</field>
+		<field name="model">oi_fin.template_column</field>
+		<field name="inherit_id" ref="view_oi_fin_template_source_form"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+
+			</data>
+		</field>
+	</record>
+
+</odoo>

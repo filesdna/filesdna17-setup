@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record model="oi_fin.report_source" id="report_source_bank_cash">
+		<field name="name">Bank and Cash</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_cash')]" />
+	</record>
+	
+	<record model="oi_fin.report_source" id="report_source_liquidity">
+		<field name="name">Liquidity</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','in', ['asset_cash','liability_credit_card'])]" />
+	</record>	
+
+	<record model="oi_fin.report_source" id="report_source_receivable">
+		<field name="name">Receivable</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_receivable')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_receivable_partner">
+		<field name="name">Receivable (By Partner)</field>
+		<field name="source_type">partner</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_receivable')]" />
+	</record>
+	
+	<record model="oi_fin.report_source" id="report_source_customers_advance">
+		<field name="name">Advance Payments received from customers</field>
+		<field name="source_type">partner</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_receivable')]" />
+		<field name="special_filter">liquidity</field>
+	</record>	
+
+	<record model="oi_fin.report_source" id="report_source_current_assets">
+		<field name="name">Current Assets</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_current')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_prepayments">
+		<field name="name">Prepayment</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_prepayments')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_fixed_assets">
+		<field name="name">Fixed Assets</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_prepayments')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_non_current_assets">
+		<field name="name">Non-current Assets</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'asset_non_current')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_current_liabilities">
+		<field name="name">Current Liabilities</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','in', ['liability_credit_card','liability_current'])]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_payable">
+		<field name="name">Payable</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'liability_payable')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_payable_partner">
+		<field name="name">Payable (By Partner)</field>
+		<field name="source_type">partner</field>
+		<field name="account_type_ids" search="[('value','=', 'liability_payable')]" />
+	</record>
+	
+	<record model="oi_fin.report_source" id="report_source_suppliers_advance">
+		<field name="name">Advance payments made to suppliers</field>
+		<field name="source_type">partner</field>
+		<field name="account_type_ids" search="[('value','=', 'liability_payable')]" />
+		<field name="special_filter">liquidity</field>
+	</record>	
+
+	<record model="oi_fin.report_source" id="report_source_non_current_liabilities">
+		<field name="name">Non-current Liabilities</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'liability_non_current')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_net_profit">
+		<field name="name">Net Profit</field>
+		<field name="account_type_ids" search="['|', ('value','=like', 'income%'), ('value','=like', 'expense%')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_unallocated_earnings">
+		<field name="name">Unallocated Earnings</field>
+		<field name="account_type_ids" search="['|', '|', ('value','=like', 'income%'), ('value','=like', 'expense%'), ('value','=', 'equity_unaffected')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_equity">
+		<field name="name">Equity</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'equity')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_revenue">
+		<field name="name">Income</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'income')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_direct_costs">
+		<field name="name">Cost of Revenue</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'expense_direct_cost')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_other_income">
+		<field name="name">Other Income</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'income_other')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_expenses">
+		<field name="name">Expenses</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'expense')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_depreciation">
+		<field name="name">Depreciation</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" search="[('value','=', 'expense_depreciation')]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_tag_operating">
+		<field name="name">Operating Activities</field>
+		<field name="source_type">account</field>
+		<field name="account_tag_ids" eval="[(6,0, [ref('account.account_tag_operating')])]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_tag_financing">
+		<field name="name">Financing Activities</field>
+		<field name="source_type">account</field>
+		<field name="account_tag_ids" eval="[(6,0, [ref('account.account_tag_financing')])]" />
+	</record>
+
+	<record model="oi_fin.report_source" id="report_source_tag_investing">
+		<field name="name">Investing &amp; Extraordinary Activities</field>
+		<field name="source_type">account</field>
+		<field name="account_tag_ids" eval="[(6,0, [ref('account.account_tag_investing')])]" />
+	</record>
+	
+	<record model="oi_fin.report_source" id="report_source_unclassified_activities">
+		<field name="name">Unclassified Activities</field>
+		<field name="source_type">account</field>
+		<field name="account_domain" eval="'''[('account_type', 'not in', ('asset_receivable', 'liability_payable', 'asset_cash', 'liability_credit_card')), ('tag_ids', 'not in', [%d, %d, %d])]''' % (ref('account.account_tag_operating'), ref('account.account_tag_financing'), ref('account.account_tag_investing'))" />
+	</record>
+	
+</odoo>

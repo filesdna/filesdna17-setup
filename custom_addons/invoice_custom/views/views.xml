@@ -1,0 +1,73 @@
+<odoo>
+    
+
+    <record id="invoice_custom_fields" model="ir.ui.view">
+      <field name="name">Invoice custim fields</field>
+      <field name="model">account.move</field>
+      <field name="inherit_id" ref="account.view_move_form"/>
+      <field name="arch" type="xml">
+        
+        <xpath expr="//field[@name='partner_id']" position="after">
+          <field name="lpo"  invisible = "move_type != 'out_invoice'"/>
+        </xpath>
+        
+      </field>
+    </record>
+
+    <template id="report_invoice_custom" inherit_id="account.report_invoice_document">
+
+      <xpath expr="//div[@name='origin']" position="before">
+                    <strong>LPO:</strong><br/>
+                    <span t-field="o.lpo">xxxxxxx</span>
+      </xpath>
+
+      <xpath expr="//div[@name='shipping_address_block']" position="inside">
+                    <strong>EMAIL:</strong><br/>
+                    <span t-field="o.partner_id.email">xxxxxxx</span>
+      </xpath>
+
+    </template>
+
+    <template id="external_layout_footer_inherit_cr" inherit_id="web.external_layout_boxed">
+            <xpath expr="//div[@class= 'text-center']" position="replace">
+            <div class="row">
+                <div class="col-4">
+                  <span>
+                          Bank: Mashreq Bank (AED)<br/>
+                          Account name : Borderless Security - FZCO<br/>
+                          Swift Code : BOMLAEAD<br/>
+                          IBAN :AE380330000019101358199<br/>
+                          ank Routing Code : 203320101<br/>
+                  </span>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                      <!-- <span>
+                          Bank: Mashreq Bank (EUR)<br/>
+                          Account name : Borderless Security - FZCO<br/>
+                          Swift Code : BOMLAEAD<br/>
+                          IBAN :AE540330000019101358202<br/>
+                          Bank Routing Code : 203320101<br/>
+                        </span> -->
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-4">
+                      <a href="https://www.borderlesssecurity.com/">www.borderlesssecurity.com</a> /
+                          <!-- <span t-field="o.company_id.mobile">xxxxxxx</span> / -->
+                          <!-- <span t-field="o.company_id.email">xxxxxxx</span> -->
+                    </div>
+                    <div class="col-4">
+                        
+                    </div>
+                    <div class="col-4">
+                    </div>
+                   
+                </div>    
+                        
+            </xpath>
+    </template>
+
+
+</odoo>

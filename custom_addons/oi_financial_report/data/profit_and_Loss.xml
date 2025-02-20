@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<record model="oi_fin.template" id="template_profit_and_loss" forcecreate="True">
+		<field name="name">Profit and Loss</field>
+		<field name="sample" eval="1" />
+		<field name="group_by"></field>
+		<field name="include_empty" eval="False" />
+		<field name="columns"
+			eval="[(5,),
+				(0,0, {'name' : 'Total', 'sequence' : 40,'source_type' :'amount', 'report_source_id' : ref('report_source_empty') })]" />
+		<field name="rows" eval="[(5,),
+				(0,0, { 'sequence' : 10,'source_type' :'title', 'name' : 'INCOME' }),
+				(0,0, { 'sequence' : 20,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Operating Income', 'operand1' : 30 }),	
+				(0,0, { 'sequence' : 30,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_revenue'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 40,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cost of Revenue', 'operand1' : 50 }),	
+				(0,0, { 'sequence' : 50,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_direct_costs') }),	
+				(0,0, { 'sequence' : 60,'source_type' :'calc', 'operand_type' : '1','calc_type' : '-', 'name' : 'Gross Profit', 'operand1' : '20,40' }),
+				(0,0, { 'sequence' : 61,'source_type' :'title', 'name' : ' ' }),
+				(0,0, { 'sequence' : 70,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Other Income', 'operand1' : 80 }),	
+				(0,0, { 'sequence' : 80,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_other_income'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 90,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total INCOME', 'operand1' : '60,70' }),	
+				(0,0, { 'sequence' : 100,'source_type' :'title', 'name' : ' ' }),
+				(0,0, { 'sequence' : 110,'source_type' :'title', 'name' : 'EXPENSES' }),
+				(0,0, { 'sequence' : 120,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Expenses', 'operand1' : 130 }),	
+				(0,0, { 'sequence' : 130,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_expenses') }),	
+				(0,0, { 'sequence' : 140,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Depreciation', 'operand1' : 150 }),	
+				(0,0, { 'sequence' : 150,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_depreciation') }),	
+				(0,0, { 'sequence' : 160,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Expenses ', 'operand1' : '120,140' }),	
+				(0,0, { 'sequence' : 170,'source_type' :'title', 'name' : ' ' }),
+				(0,0, { 'sequence' : 180,'source_type' :'calc', 'operand_type' : '1', 'name' : 'NET PROFIT','calc_type' : '-', 'operand1' : '90,160' }),	
+				
+			]" />
+		<field name="add_summary_row" eval="False" />
+		<field name="add_summary_column" eval="False" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+
+</odoo>

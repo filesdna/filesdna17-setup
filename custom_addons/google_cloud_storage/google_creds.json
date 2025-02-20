@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "filesdna",
+  "private_key_id": "149180150926baf34b62aa8b48997fc38fbce2f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqj7Cn7hxgSI0i\nMiUviDk/S5FWzfS3JlpzK176zTbxabaXFIqeNJql7ZaEw2sYCJw5sffYOiomvJfS\nMAAdLx4YcWsd5A1GwtMSb9meB4+mlHxoC0OtTD6mZ2kK0NiP1rfRWTepBn/SDZnd\nT22Yszbn9piLcg9CVIXD7yvOaAFu/fo5LWltcBhWBN7tpg8+jBlHN/+TtnWTNwtG\noFd8108fL0OI0WPmd1lCVGM6v9Wf9jA9ul3+rPa7IRTT6obCHo7M3FJrFo/jJmpA\n2Ryzd/rqNWtbNdXw0+ZBwHGTk9NQc13RbA4byUdhW6hamcn8JhXu+VC4lgSx2prm\nhZcCuZ8zAgMBAAECggEAUGOjRrMyyqrHYmuyHSIeoVeTrA8snTpFfWzeumUI1WYW\n+kRjRUfT8Ar4W6DjlBNS1tqrz00y2ske4aFgHGE91RV4AEGhhE2FQHZZYmN78G6h\n6EQO5No/2Rx6ZO+kcr8oKlLbqh33FuD0OVwbctJdOZ1/rpHW4VOHLJ9IzWM18cKa\n+2OkAbQntZeezO+2NgZY2J5Tjl9jq7athdrAELAIfUrvijWe/RLp0IleNB5ozfEB\nMztF5DyAYTjgLewh7YkFG90zmfKXxNe/0gm+zGg7fXHzlYYYKX/RbapX6XOKUe+v\nrml/xJiQVf9Niye9OBmt3rSr31wFd+Tz4uHP8j0BKQKBgQDpvbWXr9ugZ3SzTjIW\nPE/2hyLa2ew3zQgBw5K0ZpC285eK0hbWn4sFH3Dx/hAVLm6sqGu7+kO1ytphstSB\nX/cB5/hRsn9fUMWlbYx+Ye76wVQTA2fLMrKzNCsncPeB4kbDen97IFx6dck0kFbI\nVNaJclAJFbmQxaUasQ7FS8vHDQKBgQC6zb5aXHAhsRcbrlEleYHnK4geKhKgRelX\n9ZIs3ffRZxhZQR/VrmeZ9w2Wb8q8vGcCIHRTEoFdqop/lubl7yd8rQuW6QXEYUkR\nlpQgXDODcK57pRL5RGhmZl8h+XmNi7Hyj80nYbFmDnEMWNVZKCcc9sSw3YfrV2hM\nVlX30BlvPwKBgBe/AC3S3dsj54U30nrT0cPX4sCdFxRsLf4P4l2VdepAQQsHYO6Y\n8sSodw7+op+kQfYkfh1wxWQ4oYr/YftqxmtZJ68VFT+XsxylTnqgdGjhLytnUyof\nkmwGRsQRA/QcCthdH4pgtURzpudCKq7bf5gjFuJ1ZI7CpY1ao4eDtcYZAoGAMPI/\n8kVOTEWunF4sfPk9hGjvnZfAkaY/4gBCcOcoTAILazeZM9Ai7UDCmqxoHtPu2avP\nTwUGSJiq+Yt8rLrhSdW9t6kPDcm/74/Y+DGwfbxEu7khI5c9E7e3LZvEscXstnXf\nd3YtmWQnUujj3hybQweVuhIRzyRz+6yTkf9A6tkCgYEAk6DiAxsRsWS2p7eswx06\nk97pksFp8aN0k0C/doRCF95fDaLtNwLgLrRIpOtX7BKwSakWl4MZnN9WVnF9EhPR\nqOJ6ArgFNq273Ba6uNB6Sn+nKQ1qC938czi+ZmBLJW7XphBuaE79wjwP2qQ3mdFS\nGausZ9dwNkL4unXVuSaLd6Y=\n-----END PRIVATE KEY-----\n",
+  "client_email": "demo7-dna@filesdna.iam.gserviceaccount.com",
+  "client_id": "107380502461909374142",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/demo7-dna%40filesdna.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

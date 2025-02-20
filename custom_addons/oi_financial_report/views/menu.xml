@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<menuitem name="Excel Reports" id="menu_root" parent="account.menu_finance_reports" sequence="100" />
+	<menuitem name="Excel Reports" id="menu_root_config" parent="account.menu_finance_configuration" sequence="110" />
+
+	<menuitem name="Entry Details Template" id="menu_datatmpl" parent="menu_root_config" action="act_oi_fin_datatmpl" />
+
+	<menuitem name="Journal Entry Details" id="menu_oi_fin_data" parent="menu_root" action="act_oi_fin_data" sequence="900" />
+
+	<menuitem name="Report Source" id="menu_report_source" parent="menu_root_config" action="act_report_source_tree" />
+
+	<menuitem name="Report Template" id="menu_report_template" parent="menu_root_config" action="act_oi_fin_template_tree" />
+
+	<menuitem id="menu_oi_fin_aged_partner_template" parent="menu_root_config" action="act_oi_fin_aged_partner_template" />
+	
+	<menuitem name="Report Dimension" id="menu_oi_fin_dimension" parent="menu_root_config" action="act_oi_fin_dimension" />	
+
+	<menuitem name="Summary Report" id="menu_oi_fin_report" parent="menu_root" action="act_oi_fin_report" sequence="990" />
+
+	<menuitem id="menu_oi_fin_aged_partner_wizard" parent="menu_root" action="act_oi_fin_aged_partner_wizard" sequence="100" />
+
+</odoo>

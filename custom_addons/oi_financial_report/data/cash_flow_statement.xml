@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<record id="template_cash_flow_statement" model="oi_fin.template" forcecreate="True">
+		<field name="name">Cash Flow Statement</field>
+		<field name="sample" eval="1" />	
+		<field name="cash_basis" eval="1" />
+		<field name="special_filter">liquidity-related</field>
+		<field name="columns"
+			eval="[(5,),
+				(0,0, {'name' : 'Total', 'sequence' : 40,'source_type' :'amount', 'report_source_id' : ref('report_source_empty') }),
+				]" />
+		<field name="rows" eval="[(5,),
+			(0,0, { 'sequence' : 10,'source_type' :'title', 'name' : 'Cash flows from operating activities' }),
+				
+				(0,0, { 'sequence' : 20,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Advance Payments received from customers', 'operand1' : 30 }),	
+				(0,0, { 'sequence' : 30,'source_type' :'amount', 'amount_type' : '-amount_residual', 'name' : ' ', 'report_source_id' : ref('report_source_customers_advance') }),	
+				
+				(0,0, { 'sequence' : 40,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash received from operating activities', 'operand1' : 50 }),	
+				(0,0, { 'sequence' : 50,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_operating'), 'special_filter' : 'credit' }),	
+				
+				(0,0, { 'sequence' : 60,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Advance payments made to suppliers', 'operand1' : 70 }),	
+				(0,0, { 'sequence' : 70,'source_type' :'amount', 'amount_type' : '-amount_residual', 'name' : ' ', 'report_source_id' : ref('report_source_suppliers_advance') }),	
+				
+				(0,0, { 'sequence' : 80,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash paid for operating activities', 'operand1' : 90 }),	
+				(0,0, { 'sequence' : 90,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_operating'), 'special_filter' : 'debit' }),	
+				
+				(0,0, { 'sequence' : 95,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Cash flows from operating activities', 'operand1' : '20,40,60,80' }),		
+			
+			(0,0, { 'sequence' : 99,'source_type' :'title', 'name' : ' ' }),
+			(0,0, { 'sequence' : 100,'source_type' :'title', 'name' : 'Cash flows from investing &amp; extraordinary activities' }),		
+				
+				(0,0, { 'sequence' : 110,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash in', 'operand1' : 120 }),	
+				(0,0, { 'sequence' : 120,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_investing'), 'special_filter' : 'credit' }),			
+				
+				(0,0, { 'sequence' : 130,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash out', 'operand1' : 140 }),	
+				(0,0, { 'sequence' : 140,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_investing'), 'special_filter' : 'debit' }),			
+				
+				(0,0, { 'sequence' : 150,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Cash flows from investing &amp; extraordinary activities', 'operand1' : '110,130' }),
+			
+			(0,0, { 'sequence' : 159,'source_type' :'title', 'name' : ' ' }),
+			(0,0, { 'sequence' : 160,'source_type' :'title', 'name' : 'Cash flows from financing activities' }),
+				
+				(0,0, { 'sequence' : 170,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash in', 'operand1' : 180 }),	
+				(0,0, { 'sequence' : 180,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_financing'), 'special_filter' : 'credit' }),			
+				
+				(0,0, { 'sequence' : 190,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash out', 'operand1' : 200 }),	
+				(0,0, { 'sequence' : 200,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_tag_financing'), 'special_filter' : 'debit' }),			
+				
+				(0,0, { 'sequence' : 210,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Cash flows from financing activities', 'operand1' : '170,190' }),
+			
+			(0,0, { 'sequence' : 219,'source_type' :'title', 'name' : ' ' }),
+			(0,0, { 'sequence' : 220,'source_type' :'title', 'name' : 'Cash flows from unclassified activities' }),		
+				
+				(0,0, { 'sequence' : 230,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash in', 'operand1' : 240 }),	
+				(0,0, { 'sequence' : 240,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_unclassified_activities'), 'special_filter' : 'credit' }),			
+				
+				(0,0, { 'sequence' : 250,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash out', 'operand1' : 260 }),	
+				(0,0, { 'sequence' : 260,'source_type' :'amount', 'amount_type' : '-balance', 'name' : ' ', 'report_source_id' : ref('report_source_unclassified_activities'), 'special_filter' : 'debit' }),			
+				
+				(0,0, { 'sequence' : 270,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Cash flows from unclassified activities', 'operand1' : '230,250' }),
+			
+			(0,0, { 'sequence' : 279,'source_type' :'title', 'name' : ' ' }),
+			
+			(0,0, { 'sequence' : 280,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Net increase in cash and cash equivalents', 'operand1' : '95,150,210,270' }),
+			
+			(0,0, { 'sequence' : 285,'source_type' :'title', 'name' : ' ' }),
+			
+			(0,0, { 'sequence' : 290,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash and cash equivalents, beginning of period', 'operand1' : 300 }),	
+			(0,0, { 'sequence' : 300,'source_type' :'amount', 'amount_type' : 'balance', 'name' : ' ', 'report_source_id' : ref('report_source_liquidity'), 'balance_type' : 'begin' }),	
+			
+			(0,0, { 'sequence' : 310,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Cash and cash equivalents, closing balance', 'operand1' : 320 }),	
+			(0,0, { 'sequence' : 320,'source_type' :'amount', 'amount_type' : 'balance', 'name' : ' ', 'report_source_id' : ref('report_source_liquidity'), 'balance_type' : 'end' }),	
+																	
+			]" />		
+	</record>
+</odoo>

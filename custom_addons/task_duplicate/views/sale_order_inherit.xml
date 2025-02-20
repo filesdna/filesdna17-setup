@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_order_form_inherit" model="ir.ui.view">
+        <field name="name">view_order_form_inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//tree//field[@name='price_total']" position="after">
+                <button name="action_duplicate" type="object" class="btn-primary"  string="Duplicate"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

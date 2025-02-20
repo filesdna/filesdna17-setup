@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<record model="oi_fin.datatmpl" id="datatmpl_general_ledger" forcecreate="True">
+		<field name="name">General Ledger</field>
+		<field name="group_by">account</field>
+		<field name="col_move_date" eval="True" />
+		<field name="col_move_month" eval="True" />
+		<field name="col_move_name" eval="True" />
+		<field name="col_move_ref" eval="True" />
+		<field name="col_account_name" eval="False" />
+		<field name="col_account_code" eval="False" />
+		<field name="col_journal" eval="True" />
+		<field name="col_partner_name" eval="True" />
+		<field name="col_move_line_name" eval="True" />
+		<field name="col_debit" eval="True" />
+		<field name="col_credit" eval="True" />
+		<field name="col_balance">dr</field>
+		<field name="balance_acc" eval="True" />
+	</record>
+	
+</odoo>	

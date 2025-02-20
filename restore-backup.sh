@@ -7,7 +7,7 @@ API_URL="http://localhost:8069/web/database/restore"
 MASTER_PWD="hHGdf3524DD5gs"
 
 # Backup File Path (Ensure the correct path)
-BACKUP_DIR="/opt/filesdna17/"
+BACKUP_DIR="/opt/filesdna17"
 BACKUP_FILE=$(ls -t $BACKUP_DIR/master-backup.zip 2>/dev/null | head -n1)
 
 # Ask for Database Name

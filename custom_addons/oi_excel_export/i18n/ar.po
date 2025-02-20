@@ -1,0 +1,338 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oi_excel_export_dynamic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-05 14:45+0000\n"
+"PO-Revision-Date: 2023-11-05 14:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__action_id
+msgid "Action"
+msgstr "الإجراء"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__add_column_total
+msgid "Add Column Total"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__add_row_total
+msgid "Add Row Total"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__average
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__average
+msgid "Average"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__avedev
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__avedev
+msgid "Average Absolute Deviation (AVEDEV)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model,name:oi_excel_export_dynamic.model_base
+msgid "Base"
+msgstr "الأساس "
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__cell
+msgid "Cell"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_line__crosstabloc__col
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Column"
+msgstr "عمود"
+
+#. module: oi_excel_export_dynamic
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Columns"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Create Action"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__create_uid
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__create_uid
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__create_date
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__create_date
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__crosstabloc
+msgid "CrossTab Location"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__crosstab
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__crosstab
+msgid "Crosstab"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__data
+msgid "Data"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__decimal_places
+msgid "Decimal Places"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__display_name
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__display_name
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.actions.act_window,name:oi_excel_export_dynamic.action_oi_excel_export_config
+#: model:ir.ui.menu,name:oi_excel_export_dynamic.menu_oi_excel_export_config
+msgid "Excel Report"
+msgstr "تقرير الإكسل"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__name
+msgid "Header"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__id
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__id
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__image_ids
+msgid "Image"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Images"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#. odoo-python
+#: code:addons/oi_excel_export_dynamic/models/oi_excel_export_image.py:0
+#, python-format
+msgid "Invalid Cell"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__write_uid
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__write_uid
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__write_date
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__write_date
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__line_ids
+msgid "Line"
+msgstr "بند"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__line_count
+msgid "Line Count"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__max
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__max
+msgid "Maximum"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_line__crosstabloc__value
+msgid "Measure"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__mad
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__mad
+msgid "Median Absolute Deviation (MAD)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__min
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__min
+msgid "Minimum"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__name
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: oi_excel_export_dynamic
+#. odoo-python
+#: code:addons/oi_excel_export_dynamic/models/base.py:0
+#, python-format
+msgid "No data to print"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__model_id
+msgid "Object"
+msgstr "الكائن"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__offset_x
+msgid "Offset X"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__offset_y
+msgid "Offset Y"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__pdf
+msgid "PDF"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__stdev_p
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__stdev_p
+msgid "Population Standard Deviation (STDEV.P)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__var_p
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__var_p
+msgid "Population Variance (VAR.P)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__lines
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Python Code"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+msgid "Remove Action"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__report_id
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__report_id
+msgid "Report"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_line__crosstabloc__row
+msgid "Row"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__stdev_s
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__stdev_s
+msgid "Sample Standard Deviation (STDEV.S)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__var_s
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__var_s
+msgid "Sample Variance (VAR.S)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__scale_x
+msgid "Scale X"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_image__scale_y
+msgid "Scale Y"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_config__seperate_rows
+msgid "Seperate Rows"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__show_title
+msgid "Show Title"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__devsq
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__devsq
+msgid "Squared Deviation (DEVSQ)"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_column_total__sum
+#: model:ir.model.fields.selection,name:oi_excel_export_dynamic.selection__oi_excel_export_config__add_row_total__sum
+msgid "Sum"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__value
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_line_form
+msgid "Value"
+msgstr "القيمة"
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model.fields,field_description:oi_excel_export_dynamic.field_oi_excel_export_line__visible_condition
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_config_form
+#: model_terms:ir.ui.view,arch_db:oi_excel_export_dynamic.view_oi_excel_export_line_form
+msgid "Visible Condition"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model,name:oi_excel_export_dynamic.model_oi_excel_export_config
+msgid "oi_excel_export.config"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model,name:oi_excel_export_dynamic.model_oi_excel_export_image
+msgid "oi_excel_export.image"
+msgstr ""
+
+#. module: oi_excel_export_dynamic
+#: model:ir.model,name:oi_excel_export_dynamic.model_oi_excel_export_line
+msgid "oi_excel_export.line"
+msgstr ""

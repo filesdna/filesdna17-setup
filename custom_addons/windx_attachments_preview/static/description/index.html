@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"
+          href="//apps.odoocdn.com/web/content/7646917-3314048/1/web.assets_frontend.css">
+
+</head>
+<!-- odoo description page css -->
+
+<body>
+<!-- Header -->
+<div class="row justify-content-md-between justify-content-center border-bottom align-items-center py-2 mx-0">
+    <div class="text-center mr-lg-5 mb-lg-0" style="width: 170px;">
+        <a class="btn p-2">
+            <img src="images/windx-logo.png" alt="windx-logo" style="height: 50px">
+        </a>
+    </div>
+    <div class="mt-md-0 mt-4 mb-lg-0" style="margin-right: 10px; width: 170px;">
+        <div class="text-center">
+            <a href="https://apps.odoo.com/apps/modules/browse?author=Win%20DX%20JSC" target="_blank" class="btn btn-sm mb-2 mb-lg-0"
+                  style="padding: 7px;font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038; color:#fff;"><i
+                    class="fa fa-list-alt mr-1"></i> <span class="d-none d-sm-inline">WinDX</span> All Apps</a>
+        </div>
+    </div>
+</div>
+
+<div id="loempia_tabs" class="container py-5 oe_styling_v8"
+     style="color: #0b3b52;font-family: 'Open sans','sans-serif';">
+    <div class="row text-center mb-2">
+        <div class="col-12 text-center">
+            <h1 style="color: #203038;">PREVIEW ALL TYPES OF ATTACHMENT</h1>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-12">
+            <h2 class="mb-4 text-justify" style="font-size: 20px;color: #3c3c3c;">Preview All Types of Attachment saves effort and storage of users as it allows them to preview the document before downloading it. This app can be used in all Odoo modules to display attachments including MS Office, PDF, image, video file format.</h2>
+
+            <div class="mb-4 text-justify">
+                <span style="font-size: 20px;color: #3c3c3c; font-style: italic;">
+                    <img src="images/warning.png" alt="warning" style="width:20px; margin-right:10px;">
+                    The Preview Attachments module is a combination of two modules
+                    <a href="https://apps.odoo.com/apps/modules/17.0/windx_attachments_ms_office_preview/">Preview MS Office Attachments</a>
+                    and
+                    <a href="https://apps.odoo.com/apps/modules/17.0/attachments_preview/">Preview Many2many Attachments</a>
+                    of Win DX. Please do not install the
+                    <a href="https://apps.odoo.com/apps/modules/17.0/windx_attachments_preview/">Preview Attachments</a>
+                    module and one of the two modules above at the same time to avoid system errors.
+                </span>
+            </div>
+            <h4 class="font-weight-bold mb-3">FEATURES</h4>
+            <ul class="list-unstyled" >
+                <li class="mb-2">
+                    <span style="font-size:18px;" class="font-weight-bold ml-2">Supports MULTIPLE file format such as MSOffice, image, PDF and video</span>
+                </li>
+                <li class="mb-2">
+                    <span style="font-size:18px;" class="font-weight-bold ml-2">Preview files from ANYWHERE inside the Odoo module</span>
+                </li>
+                <li class="mb-2">
+                    <span style="font-size:18px;" class="font-weight-bold ml-2">User can preview a document WITHOUT DOWNLOADING</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- GIF   -->
+    <img src="preview_img/guide.gif" alt="Guide of app" style="width: 100%;"/>
+
+    <section class="card" style="border: none;">
+        <div class="card-body">
+            <div class="tab-pane text-center">
+                <span class="text-center my-4" style="font-size: 20px;font-weight: 400;color: #0b3b52;"><b>HOW IT WORKS</b></span>
+            </div>
+
+            <div class="tab-pane">
+                <p class="font-weight-bold mb-3" style="font-size: 18px;"><b>1. Works with custom many2many fields</b></p>
+                <div>
+                    <ul class="list-unstyled pl-0  bg-white" style="font-size:18px; color:#101010;">
+                        <li class="d-flex align-items-baseline mb-2 p-3">
+                            <span>
+                                <img src="images/forward-arrow.svg" alt="arrow" style="width:15px; margin-right:10px;">
+                                If you’re adding the Many2Many Field to a new code or already working code, then add
+                                <b>widget="many2many_preview_attachment"</b> in xml view wherever you wish to add the field.<br>
+                                <img src="preview_img/image_1.png" alt="arrow" style="max-width:100%; width: 650px;"
+                                     class="border">
+                                <img src="preview_img/image_2.png" alt="arrow" style="max-width:100%; width: 650px;"
+                                     class="border">
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-baseline mb-2 p-3">
+                            <span>
+                                <img src="images/forward-arrow.svg" alt="arrow" style="width:15px; margin-right:10px;">
+                                A button like (
+                                <i class="fa fa-search-plus" style="padding: 0px 2px; color: #7C7BAD;"
+                                   title="Sample Button"></i>
+                                ) will be visible beside all binary fields like shown in the image.
+                                <br>
+                                <img src="preview_img/image_3.png" alt="arrow" style="max-width:100%;"
+                                     class="my-4 border">
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px; color:#101010;">
+                        <li class="d-flex align-items-baseline mb-2 p-3">
+                        <span>
+                            <img src="images/forward-arrow.svg" alt="arrow"
+                                 style="width:15px; margin-right:10px;">
+                            Allow access to preview file formats include docx, xlsx, pptx, pdf, jpeg, gif, png and mp4 as attachments for the normal user.
+                            <br>
+                            <img src="preview_img/image_4.png" alt="arrow" style="max-width:100%;"
+                                 class="my-4 border">
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-pane">
+                <p class="font-weight-bold mb-3" style="font-size: 18px;"><b>2. Basic display</b></p>
+                <div>
+                    <ul class="list-unstyled pl-0  bg-white" style="font-size:18px; color:#101010;">
+                        <li class="d-flex align-items-baseline mb-2 p-3">
+                            <span>
+                                <img src="images/forward-arrow.svg" alt="arrow" style="width:15px; margin-right:10px;">
+                                Right after installing this module, a normal user can preview what they attached in the “Files” field.
+                                <img src="preview_img/image_5.png" alt="arrow" style="max-width:100%;"
+                                     class="border">
+                                <img src="preview_img/image_6.png" alt="arrow" style="max-width:100%;"
+                                     class="border">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WinDX Odoo Services -->
+    <div class="row pb-sm-5 px-1 pb-4">
+        <h2 class="w-100 text-center my-3" style="font-weight: 400;">WinDX Odoo Services</h2>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #4524a3">
+                <div class="pt-4">
+                    <img src="images/support.png" alt="support">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo
+                        Implementation</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #4524a3">
+                <div class="pt-4">
+                    <img src="images/apps.png" alt="apps">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Community
+                        Apps</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center"
+                 style="mmin-height: 90px; background-color: #4524a3 ">
+                <div class="pt-4">
+                    <img src="images/support2.png" alt="support2">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Support &amp;
+                        Maintenance</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #4524a3">
+                <div class="pt-4">
+                    <img src="images/custom.png" alt="custom">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo
+                        Customization</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #4524a3">
+                <div class="pt-4">
+                    <img src="images/integrated.png" alt="integrated">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Integration
+                        Services</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #4524a3">
+                <div class="pt-4">
+                    <img src="images/develop.png" alt="develop">
+                </div>
+                <div class="card-body" style="background-color: transparent !important">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Developer
+                        Outsourcing</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- WinDX Footer -->
+    <div class="row no-gutters mx-0 justify-content-sm-between justify-content-center"
+         style="border-top: 1px solid black;">
+        <div class="mb-sm-0 mb-3 d-flex align-items-center">
+            <img src="images/letter.svg" style="width: 35px;height: 35px;margin-right: 20px">
+            <span style="font-size: 18px;">windxcontact@gmail.com</span>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

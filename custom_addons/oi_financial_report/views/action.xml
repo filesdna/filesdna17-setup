@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record id="act_oi_fin_report" model="ir.actions.act_window">
+		<field name="name">Summary Report</field>
+		<field name="res_model">oi_fin.report</field>
+		<field name="view_mode">form</field>
+		<field name="target">inline</field>
+		<field name="binding_model_id" eval="False" />
+		<field name="context">{'form_view_initial_mode': 'edit','force_detailed_view': True, 'form_view_hide_buttons_edit' : True}</field>
+	</record>
+	
+	<record id="act_oi_fin_template_row" model="ir.actions.act_window">
+		<field name="name">Rows</field>
+		<field name="res_model">oi_fin.template_row</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<record id="act_oi_fin_template_column" model="ir.actions.act_window">
+		<field name="name">Columns</field>
+		<field name="res_model">oi_fin.template_column</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<record id="act_oi_fin_data" model="ir.actions.act_window">
+		<field name="name">Journal Entry Details</field>
+		<field name="res_model">oi_fin.data</field>
+		<field name="view_mode">form</field>
+		<field name="target">new</field>	
+	</record>
+		
+	<record id="act_oi_fin_aged_partner_template" model="ir.actions.act_window">
+		<field name="name">Aged Partner Balance</field>
+		<field name="res_model">oi_fin.aged.partner.template</field>
+		<field name="view_mode">tree,form</field>
+	</record>	
+
+	<record id="act_oi_fin_aged_partner_wizard" model="ir.actions.act_window">
+		<field name="name">Aged Partner Balance</field>
+		<field name="res_model">oi_fin.aged.partner.wizard</field>
+		<field name="view_mode">form</field>
+		<field name="target">inline</field>
+		<field name="binding_model_id" eval="False" />
+		<field name="context">{'form_view_initial_mode': 'edit','force_detailed_view': True, 'form_view_hide_buttons_edit' : True}</field>
+	</record>
+		
+	<record id="act_oi_fin_dimension" model="ir.actions.act_window">
+		<field name="name">Report Dimension</field>
+		<field name="res_model">oi_fin.dimension</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+		
+</odoo>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record model="oi_fin.report_source" id="report_source_empty">
+		<field name="name">Empty</field>
+	</record>
+			
+	<record model="oi_fin.report_source" id="report_source_account">
+		<field name="name">Account</field>
+		<field name="source_type">account</field>
+	</record>
+	
+	<record model="oi_fin.report_source" id="report_source_company">
+		<field name="name">Company</field>
+		<field name="source_type">company</field>
+	</record>	
+	
+	<record model="oi_fin.report_source" id="report_source_account_without_unaffected_earnings">
+		<field name="name">Account (Exclude Current Year Earnings)</field>
+		<field name="source_type">account</field>
+		<field name="account_type_ids" model="oi_fin.account.type" eval="obj().search([('value','!=', 'equity_unaffected')])" />
+	</record>
+			
+	<record model="oi_fin.report_source" id="report_source_account_type">
+		<field name="name">Account Type</field>
+		<field name="source_type">account_type</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_analytic">
+		<field name="name">Analytic Account</field>
+		<field name="source_type">analytic</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_partner">
+		<field name="name">Partner</field>
+		<field name="source_type">partner</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_country">
+		<field name="name">Partner Country</field>
+		<field name="source_type">country</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_product">
+		<field name="name">Product</field>
+		<field name="source_type">product</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_day">
+		<field name="name">Date</field>
+		<field name="source_type">day</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_week">
+		<field name="name">Week</field>
+		<field name="source_type">week</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_month">
+		<field name="name">Month</field>
+		<field name="source_type">month</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_quarter">
+		<field name="name">Quarter</field>
+		<field name="source_type">quarter</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_year">
+		<field name="name">Year</field>
+		<field name="source_type">year</field>
+		<field name="period_type">period</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_decade">
+		<field name="name">Decade</field>
+		<field name="source_type">decade</field>
+		<field name="period_type">period</field>
+	</record>
+	<!-- -->
+	<record model="oi_fin.report_source" id="report_source_day2">
+		<field name="name">Date Accumulative</field>
+		<field name="source_type">day</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_week2">
+		<field name="name">Week Accumulative</field>
+		<field name="source_type">week</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_month2">
+		<field name="name">Month Accumulative</field>
+		<field name="source_type">month</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_quarter2">
+		<field name="name">Quarter Accumulative</field>
+		<field name="source_type">quarter</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_year2">
+		<field name="name">Year Accumulative</field>
+		<field name="source_type">year</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_decade2">
+		<field name="name">Decade Accumulative</field>
+		<field name="source_type">decade</field>
+		<field name="period_type">accumulative</field>
+	</record>
+	<!-- -->
+	<record model="oi_fin.report_source" id="report_source_day3">
+		<field name="name">Date Balance</field>
+		<field name="source_type">day</field>
+		<field name="period_type">balance</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_week3">
+		<field name="name">Week Balance</field>
+		<field name="source_type">week</field>
+		<field name="period_type">balance</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_month3">
+		<field name="name">Month Balance</field>
+		<field name="source_type">month</field>
+		<field name="period_type">balance</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_quarter3">
+		<field name="name">Quarter Balance</field>
+		<field name="source_type">quarter</field>
+		<field name="period_type">balance</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_year3">
+		<field name="name">Year Balance</field>
+		<field name="source_type">year</field>
+		<field name="period_type">balance</field>
+	</record>
+	<record model="oi_fin.report_source" id="report_source_decade3">
+		<field name="name">Decade Balance</field>
+		<field name="source_type">decade</field>
+		<field name="period_type">balance</field>
+	</record>
+	<delete model="oi_fin.template" search="[('sample','=',True)]" />
+	<record model="oi_fin.template" id="report_template_1">
+		<field name="name">Account With Analytic</field>
+		<field name="sample" eval="1" />
+		<field name="columns" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_account') })]" />
+		<field name="rows" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_analytic') })]" />
+		<field name="add_summary_row" eval="1" />
+		<field name="add_summary_column" eval="1" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+	<record model="oi_fin.template" id="report_template_2">
+		<field name="name">Account With Partner</field>
+		<field name="sample" eval="1" />
+		<field name="columns" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_account') })]" />
+		<field name="rows" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_partner') })]" />
+		<field name="add_summary_row" eval="1" />
+		<field name="add_summary_column" eval="1" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+	<record model="oi_fin.template" id="report_template_3">
+		<field name="name">Account With Months</field>
+		<field name="sample" eval="1" />
+		<field name="columns" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_month') })]" />
+		<field name="rows" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_account') })]" />
+		<field name="add_summary_row" eval="1" />
+		<field name="add_summary_column" eval="1" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+	<record model="oi_fin.template" id="report_template_4">
+		<field name="name">Account With Months Accumulative</field>
+		<field name="sample" eval="1" />
+		<field name="columns" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_month2') })]" />
+		<field name="rows" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_account') })]" />
+		<field name="add_summary_row" eval="1" />
+		<field name="add_summary_column" eval="0" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+	<record model="oi_fin.template" id="report_template_5">
+		<field name="name">Account With Months Balance</field>
+		<field name="sample" eval="1" />
+		<field name="columns" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_month3') })]" />
+		<field name="rows" eval="[(0,0, { 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_account') })]" />
+		<field name="add_summary_row" eval="1" />
+		<field name="add_summary_column" eval="0" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+	
+</odoo>	

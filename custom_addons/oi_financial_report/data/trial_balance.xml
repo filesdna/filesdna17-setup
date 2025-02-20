@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<record model="oi_fin.template" id="template_trial_balance" forcecreate="True">
+		<field name="name">Trial Balance</field>
+		<field name="sample" eval="1" />
+		<field name="group_by" />
+		<field name="include_empty" eval="False" />
+		<field name="columns"
+			eval="[(5,),
+				(0,0, {'name' : 'Begin Balance', 'sequence' : 10,'source_type' :'amount', 'report_source_id' : ref('report_source_empty'),'amount_type' : 'balance','balance_type' : 'begin', 'special_filter' : 'initial_balance' }),
+				(0,0, {'name' : 'Debit', 'sequence' : 20,'source_type' :'amount', 'report_source_id' : ref('report_source_empty'),'amount_type' : 'debit', 'special_filter' : 'initial_balance' }),
+				(0,0, {'name' : 'Credit', 'sequence' : 30,'source_type' :'amount', 'report_source_id' : ref('report_source_empty'),'amount_type' : 'credit', 'special_filter' : 'initial_balance' }),
+				(0,0, {'name' : 'Total', 'sequence' : 40,'source_type' :'amount', 'report_source_id' : ref('report_source_empty'),'amount_type' : 'balance','balance_type' : 'end', 'special_filter' : 'initial_balance' })]" />
+		<field name="rows" eval="[(5,),
+			(0,0, { 'sequence' : 10,'source_type' :'amount','name':' ', 'report_source_id' : ref('report_source_account') }),
+			(0,0, { 'sequence' : 10,'source_type' :'amount','name':'Undistributed Profits/Losses', 'report_source_id' : ref('report_source_empty'), 'special_filter' : 'unallocated_earnings', 'none_zero' : True }),
+			
+			]" />
+		<field name="add_summary_row" eval="True" />
+		<field name="add_summary_column" eval="False" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+
+</odoo>

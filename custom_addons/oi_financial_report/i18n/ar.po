@@ -1,0 +1,2389 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oi_financial_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20210418\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-03 07:03+0000\n"
+"PO-Revision-Date: 2021-05-03 10:10+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_account_account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__account
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__account
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_account
+msgid "Account"
+msgstr "الحساب"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_account_without_unaffected_earnings
+msgid "Account (Exclude Current Year Earnings)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_account_code
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_account_code
+msgid "Account Code"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__account_domain
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__account_domain
+msgid "Account Domain"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__account_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__account_group_ids
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__account_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__account_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__account_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__account_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__account_group
+msgid "Account Group"
+msgstr "مجموعه الحساب"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Account Groups"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_account_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_account_name
+msgid "Account Name"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_account_tag
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_account_tag
+msgid "Account Tag"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__account_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__account_tag_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Account Tags"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_account_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__account_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__account_type
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_account_type
+msgid "Account Type"
+msgstr "نوع الحساب"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__account_type_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__account_type_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Account Types"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.report_template_1
+msgid "Account With Analytic"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.report_template_3
+msgid "Account With Months"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.report_template_4
+msgid "Account With Months Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.report_template_5
+msgid "Account With Months Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.report_template_2
+msgid "Account With Partner"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__account_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__account_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Accounts"
+msgstr "الحسابات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__balance_acc
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__balance_acc
+msgid "Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__action_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_menu__action_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__action_id
+msgid "Action"
+msgstr "إجراء"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__active
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__active
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__active
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__add_summary_column
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__add_summary_column
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__add_summary_column
+msgid "Add Summary Column"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__add_summary_row
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__add_summary_row
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__add_summary_row
+msgid "Add Summary Row"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_account__name2
+msgid "Additional Name"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_customers_advance
+msgid "Advance Payments received from customers"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_suppliers_advance
+msgid "Advance payments made to suppliers"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner
+msgid "Aged Partner Abstract"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner_line
+msgid "Aged Partner Abstract Line"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_aged_partner_template
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_aged_partner_wizard
+#: model:ir.ui.menu,name:oi_financial_report.menu_oi_fin_aged_partner_template
+#: model:ir.ui.menu,name:oi_financial_report.menu_oi_fin_aged_partner_wizard
+msgid "Aged Partner Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner_template
+msgid "Aged Partner Template"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner_template_line
+msgid "Aged Partner Template Line"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner_wizard
+msgid "Aged Partner Wizard"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_aged_partner_wizard_line
+msgid "Aged Partner Wizard Line"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_filter__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__target_move__all
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__target_move__all
+msgid "All Entries"
+msgstr "كافة القيود"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__source_type__amount
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__source_type__amount
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__source_type__amount
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__source_type__amount
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__source_type__amount
+msgid "Amount"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__report_source
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__report_source
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__report_source
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__report_source
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__report_source
+msgid "Amount Source"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__amount_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__amount_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__amount_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__amount_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__amount_type
+msgid "Amount Type"
+msgstr "نوع المبلغ"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Analytic"
+msgstr "تحليلي"
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_analytic_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_analytic_name
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__analytic
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__analytic
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__analytic
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__analytic
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__analytic
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__analytic
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_analytic
+#, python-format
+msgid "Analytic Account"
+msgstr "الحساب التحليلي"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_analytic_group_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_analytic_group_name
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__analytic_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__analytic_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__analytic_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__analytic_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__analytic_group
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__analytic_group
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_analytic_group
+msgid "Analytic Account Group"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__analytic_group_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__analytic_group_ids
+msgid "Analytic Account Groups"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_analytic_code
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_analytic_code
+#, python-format
+msgid "Analytic Account Reference"
+msgstr "مرجع الحساب التحليلي"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_analytic_tag
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_analytic_tag
+msgid "Analytic Account Tag"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__analytic_tag2_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__analytic_tag2_ids
+msgid "Analytic Account Tags"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__analytic_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__analytic_ids
+msgid "Analytic Accounts"
+msgstr "الحسابات التحليلية"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Analytic Tag"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Analytic Tags"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_aged_partner_template_search
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_dimension_search
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__average
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__average
+msgid "Average"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__avedev
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__avedev
+msgid "Average Absolute Deviation (AVEDEV)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_balance
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_balance
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__-balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__-balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__-balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__-balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__-balance
+msgid "Balance (Credit-Debit)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__balance
+msgid "Balance (Debit-Credit)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line__balance_cash_basis
+msgid "Balance Cash Basis"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.template_balance_sheet
+msgid "Balance Sheet"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__period_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__balance_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__balance_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__balance_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__balance_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__balance_type
+msgid "Balance Type"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_name
+msgid "Bank Statement"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_date
+msgid "Bank Statement Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_line_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_line_date
+msgid "Bank Statement Line Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_line_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_line_name
+msgid "Bank Statement Line Memo"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_line_note
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_line_note
+msgid "Bank Statement Line Notes"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_bank_statement_line_ref
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_bank_statement_line_ref
+msgid "Bank Statement Line Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_bank_cash
+msgid "Bank and Cash"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_dimension_form
+msgid "Base SQL From"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__base_sql_from
+msgid "Base Sql From"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__balance_type__begin
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__balance_type__begin
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__balance_type__begin
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__balance_type__begin
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__balance_type__begin
+msgid "Begin Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__special_filter__initial_balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__special_filter__initial_balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__special_filter__initial_balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__special_filter__initial_balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__special_filter__initial_balance
+msgid "Begin Balance Auto Adjustment for Expense/Revenue"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_line__condition__between
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_template_line__condition__between
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_wizard_line__condition__between
+msgid "Between"
+msgstr "بين"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__calc_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__calc_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__calc_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__calc_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__calc_type
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__source_type__calc
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__source_type__calc
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__source_type__calc
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__source_type__calc
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__source_type__calc
+msgid "Calculation"
+msgstr "عملية حسابية / حساب"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_data_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__cash_basis
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__cash_basis
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__cash_basis
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__cash_basis
+msgid "Cash Basis"
+msgstr "الأساس النقدي"
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.template_cash_flow_statement
+msgid "Cash Flow Statement"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_aged_partner_wizard_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Clear Form"
+msgstr "مسح معلومات الواجهة"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.report_oi_fin_report_page
+msgid "Close"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_template_column
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__columns
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__columns
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_datatmpl_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Columns"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__columns_count
+msgid "Columns Count"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__company_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__company_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__company_ids
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__company
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__company
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__company
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__company
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__company
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__company
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_company
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_datatmpl_form
+msgid "Company"
+msgstr "الشركة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__condition
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__condition
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__condition
+msgid "Condition"
+msgstr "الشرط"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_direct_costs
+msgid "Cost of Revenue"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Country"
+msgstr "الدولة"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_datatmpl_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Create Menu"
+msgstr "إنشاء القائمة"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_data_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Create Template"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__create_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__create_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__credit
+msgid "Credit"
+msgstr "الدائن"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__-credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__-credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__-credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__-credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__-credit
+msgid "Credit (-)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__col_balance__cr
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__col_balance__cr
+msgid "Credit - Debit"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__-balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__-balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__-balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__-balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__-balance+
+msgid "Credit Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line__credit_cash_basis
+msgid "Credit Cash Basis"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__credit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__special_filter__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__special_filter__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__special_filter__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__special_filter__credit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__special_filter__credit
+msgid "Credit Only"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__currency_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__currency_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__currency_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__currency_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__currency_rate
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__currency_rate_ids
+msgid "Currency Rate"
+msgstr "سعر صرف العملة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__currency_rate_date
+msgid "Currency Rate Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Currency Rates"
+msgstr "قيمة العملة"
+
+#. module: oi_financial_report
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_report_currency_rate_currency_uk
+msgid "Currency must be unique!"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_current_assets
+msgid "Current Assets"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_current_liabilities
+msgid "Current Liabilities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__data
+msgid "Data"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__date
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__day
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_day
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_day2
+msgid "Date Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_day3
+msgid "Date Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__debit
+msgid "Debit"
+msgstr "المدين"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__-debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__-debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__-debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__-debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__-debit
+msgid "Debit (-)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__col_balance__dr
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__col_balance__dr
+msgid "Debit - Credit"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__balance+
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__balance+
+msgid "Debit Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line__debit_cash_basis
+msgid "Debit Cash Basis"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__debit
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__special_filter__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__special_filter__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__special_filter__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__special_filter__debit
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__special_filter__debit
+msgid "Debit Only"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__decade
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_decade
+msgid "Decade"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_decade2
+msgid "Decade Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_decade3
+msgid "Decade Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_depreciation
+msgid "Depreciation"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__description
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_name__description
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__description
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__dimension_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__dimension_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__dimension_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__dimension_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__dimension_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__dimension_id
+msgid "Dimension"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_account__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_menu__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_name__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__display_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_report_oi_financial_report_report_oi_fin_report__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__/
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__/
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__/
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__/
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__/
+msgid "Divide"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_datatmpl_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Drop Menu"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_empty
+msgid "Empty"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__date_to
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__date_to
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__period_type__balance
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__balance_type__end
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__balance_type__end
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__balance_type__end
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__balance_type__end
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__balance_type__end
+msgid "Ending Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_date
+msgid "Entry Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_datatmpl
+#: model:ir.ui.menu,name:oi_financial_report.menu_datatmpl
+msgid "Entry Details Template"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_line_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_line_name
+msgid "Entry Label"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_month
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_month
+msgid "Entry Month"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_name
+msgid "Entry Number"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_ref
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_ref
+msgid "Entry Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_state
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_state
+msgid "Entry Status"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_equity
+msgid "Equity"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_aged_partner_wizard_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_data_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Excel"
+msgstr "إكسل"
+
+#. module: oi_financial_report
+#: model:ir.ui.menu,name:oi_financial_report.menu_root
+#: model:ir.ui.menu,name:oi_financial_report.menu_root_config
+msgid "Excel Reports"
+msgstr "تقارير الاكسل"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_expenses
+msgid "Expenses"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__filter_code
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_dimension_form
+msgid "Filter Code"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Filters"
+msgstr "الفلاتر"
+
+#. module: oi_financial_report
+#: model:ir.actions.report,name:oi_financial_report.act_report_oi_fin_report
+msgid "Financial Report"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_tag_financing
+msgid "Financing Activities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_fixed_assets
+msgid "Fixed Assets"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Function"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.datatmpl,name:oi_financial_report.datatmpl_general_ledger
+msgid "General Ledger"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_line__condition__>
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_template_line__condition__>
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_wizard_line__condition__>
+msgid "Greater Than"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__group_by
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__group_by
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__group_by
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__group_by
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__source_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__group_by
+msgid "Group By"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__group_columns
+msgid "Group Columns"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_account__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_menu__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_name__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__id
+#: model:ir.model.fields,field_description:oi_financial_report.field_report_oi_financial_report_report_oi_fin_report__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__include_empty
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__include_empty
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__include_empty
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__include_empty
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__include_empty
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__include_empty
+msgid "Include Empty Group"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__none_zero
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__none_zero
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__none_zero
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__none_zero
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__none_zero
+msgid "Include only if has value"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_revenue
+msgid "Income"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_move_narration
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_move_narration
+msgid "Internal Note"
+msgstr "ملاحظة داخلية"
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/abstracts/oi_fin_filter.py:0
+#, python-format
+msgid "Invalid Account Domain"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_tag_investing
+msgid "Investing & Extraordinary Activities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__is_mandatory_type
+msgid "Is Mandatory Type"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__is_period_type
+msgid "Is Period Type"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_journal
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_journal
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__journal
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__journal
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__journal
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__journal
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__journal
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Journal"
+msgstr "دفتر اليومية"
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_data
+#: model:ir.ui.menu,name:oi_financial_report.menu_oi_fin_data
+msgid "Journal Entry Details"
+msgstr "تفاصيل إدخال دفتر اليومية"
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__journal_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__journal_ids
+msgid "Journals"
+msgstr "دفاتر اليومية"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_account____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_menu____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_name____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source____last_update
+#: model:ir.model.fields,field_description:oi_financial_report.field_report_oi_financial_report_report_oi_fin_report____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__write_uid
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__write_date
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_line__condition__<
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_template_line__condition__<
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_wizard_line__condition__<
+msgid "Less Than"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__line_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__line_ids
+msgid "Line"
+msgstr "بند"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_liquidity
+msgid "Liquidity"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__max
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__max
+msgid "Maximum"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__mad
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__mad
+msgid "Median Absolute Deviation (MAD)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__menu_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_menu__menu_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__menu_id
+msgid "Menu"
+msgstr "القائمة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__min
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__min
+msgid "Minimum"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__month
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_month
+msgid "Month"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_month2
+msgid "Month Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_month3
+msgid "Month Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__multi_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__multi_company
+msgid "Multi Company"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_name__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_net_profit
+msgid "Net Profit"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_non_current_assets
+msgid "Non-current Assets"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_non_current_liabilities
+msgid "Non-current Liabilities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__operand_type__1
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__operand_type__1
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__operand_type__1
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__operand_type__1
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__operand_type__1
+msgid "Operand 1"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__operand_type__2
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__operand_type__2
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__operand_type__2
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__operand_type__2
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__operand_type__2
+msgid "Operand 1 & Operand 2"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__operand1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__operand1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__operand1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__operand1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__operand1
+msgid "Operand 1 Sequence"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__operand2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__operand2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__operand2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__operand2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__operand2
+msgid "Operand 2 Sequence"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__operand_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__operand_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__operand_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__operand_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__operand_type
+msgid "Operand Type"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_tag_operating
+msgid "Operating Activities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__other
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__other
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__other
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__other
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__other
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__other
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Other"
+msgstr "غير ذلك"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_other_income
+msgid "Other Income"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_partner_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_partner_name
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__partner
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__partner
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__partner
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__partner
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__partner
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__partner
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_partner
+#, python-format
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_partner_country
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_partner_country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__country
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__country
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_country
+msgid "Partner Country"
+msgstr "بلد العميل"
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_partner_ref
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_partner_ref
+#, python-format
+msgid "Partner Reference"
+msgstr "مرجع الشريك"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__partner_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__partner_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__partner_tag_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__partner_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__partner_category_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_datatmpl_form
+msgid "Partner Tags"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__country_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__country_ids
+msgid "Partner country"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__partner_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__partner_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Partners"
+msgstr "الشركاء"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner__type__payable
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_template__type__payable
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_wizard__type__payable
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_payable
+msgid "Payable"
+msgstr "الدائن"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_payable_partner
+msgid "Payable (By Partner)"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Payment Terms"
+msgstr "شروط الدفع"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__%
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__%
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__%
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__%
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__%
+msgid "Percentage"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_bank_statement_line__matched_percentage
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_move__matched_percentage
+#: model:ir.model.fields,field_description:oi_financial_report.field_account_payment__matched_percentage
+msgid "Percentage Matched"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__period_1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__period_1
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__period_1
+msgid "Period 1"
+msgstr "الفترة الأولى"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__period_2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__period_2
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__period_2
+msgid "Period 2"
+msgstr "الفترة الثانية"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__period_type__period
+msgid "Period Activity"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__period_type__accumulative
+msgid "Period Activity Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__stdev_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__stdev_p
+msgid "Population Standard Deviation (STDEV.P)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__var_p
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__var_p
+msgid "Population Variance (VAR.P)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_filter__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__target_move__posted
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__target_move__posted
+msgid "Posted Entries"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_prepayments
+msgid "Prepayment"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_aged_partner_wizard_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Preview"
+msgstr "معاينة"
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_aged_partner_wizard_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_data_form
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_report_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_product_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_product_name
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__group_by__product
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__group_by__product
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__group_by__product
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__group_by__product
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__product
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__group_by__product
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_product
+msgid "Product"
+msgstr "المنتج"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__product_category_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__product_category_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Product Categories"
+msgstr "فئات المنتجات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_product_category
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_product_category
+msgid "Product Category"
+msgstr "فئة المنتج"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_product_code
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_product_code
+msgid "Product Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__product_ids
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__product_ids
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.template_profit_and_loss
+msgid "Profit and Loss"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__report_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__report_id
+msgid "QWeb Report"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_product_quantity
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_product_quantity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__quantity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__quantity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__quantity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__quantity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__quarter
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_quarter
+msgid "Quarter"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_quarter2
+msgid "Quarter Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_quarter3
+msgid "Quarter Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__operand_type__3
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__operand_type__3
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__operand_type__3
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__operand_type__3
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__operand_type__3
+msgid "Range (Operand 1 to Operand 2)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__rate
+msgid "Rate"
+msgstr "السعر"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner__type__receivable
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_template__type__receivable
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_aged_partner_wizard__type__receivable
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_receivable
+msgid "Receivable"
+msgstr "المدين"
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_receivable_partner
+msgid "Receivable (By Partner)"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_currency_rate__report_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__report
+msgid "Report"
+msgstr "التقرير"
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_dimension
+#: model:ir.ui.menu,name:oi_financial_report.menu_oi_fin_dimension
+msgid "Report Dimension"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_report_source_tree
+#: model:ir.ui.menu,name:oi_financial_report.menu_report_source
+msgid "Report Source"
+msgstr "مصدر التقرير"
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_template_tree
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__report_template
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__report_template
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__report_template
+#: model:ir.ui.menu,name:oi_financial_report.menu_report_template
+msgid "Report Template"
+msgstr "نموذج التقرير"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__report_template
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__report_template
+msgid "Report Wizard"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__amount_residual
+msgid "Residual Amount"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__amount_type__-amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__amount_type__-amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__amount_type__-amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__amount_type__-amount_residual
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__amount_type__-amount_residual
+msgid "Residual Amount (-)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_template_row
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__rows
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__rows
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Rows"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__rows_count
+msgid "Rows Count"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_template_form
+msgid "Run Report"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_dimension_form
+msgid "SQL From"
+msgstr ""
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Salesperson"
+msgstr "رجل المبيعات"
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/models/oi_fin_aged_partner_wizard.py:0
+#, python-format
+msgid "Salesperson ID"
+msgstr "رقم هوية رجل المبيعات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__sample
+msgid "Sample"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__stdev_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__stdev_s
+msgid "Sample Standard Deviation (STDEV.S)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__var_s
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__var_s
+msgid "Sample Variance (VAR.S)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_line__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__sequence
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__sequence
+msgid "Sequence"
+msgstr "المسلسل"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_analytic_account_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_analytic_account_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_analytic_account_name
+msgid "Show Analytic Account Name"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_analytic_account_reference
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_analytic_account_reference
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_analytic_account_reference
+msgid "Show Analytic Account Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_analytic_tags
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_analytic_tags
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_analytic_tags
+msgid "Show Analytic Tags"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__begin_balance
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__begin_balance
+msgid "Show Begin Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_company
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_company
+msgid "Show Company"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_details
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_details
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_details
+msgid "Show Details"
+msgstr "إظهار التفاصيل"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_partner_tag
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_partner_tag
+msgid "Show Partner Tags"
+msgstr "إظهار شروط الدفع"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_payment_terms
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_payment_terms
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_payment_terms
+msgid "Show Payment Terms"
+msgstr "إظهار أسم رجل المبيعات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_salesperson_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_salesperson_name
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_salesperson_name
+msgid "Show Salesperson Name"
+msgstr "إظهار مرجع رجل المبيعات"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner__show_salesperson_reference
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template__show_salesperson_reference
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__show_salesperson_reference
+msgid "Show Salesperson Reference"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__show_transaction
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__show_transaction
+msgid "Show Transaction Details"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__source_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__source_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__source_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__source_type
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__source_type
+msgid "Source Type"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__special_filter
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__special_filter
+msgid "Special Filter"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_dimension__sql_from
+msgid "Sql From"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__devsq
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__devsq
+msgid "Squared Deviation (DEVSQ)"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_column_t__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_row_t__date_from
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template_source__date_from
+msgid "Start Date"
+msgstr "تاريخ البداية"
+
+#. module: oi_financial_report
+#: code:addons/oi_financial_report/abstracts/oi_fin_template_source.py:0
+#, python-format
+msgid "Start Date > End Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__-
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__-
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__-
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__-
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__-
+msgid "Subtract"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_column_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__summary_row_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_column_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_summary__summary_row_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_column_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__summary_row_func__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__calc_type__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__calc_type__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__calc_type__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__calc_type__sum
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__calc_type__sum
+msgid "Sum"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__summary_column_func
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__summary_column_func
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__summary_column_func
+msgid "Summary Column Func"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.act_window,name:oi_financial_report.act_oi_fin_report
+#: model:ir.ui.menu,name:oi_financial_report.menu_oi_fin_report
+msgid "Summary Report"
+msgstr "تقرير موجز"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__summary_row_func
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_summary__summary_row_func
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__summary_row_func
+msgid "Summary Row Func"
+msgstr ""
+
+#. module: oi_financial_report
+#: model_terms:ir.ui.view,arch_db:oi_financial_report.view_oi_fin_filter_form
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_filter__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_group__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report_source__target_move
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_template__target_move
+msgid "Target Moves"
+msgstr "تحركات الهدف"
+
+#. module: oi_financial_report
+#: model:ir.model.fields,help:oi_financial_report.field_account_move_line__balance_cash_basis
+msgid ""
+"Technical field holding the debit_cash_basis - credit_cash_basis in order "
+"to open meaningful graph views from reports"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,help:oi_financial_report.field_account_bank_statement_line__matched_percentage
+#: model:ir.model.fields,help:oi_financial_report.field_account_move__matched_percentage
+#: model:ir.model.fields,help:oi_financial_report.field_account_payment__matched_percentage
+msgid "Technical field used in cash basis method"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_template_line__template_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard__template_id
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__template
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__template
+msgid "Template"
+msgstr "قالب"
+
+#. module: oi_financial_report
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_dimension_name_uniq
+msgid "The name must be unique !"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_datatmpl_name_uniq
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_name_name_uniq
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_report_source_name_uniq
+#: model:ir.model.constraint,message:oi_financial_report.constraint_oi_fin_template_name_uniq
+msgid "The name of the source must be unique !"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__source_type__title
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__source_type__title
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__source_type__title
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__source_type__title
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__source_type__title
+msgid "Title"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_report__transaction_date
+msgid "Transaction Date"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.template,name:oi_financial_report.template_trial_balance
+msgid "Trial Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_unallocated_earnings
+msgid "Unallocated Earnings"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_unclassified_activities
+msgid "Unclassified Activities"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column__special_filter__unallocated_earnings
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_column_t__special_filter__unallocated_earnings
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row__special_filter__unallocated_earnings
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_row_t__special_filter__unallocated_earnings
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template_source__special_filter__unallocated_earnings
+msgid "Undistributed Profits/Losses"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_data__col_product_uom
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_datatmpl__col_product_uom
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_filter__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__target_move__draft
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__target_move__draft
+msgid "Unposted"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__week
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_week
+msgid "Week"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_week2
+msgid "Week Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_week3
+msgid "Week Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields,field_description:oi_financial_report.field_oi_fin_aged_partner_wizard_line__wizard_id
+msgid "Wizard"
+msgstr "المعالج"
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__source_type__year
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_year
+msgid "Year"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_year2
+msgid "Year Accumulative"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:oi_fin.report_source,name:oi_financial_report.report_source_year3
+msgid "Year Balance"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_filter__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__special_filter__liquidity
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__special_filter__liquidity
+msgid "liquidity Entry"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_data__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_datatmpl__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_filter__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_group__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_report_source__special_filter__liquidity-related
+#: model:ir.model.fields.selection,name:oi_financial_report.selection__oi_fin_template__special_filter__liquidity-related
+msgid "liquidity Entry or liquidity Related"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.actions.report,print_report_name:oi_financial_report.act_report_oi_fin_report
+msgid "object.name"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_data
+msgid "oi_fin.data"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_datatmpl
+msgid "oi_fin.datatmpl"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_dimension
+msgid "oi_fin.dimension"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_filter
+msgid "oi_fin.filter"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_group
+msgid "oi_fin.group"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_menu
+msgid "oi_fin.menu"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_name
+msgid "oi_fin.name"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_report
+msgid "oi_fin.report"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_report_currency_rate
+msgid "oi_fin.report.currency_rate"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_report_source
+msgid "oi_fin.report_source"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_summary
+msgid "oi_fin.summary"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template
+msgid "oi_fin.template"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template_column
+msgid "oi_fin.template_column"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template_column_t
+msgid "oi_fin.template_column_t"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template_row
+msgid "oi_fin.template_row"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template_row_t
+msgid "oi_fin.template_row_t"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_oi_fin_template_source
+msgid "oi_fin.template_source"
+msgstr ""
+
+#. module: oi_financial_report
+#: model:ir.model,name:oi_financial_report.model_report_oi_financial_report_report_oi_fin_report
+msgid "report.oi_financial_report.report_oi_fin_report"
+msgstr ""
