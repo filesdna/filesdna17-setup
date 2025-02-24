@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Custody Property form view -->
+    <record model='ir.ui.view' id='scrap_property_view_form'>
+        <field name="name">scrap_property_view_form</field>
+        <field name="model">scrap.property</field>
+        <field name="arch" type="xml">
+            <form string="Equipments">
+                <sheet>
+                    <group>
+                        <field name="custody_property"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Custody Property tree view -->
+    <record id="scrap_property_view_tree" model="ir.ui.view">
+        <field name="name">scrap_property_view_tree</field>
+        <field name="model">scrap.property</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom" create="0">
+                <field name="custody_property" readonly="1"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Custody Property action -->
+    <record id="scrap_property_action" model="ir.actions.act_window">
+        <field name="name">Scrap</field>
+        <field name="res_model">scrap.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to Create a New Record.
+            </p>
+        </field>
+    </record>
+    <!-- Custody Property menu -->
+    <menuitem action="scrap_property_action" id="menu_scrap_property"
+              parent="hr_custody.hr_custody_main_menu"
+              name="Scrap" sequence="10"/>
+</odoo>

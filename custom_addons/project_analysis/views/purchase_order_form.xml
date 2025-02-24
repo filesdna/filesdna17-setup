@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+        <record id="purchase_order_form_view_inherit" model="ir.ui.view">
+            <field name="name">purchase.order.form.view.inherit</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_ref']" position="after">
+                    <field name="project_id" placeholder="Select Project"/>
+                </xpath>
+            </field>
+        </record>
+<!--        <record id="purchase_order_form_view" model="ir.ui.view">-->
+<!--            <field name="name">purchase.order.form.view</field>-->
+<!--            <field name="model">purchase.order</field>-->
+<!--            <field name="inherit_id" ref="purchase.purchase_order_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//header" position="inside">-->
+<!--                    &lt;!&ndash; Receive Products Button (Only if order is in 'purchase' or 'done' and has incoming pickings) &ndash;&gt;-->
+<!--                    <button name="action_view_picking"-->
+<!--                            string="Receive Products"-->
+<!--                            type="object"-->
+<!--                            class="oe_highlight"-->
+<!--                            groups="stock.group_stock_user"-->
+<!--                            invisible="is_shipped or state not in ('purchase', 'done') or incoming_picking_count = 0"/>-->
+
+<!--                    &lt;!&ndash; Create Bill Button (Now requires products to be received first) &ndash;&gt;-->
+<!--                    <button name="action_create_invoice"-->
+<!--                            string="Create Bill"-->
+<!--                            type="object"-->
+<!--                            class="btn-primary"-->
+<!--                            groups="account.group_account_user"-->
+<!--                            invisible="state not in ('purchase', 'done') or invoice_status in ('no', 'invoiced') or incoming_picking_count > 0"/>-->
+<!--                </xpath>-->
+
+<!--            </field>-->
+<!--        </record>-->
+</odoo>

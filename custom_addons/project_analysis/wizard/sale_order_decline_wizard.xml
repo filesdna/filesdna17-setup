@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_decline_wizard" model="ir.ui.view">
+        <field name="name">sale_order_decline_wizard</field>
+        <field name="model">sale.order.decline.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reply">
+                <group>
+                    <group>
+                        <!--                        <field name="sale_order_id"/>-->
+                        <field name="reason"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Submit" type="object" name="confirm_decline" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_order_decline_wizard" model="ir.actions.act_window">
+        <field name="name">action_sale_order_decline_wizard</field>
+        <field name="res_model">sale.order.decline.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

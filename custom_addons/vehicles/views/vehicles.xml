@@ -1,0 +1,45 @@
+<odoo>
+    <record id="vehicles_view_tree" model="ir.ui.view">
+        <field name="name">vehicles tree</field>
+        <field name="model">vehicles</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="vehicles_type"/>
+                <field name="employee_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vehicles_view_form" model="ir.ui.view">
+        <field name="name">vehicles form</field>
+        <field name="model">vehicles</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="employee_id"/>
+                            <field name="employee_ids" widget="one2many" invisible="1"/>
+                            <field name="vehicles_type"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="vehicles_action" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">vehicles</field>
+    </record>
+    <menuitem
+            id='vehicles_ment_items'
+            name="Vehicles"
+            parent="vehicles_menu"
+            action="vehicles_action"/>
+</odoo>

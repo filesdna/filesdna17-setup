@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <!-- Inherit Expense Form View -->
+        <record id="hr_expense_form_inherit" model="ir.ui.view">
+            <field name="name">hr.expense.form.inherit</field>
+            <field name="model">hr.expense</field>
+            <field name="inherit_id" ref="hr_expense.hr_expense_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group" position="inside">
+                    <group>
+                        <!-- Add the computed field (hidden) -->
+                        <field name="available_project_ids" invisible="1"/>
+
+                        <!-- Apply the domain correctly -->
+                        <field name="project_id"
+                               string="Project"
+                               domain="[('id', 'in', available_project_ids)]"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
