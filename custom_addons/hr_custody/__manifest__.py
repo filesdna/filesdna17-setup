@@ -44,7 +44,6 @@
         'views/hr_custody_views.xml',
         'views/custody_property_views.xml',
         'views/hr_employee_views.xml',
-        'views/scrap_property.xml',
         'views/product_template_inherit.xml',
         'reports/report_custody_views.xml',
         # 'reports/custody_report.xml',
@@ -54,6 +53,12 @@
         'wizard/custody_report_search.xml',
 
     ],
+
+    'assets': {
+        'web.assets_backend': [
+            'hr_custody/static/src/css/min_3.css',
+        ],
+    },
     'demo': ['data/demo_data.xml'],
     'images': ['static/description/banner.jpg'],
     'license': 'LGPL-3',

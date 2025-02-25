@@ -20,5 +20,4 @@ access_custody_report_search_user,custody.report.search.user,model_custody_repor
 access_project_report_manager,project.report.manager,model_project_report,hr.group_hr_manager,1,1,1,1
 access_project_report_user,project.report.user,model_project_report,hr.group_hr_user,1,1,1,1
 
-access_scrap_property_manager,scrap.property.manager,model_scrap_property,hr.group_hr_manager,1,1,1,1
-access_scrap_property_user,scrap.property.user,model_scrap_property,hr.group_hr_user,1,1,1,1
+

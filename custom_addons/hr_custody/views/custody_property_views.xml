@@ -9,9 +9,7 @@
                 <sheet>
                     <header>
                         <field name="state" widget="statusbar"/>
-                        <button name="action_scrap" string="Scrap" type="object"
-                                class="oe_inline oe_button btn-danger"
-                        invisible="state == 'scrap'"/>
+
                     </header>
                     <field name="image" widget='image' class="oe_avatar"/>
                     <div class="oe_title">
@@ -21,9 +19,17 @@
                     </div>
                     <group>
                         <group>
+                            <field name="hr_custody" readonly="1" invisible="1"/>
+                            <field name="employee_custody" invisible="1"/>
                             <field name="property_selection" widget="radio"/>
                             <field name="product_template_id"
                                    invisible=" property_selection != 'product'"/>
+                            <field name="stock_lot"
+                                   invisible=" property_selection != 'product'"/>
+                            <field name="vendor_purchase"
+                                   invisible="property_selection != 'product' or not product_template_id"/>
+                            <field name="product_purchase_price"
+                                   invisible="property_selection != 'product' or not product_template_id"/>
                             <field name="company_id"
                                    options="{'no_create': True}"/>
                             <field name="state"/>
@@ -45,11 +51,22 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="hr_custody" column_invisible="1"/>
+                <field name="employee_custody"/>
+                <field name="vendor_purchase"/>
+                <field name="product_purchase_price"/>
+                <field name="archive" column_invisible="1"/>
                 <field name="state"
                        decoration-primary="state == 'new'"
                        decoration-success="state == 'good_conditions'"
                        decoration-danger="state == 'scrap'"
                        widget="badge"/>
+                <button name="action_scrap" string="Scrap" type="object"
+                        class="oe_inline oe_button btn-danger"
+                        invisible="state == 'scrap' or archive == True"/>
+                <button name="action_return" string="Return" type="object"
+                        class="oe_inline oe_button btn-secondary"
+                        invisible="archive == False"/>
             </tree>
         </field>
     </record>
@@ -58,6 +75,7 @@
         <field name="name">Product</field>
         <field name="res_model">custody.property</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('archive', '=', False)]</field> <!-- إضافة شرط التصفية -->
         <field name="help" type="html">
             <p class="oe_view_nocontent_create">
                 Click to Create a New Record.
@@ -68,4 +86,22 @@
     <menuitem action="custody_property_action" id="hr_property_menu"
               parent="hr_custody.hr_custody_main_menu"
               name="Product" sequence="5" groups="hr.group_hr_manager"/>
+
+
+    <!--Scrap Property-->
+    <record id="scrap_property_action" model="ir.actions.act_window">
+        <field name="name">Scrap</field>
+        <field name="res_model">custody.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('archive', '=', True)]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to Create a New Record.
+            </p>
+        </field>
+    </record>
+    <!-- Custody Property menu -->
+    <menuitem action="scrap_property_action" id="hr_scrap_property_menu"
+              parent="hr_custody_main_menu"
+              name="Scrap" sequence="10"/>
 </odoo>

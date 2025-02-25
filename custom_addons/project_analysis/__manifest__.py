@@ -35,6 +35,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/sale_order_views.xml',
+        'views/crm_lead_views.xml',
         # 'data/hr_payroll_groups.xml',
         'views/hr_attendance_inherit.xml',
         'views/hr_expense_view.xml',

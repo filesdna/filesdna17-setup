@@ -98,7 +98,24 @@ class HrCustody(models.Model):
             and assigns it to the 'name' field."""
         for val in vals:
             val['name'] = self.env['ir.sequence'].next_by_code('hr.custody')
+            if 'property_custody_id' in val:
+                property_custody_ids = val['property_custody_id'][0][1]
+                if property_custody_ids:
+                    self.env['custody.property'].browse(property_custody_ids).write({'state': 'good_conditions'})
         return super(HrCustody, self).create(vals)
+
+    #
+    # @api.model_create_multi
+    # def create(self, vals):
+    #     """Create a new record for the HrCustody model."""
+    #     records = super(HrCustody, self).create(vals)
+    #     for val in vals:
+    #         val['name'] = self.env['ir.sequence'].next_by_code('hr.custody')
+    #         if 'property_custody_id' in val:
+    #             property_custody_ids = val['property_custody_id'][0][1]
+    #             if property_custody_ids:
+    #                 self.env['custody.property'].browse(property_custody_ids).write({'state': 'good_conditions'})
+    #     return records
 
     def sent(self):
         """Move the current record to the 'to_approve' state."""
@@ -153,12 +170,12 @@ class HrCustody(models.Model):
         self.state = 'returned'
         self.return_date = date.today()
 
-    @api.constrains('return_date')
-    def validate_return_date(self):
-        """The function validate the return
-        date to ensure it is after the request date"""
-        if self.return_date < self.date_request:
-            raise ValidationError(_('Please Give Valid Return Date'))
+    # @api.constrains('return_date')
+    # def validate_return_date(self):
+    #     """The function validate the return
+    #     date to ensure it is after the request date"""
+    #     if self.return_date < self.date_request:
+    #         raise ValidationError(_('Please Give Valid Return Date'))
 
     name = fields.Char(string='Code', copy=False,
                        help='A unique code assigned to this record.')
@@ -184,11 +201,22 @@ class HrCustody(models.Model):
                                       self: self.env.user.employee_id.id, )
     purpose = fields.Char(string='Reason', track_visibility='always',
                           help='The reason or purpose of the custody')
+    property_custody_id = fields.One2many('custody.property', 'hr_custody')
+
     custody_property_id = fields.Many2many('custody.property',
-                                          string='Product', required=True,
-                                          help='The property associated '
-                                               'with this custody record'
-                                          )
+                                           string='Product', required=True,
+                                           help='The property associated '
+                                                'with this custody record'
+                                           )
+
+    @api.onchange('property_custody_id')
+    def _onchange_property_custody_id(self):
+        """Automatically copy the selected items from property_custody_id to custody_property_id."""
+        if self.property_custody_id:
+            self.custody_property_id = [(6, 0, self.property_custody_id.ids)]
+        else:
+            self.custody_property_id = [(5, 0, 0)]
+
     return_date = fields.Date(string='Return Date',
                               track_visibility='always',
                               help='The date when the custody '
@@ -213,3 +241,6 @@ class HrCustody(models.Model):
                                   help='Indicates whether an email has '
                                        'been sent or not.')
     project_id = fields.Many2one('project.project')
+
+
+

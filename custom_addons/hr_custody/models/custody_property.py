@@ -57,35 +57,39 @@ class CustodyProperty(models.Model):
                                           string='Property From',
                                           help="Select the property")
 
-    product_id = fields.Many2one('product.product',
-                                 string='Product', help="Select the Product", domain="[('is_custody', '=', True)]")
+    archive = fields.Boolean()
+
     product_template_id = fields.Many2one('product.template', domain="[('is_custody', '=', True)]")
-
-    @api.onchange('product_id')
-    def onchange_product(self):
-        if self.product_id:
-            self.product_template_id = self.product_id.id
-
-
+    vendor_purchase = fields.Many2one('product.supplierinfo', domain="[('product_tmpl_id', '=', product_template_id)]")
+    product_purchase_price = fields.Float(related='vendor_purchase.price', store=True)
+    stock_lot = fields.Many2one('stock.lot',  domain="[('product_id', '=', product_template_id)]")
+    hr_custody = fields.Many2one('hr.custody')
+    employee_custody = fields.Many2one(related='hr_custody.employee_id')
     state = fields.Selection([
         ('new', 'New'),
         ('good_conditions', 'Good Conditions'),
-        ('scrap', 'Scrap')], default='new')
+        ('scrap', 'Scrap'),
+    ], default='new')
 
-    @api.onchange('product_id')
+    @api.onchange('product_template_id', 'stock_lot')
     def onchange_product(self):
         """The function is used to
             change product Automatic
             fill name field"""
-        if self.product_id:
-            self.name = self.product_id.name
+        if self.product_template_id and self.stock_lot:
+            self.name = f"{self.product_template_id.name} - {self.stock_lot.name}"
+        elif self.product_template_id:
+            self.name = self.product_template_id.name
+        elif self.stock_lot:
+            self.name = self.stock_lot.name
 
     def action_scrap(self):
         print('action_scrap')
-        product_id = self.id
-
-        scrap_property = self.env['scrap.property'].create({
-            'custody_property': product_id,
-        })
+        self.archive = True
         self.state = 'scrap'
-        print('scrap_property=', scrap_property)
+
+    def action_return(self):
+        print('action_return')
+        self.archive = False
+        self.state = 'new'
+

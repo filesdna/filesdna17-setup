@@ -23,6 +23,30 @@ class SaleOrderLine(models.Model):
         tracking=True  # Enables automatic tracking in chatter
     )
 
+    invoice_status = fields.Selection([
+        ('no', 'No Invoice'),
+        ('to invoice', 'To Invoice'),
+        ('invoiced', 'Fully Invoiced'),
+        ('partially invoiced', 'Partially Invoiced'),
+    ], string="Invoice Status", store=True, readonly=True, compute="_compute_invoice_status")
+
+    @api.depends('qty_invoiced', 'qty_delivered', 'product_uom_qty', 'order_id.invoice_ids')
+    def _compute_invoice_status(self):
+        for line in self:
+            total_invoiced = sum(line.order_id.invoice_ids.mapped('amount_total'))
+            total_order = sum(line.order_id.order_line.mapped('price_subtotal'))
+
+            if total_invoiced >= total_order:
+                line.invoice_status = 'invoiced'
+            elif total_invoiced > 0:
+                line.invoice_status = 'partially invoiced'
+            elif line.qty_delivered > 0:
+                line.invoice_status = 'to invoice'
+            else:
+                line.invoice_status = 'no'
+
+            print(f"[DEBUG] Line {line.name} Invoice Status Updated: {line.invoice_status}")
+
     def write(self, vals):
         for record in self:
             changes = []

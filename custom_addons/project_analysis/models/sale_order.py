@@ -53,6 +53,34 @@ class BSSaleOrder(models.Model):
     )
 
     project_id = fields.Many2one('project.project', string="Related Project")
+    invoice_status = fields.Selection([
+        ('upselling', 'Upselling Opportunity'),
+        ('no', 'No Invoice'),
+        ('to invoice', 'To Invoice'),
+        ('invoiced', 'Fully Invoiced'),
+        ('partially invoiced', 'Partially Invoiced'),
+    ], string='Invoice Status', compute='_compute_invoice_status', store=True, readonly=True)
+
+    @api.depends('order_line.invoice_status')
+    def _compute_invoice_status(self):
+        """Compute the invoice status based on invoiced amounts."""
+        for order in self:
+            if all(line.invoice_status == 'invoiced' for line in order.order_line):
+                order.invoice_status = 'invoiced'  # ✅ Fully Invoiced
+            elif any(line.invoice_status == 'to invoice' for line in order.order_line):
+                order.invoice_status = 'to invoice'  # ✅ Some items need to be invoiced
+            elif any(line.invoice_status == 'partially invoiced' for line in order.order_line):
+                order.invoice_status = 'partially invoiced'  # ✅ Partial Invoice
+            else:
+                order.invoice_status = 'no'  # ✅ No invoice needed
+
+    def action_invoice_create(self):
+        """Create invoice and update invoice status"""
+        invoices = super(BSSaleOrder, self).action_invoice_create()
+        for order in self:
+            order.order_line._compute_invoice_status()  # 🔄 Force order line update
+            order._compute_invoice_status()  # 🔄 Force order update
+        return invoices
 
     @api.onchange('project_id')
     def _onchange_project_id(self):

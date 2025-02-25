@@ -11,18 +11,18 @@
                     <field name="decline_reason" string="Decline Reason"
                            readonly="True" invisible="state != 'estimate'"/>
                 </xpath>
-                <xpath expr="//button[@id='create_invoice']" position="attributes">
-                    <attribute name="invisible">state != 'accounts'</attribute>
-                    <attribute name="groups">account.group_account_user</attribute>
-                </xpath>
 
-
-                <xpath expr="//header" position="inside">
+                <xpath expr="//header/button[@id='create_invoice']" position="before">
                     <button name="action_open_purchase_order" string="Create Purchase Order"
                             type="object" class="oe_highlight"
                             groups="account.group_account_user"
                             invisible="state != 'accounts'"/>
                 </xpath>
+                <xpath expr="//button[@id='create_invoice']" position="attributes">
+                    <attribute name="invisible">state != 'accounts' or invoice_status == 'invoiced'</attribute>
+                    <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
+
                 <xpath expr="//header" position="inside">
                     <button name="action_reset_to_approve"
                             string="Resend for Approval"
@@ -37,7 +37,7 @@
                             invisible="state != 'estimate'"/>
 
                     <button name="action_approve" string="Approve" type="object" class="oe_highlight"
-                            invisible="state != 'toapprove' or not approver_id or approver_id != uid"/>
+                            invisible="state != 'toapprove'  or not approver_id or approver_id != uid"/>
 
                     <button name="action_decline_estimation" string="Decline Estimation" type="object"
                             class="btn-danger"

@@ -11,17 +11,17 @@
                     <!-- 📌 Sales Tab -->
                     <page string="Sales">
 
-                            <field name="sale_order_ids">
-                                <tree>
-                                    <field name="name"/>
-                                    <field name="partner_id" string="Customer"/>
-                                    <field name="date_order"/>
-                                    <field name="amount_total" widget="monetary"
-                                           options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
-                                    <field name="currency_id"/>
-                                    <field name="state" string="Status"/>
-                                </tree>
-                            </field>
+                        <field name="sale_order_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="partner_id" string="Customer"/>
+                                <field name="date_order"/>
+                                <field name="amount_total" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
+                                <field name="currency_id"/>
+                                <field name="state" string="Status"/>
+                            </tree>
+                        </field>
 
 
                         <!-- 💰 Total Sales Summary -->
@@ -36,16 +36,16 @@
                     <!-- 📌 Expenses Tab -->
                     <page string="Expenses">
 
-                            <field name="expense_ids">
-                                <tree>
-                                    <field name="name"/>
-                                    <field name="total_amount" widget="monetary"
-                                           options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
-                                    <field name="employee_id"/>
-                                    <field name="date"/>
-                                    <field name="state"/>
-                                </tree>
-                            </field>
+                        <field name="expense_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="total_amount" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
+                                <field name="employee_id"/>
+                                <field name="date"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
 
 
                         <!-- 💸 Total Expenses Summary -->
@@ -60,15 +60,15 @@
                     <!-- 📌 Purchases Tab -->
                     <page string="Purchases">
 
-                            <field name="purchase_order_ids">
-                                <tree editable="bottom">
-                                    <field name="name"/>
-                                    <field name="date_order"/>
-                                    <field name="amount_total" widget="monetary"
-                                           options="{'currency_field': 'currency_id'}"
-                                           class="oe_highlight"/>
-                                </tree>
-                            </field>
+                        <field name="purchase_order_ids">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="date_order"/>
+                                <field name="amount_total" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}"
+                                       class="oe_highlight"/>
+                            </tree>
+                        </field>
 
 
                         <!-- 📦 Total Purchases Summary -->
@@ -83,18 +83,18 @@
                     <!-- ⚒️ Labor Cost Tab -->
                     <page string="Labor Cost">
                         r
-                            <button name="action_recompute_hours_salary"
-                                    type="object"
-                                    string="Recompute Hours"
-                                    class="btn-primary"
-                                    icon="fa-refresh"/>
+                        <button name="action_recompute_hours_salary"
+                                type="object"
+                                string="Recompute Hours"
+                                class="btn-primary"
+                                icon="fa-refresh"/>
 
                         <!-- 🏗 Employee Labor Cost Table -->
                         <separator string="Employee Labor Cost Details" colspan="4"/>
                         <field name="labor_cost_ids">
                             <tree editable="bottom">
                                 <field name="employee_id"/>
-                                <field name="task_id" string ="Task"/>
+                                <field name="task_id" string="Task"/>
                                 <field name="hourly_wage"/>
                                 <field name="total_working_hours" string="Total Working Hours"/>
                                 <field name="total_overtime_hours" string="Total Overtime Hours"/>

@@ -63,11 +63,13 @@
                             <field name="employee_id"
                                    readonly="is_read_only == False"/>
                             <field name="project_id"/>
+                            <field name="property_custody_id" widget="many2many_tags"/>
                             <field name="custody_property_id"
                                    options="{'no_open':True,'no_create':True}"
                                    domain="[('company_id','child_of',[company_id])]"
                                    readonly="state != 'draft'"
-                                   widget="many2many_tags"/>
+                                   widget="many2many_tags"
+                                   invisible="1"/>
                             <field name="is_renew_return_date"
                                    invisible="1"/>
                             <field name="is_renew_reject" invisible="1"/>
@@ -113,7 +115,7 @@
             <tree>
                 <field name="name"/>
                 <field name="employee_id"/>
-                <field name="custody_property_id"/>
+                <field name="custody_property_id" widget="many2many_tags" class="custom-size"/>
                 <field name="purpose"/>
                 <field name="date_request"/>
                 <field name="return_date"/>
