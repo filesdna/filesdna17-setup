@@ -1,0 +1,177 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tenant_module_upgrade
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:47+0000\n"
+"PO-Revision-Date: 2023-05-20 16:58+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar_SA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: tenant_module_upgrade
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_db_upgrade_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__upgrade_bool
+msgid "Check"
+msgstr "التحقق"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__create_uid
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__create_date
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__create_date
+msgid "Created on"
+msgstr "إنشاه في"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__display_name
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__id
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__installed
+msgid "Installed"
+msgstr "مفعلة"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__installed_modules
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_db_upgrade_form
+msgid "Installed Modules"
+msgstr "التطبيقات المثبتة"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module____last_update
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__write_uid
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__write_date
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__write_date
+msgid "Last Updated on"
+msgstr "تاريخ آخر تحديث"
+
+#. module: tenant_module_upgrade
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_db_upgrade_form
+msgid "Load Modules"
+msgstr "تحميل التطبيقات"
+
+#. module: tenant_module_upgrade
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_db_upgrade_form
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_installed_module_tree
+msgid "Module Info"
+msgstr "معلومات التطبيق"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__module_name
+msgid "Module Name"
+msgstr "اسم التطبيق"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__technical_name
+msgid "Module Technical Name"
+msgstr "الاسم الفني للتطبيق"
+
+#. module: tenant_module_upgrade
+#: model:ir.ui.menu,name:tenant_module_upgrade.menu_tenant_module_upgrade_main
+msgid "Module Upgrade"
+msgstr "ترقية التطبيق"
+
+#. module: tenant_module_upgrade
+#: model_terms:ir.actions.act_window,help:tenant_module_upgrade.tenant_db_upgrade_action
+msgid "Module Upgrade in Tenant Database."
+msgstr "ترقية التطبيق للمشترك"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__status
+msgid "Status"
+msgstr "الحالة"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_tenant_db_upgrade__tenant_db
+msgid "Tenant DB"
+msgstr "الاشتراك"
+
+#. module: tenant_module_upgrade
+#: model:ir.ui.menu,name:tenant_module_upgrade.menu_tenant_upgrade_module
+msgid "Tenant DB Upgrade"
+msgstr "ترقية الاشتراك"
+
+#. module: tenant_module_upgrade
+#: model:ir.model,name:tenant_module_upgrade.model_installed_tenant_module
+msgid "Tenant Database Installed Modules"
+msgstr "التطبيقات المفعلة في الاشتراك"
+
+#. module: tenant_module_upgrade
+#: model:ir.model,name:tenant_module_upgrade.model_tenant_db_upgrade
+msgid "Tenant Database Upgrade"
+msgstr "ترقية الاشتراك"
+
+#. module: tenant_module_upgrade
+#: model:ir.actions.act_window,name:tenant_module_upgrade.tenant_db_upgrade_action
+msgid "Tenant Module Upgrade"
+msgstr "ترقية التطبيق في الاشتراك"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__to_install
+msgid "To be Install"
+msgstr "تفعيل التطبيقات"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__to_remove
+msgid "To be Remove"
+msgstr "لحذفها"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__to_upgrade
+msgid "To be Upgrade"
+msgstr "لترقيتها"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__uninstallable
+msgid "Uninstallable"
+msgstr "غير قابل للتفعيل"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields.selection,name:tenant_module_upgrade.selection__installed_tenant_module__status__uninstalled
+msgid "Uninstalled"
+msgstr "غير مفعل"
+
+#. module: tenant_module_upgrade
+#: model_terms:ir.ui.view,arch_db:tenant_module_upgrade.tenant_db_upgrade_form
+msgid "Upgrade"
+msgstr "ترقية"
+
+#. module: tenant_module_upgrade
+#: model:ir.model.fields,field_description:tenant_module_upgrade.field_installed_tenant_module__tenant_module_id
+msgid "module Id"
+msgstr "رقم التطبيق"

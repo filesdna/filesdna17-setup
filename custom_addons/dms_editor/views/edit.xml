@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="action_editor_page" model="ir.actions.act_url">
+            <field name="name">Editor</field>
+            <field name="url">/react/home</field>
+            <field name="target">self</field>
+        </record>
+        
+        <template id="view_editor_template_home">
+            <t t-name="react.page.template.home">
+                <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                <div id="root" t-att-data-path="data_path"/>
+                <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+            </t>
+        </template>
+    
+        <template id="view_qrdetails_template_home">
+            <t t-name="react.page.template.home">
+                <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+                </head>
+                <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                <div id="root" data-path="/qrdetails"/>
+                <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+            </t>
+        </template>
+    </data>
+
+    <record id="dms_file_edit_version_form" model="ir.ui.view">
+        <field name="name">dms.file.version.form</field>
+        <field name="model">dms.file</field>
+        <field name="inherit_id" ref="dms.view_dms_file_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='document_versions_ids']/tree/button[@name='download_attachment']" position="before">
+                <!-- <field name="current_time_seconds"/> -->
+                <button class="edit-pdf" name="action_edit_version" type="object" invisible="is_locked == True" icon="fa-file-signatire"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

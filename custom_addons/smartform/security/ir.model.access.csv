@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_smartform_home,smartform.page.home,model_smartform_page_home,base.group_user,1,1,1,1
+access_smart_form,smart.form,model_smart_form,base.group_user,1,1,1,1
+access_invite,invite,model_invite,base.group_user,1,1,1,1
+access_submission,submission,model_submission,base.group_user,1,1,1,1
+

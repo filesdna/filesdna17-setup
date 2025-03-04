@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="case_matter_close_mail_template" model="mail.template">
+            <field name="name">Case Matter Close Mail Template</field>
+            <field name="model_id" ref="tk_law_management.model_case_matter"/>
+            <field name="subject">Closure of Law Case</field>
+            <field name="email_from">{{object.company_id.email}}</field>
+            <field name="partner_to">{{ object.customer_id.id }}</field>
+            <field name="body_html" type="html">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            Dear Customer,
+                            <br/>
+                            <h4>
+                                <strong>
+                                    <t t-out="object.customer_id.name"/>
+                                </strong>
+                            </h4>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    We hope this email finds you well. We are writing to inform you that the law case matter you were
+                    involved in has been officially closed.
+                </p>
+                <p>
+                    After careful examination of all relevant information and legal proceedings, we are pleased to
+                    inform you that the case has reached its conclusion. The legal team has successfully resolved the
+                    <strong>
+                        <t t-out="object.case_matter"/>
+                    </strong>
+                    , and we wanted to provide you with this update.
+                </p>
+                <hr/>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <strong>
+                                Here are the key details regarding the closure of the law case matter
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                Case:
+                            </strong>
+                        </td>
+                        <td>
+                            <t t-out="object.case_matter"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                Case Open Date:
+                            </strong>
+                        </td>
+                        <td>
+                            <t t-out="object.open_date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                Case Closure Date:
+                            </strong>
+                        </td>
+                        <td>
+                            <t t-out="object.close_date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                Case Status:
+                            </strong>
+                        </td>
+                        <td>
+                            Closed
+                        </td>
+                    </tr>
+                </table>
+                <hr/>
+                <p>
+                    We understand that legal matters can be stressful and time-consuming, and we want to express our
+                    gratitude for your patience throughout this process. We appreciate your cooperation and trust in
+                    our legal team.
+                </p>
+                <p>
+                    If you have any questions or concerns regarding the closure of the case or if you require any
+                    additional information, please feel free to contact our customer support team at
+                    <strong>
+                        <t t-out="object.company_id.phone"/>
+                    </strong>
+                    or reply to this email. Our team is here to address any inquiries you may have.
+                </p>
+                <p>
+                    We would like to take this opportunity to thank you for choosing our services and placing your trust
+                    in our legal expertise. Your satisfaction is of utmost importance to us, and we are glad that we
+                    were able to bring this matter to a successful conclusion.
+                </p>
+                <p>
+                    Once again, we sincerely appreciate your cooperation and understanding throughout this process. If
+                    there is anything else we can assist you with in the future, please do not hesitate to reach out to
+                    us.
+                </p>
+                <p>
+                    Thank you for your attention, and we wish you the best in all your future endeavors.
+                </p>
+                <h6>
+                    Best regards,
+                </h6>
+                <h5>
+                    <strong>
+                        <t t-out="object.company_id.name"/>
+                    </strong>
+                </h5>
+                <hr/>
+                <span>
+                    <h6>
+                        <t t-out="object.company_id.name"/>
+                    </h6>
+                    <t t-out="object.company_id.phone"/>
+                    <br/>
+                    <t t-out="object.company_id.email"/>
+                    <br/>
+                    <t t-out="object.company_id.website"/>
+                </span>
+            </field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>

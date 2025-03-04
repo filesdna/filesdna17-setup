@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <!-- Inherit Attendance Form View -->
+        <record id="hr_attendance_form_inherit_project" model="ir.ui.view">
+            <field name="name">hr.attendance.form.inherit.project</field>
+            <field name="model">hr.attendance</field>
+            <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="inside">
+                    <group>
+                        <field name="project_id" string="Related Project"
+                               domain="[('id', 'in', available_project_ids)]"/>
+                        <field name="task_id" string="Assigned Task"
+                               domain="[('project_id', '=', project_id), ('user_ids', 'in', user_id)]"
+                               invisible="project_id == False"/>
+                        <field name="vehicle_id" string="Vehicle" domain="[]" options="{'no_create': True}"/>
+                        <field name="vehicle_code" string="Vehicle Code" readonly="1"/>
+                        <!-- Include computed fields so Odoo recognizes them -->
+                        <field name="available_project_ids" invisible="1"/>
+                        <field name="user_id" invisible="1"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Inherit Attendance Tree View -->
+        <record id="hr_attendance_tree_inherit" model="ir.ui.view">
+            <field name="name">hr.attendance.tree.inherit</field>
+            <field name="model">hr.attendance</field>
+            <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="project_id" string="Project" align="center"/>
+                    <field name="task_id" string="Task" align="center"/>
+                    <field name="vehicle_id" string="Vehicle"/>
+                    <field name="vehicle_code" string="Vehicle Code"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,1916 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tk_law_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-22 08:05+0000\n"
+"PO-Revision-Date: 2024-08-22 08:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__act_article_count
+msgid " Acts / Articles"
+msgstr " القوانين / المواد"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__sub_case_count
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__trial_count
+msgid " Trial"
+msgstr " محاكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid ""
+"- Keep open and close date empty if you want to reopen this matter.\n"
+"                            <br/>\n"
+"                                    - In case of want to create a sub matter fill them out"
+msgstr "اترك تاريخ الفتح والإغلاق فارغًا إذا كنت تريد إعادة فتح هذه القضية.\n <br/>\n - في حالة الرغبة في إنشاء قضية فرعية، قم بملء البيانات"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                    <strong>Address</strong>\n"
+"                                </span>"
+msgstr "<span class=\"o_form_label o_td_label\" name=\"address_name\">\n <strong>العنوان</strong>\n </span>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Act / Article Number</strong>"
+msgstr "<strong>رقم القانون / المادة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Acts / Articles Name</strong>"
+msgstr "<strong>اسم القانون / المادة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Case Category</strong>"
+msgstr "<strong>فئة القضية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Case Details</strong>"
+msgstr "<strong>تفاصيل القضية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Case Report</strong>"
+msgstr "<strong>تقرير القضية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Case Sub Category</strong>"
+msgstr "<strong>الفئة الفرعية للقضية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>City</strong>"
+msgstr "<strong>المدينة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Country</strong>"
+msgstr "<strong>الدولة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Court</strong>"
+msgstr "<strong>المحكمة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Description</strong>"
+msgstr "<strong>الوصف</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Email</strong>"
+msgstr "<strong>البريد الإلكتروني</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Hearing Date</strong>"
+msgstr "<strong>تاريخ الجلسة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>In Favor</strong>"
+msgstr "<strong>لصالح</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Invoice</strong>"
+msgstr "<strong>الفاتورة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Judge</strong>"
+msgstr "<strong>القاضي</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Lawyer</strong>"
+msgstr "<strong>المحامي</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Name</strong>"
+msgstr "<strong>الاسم</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Next Hearing Date</strong>"
+msgstr "<strong>تاريخ الجلسة التالية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Payment State</strong>"
+msgstr "<strong>حالة الدفع</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Phone</strong>"
+msgstr "<strong>الهاتف</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>State</strong>"
+msgstr "<strong>الولاية</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Trial Charge</strong>"
+msgstr "<strong>رسوم المحاكمة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Trial Name</strong>"
+msgstr "<strong>اسم المحاكمة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>Trials</strong>"
+msgstr "<strong>المحاكمات</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Acts / Articles</strong>"
+msgstr "<strong>➤ القوانين / المواد</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Evidences</strong>"
+msgstr "<strong>➤ الأدلة</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Favors</strong>"
+msgstr "<strong>➤ الأفضال</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Trials</strong>"
+msgstr "<strong>➤ المحاكمات</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Victims</strong>"
+msgstr "<strong>➤ الضحايا</strong>"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "<strong>➤ Witness</strong>"
+msgstr "<strong>➤ الشاهد</strong>"
+
+#. module: tk_law_management
+#: model:mail.template,body_html:tk_law_management.case_matter_close_mail_template
+msgid ""
+"<table style=\"width: 100%\">\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            Dear Customer,\n"
+"                            <br>\n"
+"                            <h4>\n"
+"                                <strong>\n"
+"                                    <t t-out=\"object.customer_id.name\"></t>\n"
+"                                </strong>\n"
+"                            </h4>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"                <p>\n"
+"                    We hope this email finds you well. We are writing to inform you that the law case matter you were\n"
+"                    involved in has been officially closed.\n"
+"                </p>\n"
+"                <p>\n"
+"                    After careful examination of all relevant information and legal proceedings, we are pleased to\n"
+"                    inform you that the case has reached its conclusion. The legal team has successfully resolved the\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.case_matter\"></t>\n"
+"                    </strong>\n"
+"                    , and we wanted to provide you with this update.\n"
+"                </p>\n"
+"                <hr>\n"
+"                <table>\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\">\n"
+"                            <strong>\n"
+"                                Here are the key details regarding the closure of the law case matter\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                Case Matter:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.case_matter\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                Case Open Date:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.open_date\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                Case Closure Date:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.close_date\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                Case Status:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            Closed\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"                <hr>\n"
+"                <p>\n"
+"                    We understand that legal matters can be stressful and time-consuming, and we want to express our\n"
+"                    gratitude for your patience throughout this process. We appreciate your cooperation and trust in\n"
+"                    our legal team.\n"
+"                </p>\n"
+"                <p>\n"
+"                    If you have any questions or concerns regarding the closure of the case or if you require any\n"
+"                    additional information, please feel free to contact our customer support team at\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.company_id.phone\"></t>\n"
+"                    </strong>\n"
+"                    or reply to this email. Our team is here to address any inquiries you may have.\n"
+"                </p>\n"
+"                <p>\n"
+"                    We would like to take this opportunity to thank you for choosing our services and placing your trust\n"
+"                    in our legal expertise. Your satisfaction is of utmost importance to us, and we are glad that we\n"
+"                    were able to bring this matter to a successful conclusion.\n"
+"                </p>\n"
+"                <p>\n"
+"                    Once again, we sincerely appreciate your cooperation and understanding throughout this process. If\n"
+"                    there is anything else we can assist you with in the future, please do not hesitate to reach out to\n"
+"                    us.\n"
+"                </p>\n"
+"                <p>\n"
+"                    Thank you for your attention, and we wish you the best in all your future endeavors.\n"
+"                </p>\n"
+"                <h6>\n"
+"                    Best regards,\n"
+"                </h6>\n"
+"                <h5>\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.company_id.name\"></t>\n"
+"                    </strong>\n"
+"                </h5>\n"
+"                <hr>\n"
+"                <span>\n"
+"                    <h6>\n"
+"                        <t t-out=\"object.company_id.name\"></t>\n"
+"                    </h6>\n"
+"                    <t t-out=\"object.company_id.phone\"></t>\n"
+"                    <br>\n"
+"                    <t t-out=\"object.company_id.email\"></t>\n"
+"                    <br>\n"
+"                    <t t-out=\"object.company_id.website\"></t>\n"
+"                </span>\n"
+"            "
+msgstr ""
+"<table style=\"width: 100%\">\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            عزيزي العميل،\n"
+"                            <br>\n"
+"                            <h4>\n"
+"                                <strong>\n"
+"                                    <t t-out=\"object.customer_id.name\"></t>\n"
+"                                </strong>\n"
+"                            </h4>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"                <p>\n"
+"                    نأمل أن تصلك هذه الرسالة وأنت في أتم الصحة. نكتب لك لإعلامك بأن القضية القانونية التي كنت طرفًا فيها\n"
+"                    قد تم إغلاقها رسميًا.\n"
+"                </p>\n"
+"                <p>\n"
+"                    بعد فحص دقيق لجميع المعلومات والإجراءات القانونية ذات الصلة، يسعدنا أن نخبرك أن القضية قد وصلت إلى نهايتها.\n"
+"                    فريق القانون قد نجح في حل\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.case_matter\"></t>\n"
+"                    </strong>\n"
+"                    ، و أردنا أن نبلغك بهذا التحديث.\n"
+"                </p>\n"
+"                <hr>\n"
+"                <table>\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\">\n"
+"                            <strong>\n"
+"                                فيما يلي التفاصيل الرئيسية بشأن إغلاق القضية القانونية\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                القضية:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.case_matter\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                تاريخ فتح القضية:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.open_date\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                تاريخ إغلاق القضية:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            <t t-out=\"object.close_date\"></t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <strong>\n"
+"                                حالة القضية:\n"
+"                            </strong>\n"
+"                        </td>\n"
+"                        <td>\n"
+"                            مغلقة\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"                <hr>\n"
+"                <p>\n"
+"                    نحن ندرك أن القضايا القانونية يمكن أن تكون مرهقة وتستغرق وقتًا طويلاً، ونود أن نعبر عن امتناننا\n"
+"                    لصبرك طوال هذه العملية. نحن نقدر تعاونك وثقتك في فريقنا القانوني.\n"
+"                </p>\n"
+"                <p>\n"
+"                    إذا كان لديك أي أسئلة أو استفسارات بخصوص إغلاق القضية أو إذا كنت بحاجة إلى أي معلومات إضافية، فلا تتردد في\n"
+"                    الاتصال بفريق دعم العملاء لدينا على\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.company_id.phone\"></t>\n"
+"                    </strong>\n"
+"                    أو الرد على هذه الرسالة. فريقنا هنا لتلبية أي استفسارات قد تكون لديك.\n"
+"                </p>\n"
+"                <p>\n"
+"                    نود أن نغتنم هذه الفرصة لنشكرك على اختيار خدماتنا ووضع ثقتك في خبرتنا القانونية. رضاك هو الأولوية القصوى\n"
+"                    لدينا، ونحن سعداء بأننا تمكنا من إغلاق هذه القضية بنجاح.\n"
+"                </p>\n"
+"                <p>\n"
+"                    مرة أخرى، نحن نقدر بصدق تعاونك وفهمك طوال هذه العملية. إذا كان هناك أي شيء آخر يمكننا مساعدتك به في\n"
+"                    المستقبل، فلا تتردد في التواصل معنا.\n"
+"                </p>\n"
+"                <p>\n"
+"                    شكراً لاهتمامك، ونتمنى لك كل التوفيق في جميع مساعيك المستقبلية.\n"
+"                </p>\n"
+"                <h6>\n"
+"                    مع أطيب التحيات،\n"
+"                </h6>\n"
+"                <h5>\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.company_id.name\"></t>\n"
+"                    </strong>\n"
+"                </h5>\n"
+"                <hr>\n"
+"                <span>\n"
+"                    <h6>\n"
+"                        <t t-out=\"object.company_id.name\"></t>\n"
+"                    </h6>\n"
+"                    <t t-out=\"object.company_id.phone\"></t>\n"
+"                    <br>\n"
+"                    <t t-out=\"object.company_id.email\"></t>\n"
+"                    <br>\n"
+"                    <t t-out=\"object.company_id.website\"></t>\n"
+"                </span>\n"
+"            "
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_account_move
+msgid "Account Move"
+msgstr "نقل الحساب"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_acts_articles
+msgid "Act / Article"
+msgstr "قانون / مادة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.acts_articles_form_view
+msgid "Act / Article Details"
+msgstr "تفاصيل القانون / المادة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__act_article_no
+msgid "Act/Article Number"
+msgstr "رقم القانون/المادة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_needaction
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_needaction
+msgid "Action Needed"
+msgstr "العمل المطلوب"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_exception_decoration
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة الاستثناءات للأنشطة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_state
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_type_icon
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__acts_articles_ids
+#: model:ir.ui.menu,name:tk_law_management.menu_acts_articles
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#, python-format
+msgid "Acts / Articles"
+msgstr "القوانين / المواد"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_acts_articles
+msgid "Acts Articles"
+msgstr "مقالات القوانين"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Add Document"
+msgstr "إضافة مستند"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#, python-format
+msgid "Add File"
+msgstr "إضافة ملف"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_matter_dms_line
+msgid "Add document page"
+msgstr "إضافة صفحة المستند"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "All Static"
+msgstr "كافة الثوابت"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Are you sure you want to close case"
+msgstr "هل أنت متأكد أنك تريد إغلاق القضية؟"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_attachment_count
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__avatar
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__avatar
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__avatar
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__avatar
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_create_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/wizards/case_matter_create.py:0
+#: code:addons/tk_law_management/wizards/sub_case_create.py:0
+#: model:ir.actions.act_window,name:tk_law_management.action_case_matter
+#: model:ir.actions.act_window,name:tk_law_management.action_create_case_matter
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_matter
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_crm_lead__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_dms_file__case_matter_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_search_view
+#, python-format
+msgid "Case"
+msgstr "القضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_calendar_view
+msgid "Case Calender"
+msgstr "تقويم القضية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_country_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__country_id
+msgid "Case Country"
+msgstr "دولة القضية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__matter_details
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_create_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Case Details"
+msgstr "تفاصيل القضية"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.case_matter_document_type_action
+#: model:ir.ui.menu,name:tk_law_management.case_matter_document_type_menu
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_document_type_form
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_document_type_tree
+msgid "Case Document Type"
+msgstr "نوع مستند القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_matter_document_type
+msgid "Case Document document type"
+msgstr "نوع مستند القضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_create_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid "Case Duration"
+msgstr "مدة القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_evidence
+msgid "Case Evidence"
+msgstr "دليل القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_favor
+msgid "Case Favor"
+msgstr "مصلحة القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_matter
+#: model:ir.model.fields,field_description:tk_law_management.field_account_bank_statement_line__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_account_move__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_account_payment__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__case_matter_id
+#: model:ir.model.fields,field_description:tk_law_management.field_project_task__case_matter_id
+msgid "Case Matter"
+msgstr "مسألة القضية"
+
+#. module: tk_law_management
+#: model:mail.template,name:tk_law_management.case_matter_close_mail_template
+msgid "Case Matter Close Mail Template"
+msgstr "قالب بريد إغلاق مسألة القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_matter_create
+msgid "Case Matter Create"
+msgstr "إنشاء مسألة القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_matter_document
+msgid "Case Matter Document"
+msgstr "مستند مسألة القضية"
+
+#. module: tk_law_management
+#: model:project.project,name:tk_law_management.case_matter_project
+msgid "Case Matter Project"
+msgstr "مشروع مسألة القضية"
+
+#. module: tk_law_management
+#: model:ir.actions.report,name:tk_law_management.action_case_matter_report
+msgid "Case Report"
+msgstr "تقرير القضية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__state_id
+msgid "Case State"
+msgstr "حالة القضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_search_view
+msgid "Case Status"
+msgstr "حالة القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_sub_matter_create
+msgid "Case Sub Matter Create"
+msgstr "إنشاء مسألة فرعية للقضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_victim
+msgid "Case Victim"
+msgstr "ضحية القضية"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_case_witness
+msgid "Case Witness"
+msgstr "شاهد القضية"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Case details"
+msgstr "تفاصيل القضية"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Case matter status"
+msgstr "حالة مسألة القضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Case:"
+msgstr "القضية:"
+
+#. module: tk_law_management
+#. odoo-javascript
+#. odoo-python
+#: code:addons/tk_law_management/models/customer.py:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: model:ir.ui.menu,name:tk_law_management.menu_case_matter
+#: model:ir.ui.menu,name:tk_law_management.menu_matter
+#, python-format
+msgid "Cases"
+msgstr "القضايا"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_matter_category
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__matter_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__matter_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__matter_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__category
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__matter_category_id
+#: model:ir.ui.menu,name:tk_law_management.menu_matter_category
+#: model_terms:ir.ui.view,arch_db:tk_law_management.acts_articles_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.matter_sub_category_search_view
+msgid "Category"
+msgstr "الفئة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Category:"
+msgstr "الفئة:"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__city
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__city
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__city
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__city
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__city
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "City"
+msgstr "المدينة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__customer_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__customer_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__customer_id
+msgid "Client"
+msgstr "العميل"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Client Details"
+msgstr "تفاصيل العميل"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Client:"
+msgstr "العميل:"
+
+#. module: tk_law_management
+#: model:ir.model.fields.selection,name:tk_law_management.selection__case_matter__state__close
+#: model:ir.model.fields.selection,name:tk_law_management.selection__court_trial__state__close
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Close Case"
+msgstr "إغلاق القضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Close Date:"
+msgstr "تاريخ الإغلاق:"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Closed"
+msgstr "مغلقة"
+
+#. module: tk_law_management
+#: model:mail.template,subject:tk_law_management.case_matter_close_mail_template
+msgid "Closure of Law Case Matter"
+msgstr "إغلاق مسألة القضية القانونية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__company_id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_configuration
+msgid "Configurations"
+msgstr "الإعدادات"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_res_partner
+msgid "Contact"
+msgstr "الاتصال"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "Cort Address"
+msgstr "عنوان المحكمة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__country_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__country_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__country_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__country_id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__country_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "Country"
+msgstr "الدولة"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_law_court
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__law_court_id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__name
+#: model:ir.ui.menu,name:tk_law_management.menu_court
+msgid "Court"
+msgstr "المحكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Court Details"
+msgstr "تفاصيل المحكمة"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_court_trial
+msgid "Court Trial"
+msgstr "محاكمة المحكمة"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: model:ir.ui.menu,name:tk_law_management.menu_law_court
+#, python-format
+msgid "Courts"
+msgstr "المحاكم"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_create_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.customer_case_matter_form_view
+msgid "Create Case"
+msgstr "إنشاء قضية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid "Create Sub Case"
+msgstr "إنشاء قضية فرعية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Create Task"
+msgstr "إنشاء مهمة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__create_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__create_date
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه في"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__currency_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_customer
+msgid "Customer"
+msgstr "العميل"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_crm_lead
+msgid "Customer Lead"
+msgstr "فرصة العميل"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_customer
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__dms_line_ids
+msgid "DMS"
+msgstr "نظام إدارة المستندات"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_law_management
+msgid "Dashboard"
+msgstr "لوحة القيادة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__description
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__description
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_dms_directory
+msgid "Directory"
+msgstr "مجلد"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__display_name
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_case_matter_document
+#: model:ir.actions.act_window,name:tk_law_management.action_document_type
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__avatar
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__document_type
+msgid "Document"
+msgstr "المستند"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__document_count
+msgid "Document Count"
+msgstr "عدد المستندات"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_document_type
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__document_type_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_document_search_view
+msgid "Document Type"
+msgstr "نوع المستند"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_matter_document_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#, python-format
+msgid "Documents"
+msgstr "المستندات"
+
+#. module: tk_law_management
+#: model:ir.model.fields.selection,name:tk_law_management.selection__case_matter__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__email
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__email
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__email
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_case_evidence
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__evidence_name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_evidence_ids
+msgid "Evidence"
+msgstr "الدليل"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__close_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__close_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__close_date
+msgid "Expected Close Date"
+msgstr "التاريخ المتوقع للإغلاق"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_case_favor
+msgid "Favor"
+msgstr "مصلحة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+msgid "Favor Details"
+msgstr "تفاصيل المصلحة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_search_view
+msgid "Favor Name"
+msgstr "اسم المصلحة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__case_favor_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_favor_ids
+msgid "Favors"
+msgstr "المصالح"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_dms_file
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__attachment_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__document_id
+msgid "File"
+msgstr "ملف"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_follower_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_partner_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين (الشركاء)"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__activity_type_icon
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "رمز فا فونت مثال: fa-tasks"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.acts_articles_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_document_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_search_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.matter_sub_category_search_view
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__has_message
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__hearing_date
+msgid "Hearing Date"
+msgstr "تاريخ الجلسة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__id
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_exception_icon
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_exception_icon
+msgid "Icon"
+msgstr "رمز"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__activity_exception_icon
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثنائي."
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__message_needaction
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، تتطلب الرسائل الجديدة انتباهك."
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__message_has_error
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__message_has_sms_error
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__message_has_error
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده، تحتوي بعض الرسائل على خطأ في التسليم."
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__case_favor_id
+msgid "In Favor"
+msgstr "في المصلحة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__invoice_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_is_follower
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__judge_id
+msgid "Judge"
+msgstr "القاضي"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_kanban_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_kanban_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_kanban_view
+msgid "Kanban"
+msgstr "كانبان"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__write_uid
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__write_uid
+msgid "Last Updated by"
+msgstr "تم التحديث بواسطة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_evidence__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_document_type__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_dashboard__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_category__write_date
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__write_date
+msgid "Last Updated on"
+msgstr "تم التحديث في"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_law_court
+msgid "Law Court"
+msgstr "محكمة القانون"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_law_dashboard
+msgid "Law Dashboard"
+msgstr "لوحة القيادة القانونية"
+
+#. module: tk_law_management
+#: model:ir.module.category,name:tk_law_management.category_law_security
+#: model:ir.ui.menu,name:tk_law_management.main_menu_law_management
+msgid "Law Management"
+msgstr "إدارة القانون"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_law_practise_area
+msgid "Law Practise Area"
+msgstr "مجال الممارسة القانونية"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_law_practise_area
+msgid "Law Practise Areas"
+msgstr "مجالات الممارسة القانونية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_law_practise_area__practise_area
+#: model:ir.model.fields,field_description:tk_law_management.field_res_partner__practise_area_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_res_users__practise_area_ids
+msgid "Law Selection"
+msgstr "اختيار القانون"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_res_partner_lawyer
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__lawyer_id
+#: model:ir.model.fields,field_description:tk_law_management.field_res_partner__is_lawyer
+#: model:ir.model.fields,field_description:tk_law_management.field_res_users__is_lawyer
+msgid "Lawyer"
+msgstr "المحامي"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.res_partner_form_case_view
+msgid "Lawyer Details"
+msgstr "تفاصيل المحامي"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: model:ir.ui.menu,name:tk_law_management.menu_res_partner_lawyer
+#, python-format
+msgid "Lawyers"
+msgstr "المحامون"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__customer_lead_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__crm_lead_id
+msgid "Lead"
+msgstr "فرصة"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_customer_lead_details
+msgid "Lead Details"
+msgstr "تفاصيل الفرصة"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_lead_pipeline
+msgid "Lead Pipelines"
+msgstr "مسارات الفرصة"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_customer_leads
+msgid "Leads"
+msgstr "الفرص"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__locked
+msgid "Locked"
+msgstr "مقفل"
+
+#. module: tk_law_management
+#: model:res.groups,name:tk_law_management.group_law_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_res_partner__matter_count
+#: model:ir.model.fields,field_description:tk_law_management.field_res_users__matter_count
+msgid "Matter"
+msgstr "مسألة"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_matter_category
+msgid "Matter Category"
+msgstr "فئة المسألة"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_matter_sub_category
+msgid "Matter Sub Category"
+msgstr "الفئة الفرعية للمسألة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.res_partner_form_case_view
+msgid "Matters"
+msgstr "المسائل"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Matters Category"
+msgstr "فئة المسائل"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_has_error
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__my_activity_date_deadline
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نهائي لنشاطي"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__name
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__favor_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__victim_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__witness_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__court_trial
+msgid "Name"
+msgstr "الاسم"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: code:addons/tk_law_management/models/case_matter.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_calendar_event_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم التالي للنشاط"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_date_deadline
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_summary
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_type_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__next_hearing_date
+msgid "Next Hearing Date"
+msgstr "تاريخ الجلسة التالية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_needaction_counter
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_has_error_counter
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__message_needaction_counter
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__message_has_error_counter
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: model:ir.model.fields.selection,name:tk_law_management.selection__case_matter__state__open
+#: model:ir.model.fields.selection,name:tk_law_management.selection__court_trial__state__draft
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#, python-format
+msgid "Open"
+msgstr "مفتوحة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__open_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__open_date
+#: model:ir.model.fields,field_description:tk_law_management.field_case_sub_matter_create__open_date
+msgid "Open Date"
+msgstr "تاريخ الفتح"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Open Date:"
+msgstr "تاريخ الفتح:"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid "Or"
+msgstr "أو"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Overall info"
+msgstr "معلومات عامة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__payment_state
+msgid "Payment State"
+msgstr "حالة الدفع"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: model:ir.model.fields.selection,name:tk_law_management.selection__case_matter__state__pending
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#, python-format
+msgid "Pending"
+msgstr "معلقة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__phone
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__phone
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__phone
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__phone
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_law_practise_area
+msgid "Practise Area"
+msgstr "مجال الممارسة"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "Practise Areas"
+msgstr "مجالات الممارسة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__project_id
+msgid "Project"
+msgstr "المشروع"
+
+#. module: tk_law_management
+#: model:ir.model,name:tk_law_management.model_project_task
+msgid "Project Task"
+msgstr "مهمة المشروع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__rating_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Re Open"
+msgstr "إعادة الفتح"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__ref_number
+msgid "Refereance Number"
+msgstr "رقم المرجع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__referral_id
+#: model:ir.model.fields,field_description:tk_law_management.field_crm_lead__referral_id
+#: model:ir.model.fields,field_description:tk_law_management.field_res_partner__is_referral
+#: model:ir.model.fields,field_description:tk_law_management.field_res_users__is_referral
+msgid "Refered By"
+msgstr "أحيل بواسطة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Reopen"
+msgstr "إعادة الفتح"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_sub_matter_create_form_view
+msgid "Reopen Case"
+msgstr "إعادة فتح القضية"
+
+#. module: tk_law_management
+#: model:ir.ui.menu,name:tk_law_management.menu_case_matter_trial_report
+msgid "Report"
+msgstr "تقرير"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+msgid "Resident Address"
+msgstr "عنوان الإقامة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__activity_user_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__message_has_sms_error
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#, python-format
+msgid "SUB Cases"
+msgstr "القضايا الفرعية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__sequence_number
+msgid "Sequence No"
+msgstr "الرقم التسلسلي"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Sequence Number:"
+msgstr "الرقم التسلسلي:"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__state
+#: model:ir.model.fields,field_description:tk_law_management.field_dms_directory__state_id
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__state_id
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "State"
+msgstr "الولاية"
+
+#. module: tk_law_management
+#: model:ir.actions.client,name:tk_law_management.action_law_dashboard
+msgid "Statistics"
+msgstr "إحصائيات"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__activity_state
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "الحالة بناءً على الأنشطة\nمتأخر: الموعد النهائي قد مر بالفعل\nاليوم: تاريخ النشاط هو اليوم\nمخطط: أنشطة مستقبلية."
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__street
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__street
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__street
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__street
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__street2
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__street2
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__street2
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__street2
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__street2
+msgid "Street 2"
+msgstr "الشارع 2"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "Street 2..."
+msgstr "الشارع 2..."
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_sub_create_case_matter
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__sub_case_id
+msgid "Sub Case"
+msgstr "قضية فرعية"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_matter_sub_category
+#: model:ir.model.fields,field_description:tk_law_management.field_acts_articles__matter_sub_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__matter_sub_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_create__matter_sub_category_id
+#: model:ir.model.fields,field_description:tk_law_management.field_matter_sub_category__sub_category
+#: model:ir.ui.menu,name:tk_law_management.menu_matter_sub_category
+msgid "Sub Category"
+msgstr "الفئة الفرعية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_report_template
+msgid "Sub Category:"
+msgstr "الفئة الفرعية:"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Sub-Cases"
+msgstr "القضايا الفرعية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__task_count
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__task_id
+msgid "Task"
+msgstr "مهمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Task Details"
+msgstr "تفاصيل المهمة"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: model:project.project,label_tasks:tk_law_management.case_matter_project
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#, python-format
+msgid "Tasks"
+msgstr "المهام"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_court_trial
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__court_trial_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_res_partner__trial_count
+#: model:ir.model.fields,field_description:tk_law_management.field_res_users__trial_count
+msgid "Trial"
+msgstr "محاكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_calendar_view
+msgid "Trial Calender"
+msgstr "تقويم المحاكمة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__trial_charge
+#: model:product.template,name:tk_law_management.trial_charge_1_product_template
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Trial Charge"
+msgstr "رسوم المحاكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Trial Charge Details"
+msgstr "تفاصيل رسوم المحاكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "Trial Duration"
+msgstr "مدة المحاكمة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_search_view
+msgid "Trial Status"
+msgstr "حالة المحاكمة"
+
+#. module: tk_law_management
+#. odoo-python
+#: code:addons/tk_law_management/models/case_matter.py:0
+#: code:addons/tk_law_management/models/customer.py:0
+#: model:ir.ui.menu,name:tk_law_management.menu_case_matter_trials
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.res_partner_form_case_view
+#, python-format
+msgid "Trials"
+msgstr "المحاكمات"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_dms_line__matter_document_type_id
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document_type__name
+msgid "Type"
+msgstr "النوع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__activity_exception_decoration
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Upload Files"
+msgstr "رفع الملفات"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_case_victim
+msgid "Victim"
+msgstr "الضحية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+msgid "Victim Details"
+msgstr "تفاصيل الضحية"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_search_view
+msgid "Victim Name"
+msgstr "اسم الضحية"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_victim_ids
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Victims"
+msgstr "الضحايا"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__website_message_ids
+#: model:ir.model.fields,field_description:tk_law_management.field_court_trial__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: tk_law_management
+#: model:ir.model.fields,help:tk_law_management.field_case_matter__website_message_ids
+#: model:ir.model.fields,help:tk_law_management.field_court_trial__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ التواصل على الموقع"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.acts_articles_form_view
+msgid "What The Law Says"
+msgstr "ماذا يقول القانون"
+
+#. module: tk_law_management
+#: model:ir.actions.act_window,name:tk_law_management.action_case_witness
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__case_witness_ids
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+msgid "Witness"
+msgstr "الشاهد"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+msgid "Witness Details"
+msgstr "تفاصيل الشاهد"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_search_view
+msgid "Witness Name"
+msgstr "اسم الشاهد"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_favor__zip
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter__zip
+#: model:ir.model.fields,field_description:tk_law_management.field_case_victim__zip
+#: model:ir.model.fields,field_description:tk_law_management.field_case_witness__zip
+#: model:ir.model.fields,field_description:tk_law_management.field_law_court__zip
+msgid "Zip"
+msgstr "الرمز البريدي"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.acts_articles_form_view
+msgid "e.g. Act / Article"
+msgstr "مثال: قانون / مادة"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_favor_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_witness_form_view
+msgid "e.g. Name"
+msgstr "مثال: الاسم"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_evidence_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_victim_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.law_court_form_view
+msgid "e.g.Name"
+msgstr "مثال: الاسم"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_form_view
+msgid "e.g.Trial"
+msgstr "مثال: المحاكمة"
+
+#. module: tk_law_management
+#: model:ir.model.fields,field_description:tk_law_management.field_case_matter_document__file_name
+msgid "filename"
+msgstr "اسم الملف"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_create_form_view
+msgid "or"
+msgstr "أو"
+
+#. module: tk_law_management
+#: model_terms:ir.ui.view,arch_db:tk_law_management.case_matter_form_view
+#: model_terms:ir.ui.view,arch_db:tk_law_management.court_trial_tree_view
+msgid "trial_charge"
+msgstr "رسوم المحاكمة"
+
+#. module: tk_law_management
+#. odoo-javascript
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#: code:addons/tk_law_management/static/src/xml/template.xml:0
+#, python-format
+msgid "users"
+msgstr "المستخدمون"

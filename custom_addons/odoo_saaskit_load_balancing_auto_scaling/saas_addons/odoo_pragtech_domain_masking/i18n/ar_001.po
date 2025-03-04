@@ -1,0 +1,243 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_pragtech_domain_masking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-28 11:12+0000\n"
+"PO-Revision-Date: 2023-05-20 16:36+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+msgid ""
+"<u>HTTPS CERTIFICATE NAME CONDITIONS</u>\n"
+"                            (Remove \"www\" and dot \".\")"
+msgstr ""
+"<u>شروط شهادة الأمان</u>\n"
+"                            (احذف \"www\" والنقطة \".\")"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+msgid "Activate Client Domain"
+msgstr "تنشيط دومين  العميل"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__using_domain
+msgid "Active Now"
+msgstr "تفعيل الان"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_res_config_settings__apache_config_file
+msgid "Apache/NGINX Config. File Path"
+msgstr "مسار ملف اعداد Apache / NGINX."
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_res_config_settings__apache_ssl_path
+msgid "Apache/NGINX SSL Certificate Directory"
+msgstr "مسار شهادات Apache / NGINX SSL"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,help:odoo_pragtech_domain_masking.field_res_config_settings__apache_config_file
+msgid "Apache2 Virtual Configuration file path"
+msgstr "مسار ملف إعدادات Apache2 Virtual "
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_domain
+msgid "Client Domain"
+msgstr "دومين العميل"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+msgid "Client Domain Details"
+msgstr "تفاصيل دومين العميل"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+msgid "Deactivate Client Domain"
+msgstr "قم بإلغاء تنشيط دومين العميل"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl3_filename
+msgid "Domain Chain.crt"
+msgstr "شهادة الأمان chain.crt للدومين"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model,name:odoo_pragtech_domain_masking.model_domain_masking_details
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.res_config_settings_view_form_domain_mask
+msgid "Domain Masking"
+msgstr "إخفاء الدومين"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_tenant_database_list__domain_masking_fields
+msgid "Domain Masking Fields"
+msgstr "خانات إخفاء الدومين"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+msgid "Domain Name: www.demo.co.in"
+msgstr "اسم الدومين : www.demo.com"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__domain_type
+msgid "Domain Type"
+msgstr "نوع الدومين"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl2_filename
+#, fuzzy
+msgid "Domain.crt"
+msgstr "Domain.crt"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl1_filename
+#, fuzzy
+msgid "Domain.key"
+msgstr "Domain.key"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl1
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl2
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__client_ssl3
+msgid "File"
+msgstr "ملف"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields.selection,name:odoo_pragtech_domain_masking.selection__domain_masking_details__domain_type__http
+msgid "HTTP"
+msgstr "HTTP"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields.selection,name:odoo_pragtech_domain_masking.selection__domain_masking_details__domain_type__https
+msgid "HTTPS"
+msgstr "HTTPS"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details____last_update
+msgid "Last Modified on"
+msgstr "تاريخ اّخر تعديل"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model,name:odoo_pragtech_domain_masking.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف odoorc للمشترك"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,help:odoo_pragtech_domain_masking.field_res_config_settings__apache_ssl_path
+msgid "Path to store Apache Certificates of client domain"
+msgstr "المسار لحفظ شهادات Apache لدومين العملاء"
+
+#. module: odoo_pragtech_domain_masking
+#. odoo-python
+#: code:addons/odoo_pragtech_domain_masking/models/base_admin.py:0
+#, python-format
+msgid "Please Enter The Domain Name !"
+msgstr "الرجاء إدخال اسم الدومين!"
+
+#. module: odoo_pragtech_domain_masking
+#. odoo-python
+#: code:addons/odoo_pragtech_domain_masking/models/base_admin.py:0
+#, python-format
+msgid "Please fill all Fields!"
+msgstr "فضلاً أملأ جميع الحقول!"
+
+#. module: odoo_pragtech_domain_masking
+#. odoo-python
+#: code:addons/odoo_pragtech_domain_masking/models/base_admin.py:0
+#, python-format
+msgid ""
+"Request Already Satisfied, for domain %s.\n"
+" To change or edit please deactivate it first."
+msgstr ""
+"الطلب مستوفى بالفعل، للدومين %s.\n"
+" لتغييره أو تعديله يرجى إلغاء تنشيطه أولاً."
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+#, fuzzy
+msgid "Restart Apache/NGINX"
+msgstr "أعد تشغيل Apache / NGINX"
+
+#. module: odoo_pragtech_domain_masking
+#. odoo-python
+#: code:addons/odoo_pragtech_domain_masking/models/base_admin.py:0
+#, python-format
+msgid "Something goes wrong, Please try again"
+msgstr "حدث خطأ ما، يرجى إعادة المحاولة"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__tenant_name
+msgid "Tenant  Name"
+msgstr "اسم المشترك"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model,name:odoo_pragtech_domain_masking.model_tenant_database_list
+msgid "Tenant Database List"
+msgstr "قائمة الاشتراكات"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_domain_masking_details__tenant_db_management
+msgid "Tenant Db Management"
+msgstr "إدارة الاشتراكات"
+
+#. module: odoo_pragtech_domain_masking
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking.field_tenant_database_list__virtual_text_block
+msgid "Text Block in Config. File"
+msgstr "كتلة النص في ملف الاعداد التكوين."
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+#, fuzzy
+msgid "ssl_certificate name: democoin_ca.crt"
+msgstr "اسم شهادة ssl: democoin_ca.crt"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+#, fuzzy
+msgid "ssl_certificate_key name: democoin_trust.key"
+msgstr "اسم ssl_certificate_key: democoin_trust.key"
+
+#. module: odoo_pragtech_domain_masking
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking.saas_admin_dblist_form_domain_mask
+#, fuzzy
+msgid "ssl_trusted_certificate name: democoin_trust.crt"
+msgstr "ssl_trusted_certificate اسم: democoin_trust.crt"

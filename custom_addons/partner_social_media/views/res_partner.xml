@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+  <record id="partner_social_media_form" model="ir.ui.view">
+    <field name="name"> Partner Social Media Tab</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//page[@name='internal_notes']" position="before">
+            <page name="social_media_links" string="Social Media Links">
+                <field name="line_social_ids">
+                  <tree create="True" delete="True" edit="True" editable="bottom" >
+                    <field name="social_platform"/>
+                    <field name="link"/>
+                    <field name="comment"/>
+                  </tree>
+                </field>
+            </page>
+        </xpath>
+    </field>
+  </record>
+
+  </data>
+</odoo>

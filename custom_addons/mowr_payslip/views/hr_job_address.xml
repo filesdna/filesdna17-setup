@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="job_address_form" model="ir.ui.view">
+        <field name="name">job.address.form</field>
+        <field name="model">job.address</field>
+        <field name="arch" type="xml">
+            <form string="Job Address">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="percentage" 
+                        widget="percentage" style="width: 5%"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+<!-- ////////////////////////////// Certification /////////////////////////////////////////////////////// -->
+    <record id="employee_certification_form" model="ir.ui.view">
+        <field name="name">employee.certification.form</field>
+        <field name="model">hr.employee.certifiaction</field>
+        <field name="arch" type="xml">
+            <form string="Certification">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="percentage" 
+                        widget="percentage" style="width: 5%"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="hr_employee_contact_form" model="ir.ui.view">
+        <field name="name">hr.employee.contact.form</field>
+        <field name="model">hr.employee.contact</field>
+        <field name="arch" type="xml">
+            <form string="Governorate">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_employee_governorate_form" model="ir.ui.view">
+        <field name="name">hr.employee.governorate.form</field>
+        <field name="model">hr.employee.governorate</field>
+        <field name="arch" type="xml">
+            <form string="Governorate">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="job_address_action" model="ir.actions.act_window">
+        <field name="name">Job Address</field>
+        <field name="res_model">job.address</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="employee_certification_action" model="ir.actions.act_window">
+        <field name="name">Certifiaction</field>
+        <field name="res_model">hr.employee.certifiaction</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="hr_employee_governorate_action" model="ir.actions.act_window">
+        <field name="name">Governorate</field>
+        <field name="res_model">hr.employee.governorate</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="hr_employee_contact_action" model="ir.actions.act_window">
+        <field name="name">Contact</field>
+        <field name="res_model">hr.employee.contact</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+   
+    <menuitem
+        id="job_address_menu"
+        name="Job Address"
+        action="job_address_action"
+        parent="hr.hr_menu_configuration"
+        sequence="60"/>
+
+
+        <menuitem
+        id="hr_employee_governorate_menu"
+        name="Governorate(State)"
+        action="hr_employee_governorate_action"
+        parent="hr.hr_menu_configuration"
+        sequence="61"/>
+
+        <menuitem
+        id="hr_employee_contact_menu"
+        name="Emergency Contact Relation"
+        action="hr_employee_contact_action"
+        parent="hr.hr_menu_configuration"
+        sequence="60"/>
+
+        <menuitem
+        id="hr_employee_certification_menu"
+        name="Certification"
+        action="employee_certification_action"
+        parent="hr.hr_menu_configuration"
+        sequence="50"/>
+</odoo>

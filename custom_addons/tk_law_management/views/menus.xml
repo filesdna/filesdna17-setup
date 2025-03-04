@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <menuitem id="main_menu_law_management" name="Law Management"
+                  web_icon="tk_law_management,static/description/icon.png" groups="tk_law_management.group_law_manager"/>
+        <menuitem id="menu_law_management"
+                  name="Dashboard"
+                  parent="main_menu_law_management"
+                  action="action_law_dashboard"
+                  sequence="0"/>
+
+        <menuitem id="menu_customer_lead_details" name="Lead Details" parent="main_menu_law_management" sequence="1"/>
+        <menuitem id="menu_customer_leads"
+                  name="Leads"
+                  parent="menu_customer_lead_details"
+                  action="crm.crm_lead_all_leads"
+                  sequence="1"/>
+        <menuitem id="menu_lead_pipeline"
+                  name="Lead Pipelines"
+                  parent="menu_customer_lead_details"
+                  action="crm.crm_lead_action_pipeline"
+                  sequence="2"/>
+        <menuitem id="menu_customer"
+                  name="Customers"
+                  parent="menu_customer_lead_details"
+                  action="action_customer"
+                  sequence="3"/>
+
+        <menuitem id="menu_case_matter" name="Cases" parent="main_menu_law_management" action="action_case_matter"
+                  sequence="2"/>
+
+        <menuitem id="menu_case_matter_trial_report" name="Report" parent="main_menu_law_management" sequence="3"/>
+        <menuitem id="menu_case_matter_trials"
+                  name="Trials"
+                  parent="menu_case_matter_trial_report"
+                  action="action_court_trial"
+                  sequence="1"/>
+
+        <menuitem id="menu_court" name="Court" parent="main_menu_law_management" sequence="4"/>
+        <menuitem id="menu_law_court"
+                  name="Courts"
+                  parent="menu_court"
+                  action="action_law_court"
+                  sequence="1"/>
+        <menuitem id="menu_res_partner_lawyer"
+                  name="Lawyers"
+                  parent="menu_court"
+                  action="action_res_partner_lawyer"
+                  sequence="3"/>
+
+        <menuitem id="menu_configuration" name="Configurations" parent="main_menu_law_management" sequence="5"/>
+        <menuitem id="menu_acts_articles"
+                  name="Acts / Articles"
+                  parent="menu_configuration"
+                  action="action_acts_articles"
+                  sequence="1"/>
+        <menuitem id="menu_law_practise_area"
+                  name="Law Practise Areas"
+                  parent="menu_configuration"
+                  action="action_law_practise_area"
+                  sequence="2"/>
+        <menuitem id="menu_matter" name="Cases" parent="menu_configuration" sequence="3"/>
+        <menuitem id="menu_matter_category"
+                  name="Category"
+                  parent="menu_matter"
+                  action="action_matter_category"
+                  sequence="1"/>
+        <menuitem id="menu_matter_sub_category"
+                  name="Sub Category"
+                  parent="menu_matter"
+                  action="action_matter_sub_category"
+                  sequence="2"/>
+        <menuitem id="case_matter_document_type_menu"
+                  name="Case Document Type"
+                  parent="menu_matter"
+                  action="case_matter_document_type_action"
+                  sequence="5"/>
+                  
+    </data>
+</odoo>

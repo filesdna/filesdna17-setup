@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="project_task_form_view" model="ir.ui.view">
+            <field name="name">project.task.form.view</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='user_ids']" position="after">
+                    <field name="case_matter_id" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--Invoice Model-->
+        <record id="account_move_form_view" model="ir.ui.view">
+            <field name="name">account.move.form.view</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_reference']" position="after">
+                    <field name="case_matter_id" readonly="1" invisible="case_matter_id == False"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

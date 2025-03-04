@@ -1,0 +1,27 @@
+<odoo>
+<!--  Define the view first  -->
+    <record id="view_sign_requests_home" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <form string="Sign Requests" edit="false" create="false" delete="false">
+                <sheet>
+                    <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                    <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                    <div id="root" data-path="sign-requests"/>
+                    <script src="/dms_editor/static/src/static/js/main.c91253d0.js"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!--  Now reference the view  -->
+    <record id="action_sign_requests_page" model="ir.actions.act_window">
+        <field name="name">Sign Requests</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_sign_requests_home"/>
+        <field name="target">current</field>
+    </record>
+    
+<menuitem id="menu_dms_sign_requests" name="Sign Requests" sequence="30" parent="dms.main_menu_dms" action="action_sign_requests_page"/>
+</odoo>

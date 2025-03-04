@@ -1,0 +1,42 @@
+html .o_web_client > .o_action_manager {
+    overflow:scroll;
+}
+
+.schedule_dash_table .table tbody {
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+
+.routes-selection {
+    width: 400px;
+    margin-left: 122px;
+    border-radius: 5px;
+    height: 31px;
+    padding-inline: 25px;
+    font-family: 'Roboto-Bold';
+}
+
+.date-selection {
+        width: 400px;
+        margin-left: 122px;
+        border-radius: 5px;
+        height: 31px;
+        padding-inline: 25px;
+        font-family: 'Roboto-Bold';
+}
+
+.grey_back {
+    background: #c4c4be;
+}
+.green {
+    background:#02ff01;
+}
+
+.light_green {
+  background: #b6d7a8;
+}
+
+.red {
+    background: #f00;
+}

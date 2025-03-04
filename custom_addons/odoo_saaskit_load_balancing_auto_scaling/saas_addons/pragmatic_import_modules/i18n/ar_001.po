@@ -1,0 +1,359 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pragmatic_import_modules
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:38+0000\n"
+"PO-Revision-Date: 2023-04-05 05:19+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar_SA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+" DONE EXTRACTION OF FILE AND REMOVED ZIP FILE : %s \n"
+msgstr ""
+"\n"
+"\n"
+" تم استخراج الملف وتمت إزالة الملف المضغوط: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+" DONE EXTRACTION OF ZIP FILE : %s \n"
+msgstr ""
+"\n"
+"\n"
+" تم استخراج الملف المضغوط: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+" STARTED ZIP FILE FOR EXTRACTION : %s \n"
+msgstr ""
+"\n"
+"\n"
+" تم البدء باستخراج الملف المضغوط: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+" ZIP FIILE TO EXRACT 4 : %s \n"
+msgstr ""
+"\n"
+"\n"
+" الملف المضغوط للاستخراج 4: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"ADDONS PATH FOR IMPORT MODUELS : %s"
+msgstr ""
+"\n"
+"\n"
+"المسار لاستيراد التطبيقات: %s"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, fuzzy, python-format
+msgid ""
+"\n"
+"\n"
+"PATH AVAILABLE  3 : %s \n"
+msgstr ""
+"\n"
+"\n"
+"المسار المتوفر 3: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"ZIP FIILE TO EXRACT 1 : File name: %s \n"
+" Path : %s"
+msgstr ""
+"\n"
+"\n"
+" الملف المضغوط للاستخراج 1: اسم الملف: %s\n"
+" المسار: %s"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"ZIP FIILE TO EXRACT 5 : %s \n"
+msgstr ""
+"\n"
+"\n"
+" الملف المضغوط للاستخراج 5: %s\n"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid ""
+"\n"
+"------------------ STARTED IMPORT MODULE------------------\n"
+msgstr ""
+"\n"
+"------------------ بدأ استيراد التطبيق ------------------\n"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__rc_type
+msgid " RC Type"
+msgstr " نوع ملف الاعدادات"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.custom_addons_res_config_settings_view
+#, fuzzy
+msgid "/home/user/odoo/odoo-14.0/"
+msgstr "/home/user/odoo/odoo-14.0/"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields.selection,name:pragmatic_import_modules.selection__update_rc_path__rc_type__bare
+msgid "Bare RC File"
+msgstr "ملف الاعدادات للمشتركين على السيرفر"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.message_wizard_form
+msgid "Confirm dialog"
+msgstr "تأكيد"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__create_uid
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__create_uid
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__create_date
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__create_date
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__create_date
+msgid "Created on"
+msgstr " تم إنشاؤها على "
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.custom_addons_res_config_settings_view
+msgid "Custom Module Import"
+msgstr "استيراد تطبيق"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_res_config_settings__custom_addons_path
+msgid "Custom Module Path"
+msgstr "مسار التطبيقات المخصصة"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__display_name
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__display_name
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__display_name
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid "File/Path does not exists....!"
+msgstr "الملف/المسار غير موجود ....!"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__filename
+#, fuzzy
+msgid "Filename"
+msgstr "اسم الملف"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__id
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__id
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.import_module_wizard_view
+msgid "Import"
+msgstr "استيراد"
+
+#. module: pragmatic_import_modules
+#: model:ir.model,name:pragmatic_import_modules.model_import_module
+msgid "Import Custom Addons"
+msgstr "استيراد التطبيقات"
+
+#. module: pragmatic_import_modules
+#: model:ir.actions.act_window,name:pragmatic_import_modules.import_module_wizard_action
+#: model:ir.ui.menu,name:pragmatic_import_modules.import_module_menu
+#: model:ir.ui.menu,name:pragmatic_import_modules.import_module_menu_root
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.import_module_wizard_view
+msgid "Import Module"
+msgstr "استيراد تطبيق "
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module____last_update
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard____last_update
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__write_uid
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__write_uid
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث من قبل"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__write_date
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__write_date
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_message_wizard__message
+msgid "Message"
+msgstr "رسالة"
+
+#. module: pragmatic_import_modules
+#: model:ir.model,name:pragmatic_import_modules.model_message_wizard
+msgid "Message Wizard"
+msgstr "إجراءات الرسائل"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_update_rc_path__new_addons_path
+msgid "New Addons Path"
+msgstr "المسار الجديد للتطبيقات"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.message_wizard_form
+msgid "No"
+msgstr "لا"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.import_module_wizard_view
+msgid "Note:Please select zip file"
+msgstr "ملاحظة: الرجاء اختيار ملف مضغوط zip"
+
+#. module: pragmatic_import_modules
+#: model:ir.model,name:pragmatic_import_modules.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف إعدادات سيرفر المشتركين"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid "Please define custom addons path in SaaS config!"
+msgstr "يرجى تحديد مسار التطبيقات الإضافية في إعدادات النظام!"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid "Please upload zip file !"
+msgstr "الرجاء تحميل ملف مضغوط zip!"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields.selection,name:pragmatic_import_modules.selection__update_rc_path__rc_type__saas
+msgid "Saas RC File"
+msgstr "ملف إعدادات السيرفر للنظام"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_res_config_settings__saasmaster_rc_path
+msgid "Saasmaster RC Path"
+msgstr "مسار ملف إعدادات الماستر"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, python-format
+msgid "Select zip file!"
+msgstr "اختر ملف zip!"
+
+#. module: pragmatic_import_modules
+#: model:ir.ui.menu,name:pragmatic_import_modules.saas_restart_menu_root
+msgid "Server Actions"
+msgstr "إجراءات السيرفر"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,help:pragmatic_import_modules.field_res_config_settings__custom_addons_path
+msgid "Set the path of Custom modules on Odoo server"
+msgstr "حدد مسار التطبيقات للمشتركين على السيرفر"
+
+#. module: pragmatic_import_modules
+#. odoo-python
+#: code:addons/pragmatic_import_modules/wizard/import_module.py:0
+#, fuzzy, python-format
+msgid "Something went wrong. Please Try again !"
+msgstr "هناك خطأ ما. حاول مرة اخرى !"
+
+#. module: pragmatic_import_modules
+#: model:ir.ui.menu,name:pragmatic_import_modules.update_rc_path_menu
+msgid "Update RC Path"
+msgstr "تحديث مسار ملف الإعدادات"
+
+#. module: pragmatic_import_modules
+#: model:ir.actions.act_window,name:pragmatic_import_modules.update_rc_path_action
+msgid "Update RC Path Wizard"
+msgstr "تحديث معالج مسار ملف الإعدادات"
+
+#. module: pragmatic_import_modules
+#: model:ir.model,name:pragmatic_import_modules.model_update_rc_path
+msgid "Update RC Path for New Applications"
+msgstr "تحديث مسار ملف الاعدادات للتطبيقات الجديدة"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.update_rc_wizard_view
+msgid "Update RCPATH Wizard"
+msgstr "تحديث معالج ملف الإعدادات"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.update_rc_wizard_view
+msgid "Update and Reload"
+msgstr "التحديث وإعادة التحميل"
+
+#. module: pragmatic_import_modules
+#: model:ir.model.fields,field_description:pragmatic_import_modules.field_import_module__file
+msgid "Upload File"
+msgstr "رفع ملف"
+
+#. module: pragmatic_import_modules
+#: model_terms:ir.ui.view,arch_db:pragmatic_import_modules.message_wizard_form
+msgid "Yes"
+msgstr "نعم"

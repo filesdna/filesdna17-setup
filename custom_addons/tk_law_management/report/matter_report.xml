@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="case_matter_report_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="case">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <table class="table table-sm o_main_table" style="font-size: 13px; width: 100%;">
+                            <tr>
+                                <td colspan="2"
+                                    style="background-color: #F8F8F8; text-align: center; font-size: 15px; border: aliceblue; padding: 2px;">
+                                    <strong>Trials</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center; font-size: 15px; padding: 2px;">
+                                    <strong>Case Report</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="100%" style="padding: 2px;">Sequence Number:
+                                    <span t-field="case.sequence_number"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">Case:
+                                    <span t-field="case.case_matter"/>
+                                </td>
+                                <td style="padding: 2px;">Client:
+                                    <span t-field="case.customer_id"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">Open Date:
+                                    <span t-field="case.open_date"/>
+                                </td>
+                                <td style="padding: 2px;">Close Date:
+                                    <span t-field="case.close_date"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">Category:
+                                    <span t-field="case.matter_category_id"/>
+                                </td>
+                                <td style="padding: 2px;">Sub Category:
+                                    <span t-field="case.matter_sub_category_id"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 2px;">
+                                    <strong>Case Details</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding: 2px;">
+                                    <span t-field="case.matter_details"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm o_main_table" style="font-size: 13px; width: 100%;">
+                            <tr>
+                                <td colspan="9"
+                                    style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                    <strong>➤&#160;Trials</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Trial Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Hearing Date</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Next Hearing Date</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Court</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Judge</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Lawyer</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Trial Charge</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Invoice</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Payment State</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.court_trial_ids" t-as="trial">
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.court_trial"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.hearing_date"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.next_hearing_date"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.law_court_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.judge_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.lawyer_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.trial_charge"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.invoice_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="trial.payment_state"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm o_main_table" style="font-size: 13px; width: 100%;">
+                            <tr>
+                                <td colspan="6"
+                                    style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                    <strong>➤&#160;Witness</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Phone</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Email</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>City</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>State</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Country</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.case_witness_ids" t-as="witness">
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.witness_id.name"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.phone"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.email"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.city"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.state_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="witness.country_id"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"
+                                    style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                    <strong>➤&#160;Victims</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Phone</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Email</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>City</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>State</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Country</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.case_victim_ids" t-as="victim">
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.victim_id.name"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.phone"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.email"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.city"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.state_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="victim.country_id"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"
+                                    style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                    <strong>➤&#160;Favors</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Phone</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Email</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>City</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>State</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Country</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.case_favor_ids" t-as="favor">
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.favor_id.name"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.phone"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.email"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.city"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.state_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="favor.country_id"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm o_main_table" style="font-size: 13px; width: 100%;">
+                            <td colspan="4"
+                                style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                <strong>➤&#160;Acts / Articles</strong>
+                            </td>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Acts / Articles Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Act / Article Number</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Case Category</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Case Sub Category</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.acts_articles_ids" t-as="act">
+                                <td style="padding: 2px;">
+                                    <span t-field="act.name"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="act.act_article_no"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="act.matter_category_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="act.matter_sub_category_id"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm o_main_table" style="font-size: 11px; width: 100%;">
+                            <td colspan="3"
+                                style="background-color: #F8F8F8; font-size: 13px; border: aliceblue; padding: 2px;">
+                                <strong>➤&#160;Evidences</strong>
+                            </td>
+                            <tr>
+                                <td style="padding: 2px;">
+                                    <strong>Name</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>In Favor</strong>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <strong>Description</strong>
+                                </td>
+                            </tr>
+                            <tr t-foreach="case.case_evidence_ids" t-as="evidence">
+                                <td style="padding: 2px;">
+                                    <span t-field="evidence.evidence_name"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="evidence.case_favor_id"/>
+                                </td>
+                                <td style="padding: 2px;">
+                                    <span t-field="evidence.description"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    <record id="action_case_matter_report" model="ir.actions.report">
+        <field name="name">Case Report</field>
+        <field name="model">case.matter</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">tk_law_management.case_matter_report_template</field>
+        <field name="report_file">tk_law_management.case_matter_report_template</field>
+        <field name="binding_model_id" ref="model_case_matter"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+    <menuitem
+            id="vehicles_root_menu"
+            name="Vehicles"
+    />
+    <menuitem
+            id="vehicles_menu"
+            name="Vehicles"
+            parent="vehicles_root_menu"
+    />
+    <menuitem
+            id="configuration_menu"
+            name="Configuration"
+            parent="vehicles_root_menu"
+    />
+</odoo>

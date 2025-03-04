@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+<odoo>
+    <!-- MOBKIKUL HOMEPAGE VIEW -->
+    <record id="mobikul_homepage_tree_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.tree.view</field>
+        <field name="model">mobikul.homepage</field>
+        <field name="arch" type="xml">
+            <tree string="Mobikul Homepage">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mobikul_homepage_form_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.form.view</field>
+        <field name="model">mobikul.homepage</field>
+        <field name="arch" type="xml">
+            <form string="Mobikul Homepage">
+                <sheet>
+                    <div class="oe_title">
+                        <div class="oe_edit_only">
+                            <label for="name" string="Title"/>
+                        </div>
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="type" readonly="0"/>
+                    </group>
+                    <notebook>
+                        <page name="mobikul_banner" string="Banners" invisible="type != 'banner'">
+                            <field name="banner_ids"/>
+                        </page>
+                        <page name="mobikul_product_slider" string="Sliders" invisible="type != 'slider'">
+                            <field name="slider_ids" />
+                        </page>
+                        <page name="mobikul_featured_category" string="Featured Category" invisible="type != 'featured_category'">
+                            <group>
+                                <field name="featured_category_ids" widget="many2many_tags"/>
+                                <field name="featured_category_view"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE BANNNER SEARCH VIEW -->
+    <record id="mobikul_homepage_search_banners_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.search.view</field>
+        <field name="model">mobikul.homepage</field>
+        <field name="arch" type="xml">
+            <search string="Mobikul Homepage">
+                <filter string="Banners" name="type" domain="[('type','=','banner')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE SLIDERS SEARCH VIEW -->
+    <record id="mobikul_homepage_search_sliders_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.search.view</field>
+        <field name="model">mobikul.homepage</field>
+        <field name="arch" type="xml">
+            <search string="Mobikul Homepage">
+                <filter string="Sliders" name="type" domain="[('type','=','slider')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE FEATURED CATEGORY SEARCH VIEW -->
+    <record id="mobikul_homepage_search_fcategory_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.search.view</field>
+        <field name="model">mobikul.homepage</field>
+        <field name="arch" type="xml">
+            <search string="Mobikul Homepage">
+                <filter string="Featured Category" name="type" domain="[('type','=','featured_category')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE BANNNER ACTION -->
+    <record id="mobikul_homepage_banners_action" model="ir.actions.act_window">
+        <field name="name">Homepage Banners</field>
+        <field name="res_model">mobikul.homepage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="mobikul_homepage_tree_view"/>
+        <field name="search_view_id" ref="mobikul_homepage_search_banners_view"/>
+        <field name="context">{'search_default_type': 1, 'default_type': 'banner'}</field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE SLIDERS ACTION -->
+    <record id="mobikul_homepage_sliders_action" model="ir.actions.act_window">
+        <field name="name">Homepage Sliders</field>
+        <field name="res_model">mobikul.homepage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="mobikul_homepage_tree_view"/>
+        <field name="search_view_id" ref="mobikul_homepage_search_sliders_view"/>
+        <field name="context">{'search_default_type': 1, 'default_type': 'slider'}</field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE FEATURED CATEGORY ACTION -->
+    <record id="mobikul_homepage_featured_category_action" model="ir.actions.act_window">
+        <field name="name">Homepage Featured Category</field>
+        <field name="res_model">mobikul.homepage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="mobikul_homepage_tree_view"/>
+        <field name="search_view_id" ref="mobikul_homepage_search_fcategory_view"/>
+        <field name="context">{'search_default_type': 1, 'default_type': 'featured_category'}</field>
+    </record>
+
+    <!-- MOBIKUL HOMEPAGE CONFIGURATION VIEW -->
+    <record id="mobikul_homepage_configuration_tree_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.configuration.tree.view</field>
+        <field name="model">mobikul.homepage.configuration</field>
+        <field name="arch" type="xml">
+            <tree string="Mobikul Homepage Configuration">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mobikul_homepage_configuration_form_view" model="ir.ui.view">
+        <field name="name">mobikul.homepage.configuration.form.view</field>
+        <field name="model">mobikul.homepage.configuration</field>
+        <field name="arch" type="xml">
+            <form string="Mobikul Homepage Configuration">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive" invisible="active == False">
+                            <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                            <div class="o_stat_info o_field_widget">
+                                <span class="text-success">Active</span>
+                            </div>
+                        </button>
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive" invisible="active == True">
+                            <div class="o_stat_info o_field_widget">
+                                <span class="o_warning_text">Inactive</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <div class="oe_edit_only">
+                            <label for="name" string="Title"/>
+                        </div>
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Name"/>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page name="mobikul_homepage" string="Homepage Data">
+                            <field name="homepage_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobikul_homepage_configuration_action" model="ir.actions.act_window">
+        <field name="name">Homepage</field>
+        <field name="res_model">mobikul.homepage.configuration</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="mobikul_homepage_configuration_tree_view"/>
+    </record>
+</odoo>

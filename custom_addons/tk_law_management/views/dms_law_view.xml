@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+    <record id="dms_file_law_form" model="ir.ui.view">
+      <field name="name">dms.file.law.form</field>
+      <field name="model">dms.file</field>
+      <field name="inherit_id" ref="dms.view_dms_file_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='category_id']" position="before">
+            <field name="case_matter_id" widget='res_partner_many2one' readonly="is_locked == True" 
+            invisible="document_model != 'matter'"
+            />
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

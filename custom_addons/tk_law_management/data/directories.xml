@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+       
+         <record id="uae_directory" model="dms.directory">
+            <field name="name">UAE</field>
+            <field name="res_model">dms.directory</field>
+            <field name="is_root_directory">True</field>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+
+        <record id="dubai_directory" model="dms.directory">
+            <field name="name">Dubai</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="dhabi_directory" model="dms.directory">
+            <field name="name">Abu Dhabi</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/> 
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="sharjah_directory" model="dms.directory">
+            <field name="name">Sharjah</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="ajman_directory" model="dms.directory">
+            <field name="name">Ajman</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="ras_directory" model="dms.directory">
+            <field name="name">Ras al-Khaimah</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="fujairah_directory" model="dms.directory">
+            <field name="name">Fujairah</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+        <record id="umm_alquwain_directory" model="dms.directory">
+            <field name="name">Umm al-Quwain</field>
+            <field name="res_model">dms.directory</field>
+            <field name="parent_id" ref="uae_directory"/>
+            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
+        </record>
+
+    
+    </data>
+    
+</odoo>

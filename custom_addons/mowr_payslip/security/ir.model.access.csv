@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payslip_allotment,hr_payslip_allotment,model_hr_payslip_allotment,base.group_user,1,1,1,1
+access_hr_payslip_allotment_type,hr_payslip_allotment_type,model_hr_payslip_allotment_type,base.group_user,1,1,1,1
+access_hr_hr_employee_grade,hr_hr_employee_grade,model_hr_employee_grade,base.group_user,1,1,1,1
+access_hr_hr_employee_level,hr_hr_employee_level,model_hr_employee_level,base.group_user,1,1,1,1
+access_hr_hr_employee_specialization,hr_hr_employee_specialization,model_hr_employee_specialization,base.group_user,1,1,1,1
+access_job_address,job_address,model_job_address,base.group_user,1,1,1,1
+access_hr_employee_contact,hr_employee_contact,model_hr_employee_contact,base.group_user,1,1,1,1
+access_hr_employee_governorate,hr_employee_governorate,model_hr_employee_governorate,base.group_user,1,1,1,1
+access_hr_employee_certification,hr_employee_certifiaction,model_hr_employee_certifiaction,base.group_user,1,1,1,1
+access_hr_employee_language,hr.employee.language,model_hr_employee_language,base.group_user,1,1,1,1

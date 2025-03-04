@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="res_partner_form_case_view" model="ir.ui.view">
+            <field name="name">Case res.partner.form.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button class="oe_stat_button" type="object" name="action_trial_view" icon="fa-gavel"
+                            invisible="is_lawyer != False">
+                        <field string="Trials" name="trial_count" widget="statinfo"/>
+                    </button>
+                    <button class="oe_stat_button" type="object" name="action_matter_view" icon="fa-book"
+                            invisible="is_lawyer != False">
+                        <field string="Matters" name="matter_count" widget="statinfo"/>
+                    </button>
+                </div>
+                <xpath expr="//field[@name='vat']" position="after">
+                    <group>
+                        <field name="is_lawyer"/>
+                        <field name="is_referral"/>
+                    </group>
+                </xpath>
+                <xpath expr="//page[@name='contact_addresses']" position="attributes">
+                    <attribute name="autofocus">
+                    </attribute>
+                </xpath>
+                <xpath expr="//notebook/page[1]" position="before">
+                    <page name="lawyer_details" string="Lawyer Details" autofocus="autofocus" invisible="is_lawyer == False">
+                        <group>
+                            <group>
+                                <field name="practise_area_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        <record id="action_res_partner_lawyer" model="ir.actions.act_window">
+            <field name="name">Lawyer</field>
+            <field name="res_model">res.partner</field>
+            <field name="domain">[('is_lawyer', '=', True)]</field>
+            <field name="context">{'default_is_lawyer': True}</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+        <record id="action_customer" model="ir.actions.act_window">
+            <field name="name">Customer</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">kanban,tree,form,activity</field>
+        </record>
+
+
+<!-- ///////////////////////////////////////////// CRM Lead //////////////////////////////////////// -->
+
+    <record id="referral_crm_lead_form" model="ir.ui.view">
+        <field name="name">referral_crm_lead.form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="referral_id" 
+                domain="[('is_referral', '=', True)]" 
+                options="{'no_create': True, 'no_open': False, 'no_create_edit': True}"
+                
+                />
+            </xpath>
+        </field>
+    </record>
+    </data>
+</odoo>

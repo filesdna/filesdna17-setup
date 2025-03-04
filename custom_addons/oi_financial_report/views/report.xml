@@ -1,0 +1,66 @@
+<odoo>
+
+	<record model="ir.ui.view" id="view_oi_fin_report_form">
+		<field name="name">oi_fin.report form</field>
+		<field name="model">oi_fin.report</field>
+		<field name="inherit_id" ref="view_oi_fin_template_form"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+				<div name="button_box" position="replace"/>
+				<header position="replace">
+					<header>
+						<button name="run_report" type="object" string="Preview" class="oe_highlight" context="{'html' : True, 'preview' : True}"/>
+						<button name="run_report" type="object" string="Print" class="oe_highlight" context="{'pdf' : True, 'preview' : True}"/>
+						<button name="run_report" type="object" string="Excel" class="oe_highlight"/>												
+						<button name="create_template" type="object" string="Create Template" class="btn-primary"/>
+						<button name="clear_form" type="object" string="Clear Form"/>
+					</header>
+				</header>
+				<field name="menu_id" position="replace"/>
+				<group name="group1" position="replace">
+					<group name="group1">
+						<field name="name"/>
+						<field name="report_template"/>
+						<field name="group_by"/>
+						<field name="dimension_id" options="{'no_create_edit' : True}" invisible="group_by != 'other'" required="group_by == 'other'"/>						
+						<field name="include_empty" invisible="not group_by"/>
+						<field name="cash_basis"/>
+						<field name="currency_id" options="{'no_create_edit': True, 'no_open': True}" groups="base.group_multi_company"/>
+						<field name="currency_rate_date" groups="base.group_multi_company"/>
+					</group>
+				</group>
+				<group name="group2" position="replace">
+					<group name="group2">
+						<field name="date_from"/>
+						<field name="date_to"/>						
+						<field name="target_move"/>
+						<field name="report_id" options="{'no_create_edit': True}"/>
+						<field name="show_transaction"/>
+						<field name="transaction_date" invisible="not show_transaction" required="show_transaction"/>
+					</group>
+				</group>
+				<notebook>
+					<page string="Currency Rates" name="currency_rate" groups="base.group_multi_company">
+						<field name="currency_rate_ids" nolabel="1">
+							<tree editable="top" create="false" delete="false">
+								<field name="currency_id" readonly="1" force_save="1"/>
+								<field name="rate"/>
+							</tree>
+						</field>
+					</page>
+				</notebook>
+				<xpath expr="//field[@name='rows']/tree" position="attributes">
+					<attribute name="default_order">sequence</attribute>
+				</xpath>
+				<xpath expr="//field[@name='columns']/tree" position="attributes">
+					<attribute name="default_order">sequence</attribute>
+				</xpath>
+			</data>
+		</field>
+	</record>
+
+<!-- 	<act_window id="act_oi_fin_report" name="Summary Report" src_model="oi_fin.report" res_model="oi_fin.report" view_mode="form" target="new" -->
+<!-- 		key2="client_action_multi" /> -->
+
+</odoo>

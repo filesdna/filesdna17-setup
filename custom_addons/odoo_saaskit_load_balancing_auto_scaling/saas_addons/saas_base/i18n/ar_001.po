@@ -1,0 +1,837 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saas_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:45+0000\n"
+"PO-Revision-Date: 2023-05-05 05:12+0300\n"
+"Last-Translator: Abdulaziz Alanazi <abdulaziz@alanazi.vip>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__free_trail_no_of_days
+msgid " Alert before No. Of Days (for Free Trial)"
+msgstr "تنبيه قبل عدد الأيام (للحصول على نسخة تجريبية مجانية)"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "<b>Note:</b>"
+msgstr "<b>ملاحظة:</b>"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "<b>Note:</b><br/>"
+msgstr "<b>ملاحظة:</b>"
+
+#. module: saas_base
+#: model:mail.template,body_html:saas_base.email_template_renew_tenant_Expired_today
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tDear <t t-out=\"object.sale_order_ref.partner_id.name or ''\"/><br/><br/>\n"
+"\t\t\t\t\t\t\t\tThis is a reminder that your subscription instance on SaaS, for <strong t-out=\"(object.name or '')\"/>,is nearing its end of usable period by  <t t-out=\"format_date(object.exp_date)\"/> <br/>\n"
+"\t\t\t\t\t\tYour service will be inactive from <t t-out=\"format_date(object.exp_date)\"/>. Please check your portal account for any unpaid invoice.<br/>\n"
+"\t\t\t\t\t\tWe request you to kindly Note That your Db expired Today .  <br/><br/>\n"
+"\t\t\t\t\t\tRenewal Methods<br/>\n"
+"\n"
+"\t\t\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/><br/>\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        عزيزي العميل <t t-out=\"object.sale_order_ref.partner_id.name or ''\"><br><br>\n"
+"                نود إشعارك بأن اشتراكك في ستريم، <strong t-out=\"(object.name or '')\"> سينتهي في  <t t-out=\"format_date(object.exp_date)\"> <br>\n"
+"        ستتوقف الخدمة من تاريخ <t t-out=\"format_date(object.exp_date)\">. نأمل التأكد من عدم وجود فواتير متأخرة عليكم، او التواصل مع فريق الدعم.<br>\n"
+"        نأسف لإشعارك بأن اشتراكك قد انتهى اليوم.  <br><br>\n"
+"        طرق التجديد ستكون عبر سداد الفواتير، بالدخول إلى حسابك في موقع ستريم <a href=\"https://stream.sa\">https://stream.sa</a> وسداد المستحقات.<br>\n"
+"\n"
+"        لأي استفسارات، الرجاء التواصل معنا! <br><br>\n"
+"        شكراً لكم،، <br>\n"
+"    </t></t></strong></t></p><strong t-out=\"(object.name or '')\">\n"
+"</strong></div><strong t-out=\"(object.name or '')\">\n"
+"\n"
+"</strong>"
+
+#. module: saas_base
+#: model:mail.template,body_html:saas_base.email_template_renew_tenant_subscription_alert
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tDear <t t-out=\"object.sale_order_ref.partner_id.name or ''\"/><br/><br/>\n"
+"\t\t\t\t\t\t\t\tThis is a reminder that your subscription instance on SaaS, for <strong t-out=\"(object.name or '')\"/>,is nearing its end of usable period by  <t t-out=\"format_date(object.exp_date)\"/> <br/>\n"
+"\t\t\t\t\t\tYour service will be inactive from <t t-out=\"format_date(object.exp_date)\"/>. Please check your portal account for any unpaid invoice.<br/>\n"
+"\t\t\t\t\t\tWe request you to kindly renew the subscription to continue using the services. <br/><br/>\n"
+"\n"
+"\t\t\t\t\t\tRenewal Methods<br/>\n"
+"\n"
+"\t\t\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/>\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        عزيزي العميل <t t-out=\"object.sale_order_ref.partner_id.name or ''\"><br><br>\n"
+"                نود إشعارك بأن اشتراكك في ستريم، <strong t-out=\"(object.name or '')\"> قد أوشك على الانتهاء في  <t t-out=\"format_date(object.exp_date)\"> <br>\n"
+"        ستتوقف الخدمة من تاريخ <t t-out=\"format_date(object.exp_date)\">. نأمل التأكد من عدم وجود فواتير متأخرة عليكم، او التواصل مع فريق الدعم.<br>\n"
+"        نأسف لإشعارك بأن اشتراكك قد انتهى اليوم.  <br><br>\n"
+"        طرق التجديد ستكون عبر سداد الفواتير، بالدخول إلى حسابك في موقع ستريم <a href=\"https://stream.sa\">https://stream.sa</a> وسداد المستحقات.<br>\n"
+"\n"
+"        لأي استفسارات، الرجاء التواصل معنا! <br><br>\n"
+"        شكراً لكم،، <br>\n"
+"    </t></t></strong></t></p><strong t-out=\"(object.name or '')\">\n"
+"</strong></div><strong t-out=\"(object.name or '')\">\n"
+"\n"
+"</strong>"
+
+#. module: saas_base
+#: model:mail.template,body_html:saas_base.email_template_tenant_db_purge_alert
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tDear <t t-out=\"object.sale_order_ref.partner_id.name or ''\"/><br/><br/>\n"
+"\t\t\t\t\t\t\t\tThis is to inform you that your subscription with <strong t-out=\"(object.sale_order_ref.company_id.name or '')\"/>\n"
+"\t\t\t\t\t\tinstance <t t-out=\"object.name\"/> on SaaS, is expiring on <t t-out=\"format_date(object.exp_date)\"/>  and you are on grace period.<br/>\n"
+"\t\t\t\t\t\tAs per contractual agreement, we are going to purge your data from cloud on <t t-out=\"format_date(object.exp_date)\"/>. <br/>\n"
+"\n"
+"\t\t\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/>\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        عزيزي <t t-out=\"object.sale_order_ref.partner_id.name or ''\"><br><br>\n"
+"        نود اشعارك بأن حسابك في نظام ستريم <t t-out=\"object.name\">، سينتهي في <t t-out=\"format_date(object.exp_date)\"> ولا يزال اشتراكك في فترة المهلة.<br>\n"
+"        وستتوقف الخدمة في <t t-out=\"format_date(object.exp_date)\">. نأمل الذهاب إلى حسابك في موقع ستريم للتأكد من عدم وجود فواتير متأخرة.<br>\n"
+"        وبحسب شروط وأحكام اتفاقية استخدام البرنامج، ستتم إزالة اشتراككم وجميع البيانات المتعلقة به في <t t-out=\"format_date(object.exp_date)\">. <br><br>\n"
+"        ويمكنكم تجديد الاشتراك في أي وقت لاحقاً، وللاستمرار بتجربة ستريم اضغط على الرابط التالي للانتقال إلى حسابك في ستريم:<br>\n"
+"        <a href=\"https://stream.sa/my/invoices\">فواتيري: https://stream.sa/my/invoices</a><br>\n"
+"        نأمل التواصل معنا لأي استفسارات!<br>\n"
+"        شكراً لكم 🌹 🌹\n"
+"    </t></t></t></t></t></p>\n"
+"</div>"
+
+#. module: saas_base
+#: model:mail.template,body_html:saas_base.email_template_tenant_db_grace_alert
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tDear <t t-out=\"object.sale_order_ref.partner_id.name or ''\"/><br/><br/>\n"
+"\t\t\t\t\t\t\t\tThis is to inform you that your subscription with <strong t-out=\"(object.sale_order_ref.company_id.name or '')\"/>  for instance <t t-out=\"object.name\"/> on SaaS, is expiring on <t t-out=\"format_date(object.exp_date)\"/>  and "
+"you are on grace period.<br/>\n"
+"\t\t\t\t\t\tYour service will be inactive from <t t-out=\"format_date(object.exp_date)\"/>. Please check your portal account for any unpaid invoice.<br/>\n"
+"\t\t\t\t\t\tWe request you to kindly renew the subscription to continue using the services. <br/><br/>\n"
+"\n"
+"\t\t\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/>\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        عزيزي العميل <t t-out=\"object.sale_order_ref.partner_id.name or ''\"><br><br>\n"
+"                نود إشعارك بأن اشتراكك في ستريم، <strong t-out=\"(object.name or '')\"> قد أوشك على الانتهاء في  <t t-out=\"format_date(object.exp_date)\"> <br>\n"
+"        ستتوقف الخدمة من تاريخ <t t-out=\"format_date(object.exp_date)\">. نأمل التأكد من عدم وجود فواتير متأخرة عليكم، او التواصل مع فريق الدعم.<br>\n"
+"        نأسف لإشعارك بأن اشتراكك قد انتهى اليوم.  <br><br>\n"
+"        طرق التجديد ستكون عبر سداد الفواتير، بالدخول إلى حسابك في موقع ستريم <a href=\"https://stream.sa\">https://stream.sa</a> وسداد المستحقات.<br>\n"
+"\n"
+"        لأي استفسارات، الرجاء التواصل معنا! <br><br>\n"
+"        شكراً لكم،، <br>\n"
+"    </t></t></strong></t></p><strong t-out=\"(object.name or '')\">\n"
+"</strong></div><strong t-out=\"(object.name or '')\">\n"
+"\n"
+"</strong>"
+
+#. module: saas_base
+#: model:res.groups,name:saas_base.manage_page
+msgid "Access DB Manage Page"
+msgstr "الوصول إلى صفحة إدارة الاشتراكات"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "Activate"
+msgstr "تفعيل"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.active_db_wizard model:ir.ui.menu,name:saas_base.active_db_menu model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "Activate Database"
+msgstr "تنشيط قاعدة البيانات"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__active model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__is_active model:tenant.database.stage,name:saas_base.tenant_database_stage_1
+msgid "Active"
+msgstr "نشيط"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__db_expire_no_of_days
+msgid "Alert before No. Of Days (for Database Expiration)"
+msgstr "تنبيه قبل عدد الأيام (لانتهاء صلاحية قاعدة البيانات)"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__bare_tenant_db model:ir.model.fields,help:saas_base.field_res_config_settings__bare_tenant_db
+msgid "Bare Tenant DB"
+msgstr "قاعدة بيانات المشترك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__billing model:ir.model.fields,field_description:saas_base.field_tenant_database_list__billing
+msgid "Billing Type"
+msgstr "نوع الفاتورة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__brand_name
+msgid "Brand Name"
+msgstr "اسم العلامة التجارية"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__brand_website
+msgid "Brand Website"
+msgstr "موقع العلامة التجارية"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.res_config_settings_view_form1
+msgid "Branding"
+msgstr "العلامة التجارية"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form model_terms:ir.ui.view,arch_db:saas_base.update_tenant_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: saas_base
+#: model:ir.actions.server,name:saas_base.check_db_expire_date_ir_actions_server model:ir.cron,cron_name:saas_base.check_db_expire_date
+msgid "Check Tenant DB Expiry"
+msgstr "تحقق من انتهاء صلاحية الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__color
+msgid "Color Index"
+msgstr "مؤشر اللون"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__company_id
+msgid "Company"
+msgstr "المنشأة"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Create Rent Invoice"
+msgstr "إنشاء فاتورة اشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__grace_period
+msgid "Create invoice No. of Days (before expiry date)"
+msgstr "المدة بالأيام لإصدار الفاتورة (قبل تاريخ انتهاء الصلاحية)"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__create_uid model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__create_uid
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__create_uid model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__create_uid
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__create_uid model:ir.model.fields,field_description:saas_base.field_user_history__create_uid
+msgid "Created by"
+msgstr "أنشئ من قبل "
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__create_date model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__create_date
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__create_date model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__create_date
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__create_date model:ir.model.fields,field_description:saas_base.field_user_history__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه في "
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_user_history__total
+msgid "Current Total"
+msgstr "المجموع الحالي"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__name model_terms:ir.ui.view,arch_db:saas_base.view_db_admin_filter
+msgid "DB Name"
+msgstr "اسم الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__data_purging_days
+msgid "Data Purging Days(after expiry date)"
+msgstr "المدة بالأيام لإزالة البيانات (بعد تاريخ انتهاء الصلاحية)"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Database Credentials"
+msgstr "بيانات الاشتراك والدخول للبرنامج"
+
+#. module: saas_base
+#: model:mail.template,subject:saas_base.email_template_renew_tenant_Expired_today
+msgid "Database Expired Today"
+msgstr "انتهى اشتراكك اليوم"
+
+#. module: saas_base
+#: model:mail.template,name:saas_base.email_template_tenant_db_grace_alert
+msgid "Database Grace Period Alert Email"
+msgstr "البريد الإلكتروني للتنبيه بالمهلة في حال انتهى الاشتراك"
+
+#. module: saas_base
+#: model:mail.template,subject:saas_base.email_template_tenant_db_grace_alert
+msgid "Database Grace Period is started"
+msgstr "بدأت فترة المهلة بانتهاء الاشتراك"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.menu_dblist_tree
+msgid "Database List"
+msgstr "قائمة الاشتراكات"
+
+#. module: saas_base
+#: model:mail.template,name:saas_base.email_template_tenant_db_purge_alert
+msgid "Database Ready to Purge Alert Email"
+msgstr "تنبيه البريد الإلكتروني بأن إزالة بيانات الاشتراك وشيكة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_user_history__rec_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__is_deactivated model:tenant.database.stage,name:saas_base.tenant_database_stage_5
+msgid "Deactivated"
+msgstr "منتهي"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__deactivated_date
+msgid "Deactivated Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Deactivation details"
+msgstr "تفاصيل الانتهاء"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__default_no_of_users
+msgid "Default No of Users"
+msgstr "العدد الافتراضي للمستخدمين"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__display_name model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__display_name
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__display_name model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__display_name
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__display_name model:ir.model.fields,field_description:saas_base.field_user_history__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__domain_name
+msgid "Domain Name"
+msgstr "اسم النطاق/الدومين"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.email_alert_setting_action1
+msgid "Email Alert Setting"
+msgstr "إعدادات تنبيه البريد الإلكتروني"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.res_config_settings_view_form1
+msgid "Email Alerts and Trial Period"
+msgstr "تنبيهات البريد الإلكتروني وفترة التجربة"
+
+#. module: saas_base
+#. odoo-python
+#: code:addons/saas_base/wizard/db_controll.py:0
+#, python-format
+msgid "Error!"
+msgstr "خطأ!"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "Expire"
+msgstr "انهاؤها"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.deactive_db_wizard model:ir.model,name:saas_base.model_deactive_db_wizard model:ir.ui.menu,name:saas_base.deactive_db_menu model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "Expire Database"
+msgstr "انتهاء الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__inexpiredstate model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__is_expired
+#: model:tenant.database.stage,name:saas_base.tenant_database_stage_3
+msgid "Expired"
+msgstr "منتهي"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__exp_date
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_kanban
+msgid "Expiry Date :"
+msgstr "تاريخ الانتهاء:"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__favicon_logo
+msgid "Favicon Logo [.ico only]"
+msgstr "أيقونة الشعار المصغرة [ملفات بامتداد ico فقط]"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__filename_fevicon
+msgid "File Name "
+msgstr "اسم الملف "
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__fold
+msgid "Folded in Kanban View"
+msgstr "مطوية في عرض كانبان"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__free_trial
+msgid "Free Trial"
+msgstr "تجربة مجانية"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__free_trial_days
+msgid "Free Trial Period(days)"
+msgstr "فترة التجربة المجانية (أيام)"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__grace_period_date
+msgid "Grace Period Date"
+msgstr "تاريخ فترة المهلة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__id model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__id
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__id model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__id model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__id
+#: model:ir.model.fields,field_description:saas_base.field_user_history__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__ingraceperiod model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__is_grace model:tenant.database.stage,name:saas_base.tenant_database_stage_2
+msgid "In Grace Period"
+msgstr "في فترة المهلة"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_increase_tenant_users_wizard
+msgid "Increase No of Users in Tenant Database"
+msgstr "زيادة عدد المستخدمين في الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard____last_update model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard____last_update
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list____last_update model:ir.model.fields,field_description:saas_base.field_tenant_database_stage____last_update
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard____last_update model:ir.model.fields,field_description:saas_base.field_user_history____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__write_uid model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__write_uid
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__write_uid model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__write_uid
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__write_uid model:ir.model.fields,field_description:saas_base.field_user_history__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__write_date model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__write_date
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__write_date model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__write_date
+#: model:ir.model.fields,field_description:saas_base.field_update_tenants_wizard__write_date model:ir.model.fields,field_description:saas_base.field_user_history__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__filename_logo
+msgid "Logo File Name"
+msgstr "اسم ملف الشعار"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__next_invoice_create_date
+msgid "Next invoice create date"
+msgstr "تاريخ إنشاء الفاتورة التالية"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__no_of_users
+msgid "No of Users"
+msgstr "عدد المستخدمين"
+
+#. module: saas_base
+#. odoo-python
+#: code:addons/saas_base/wizard/increase_no_users.py:0
+#, python-format
+msgid "Number Of User Should Be Greater Than Zero!!"
+msgstr "يجب أن يكون عدد المستخدمين أكبر من الصفر!!"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف إعدادات السيرفر للمشتركين"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__payment_acquire
+msgid "Payment Method For trial Period"
+msgstr "طريقة الدفع لفترة التجربة"
+
+#. module: saas_base
+#: model:ir.model.fields.selection,name:saas_base.selection__res_config_settings__billing__normal model:ir.model.fields.selection,name:saas_base.selection__tenant_database_list__billing__normal
+msgid "Per Module/Per Month/Per User"
+msgstr "لكل تطبيق/في الشهر/لكل مستخدم"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "Please verify if there is any pending invoice against database."
+msgstr "يرجى التحقق مما إذا كان هناك أي فواتير غير مدفوعة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_user_history__pre_users
+msgid "Previous Count"
+msgstr "العدد السابق"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.saas_product
+msgid "Product"
+msgstr "منتج"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.saas_product_action
+msgid "Products"
+msgstr "منتجات"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Pseudo Users Initial Credentials"
+msgstr "بيانات المستخدم المشرف"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__is_purge
+msgid "Purge"
+msgstr "إزالة"
+
+#. module: saas_base
+#: model:mail.template,subject:saas_base.email_template_tenant_db_purge_alert
+msgid "Purge Database"
+msgstr "إزالة الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__reason model:ir.model.fields,field_description:saas_base.field_tenant_database_list__reason
+msgid "Reason"
+msgstr "الأسباب"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.saas_panel_main
+msgid "SaaS"
+msgstr "ستريم"
+
+#. module: saas_base
+#: model:res.groups,name:saas_base.group_admin_saas
+msgid "SaaS Admin"
+msgstr "إدارة ستريم"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.menu_saas_config_id
+msgid "SaaS Configuration"
+msgstr "إعدادات ضبط ستريم"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.res_config_settings_view_form1
+msgid "Saas Settings"
+msgstr "إعدادات ستريم"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__sale_order_ref
+msgid "Sale Order Ref."
+msgstr "رقم الطلب"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.view_db_admin_filter
+msgid "Search Db List"
+msgstr "البحث في قائمة الاشتراكات"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_deactive_db_wizard__db_name
+msgid "Select Database"
+msgstr "حدد الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__sequence
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.saas_config_setting_menu
+msgid "Settings"
+msgstr "إعدادات"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__stage_id
+msgid "Stage"
+msgstr "المرحلة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_stage__name
+msgid "Stage Name"
+msgstr "اسم المرحلة"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_tenant_database_stage
+msgid "Stage of case"
+msgstr "مرحلة الحالة"
+
+#. module: saas_base
+#: model:mail.template,name:saas_base.email_template_renew_tenant_Expired_today model:mail.template,name:saas_base.email_template_renew_tenant_subscription_alert
+msgid "Subscription Renew Alert Email"
+msgstr "البريد الالكتروني لتجديد الاشتراك"
+
+#. module: saas_base
+#: model:mail.template,subject:saas_base.email_template_renew_tenant_subscription_alert
+msgid "Subscription renew"
+msgstr "تجديد الاشتراك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__admin_login
+msgid "Super Admin Login"
+msgstr "دخول المشرف السوبر"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__admin_pwd
+msgid "Super Admin Password"
+msgstr "كلمة مرور المشرف السوبر"
+
+#. module: saas_base
+#: model:ir.model.fields,help:saas_base.field_res_config_settings__admin_login
+msgid ""
+"Super Admin login for Tenant DB. \n"
+"Default will be 'admin'"
+msgstr ""
+"بيانات المشرف السوبر للدخول على الاشتراكات. \n"
+"الافتراضي هو 'admin'"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__super_user_login
+msgid "Super User Login"
+msgstr "اسم المشرف السوبر"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__super_user_pwd
+msgid "Super User Password"
+msgstr "كلمة مرور المشرف السوبر"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Super Users Initial Credentials"
+msgstr "بيانات المشرف السوبر"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_user_history__adding
+msgid "TO add"
+msgstr "لإضافتها"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_user_history__tenant_id
+msgid "Tenant"
+msgstr "مشترك"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__tenant_conf_master_pwd
+msgid "Tenant Conf Master Password"
+msgstr "كلمة مرور المستأجر الرئيسية في ملف الإعدادات conf"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.res_config_settings_view_form1
+msgid "Tenant Configuration"
+msgstr "إعدادات المشترك"
+
+#. module: saas_base
+#: model:ir.ui.menu,name:saas_base.db_controll model:res.groups,name:saas_base.group_admin_saas_db_admin
+msgid "Tenant DB Administration"
+msgstr "إدارة صلاحية الاشتراكات"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "Tenant Database"
+msgstr "اشتراك المستخدم"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.base_dblist_tree_action model:ir.model,name:saas_base.model_tenant_database_list model:ir.ui.menu,name:saas_base.menu_tenant_database_list model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_tree
+msgid "Tenant Database List"
+msgstr "قائمة الاشتراكات"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_res_config_settings__tenant_logo
+msgid "Tenant Database Logo [.png only]"
+msgstr "شعار المشترك [.png فقط]"
+
+#. module: saas_base
+#: model:ir.model.fields,help:saas_base.field_res_config_settings__tenant_conf_master_pwd
+msgid "Tenant Server Master Password Specified in Conf File"
+msgstr "كلمة المرور الرئيسية لسيرفر المشتركين المحددة في ملف Conf"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__tenant_url
+msgid "Tenant URL"
+msgstr "رابط البرنامج للمشترك"
+
+#. module: saas_base
+#: model:tenant.database.stage,name:saas_base.tenant_database_stage_4
+msgid "Terminated"
+msgstr "تم إنهاؤه"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__expired
+msgid "Terminated / Deactivated"
+msgstr "منتهية / غير مفعّلة"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "This activity allow user to access database on browser."
+msgstr "يسمح هذا النشاط للمستخدم بالوصول إلى الاشتراك من المتصفح."
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "This activity will expire database."
+msgstr "هذا الإجراء سوف ينهي الاشتراك."
+
+#. module: saas_base
+#. odoo-python
+#: code:addons/saas_base/wizard/db_controll.py:0
+#, python-format
+msgid "This database is terminated or dropped."
+msgstr "هذا الاشتراك منتهي أو تم حذف سجلاته."
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "This lists only \"Active\" state databases"
+msgstr "يعرض هذا الاشتراكات \"النشطة\" فقط"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "This lists only \"Expired\" databases"
+msgstr "يعرض هذا الاشتراكات \"المنتهية\" فقط"
+
+#. module: saas_base
+#: model:ir.model.fields,help:saas_base.field_tenant_database_stage__fold
+msgid "This stage is folded in the kanban view whenthere are no records in that stage to display."
+msgstr "يتم طي هذه المرحلة في عرض كانبان عندما لا توجد سجلات في تلك المرحلة للعرض."
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.update_tenant_wizard_form
+msgid "Update"
+msgstr "تحديث"
+
+#. module: saas_base
+#: model:ir.actions.server,name:saas_base.update_existing_link
+msgid "Update Existing Link"
+msgstr "تحديث الرابط الحالي"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_increase_tenant_users_wizard__updated_no_of_users model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form model_terms:ir.ui.view,arch_db:saas_base.update_tenant_users_wizard_form
+msgid "Update No of Users"
+msgstr "تحديث عدد  المستخدمين"
+
+#. module: saas_base
+#: model:ir.actions.act_window,name:saas_base.action_update_tenants model:ir.actions.act_window,name:saas_base.action_update_tenants_users model_terms:ir.ui.view,arch_db:saas_base.update_tenant_wizard_form
+msgid "Update Tenants"
+msgstr "تحديث المشتركين"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.update_tenant_users_wizard_form
+msgid "Update Tenants Users"
+msgstr "تحديث المستخدمين المشتركين"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_update_tenants_wizard
+msgid "Update Tenants stages"
+msgstr "تحديث مراحل المشتركين"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form
+msgid "Update next expiry date for this database."
+msgstr "قم بتحديث تاريخ الانتهاء التالي لهذا الاشتراك."
+
+#. module: saas_base
+#: model:ir.actions.server,name:saas_base.res_config_set_values_ir_actions_server model:ir.cron,cron_name:saas_base.res_config_set_values
+msgid "Update user info"
+msgstr "تحديث معلومات المستخدم"
+
+#. module: saas_base
+#: model:ir.model.fields,help:saas_base.field_tenant_database_stage__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "تستخدم لترتيب المراحل. الاقل هو الافضل."
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_user_history model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_form
+msgid "User History"
+msgstr "سجل المستخدم"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__user_login
+msgid "User Login"
+msgstr "دخول المستخدم"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__user_pwd
+msgid "User Password"
+msgstr "كلمة مرور المستخدم"
+
+#. module: saas_base
+#: model:ir.model.fields.selection,name:saas_base.selection__tenant_database_list__billing__user_plan_price
+msgid "Users + Plan Price"
+msgstr "المستخدمون + سعر الخطة"
+
+#. module: saas_base
+#: model:ir.model.fields,field_description:saas_base.field_tenant_database_list__user_history_ids model_terms:ir.ui.view,arch_db:saas_base.saas_users_tree
+msgid "Users History"
+msgstr "سجل المستخدمين"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_website_track
+msgid "Visited Pages"
+msgstr "الصفحات التي تمت زيارتها"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: saas_base
+#: model:ir.model,name:saas_base.model_website_visitor
+msgid "Website Visitor"
+msgstr "زائر الموقع الإلكتروني"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "You may see warning related to pending invoices."
+msgstr "قد ترى تحذيراً بشأن الفواتير المتأخرة."
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form
+msgid "You will not be able to access on browser."
+msgstr "لن تتمكن من الدخول للبرنامج."
+
+#. module: saas_base
+#: model:ir.model.fields,help:saas_base.field_res_config_settings__admin_pwd
+msgid "admin login password for Tenant DB"
+msgstr "كلمة المرور للمشرف للدخول للبرنامج"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.res_config_settings_view_form1
+msgid "http://www.domain.com"
+msgstr ""
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.active_db_wizard_form model_terms:ir.ui.view,arch_db:saas_base.deactive_db_wizard_form model_terms:ir.ui.view,arch_db:saas_base.update_tenant_wizard_form
+msgid "or"
+msgstr "أو"
+
+#. module: saas_base
+#: model_terms:ir.ui.view,arch_db:saas_base.saas_admin_dblist_kanban
+msgid "users)"
+msgstr "المستخدمين)"

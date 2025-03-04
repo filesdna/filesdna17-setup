@@ -1,0 +1,151 @@
+<odoo>
+    <data>
+        <!-- Inherit Project Form View -->
+        <record id="project_project_form_inherit" model="ir.ui.view">
+            <field name="name">project.project.form.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook//page[@name='settings']" position="before">
+
+                    <!-- 📌 Sales Tab -->
+                    <page string="Sales">
+
+                        <field name="sale_order_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="partner_id" string="Customer"/>
+                                <field name="date_order"/>
+                                <field name="amount_total" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
+                                <field name="currency_id"/>
+                                <field name="state" string="Status"/>
+                            </tree>
+                        </field>
+
+
+                        <!-- 💰 Total Sales Summary -->
+                        <separator string="Total Sales" colspan="2"/>
+                        <group class="oe_title">
+                            <field name="total_sales" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight total-field"/>
+                        </group>
+                    </page>
+
+                    <!-- 📌 Expenses Tab -->
+                    <page string="Expenses">
+
+                        <field name="expense_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="total_amount" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}" class="oe_highlight"/>
+                                <field name="employee_id"/>
+                                <field name="date"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+
+
+                        <!-- 💸 Total Expenses Summary -->
+                        <separator string="Total Expenses" colspan="1"/>
+                        <group class="oe_title">
+                            <field name="total_expenses" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight total-field"/>
+                        </group>
+                    </page>
+
+                    <!-- 📌 Purchases Tab -->
+                    <page string="Purchases">
+
+                        <field name="purchase_order_ids">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="date_order"/>
+                                <field name="amount_total" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}"
+                                       class="oe_highlight"/>
+                            </tree>
+                        </field>
+
+
+                        <!-- 📦 Total Purchases Summary -->
+                        <separator string="Total Purchases" colspan="2"/>
+                        <group class="oe_title">
+                            <field name="total_purchases" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight total-field"/>
+                        </group>
+                    </page>
+
+                    <!-- ⚒️ Labor Cost Tab -->
+                    <page string="Labor Cost">
+                        r
+                        <button name="action_recompute_hours_salary"
+                                type="object"
+                                string="Recompute Hours"
+                                class="btn-primary"
+                                icon="fa-refresh"/>
+
+                        <!-- 🏗 Employee Labor Cost Table -->
+                        <separator string="Employee Labor Cost Details" colspan="4"/>
+                        <field name="labor_cost_ids">
+                            <tree editable="bottom">
+                                <field name="employee_id"/>
+                                <field name="task_id" string="Task"/>
+                                <field name="hourly_wage"/>
+                                <field name="total_working_hours" string="Total Working Hours"/>
+                                <field name="total_overtime_hours" string="Total Overtime Hours"/>
+                            </tree>
+                        </field>
+
+                        <!-- 📊 Labor Summary -->
+                        <separator string="Labor Summary" colspan="4"/>
+                        <group class="oe_title">
+                            <field name="total_working_hours" class="oe_highlight total-field"/>
+                            <field name="total_overtime_hours" class="oe_highlight total-field"/>
+                            <field name="total_salary" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight total-field"/>
+                        </group>
+                    </page>
+
+                    <!-- 💵 Profit & Loss Tab -->
+                    <page string="Profit/Loss">
+                        <separator string="Financial Overview" colspan="2"/>
+                        <group class="oe_title">
+                            <field name="total_sales" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight revenue-field"
+                                   string="Total Revenue"/>
+                            <field name="total_expenses" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight expense-field"
+                                   string="Total Expenses"/>
+                            <field name="total_purchases" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight expense-field"
+                                   string="Total Purchases"/>
+                            <field name="total_salary" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="oe_highlight salary-field"
+                                   string="Total Labor Cost"/>
+                        </group>
+
+                        <!-- ✅ Profit/Loss Calculation -->
+                        <separator string="Net Profit/Loss" colspan="2"/>
+                        <group>
+                            <field name="profit_loss" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"
+                                   class="profit-loss-field"
+                                   string="Net Profit/Loss"/>
+                        </group>
+                    </page>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

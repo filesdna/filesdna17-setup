@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="case_sub_matter_create_form_view" model="ir.ui.view">
+            <field name="name">case.sub.matter.create.form.view</field>
+            <field name="model">case.sub.matter.create</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <p style="color: red;">- Keep open and close date empty if you want to reopen this matter.
+                            <br></br>
+                                    - In case of want to create a sub matter fill them out</p>
+                        <group string="Case Duration">
+                            <field name="open_date"/>
+                            <field name="close_date"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Create Sub Case" name="case_matter_details" type="object" class="oe_highlight"/> Or
+                        <button string="Reopen Case" name="set_draft" type="object" class="oe_highlight"/>
+                        <button string="Cancel" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_sub_create_case_matter" model="ir.actions.act_window">
+            <field name="name">Sub Case</field>
+            <field name="res_model">case.sub.matter.create</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="case_sub_matter_create_form_view"/>
+        </record>
+    </data>
+</odoo>

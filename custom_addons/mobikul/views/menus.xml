@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+<odoo>
+	<menuitem id="menu_mobikul_title" name="Mobikul" web_icon="mobikul,static/description/icon.png" action="mobikul_homepage_configuration_action" sequence="99" groups="mobikul.group_mobikul_user,mobikul.group_mobikul_manager"/>
+
+    <!-- Mobikul Parent Menus -->
+	<menuitem id="menu_mobikul_homepage" name="Homepage" parent="menu_mobikul_title" sequence="0" groups="mobikul.group_mobikul_user,mobikul.group_mobikul_manager"/>
+	<menuitem id="menu_mobikul_orders" name="App Orders" parent="menu_mobikul_title" sequence="1" groups="mobikul.group_mobikul_user,mobikul.group_mobikul_manager"/>
+	<menuitem id="menu_mobikul_catalog" name="Catalogs" parent="menu_mobikul_title" sequence="2" groups="mobikul.group_mobikul_user,mobikul.group_mobikul_manager"/>
+	<menuitem id="menu_mobikul_notifications" name="Notifications" parent="menu_mobikul_title" sequence="3" groups= "mobikul.group_mobikul_user,mobikul.group_mobikul_manager"/>
+	<menuitem id="menu_mobikul_config" name="Configuration" parent="menu_mobikul_title" sequence="4" groups="mobikul.group_mobikul_manager"/>
+
+    <!-- Homepage sub-menus -->
+    <menuitem id="mobilkul_homepage_configuration" name="Homepage Configuration" parent="menu_mobikul_homepage" action="mobikul_homepage_configuration_action" sequence="1"/>
+
+    <!-- Orders sub-menus -->
+    <menuitem id="mobikul_orders_orders" name="Orders" parent="menu_mobikul_orders" action="mobikul_orders_action" sequence="1"/>
+    <menuitem id="mobikul_orders_unpaid_orders" name="Unpaid Orders" parent="menu_mobikul_orders" action="mobikul_unpaid_orders_action" sequence="2"/>
+    <menuitem id="mobikul_orders_abandonned_orders" name="Cancelled Orders" parent="menu_mobikul_orders" action="mobikul_abandonned_orders_action" sequence="3"/>
+
+    <!-- Catalog sub-menus -->
+    <menuitem id="mobikul_catalog_products" name="Products" parent="menu_mobikul_catalog" action="mobikul_product_template_action" sequence="1"/>
+    <menuitem id="mobikul_config_category" name="Mobile Category" parent="menu_mobikul_catalog" action="mobikul_category_action" sequence="1"/>
+
+    <!-- Notifications sub-menus -->
+    <menuitem id="mobilkul_push_notification" name="Notifications" parent="menu_mobikul_notifications" sequence="1"/>
+    <menuitem id="mobilkul_push_notification_one_time" name="One-Time Notifications" parent="mobilkul_push_notification" action="mobikul_push_notification_action" sequence="1"/>
+    <menuitem id="mobilkul_push_notification_templates" name="Notification Templates" parent="mobilkul_push_notification" action="mobikul_push_notification_templates_action" sequence="2"/>
+	<menuitem id="menu_mobilkul_notification_messages" name="Notification Messages" parent="mobilkul_push_notification" action="mobikul_notification_massages_templates_action" sequence="3"/>
+    <menuitem id="mobikul_fcm" name="FCM" parent="menu_mobikul_notifications" sequence="2"/>
+    <menuitem id="mobikul_reg_devices_fcm" name="FCM Reg. Devices" parent="mobikul_fcm" action="fcm_registered_devices_action" sequence="1"/>
+    <menuitem id="mobikul_reg_topics_fcm" name="FCM Topics" parent="mobikul_fcm" action="fcm_registered_topics_action" sequence="2"/>
+    <menuitem id="mobikul_groups_fcm" name="FCM Groups" parent="mobikul_fcm" action="fcm_groups_action" sequence="3"/>
+    
+    <!-- Config sub-menus -->
+    <menuitem id="mobikul_config_settings" name="Settings" parent="menu_mobikul_config" action="action_mobikul_configuration" sequence="1"/>
+    <menuitem id="mobilkul_homepage" name="Homepage Section" parent="menu_mobikul_config" sequence="2"/>
+    <menuitem id="mobilkul_homepage_banners" name="Banners" parent="mobilkul_homepage" action="mobikul_homepage_banners_action" sequence="1"/>
+    <menuitem id="mobilkul_homepage_sliders" name="Sliders" parent="mobilkul_homepage" action="mobikul_homepage_sliders_action" sequence="2"/>
+    <menuitem id="mobilkul_homepage_fcategory" name="Featured Category" parent="mobilkul_homepage" action="mobikul_homepage_featured_category_action" sequence="3"/>
+    <menuitem id="mobilkul_manage_walkthrough" name="Walkthrough Section" parent="menu_mobikul_config" sequence="3"/>
+    <menuitem id="mobilkul_manage_walkthrough_submenu" name="Walkthrough" parent="mobilkul_manage_walkthrough" action="mobikul_walkthrough_action" sequence="1"/>
+</odoo>

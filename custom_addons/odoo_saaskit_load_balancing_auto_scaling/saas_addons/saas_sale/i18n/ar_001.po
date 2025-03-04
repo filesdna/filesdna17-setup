@@ -1,0 +1,1140 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saas_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:46+0000\n"
+"PO-Revision-Date: 2023-05-20 16:24+0300\n"
+"Last-Translator: Abdulaziz Alanazi <abdulaziz@alanazi.vip>\n"
+"Language-Team: \n"
+"Language: ar_SA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && "
+"n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: saas_sale
+#: model:mail.template,body_html:saas_sale.email_template_database_creation
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tHello <t t-out=\"object.partner_id.name or ''\"/>, <br/><br/> We are ready with setting up your instance."
+"<br/>\n"
+"\t\t\t\t\tURL: <t t-out=\"object.saas_domain\"/><br/>\n"
+"\n"
+"\t\t\t\t\t<br/>UserName: <t t-out=\"object.customer_email\"/>\n"
+"\t\t\t\t\t<br/>Password: <t t-out=\"object.pwd\"/><br/><br/>\n"
+"\t\t\t\t\tKind Regards,<br/>\n"
+"\t\t\t\t\tThe <t t-out=\"object.company_id.name\"/> Team\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;direction: rtl;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;direction: rtl;\">\n"
+"        عزيزي <t t-out=\"object.partner_id.name or ''\">، <br><br> يسرنا انضمامك إلينا لتكون أحد مستخدمي نظام ستريم "
+"الكل في واحد لإدارة الأعمال.<br>\n"
+"    ويسعدنا أنه تم إنشاء حسابك على الرابط: <t t-out=\"object.saas_domain\"><br>\n"
+"\n"
+"    <br>اسم المستخدم: <t t-out=\"object.customer_email\">\n"
+"    <br>كلمة المرور: <t t-out=\"object.pwd\"><br><br>\n"
+"    تحياتي,<br>\n"
+"    <t t-out=\"object.company_id.name\"><br>\n"
+"    استمتع بالتجربة!<br><br>\n"
+"    يمكنك متابعة قناة ستريم على اليوتوب لمزيد من المعلومات وكيفية الاستخدام:<br>\n"
+"    <a href=\"https://www.youtube.com/@stream-sa\">https://www.youtube.com/@stream-sa</a><br><br>\n"
+"    فيدوهات تعليمية<br>\n"
+"    <strong><a href=\"https://youtu.be/Ie_otnmn1HA\">إعداد البرنامج ونموذج الفاتورة أول مرة</a></strong><br>\n"
+"    <a href=\"https://youtu.be/5djCAVvCs5o\">اصدار الفواتير</a><br>\n"
+"    <a href=\"https://youtu.be/Wpe7CycY8LE\">طريقة استخدام الكاشير</a><br>\n"
+"    <a href=\"https://youtu.be/VriitSQLOxg\">طريقة ارجاع الطلبات للكاشير</a><br>\n"
+"    <a href=\"https://youtu.be/Vt7r1oRrZtY\">طريقة عمل فاتورة مشتريات واضافة الكميات</a>\n"
+"    </t></t></t></t></t></p>\n"
+"</div> "
+
+#. module: saas_sale
+#: model:mail.template,body_html:saas_sale.email_template_on_order_import
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tHello <t t-out=\"object.partner_id.name\"/>,<br/><br/>\n"
+"\t\t\t\t\tYour order (<t t-out=\"object.name\"/>) is accepted at <t t-out=\"object.company_id.name\"/>, <t t-"
+"out=\"format_date(object.create_date)\"/> <br/><br/>\n"
+"\t\t\t\t\tOrder Status: Under Processing.<br/><br/>\n"
+"\t\t\t\t\tNote: You will receive a link of your on-line store with the login credentials within the next 24 hours "
+"after we confirm your payment.<br/><br/>\n"
+"\n"
+"\t\t\t\t\tWe Thank You for the business with  <t t-out=\"object.company_id.name\"/>.\n"
+"\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t\tعزيزي العميل، <t t-out=\"object.partner_id.name\"></t>,<br><br>\n"
+"\t\t\t\t\tطلبك (<t t-out=\"object.name\"></t>) تم قبوله <t t-out=\"object.company_id.name\"></t>, <t t-"
+"out=\"format_date(object.create_date)\"></t> <br><br>\n"
+"\t\t\t\t\tحالة الطلب: تحت الإجراء.<br><br>\n"
+"\t\t\t\t\tوسيتم إرسال بيانات الدخول لحسابك إلى بريدك الإلكتروني خلال 24 ساعة بعد تأكيد الطلب.<br><br>\n"
+"\n"
+"\t\t\t\t\tنسعد بشراكتكم معنا،<br>\n"
+" <t t-out=\"object.company_id.name\"></t>.\n"
+"\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+
+#. module: saas_sale
+#: model:mail.template,body_html:saas_sale.email_template_renew_subscription
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t            Dear <t t-out=\"object.sale_order_ref.partner_id.name\"/><br/><br/>\n"
+"\t\t\t\t\t        Tenant url: <t t-out=\"object.tenant_url\"/>\n"
+"\t\t\t\t\t         <br/><br/>\n"
+"\t\t\t\t\t\t\tYour subscription of instance   on SaaS, for <t t-out=\"object.name\"/>, has been Renewed  till  <t t-"
+"out=\"format_date(object.exp_date)\"/>. <br/>\n"
+"\t\t\t\t <br/><br/>\n"
+"\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/>\n"
+"\t\t\t\tHave A Great Day !\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\t            عزيزي العميل <t t-out=\"object.sale_order_ref.partner_id.name\"/><br/><br/>\n"
+"\t\t\t\t\t        رابط الدخول لحسابك: <t t-out=\"object.tenant_url\"/>\n"
+"\t\t\t\t\t         <br/><br/>\n"
+"\t\t\t\t\t\t\tYour subscription of instance   on SaaS, for <t t-out=\"object.name\"/>, has been Renewed  till  <t t-"
+"out=\"format_date(object.exp_date)\"/>. <br/>\n"
+"\t\t\t\t <br/><br/>\n"
+"\t\t\t\tIf you have any questions, please do not hesitate to contact us! <br/>\n"
+"\t\t\t\tHave A Great Day !\n"
+"\t\t\t\t\t</p>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+
+#. module: saas_sale
+#: model:mail.template,body_html:saas_sale.mail_template_sale_confirmation_inherit
+#, fuzzy
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 12px;\">\n"
+"        Hello,\n"
+"        <br/><br/>\n"
+"        <t t-set=\"transaction\" t-value=\"object.get_portal_last_transaction()\"/>\n"
+"        Your order <strong t-out=\"object.name or ''\">S00049</strong> amounting in <strong t-"
+"out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</strong>\n"
+"        <t t-if=\"object.state == 'sale' or (transaction and transaction.state in ('done', 'authorized'))\">\n"
+"            has been confirmed.<br/>\n"
+"            Thank you for your trust!\n"
+"        </t>\n"
+"        <t t-elif=\"transaction and transaction.state == 'pending'\">\n"
+"            is pending. It will be confirmed when the payment is received.\n"
+"            <t t-if=\"object.reference\">\n"
+"                Your payment reference is <strong t-out=\"object.reference or ''\"/>.\n"
+"            </t>\n"
+"        </t>\n"
+"        <br/><br/>\n"
+"        Do not hesitate to contact us if you have any questions.\n"
+"        <br/><br/>\n"
+"    </p>\n"
+"<t t-if=\"hasattr(object, 'website_id') and object.website_id\">\n"
+"    <div style=\"margin: 0px; padding: 0px;\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-collapse: collapse;\">\n"
+"            <tr style=\"border-bottom: 2px solid #dee2e6;\">\n"
+"                <td style=\"width: 150px;\"><strong>Products</strong></td>\n"
+"                <td/>\n"
+"                <td width=\"15%\" align=\"center\"><strong>Quantity</strong></td>\n"
+"                <td width=\"20%\" align=\"right\"><strong>\n"
+"                <t t-if=\"object.user_id.has_group('account.group_show_line_subtotals_tax_excluded')\">\n"
+"                    VAT Excl.\n"
+"                </t>\n"
+"                <t t-else=\"\">\n"
+"                    VAT Incl.\n"
+"                </t>\n"
+"                </strong></td>\n"
+"            </tr>\n"
+"        </table>\n"
+"        <t t-foreach=\"object.order_line\" t-as=\"line\">\n"
+"            <t t-if=\"(not hasattr(line, 'is_delivery') or not line.is_delivery) and line.display_type in "
+"['line_section', 'line_note']\">\n"
+"                <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-collapse: collapse;\">\n"
+"                    <t t-set=\"loop_cycle_number\" t-value=\"0\"/>\n"
+"                    <tr t-att-style=\"'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 else 'background-"
+"color: #ffffff'\">\n"
+"                        <t t-set=\"loop_cycle_number\" t-value=\"loop_cycle_number + 1\"/>\n"
+"                        <td colspan=\"4\">\n"
+"                            <t t-if=\"line.display_type == 'line_section'\">\n"
+"                                <strong t-out=\"line.name or ''\">Taking care of Trees Course</strong>\n"
+"                            </t>\n"
+"                            <t t-elif=\"line.display_type == 'line_note'\">\n"
+"                                <i t-out=\"line.name or ''\">Taking care of Trees Course</i>\n"
+"                            </t>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </t>\n"
+"            <t t-elif=\"(not hasattr(line, 'is_delivery') or not line.is_delivery)\">\n"
+"                <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-collapse: collapse;\">\n"
+"                    <t t-set=\"loop_cycle_number\" t-value=\"0\"/>\n"
+"                    <tr t-att-style=\"'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 else 'background-"
+"color: #ffffff'\">\n"
+"                        <t t-set=\"loop_cycle_number\" t-value=\"loop_cycle_number + 1\"/>\n"
+"                        <td style=\"width: 150px;\">\n"
+"                            <img t-attf-src=\"/web/image/product.product/{{ line.product_id.id }}/image_128\" "
+"style=\"width: 64px; height: 64px; object-fit: contain;\" alt=\"Product image\"/>\n"
+"                        </td>\n"
+"                        <td align=\"left\" t-out=\"line.product_id.name or ''\">\tTaking care of Trees Course</td>\n"
+"                        <td width=\"15%\" align=\"center\" t-out=\"line.product_uom_qty or ''\">1</td>\n"
+"                        <td width=\"20%\" align=\"right\"><strong>\n"
+"                        <t t-if=\"object.user_id.has_group('account.group_show_line_subtotals_tax_excluded')\">\n"
+"                            <t t-out=\"format_amount(line.price_reduce_taxexcl, object.currency_id) or ''\">$ 10.00</"
+"t>\n"
+"                        </t>\n"
+"                        <t t-else=\"\">\n"
+"                            <t t-out=\"format_amount(line.price_reduce_taxinc, object.currency_id) or ''\">$ 10.00</"
+"t>\n"
+"                        </t>\n"
+"                        </strong></td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </t>\n"
+"        </t>\n"
+"    </div>\n"
+"    <div style=\"margin: 0px; padding: 0px;\" t-if=\"hasattr(object, 'carrier_id') and object.carrier_id\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-spacing: 0px 4px;\" align=\"right\">\n"
+"            <tr>\n"
+"                <td style=\"width: 60%\"/>\n"
+"                <td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"><strong>Delivery:</strong></"
+"td>\n"
+"                <td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_delivery, object.currency_id) or ''\">$ 0.00</td>\n"
+"            </tr>\n"
+"            <tr>\n"
+"                <td style=\"width: 60%\"/>\n"
+"                <td style=\"width: 30%;\" align=\"right\"><strong>SubTotal:</strong></td>\n"
+"                <td style=\"width: 10%;\" align=\"right\" t-out=\"format_amount(object.amount_untaxed, object."
+"currency_id) or ''\">$ 10.00</td>\n"
+"            </tr>\n"
+"        </table>\n"
+"    </div>\n"
+"    <div style=\"margin: 0px; padding: 0px;\" t-else=\"\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-spacing: 0px 4px;\" align=\"right\">\n"
+"            <tr>\n"
+"                <td style=\"width: 60%\"/>\n"
+"                <td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"><strong>SubTotal:</strong></"
+"td>\n"
+"                <td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_untaxed, object.currency_id) or ''\">$ 10.00</td>\n"
+"            </tr>\n"
+"        </table>\n"
+"    </div>\n"
+"    <div style=\"margin: 0px; padding: 0px;\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-spacing: 0px 4px;\" align=\"right\">\n"
+"            <tr>\n"
+"                <td style=\"width: 60%\"/>\n"
+"                <td style=\"width: 30%;\" align=\"right\"><strong>Taxes:</strong></td>\n"
+"                <td style=\"width: 10%;\" align=\"right\" t-out=\"format_amount(object.amount_tax, object."
+"currency_id) or ''\">$ 0.00</td>\n"
+"            </tr>\n"
+"            <tr>\n"
+"                <td style=\"width: 60%\"/>\n"
+"                <td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"><strong>Total:</strong></"
+"td>\n"
+"                <td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_total, object.currency_id) or ''\">$ 10.00</td>\n"
+"            </tr>\n"
+"        </table>\n"
+"    </div>\n"
+"    <div t-if=\"object.partner_invoice_id\" style=\"margin: 0px; padding: 0px;\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px;\">\n"
+"            <tr>\n"
+"                <td style=\"padding-top: 10px;\">\n"
+"                    <strong>Bill to:</strong>\n"
+"                    <t t-out=\"object.partner_invoice_id.street or ''\">1201 S Figueroa St</t>\n"
+"                    <t t-out=\"object.partner_invoice_id.city or ''\">Los Angeles</t>\n"
+"                    <t t-out=\"object.partner_invoice_id.state_id.name or ''\">California</t>\n"
+"                    <t t-out=\"object.partner_invoice_id.zip or ''\">90015</t>\n"
+"                    <t t-out=\"object.partner_invoice_id.country_id.name or ''\">United States</t>\n"
+"                </td>\n"
+"            </tr>\n"
+"            <tr>\n"
+"                <td>\n"
+"                    <strong>Payment Method:</strong>\n"
+"                    <t t-if=\"transaction.token_id\">\n"
+"                        <t t-out=\"transaction.token_id.name or ''\"/>\n"
+"                    </t>\n"
+"                    <t t-else=\"\">\n"
+"                        <t t-out=\"transaction.acquirer_id.sudo().name or ''\"/>\n"
+"                    </t>\n"
+"                    (<t t-out=\"format_amount(transaction.amount, object.currency_id) or ''\">$ 10.00</t>)\n"
+"                </td>\n"
+"            </tr>\n"
+"        </table>\n"
+"    </div>\n"
+"    <div t-if=\"object.partner_shipping_id and not object.only_services\" style=\"margin: 0px; padding: 0px;\">\n"
+"        <table width=\"100%\" style=\"color: #454748; font-size: 12px;\">\n"
+"            <tr>\n"
+"                <td>\n"
+"                    <br/>\n"
+"                    <strong>Ship to:</strong>\n"
+"                    <t t-out=\"object.partner_shipping_id.street or ''\">1201 S Figueroa St</t>\n"
+"                    <t t-out=\"object.partner_shipping_id.city or ''\">Los Angeles</t>\n"
+"                    <t t-out=\"object.partner_shipping_id.state_id.name or ''\">California</t>\n"
+"                    <t t-out=\"object.partner_shipping_id.zip or ''\">90015</t>\n"
+"                    <t t-out=\"object.partner_shipping_id.country_id.name or ''\">United States</t>\n"
+"                </td>\n"
+"            </tr>\n"
+"        </table>\n"
+"        <table t-if=\"hasattr(object, 'carrier_id') and object.carrier_id\" width=\"100%\" style=\"color: #454748; "
+"font-size: 12px;\">\n"
+"            <tr>\n"
+"                <td>\n"
+"                    <strong>Shipping Method:</strong>\n"
+"                    <t t-out=\"object.carrier_id.name or ''\"/>\n"
+"                    <t t-if=\"object.carrier_id.fixed_price == 0.0\">\n"
+"                        (Free)\n"
+"                    </t>\n"
+"                    <t t-else=\"\">\n"
+"                        (<t t-out=\"format_amount(object.carrier_id.fixed_price, object.currency_id) or ''\">$ "
+"10.00</t>)\n"
+"                    </t>\n"
+"                </td>\n"
+"            </tr>\n"
+"        </table>\n"
+"    </div>\n"
+"</t>\n"
+"</div>"
+msgstr ""
+"<div j=0 style=\";text-align:right;direction:rtl\"><p j=1 style=\";text-align:right;direction:rtl\">مرحبًا،<br/><br/"
+"><t t-set=\"transaction\" t-value=\"object.get_portal_last_transaction()\"/> طلبك <strong t-out=\"object.name or "
+"''\">S00049</strong> يبلغ <strong t-out=\"format_amount(object.amount_total, object.currency_id) or ''\">10.00 "
+"دولارات</strong><t t-if=\"object.state == 'sale' or (transaction and transaction.state in ('done', 'authorized'))\"> "
+"تم التاكيد.<br/> اشكرك على ثقتك!</t><t t-elif=\"transaction and transaction.state == 'pending'\"> معلق. سيتم تأكيده "
+"عند استلام الدفعة.<t t-if=\"object.reference\"> مرجع الدفع الخاص بك هو <strong t-out=\"object.reference or ''\"/>.</"
+"strong></t></t> <strong t-out=\"object.reference or ''\"/><br/><br/>لا تتردد في الاتصال بنا إذا كان لديك أي أسئلة."
+"<br/><br/></strong></p><t t-if=\"hasattr(object, 'website_id') and object.website_id\"><div j=0 style=\";text-align:"
+"right;direction:rtl\"><table j=10 style=\";text-align:right;direction:rtl\"><tr style=\"border-bottom: 2px solid "
+"#dee2e6;\"><td style=\"width: 150px;\"> <strong>منتجات</strong></td><td/><td width=\"15%\" align=\"center\"> "
+"<strong>كمية</strong></td><td width=\"20%\" align=\"right\"><t t-if=\"object.user_id.has_group('account."
+"group_show_line_subtotals_tax_excluded')\"> <strong>ضريبة القيمة المضافة</strong></t><t t-else=\"\"> <strong>شامل "
+"ضريبة القيمة المضافة.</strong></t></td></tr></table><t t-foreach=\"object.order_line\" t-as=\"line\"><t t-if=\"(not "
+"hasattr(line, 'is_delivery') or not line.is_delivery) and line.display_type in ['line_section', "
+"'line_note']\"><table j=10 style=\";text-align:right;direction:rtl\"><t t-set=\"loop_cycle_number\" t-value=\"0\"/"
+"><tr t-att-style=\"'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 else 'background-color: #ffffff'\"><t t-"
+"set=\"loop_cycle_number\" t-value=\"loop_cycle_number + 1\"/><td colspan=\"4\"><t t-if=\"line.display_type == "
+"'line_section'\"> <strong t-out=\"line.name or ''\">دورة رعاية الأشجار</strong></t><t t-elif=\"line.display_type == "
+"'line_note'\"> <i t-out=\"line.name or ''\">دورة رعاية الأشجار</i> </t></td></tr></table></t><t t-elif=\"(not "
+"hasattr(line, 'is_delivery') or not line.is_delivery)\"><table j=10 style=\";text-align:right;direction:rtl\"><t t-"
+"set=\"loop_cycle_number\" t-value=\"0\"/><tr t-att-style=\"'background-color: #f2f2f2' if loop_cycle_number % 2 == 0 "
+"else 'background-color: #ffffff'\"><t t-set=\"loop_cycle_number\" t-value=\"loop_cycle_number + 1\"/><td "
+"style=\"width: 150px;\"><img t-attf-src=\"/web/image/product.product/{{ line.product_id.id }}/image_128\" "
+"style=\"width: 64px; height: 64px; object-fit: contain;\" alt=\"Product image\"/></td><td align=\"left\" t-"
+"out=\"line.product_id.name or ''\"> دورة رعاية الأشجار</td><td width=\"15%\" align=\"center\" t-out=\"line."
+"product_uom_qty or ''\"> 1</td><td width=\"20%\" align=\"right\"><t t-if=\"object.user_id.has_group('account."
+"group_show_line_subtotals_tax_excluded')\"><t t-out=\"format_amount(line.price_reduce_taxexcl, object.currency_id) "
+"or ''\"> <strong>10.00 دولارات</strong></t></t><t t-else=\"\"><t t-out=\"format_amount(line.price_reduce_taxinc, "
+"object.currency_id) or ''\"> <strong>10.00 دولارات</strong></t></t></td></tr></table></t></t></div><div j=33 "
+"style=\";text-align:right;direction:rtl\"><table j=34 style=\";text-align:right;direction:rtl\"><tr><td "
+"style=\"width: 60%\"/><td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"> <strong>توصيل:</"
+"strong></td><td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-out=\"format_amount(object."
+"amount_delivery, object.currency_id) or ''\"> 0.00 دولار</td></tr><tr><td style=\"width: 60%\"/><td style=\"width: "
+"30%;\" align=\"right\"> <strong>المجموع الفرعي:</strong></td><td style=\"width: 10%;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_untaxed, object.currency_id) or ''\"> 10.00 دولارات</td></tr></table></div><div "
+"j=40 style=\";text-align:right;direction:rtl\"><table j=34 style=\";text-align:right;direction:rtl\"><tr><td "
+"style=\"width: 60%\"/><td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"> <strong>المجموع "
+"الفرعي:</strong></td><td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_untaxed, object.currency_id) or ''\"> 10.00 دولارات</td></tr></table></div><div "
+"j=0 style=\";text-align:right;direction:rtl\"><table j=34 style=\";text-align:right;direction:rtl\"><tr><td "
+"style=\"width: 60%\"/><td style=\"width: 30%;\" align=\"right\"> <strong>الضرائب:</strong></td><td style=\"width: "
+"10%;\" align=\"right\" t-out=\"format_amount(object.amount_tax, object.currency_id) or ''\"> 0.00 دولار</td></"
+"tr><tr><td style=\"width: 60%\"/><td style=\"width: 30%; border-top: 1px solid #dee2e6;\" align=\"right\"> "
+"<strong>المجموع:</strong></td><td style=\"width: 10%; border-top: 1px solid #dee2e6;\" align=\"right\" t-"
+"out=\"format_amount(object.amount_total, object.currency_id) or ''\"> 10.00 دولارات</td></tr></table></div><div j=44 "
+"style=\";text-align:right;direction:rtl\"><table j=45 style=\";text-align:right;direction:rtl\"><tr><td "
+"style=\"padding-top: 10px;\"> <strong>مشروع قانون ل:</strong><t t-out=\"object.partner_invoice_id.street or ''\"> "
+"1201 S شارع فيغيروا</t><t t-out=\"object.partner_invoice_id.city or ''\"> لوس أنجلوس</t><t t-out=\"object."
+"partner_invoice_id.state_id.name or ''\"> كاليفورنيا</t><t t-out=\"object.partner_invoice_id.zip or ''\"> 90015</"
+"t><t t-out=\"object.partner_invoice_id.country_id.name or ''\"> الولايات المتحدة</t></td></tr><tr><td> <strong>طريقة "
+"الدفع او السداد:</strong><t t-if=\"transaction.token_id\"><t t-out=\"transaction.token_id.name or ''\"/></t><t t-"
+"else=\"\"><t t-out=\"transaction.acquirer_id.sudo().name or ''\"/></t> (<t t-out=\"format_amount(transaction.amount, "
+"object.currency_id) or ''\"> 10.00 دولارات</t> )</td></tr></table></div><div j=56 style=\";text-align:right;"
+"direction:rtl\"><table j=45 style=\";text-align:right;direction:rtl\"><tr><td><br/> <strong>سافر على متن سفينة لِـ:</"
+"strong><t t-out=\"object.partner_shipping_id.street or ''\"> 1201 S شارع فيغيروا</t><t t-out=\"object."
+"partner_shipping_id.city or ''\"> لوس أنجلوس</t><t t-out=\"object.partner_shipping_id.state_id.name or ''\"> "
+"كاليفورنيا</t><t t-out=\"object.partner_shipping_id.zip or ''\"> 90015</t><t t-out=\"object.partner_shipping_id."
+"country_id.name or ''\"> الولايات المتحدة</t></td></tr></table><table j=62 style=\";text-align:right;direction:"
+"rtl\"><tr><td> <strong>طريقة الشحن:</strong><t t-out=\"object.carrier_id.name or ''\"/><t t-if=\"object.carrier_id."
+"fixed_price == 0.0\"> (حر)</t><t t-else=\"\"> (<t t-out=\"format_amount(object.carrier_id.fixed_price, object."
+"currency_id) or ''\"> 10.00 دولارات</t> )</t></td></tr></table></div></t></div>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<i class=\"fa fa-comment\"/> Contact us to get a new quotation."
+msgstr "<i class=\"fa fa-comment\"/>تواصل بنا للحصول على عرض سعر جديد.</i>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<i class=\"fa fa-comment\"/> Feedback"
+msgstr "<i class=\"fa fa-comment\"/> رأيك"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<i class=\"fa fa-times\"/> Reject"
+msgstr "<i class=\"fa fa-times\"/>رفض"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<span>Accepted on the behalf of:</span>"
+msgstr "<span>تم الموافقة نيابةّ عن:</span>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<span>By paying this proposal, I agree to the following terms:</span>"
+msgstr "<span>بسداد قيمة هذا العرض، أوافق على الشروط التالية:</span>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<span>By signing this proposal, I agree to the following terms:</span>"
+msgstr "<span>بتوقيع هذا العرض، أوافق على الشروط التالية:</span>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<span>For an amount of:</span>"
+msgstr "<span>بإجمالي:</span>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<span>With payment terms:</span>"
+msgstr "<span>بشروط السداد:</span>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.sale_order_portal_content_inherit_sale_users
+#, fuzzy
+msgid "<strong class=\"d-block mb-1\">Payment Term</strong>"
+msgstr "<strong class=\"d-block mb-1\">شروط الدفع</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.report_invoice_document_users
+#, fuzzy
+msgid "<strong style=\"margin-right: 10px\">invoice duration:</strong>"
+msgstr "<strong style=\"margin-right: 10px\">مدة الفاتورة:</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.report_invoice_document_users
+msgid "<strong>Database Name:</strong>"
+msgstr "<strong>اسم الاشتراك:</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid ""
+"<strong>No suitable payment option could be found.</strong><br/>\n"
+"                                        If you believe that it is an error, please contact the website administrator."
+msgstr ""
+"<strong>لا يوجد خيار دفع مناسب.</strong><br/>\n"
+"                                        نأمل التواصل مع الدعم الفني."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.report_invoice_document_users
+msgid "<strong>Payment Term</strong>"
+msgstr "<strong>فترات الدفع</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<strong>Thank You!</strong><br/>"
+msgstr "<strong>شكرًا لك!</strong><br/>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<strong>This offer expired!</strong>"
+msgstr "<strong>انتهت صلاحية هذا العرض!</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "<strong>This quotation has been canceled.</strong>"
+msgstr "<strong>تم إلغاء عرض السعر.</strong>"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Accept &amp; Pay"
+msgstr "قبول ودفع"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Accept &amp; Sign"
+msgstr "قبول وتوقيع"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__is_account_product
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__is_account_product
+msgid "Account Product"
+msgstr "منتج الحساب"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__active
+msgid "Active"
+msgstr "نشيط"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.agreement_term_form
+#, fuzzy
+msgid "Agreement Terms"
+msgstr "شروط الاتفاقية"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__type
+#, fuzzy
+msgid "Agreement term"
+msgstr "مدة الاتفاقية"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.agreement_term_tree
+#, fuzzy
+msgid "Agreement terms"
+msgstr "شروط الاتفاقية"
+
+#. module: saas_sale
+#: model:mail.template,name:saas_sale.email_template_on_order_import
+msgid "Alert Mail on Order Import"
+msgstr "إشعار بالطلب عبر البريد الالكتروني"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__billing
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__billing
+#: model:ir.model.fields,field_description:saas_sale.field_account_move_line__billing
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__billing
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__billing
+msgid "Billing Type"
+msgstr "نوع الفوترة"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: saas_sale
+#: model:ir.actions.server,name:saas_sale.check_so_for_confirm_ir_actions_server
+#: model:ir.cron,cron_name:saas_sale.check_so_for_confirm
+msgid "Check for any SO to confirm it."
+msgstr "تحقق من تأكيد الطلبات."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.view_order_form_saas_hide_confirm
+#, fuzzy
+msgid "Confirm Sale"
+msgstr "تأكيد البيع"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__countries
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__countries
+msgid "Countries"
+msgstr "الدول"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.view_order_form_saas_hide_confirm
+msgid "Create Database"
+msgstr "إنشاء اشتراك"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.account_invoice_form_inv_type
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه في"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__company_name
+#, fuzzy
+msgid "Customer Company Name"
+msgstr "اسم شركة العميل"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__customer_email
+#, fuzzy
+msgid "Customer Email Address"
+msgstr "عنوان البريد الإلكتروني للعميل"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__customer_name
+msgid "Customer Name"
+msgstr "اسم العميل"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Database \"%s\" is already exists...!"
+msgstr "الاشتراك \"%s\" موجود مسبقاً...!"
+
+#. module: saas_sale
+#: model:mail.template,name:saas_sale.email_template_database_creation
+msgid "Database Creation Alert Mail"
+msgstr "إشعار العميل بالبريد الإلكتروني عند انشاء الاشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__instance_name
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__instance_name
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__instance_name
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__instance_name
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__instance_topup_list
+msgid "Database Name"
+msgstr "اسم الاشتراك"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Database already exist."
+msgstr "الاشتراك موجود مسبقاً."
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, fuzzy, python-format
+msgid ""
+"Error\n"
+" %s"
+msgstr ""
+"خطأ\n"
+" %s"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__expiry_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__expiry_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__expiry_date
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__free_trial
+msgid "Free Trial"
+msgstr "تجربة مجانية"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__from_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__from_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__from_date
+msgid "From Date"
+msgstr "من التاريخ"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__recurring_term__type__half_year
+#, fuzzy
+msgid "Half Yearly"
+msgstr "نصف سنوي"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "History"
+msgstr "السجل"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__industries
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__industries
+msgid "Industries"
+msgstr "الصناعات"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Inside make invoice function  : {} {}"
+msgstr "دالة عمل الفاتورة من الداخل: {} {}"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_move_line__month
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order_line__month
+#, fuzzy
+msgid "Invoice Term"
+msgstr "مدة الفاتورة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__invoice_type
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__invoice_type
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__invoice_type
+msgid "Invoice Type"
+msgstr "نوع الفاتورة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__invoice_term_id
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__invoice_term_id
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__invoice_term_id
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__invoice_term_id
+msgid "Invoicing Term"
+msgstr "مدة الفوترة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__is_manage_users
+msgid "Is Manage Users"
+msgstr "إدارة المستخدمين"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__is_top_up
+msgid "Is top-up?"
+msgstr "ترقية"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__lang_code
+#, fuzzy
+msgid "Language Code"
+msgstr "رمز اللغة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__write_uid
+msgid "Last Updated by"
+msgstr "آخر من حدثه"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saas_sale
+#: model:product.template,name:saas_sale.user_product_boolean
+msgid "Manage Users"
+msgstr "إدارة المستخدمين"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.product_template_form_view_inherit_saas
+msgid "Module Details"
+msgstr "تفاصيل التطبيق"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__module_list
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__module_list
+msgid "Module List"
+msgstr "تحديث قائمة التطبيقات"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.product_template_form_view_inherit_saas
+msgid "Modules to Install"
+msgstr "تثبيت التطبيقات"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__recurring_term__type__from_first_date
+msgid "Monthly"
+msgstr "شهرياً"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__new_instance
+msgid "New Instance"
+msgstr "اشتراك جديد"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__no_of_users
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__no_of_users
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__no_of_users
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__no_of_users
+#, fuzzy
+msgid "No. of Users"
+msgstr "عدد المستخدمين"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Pay Now"
+msgstr "ادفع الآن "
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Pay with"
+msgstr "طريقة الدفع"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move__billing__normal
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move_line__billing__normal
+#: model:ir.model.fields.selection,name:saas_sale.selection__sale_order__billing__normal
+msgid "Per Module/Per Month/Per User"
+msgstr "لكل تطبيق/في الشهر/لكل مستخدم"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Previous Dependent Job Is Failed!"
+msgstr "فشلت العملية اللازمة السابقة!"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Previous Dependent Job {} Is Failed!"
+msgstr "فشلت العملية اللازمة السابقة {}!"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_product_template
+msgid "Product"
+msgstr "المنتج"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_product_product
+msgid "Product Variant"
+msgstr "موديل المنتج "
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__recurring_term__type__quarter
+msgid "Quarterly"
+msgstr "ربع سنوي"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__pwd
+msgid "Random Generated Password"
+msgstr "إنشاء كلمة مرور عشوائية"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_recurring_term
+msgid "Recurring Term"
+msgstr "تكرار حسب المدة"
+
+#. module: saas_sale
+#: model:ir.ui.menu,name:saas_sale.agreement_terms_id
+msgid "Recurring Terms"
+msgstr "تكرار حسب المدة"
+
+#. module: saas_sale
+#: model:ir.actions.act_window,name:saas_sale.show_agreement_terms
+#: model_terms:ir.ui.view,arch_db:saas_sale.view_terms_filter
+msgid "Recurring terms"
+msgstr "تكرار حسب المدة"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Reject This Quotation"
+msgstr "رفض عرض السعر"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__related_database
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__related_database
+msgid "Related Database"
+msgstr "الاشتراك المرتبط"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move__invoice_type__rent
+msgid "Rent Invoice"
+msgstr "فاتورة الاشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__saas_domain
+msgid "SaaS Domain"
+msgstr "دومين الخدمة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__saas_order
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__saas_order
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__saas_order
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__saas_order
+msgid "SaaS Order"
+msgstr "خدمة اشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__is_saas
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__is_saas
+msgid "SaaS Product"
+msgstr "منتج خدمة اشتراك"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_sale_order
+msgid "Sales Order"
+msgstr "طلب خدمة اشتراك"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند الطلب"
+
+#. module: saas_sale
+#: model:mail.template,name:saas_sale.mail_template_sale_confirmation_inherit
+msgid "Sales Order: Confirmation Email Inherit"
+msgstr "طلب المبيعات: توارث البريد الإلكتروني للتأكيد"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.view_terms_filter
+msgid "Search recurring terms"
+msgstr "ابحث عن تكرار المدة"
+
+#. module: saas_sale
+#: model:ir.model.constraint,message:saas_sale.constraint_recurring_term_term_uniq
+msgid "Select Type is already exist!"
+msgstr "النوع المحدد موجود مسبقاً!"
+
+#. module: saas_sale
+#: model:mail.template,description:saas_sale.mail_template_sale_confirmation_inherit
+msgid "Sent to customers on order confirmation"
+msgstr "ارساله للعملاء عند تأكيد الطلب"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_recurring_term__sequence
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Sign &amp; Pay"
+msgstr "تسجيل ودفع"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Special Symbols Are Not Allowed In Instance Name!!"
+msgstr "الرموز الخاصة غير مسموح بها في اسم الاشتراك!!"
+
+#. module: saas_sale
+#: model:mail.template,subject:saas_sale.email_template_renew_subscription
+msgid "Subscription Renewed"
+msgstr "تم تجديد الاشتراك"
+
+#. module: saas_sale
+#: model:mail.template,name:saas_sale.email_template_renew_subscription
+msgid "Subscription Renewed Email"
+msgstr "البريد الإلكتروني لتجديد الاشتراك"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_account_tax
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Tell us why you are refusing this quotation, this will help us improve our services."
+msgstr "نأمل أن تخبرنا عن سبب رفضك لعرض السعر، سيساعدنا هذا على تقديم الأفضل لكم."
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_res_users__tenant_user
+msgid "Tenant User dummy field (no use in master db)"
+msgstr "الحقل الوهمي للمشترك (لا يستخدم في الاشتراك الرئيسي)"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_bank_statement_line__to_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_move__to_date
+#: model:ir.model.fields,field_description:saas_sale.field_account_payment__to_date
+msgid "To Date"
+msgstr "حتي اليوم"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.view_order_form_saas_hide_confirm
+msgid "Topup Database"
+msgstr "ترقية الاشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__trial_days
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__trial_days
+msgid "Trial Days"
+msgstr "أيام التجربة"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Unable to mix any taxes being price included with taxes affecting the base amount but not included in price."
+msgstr "تعذر دمج أي الضرائب المشمولة في السعر مع الضرائب التي تؤثر على المبلغ الأساسي ولكنها غير مشمولة في السعر."
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "UpperCase Letter Is Not Allowed In Instance Name!!"
+msgstr "الأحرف الكبيرة غير مسموح بها في اسم الاشتراك!!"
+
+#. module: saas_sale
+#: model:ir.model,name:saas_sale.model_res_users
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__user_uid
+msgid "User"
+msgstr "المستخدم"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__user_product
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__user_product
+msgid "User Product"
+msgstr "منتج إدارة المستخدمين"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__user_product_check_price
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__user_product_check_price
+msgid "User Product Check"
+msgstr "اختيار منتج إدارة المستخدمين"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move__invoice_type__user
+msgid "User Purchase Invoice"
+msgstr "فاتورة شراء المستخدمين"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_move_line__no_of_users
+#: model_terms:ir.ui.view,arch_db:saas_sale.report_invoice_document_users
+#: model_terms:ir.ui.view,arch_db:saas_sale.sale_order_portal_content_inherit_sale_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move__billing__user_plan_price
+#: model:ir.model.fields.selection,name:saas_sale.selection__account_move_line__billing__user_plan_price
+#: model:ir.model.fields.selection,name:saas_sale.selection__sale_order__billing__user_plan_price
+msgid "Users + Plan Price"
+msgstr "المستخدمون + سعر الباقة"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Validate Order"
+msgstr "اعتماد الطلب"
+
+#. module: saas_sale
+#. odoo-python
+#: code:addons/saas_sale/models/sale.py:0
+#, python-format
+msgid "Warning"
+msgstr "تحذير"
+
+#. module: saas_sale
+#: model:mail.template,subject:saas_sale.email_template_database_creation
+#, fuzzy
+msgid "Welcome to {{object.company_id.name}} "
+msgstr "مرحبًا بك في {{object.company_id.name}}"
+
+#. module: saas_sale
+#: model:ir.model.fields.selection,name:saas_sale.selection__recurring_term__type__year
+msgid "Yearly"
+msgstr "سنويًا"
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Your feedback..."
+msgstr "ملاحظاتك..."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Your order has been confirmed."
+msgstr "تم تأكيد طلبك."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Your order has been signed but still needs to be paid to be confirmed."
+msgstr "تم توقيع طلبك لكن لا يزال بحاجة للسداد ليتم تأكيده."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Your order has been signed."
+msgstr "تم توقيع طلبك."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "Your order is not in a state to be rejected."
+msgstr "لا يمكن رفض طلبكم في هذه الحالة."
+
+#. module: saas_sale
+#: model_terms:ir.ui.view,arch_db:saas_sale.my_close_button_link
+msgid "close"
+msgstr "إغلاق"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__currency_symbol
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__currency_symbol
+msgid "currency "
+msgstr "العملة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_product_product__is_package
+#: model:ir.model.fields,field_description:saas_sale.field_product_template__is_package
+msgid "is Package"
+msgstr "باقة"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__existed_product
+#, fuzzy
+msgid "product Name"
+msgstr "اسم المنتج"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__temp_vals
+msgid "saaS domain"
+msgstr "دومين خدمة الاشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_sale_order__instance_name_list
+msgid "saaS order"
+msgstr "طلب اشتراك"
+
+#. module: saas_sale
+#: model:ir.model.fields,field_description:saas_sale.field_account_move_line__calculate_field
+msgid "yes"
+msgstr "نعم"
+
+#. module: saas_sale
+#: model:mail.template,report_name:saas_sale.mail_template_sale_confirmation_inherit
+msgid "{{ (object.name or '').replace('/','_') }}"
+msgstr "{{ (object.name or '').replace('/','_') }}"
+
+#. module: saas_sale
+#: model:mail.template,subject:saas_sale.mail_template_sale_confirmation_inherit
+msgid ""
+"{{ object.company_id.name }} {{ (object.get_portal_last_transaction().state == 'pending') and 'Pending Order' or "
+"'Order' }} (Ref {{ object.name or 'n/a' }})"
+msgstr ""
+"{{ object.company_id.name }} {{ (object.get_portal_last_transaction().state == 'pending') and 'Pending Order' or "
+"'Order' }} (Ref {{ object.name or 'n/a' }})"
+
+#. module: saas_sale
+#: model:mail.template,subject:saas_sale.email_template_on_order_import
+msgid ""
+"{{object.company_id.name}} Purchase Order Acceptance\n"
+"\t\t\t"
+msgstr ""
+"{{object.company_id.name}} قبول طلب الشراء\n"
+"\t\t\t"

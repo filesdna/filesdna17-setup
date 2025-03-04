@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Inherit CRM Lead Form -->
+        <record id="crm_lead_form_inherit_new_quotation" model="ir.ui.view">
+            <field name="name">crm.lead.form.inherit.new.quotation</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="sale_crm.crm_case_form_view_oppor"/>
+            <field name="arch" type="xml">
+                <!-- Rename Existing Button -->
+                <xpath expr="//button[@name='action_sale_quotations_new']" position="attributes">
+                    <attribute name="string">New Estimation</attribute>
+                </xpath>
+
+                <!-- Add New Quotation Button -->
+                <xpath expr="//header/button[@name='action_sale_quotations_new']" position="after">
+                    <button name="action_create_new_quotation"
+                            type="object"
+                            string="New Quotation"
+                            class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

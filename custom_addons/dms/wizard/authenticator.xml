@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+
+        <record id="dms_authenticator_form_kanban" model="ir.ui.view">
+            <field name="name">dms.authenticator.form</field>
+            <field name="model">dms.authenticator</field>
+            <field name="arch" type="xml">
+                <form string="Authenticator">
+                    <sheet>
+                        <group>
+                            <field name="code" required="1" />
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="action_kanban_authenticate" type="object" string="Authenticate"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_dms_authenticator_kanban" model="ir.actions.act_window">
+            <field name="name">Authenticator</field>
+            <field name="res_model">dms.authenticator</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="dms_authenticator_form_kanban"/>
+            <field name="target">new</field>
+        </record>
+
+        <record id="dms_authenticator_form" model="ir.ui.view">
+            <field name="name">dms.authenticator.form</field>
+            <field name="model">dms.authenticator</field>
+            <field name="arch" type="xml">
+                <form string="Authenticator">
+                    <sheet>
+                        <group>
+                            <field name="code" required="1" />
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="authenticate" type="object" string="Authenticate"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_dms_authenticator" model="ir.actions.act_window">
+            <field name="name">Authenticator</field>
+            <field name="res_model">dms.authenticator</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="dms_authenticator_form"/>
+            <field name="target">new</field>
+        </record>
+
+    </odoo>

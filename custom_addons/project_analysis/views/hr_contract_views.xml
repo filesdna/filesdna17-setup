@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="hr_contract_form_view_inherit" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="after">
+                    <group string="Working Hours">
+                        <group>
+                            <field name="weekly_hours" string="Weekly Working Hours"/>
+                            <field name="hourly_wage" string="Hourly Wage" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"/>
+                            <field name="weekly_wage" string="Weekly Wage" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

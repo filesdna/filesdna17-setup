@@ -1,0 +1,28 @@
+<odoo>
+<!--   Define the view first   -->
+        <record id="view_delegation_home" model="ir.ui.view">
+            <field name="name">dms_file.form</field>
+            <field name="model">dms.file</field>
+            <field name="arch" type="xml">
+                <form string="Delegation" edit="false" create="false" delete="false">
+                        <sheet>
+                                <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                                <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                                <div id="root" data-path="delegation"/>
+                                <script src="/dms_editor/static/src/static/js/main.c91253d0.js"/>
+                        </sheet>
+                </form>
+            </field>
+        </record>
+        <!--   Now reference the view   -->
+        <record id="action_delegation_page" model="ir.actions.act_window">
+                <field name="name">Delegation</field>
+                <field name="res_model">dms.file</field>
+                <field name="view_mode">form</field>
+                <field name="view_id" ref="view_delegation_home"/>
+                <field name="target">current</field>
+        </record>
+
+        
+        <menuitem id="menu_dms_delegation" name="Delegation" sequence="35" parent="dms.cat_menu_dms_config" action="action_delegation_page"/>
+</odoo>

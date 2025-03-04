@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_metadata_configuration_form" model="ir.ui.view">
+        <field name="name">metadata.configuration.form</field>
+        <field name="model">metadata.configuration</field>
+        <field name="arch" type="xml">
+            <form string="Metadata Category">
+                <sheet>
+                <h1><field name="name" widget="char" required="1" string="Name" class="oe_inline"/></h1>
+                    <group>
+                        <field name="has_summary"/>
+                        <field name="has_notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+  
+    <record id="view_metadata_configuration_tree" model="ir.ui.view">
+        <field name="name">metadata.configuration.tree</field>
+        <field name="model">metadata.configuration</field>
+        <field name="arch" type="xml">
+            <tree string="Metadata Category">
+                <field name="name"/>
+                <field name="has_summary"/>
+                <field name="has_notes"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_metadata_configuration" model="ir.actions.act_window">
+        <field name="name">Metadata Categories</field>
+        <field name="res_model">metadata.configuration</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Manage metadata Categories</field>
+    </record>
+    
+    <menuitem id="menu_metadata_configuration" name="Metadata Configuration" parent="dms.cat_menu_dms_config_organizing" action="action_metadata_configuration" groups="dms.group_dms_manager" sequence="10"/>
+   
+</odoo>

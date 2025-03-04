@@ -1,0 +1,9 @@
+.local/share/
+custom_addons/google_cloud_storage/google_creds.json
+custom_addons/serviceAccountKey.json
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

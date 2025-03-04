@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="dms_open_local_action_kanban" model="ir.ui.view">
+    <field name="name">Open Local</field>
+    <field name="model">dms.file</field>
+    <field name="inherit_id" ref="dms.dms_file_kanban_view" />
+    <field name="arch" type="xml">
+      <xpath expr="//templates" position="after">
+        <t t-name="kanban-menu" groups="base.group_user">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 o_kanban_card_manage_section o_kanban_manage_view">
+                <div role="menuitem">
+                  <a name="action_open_locally" type="object">Edit Locally</a>
+                </div>
+                <div role="menuitem" t-if="record.extension.raw_value == 'pdf'">
+                  <a name="action_edit" type="object">E-Sign</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </t>
+      </xpath>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,2492 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-08 12:09+0000\n"
+"PO-Revision-Date: 2024-07-08 12:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_process
+msgid ""
+"                Define how incoming emails are processed:\n"
+"\n"
+"                - Single Files: The email gets attached to the directory and\n"
+"                all attachments are created as files.\n"
+"\n"
+"                - Subdirectory: A new subdirectory is created for each email\n"
+"                and the mail is attached to this subdirectory. The attachments\n"
+"                are created as files of the subdirectory.\n"
+"                "
+msgstr ""
+"حدد كيفية معالجة رسائل البريد الإلكتروني الواردة:\n"
+"\n"
+"- ملفات مفردة: يتم إرفاق البريد الإلكتروني بالدليل وجميع المرفقات تُنشأ كملفات.\n"
+"\n"
+"- دليل فرعي: يتم إنشاء دليل فرعي جديد لكل بريد إلكتروني ويتم إرفاق البريد الإلكتروني بهذا الدليل الفرعي. تُنشأ المرفقات كملفات للدليل الفرعي.\n"
+""
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Files"
+msgstr "ملفات %s"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Subdirectories"
+msgstr "أدلة فرعية %s"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/search_model.js:0
+#, python-format
+msgid "2Auth"
+msgstr "توثيق ثنائي"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "<i class=\"fa fa-cloud\"/> Edit online"
+msgstr "<i class=\"fa fa-cloud\"/> تحرير عبر الإنترنت"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "<i class=\"fa fa-edit\"/> Edit Locally"
+msgstr "<i class=\"fa fa-edit\"/> تحرير محليًا"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">\n"
+"                                        Storages\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"o_form_label\">\n"
+"                                        التخزين\n"
+"                                    </span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">File\n"
+"                                        Extensions\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"o_form_label\">امتدادات\n"
+"                                        الملفات\n"
+"                                    </span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">File Size</span>"
+msgstr "<span class=\"o_form_label\">حجم الملف</span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </span>"
+msgstr ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_kanban_view
+msgid "<span><strong> Files</strong></span>"
+msgstr "<span><strong> ملفات</strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_kanban_view
+msgid "<span><strong>Created by: </strong></span>"
+msgstr "<span><strong>أنشأ بواسطة: </strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_kanban_view
+msgid "<span><strong>Created on: </strong></span>"
+msgstr "<span><strong>تاريخ الإنشاء: </strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "<span><strong>Directory: </strong></span>"
+msgstr "<span><strong>الدليل: </strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "<span><strong>Extension: </strong></span>"
+msgstr "<span><strong>الامتداد: </strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_kanban_view
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "<span><strong>Storage: </strong></span>"
+msgstr "<span><strong>التخزين: </strong></span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "<span>Documents</span>"
+msgstr "<span>الوثائق</span>"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr ""
+"قاموس Python سيتم تقييمه لتقديم القيم الافتراضية عند إنشاء سجلات جديدة لهذا الاسم المستعار."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory has to have model in attachment storage."
+msgstr ""
+"يجب أن يكون المجلد نموذج في تخزين المرفقات."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory with the same name already exists."
+msgstr ""
+"يوجد بالفعل المجلد بنفس الاسم."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "A file must have model and resource ID in attachment storage."
+msgstr ""
+"يجب أن يكون للملف نموذج ومعرف مصدر في تخزين المرفقات."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A root directory has to have a storage."
+msgstr ""
+"يجب أن يحتوي المجلد الجذري على تخزين."
+
+#. module: dms
+#: model:ir.model,name:dms.model_abstract_dms_mixin
+msgid "Abstract Dms Mixin"
+msgstr "مزيج Dms مجرد"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Accept Emails from"
+msgstr "قبول رسائل البريد الإلكتروني من"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_access_groups
+#: model:ir.ui.menu,name:dms.menu_dms_access_groups
+msgid "Access Groups"
+msgstr "مجموعات الوصول"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Access Information"
+msgstr "معلومات الوصول"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_warning
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_warning
+msgid "Access warning"
+msgstr "تحذير وصول"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__active
+#: model:ir.model.fields,field_description:dms.field_dms_tag__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory_temp
+msgid "Add a new Directory."
+msgstr "إضافة مجلد جديد."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+msgid "Add a new File."
+msgstr "إضافة ملف جديد."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.docment_template_action
+msgid "Add a new Files."
+msgstr "إضافة ملفات جديدة."
+
+#. module: dms
+#: model:dms.access.group,name:dms.dms_access_group_record_1
+msgid "Admin"
+msgstr "مشرف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_id
+msgid "Alias"
+msgstr "اسم مستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_contact
+msgid "Alias Contact Security"
+msgstr "أمان اتصال الاسم المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain_id
+msgid "Alias Domain"
+msgstr "نطاق الاسم المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain
+msgid "Alias Domain Name"
+msgstr "اسم نطاق الاسم المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_full_name
+msgid "Alias Email"
+msgstr "البريد الإلكتروني المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_name
+msgid "Alias Name"
+msgstr "اسم مستعار"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Alias Setting"
+msgstr "إعداد الاسم المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_status
+msgid "Alias Status"
+msgstr "حالة الاسم المستعار"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr "تم تقييم حالة الاسم المستعار بناءً على آخر رسالة تم استلامها."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Alias-Mail-Extraction"
+msgstr "استخراج البريد المستعار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_model_id
+msgid "Aliased Model"
+msgstr "نموذج مستعار"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "All"
+msgstr "الكل"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "All Files"
+msgstr "جميع الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__active
+#: model:ir.model.fields,field_description:dms.field_dms_file__active
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Archived Files"
+msgstr "الملفات المؤرشفة"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model,name:dms.model_ir_attachment
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__attachment
+#, python-format
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_attachment_count
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__attachment_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__decrypted_attachment_id
+#: model:ir.model.fields,field_description:dms.field_document_version__attachment_id
+msgid "Attachment File"
+msgstr "ملف المرفق"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form_kanban
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_authenticator_form
+msgid "Authenticate"
+msgstr "توثيق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__code
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__code
+msgid "Authentication Code"
+msgstr "رمز التوثيق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_authenticator
+msgid "Authentication Wizaed"
+msgstr "معالج التوثيق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_directory_authenticator
+msgid "Authentication Wizard"
+msgstr "معالج التوثيق"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_authenticator
+#: model:ir.actions.act_window,name:dms.action_dms_authenticator_kanban
+#: model:ir.actions.act_window,name:dms.action_dms_directory_authenticator
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form_kanban
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_authenticator_form
+msgid "Authenticator"
+msgstr "موثق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_users__is_auto_lock
+msgid "Auto Lock Fiels"
+msgstr "قفل تلقائي للملفات"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form
+#: model_terms:ir.ui.view,arch_db:dms.dms_authenticator_form_kanban
+#: model_terms:ir.ui.view,arch_db:dms.multi_document_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_category
+#: model:ir.ui.menu,name:dms.menu_dms_category
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Categories"
+msgstr "فئات"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Categories are used to categorize Documents."
+msgstr "تُستخدم الفئات لتصنيف الوثائق."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__category_id
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Category"
+msgstr "فئة"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_category_name_uniq
+msgid "Category name already exists!"
+msgstr "اسم الفئة موجود بالفعل!"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__checksum
+msgid "Checksum/SHA1"
+msgstr "مجموع التحقق/SHA1"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__child_category_ids
+msgid "Child Categories"
+msgstr "الفئات الفرعية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__child_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Child Groups"
+msgstr "المجموعات الفرعية"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+msgid "Click to add a new directory."
+msgstr "انقر لإضافة مجلد جديد."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Click to add a new file."
+msgstr "انقر لإضافة ملف جديد."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Click to create a new tag."
+msgstr "انقر لإنشاء علامة جديدة."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__closed
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__color
+#: model:ir.model.fields,field_description:dms.field_dms_directory__color
+#: model:ir.model.fields,field_description:dms.field_dms_file__color
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Color"
+msgstr "لون"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_tag__color
+msgid "Color Index"
+msgstr "مؤشر اللون"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__company_id
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__company_id
+#: model:ir.model.fields.selection,name:dms.selection__res_users__encription_type__company
+msgid "Company"
+msgstr "شركة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Complete Groups"
+msgstr "إكمال المجموعات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__complete_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_name
+msgid "Complete Name"
+msgstr "الاسم الكامل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__complete_directory_ids
+msgid "Complete directories"
+msgstr "إكمال الأدلة"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_config_settings
+msgid "Config Settings"
+msgstr "إعدادات التكوين"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config
+msgid "Configuration"
+msgstr "التكوين"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__attachment_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__content
+#: model:ir.model.fields,field_description:dms.field_dms_file__decrypted_attachment_ids
+msgid "Content"
+msgstr "المحتوى"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_binary
+msgid "Content Binary"
+msgstr "محتوى ثنائي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_file
+msgid "Content File"
+msgstr "ملف المحتوى"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_directories
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_directories
+msgid "Count Directories"
+msgstr "عدد المجلدات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_elements
+msgid "Count Elements"
+msgstr "عدد العناصر"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_files
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files_title
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_files
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_files
+msgid "Count Files"
+msgstr "عدد الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files
+msgid "Count Files Title"
+msgstr "عدد الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_categories
+msgid "Count Subcategories"
+msgstr "عدد الفئات الفرعية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories_title
+msgid "Count Subdirectories"
+msgstr "عدد الأدلة الفرعية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories
+msgid "Count Subdirectories Title"
+msgstr "عدد الأدلة الفرعية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_tags
+msgid "Count Tags"
+msgstr "عدد العلامات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_users
+msgid "Count Users"
+msgstr "عدد المستخدمين"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.multi_document_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_create
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_create
+msgid "Create Access"
+msgstr "إنشاء وصول"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Create a new Category."
+msgstr "إنشاء فئة جديدة."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Create a new Storage object."
+msgstr "إنشاء كائن تخزين جديد."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__include_message_attachments
+msgid "Create files from message attachments"
+msgstr "إنشاء ملفات من مرفقات الرسائل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_uid
+#: model:ir.model.fields,field_description:dms.field_document_version__create_uid
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__create_uid
+#: model:ir.model.fields,field_description:dms.field_multi_document__create_uid
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_date
+#: model:ir.model.fields,field_description:dms.field_document_version__create_date
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__create_date
+#: model:ir.model.fields,field_description:dms.field_multi_document__create_date
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Creation Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__save_type
+msgid "Current Save Type"
+msgstr "نوع الحفظ الحالي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__current_time_seconds
+msgid "Current Time Seconds"
+msgstr "الثواني الحالية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__current_version_id
+msgid "Current Version"
+msgstr "الإصدار الحالي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "رسالة مرتدة مخصصة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Customer"
+msgstr "عميل"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__access_url
+#: model:ir.model.fields,help:dms.field_dms_file__access_url
+msgid "Customer Portal URL"
+msgstr "رابط بوابة العميل"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "DMS"
+msgstr "نظام إدارة الوثائق"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#: code:addons/dms/wizard/authenticator.py:0
+#, python-format
+msgid "DMS File"
+msgstr "ملف نظام إدارة الوثائق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_security_mixin
+msgid "DMS Security Mixin"
+msgstr "مزيج أمان نظام إدارة الوثائق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_mixins_thumbnail
+msgid "DMS thumbnail and icon mixin"
+msgstr "مزيج الصور المصغرة والأيقونات لنظام إدارة الوثائق"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__database
+#, python-format
+msgid "Database"
+msgstr "قاعدة البيانات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__decripted_content
+msgid "Decripted Content"
+msgstr "المحتوى المشفر"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Decrypt it"
+msgstr "فك تشفيره"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_defaults
+msgid "Default Values"
+msgstr "القيم الافتراضية"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Define forbidden file extensions"
+msgstr "حدد امتدادات الملفات المحظورة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid ""
+"Define the maximum upload size of a\n"
+"                                        file in MB"
+msgstr ""
+"حدد الحجم الأقصى للتحميل لملف\n"
+"                                        بالميغابايت"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Defines a list of forbidden file extensions. (Example: 'exe,msi')"
+msgstr "يحدد قائمة بامتدادات الملفات المحظورة. (مثال: 'exe,msi')"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_binary_max_size
+msgid "Defines the maximum upload size in MB. Default (25MB)"
+msgstr "يحدد الحجم الأقصى للتحميل بالميغابايت. الافتراضي (25 ميغابايت)"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.model_dms_directory_action_delete
+#: model:ir.actions.server,name:dms.model_dms_file_action_delete
+msgid "Delete"
+msgstr "حذف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_unlink
+msgid "Delete Access"
+msgstr "حذف الوصول"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_deleted
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_deleted
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Deleted"
+msgstr "تم الحذف"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory_delete
+msgid "Deleted Directories."
+msgstr "المجلدات المحذوفة."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_delete
+msgid "Deleted Files."
+msgstr "الملفات المحذوفة."
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_storage
+#: model:ir.actions.act_window,name:dms.action_dms_directory
+#: model:ir.actions.act_window,name:dms.action_dms_directory_temp
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_category__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__directory_ids
+#: model:ir.ui.menu,name:dms.menu_dms_delete_directory
+#: model:ir.ui.menu,name:dms.menu_dms_directory
+#: model:ir.ui.menu,name:dms.menu_dms_templates_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Directories"
+msgstr "المجلدات"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory_temp
+msgid ""
+"Directories can be used to structure and organize\n"
+"                files directly in FilesDNA."
+msgstr ""
+"يمكن استخدام المجلد لترتيب وتنظيم\n"
+"                الملفات مباشرة في FilesDNA."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+msgid ""
+"Directories can be used to structure and organize\n"
+"                files directly in Odoo."
+msgstr ""
+"يمكن استخدام المجلد لترتيب وتنظيم\n"
+"                الملفات مباشرة في أودو."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_directory
+#: model:ir.model.fields,field_description:dms.field_dms_file__directory_id
+#: model:ir.model.fields,field_description:dms.field_multi_document__directory_id
+msgid "Directory"
+msgstr "مجلد"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__directories_ids
+msgid "Directory Filter"
+msgstr "تصفية المجلد"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_kanban_view
+msgid "Directory's Name"
+msgstr "اسم المجلد"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_category__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_file__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__display_name
+#: model:ir.model.fields,field_description:dms.field_document_version__display_name
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__display_name
+#: model:ir.model.fields,field_description:dms.field_multi_document__display_name
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_multi_document
+#: model:ir.model.fields,field_description:dms.field_document_version__document_id
+msgid "Document"
+msgstr "وثيقة"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_category
+msgid "Document Category"
+msgstr "فئة الوثائق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_tag
+msgid "Document Tag"
+msgstr "علامة الوثائق"
+
+#. module: dms
+#: model:ir.model,name:dms.model_document_version
+msgid "Document Version"
+msgstr "إصدار الوثيقة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__document_versions_ids
+msgid "Document Versions"
+msgstr "إصدارات الوثيقة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_multi_document__document_ids
+#: model:ir.module.category,name:dms.category_dms_security
+#: model:ir.ui.menu,name:dms.main_menu_dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_home_dms
+msgid "Documents"
+msgstr "وثائق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_directory_state
+msgid "Documents Onboarding Directory State"
+msgstr "حالة الدليل في إعداد الوثائق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_file_state
+msgid "Documents Onboarding File State"
+msgstr "حالة الملف في إعداد الوثائق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_state
+msgid "Documents Onboarding State"
+msgstr "حالة إعداد الوثائق"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_storage_state
+msgid "Documents Onboarding Storage State"
+msgstr "حالة التخزين في إعداد الوثائق"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Download"
+msgstr "تنزيل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_download
+msgid "Download Access"
+msgstr "وصول للتنزيل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_write
+msgid "Edit Access"
+msgstr "تعديل الوصول"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_migration_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_tree
+msgid "Edited by"
+msgstr "تم التعديل بواسطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_lock_editor
+msgid "Editor"
+msgstr "محرر"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Elements"
+msgstr "العناصر"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_email
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Email Alias"
+msgstr "الاسم المستعار للبريد الإلكتروني"
+
+#. module: dms
+#: model:ir.model,name:dms.model_mail_thread
+msgid "Email Thread"
+msgstr "سلسلة البريد الإلكتروني"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_domain
+msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
+msgstr "نطاق البريد الإلكتروني مثل 'example.com' في 'odoo@example.com'"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__encripted_content
+msgid "Encripted Content"
+msgstr "المحتوى المشفر"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__encription_key
+#: model:ir.model.fields,field_description:dms.field_res_users__encription_key
+msgid "Encription Key"
+msgstr "مفتاح التشفير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_users__encription_type
+msgid "Encription Type"
+msgstr "نوع التشفير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__encription_user_id
+msgid "Encription User"
+msgstr "مستخدم التشفير"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Encrypt it"
+msgstr "تشفيره"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "Encrypted"
+msgstr "مشفرة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__encryption_icon
+msgid "Encryption Icon"
+msgstr "أيقونة التشفير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__encription_key
+msgid "Encryption Key"
+msgstr "مفتاح التشفير"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/category.py:0
+#, python-format
+msgid "Error! You cannot create recursive categories."
+msgstr "خطأ! لا يمكنك إنشاء فئات متكررة."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Error! You cannot create recursive directories."
+msgstr "خطأ! لا يمكنك إنشاء أدلة متكررة."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__xls
+msgid "Excel Spreadsheet (.xls)"
+msgstr "جدول بيانات Excel (.xls)"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__xlsx
+msgid "Excel Spreadsheet (.xlsx)"
+msgstr "جدول بيانات Excel (.xlsx)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__explicit_user_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Explicit Users"
+msgstr "مستخدمين محددين"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__extension
+msgid "Extension"
+msgstr "امتداد"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Extensions"
+msgstr "امتدادات"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_file
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__file_id
+#: model:ir.model.fields,field_description:dms.field_document_version__attachment_ids
+msgid "File"
+msgstr "ملف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_document_version__file_data
+msgid "File Data"
+msgstr "بيانات الملف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__file_extension
+msgid "File Extension"
+msgstr "امتداد الملف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__file_image
+#: model_terms:ir.ui.view,arch_db:dms.view_company_form_inherit_encryption_icons
+msgid "File Image"
+msgstr "صورة الملف"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Upload"
+msgstr "تحميل الملف"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "File Versions"
+msgstr "إصدارات الملف"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_file_kanban_view
+msgid "File's Name"
+msgstr "اسم الملف"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0 code:addons/dms/models/dms_file.py:0
+#: model:ir.actions.act_window,name:dms.action_dms_file
+#: model:ir.actions.act_window,name:dms.action_dms_file_migration
+#: model:ir.actions.act_window,name:dms.action_dms_file_storage_migration
+#: model:ir.actions.act_window,name:dms.action_dms_files_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_storage
+#: model:ir.model.fields,field_description:dms.field_dms_category__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__file_ids
+#: model:ir.ui.menu,name:dms.menu_dms_delete_file
+#: model:ir.ui.menu,name:dms.menu_dms_file
+#: model:ir.ui.menu,name:dms.menu_dms_templates_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+#, python-format
+msgid "Files"
+msgstr "ملفات"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.docment_template_action
+msgid ""
+"Files Template can be used to structure and organize\n"
+"                files directly in FilesDNA."
+msgstr ""
+"يمكن استخدام قوالب الملفات لترتيب وتنظيم\n"
+"                الملفات مباشرة في FilesDNA."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+msgid "Files are used to save content directly in FilesDNA."
+msgstr "تستخدم الملفات لحفظ المحتوى مباشرة في FilesDNA."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Files are used to save content directly in Odoo."
+msgstr "تستخدم الملفات لحفظ المحتوى مباشرة في أودو."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+msgid "Files are used to save content."
+msgstr "تستخدم الملفات لحفظ المحتوى."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__file
+#, python-format
+msgid "Filestore"
+msgstr "تخزين الملفات"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+msgid "Folders"
+msgstr "مجلدات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_follower_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_partner_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة خط رائعة مثل fa-tasks"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__is_full_admin
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_full_admin
+msgid "Full Admin Access"
+msgstr "وصول كامل للمشرف"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_settings_general
+#: model:ir.ui.menu,name:dms.menu_dms_settings_general
+msgid "General Settings"
+msgstr "الإعدادات العامة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Group"
+msgstr "مجموعة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__name
+msgid "Group Name"
+msgstr "اسم المجموعة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__users
+msgid "Group Users"
+msgstr "مستخدمي المجموعة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__group_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Groups"
+msgstr "مجموعات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__has_message
+#: model:ir.model.fields,field_description:dms.field_dms_file__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__has_notes
+#: model:ir.model.fields,field_description:dms.field_dms_file__has_notes
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__has_notes
+msgid "Has Notes"
+msgstr "لديه ملاحظات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__has_summary
+#: model:ir.model.fields,field_description:dms.field_dms_file__has_summary
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__has_summary
+msgid "Has Summary"
+msgstr "لديه ملخص"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Hash"
+msgstr "التجزئة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__id
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__id
+#: model:ir.model.fields,field_description:dms.field_dms_category__id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__id
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__id
+#: model:ir.model.fields,field_description:dms.field_dms_file__id
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__id
+#: model:ir.model.fields,field_description:dms.field_document_version__id
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__id
+#: model:ir.model.fields,field_description:dms.field_multi_document__id
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr "معرف السجل الأب الذي يحمل الاسم المستعار (مثال: مشروع يحمل الاسم المستعار لإنشاء المهمة)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__icon_url
+msgid "Icon URL"
+msgstr "رابط الأيقونة"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__active
+#: model:ir.model.fields,help:dms.field_dms_directory__is_deleted
+#: model:ir.model.fields,help:dms.field_dms_file__active
+#: model:ir.model.fields,help:dms.field_dms_file__is_deleted
+msgid "If a file is set to archived, it is not displayed, but still exists."
+msgstr "إذا تم تعيين ملف إلى الأرشيف، فلن يتم عرضه، ولكنه لا يزال موجودًا."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحقق، تتطلب الرسائل الجديدة انتباهك."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_sms_error
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحقق، تحتوي بعض الرسائل على خطأ في التسليم."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,help:dms.field_dms_directory__company_id
+#: model:ir.model.fields,help:dms.field_dms_file__company_id
+#: model:ir.model.fields,help:dms.field_dms_storage__company_id
+msgid ""
+"If set, directories and files will only be available for the selected "
+"company."
+msgstr "إذا تم التعيين، ستكون الأدلة والملفات متاحة فقط للشركة المحددة."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr "إذا تم التعيين، سيتم إرسال هذا المحتوى تلقائيًا إلى المستخدمين غير المصرح لهم بدلاً من الرسالة الافتراضية."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1920
+msgid "Image"
+msgstr "صورة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1024
+msgid "Image 1024"
+msgstr "صورة 1024"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_128
+msgid "Image 128"
+msgstr "صورة 128"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_256
+msgid "Image 256"
+msgstr "صورة 256"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_512
+msgid "Image 512"
+msgstr "صورة 512"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__image_lines
+msgid "Image Lines"
+msgstr "خطوط الصورة"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,help:dms.field_dms_storage__inherit_access_from_parent_record
+msgid ""
+"Indicate if directories and files access work only with related model access"
+" (for example, if some directories are related with any sale, only users "
+"with read access to these sale can acess)"
+msgstr "أشر إلى ما إذا كانت الوصول إلى الأدلة والملفات تعمل فقط مع الوصول إلى النموذج المتعلق (على سبيل المثال، إذا كانت بعض الأدلة مرتبطة بأي مبيعات، يمكن فقط للمستخدمين الذين لديهم وصول للقراءة إلى هذه المبيعات الوصول)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_storage__include_message_attachments
+msgid ""
+"Indicate if directories and files auto-create in mail composition process "
+"too"
+msgstr "أشر إلى ما إذا كانت الأدلة والملفات تنشأ تلقائيًا في عملية تكوين البريد أيضًا"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_storage__is_hidden
+msgid "Indicates if directories and files are hidden by default."
+msgstr "يشير إلى ما إذا كانت الأدلة والملفات مخفية افتراضيًا."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__is_root_directory
+msgid ""
+"Indicates if the directory is a root directory.\n"
+"        A root directory has a settings object, while a directory with a set\n"
+"        parent inherits the settings form its parent."
+msgstr "يشير إلى ما إذا كان الدليل دليلًا رئيسيًا.\n        يحتوي الدليل الرئيسي على كائن إعدادات، بينما يرث الدليل الذي يحتوي على مجموعة من الإعدادات من الأب."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__inherit_group_ids
+msgid "Inherit Groups"
+msgstr "وراثة المجموعات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,field_description:dms.field_dms_storage__inherit_access_from_parent_record
+msgid "Inherit permissions from related record"
+msgstr "وراثة الأذونات من السجل ذي الصلة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_create
+msgid "Inherited Create Access"
+msgstr "وراثة الوصول لإنشاء"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_unlink
+msgid "Inherited Unlink Access"
+msgstr "وراثة الوصول لإلغاء الربط"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_write
+msgid "Inherited Write Access"
+msgstr "وراثة الوصول للكتابة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Internal / Human Resource"
+msgstr "داخلي / الموارد البشرية"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/wizard/authenticator.py:0
+#: code:addons/dms/wizard/authenticator.py:0
+#: code:addons/dms/wizard/directory_auth.py:0
+#, python-format
+msgid "Invalid authentication code format."
+msgstr "تنسيق رمز المصادقة غير صالح."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_decrypted
+msgid "Is Decrypted"
+msgstr "تم فك التشفير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_encrypted
+msgid "Is Encrypted"
+msgstr "تم التشفير"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_is_follower
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_renamed
+msgid "Is Renamed"
+msgstr "تمت إعادة التسمية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_root_directory
+msgid "Is Root Directory"
+msgstr "هو دليل رئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_template
+msgid "Is Template"
+msgstr "هو قالب"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_template
+msgid "Is template"
+msgstr "هو قالب"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change parent to other storage."
+msgstr "ليس من الممكن تغيير الأب إلى تخزين آخر."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change the storage."
+msgstr "ليس من الممكن تغيير التخزين."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__just_done
+msgid "Just done"
+msgstr "تمت للتو"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_uid
+#: model:ir.model.fields,field_description:dms.field_document_version__write_uid
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__write_uid
+#: model:ir.model.fields,field_description:dms.field_multi_document__write_uid
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__write_uid
+msgid "Last Updated by"
+msgstr "تم التحديث بواسطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_date
+#: model:ir.model.fields,field_description:dms.field_document_version__write_date
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__write_date
+#: model:ir.model.fields,field_description:dms.field_multi_document__write_date
+#: model:ir.model.fields,field_description:dms.field_res_company_dms__write_date
+msgid "Last Updated on"
+msgstr "تم التحديث في"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Last update"
+msgstr "آخر تحديث"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__linked_fiels
+#: model:ir.model.fields,field_description:dms.field_dms_file__linked_fiels_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Linked Files"
+msgstr "الملفات المرتبطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__allowed_model_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model_ids
+msgid "Linked Models"
+msgstr "النماذج المرتبطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_model
+msgid "Linked attachments model"
+msgstr "نموذج المرفقات المرتبطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_id
+msgid "Linked attachments record ID"
+msgstr "معرف سجل المرفقات المرتبطة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr "الكشف عن الرسائل الواردة بناءً على الجزء المحلي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_lock
+msgid "Lock Access"
+msgstr "قفل الوصول"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_locked
+#: model:ir.model.fields,field_description:dms.field_document_version__is_locked
+msgid "Locked"
+msgstr "مقفول"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__locked_by
+msgid "Locked By"
+msgstr "مقفول بواسطة"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_metadata_configuration
+msgid "Manage metadata Categories"
+msgstr "إدارة فئات البيانات الوصفية"
+
+#. module: dms
+#: model:res.groups,name:dms.group_dms_manager
+msgid "Manager"
+msgstr "مدير"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Manual File Migration"
+msgstr "ترحيل الملف اليدوي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Meta Data"
+msgstr "بيانات وصفية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__metadata_configuration_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__metadata_configuration_id
+msgid "Meta Data Category"
+msgstr "فئة البيانات الوصفية"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Meta Information"
+msgstr "معلومات وصفية"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_metadata_configuration
+msgid "Metadata Categories"
+msgstr "فئات البيانات الوصفية"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_metadata_configuration_form
+#: model_terms:ir.ui.view,arch_db:dms.view_metadata_configuration_tree
+msgid "Metadata Category"
+msgstr "فئة البيانات الوصفية"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.menu_metadata_configuration
+msgid "Metadata Configuration"
+msgstr "تكوين البيانات الوصفية"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Migrate File %(index)s of %(record_count)s [ %(dms_file_migration)s ]"
+msgstr "ترحيل الملف %(index)s من %(record_count)s [ %(dms_file_migration)s ]"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Migrate Files"
+msgstr "ترحيل الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__migration
+msgid "Migration Status"
+msgstr "حالة الترحيل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__model_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model
+msgid "Model"
+msgstr "نموذج"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Modification Date"
+msgstr "تاريخ التعديل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نشاطي النهائي"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "My Directories"
+msgstr "أدلةي"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "My Documents"
+msgstr "مستنداتي"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "My Files"
+msgstr "ملفاتي"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/portal.py:0
+#: code:addons/dms/controllers/portal.py:0
+#: code:addons/dms/controllers/portal.py:0
+#: code:addons/dms/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__name
+#: model:ir.model.fields,field_description:dms.field_dms_category__name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__name
+#: model:ir.model.fields,field_description:dms.field_dms_file__name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__name
+#: model:ir.model.fields,field_description:dms.field_document_version__name
+#: model:ir.model.fields,field_description:dms.field_metadata_configuration__name
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+#: model_terms:ir.ui.view,arch_db:dms.view_metadata_configuration_form
+#, python-format
+msgid "Name"
+msgstr "اسم"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directory_new
+#: model:ir.actions.act_window,name:dms.action_dms_file_new
+msgid "New Root Directory"
+msgstr "دليل رئيسي جديد"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage_new
+msgid "New Storage"
+msgstr "تخزين جديد"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_calendar_event_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث تقويم النشاط التالي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "موعد النشاط التالي النهائي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_summary
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_notes__no
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_summary__no
+msgid "None"
+msgstr "لا شيء"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__not_done
+msgid "Not done"
+msgstr "لم يتم"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Not results"
+msgstr "لا توجد نتائج"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__notes
+#: model:ir.model.fields,field_description:dms.field_dms_file__notes
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__old_directory_id
+msgid "Old Directory"
+msgstr "الدليل القديم"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#, python-format
+msgid "Only managers can execute this action."
+msgstr "يمكن فقط للمديرين تنفيذ هذا الإجراء."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_notes__optional
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_summary__optional
+msgid "Optional"
+msgstr "اختياري"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr "معرف اختياري لسلسلة (سجل) سيتم إرفاق جميع الرسائل الواردة بها، حتى إذا لم يردوا عليها. إذا تم التعيين، سيؤدي ذلك إلى تعطيل إنشاء سجلات جديدة تمامًا."
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_organizing
+msgid "Organizing"
+msgstr "التنظيم"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__pdf
+msgid "PDF File (.pdf)"
+msgstr "ملف PDF (.pdf)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_id
+msgid "Parent Category"
+msgstr "الفئة الرئيسية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_id
+msgid "Parent Directory"
+msgstr "الدليل الرئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file_line__parent_file_id
+msgid "Parent File"
+msgstr "الملف الرئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_group_id
+msgid "Parent Group"
+msgstr "المجموعة الرئيسية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_model_id
+msgid "Parent Model"
+msgstr "النموذج الرئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_path
+msgid "Parent Path"
+msgstr "المسار الرئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "معرف سلسلة السجل الرئيسي"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/access_groups.py:0
+#, python-format
+msgid "Parent group '%(parent)s' is child of '%(current)s'."
+msgstr "المجموعة الرئيسية '%(parent)s' هي طفل لـ '%(current)s'."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr "النموذج الرئيسي الذي يحمل الاسم المستعار. النموذج الذي يحمل مرجع الاسم المستعار ليس بالضرورة النموذج المحدد بواسطة alias_model_id (مثال: مشروع (نموذج رئيسي) ومهمة (نموذج))"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_json
+msgid "Path Json"
+msgstr "مسار JSON"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_names
+msgid "Path Names"
+msgstr "أسماء المسارات"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr "سياسة لنشر رسالة على المستند باستخدام بوابة البريد.\n- الجميع: يمكن للجميع النشر\n- الشركاء: فقط الشركاء المصادق عليهم\n- المتابعون: فقط متابعو المستند ذو الصلة أو أعضاء القنوات التالية\n"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_url
+msgid "Portal Access URL"
+msgstr "رابط الوصول إلى البوابة"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__pptx
+msgid "Power Point (.pptx)"
+msgstr "Power Point (.pptx)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__rating_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_read
+msgid "Read Access"
+msgstr "وصول للقراءة"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_access_group
+msgid "Record Access Groups"
+msgstr "مجموعات الوصول للسجل"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_file__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__record_ref
+msgid "Record Referenced"
+msgstr "السجل المرجعي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "معرف سلسلة السجل"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.categ_menu_deleted_dms_files
+msgid "Recycle bin"
+msgstr "سلة المحذوفات"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directory_delete
+msgid "Recycle bin: Directories"
+msgstr "سلة المحذوفات: الأدلة"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_file_delete
+msgid "Recycle bin: Files"
+msgstr "سلة المحذوفات: الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_rename
+msgid "Rename Access"
+msgstr "وصول لإعادة التسمية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__require_migration
+msgid "Require Migration"
+msgstr "يتطلب الترحيل"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_notes__required
+#: model:ir.model.fields.selection,name:dms.selection__metadata_configuration__has_summary__required
+msgid "Required"
+msgstr "مطلوب"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_user_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.model_dms_directory_action_restore_multiple_directories
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Restore Directory"
+msgstr "استعادة الدليل"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.model_dms_file_action_restore_multiple_files
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Restore File"
+msgstr "استعادة الملف"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__root_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Root Directories"
+msgstr "الأدلة الرئيسية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__root_directory_id
+msgid "Root Directory"
+msgstr "الدليل الرئيسي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__sha512_hash
+#: model:ir.model.fields,field_description:dms.field_document_version__sha512_hash
+msgid "SHA-512 Hash"
+msgstr "تجزئة SHA-512"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_sms_error
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_storage__save_type
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+msgid "Save Type"
+msgstr "نوع الحفظ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_token
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_token
+msgid "Security Token"
+msgstr "رمز الأمان"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.multi_document_form
+msgid "Select Multiple Documents"
+msgstr "اختر مستندات متعددة"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_multi_document__document_ids
+msgid "Select multiple files to upload."
+msgstr "اختر ملفات متعددة للتحميل."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.dms_directory_authenticator_form
+#: model_terms:ir.ui.view,arch_db:dms.multi_document_form
+msgid "Select the Documents to upload"
+msgstr "اختر المستندات لتحميلها"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_company_dms__file_extension
+msgid "Select the file extension type."
+msgstr "اختر نوع امتداد الملف."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Share"
+msgstr "شارك"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Show storages"
+msgstr "عرض التخزينات"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_sign_requests_page
+#: model:ir.ui.menu,name:dms.menu_dms_sign_requests
+#: model_terms:ir.ui.view,arch_db:dms.view_sign_requests_home
+msgid "Sign Requests"
+msgstr "طلبات التوقيع"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__files
+msgid "Single Files"
+msgstr "ملفات فردية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__human_size
+#: model:ir.model.fields,field_description:dms.field_dms_directory__size
+#: model:ir.model.fields,field_description:dms.field_dms_file__human_size
+#: model:ir.model.fields,field_description:dms.field_dms_file__size
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_binary_max_size
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Size"
+msgstr "الحجم"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__starred
+msgid "Starred"
+msgstr "مميز بنجمة"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "Starred Directories"
+msgstr "الأدلة المميزة بنجمة"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__user_star_ids
+msgid "Stars"
+msgstr "نجوم"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,help:dms.field_dms_file__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "الحالة بناءً على الأنشطة\nمتأخر: تاريخ الاستحقاق قد مر بالفعل\nاليوم: تاريخ النشاط هو اليوم\nمخطط: أنشطة مستقبلية."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_storage
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_deleted_files
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+msgid "Storage"
+msgstr "تخزين"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_storage__is_hidden
+msgid "Storage is Hidden"
+msgstr "التخزين مخفي"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage
+#: model:ir.ui.menu,name:dms.menu_dms_storage
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Storages"
+msgstr "تخزينات"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Storages are used to configure your Documents."
+msgstr "تُستخدم التخزينات لتكوين مستنداتك."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Subcategories"
+msgstr "الفئات الفرعية"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_directories_directory
+#: model:ir.model.fields,field_description:dms.field_dms_directory__child_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Subdirectories"
+msgstr "الأدلة الفرعية"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__directory
+msgid "Subdirectory"
+msgstr "دليل فرعي"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__summary
+#: model:ir.model.fields,field_description:dms.field_dms_file__summary
+msgid "Summary"
+msgstr "ملخص"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_system
+msgid "System"
+msgstr "النظام"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Tag"
+msgstr "علامة"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_tag_name_uniq
+msgid "Tag name already exists!"
+msgstr "اسم العلامة موجود بالفعل!"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_tag
+#: model:ir.model.fields,field_description:dms.field_dms_category__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__tag_ids
+#: model:ir.ui.menu,name:dms.menu_dms_tag
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Tags"
+msgstr "العلامات"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Tags are used to categorize Documents."
+msgstr "تُستخدم العلامات لتصنيف المستندات."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Tags..."
+msgstr "علامات..."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Technical Information"
+msgstr "معلومات فنية"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.docment_template_action
+#: model:ir.ui.menu,name:dms.menu_dms_templates
+msgid "Templates"
+msgstr "القوالب"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__txt
+msgid "Text File (.txt)"
+msgstr "ملف نصي (.txt)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_category__active
+msgid "The active field allows you to hide the category without removing it."
+msgstr "يتيح لك الحقل النشط إخفاء الفئة دون إزالتها."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_tag__active
+msgid "The active field allows you to hide the tag without removing it."
+msgstr "يتيح لك الحقل النشط إخفاء العلامة دون إزالتها."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "The directory name is invalid."
+msgstr "اسم الدليل غير صالح."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The file has a forbidden file extension."
+msgstr "الملف يحتوي على امتداد ملف محظور."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The maximum upload size is %s MB)."
+msgstr "الحجم الأقصى للتحميل هو %s ميجابايت)."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr "النموذج (نوع مستند Odoo) الذي يتوافق معه هذا الاسم المستعار. أي بريد وارد لا يرد على سجل موجود سيؤدي إلى إنشاء سجل جديد لهذا النموذج (مثل مهمة المشروع)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr "اسم الاسم المستعار للبريد الإلكتروني، مثل 'jobs' إذا كنت تريد التقاط رسائل البريد الإلكتروني لـ <jobs@example.odoo.com>"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_access_group_name_uniq
+msgid "The name of the group must be unique!"
+msgstr "يجب أن يكون اسم المجموعة فريدًا!"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_storage__save_type
+msgid ""
+"The save type is used to determine how a file is saved by the\n"
+"        system. If you change this setting, you can migrate existing files\n"
+"        manually by triggering the action."
+msgstr "يُستخدم نوع الحفظ لتحديد كيفية حفظ الملف بواسطة النظام.\n إذا قمت بتغيير هذا الإعداد، يمكنك ترحيل الملفات الموجودة يدويًا عن طريق تفعيل الإجراء."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "This directory needs to be associated to a record."
+msgstr "يحتاج هذا الدليل إلى أن يكون مرتبطًا بسجل."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_elements
+msgid "Total Elements"
+msgstr "إجمالي العناصر"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_files
+msgid "Total Files"
+msgstr "إجمالي الملفات"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_directories
+msgid "Total Subdirectories"
+msgstr "إجمالي الأدلة الفرعية"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__mimetype
+msgid "Type"
+msgstr "نوع"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء في السجل."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_process
+msgid "Unpack Emails as"
+msgstr "فك حزم الرسائل الإلكترونية كـ"
+
+#. module: dms
+#: model:ir.model,name:dms.model_multi_document
+#: model:ir.ui.menu,name:dms.menu_multi_document
+msgid "Upload Multiple Documents"
+msgstr "تحميل مستندات متعددة"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_users
+#: model:ir.model.fields.selection,name:dms.selection__res_users__encription_type__user
+#: model:res.groups,name:dms.group_dms_user
+msgid "User"
+msgstr "مستخدم"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_users_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Users"
+msgstr "المستخدمين"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/wizard/authenticator.py:0
+#: code:addons/dms/wizard/authenticator.py:0
+#: code:addons/dms/wizard/directory_auth.py:0
+#, python-format
+msgid "Verification failed, please double-check the 6-digit code"
+msgstr "فشل التحقق، يرجى التحقق مرة أخرى من الرمز المكون من 6 أرقام"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_document_version__version_number
+msgid "Version Number"
+msgstr "رقم الإصدار"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,help:dms.field_dms_file__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ الاتصالات في الموقع"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__doc
+msgid "Word Document (.doc)"
+msgstr "مستند Word (.doc)"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company_dms__file_extension__docx
+msgid "Word Document (.docx)"
+msgstr "مستند Word (.docx)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
+msgid "Write Access"
+msgstr "وصول للكتابة"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory_delete
+msgid "Your Directories Recycle Bin is Empty !"
+msgstr "سلة المحذوفات الخاصة بك فارغة!"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_delete
+msgid "Your Files Recycle Bin is Empty !"
+msgstr "سلة المحذوفات الخاصة بملفاتك فارغة!"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_file_line
+msgid "dms.file.line"
+msgstr ""
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "element(s)"
+msgstr "عنصر"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "exe,msi"
+msgstr ""
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "mail.catchall.domain"
+msgstr ""
+
+#. module: dms
+#: model:ir.model,name:dms.model_metadata_configuration
+msgid "metadata.configuration"
+msgstr ""
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_authenticator__record_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory_authenticator__record_id
+msgid "record"
+msgstr "سجل"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_company_dms
+msgid "res.company.dms"
+msgstr "نظام إدارة الشركة"

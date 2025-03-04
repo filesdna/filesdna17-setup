@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="report_cron_pass_status">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <p t-esc="res_company.name" />
+                        <h2>
+                            <span t-field="doc.name" />
+                        </h2>
+                        <table class="table">
+                            <tbody>
+                                <tr t-if="doc.cron_name">
+                                    <th>Cron Name:</th>
+                                    <td>
+                                        <span t-field="doc.cron_name" />
+                                    </td>
+                                </tr>
+                                <tr t-if="doc.start_date">
+                                    <th>Start Date:</th>
+                                    <td>
+                                        <span t-field="doc.start_date" />
+                                    </td>
+                                </tr>
+                                <tr t-if="doc.end_date">
+                                    <th>End Date:</th>
+                                    <td>
+                                        <span t-field="doc.end_date" />
+                                    </td>
+                                </tr>
+                                <tr t-if="doc.total_time_taken">
+                                    <th>Total Time Taken (in seconds):</th>
+                                    <td>
+                                        <span t-field="doc.total_time_taken" />
+                                    </td>
+                                </tr>
+                                <tr t-if="doc.last_cron_date">
+                                    <th>Last Cron Date Executed:</th>
+                                    <td>
+                                        <span t-field="doc.last_cron_date" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Status:</th>
+                                    <td>
+                                        <span> Success </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <div class="oe_structure" />
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <template id="report_cron_fail_status">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <p t-esc="res_company.name" />
+                        <h2>
+                            <span t-field="doc.name" />
+                        </h2>
+                        <table class="table">
+                            <tbody>
+                                <tr t-if="doc.name">
+                                    <th>Cron Name:</th>
+                                    <td>
+                                        <span t-field="doc.name" />
+                                    </td>
+                                </tr>
+                                <tr t-if="doc.exec_date">
+                                    <th>Cron Execution Date:</th>
+                                    <td>
+                                        <span t-field="doc.exec_date" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Status:</th>
+                                    <td>
+                                        <span> Failed </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <br />
+                        <strong>
+                            <p>Error: </p>
+                        </strong>
+                        <p t-field="doc.error_details" />
+                        <div class="oe_structure" />
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <template id="report_cron_pass_details">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="pragtech_cron_tracking.report_cron_pass_status" />
+                </t>
+            </t>
+        </template>
+
+        <template id="report_cron_fail_details">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="pragtech_cron_tracking.report_cron_fail_status" />
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

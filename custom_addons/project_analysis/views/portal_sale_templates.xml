@@ -1,0 +1,14 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<odoo>-->
+<!--    <data>-->
+<!--        <template id="portal_sale_templates_inherit" inherit_id="portal_sale.portal_order_page">-->
+<!--            <xpath expr="//a[contains(@class, 'btn-primary') and contains(@t-attf-href, '/my/orders/')]"-->
+<!--                   position="replace">-->
+<!--                <a role="button" class="btn btn-primary" t-attf-href="/my/orders/#{order.id}/accept">-->
+<!--                    <i class="fa fa-pencil-square-o"></i>-->
+<!--                    Agree and Sign-->
+<!--                </a>-->
+<!--            </xpath>-->
+<!--        </template>-->
+<!--    </data>-->
+<!--</odoo>-->

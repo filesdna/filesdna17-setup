@@ -1,0 +1,976 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mowr_payslip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-25 09:18+0000\n"
+"PO-Revision-Date: 2024-08-25 09:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__akran_salary
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__akran_salary
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_payslip_allotment__salary_type__akran
+msgid "Akran Salary"
+msgstr "مرتب أقران"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_payslip_allotment_type_tree
+msgid "Allotment"
+msgstr "مخصص"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__allotment_id
+msgid "Allotment"
+msgstr "مخصص"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__allotment_type
+msgid "Allotment Type"
+msgstr "نوع المخصص"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__allotments
+msgid "Allotments"
+msgstr "مخصصات"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_payslip_allotment_type_action
+msgid "Allotments Types"
+msgstr "أنواع المخصصات"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__fixed_amount
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__fixed_amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_res_bank
+msgid "Bank"
+msgstr "البنك"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__wage
+msgid "Basic"
+msgstr "أساسي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_payslip_allotment__salary_type__basic
+msgid "Basic Salary"
+msgstr "الراتب الأساسي"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Bouns"
+msgstr "مكافأة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__bouns_amount
+msgid "Bouns Amount"
+msgstr "مبلغ المكافأة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__bouns_due_date
+msgid "Bouns Due Date"
+msgstr "تاريخ استحقاق المكافأة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_contract__payment_method__cash
+msgid "Cash"
+msgstr "نقداً"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Center"
+msgstr "مركز"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.employee_certification_action
+msgid "Certifiaction"
+msgstr "شهادة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__certificate_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__name
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_certification_menu
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.employee_certification_form
+msgid "Certification"
+msgstr "شهادة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__num_of_child
+msgid "Children"
+msgstr "أطفال"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__religion__christianity
+msgid "Christianity"
+msgstr "المسيحية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_id
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Civilian ID"
+msgstr "الهوية المدنية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_page_number
+msgid "Civilian Page Number"
+msgstr "رقم الصفحة المدنية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_record_number
+msgid "Civilian record number"
+msgstr "رقم السجل المدني"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__code
+msgid "Code"
+msgstr "كود"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__previous_marriage_state__cohabitant
+msgid "Cohabitant"
+msgstr "المتعايش"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_employee_contact_action
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__contact_id
+msgid "Contact Relation"
+msgstr "علاقة جهة الاتصال"
+
+#. module: mowr_payslip
+#: model:ir.actions.server,name:mowr_payslip.action_action_allotment_type
+msgid "Create Category"
+msgstr "إنشاء فئة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__create_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__create_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__create_date
+msgid "Created on"
+msgstr "أنشئت في"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Daily"
+msgstr "يومي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__add_service_daily
+msgid "Daily Addtional Service"
+msgstr "الخدمة الإضافية اليومية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__removed_service_daily
+msgid "Daily Removed Service"
+msgstr "الخدمة اليومية المحذوفة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__postion_date
+msgid "Date of position"
+msgstr "تاريخ المنصب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__deductions
+msgid "Deductions"
+msgstr "الخصومات"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__loan_department_id
+msgid "Department representative"
+msgstr "ممثل القسم"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__died
+msgid "Died"
+msgstr "متوفى"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__display_name
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__previous_marriage_state__divorced
+msgid "Divorced"
+msgstr "مطلق"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_contract__payment_method__eletronic
+msgid "Eletronic"
+msgstr "إلكتروني"
+
+#. module: mowr_payslip
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_contact_menu
+msgid "Emergency Contact Relation"
+msgstr "علاقة جهة الاتصال في حالات الطوارئ"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.payslip_inherit_allotment_form
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__employee_num
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,help:mowr_payslip.field_hr_payslip__wage
+msgid "Employee's monthly gross wage."
+msgstr "الأجر الإجمالي الشهري للموظف."
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_grade
+msgid "Employees Grades"
+msgstr "درجات الموظفين"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_level
+msgid "Employees levels"
+msgstr "مستويات الموظفين"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_specialization
+msgid "Employees specializations"
+msgstr "تخصصات الموظفين"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Employment Status"
+msgstr "حالة التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__employment_status_date
+msgid "Employment Status Date"
+msgstr "تاريخ حالة التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__employment_status
+msgid "Employment status"
+msgstr "حالة التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__employment_status_number
+msgid "Employment status Number"
+msgstr "رقم حالة التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_expire_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__national_expire_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__pass_expire_date
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Expire Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Family Name"
+msgstr "اسم العائلة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__fired
+msgid "Fired"
+msgstr "مطرود"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__first_cert
+msgid "First Certification"
+msgstr "أول شهادة"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "First Name"
+msgstr "الاسم الأول"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_payslip_allotment_type__allotment_type__fixed_amount
+msgid "Fixed Amount"
+msgstr "مبلغ ثابت"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__fourth_name
+msgid "Fourth"
+msgstr "الرابع"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Fourth Name"
+msgstr "الاسم الرابع"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__first_name
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__goverment_number
+msgid "Government Number"
+msgstr "رقم الحكومة"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_employee_governorate_action
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_contact_form
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_governorate_form
+msgid "Governorate"
+msgstr "المحافظة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__name
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_governorate_menu
+msgid "Governorate(State)"
+msgstr "المحافظة (الدولة)"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_employee_grade_action
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__grade
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_grade_action_menu
+msgid "Grade"
+msgstr "الدرجة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__graduate_year
+msgid "Graduate Year"
+msgstr "سنة التخرج"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "HR"
+msgstr "الموارد البشرية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__hiring_date
+msgid "Hiring Date"
+msgstr "تاريخ التوظيف"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Hiring Info"
+msgstr "معلومات التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__hiring_order
+msgid "Hiring Order Date"
+msgstr "تاريخ أمر التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__hiring_order_num
+msgid "Hiring Order Number"
+msgstr "رقم أمر التوظيف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__id
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "ID Number"
+msgstr "رقم الهوية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__religion__islam
+msgid "Islam"
+msgstr "الإسلام"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_issue_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__national_issue_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__pass_issue_date
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Issue Date"
+msgstr "تاريخ الإصدار"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Issue State"
+msgstr "دولة الإصدار"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__religion__jew
+msgid "Jewish"
+msgstr "اليهودية"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.job_address_action
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__name
+#: model:ir.ui.menu,name:mowr_payslip.job_address_menu
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.job_address_form
+msgid "Job Address"
+msgstr "عنوان الوظيفة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__job_address_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__job_address_id
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__Joining_date
+msgid "Joining Date"
+msgstr "تاريخ الانضمام"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__joing_order_date
+msgid "Joining Order Date"
+msgstr "تاريخ أمر الانضمام"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__joing_order_number
+msgid "Joining Order Number"
+msgstr "رقم أمر الانضمام"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__language
+msgid "Language"
+msgstr "اللغة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__last_name
+msgid "Last"
+msgstr "الأخير"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__bouns_last_date
+msgid "Last Bouns Date"
+msgstr "تاريخ آخر مكافأة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__write_uid
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_governorate__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__write_date
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_employee_level_action
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__level
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_level_action_menu
+msgid "Level"
+msgstr "المستوى"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__loaned
+msgid "Loaned"
+msgstr "معار"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__management_Situation
+msgid "Management Situation"
+msgstr "وضع الإدارة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__marriage_allotment
+msgid "Marriage Allotment"
+msgstr "مخصص الزواج"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__marriage_salary
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__marriage_salary
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_payslip_allotment__salary_type__marriage
+msgid "Marriage Salary"
+msgstr "راتب الزواج"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__previous_marriage_state__married
+msgid "Married"
+msgstr "متزوج"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Monthly"
+msgstr "شهري"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__add_service_monthly
+msgid "Monthly Addtional Service"
+msgstr "الخدمة الإضافية الشهرية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__removed_service_monthly
+msgid "Monthly Removed Service"
+msgstr "الخدمة الشهرية المحذوفة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__monthly_tax
+msgid "Monthly Tax"
+msgstr "الضريبة الشهرية"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Montly"
+msgstr "شهري"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__mother_name
+msgid "Mother Full Name"
+msgstr "الاسم الكامل للأم"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_grade__name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_language__name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_level__name
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_specialization__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__national_id
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "National ID"
+msgstr "الهوية الوطنية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__net_salary
+msgid "Net salary"
+msgstr "صافي الراتب"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Number"
+msgstr "رقم"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__num
+msgid "Number Of Days"
+msgstr "عدد الأيام"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Office"
+msgstr "مكتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__on_service
+msgid "On Service"
+msgstr "في الخدمة"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Other"
+msgstr "أخرى"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_contract_more_details_form
+msgid "Other Salary Info"
+msgstr "معلومات أخرى عن الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__out_service
+msgid "Out of Service"
+msgstr "خارج الخدمة"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Page Number"
+msgstr "رقم الصفحة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__partner_job
+msgid "Partner Job"
+msgstr "وظيفة الشريك"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__partner_nationlity
+msgid "Partner nationality"
+msgstr "جنسية الشريك"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Passport"
+msgstr "جواز السفر"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__slip_id
+msgid "Pay Slip"
+msgstr "قسيمة الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_res_bank__payer_account
+msgid "Payer Account"
+msgstr "حساب الدافع"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__payment_method
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_payslip
+msgid "Payslip"
+msgstr "قسيمة المرتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_certifiaction__percentage
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__percentage
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__percentage
+#: model:ir.model.fields,field_description:mowr_payslip.field_job_address__percentage
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_payslip_allotment_type__allotment_type__percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__postion_num
+msgid "Postion Order Number"
+msgstr "رقم أمر المنصب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__previous_marriage_state
+msgid "Previous Marriage Status"
+msgstr "حالة الزواج السابقة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__quit
+msgid "Quit"
+msgstr "استقال"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_res_bank__swift_bic
+msgid "Receiver BIC"
+msgstr "رمز BIC للمستلم"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Record Number"
+msgstr "رقم السجل"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee_contact__name
+msgid "Relation"
+msgstr "علاقة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__religion
+msgid "Religion"
+msgstr "الديانة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__removed
+msgid "Removed"
+msgstr "محذوف"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__residence_card
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Residence Card"
+msgstr "بطاقة الإقامة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__residence_card_office
+msgid "Residence Card Office Info"
+msgstr "معلومات مكتب بطاقة الإقامة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__resign_date
+msgid "Resign Date"
+msgstr "تاريخ الاستقالة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__retired
+msgid "Retired"
+msgstr "متقاعد"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__retirement_amount
+msgid "Retirement Amount"
+msgstr "مبلغ التقاعد"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__retirement_percentage
+msgid "Retiremnet Percentage"
+msgstr "النسبة المئوية للتقاعد"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__rule_id
+msgid "Rule"
+msgstr "قاعدة"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.payslip_inherit_allotment_form
+msgid "Salary Details"
+msgstr "تفاصيل الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__salary_type
+msgid "Salary Type"
+msgstr "نوع الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__second_name
+msgid "Second"
+msgstr "الثاني"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__second_cert
+msgid "Second Certification"
+msgstr "الشهادة الثانية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__mother_s_name
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Second Name"
+msgstr "الاسم الثاني"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Service"
+msgstr "الخدمة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__service_law
+msgid "Service Law"
+msgstr "قانون الخدمة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__service_note
+msgid "Service Note"
+msgstr "ملاحظة الخدمة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__service_status
+msgid "Service Status"
+msgstr "حالة الخدمة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__previous_marriage_state__single
+msgid "Single"
+msgstr "أعزب"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__social_tax
+msgid "Socail Security"
+msgstr "الضمان الاجتماعي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__social_tax
+msgid "Social Security"
+msgstr "الضمان الاجتماعي"
+
+#. module: mowr_payslip
+#: model:ir.actions.act_window,name:mowr_payslip.hr_employee_specialization_action
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__specialization
+#: model:ir.ui.menu,name:mowr_payslip.hr_employee_specialization_action_menu
+msgid "Specialization"
+msgstr "التخصص"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__civilian_governorate_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__governorate_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__national_governorate_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__pass_governorate_id
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__residence_card_governorate_id
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "State"
+msgstr "الولاية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment__total_amount
+msgid "Sub Total"
+msgstr "المجموع الفرعي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__supply_card
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Supply Card"
+msgstr "بطاقة الإمداد"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__supply_card_center
+msgid "Supply Card Center"
+msgstr "مركز بطاقة الإمداد"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_contract__tax
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__third_name
+msgid "Third"
+msgstr "الثالث"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__mother_t_name
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Third Name"
+msgstr "الاسم الثالث"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip__total_allotments
+msgid "Total"
+msgstr "المجموع"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__transfer_from
+msgid "Transfer From"
+msgstr "التحويل من"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__transfer_to
+msgid "Transfer To"
+msgstr "التحويل إلى"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__service_status__transferd
+msgid "Transferd"
+msgstr "منقول"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__universtiy
+msgid "Universtiy"
+msgstr "الجامعة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields.selection,name:mowr_payslip.selection__hr_employee__previous_marriage_state__widower
+msgid "Widower"
+msgstr "أرمل"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Work Permit"
+msgstr "تصريح العمل"
+
+#. module: mowr_payslip
+#: model_terms:ir.ui.view,arch_db:mowr_payslip.hr_employee_more_details_form
+msgid "Yearly"
+msgstr "سنوي"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__add_service_yearly
+msgid "Yearly Addtional Service"
+msgstr "الخدمة الإضافية السنوية"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__removed_service_yearly
+msgid "Yearly Removed Service"
+msgstr "الخدمة السنوية المحذوفة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_payslip_allotment_type__code
+msgid "code"
+msgstr "رمز"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_certifiaction
+msgid "hr.employee.certifiaction"
+msgstr "شهادة الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_contact
+msgid "hr.employee.contact"
+msgstr "جهة اتصال الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_governorate
+msgid "hr.employee.governorate"
+msgstr "محافظة الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_employee_language
+msgid "hr.employee.language"
+msgstr "لغة الموظف"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_payslip_allotment
+msgid "hr.payslip.allotment"
+msgstr "مخصص قسيمة الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_hr_payslip_allotment_type
+msgid "hr.payslip.allotment.type"
+msgstr "نوع مخصص قسيمة الراتب"
+
+#. module: mowr_payslip
+#: model:ir.model,name:mowr_payslip.model_job_address
+msgid "job.address"
+msgstr "عنوان الوظيفة"
+
+#. module: mowr_payslip
+#: model:ir.model.fields,field_description:mowr_payslip.field_hr_employee__third_cert
+msgid "third Certification"
+msgstr "الشهادة الثالثة"

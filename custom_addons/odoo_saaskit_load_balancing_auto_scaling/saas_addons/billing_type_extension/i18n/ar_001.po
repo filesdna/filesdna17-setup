@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* billing_type_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:42+0000\n"
+"PO-Revision-Date: 2023-04-05 04:21+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "*Pricing Rule"
+msgstr "* قاعدة التسعير"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "0 Users"
+msgstr "0 مستخدمين"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "<span id=\"m_extra_users_price\">0.00</span>"
+msgstr ""
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "<span id=\"y_extra_users_price\">0.00</span>"
+msgstr ""
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "Anually = 12 months"
+msgstr "سنوي = 12 شهر"
+
+#. module: billing_type_extension
+#. odoo-javascript
+#: code:addons/billing_type_extension/static/src/js/product_template.js:0
+#, python-format
+msgid "Apps"
+msgstr "التطبيقات"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__automated
+msgid "Automated"
+msgstr "تلقائي"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__based_on
+msgid "Based On"
+msgstr "معتمد على"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__billing
+msgid "Billing Type"
+msgstr "طريقة الفوترة"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.website_sale_template_payment_inherit_id4
+msgid "Confirm Order"
+msgstr "تأكيد الطلب"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__plan_users
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.default_plan_users
+msgid "Default Plan Users"
+msgstr "عدد المستخدمين الافتراضي"
+
+#. module: billing_type_extension
+#: model:ir.model,name:billing_type_extension.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__language_id
+msgid "Language"
+msgstr "اللغة"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.default_plan_users
+msgid "Languages"
+msgstr "اللغات"
+
+#. module: billing_type_extension
+#: model:ir.model.fields,field_description:billing_type_extension.field_res_config_settings__manual
+msgid "Manual"
+msgstr "يدوي"
+
+#. module: billing_type_extension
+#: model:ir.model,name:billing_type_extension.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف إعدادات السيرفر للمشتركين conf"
+
+#. module: billing_type_extension
+#: model:ir.model.fields.selection,name:billing_type_extension.selection__res_config_settings__based_on__phone_number
+msgid "Phone Number"
+msgstr "رقم الجوال"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.website_sale_template_payment_inherit_id4
+msgid "Price"
+msgstr "السعر"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.saas_index_inherit2
+msgid "Price = ((Users Price x No of Users) + Plan Users Price) x months"
+msgstr "السعر=((السعر للمستخدم × عدد المستخدمين)+سعر مستخدمي الباقة)×الأشهر"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.website_sale_template_payment_inherit_id4
+msgid "Product"
+msgstr "المنتج"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.website_sale_template_payment_inherit_id4
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: billing_type_extension
+#: model:ir.model,name:billing_type_extension.model_sale_order
+msgid "Sales Order"
+msgstr "الطلب"
+
+#. module: billing_type_extension
+#. odoo-javascript
+#: code:addons/billing_type_extension/static/src/js/product_template.js:0
+#, python-format
+msgid ""
+"Sorry ! You can not purchase two or more packages in one Order. You may "
+"select additional individual products instead."
+msgstr ""
+"عذراً! لا يمكنك شراء باقتين أو أكثر في طلب واحد. يمكنك اختيار منتجات مفردة "
+"إضافية بدلا من ذلك."
+
+#. module: billing_type_extension
+#: model:ir.model.fields.selection,name:billing_type_extension.selection__res_config_settings__based_on__tax_number
+msgid "Tax Number"
+msgstr "الرقم الضريبي"
+
+#. module: billing_type_extension
+#: model_terms:ir.ui.view,arch_db:billing_type_extension.default_plan_users
+msgid "Tenant Database Creation Process"
+msgstr "عملية إنشاء الاشتراك"
+
+#. module: billing_type_extension
+#: model:ir.model.fields.selection,name:billing_type_extension.selection__res_config_settings__billing__user_plan_price
+msgid "Users + Plan Price"
+msgstr "المستخدمون + سعر الباقة"

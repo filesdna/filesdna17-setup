@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dms_security,dms.security,model_dms_security,dms_security.group_dms_manager,1,1,1,0
+access_auth_totp_dms_wizard,auth_totp.dms.wizard,model_auth_totp_dms_wizard,dms_security.group_dms_manager,1,1,1,1
+access_res_users_nfc,res.users.nfc,model_res_users_nfc,base.group_user,1,1,1,1
+access_res_users_nfc_manager,res_users_nfc_manager,model_res_users_nfc,,1,1,1,1

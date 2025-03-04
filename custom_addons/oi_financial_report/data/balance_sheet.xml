@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<record model="oi_fin.template" id="template_balance_sheet" forcecreate="True">
+		<field name="name">Balance Sheet</field>
+		<field name="sample" eval="1" />
+		<field name="group_by"></field>
+		<field name="include_empty" eval="False" />
+		<field name="columns"
+			eval="[(5,),
+				(0,0, {'name' : 'Total', 'sequence' : 40,'source_type' :'amount', 'report_source_id' : ref('report_source_empty') })]" />
+		<field name="rows"
+			eval="[(5,),
+				(0,0, { 'sequence' : 10,'source_type' :'title', 'name' : 'Assets' }),
+				(0,0, { 'sequence' : 20,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Bank and Cash', 'operand1' : 30 }),	
+				(0,0, { 'sequence' : 30,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_bank_cash') }),	
+				(0,0, { 'sequence' : 40,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Receivable', 'operand1' : 50 }),	
+				(0,0, { 'sequence' : 50,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_receivable') }),		
+				(0,0, { 'sequence' : 60,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Current Assets', 'operand1' : 70 }),	
+				(0,0, { 'sequence' : 70,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_current_assets') }),		
+				(0,0, { 'sequence' : 80,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Prepayment', 'operand1' : 90 }),	
+				(0,0, { 'sequence' : 90,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_prepayments') }),	
+				(0,0, { 'sequence' : 95,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Current Assets', 'operand1' : '20,40,60,80' }),
+				(0,0, { 'sequence' : 99,'source_type' :'title','name' : ' ' }),
+				(0,0, { 'sequence' : 100,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Fixed Assets', 'operand1' : 110 }),	
+				(0,0, { 'sequence' : 110,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_fixed_assets') }),		
+				(0,0, { 'sequence' : 120,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Non-current Assets', 'operand1' : 130 }),	
+				(0,0, { 'sequence' : 130,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_non_current_assets') }),
+				(0,0, { 'sequence' : 140,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Assets', 'operand1' : '95,100,120' }),			
+				(0,0, { 'sequence' : 141,'source_type' :'title','name' : ' ' }),
+				(0,0, { 'sequence' : 149,'source_type' :'title','name' : 'Liabilities' }),				
+				(0,0, { 'sequence' : 160,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Current Liabilities', 'operand1' : 170 }),	
+				(0,0, { 'sequence' : 170,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_current_liabilities'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 180,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Payable', 'operand1' : 190 }),	
+				(0,0, { 'sequence' : 190,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_payable'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 200,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Current Liabilities', 'operand1' : '160,180' }),
+				(0,0, { 'sequence' : 201,'source_type' :'title','name' : ' ' }),
+				(0,0, { 'sequence' : 210,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Non-current Liabilities', 'operand1' : '220' }),	
+				(0,0, { 'sequence' : 220,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_non_current_liabilities'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 230,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Liabilities', 'operand1' : '200,210' }),					
+				(0,0, { 'sequence' : 240,'source_type' :'title','name' : ' ' }),
+				(0,0, { 'sequence' : 250,'source_type' :'title','name' : 'Equity' }),
+				(0,0, { 'sequence' : 260,'source_type' :'amount','name' : 'Unallocated Earnings', 'report_source_id' : ref('report_source_unallocated_earnings'), 'amount_type' : '-balance', 'special_filter' : '', 'none_zero' : True }),
+				(0,0, { 'sequence' : 270,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Equity', 'operand1' : 280 }),	
+				(0,0, { 'sequence' : 280,'source_type' :'amount','name' : ' ', 'report_source_id' : ref('report_source_equity'), 'amount_type' : '-balance' }),	
+				(0,0, { 'sequence' : 290,'source_type' :'calc', 'operand_type' : '1', 'name' : 'Total Equity', 'operand1' : '260,270' }),						
+			]" />
+		<field name="add_summary_row" eval="False" />
+		<field name="add_summary_column" eval="False" />
+		<field name="summary_row_func">SUM</field>
+		<field name="summary_column_func">SUM</field>
+	</record>
+
+</odoo>

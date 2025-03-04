@@ -1,0 +1,13 @@
+<odoo>
+ 
+    <record id="dms_face_form" model="ir.ui.view">
+        <field name="name">dms.face.form</field>
+        <field name="model"></field>
+        <field name="inherit_id" ref="dms.view_dms_file_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='lock']" position="after">
+                    <button string="Recognize Face" type="object" name="action_recognize_face" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

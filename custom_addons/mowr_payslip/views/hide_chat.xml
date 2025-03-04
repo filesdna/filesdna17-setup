@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record id="hide_chat_form" model="ir.ui.view">
+            <field name="name">Hide Chat Form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_chatter']" position="replace">
+
+                </xpath>
+            </field>
+        </record>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////      -->
+        <!-- <record id="chatter_payroll_form" model="ir.ui.view">
+            <field name="name">Chatter Payroll form</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_chatter']" position="replace">
+
+                </xpath>
+            </field>
+        </record> -->
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+        <record id="chatter_contract_from" model="ir.ui.view">
+            <field name="name">HR Contract Chatter form</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_chatter']" position="replace">
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

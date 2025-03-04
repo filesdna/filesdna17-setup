@@ -1,0 +1,8 @@
+.faceid_loading{
+    background-image: url("/faceid_authentication/static/src/img/loading.gif");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}

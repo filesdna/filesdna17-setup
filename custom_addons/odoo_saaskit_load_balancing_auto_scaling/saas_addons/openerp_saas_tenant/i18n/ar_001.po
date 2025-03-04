@@ -1,0 +1,338 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openerp_saas_tenant
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:54+0000\n"
+"PO-Revision-Date: 2023-04-05 05:42+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_res_groups
+msgid "Access Groups"
+msgstr "مجموعات صلاحيات الوصول"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__balance_user_count
+msgid "Balance User"
+msgstr "المستخدمين المتبقين"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__use_user_count
+msgid "Consume User"
+msgstr "المستخدمين النشطين"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__create_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__create_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__create_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__create_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__create_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__create_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__create_date
+msgid "Created on"
+msgstr " تم إنشاؤها على "
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__db_expire
+msgid "DB expired"
+msgstr "اشتراك منتهي"
+
+#. module: openerp_saas_tenant
+#. odoo-javascript
+#: code:addons/openerp_saas_tenant/static/src/xml/dashboard.xml:0
+#, fuzzy, python-format
+msgid "Database Analytics"
+msgstr "تحليلات قواعد البيانات"
+
+#. module: openerp_saas_tenant
+#: model:ir.actions.act_window,name:openerp_saas_tenant.db_additional_space_action
+#, fuzzy
+msgid "Database Size Exceeded !"
+msgstr "تم تجاوز حجم قاعدة البيانات!"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_db_space_exceeded
+#, fuzzy
+msgid "Database space Exceeded"
+msgstr "تم تجاوز مساحة قاعدة البيانات"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_db_expire
+msgid "Db Expire"
+msgstr "انتهاء الاشتراك"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_db_name
+msgid "Db name"
+msgstr "اسم الاشتراك"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__tenant_db_size
+msgid "Default Tenant DB Size(GB)"
+msgstr "حجم قاعدة البيانات الافتراضي للمشترك (جيجابايت)"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__tenant_filestore_size
+msgid "Default Tenant Filestore Size(GB)"
+msgstr "حجم التخزين الافتراضي للمشترك (جيجابايت)"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__display_name
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__display_name
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__display_name
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__display_name
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__expiry_date
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: openerp_saas_tenant
+#. odoo-javascript
+#: code:addons/openerp_saas_tenant/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Filestore Analytics"
+msgstr "تحليلات تخزين الملفات"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__id
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__id
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__id
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__name
+msgid "Instance Name"
+msgstr "اسم الاشتراك"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/openerp_saas_tenant.py:0
+#, python-format
+msgid "Invalid Access"
+msgstr "الدخول غير صالح"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__is_exceed
+msgid "Is exceed"
+msgstr "متجاوز"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_res_lang
+msgid "Languages"
+msgstr "اللغات"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire____last_update
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name____last_update
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded____last_update
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__write_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__write_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__write_uid
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث من قبل"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_expire__write_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__write_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__write_date
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_ir_ui_menu
+msgid "Menu"
+msgstr "القائمة"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_space_exceeded__message
+msgid "Message"
+msgstr "الرسالة"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_ir_module_module
+msgid "Module"
+msgstr "التطبيق"
+
+#. module: openerp_saas_tenant
+#: model:ir.actions.act_window,name:openerp_saas_tenant.saas_service_action
+#: model:ir.ui.menu,name:openerp_saas_tenant.my_saas_service
+#: model:ir.ui.menu,name:openerp_saas_tenant.saas_service
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.saas_service_form
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.saas_service_tree
+msgid "My Service"
+msgstr "اشتراكي"
+
+#. module: openerp_saas_tenant
+#: model:res.groups,name:openerp_saas_tenant.group_saas_service
+msgid "My Service Access"
+msgstr "الوصول إلى اشتراكي"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/openerp_saas_tenant.py:0
+#, fuzzy, python-format
+msgid "Only Administrator/SuperUser can perform this activity"
+msgstr "يمكن فقط للمسؤول / المستخدم المتميز تنفيذ هذا النشاط"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/openerp_saas_tenant.py:0
+#, fuzzy, python-format
+msgid "Only administrators can change the settings"
+msgstr "يمكن للمسؤولين فقط تغيير الإعدادات"
+
+#. module: openerp_saas_tenant
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.db_add_space_form
+msgid "Purchase Space"
+msgstr "شراء مساحة"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__user_count
+msgid "Purchase User"
+msgstr "زيادة المستخدمين"
+
+#. module: openerp_saas_tenant
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.login_locked
+msgid "Renew"
+msgstr "تجديد"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_saas_service
+msgid "Saas Service"
+msgstr "خدمة الاشتراك"
+
+#. module: openerp_saas_tenant
+#: model:ir.ui.menu,name:openerp_saas_tenant.menu_saas_service
+#, fuzzy
+msgid "Service Detail"
+msgstr "تفاصيل الخدمة"
+
+#. module: openerp_saas_tenant
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.login_locked
+msgid ""
+"Services has been deactivated. Please check if you have any pending bills "
+"on portal."
+msgstr ""
+"لقد انتهى اشتراكك. يرجى التحقق إذا كان لديك أي فواتير متأخرة على موقع "
+"ستريم: www.stream.sa"
+
+#. module: openerp_saas_tenant
+#: model:res.groups,name:openerp_saas_tenant.group_saas_tenant_user
+msgid "Tenant Super User"
+msgstr "اسم المستخدم الرئيسي للمشترك"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_res_users__tenant_user
+msgid "Tenant User"
+msgstr "اسم مستخدم المشترك"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/users.py:0
+#, python-format
+msgid "To add More Users please contact Service Provider!"
+msgstr ""
+"يمكنك زيادة عدد المستخدمين من خلال موقع ستريم: www.stream.sa ، أو التواصل "
+"مع الدعم الفني!"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__total_db_size_used
+msgid "Total DB Size Used (GB)"
+msgstr "إجمالي حجم قاعدة البيانات المستخدمة (جيجابايت)"
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_saas_service__total_filestore_size_used
+msgid "Total FileStore Size Used (GB)"
+msgstr "إجمالي حجم مخزن الملفات المستخدم (جيجابايت)"
+
+#. module: openerp_saas_tenant
+#: model:ir.model,name:openerp_saas_tenant.model_res_users
+msgid "User"
+msgstr "المستخدم"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/users.py:0
+#, python-format
+msgid "Warning!"
+msgstr "تحذير!"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/users.py:0
+#, python-format
+msgid "You are not a authorized person to make changes!"
+msgstr "ليس لديك صلاحية إجراء التغييرات!"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/openerp_saas_tenant.py:0
+#, python-format
+msgid "You are not authorised to uninstall the module...!!! "
+msgstr "ليست لديك صلاحية إلغاء تنشيط التطبيقات... !!!"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/users.py:0
+#, fuzzy, python-format
+msgid "You can't delete this user!'"
+msgstr "لا يمكنك حذف هذا المستخدم!"
+
+#. module: openerp_saas_tenant
+#. odoo-python
+#: code:addons/openerp_saas_tenant/models/users.py:0
+#, python-format
+msgid "You can't remove group 'My Service Access'"
+msgstr "لا يمكنك إزالة مجموعة \"الوصول إلى اشتراكي\""
+
+#. module: openerp_saas_tenant
+#: model:ir.model.fields,field_description:openerp_saas_tenant.field_db_name__name
+msgid "admin db"
+msgstr "المشترك المشرف"
+
+#. module: openerp_saas_tenant
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.login_locked
+#, fuzzy
+msgid "تجديد"
+msgstr "تجديد"
+
+#. module: openerp_saas_tenant
+#: model_terms:ir.ui.view,arch_db:openerp_saas_tenant.login_locked
+#, fuzzy
+msgid ""
+"عزيزي المشترك، انتهت مدة اشتراكك،، نأمل تجديد الاشتراك وسداد الفواتير "
+"المستحقة لتشغيل الخدمة."
+msgstr "عزيزي المشترك ، انتهت مدة الخدمة."

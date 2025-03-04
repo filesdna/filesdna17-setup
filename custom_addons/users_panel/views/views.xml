@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    <record id="users_panel_action" model="ir.actions.act_window">
+      <field name="name">Users Panel Action</field>
+      <field name="res_model">users.panel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem
+      id="user_panel_menu"
+      name="Users Panel"
+      action="base.action_res_users"
+      web_icon="users_panel,static/src/img/user_panel.png"
+      sequence="10"/>
+  </data>
+</odoo>

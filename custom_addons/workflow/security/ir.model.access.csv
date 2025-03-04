@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_workflow_home,workflow.page.home,model_workflow_page_home,base.group_user,1,1,1,1
+access_workflow_approvals,workflow.page.approvals,model_workflow_page_approvals,base.group_user,1,1,1,1
+access_workflow_assigned,workflow.page.assigned,model_workflow_page_assigned,base.group_user,1,1,1,1

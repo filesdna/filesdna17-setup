@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="case_matter_create_form_view" model="ir.ui.view">
+            <field name="name">case.matter.create.form.view</field>
+            <field name="model">case.matter.create</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group string="Case Details">
+                            <field name="case_matter_id" invisible="1"/>
+                            <field name="matter_category_id" required="1"/>
+                            <field name="matter_sub_category_id" required="1"/>
+                            <field name="country_id" required="1"/>
+                            <field name="state_id" required="1"/>
+                        </group>
+                        <group string="Case Duration">
+                            <field name="open_date" required="1"/>
+                            <field name="close_date" required="1"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Create Case" name="case_matter_details" type="object"
+                                class="oe_highlight"/>or
+                        <button string="Cancel" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_create_case_matter" model="ir.actions.act_window">
+            <field name="name">Case</field>
+            <field name="res_model">case.matter.create</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="case_matter_create_form_view"/>
+        </record>
+    </data>
+</odoo>

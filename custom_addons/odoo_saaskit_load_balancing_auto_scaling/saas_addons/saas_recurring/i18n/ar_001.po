@@ -1,0 +1,674 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saas_recurring
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:45+0000\n"
+"PO-Revision-Date: 2023-05-05 03:31+0300\n"
+"Last-Translator: Abdulaziz Alanazi <abdulaziz@alanazi.vip>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__active
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__active_chk
+msgid "Active"
+msgstr "نشط "
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_tree
+msgid "Active/Inactive"
+msgstr "نشط/غير نشط"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+#, fuzzy
+msgid "Agreement"
+msgstr "الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__number
+#, fuzzy
+msgid "Agreement No"
+msgstr "رقم الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_agreement_schedule
+#, fuzzy
+msgid "Agreement Schedule"
+msgstr "جدول الاتفاقية"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_line_form
+msgid "Agreement line"
+msgstr "بند الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__agreement_line
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_line_tree
+#, fuzzy
+msgid "Agreement lines"
+msgstr "بنود الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__renewal_state__not_renewed
+#, fuzzy
+msgid "Agreement not renewed"
+msgstr "لم يتم تجديد الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.constraint,message:saas_recurring.constraint_sale_recurring_orders_agreement_number_uniq
+#, fuzzy
+msgid "Agreement number must be unique !"
+msgstr "يجب أن يكون رقم الاتفاقية فريدًا!"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_order_tree
+msgid "Agreement orders"
+msgstr "طلبات الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__agreement_id
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__agreement_id
+msgid "Agreement reference"
+msgstr "رقم الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__renewal_state__renewed
+#, fuzzy
+msgid "Agreement renewed"
+msgstr "تم تجديد الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_account_bank_statement_line__agreement_id
+#: model:ir.model.fields,field_description:saas_recurring.field_account_move__agreement_id
+#: model:ir.model.fields,field_description:saas_recurring.field_account_payment__agreement_id
+#: model:ir.ui.menu,name:saas_recurring.menu_recurring_orders_agreements_main
+#, fuzzy
+msgid "Agreements"
+msgstr "الاتفاقيات"
+
+#. module: saas_recurring
+#: model_terms:ir.actions.act_window,help:saas_recurring.action_sale_recurring_orders_agreement
+#, fuzzy
+msgid ""
+"Agreements are the way you define the commercial relation with your "
+"customers which specify certain products/services that you are providing "
+"them that requires a recurring order."
+msgstr ""
+"الاتفاقيات هي الطريقة التي تحدد بها العلاقة التجارية مع عملائك والتي تحدد "
+"بعض المنتجات / الخدمات التي تقدمها لهم والتي تتطلب طلبًا متكررًا."
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__start_date
+#, fuzzy
+msgid "Beginning of the agreement. Keep empty to use the current date"
+msgstr "بداية الاتفاقية. ابق فارغا لاستخدام التاريخ الحالي"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__billing
+#, fuzzy
+msgid "Billing Type"
+msgstr "طريقة الفوترة"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.change_inv_term_form
+#, fuzzy
+msgid "Change"
+msgstr "تغيير"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.change_inv_term_form
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+msgid "Change Invoicing Term"
+msgstr "تغيير مدة الفوترة"
+
+#. module: saas_recurring
+#: model:ir.actions.act_window,name:saas_recurring.change_inv_term_action
+msgid "Change Invoicing Term !"
+msgstr "تغيير مدة الفواتير!"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__company_id
+#, fuzzy
+msgid "Company"
+msgstr "المنشأة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__company_id
+#, fuzzy
+msgid "Company that signs the agreement"
+msgstr "المنشأة التي توقع الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__confirmed
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__next_expiration_date
+#, fuzzy
+msgid "Contract Renewal Date"
+msgstr "تاريخ تجديد العقد"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__createdate
+#, fuzzy
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__create_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__create_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__create_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__create_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__create_date
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__create_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__create_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__create_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__create_date
+#, fuzzy
+msgid "Created on"
+msgstr " تم إنشاؤها على "
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_order__date
+msgid ""
+"Creation date of draft/sent orders,\n"
+"Confirmation date of confirmed orders."
+msgstr ""
+"تاريخ إنشاء الطلبات المسودة/المرسلة ،\n"
+"تاريخ التأكيد للطلبات المؤكدة."
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__current_users
+#, fuzzy
+msgid "Current Users"
+msgstr "المستخدمين الحاليين"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__partner_id
+#, fuzzy
+msgid "Customer"
+msgstr "العميل"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__partner_id
+msgid "Customer you are making the agreement with"
+msgstr "العميل المبرم معه الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__name
+#, fuzzy
+msgid "Description"
+msgstr "الوصف"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__discount
+msgid "Discount (%)"
+msgstr "الخصم (%)"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__display_name
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__display_name
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__display_name
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__display_name
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__end_date
+#, fuzzy
+msgid "End date"
+msgstr "تاريخ الانتهاء"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__end_date
+#, fuzzy
+msgid "End date of the agreement"
+msgstr "تاريخ انتهاء الاتفاقية"
+
+#. module: saas_recurring
+#. odoo-python
+#: code:addons/saas_recurring/models/account_invoice.py:0
+#, python-format
+msgid "Excepiton : {}"
+msgstr "خطأ: {}"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__state__first
+#, fuzzy
+msgid "First order created"
+msgstr "تم إنشاء الطلب الأول"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong__fixed
+#, fuzzy
+msgid "Fixed term"
+msgstr "مدة محددة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__id
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__id
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__id
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__id
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__id
+#, fuzzy
+msgid "ID"
+msgstr "الرقم"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_agreement_filter
+#, fuzzy
+msgid "Inactive agreements"
+msgstr "اتفاقيات غير نشطة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__instance_name
+#, fuzzy
+msgid "Instance Name"
+msgstr "اسم الاشتراك"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__prolong_interval
+msgid "Interval"
+msgstr "المدة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_line__ordering_interval
+msgid "Interval in time units for making and order of this product"
+msgstr "وحدة المدة الزمنية لعمل وطلب هذا المنتج"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__prolong_interval
+msgid ""
+"Interval in time units to prolong the agreement until new renewable (that "
+"is automatic for unlimited term, manual for renewable fixed term)."
+msgstr ""
+"وحدة المدة الزمنية لتمديد الاتفاقية حتى التجديد (وهو تلقائي لمدة غير "
+"محدودة، يدوي لمدة محددة قابلة للتجديد)."
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__prolong_unit
+msgid "Interval unit"
+msgstr "وحدة المدة الزمنية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__invoice_ids
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+#, fuzzy
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__invoice_term_id
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__invoice_term_id
+msgid "Invoicing Term"
+msgstr "مدة الفوترة"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule____last_update
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard____last_update
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement____last_update
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line____last_update
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order____last_update
+#, fuzzy
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__write_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__write_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__write_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__write_uid
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "آخر تحديث من قبل"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_agreement_schedule__write_date
+#: model:ir.model.fields,field_description:saas_recurring.field_change_invoicing_term_wizard__write_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__write_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__write_date
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__last_renovation_date
+#, fuzzy
+msgid ""
+"Last date when agreement was renewed (same as start date if not renewed)"
+msgstr "آخر موعد تم فيه تجديد الاتفاقية (مثل تاريخ البدء إذا لم يتم تجديده)"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__last_order_date
+msgid "Last order date"
+msgstr "تاريخ آخر طلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__last_renovation_date
+#, fuzzy
+msgid "Last renovation date"
+msgstr "تاريخ آخر تجديد"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__log_history
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+msgid "Log History"
+msgstr "تاريخ السجل"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__name
+#, fuzzy
+msgid "Name"
+msgstr "الاسم"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__name
+#, fuzzy
+msgid "Name that helps to identify the agreement"
+msgstr "الاسم الذي يساعد على تحديد الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__notes
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__notes
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+#, fuzzy
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__number
+msgid ""
+"Number of agreement. Keep empty to get the number assigned by a sequence."
+msgstr "رقم الاتفاقية. احتفظ به فارغًا للحصول على الرقم المخصص بالتسلسل."
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__order_id
+#, fuzzy
+msgid "Order"
+msgstr "طلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_order__date
+#, fuzzy
+msgid "Order date"
+msgstr "تاريخ الطلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__ordering_interval
+msgid "Order interval"
+msgstr "المدة الزمنية للطلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__order_line
+#, fuzzy
+msgid "Order lines"
+msgstr "بنود الطلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__ordering_unit
+msgid "Ordering interval unit"
+msgstr "وحدة المدة الزمنية للطلبات"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+#, fuzzy
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_account_payment
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__billing__normal
+msgid "Per Module/Per Month/Per User"
+msgstr "لكل تطبيق/شهرياً/للمستخدم"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_account_move_line__price_unit_show
+#, fuzzy
+msgid "Price"
+msgstr "السعر"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__product_id
+#, fuzzy
+msgid "Product"
+msgstr "المنتج"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_line__name
+#, fuzzy
+msgid "Product description"
+msgstr "وصف المنتج"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__price
+#, fuzzy
+msgid "Product price"
+msgstr "سعر المنتج"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement_line__quantity
+#, fuzzy
+msgid "Product quantity"
+msgstr "كمية المنتج"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_form
+#, fuzzy
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__prolong
+msgid "Prolongation"
+msgstr "التمديد"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_line__quantity
+#, fuzzy
+msgid "Quantity of the product"
+msgstr "كمية المنتج"
+
+#. module: saas_recurring
+#: model:ir.actions.act_window,name:saas_recurring.action_sale_recurring_orders_agreement
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_sale_recurring_orders_agreement_tree
+#, fuzzy
+msgid "Recurring orders agreements"
+msgstr "اتفاقيات الطلبات المتكررة"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong__recurrent
+msgid "Renewable fixed term"
+msgstr "مدة ثابتة قابلة للتجديد"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__renewal_state
+#, fuzzy
+msgid "Renewal state"
+msgstr "حالة التجديد"
+
+#. module: saas_recurring
+#: model:ir.actions.server,name:saas_recurring.ir_cron_make_agreement_invoice_action_ir_actions_server
+#: model:ir.cron,cron_name:saas_recurring.ir_cron_make_agreement_invoice_action
+msgid "Run agreement invoice Scheduler"
+msgstr "تشغيل جدولة فاتورة الاتفاقية"
+
+#. module: saas_recurring
+#: model:ir.ui.menu,name:saas_recurring.menu_recurring_orders_agreements
+#, fuzzy
+msgid "Sale Agreements"
+msgstr "اتفاقيات البيع"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_sale_recurring_orders_agreement_line
+msgid "Sale Recurring Order Agreement Line"
+msgstr "بند اتفاقية الطلبات المتكررة للمبيعات"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_sale_recurring_orders_agreement
+msgid "Sale Recurring Orders Agreement"
+msgstr "اتفاقية الطلبات المتكررة للمبيعات"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_sale_recurring_orders_agreement_order
+msgid "Sale Recurring Orders Agreement Order"
+msgstr "أمر اتفاقية الطلبات المتكررة للمبيعات"
+
+#. module: saas_recurring
+#: model_terms:ir.ui.view,arch_db:saas_recurring.view_agreement_filter
+msgid "Search Agreements"
+msgstr "بحث الاتفاقيات"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__prolong
+msgid ""
+"Sets the term of the agreement. 'Renewable fixed term=It sets a fixed term, "
+"but with possibility of manual renew; 'Unlimited term=Renew is made "
+"automatically; 'Fixed term=The term is fixed and there is no possibility to "
+"renew."
+msgstr ""
+"يحدد مدة الاتفاقية. \"مدة ثابتة قابلة للتجديد = يحدد مدة محددة، ولكن مع "
+"إمكانية التجديد اليدوي؛ \"مصطلح غير محدود = التجديد يتم تلقائياً؛ \"مصطلح "
+"ثابت = المدة ثابتة ولا توجد إمكانية للتجديد."
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_line__price
+msgid ""
+"Specific price for this product. Keep empty to use the current price while "
+"generating order"
+msgstr ""
+"سعر محدد لهذا المنتج. اتركها فارغة لاستخدام السعر الحالي أثناء إنشاء الطلب"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__start_date
+msgid "Start date"
+msgstr "تاريخ البداية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__state
+msgid "State"
+msgstr "المنطقة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__prolong_unit
+msgid "Time unit for the prolongation interval"
+msgstr "الوحدة الزمنية لتمديد الفترة"
+
+#. module: saas_recurring
+#: model:ir.model,name:saas_recurring.model_change_invoicing_term_wizard
+#, fuzzy
+msgid ""
+"To compute values according to invoice policy after changing invoice term"
+msgstr "لحساب القيم وفقًا لسياسة الفاتورة بعد تغيير مدة الفاتورة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement__active
+#, fuzzy
+msgid "Unchecking this field, quotas are not generated"
+msgstr "بإلغاء تحديد هذا الحقل ، لا يتم إنشاء الحصص النسبية"
+
+#. module: saas_recurring
+#: model:ir.model.fields,help:saas_recurring.field_sale_recurring_orders_agreement_line__active_chk
+#, fuzzy
+msgid "Unchecking this field, this quota is not generated"
+msgstr "بإلغاء تحديد هذا الحقل ، لم يتم إنشاء هذه الحصة"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong__unlimited
+#, fuzzy
+msgid "Unlimited term"
+msgstr "مدة غير محدودة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_account_move_line__add_user_line
+msgid "User add Invoice line"
+msgstr "إضافة المستخدم لبند الفاتورة"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_account_move_line__remove_user_line
+msgid "User remove Invoice line"
+msgstr "إزالة مستخدم بند الفاتورة"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__billing__user_plan_price
+msgid "Users + Plan Price"
+msgstr "سعر الباقة+عدد المستخدمين"
+
+#. module: saas_recurring
+#: model:ir.model.fields,field_description:saas_recurring.field_sale_recurring_orders_agreement__version_no
+#, fuzzy
+msgid "Version No."
+msgstr "رقم الإصدار"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__state__orders
+#, fuzzy
+msgid "With orders"
+msgstr "مع الطلبات"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__state__empty
+msgid "Without orders"
+msgstr "بدون الطلبات"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong_unit__days
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement_line__ordering_unit__days
+#, fuzzy
+msgid "days"
+msgstr "أيام"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong_unit__months
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement_line__ordering_unit__months
+#, fuzzy
+msgid "months"
+msgstr "شهور"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong_unit__weeks
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement_line__ordering_unit__weeks
+#, fuzzy
+msgid "weeks"
+msgstr "أسابيع"
+
+#. module: saas_recurring
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement__prolong_unit__years
+#: model:ir.model.fields.selection,name:saas_recurring.selection__sale_recurring_orders_agreement_line__ordering_unit__years
+#, fuzzy
+msgid "years"
+msgstr "سنوات"

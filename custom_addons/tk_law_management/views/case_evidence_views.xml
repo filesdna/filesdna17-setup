@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="case_evidence_form_view" model="ir.ui.view">
+            <field name="name">case.evidence.form.view</field>
+            <field name="model">case.evidence</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="avatar" widget="image" class="oe_avatar" nolabel="1"/>
+                        <div class="oe_title">
+                            <label for="evidence_name"/>
+                            <h1>
+                                <field name="evidence_name" placeholder="e.g.Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="case_favor_id"/>
+                                <field name="case_favor_ids" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="case_evidence_tree_view" model="ir.ui.view">
+            <field name="name">case.evidence.tree.view</field>
+            <field name="model">case.evidence</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="evidence_name"/>
+                    <field name="case_favor_id"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_case_evidence" model="ir.actions.act_window">
+            <field name="name">Evidence</field>
+            <field name="res_model">case.evidence</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

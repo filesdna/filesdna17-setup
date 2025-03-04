@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_pragtech_domain_masking_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:36+0000\n"
+"PO-Revision-Date: 2023-05-20 16:50+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid ""
+"<span id=\"domain_chain_crt_alert\" style=\"color:red\" type=\"hidden\">Invalid file format. Please upload .crt extension file</span>\n"
+"                                        <span id=\"domain_chain_crt_val_alert\" style=\"color:red\" type=\"hidden\">Invalid Certificate</span>"
+msgstr ""
+"<span id=\"domain_chain_crt_alert\" style=\"color:red\" type=\"hidden\">نموذج الملف غير صحيح. يرجى رفع ملف بصيغة .crt</span>\n"
+"                                        <span id=\"domain_chain_crt_val_alert\" style=\"color:red\" type=\"hidden\">شهادة غير صحيحة</span>"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid ""
+"<span id=\"domain_crt_alert\" style=\"color:red\" type=\"hidden\">Invalid file format. Please upload .crt extension file</span>\n"
+"                                        <span id=\"domain_crt_val_alert\" style=\"color:red\" type=\"hidden\">Invalid Certificate</span>"
+msgstr ""
+"<span id=\"domain_crt_alert\" style=\"color:red\" type=\"hidden\">نموذج الملف غير صحيح. يرجى رفع ملف بصيغة .crt</span>\n"
+"                                        <span id=\"domain_crt_val_alert\" style=\"color:red\" type=\"hidden\">شهادة غير صحيحة</span>"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid ""
+"<span id=\"domain_key_alert\" style=\"color:red\" type=\"hidden\">Invalid file format. Please upload .txt extension file</span>\n"
+"                                        <span id=\"domain_key_val_alert\" style=\"color:red\" type=\"hidden\">Invalid Key</span>"
+msgstr ""
+"<span id=\"domain_key_alert\" style=\"color:red\" type=\"hidden\">نموذج الملف غير صحيح. يرجى رفع ملف بصيغة .txt</span>\n"
+"                                        <span id=\"domain_key_val_alert\" style=\"color:red\" type=\"hidden\">المفتاح غير صحيح</span>"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid ""
+"<span style=\"font-size:75%;\">Note: Please create CNAME record in domain controller</span>\n"
+"                            <br/>"
+msgstr "<span style=\"font-size:75%;\">ملاحظة: يرجى إنشاء سجل CNAME في وحدة تحكم الدومين</span><br/>"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Add Domain"
+msgstr "أضف دومين"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model.fields.selection,name:odoo_pragtech_domain_masking_website.selection__res_config_settings__web_configuration__apache
+msgid "Apache"
+msgstr "اباتشي"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Client Domain"
+msgstr "دومين العميل"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Database Names"
+msgstr "أسماء الاشتراكات"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Database URL"
+msgstr "رابط الاشتراك"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Domain Chain.crt"
+msgstr "ملف Chain.crt للدومين"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model,name:odoo_pragtech_domain_masking_website.model_domain_masking_details
+msgid "Domain Masking"
+msgstr "إخفاء الدومين"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Domain Type"
+msgstr "نوع الدومين"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Domain.crt"
+msgstr ""
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "HTTP"
+msgstr ""
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "HTTPS"
+msgstr ""
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model.fields.selection,name:odoo_pragtech_domain_masking_website.selection__res_config_settings__web_configuration__nginx
+msgid "NGINX"
+msgstr ""
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model,name:odoo_pragtech_domain_masking_website.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف odoorc للمشترك"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Private Key"
+msgstr "ملف المفتاح الخاص"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model_terms:ir.ui.view,arch_db:odoo_pragtech_domain_masking_website.saas_dbs_extended
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model,name:odoo_pragtech_domain_masking_website.model_tenant_database_list
+msgid "Tenant Database List"
+msgstr "قائمة الاشتراكات"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking_website.field_tenant_database_list__tenant_db_url
+msgid "Tenant db URL"
+msgstr "رابط قاعدة بيانات المشترك"
+
+#. module: odoo_pragtech_domain_masking_website
+#: model:ir.model.fields,field_description:odoo_pragtech_domain_masking_website.field_res_config_settings__web_configuration
+msgid "Web Configuration"
+msgstr "إعدادات الويب"

@@ -1,0 +1,341 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dms_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-09 10:47+0000\n"
+"PO-Revision-Date: 2024-07-09 10:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_auth_totp_dms_wizard
+msgid "2-Factor Setup DMS Wizard"
+msgstr "إعداد التحقق بخطوتين لـ DMS"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/wizard/authenticator.py:0
+#, python-format
+msgid "2-Factor authentication is now enabled."
+msgstr "تم تفعيل التحقق بخطوتين الآن."
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid ""
+"<span class=\"d-md-none d-block\">Or install an authenticator app</span>\n"
+"                                        <span class=\"d-none d-md-block\">Install an authenticator app on your mobile device</span>"
+msgstr ""
+"<span class=\"d-md-none d-block\">أو قم بتثبيت تطبيق المصادقة</span>\n"
+"<span class=\"d-none d-md-block\">قم بتثبيت تطبيق المصادقة على جهازك المحمول</span>"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid ""
+"<span class=\"d-none d-md-block\">When requested to do so, scan the barcode below</span>\n"
+"                                    <span class=\"d-block d-md-none\">When requested to do so, copy the key below</span>"
+msgstr ""
+"<span class=\"d-none d-md-block\">عند طلب ذلك، قم بمسح الرمز الشريطي أدناه</span>\n"
+"<span class=\"d-block d-md-none\">عند طلب ذلك، قم بنسخ المفتاح أدناه</span>"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid ""
+"<span class=\"text-muted\">Popular ones include Authy, Google Authenticator "
+"or the Microsoft Authenticator.</span>"
+msgstr ""
+"<span class=\"text-muted\">تشمل التطبيقات الشهيرة Authy و Google Authenticator و Microsoft Authenticator.</span>"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Activate"
+msgstr "تفعيل"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Authenticator App Setup"
+msgstr "إعداد تطبيق المصادقة"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Cannot scan it?"
+msgstr "لا يمكنك مسحه؟"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Click on this link to open your authenticator app"
+msgstr "انقر على هذا الرابط لفتح تطبيق المصادقة الخاص بك"
+
+#. module: dms_security
+#: model:ir.actions.server,name:dms_security.ir_cron_create_security_ir_actions_server
+msgid "Create Security Options"
+msgstr "إنشاء خيارات الأمان"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__create_uid
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__create_date
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_dms_security
+msgid "DMS Security Options"
+msgstr "خيارات أمان الوثائق"
+
+#. module: dms_security
+#: model:ir.ui.menu,name:dms_security.dms_security_menu_root
+msgid "DMS Security Settings"
+msgstr "إعدادات أمان DMS"
+
+#. module: dms_security
+#: model:ir.actions.act_window,name:dms_security.dms_security_action_window
+msgid "DMS Security window"
+msgstr "نافذة أمان DMS"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_dms_directory
+msgid "Directory"
+msgstr "مجلد"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.list
+msgid "Disable"
+msgstr "تعطيل"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__display_name
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.list
+msgid "Enable"
+msgstr "تمكين"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Enter your six-digit code below"
+msgstr "أدخل رمزك المكون من ستة أرقام أدناه"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_dms_file
+msgid "File"
+msgstr "ملف"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__fp
+msgid "Fingerprint"
+msgstr "بصمة الإصبع"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__g2fa
+msgid "Google 2FA"
+msgstr "التحقق بخطوتين من Google"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__id
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__write_uid
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__write_date
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Look for an \"Add an account\" button"
+msgstr "ابحث عن زر \"إضافة حساب\""
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__m2fa
+msgid "Microsoft 2FA"
+msgstr "التحقق بخطوتين من Microsoft"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__ma
+msgid "Mobile Authentication"
+msgstr "المصادقة عبر الهاتف المحمول"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__nfc
+msgid "NFC"
+msgstr "NFC"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: dms_security
+#: model_terms:ir.actions.act_window,help:dms_security.dms_security_action_window
+msgid "No Security Applyed . Let's apply one!"
+msgstr "لا يوجد أمان مطبق. دعونا نطبق واحدًا!"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__none
+msgid "None"
+msgstr "لا شيء"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "On Apple Store"
+msgstr "على متجر Apple"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "On Google Play"
+msgstr "على Google Play"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__qrcode
+msgid "Qrcode"
+msgstr "رمز الاستجابة السريعة"
+
+#. module: dms_security
+#: model:ir.model.fields.selection,name:dms_security.selection__dms_security__selection__sms
+msgid "SMS"
+msgstr "الرسائل القصيرة"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_ir_cron
+msgid "Scheduled Actions"
+msgstr "الإجراءات المجدولة"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__secret
+msgid "Secret"
+msgstr "السر"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__selection
+msgid "Secuirty Option"
+msgstr "خيار الأمان"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_dms_directory__dms_security_id
+#: model:ir.model.fields,field_description:dms_security.field_dms_file__dms_security_id
+#: model_terms:ir.ui.view,arch_db:dms_security.dms_directory_security_option_form
+#: model_terms:ir.ui.view,arch_db:dms_security.dms_file_security_option_form
+msgid "Security Option"
+msgstr "خيار الأمان"
+
+#. module: dms_security
+#: model:ir.model.fields,help:dms_security.field_dms_security__selection
+msgid "Select the Secuirty Option You need."
+msgstr "اختر خيار الأمان الذي تحتاجه."
+
+#. module: dms_security
+#: model:ir.ui.menu,name:dms_security.dms_security_menu_1_list
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_dms_directory__is_security_required
+#: model:ir.model.fields,field_description:dms_security.field_dms_file__is_security_required
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__is_required
+msgid "Status"
+msgstr "الحالة"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/wizard/authenticator.py:0
+#, python-format
+msgid "The verification code should only contain numbers"
+msgstr "يجب أن يحتوي رمز التحقق على أرقام فقط"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_res_users__totp_secret_dms
+msgid "Totp Secret Dms"
+msgstr "السر TOTP لـ DMS"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_ir_cron__trigger_user_id
+msgid "Trigger User"
+msgstr "المستخدم المحفز"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/models/dms_file.py:0
+#, python-format
+msgid "Two-Factor Authentication"
+msgstr "المصادقة بخطوتين"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/models/dms_security.py:0
+#, python-format
+msgid "Two-Factor Authentication Activation For DMS"
+msgstr "تفعيل المصادقة بخطوتين لـ DMS"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/models/dms_security.py:0
+#, python-format
+msgid "Two-factor authentication can only be enabled for yourself"
+msgstr "يمكن تفعيل المصادقة بخطوتين لنفسك فقط"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/models/dms_security.py:0
+#, python-format
+msgid "Two-factor authentication disabled for the following user : %s"
+msgstr "تم تعطيل المصادقة بخطوتين للمستخدم التالي : %s"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__url
+msgid "Url"
+msgstr "رابط"
+
+#. module: dms_security
+#: model:ir.model,name:dms_security.model_res_users
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__user_id
+#: model:ir.model.fields,field_description:dms_security.field_dms_security__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: dms_security
+#: model:ir.model.fields,field_description:dms_security.field_auth_totp_dms_wizard__code
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "Verification Code"
+msgstr "رمز التحقق"
+
+#. module: dms_security
+#. odoo-python
+#: code:addons/dms_security/models/res_users.py:0
+#: code:addons/dms_security/wizard/authenticator.py:0
+#, python-format
+msgid "Verification failed, please double-check the 6-digit code"
+msgstr "فشل التحقق، يرجى التحقق من الرمز المكون من 6 أرقام"
+
+#. module: dms_security
+#: model_terms:ir.ui.view,arch_db:dms_security.view_totp_wizard_dms
+msgid "e.g. 123456"
+msgstr "مثال 123456"

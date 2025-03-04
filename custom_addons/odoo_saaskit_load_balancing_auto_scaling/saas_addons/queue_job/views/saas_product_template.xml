@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template inherit_id="saas_product.confirmation1" id="queue_job_saas_product_confirmation_inherit_template">
+            <xpath expr="//div[1]/div[1]/div[1]/div[1]/t[1]/h2[1]" position='replace'>
+                <h2>Thank you for the order. We will create an environment with name '<em t-field="order.instance_name"/>' and notify you with the credentials via email in some time.
+                </h2>
+            </xpath>
+        </template>
+    </data>
+</odoo>

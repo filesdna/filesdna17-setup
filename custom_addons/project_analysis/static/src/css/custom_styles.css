@@ -1,0 +1,39 @@
+.total-field {
+    font-weight: bold;
+    font-size: 15px;
+    color: #222;
+}
+
+.salary-field {
+    font-weight: bold;
+    color: #0073b7; /* Blue */
+}
+
+.expense-field {
+    font-weight: bold;
+    color: #d9534f; /* Red */
+}
+
+.revenue-field {
+    font-weight: bold;
+    color: #5cb85c; /* Green */
+}
+
+.profit-loss-field {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Green for Profit, Red for Loss */
+.profit-loss-field[data-value^="-"] {
+    color: #d9534f !important; /* Red if loss */
+}
+.profit-loss-field[data-value^="0"],
+.profit-loss-field[data-value=""] {
+    color: #555 !important; /* Neutral for zero */
+}
+.profit-loss-field:not([data-value^="-"]) {
+    color: #5cb85c !important; /* Green if profit */
+}
+

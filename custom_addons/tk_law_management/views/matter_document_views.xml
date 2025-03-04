@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--Document Type-->
+        <record id="document_type_tree_view" model="ir.ui.view">
+            <field name="name">document.type.tree.view</field>
+            <field name="model">document.type</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="document_type"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_document_type" model="ir.actions.act_window">
+            <field name="name">Document</field>
+            <field name="res_model">document.type</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!--Case Matter Document-->
+        <record id="case_matter_document_tree_view" model="ir.ui.view">
+            <field name="name">case.matter.document.tree.view</field>
+            <field name="model">case.matter.document</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="case_matter_id" readonly="1"/>
+                    <field name="document_type_id"/>
+                    <field name="file_name" column_invisible="True"/>
+                    <field name="avatar" filename="file_name" widget="binary"/>
+                </tree>
+            </field>
+        </record>
+        <record id="case_matter_document_search_view" model="ir.ui.view">
+            <field name="name">case.matter.document.search.view</field>
+            <field name="model">case.matter.document</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="document_type_id"/>
+                    <group string="Group By">
+                        <filter name="document_type_id" string="Document Type"
+                                context="{'group_by': 'document_type_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_case_matter_document" model="ir.actions.act_window">
+            <field name="name">Document</field>
+            <field name="res_model">case.matter.document</field>
+            <field name="view_mode">tree,search</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,50 @@
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__data_path
+msgid "Data Path"
+msgstr "مسار البيانات"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: smartform
+#: model:ir.actions.act_window,name:smartform.action_smartform_page
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: smartform
+#: model:ir.model.fields,field_description:smartform.field_smartform_page_home__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: smartform
+#: model:ir.ui.menu,name:smartform.menu_smartform_root
+#: model_terms:ir.ui.view,arch_db:smartform.view_smartform_home
+msgid "Smart Forms"
+msgstr "النماذج الذكية"
+
+#. module: smartform
+#: model:ir.model,name:smartform.model_smartform_page_home
+msgid "Smartform"
+msgstr "النموذج الذكي"

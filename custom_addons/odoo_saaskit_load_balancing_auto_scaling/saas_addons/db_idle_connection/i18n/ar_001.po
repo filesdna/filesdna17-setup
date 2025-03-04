@@ -1,0 +1,29 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* db_idle_connection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:44+0000\n"
+"PO-Revision-Date: 2023-04-05 04:53+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: db_idle_connection
+#: model:ir.actions.server,name:db_idle_connection.db_close_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:db_idle_connection.db_close_scheduler
+msgid "Database Close Scheduler"
+msgstr "جدولة إغلاق قاعدة البيانات"
+
+#. module: db_idle_connection
+#: model:ir.model,name:db_idle_connection.model_tenant_database_list
+msgid "Tenant Database List"
+msgstr "قائمة الاشتراكات"

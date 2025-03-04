@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <odoo>
+    <record id="rule_dms_storage" model="ir.rule">
+        <field name="name">DMS Storage Rules</field>
+        <field name="model_id" ref="model_dms_storage"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_access_group" model="ir.rule">
+        <field name="name">DMS Access Group rules</field>
+        <field name="model_id" ref="model_dms_access_group"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_abstract_mixin" model="ir.rule">
+        <field name="name">Abstract DMS Mixin rules</field>
+        <field name="model_id" ref="model_abstract_dms_mixin"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_file" model="ir.rule">
+        <field name="name">DMS file rules</field>
+        <field name="model_id" ref="model_dms_file"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+     <record id="rule_dms_directory" model="ir.rule">
+        <field name="name">DMS Directory rules</field>
+        <field name="model_id" ref="model_dms_directory"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_category" model="ir.rule">
+        <field name="name">DMS Category</field>
+        <field name="model_id" ref="model_dms_category"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_tag" model="ir.rule">
+        <field name="name">DMS Tag</field>
+        <field name="model_id" ref="model_dms_tag"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+    <record id="rule_dms_meta_data" model="ir.rule">
+        <field name="name">DMS Meta Data</field>
+        <field name="model_id" ref="model_metadata_configuration"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <!-- <field name="groups" eval="[(4, ref('base.group_user'))]"/> -->
+    </record>
+
+</odoo>
+
+</odoo>

@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+   <record id="res_partner_bank_more_details_form" model="ir.ui.view">
+    <field name="name">res.partner.bank.more.details</field>
+    <field name="model">res.partner.bank</field>
+    <field name="inherit_id" ref="base.view_partner_bank_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='partner_id']" position="after">
+            <field name="swift_bic"/>
+            <field name="branch"/>
+                <div class="o_address_format">
+                      <field name="street" placeholder="Street..." class="o_address_street"/>
+                      <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                      <field name="city" placeholder="City" class="o_address_city"/>
+                      <div name="partner_address_country" class="d-flex justify-content-between">
+                          <field name="country_id" placeholder="Country" class="o_address_country" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"/>
+                      </div>
+                </div>
+      </xpath>
+      <xpath expr="//field[@name='currency_id']" position="after">
+            <field name="ifcs"/>
+            <field name="micr"/>
+            <field name="routing_code"/>
+      </xpath>
+    </field>
+   </record>
+  </data>
+</odoo>

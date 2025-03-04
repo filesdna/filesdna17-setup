@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+        <!-- Top-level menu item for React Module -->
+        <menuitem id="menu_workflow_root" name="Workflows" sequence="100" web_icon="workflow,static/src/img/icon.png"/>
+
+        <record id="action_workflow_page" model="ir.actions.act_window">
+            <field name="name">My Workflows</field>
+            <field name="res_model">workflow.page.home</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_workflow_home"/>
+            <field name="target">current</field>
+        </record>
+
+        <record id="action_assigned_page" model="ir.actions.act_window">
+            <field name="name">Assigned Forms</field>
+            <field name="res_model">workflow.page.assigned</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_workflow_assigned"/>
+            <field name="target">current</field>
+        </record>
+        
+        <record id="action_approvals_page" model="ir.actions.act_window">
+            <field name="name">My Approvals</field>
+            <field name="res_model">workflow.page.approvals</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_workflow_approvals"/>
+            <field name="target">current</field>
+        </record>
+
+        <menuitem id="menu_approvals"
+        name="My Approvals"
+        parent="menu_workflow_root"
+        action="action_approvals_page"
+        sequence="2"/>
+
+        <menuitem id="menu_workflow"
+        name="My Workflows"
+        parent="menu_workflow_root"
+        action="action_workflow_page"
+        sequence="1"/>
+
+        <menuitem id="menu_assigned"
+        name="Assigned Forms"
+        parent="menu_workflow_root"
+        action="action_assigned_page"
+        sequence="3"/>
+                  
+    </data>
+</odoo>

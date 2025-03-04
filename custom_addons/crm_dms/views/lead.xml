@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+    <record id="crm_lawyer_form" model="ir.ui.view">
+      <field name="name">crm.lawyer.form</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_lead_view_form" />
+      <field name="arch" type="xml">
+    
+        <xpath expr="//page[@name='lead']" position="after">
+          
+          <page string="Files" >
+               <field name="dms_line_ids" 
+               widget="many2many"
+               />
+                   
+          </page>
+          
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

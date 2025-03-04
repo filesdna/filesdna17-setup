@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <odoo>
+	<data>
+
+        <!--        Show Technical setting menu to tenant users -->
+        <menuitem id="base.menu_custom" name="Technical" parent="base.menu_administration" sequence="110" groups="base.group_no_one,group_psuedo_admin"/>
+        
+		</data>
+</odoo>

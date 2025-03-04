@@ -1,0 +1,45 @@
+<odoo>
+        <record id="template_dms_file_form" model="ir.ui.view">
+            <field name="name">template_dms_file.form</field>
+                    <field name="model">dms.file</field>
+                    <field name="inherit_id" ref="dms.view_dms_file_form"/>
+                    <field name="arch" type="xml">
+                        <xpath expr="//field[@name='active']" position="after">
+                            <field name="is_template" invisible="1"/>
+                        </xpath>
+            </field>
+        </record>
+        <!--  Define the view first  -->
+        <record id="docment_template_action" model="ir.actions.act_window">
+            <field name="name">Templates</field>
+            <field name="res_model">dms.file</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_template','=',True)]</field>
+            <field name="context">{ 'default_is_template': True, }</field>
+            <field name="help" type="html">
+                    <p class="o_view_nocontent_smiling_face">  Add a new Files. </p>
+                    <p> Files Template can be used to structure and organize
+                files directly in FilesDNA. </p>
+            </field>
+        </record>
+        <record id="action_dms_directory_temp" model="ir.actions.act_window">
+            <field name="name">Directories</field>
+            <field name="res_model">dms.directory</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[("is_deleted", "=", False),('is_template','=',True)]</field>
+            <field name="context">{ 'default_is_template': True, } </field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new Directory.
+                </p>
+                <p>
+                    Directories can be used to structure and organize
+                    files directly in FilesDNA.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_dms_templates" name="Templates" sequence="30" parent="main_menu_dms" />
+        <menuitem id="menu_dms_templates_file" name="Files" sequence="30" parent="menu_dms_templates" action="docment_template_action"/>
+        <menuitem id="menu_dms_templates_directory" name="Directories" sequence="30" parent="menu_dms_templates" action="action_dms_directory_temp"/>
+</odoo>

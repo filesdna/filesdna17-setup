@@ -1,0 +1,43 @@
+{
+    "name": "Document Management System",
+    "summary": """Document Management System for Filesdna""",
+    "version": "1.2",
+    "category": "Document Management",
+    'author': "Borderless Security",
+    "depends": [
+        "mail",
+        "http_routing",
+        "portal",
+        "web",
+        "auth_totp",
+        "windx_attachments_preview",
+       
+    ],
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "security/record_rules.xml",
+        "data/storage.xml",
+        "data/access_group.xml",
+        "data/directory.xml",
+        "views/menu.xml",
+        "views/metadata.xml",
+        "views/res_users.xml",
+        "views/tag.xml",
+        "wizard/multi_document.xml",
+        "wizard/authenticator.xml",
+        "wizard/directory_auth.xml",
+        "views/category.xml",
+        "views/dms_file.xml",
+        "views/directory.xml",
+        "views/storage.xml",
+        "views/dms_access_groups_views.xml",
+        "views/res_config_settings.xml",
+        "views/dms_portal_templates.xml",
+        "views/template.xml",
+    ],
+   
+    "images": ["static/description/icon.png"],
+    "application": True,
+    
+}

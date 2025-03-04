@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="hr_employee_grade_form" model="ir.ui.view">
+            <field name="name">hr.employee.grade.form</field>
+            <field name="model">hr.employee.grade</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_employee_level_form" model="ir.ui.view">
+            <field name="name">hr.employee.level.form</field>
+            <field name="model">hr.employee.level</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_employee_specialization_form" model="ir.ui.view">
+            <field name="name">hr.employee.specialization.form</field>
+            <field name="model">hr.employee.specialization</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="hr_employee_level_action" model="ir.actions.act_window">
+            <field name="name">Level</field>
+            <field name="res_model">hr.employee.level</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_employee_grade_action" model="ir.actions.act_window">
+            <field name="name">Grade</field>
+            <field name="res_model">hr.employee.grade</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_employee_specialization_action" model="ir.actions.act_window">
+            <field name="name">Specialization</field>
+            <field name="res_model">hr.employee.specialization</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem
+            id="hr_employee_grade_action_menu"
+            name="Grade"
+            action="hr_employee_grade_action"
+            parent="hr.hr_menu_configuration"
+            sequence="40"/>
+
+            <menuitem
+            id="hr_employee_level_action_menu"
+            name="Level"
+            action="hr_employee_level_action"
+            parent="hr.hr_menu_configuration"
+            sequence="40"/>
+
+            <menuitem
+            id="hr_employee_specialization_action_menu"
+            name="Specialization"
+            action="hr_employee_specialization_action"
+            parent="hr.hr_menu_configuration"
+            sequence="40"/>
+    </data>
+</odoo>

@@ -1,0 +1,459 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Bare_Tenant_Module_Installation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:39+0000\n"
+"PO-Revision-Date: 2023-04-05 04:01+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: Bare_Tenant_Module_Installation
+#. odoo-python
+#: code:addons/Bare_Tenant_Module_Installation/models/bare_tenant_db_install.py:0
+#: code:addons/Bare_Tenant_Module_Installation/models/tenant_modules.py:0
+#, python-format
+msgid " Unsuccessful Connection with Bare Tenant DB."
+msgstr "اتصال غير ناجح مع قاعدة بيانات المشترك."
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,help:Bare_Tenant_Module_Installation.field_res_config_settings__odoorc_port
+msgid "9050"
+msgstr ""
+
+#. module: Bare_Tenant_Module_Installation
+#. odoo-python
+#: code:addons/Bare_Tenant_Module_Installation/models/tenant_modules.py:0
+#, python-format
+msgid "Access Right Error %s"
+msgstr "خطأ بصلاحية الوصول %s"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__bare_admin_user
+msgid "Bare Admin Login"
+msgstr "بيانات دخول مدير المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__bare_admin_pass
+msgid "Bare Admin Password"
+msgstr "كلمة مرور مدير المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__bare_old_admin_pass
+msgid "Bare Old Admin Password"
+msgstr "كلمة المرور القديمة للمدير"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.res_config_settings_view_form2
+msgid "Bare Tenant Configuration"
+msgstr "إعدادات قواعد بيانات المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__bare_tenant_db
+#: model:ir.ui.menu,name:Bare_Tenant_Module_Installation.menu_Bare_tenant_module
+msgid "Bare Tenant DB"
+msgstr "قالب قاعدة البيانات الأساسي"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.actions.act_window,name:Bare_Tenant_Module_Installation.bare_tenant_db_action
+msgid "Bare Tenant Module Installation"
+msgstr "تفعيل التطبيقات للمشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__odoorc_path
+msgid "Bare Tenant Odoorc Path"
+msgstr "مسار التطبيقات"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__odoorc_port
+msgid "Bare Tenant Port"
+msgstr "منفذ قاعدة بيانات المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_res_config_settings__bare_tenant_ip
+#: model:ir.model.fields,help:Bare_Tenant_Module_Installation.field_res_config_settings__bare_tenant_ip
+msgid "Bare Tenant Server"
+msgstr "سيرفر المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__bool_chk
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__bool_chk
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__bool_checkbox
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__bool_checkbox
+msgid "Check"
+msgstr "فحص"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.purge_database_wizard_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: Bare_Tenant_Module_Installation
+#. odoo-python
+#: code:addons/Bare_Tenant_Module_Installation/models/bare_tenant_db_install.py:0
+#: code:addons/Bare_Tenant_Module_Installation/models/tenant_modules.py:0
+#, python-format
+msgid "Container Connection Refused "
+msgstr "فشل في الاتصال بالحاوية "
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__create_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__create_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_database_list__isdeactivated
+msgid "Deactivated"
+msgstr "منتهى"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__display_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__display_name
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_bare_tenant_module_install
+msgid "For Display All Installed and Uninstalled Modules"
+msgstr "لعرض جميع التطبيقات المثبتة وغير المثبتة"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_module_form
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_list_module_form
+msgid "Install"
+msgstr "تفعيل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_module_list_form
+msgid "Install/Uninstall Modules"
+msgstr "تفعيل / إلغاء تثبيت التطبيقات"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__installed
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__installed
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__installed
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__installed
+msgid "Installed"
+msgstr "مفعل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__installed_moduels
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__installed_moduels
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_module_form
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_list_module_form
+msgid "Installed Modules"
+msgstr "التطبيقات المفعلة"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_tenant_module_list
+msgid "It Shows All tenenat modules list which are installed or uninstalled"
+msgstr "يعرض قائمة جميع التطبيقات المثبتة أو غير المثبتة للمشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant____last_update
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__write_uid
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث من قبل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__write_date
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__write_date
+msgid "Last Updated on"
+msgstr "تاريخ آخر تحديث"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_installed_module_tree
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_module_form
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.tenant_installed_module_tree
+msgid "Module Info"
+msgstr "معلومات التطبيق"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.ui.menu,name:Bare_Tenant_Module_Installation.menu_tenant_module_installation_main
+msgid "Module Installaion"
+msgstr "تفعيل التطبيقات"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.actions.act_window,help:Bare_Tenant_Module_Installation.bare_tenant_db_action
+msgid "Module Installation in Bare Tenant Database."
+msgstr "تفعيل التطبيقات في قاعدة البيانات الأساس"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.actions.act_window,help:Bare_Tenant_Module_Installation.tenant_db_modules_list_action
+msgid "Module Installation in Tenant Database."
+msgstr "تفعيل التطبيقات للمشترك"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__module_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__module_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__module_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__module_name
+msgid "Module Name"
+msgstr "اسم التطبيق"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__technical_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__technical_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__technical_name
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__technical_name
+msgid "Module Technical Name"
+msgstr "الاسم الفني للتطبيق"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.ui.menu,name:Bare_Tenant_Module_Installation.saas_service
+msgid "My Service"
+msgstr "اشتراكي"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.purge_database_wizard_form_view
+msgid ""
+"Note: <span style=\"color:red;\">Confirming this process will cancel the "
+"related sale order and archive the sale agreement.</span>"
+msgstr ""
+"ملاحظة: <span style=\"color:red;\">سيؤدي تأكيد هذه العملية إلى إلغاء الطلب "
+"وأرشفة اتفاقية البيع.</span>"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار التطبيقات"
+
+#. module: Bare_Tenant_Module_Installation
+#. odoo-python
+#: code:addons/Bare_Tenant_Module_Installation/models/tenant_modules.py:0
+#, python-format
+msgid "Please Enter Port in Bare Tenant configuration"
+msgstr "الرجاء إدخال المنفذ في إعدادات قاعدة البيانات الأساس"
+
+#. module: Bare_Tenant_Module_Installation
+#. odoo-python
+#: code:addons/Bare_Tenant_Module_Installation/models/bare_tenant_db_install.py:0
+#, python-format
+msgid "Please Enter url with port in Bare Tenant configuration"
+msgstr "الرجاء إدخال الرابط والمنفذ في إعدادات قاعدة البيانات الأساس"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.purge_database_wizard_form_view
+msgid "Please Remove The Database From Bare List Manually First."
+msgstr "يرجى إزالة قاعدة البيانات من قائمة قواعد البيانات أولاً."
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,help:Bare_Tenant_Module_Installation.field_res_config_settings__odoorc_path
+msgid ""
+"Provide Odoorc Path for Bare tenant db Module installation / Uninstallation"
+msgstr ""
+"توفير مسار التطبيقات لتفعيل / إلغاء تفعيل التطبيقات في قاعدة البيانات "
+"الأساس"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_database_list__isterminated
+msgid "Purge"
+msgstr "حذف"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.actions.act_window,name:Bare_Tenant_Module_Installation.purge_database_wizard_action
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_purge_database
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.purge_database_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_module_list_form
+msgid "Purge Database"
+msgstr "حذف قاعدة البيانات"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__status
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__status
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__status
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__status
+msgid "Status"
+msgstr "الحالة"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_purge_database__tenant_id
+msgid "Tenant"
+msgstr "المشترك"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__tenant_db
+msgid "Tenant DB"
+msgstr "الاشتراك"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_tenant_database_list
+msgid "Tenant Database List"
+msgstr "قائمة المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_list_module_form
+msgid "Tenant Module Info"
+msgstr "معلومات تطبيقات المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.actions.act_window,name:Bare_Tenant_Module_Installation.tenant_db_modules_list_action
+msgid "Tenant Module Install/Uninstall"
+msgstr "تفعيل / إلغاء تفعيل التطبيقات للمشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__to_install
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__to_install
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__to_install
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__to_install
+msgid "To be Install"
+msgstr "للتفعيل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__to_remove
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__to_remove
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__to_remove
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__to_remove
+msgid "To be Remove"
+msgstr "لإزالة"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__to_upgrade
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__to_upgrade
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__to_upgrade
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__to_upgrade
+msgid "To be Upgrade"
+msgstr "للترقية"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_module_form
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_list_module_form
+msgid "Uninstall"
+msgstr "إلغاء التفعيل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__uninstallable
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__uninstallable
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__uninstallable
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__uninstallable
+msgid "Uninstallable"
+msgstr "قابل لإلغاء التفعيل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_bare_tenant__status__uninstalled
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__installed_modules_on_tenant__status__uninstalled
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_bare_tenant__status__uninstalled
+#: model:ir.model.fields.selection,name:Bare_Tenant_Module_Installation.selection__uninstalled_modules_on_tenant__status__uninstalled
+msgid "Uninstalled"
+msgstr "غير مفعل"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_uninstalled_module_tree
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.tenant_uninstalled_module_tree
+msgid "Uninstalled Module Info"
+msgstr "معلومات التطبيقات التي تم إلغاء تفعيلها"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_bare_tenant_module_install__uninstalled_modules
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_tenant_module_list__uninstalled_modules
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.bare_tenant_module_form
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_list_module_form
+msgid "Uninstalled Modules"
+msgstr "التطبيقات غير المفعلة"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.res_config_settings_view_form2
+msgid "Update Password on Bare tenant"
+msgstr "تحديث كلمة المرور على قاعدة البيانات الأساس"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.res_config_settings_view_form2
+msgid "Update Password on all tenant"
+msgstr "تحديث كلمة المرور لجميع المشتركين"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_module_list_form
+msgid ""
+"You can Install/Uninstall modules only for Active, Grace Period Over and "
+"Expired stages"
+msgstr ""
+"يمكنك تفعيل / إلغاء تفعيل التطبيقات فقط للاشتراكات النشطة، والتي في فترة "
+"المهلة، والمنتهية"
+
+#. module: Bare_Tenant_Module_Installation
+#: model_terms:ir.ui.view,arch_db:Bare_Tenant_Module_Installation.saas_tenant_module_list_form
+msgid "You can purge the current database"
+msgstr "يمكنك مسح قاعدة بيانات الاشتراك الحالية"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_bare_tenant__bare_tenant_module_id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_installed_modules_on_tenant__tenant_module_id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_bare_tenant__bare_tenant_module_id
+#: model:ir.model.fields,field_description:Bare_Tenant_Module_Installation.field_uninstalled_modules_on_tenant__tenant_module_id
+msgid "module Id"
+msgstr "رقم التطبيق"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_installed_modules_bare_tenant
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_installed_modules_on_tenant
+msgid "store All Installed Moudles from db"
+msgstr "تخزين جميع التطبيقات المفعلة من قاعدة البيانات"
+
+#. module: Bare_Tenant_Module_Installation
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_uninstalled_modules_bare_tenant
+#: model:ir.model,name:Bare_Tenant_Module_Installation.model_uninstalled_modules_on_tenant
+msgid "store All UnInstalled Moudles from db"
+msgstr "تخزين جميع التطبيقات غير المفعلة من قاعدة البيانات"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+	<function model="oi_fin.datatmpl" name="create_menu" eval="[ref('datatmpl_general_ledger')]" />
+	<function model="oi_fin.template" name="create_menu" eval="[ref('template_balance_sheet')]" />
+	<function model="oi_fin.template" name="create_menu" eval="[ref('template_trial_balance')]" />
+	<function model="oi_fin.template" name="create_menu" eval="[ref('template_profit_and_loss')]" />
+	<function model="oi_fin.template" name="create_menu" eval="[ref('template_cash_flow_statement')]" />
+	
+</odoo>	

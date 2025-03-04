@@ -1,0 +1,64 @@
+<odoo>
+    <record id="project_report" model="ir.actions.report">
+        <field name="name">Project Report</field>
+        <field name="model">project.project</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="binding_model_id" ref="project.model_project_project"/>
+        <field name="binding_type">report</field>
+        <field name="report_name">hr_custody.project_report_template</field>
+    </record>
+
+    <template id="project_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <h1>Project Report</h1>
+                <t t-foreach="cost" t-as="rec">
+                    <style>
+                        table {
+                        width: 100%;
+                        border: 1px solid #b3adad;
+                        border-collapse: collapse;
+                        padding: 5px;
+                        }
+                        table th {
+                        text-align: left;
+                        border: 1px solid #b3adad;
+                        padding: 5px;
+                        background: #f0f0f0;
+                        color: #313030;
+                        }
+                        table td {
+                        padding: 10px;
+                        border: 1px solid #b3adad;
+                        text-align: left;
+                        color: #313030;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Status</th>
+                                <th>Last Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <t t-esc="rec['project_id']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="rec['last_update_status']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="rec['last_update_id']"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

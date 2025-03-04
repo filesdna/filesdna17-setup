@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="dms_security.NotificationLoop" id="NotificationLoop">
+        <div class="notification-loop">
+            <div class="message-container">
+                <i class="fa fa-info-circle info-icon"></i>
+                <span t-esc="message.text" class="message-text"/>
+            </div>
+            <t t-if="attempts.count === 31">
+                <t t-if="securityType.type === 'ma'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/ma.gif" style="width: 100%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+                <t t-if="securityType.type === 'nfc'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/nfc.gif" style="width: 100%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+                <t t-if="securityType.type === 'fp'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/fp.gif" style="width: 100%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+            </t>
+            <t t-if="attempts.count &lt;= 30 and attempts.count &gt; 0">
+                <t t-if="securityType.type === 'nfc'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/tap-to-scan.gif" style="width: 100%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+                <t t-if="securityType.type === 'ma'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/tap-ma.png" style="width: 80%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+                <t t-if="securityType.type === 'fp'">
+                    <div class="image-container">
+                        <img src="/dms_security/static/src/img/tap-fp.gif" style="width: 80%;" class="related-image" alt="Related Image"/>
+                    </div>
+                </t>
+            </t>
+            <t t-if="attempts.count === 0">
+                <div class="image-container">
+                    <img src="/dms_security/static/src/img/try-again-nfc.gif" style="width: 100%;" class="related-image" alt="Related Image"/>
+                </div>
+            </t>
+           <div class="progress-container">
+                <t t-if="attempts.count &lt;= 30 and attempts.count &gt; 0">
+                    <div class="progress-bar-wrapper">
+                        <progress value="0" max="30" id="progressBar" class="progress-bar"></progress>
+                        <div class="progress-bar-overlay"></div>
+                            </div>
+                    <div class="progress-text-container">
+                        <span class="progress-text"><span t-esc="attempts.count"/></span>
+                    </div>
+                </t>
+                <t t-if="attempts.count === 31">
+                    <button type="button" class="btn btn-primary" t-on-click="startProcess">Start</button>
+                </t>
+                <t t-if="attempts.count === 0">
+                    <button type="button" class="btn btn-primary" t-on-click="tryAgain">Try Again</button>
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>

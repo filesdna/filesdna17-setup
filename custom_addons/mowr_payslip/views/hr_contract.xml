@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+      <record id="hr_contract_more_details_form" model="ir.ui.view">
+        <field name="name">hr contract more details form</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='job_id']" position="after">
+            <field name="job_address_id"/>
+          </xpath>
+          <xpath expr="//field[@name='wage']" position="after">
+            <field name="payment_method"/>
+        </xpath>
+          <xpath expr="//page[@name='information']" position="after">
+            <page name="other_salary_info" string="Other Salary Info">
+              <group>
+                     
+                      <group>
+                                <field name="tax"/>
+                                <field name="monthly_tax"/>
+                                <field name="social_tax"/>
+                                <field name="marriage_salary"/>
+                                <field name="akran_salary"/>
+                      </group>   
+                      <group>
+                    </group>                    
+              </group>
+            </page>
+          </xpath>  
+        </field> 
+      </record>
+
+
+    </data>    
+      
+</odoo>

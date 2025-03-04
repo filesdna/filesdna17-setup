@@ -1,0 +1,62 @@
+<odoo>
+    <record id="mobikul_walkthrough_view_tree" model="ir.ui.view">
+        <field name="name">mobikul_walkthrough.tree</field>
+        <field name="model">mobikul.walkthrough</field>
+        <field name="arch" type="xml">
+            <tree string="WalkThrough Messages">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="description"/>
+                <!-- <field name="color_code" widget="color"/> -->
+                <field name="status" string="Status"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="mobikul_walkthrough_view_form" model="ir.ui.view">
+        <field name="name">mobikul_walkthrough.form</field>
+        <field name="model">mobikul.walkthrough</field>
+        <field name="arch" type="xml">
+            <form class="oe_form_configuration" string="Manage Walk Through">
+                <sheet>
+                    <field name="status" invisible="True"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="toggle_walkthrough_status" type="object" icon="fa-archive">
+                            <div class="o_stat_info published o_form_field">
+                                <span class="o_stat_text o_value text-success" invisible ="status == 'disable'">Enable</span>
+                                <span class="o_stat_text o_value text-danger" invisible ="status == 'enable'">Disable</span>
+                            </div>
+                        </button>
+                    </div>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                    <div class="oe_title">
+                        <div class="oe_edit_only">
+                            <label for="name" string="Title"/>
+                        </div>
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Name"/>
+                        </h1>
+                    </div>
+                    <group name="charac" col="4" string="">
+                        <field name="description"/>
+                        <!-- <field name="color_code" widget="color"/> -->
+                         <field name="sequence"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobikul_walkthrough_action" model="ir.actions.act_window">
+        <field name="name">Manage Walk Through</field>
+        <field name="res_model">mobikul.walkthrough</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="mobikul_walkthrough_view_tree"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a new WalkThrough message for your Mobikul App.
+          </p>
+        </field>
+    </record>
+</odoo>

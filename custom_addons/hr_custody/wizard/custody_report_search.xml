@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="custody_report_search_form" model="ir.ui.view">
+        <field name="name">custody_report_search_form</field>
+        <field name="model">custody.report.search</field>
+        <field name="arch" type="xml">
+            <form string="Custody Report Search">
+                <group>
+                    <group>
+                        <field name="employee_id" widget="many2many_tags"/>
+                        <field name="project_id" widget="many2many_tags"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Submit" type="object" name="action_submit" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_custody_report_search" model="ir.actions.act_window">
+        <field name="name">Custody Report Search</field>
+        <field name="res_model">custody.report.search</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_custody_report_search"
+              name="Custody Report Search"
+              parent="custody_report_menu"
+              action="action_custody_report_search"/>
+
+</odoo>

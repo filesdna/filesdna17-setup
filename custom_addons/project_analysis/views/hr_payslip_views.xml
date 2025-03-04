@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <record id="hr_payslip_form_view_inherit" model="ir.ui.view">
+            <field name="name">hr.payslip.form.inherit.approval</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="payroll.hr_payslip_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+
+                    <!-- Approve: Only visible to Payroll Managers when state is 'verify' -->
+                    <button name="action_approve_payslip" type="object"
+                            string="Approve"
+                            class="btn-success"
+                            groups="payroll.group_payroll_manager"
+                            invisible="state != 'verify'"/>
+
+                    <!-- Reject: Only visible to Payroll Managers when state is 'verify' -->
+                    <button name="action_reject_payslip" type="object"
+                            string="Reject"
+                            class="btn-danger"
+                            groups="payroll.group_payroll_manager"
+                            invisible="state != 'verify'"/>
+
+                </xpath>
+
+                <!-- Compute Sheet: Only visible in 'draft' state -->
+                <xpath expr="//button[@name='compute_sheet']" position="attributes">
+                    <attribute name="invisible">state != 'draft'</attribute>
+                </xpath>
+
+                <!-- Done: Only visible in 'approved' state -->
+                <xpath expr="//button[@name='action_payslip_done']" position="attributes">
+                    <attribute name="invisible">state != 'approved'</attribute>
+                </xpath>
+
+                <!-- Set to Draft: Only visible in 'cancel' or 'verify' states -->
+                <xpath expr="//button[@name='action_payslip_draft']" position="attributes">
+                    <attribute name="invisible">state not in ('cancel', 'verify')</attribute>
+                </xpath>
+
+                <!-- Refetch Payslip Data: Only visible in 'draft' state -->
+                <xpath expr="//button[@name='onchange_employee']" position="attributes">
+                    <attribute name="invisible">state != 'draft'</attribute>
+                </xpath>
+
+                <!-- Ensure only relevant states are visible in the status bar -->
+                <xpath expr="//field[@name='state']" position="replace">
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,verify,approved,done,cancel"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

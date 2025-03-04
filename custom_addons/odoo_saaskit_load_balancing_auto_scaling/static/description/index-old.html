@@ -1,0 +1,1740 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<style>
+/* /loempia/static/src/css/description.css defined in bundle 'web.assets_frontend' */
+.oe_styling_v8 {
+    font-family: "Open Sans", "Helvetica", Sans;
+    font-weight: 300;
+    color: #646464;
+    background: white;
+    font-size: 16px;
+}
+.oe_styling_v8 .oe_website_contents {
+    background: whitesmoke;
+    padding-bottom: 1px;
+}
+.oe_styling_v8 b {
+    font-weight: 600;
+}
+.oe_styling_v8 a {
+    color: #21B799;
+    text-decoration: none;
+}
+.oe_styling_v8 a.btn {
+    color: white;
+}
+.oe_styling_v8 .oe_title_font {
+    font-family: "Lato", "Open Sans", "Helvetica", Sans;
+}
+.oe_styling_v8 .oe_page {
+    background: white;
+    overflow: hidden;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+.oe_styling_v8 .oe_emph {
+    font-weight: 400;
+}
+.oe_styling_v8 .oe_dark {
+    overflow: hidden;
+    background: #efefef;
+    box-shadow: none;
+}
+.oe_page {
+    margin: 0px auto 64px auto;
+    max-width: 992px;
+}
+.oe_row {
+    width: 928px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.oe_row.oe_fit {
+    width: auto;
+}
+.oe_clearfix:after, .oe_row:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+[class*='oe_span'] {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.oe_span12 {
+    width: 928px;
+}
+.oe_span10 {
+    width: 773px;
+}
+.oe_span9 {
+    width: 696px;
+}
+.oe_span8 {
+    width: 618px;
+}
+.oe_span6 {
+    width: 464px;
+}
+.oe_span4 {
+    width: 309px;
+}
+.oe_span3 {
+    width: 232px;
+}
+.oe_span2 {
+    width: 154px;
+}
+[class*='oe_span'].oe_fit {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+[class*='oe_span'].oe_right {
+    float: right;
+}
+.oe_row.oe_flex [class*='oe_span'] {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: auto;
+}
+.oe_row.oe_flex .oe_span12 {
+    max-width: 928px;
+}
+.oe_row.oe_flex .oe_span10 {
+    max-width: 769px;
+}
+.oe_row.oe_flex .oe_span9 {
+    max-width: 692px;
+}
+.oe_row.oe_flex .oe_span8 {
+    max-width: 614px;
+}
+.oe_row.oe_flex .oe_span6 {
+    max-width: 460px;
+}
+.oe_row.oe_flex .oe_span4 {
+    max-width: 305px;
+}
+.oe_row.oe_flex .oe_span3 {
+    max-width: 228px;
+}
+.oe_row.oe_flex .oe_span2 {
+    max-width: 150px;
+}
+.oe_mb0 {
+    margin-bottom: 0px !important;
+}
+.oe_mb4 {
+    margin-bottom: 4px !important;
+}
+.oe_mb8 {
+    margin-bottom: 8px !important;
+}
+.oe_mb16 {
+    margin-bottom: 16px !important;
+}
+.oe_mb32 {
+    margin-bottom: 32px !important;
+}
+.oe_mb48 {
+    margin-bottom: 48px !important;
+}
+.oe_mb64 {
+    margin-bottom: 64px !important;
+}
+.oe_mt0 {
+    margin-top: 0px !important;
+}
+.oe_mt4 {
+    margin-top: 4px !important;
+}
+.oe_mt8 {
+    margin-top: 8px !important;
+}
+.oe_mt16 {
+    margin-top: 16px !important;
+}
+.oe_mt32 {
+    margin-top: 32px !important;
+}
+.oe_mt48 {
+    margin-top: 48px !important;
+}
+.oe_mt64 {
+    margin-top: 64px !important;
+}
+.oe_mb0 {
+    margin-bottom: 0px !important;
+}
+.oe_mb4 {
+    margin-bottom: 4px !important;
+}
+.oe_mb8 {
+    margin-bottom: 8px !important;
+}
+.oe_mb16 {
+    margin-bottom: 16px !important;
+}
+.oe_mb32 {
+    margin-bottom: 32px !important;
+}
+.oe_mb64 {
+    margin-bottom: 64px !important;
+}
+.oe_rightfit {
+    padding-right: 0px !important;
+}
+.oe_leftfit {
+    padding-left: 0px !important;
+}
+.oe_leftalign {
+    text-align: left;
+}
+.oe_rightalign {
+    text-align: right;
+}
+.oe_centeralign {
+    text-align: center;
+}
+.oe_centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.oe_hidden {
+    display: none !important;
+    opacity: 0 !important;
+}
+.oe_invisible {
+    visibility: hidden !important;
+}
+.oe_transparent {
+    opacity: 0 !important;
+}
+.oe_spaced {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.oe_more_spaced {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.oe_padded {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.oe_more_padded {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.oe_button {
+    position: relative;
+    bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.oe_styling_v8 .oe_button, .oe_styling_v8 a.oe_button {
+    padding: 8px 14px;
+    background: #21B799;
+    color: white;
+    -webkit-transition-property: bottom, background;
+    -moz-transition-property: bottom, background;
+    -o-transition-property: bottom, background;
+    transition-property: bottom, background;
+    -webkit-transition-duration: 250ms;
+    -moz-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+}
+.oe_styling_v8 .oe_button:hover, .oe_styling_v8 a.oe_button:hover, .oe_styling_v8 .oe_button:active, .oe_styling_v8 a.oe_button:active {
+    background: #1b9f85;
+}
+.oe_styling_v8 .oe_button.oe_big, .oe_styling_v8 a.oe_button.oe_big {
+    font-size: 24px;
+}
+.oe_styling_v8 .oe_button.oe_bigger, .oe_styling_v8 a.oe_button.oe_bigger {
+    font-size: 32px;
+}
+.oe_styling_v8 .oe_button.oe_small, .oe_styling_v8 a.oe_button.oe_small {
+    font-size: 13px;
+    padding: 2px 4px;
+}
+.oe_styling_v8 .oe_button.oe_medium, .oe_styling_v8 a.oe_button.oe_medium {
+    padding: 5px 12px;
+    font-size: 16px;
+}
+.oe_styling_v8 .oe_button.oe_tacky, .oe_styling_v8 a.oe_button.oe_tacky {
+    background: #34495E;
+}
+.oe_styling_v8 .oe_button.oe_tacky:hover, .oe_styling_v8 a.oe_button.oe_tacky:hover, .oe_styling_v8 .oe_button.oe_tacky:active, .oe_styling_v8 a.oe_button.oe_tacky:active {
+    background: #253544;
+}
+.oe_styling_v8 .oe_button.oe_disabled, .oe_styling_v8 a.oe_button.oe_disabled {
+    background: #c8c8c8;
+    cursor: default;
+}
+.oe_styling_v8 .oe_button.oe_disabled:hover, .oe_styling_v8 a.oe_button.oe_disabled:hover, .oe_styling_v8 .oe_button.oe_disabled:active, .oe_styling_v8 a.oe_button.oe_disabled:active {
+    background: #c8c8c8;
+}
+.oe_styling_v8.oe_styling_black .oe_button {
+    -webkit-box-shadow: 0px 2px 0px #463555;
+    -moz-box-shadow: 0px 2px 0px #463555;
+    box-shadow: 0px 2px 0px #463555;
+}
+.oe_styling_v8 {
+}
+.oe_styling_v8 .oe_input {
+    padding: 4px 7px;
+    border-radius: 3px;
+    border: solid 1px #d6d6d6;
+    box-shadow: 0px 2px #e6e6e6;
+    background: #fafafa;
+    font-weight: 300;
+    outline: none;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+.oe_styling_v8 .oe_input:focus {
+    border: solid 1px #969696;
+    box-shadow: 0px 2px #d2d2d2;
+}
+.oe_styling_v8 .oe_input.oe_valid {
+    background: #f2ffec;
+    border-color: #b1ebb6;
+    box-shadow: 0px 2px #e1f8e1;
+    color: #0f610f;
+}
+.oe_styling_v8 .oe_input.oe_invalid {
+    background: #fff2f2;
+    border-color: #ebb1b1;
+    box-shadow: 0px 2px #f8e1e1;
+    color: #610f0f;
+}
+.oe_styling_v8 .oe_input.oe_big {
+    padding: 8px 14px;
+}
+.oe_styling_v8 .oe_input_label {
+    font-weight: 300;
+    font-size: 16px;
+}
+.oe_styling_v8 .oe_input_label.oe_big {
+    font-size: 20px;
+}
+.oe_styling_v8 .oe_textarea {
+    width: 300px;
+    height: 80px;
+}
+.oe_styling_v8 .oe_form_layout_table {
+    width: 100%;
+}
+.oe_styling_v8 .oe_form_layout_table td {
+    padding-bottom: 16px;
+}
+.oe_styling_v8 .oe_form_layout_table td:first-child {
+    text-align: right;
+    padding-right: 16px;
+}
+.text-alpha {
+    color: #A24689 !important;
+}
+.oe_styling_v8 .oe_slogan {
+    color: #333333;
+    font-family: "Lato", "Open Sans", "Helvetica", Sans;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.oe_styling_v8 h1.oe_slogan {
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.oe_styling_v8 h2.oe_slogan {
+    font-size: 40px;
+    font-weight: 300;
+}
+.oe_styling_v8 h3.oe_slogan {
+    font-size: 26px;
+    font-weight: 300;
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+.oe_styling_v8 h4.oe_slogan {
+    font-size: 24px;
+    font-weight: 300;
+}
+.oe_styling_v8 h4.oe_slogan:before, .oe_styling_v8 h4.oe_slogan:after {
+    margin: 0 20px;
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 0px;
+    border-top: solid 1px;
+    vertical-align: middle;
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+}
+.oe_styling_v8 h5.oe_slogan {
+    font-weight: 300;
+}
+.oe_styling_v8 h2.oe_slogan + h3.oe_slogan {
+    margin-top: -28px;
+}
+.oe_quote {
+    margin: 8px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.02);
+    border: solid 1px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.oe_quote .oe_q, .oe_quote q {
+    margin: 10px;
+    display: block;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+}
+.oe_quote .oe_q:before, .oe_quote .oe_q:after, .oe_quote q:before, .oe_quote q:after {
+    content: '"';
+    font-weight: 900;
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    opacity: 0.2;
+}
+.oe_quote cite {
+    display: block;
+    font-style: normal;
+    margin-top: 16px;
+}
+.oe_quote .oe_photo {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 16px;
+}
+.oe_quote .oe_author {
+    font-size: 20px;
+    padding-top: 6px;
+}
+.oe_dark .oe_quote {
+    background: white;
+    border: 1px solid #f0f0ff;
+}
+.oe_picture {
+    display: block;
+    max-width: 84%;
+    max-height: 400px;
+    margin: 16px 8%;
+}
+.oe_screenshot {
+    padding: 8px;
+    background-color: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.oe_pic_ctr {
+    position: relative;
+}
+.oe_pic_ctr > img.oe_picture {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+}
+.oe_pic_ctr > .oe_title {
+    position: absolute;
+    top: 15px;
+    right: 38px;
+}
+.oe_styling_v8 .oe_pic_ctr > .oe_title {
+    font-size: 64px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0px 2px 0px #494949, 0px 2px 5px rgba(0, 0, 0, 0.33), 0px 0px 60px rgba(0, 0, 0, 0.22);
+}
+div.oe_demo {
+    position: relative;
+    border: 1px solid #dedede;
+}
+div.oe_demo span.oe_demo_play {
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -40px;
+    display: block;
+    position: absolute;
+    background: url("/loempia/static/src/css/../img/layout/play-button.png") no-repeat left top transparent;
+    pointer-events: none;
+}
+div.oe_demo img {
+    max-width: 100%;
+    width: 100%;
+}
+div.oe_demo div.oe_demo_footer {
+    position: absolute;
+    left: 0;
+    background-color: rgba(162, 70, 137, 0.7);
+    opacity: 0.85;
+    bottom: -1px;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    pointer-events: none;
+}
+div.oe_demo:hover span.oe_demo_play {
+    background: url("/loempia/static/src/css/../img/layout/play-button-over.png") no-repeat left top transparent;
+}
+.oe_styling_v8 .oe_container.oe_separator {
+    height: 64px;
+    margin-bottom: 16px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.02)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+    -webkit-box-shadow: 0px -3px 10px -5px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0px -3px 10px -5px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px -3px 10px -5px rgba(0, 0, 0, 0.1) inset;
+    overflow-y: hidden;
+}
+.oe_row_tabs {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 21px;
+}
+.oe_row_tab {
+    position: relative;
+    min-width: 120px;
+    padding: 8px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px -2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+    background: #fafafa;
+    background-image: +linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+    box-shadow: 0px -3px 10px -5px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+.oe_row_tab:hover {
+    padding-bottom: 12px;
+    top: -4px;
+    background-color: white;
+}
+.oe_row_tab.oe_active {
+    background-color: white;
+    background-image: none;
+    box-shadow: none;
+    border-top-color: #8272b6;
+    border-top-width: 2px;
+    cursor: default;
+}
+.oe_row_tab.oe_active:hover {
+    padding-bottom: 8px;
+    top: 0asx;
+}
+.oe_calltoaction {
+    height: 32px;
+    margin-top: -32px;
+    position: relative;
+}
+.oe_styling_v8 .oe_slogan {
+    color: #333333;
+    font-family: "Lato", "Open Sans", "Helvetica", Sans;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.oe_slogan {
+    text-align: center
+}
+.oe_dark {
+    overflow: hidden;
+    background: #efefef;
+    box-shadow: none;
+}
+.oe_styling_v8 .oe_dark {
+    overflow: hidden;
+    background: #efefef;
+    box-shadow: none;
+}
+.tab-content > .active {
+    display: block;
+    background: #FFFFFF;
+    color: #fff;
+    padding: 20px;
+}
+tabs .nav-link.active {
+    color: #fff;
+    background-color: #FFFFFF;
+    border-color: none;
+}
+nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.rounded-lg {
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+}
+/* accordion_section CSS Start  */
+
+#accordion_section .card {
+    margin-bottom: 10px;
+    border: 0;
+}
+#accordion_section .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+}
+#accordion_section .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #bfabcb;
+    color: #222;
+    padding: 20px;
+}
+#accordion_section .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+}
+#accordion_section .card .card-header .btn-header-link.collapsed {
+    background: #8D89A6;
+    color: #fff;
+}
+#accordion_section .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+#accordion_section .card .collapsing {
+    background: #bfabcb;
+    line-height: 30px;
+}
+#accordion_section .card .collapse {
+    border: 0;
+}
+#accordion_section .card .collapse.show {
+    background: #bfabcb;
+    line-height: 30px;
+    color: #222;
+    margin-top: -3px;
+}
+.accordion > .card:not(:last-of-type) {
+    border-bottom: 0;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+}
+	
+	.table tr td{
+		vertical-align: middle;
+	}	
+	
+	.table tr td:nth-child(1){
+		width: 20%;
+	}
+	
+	
+	.table tr td:nth-child(3){
+		width: 50%;
+	}	
+
+	.table tr td:nth-child(6){
+		background: #EC450E;
+		color: #fff;
+		font-weight: bold;
+		width: 20%;
+	}	
+	
+
+	
+	.table tr td:nth-child(7){
+		width: 20%;
+	}	
+	
+	
+
+	
+	ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  position: relative;
+  padding-left: 1.5em;  /* space to preserve indentation on wrap */
+}
+li:before {
+  position: absolute;
+  left: 0;  /* place the SVG at the start of the padding */
+  width: 1em;
+  height: 1em;
+  content: '✓';
+color: green;
+	font-weight: bold;
+}
+	
+/* accordion_section CSS End  */
+</style>
+</head>
+
+<!--Gif Section Start-->
+
+<section id="learn_more" class="oe_container oe_dark" style="padding-bottom:20px; ">
+  <div class="col-md-12 col-sm-12 col-xs-12 padding-none text-center mb32">
+    <div> <img class="img img-responsive" style="max-width:100%; width:100%" src="Design-gif-for-Appstore.gif"> </div>
+  </div>
+</section>
+<!--Gif Section End--> 
+
+<!--Banner Section Start-->
+<section class="oe_container oe_dark">
+  <div class="xero_bg pt80" style="background-color:rgb(34, 194, 115); background-size: cover; background-position: center center; height:auto; padding-top:60px;">
+    <div class="col-sm-8 col-md-8 col-xs-12 offset-md-2 offset-sm-2" style="background-color: rgba(0, 0, 0, 0.6);
+    padding: 21px;
+    text-align: center; border-radius:20px">
+      <h1 style="color:#fff; font-size: 35px;font-weight: 500;"><strong>ODOO SAAS Rocket Kit All in One</strong></h1>
+      
+      <!--<p>Business organizations uses different software specifically to different department activities eg : XERO Accounting system is used to keep online records of Invoices and its payment.</p>-->
+      
+      <p style="color: #fff; font-size: 25px;">One-Time Setup | Dedicated 90-Days Support <span style="color:#ff0"><b>(Monday-Friday 10am to 7pm IST)</b></span> | User Manual | Supports Multiple Languages </p>
+      
+		<div class="mt-4 rounded p-2" style="background-color:#002542">
+			  <div class="d-flex pt-2 pl-2 pr-2">
+    	<div class="p-2 flex-fill m-2 w-50" style="background-color:#EC450E">
+		<a class="mr-2" style="font-weight:600; color:#fff; font-size:18px" href="mailto:support@pragtech.co.in">
+		<i class="fa fa-envelope mr-3" style="font-size:30px; vertical-align:sub"></i>Free Demo</a>
+		</div>
+    	<div class="p-2 flex-fill m-2 w-50" style="background-color:#00AFF0">
+		<a class="mr-2" style="font-weight:600; color:#fff; font-size:18px" href="skype:pragtech?call">
+		<i class="fa fa-skype mr-3" style="font-size:30px; vertical-align:sub"></i>Skype Us</a>		  
+		</div>
+  </div>
+			<div class="d-flex pb-2 pl-2 pr-2">
+    		<div class="p-2 flex-fill m-2 w-50" style="background-color:#4dc247">
+			<span class="mr-2" style="font-weight:600; color:#fff; font-size:18px" href="https://wa.me/919765629686">
+		<i class="fa fa-whatsapp mr-3" style="font-size:30px; vertical-align:sub"></i>+91 97656 29686</span>
+			</div>
+			<div class="p-2 flex-fill m-2 w-50" style="background-color:#EC450E">
+			<a class="mr-2" style="font-weight:600; color:#fff; font-size:18px" href="#">
+		<i class="fa fa-phone-square mr-3" style="font-size:30px; vertical-align:sub"></i>+1 713 701 5957</a>
+			</div>
+  </div>
+			</div>
+		
+      <h3 class="mt-4" style="color: #fff; margin-top:5px;">We support for <b>English / French / Spanish at an additional cost</b></h3>
+      <div class="row"> 
+        
+        <!-- START For Desktop Purpose Only -->
+        <div class="col-md-12 mt-3 d-none d-sm-block" style="margin:auto; padding-left: 5px; padding-right: 5px;">
+          <table class="table-sm" width="100%" border="1" background="#fff" style="background-color:#fff;">
+            <thead style="background-color: #22c273; color: #000;">
+              <tr>
+                <td colspan="10" style="padding: 15px; font-size: 23px;"><b>Supported Odoo versions &amp; platforms</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f8f8f8; font-size: 14px;">
+                <td style="padding:10px;"><b>Odoo.sh</b></td>
+                <td style="padding: 10px;"><b>Self Hosted</b></td>
+                <td style="padding: 10px;"><b>Enterprise</b></td>
+                <td style="padding: 10px;"><b>Community</b></td>
+                <td style="padding: 10px;"><b>Odoo Online</b></td>
+              </tr>
+              <tr> 
+                <!--<td style="text-align:center; padding:10px;"><img src="img/yes_icon.svg" width="28"></td>
+                    <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                    <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                   <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                   <td style="text-align:center"><img src="img/no_icon.svg" width="28"></td>-->
+                
+                <td style="text-align:center; padding:10px;"><img src="img/yes_icon.svg" width="28"></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+                <td style="text-align:center"><img src="img/no_icon.svg" width="28"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- END For Desktop Purpose Only --> 
+        
+        <!-- START For Mobile Purpose Only -->
+        
+        <div class="col-md-8 mt-3 d-block d-sm-none" style="margin:auto; padding-left: 5px; padding-right: 5px;">
+          <table class="table-sm" width="100%" border="1" background="#fff" style="background-color:#fff;">
+            <thead style="background-color: #22c273; color: #FFF;">
+              <tr>
+                <td colspan="2" style="padding: 15px; font-size: 23px;"><b>Supported Odoo versions & platforms</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px;"><b>Odoo.sh</b></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><b>Self Hosted</b></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+              </tr>
+              <tr style="background-color: #f8f8f8;">
+                <td style="padding: 10px;"><b>Enterprise</b></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><b>Community</b></td>
+                <td style="text-align:center"><img src="img/yes_icon.svg" width="28"></td>
+              </tr>
+              <tr style="background-color: #f8f8f8;">
+                <td style="padding: 10px;"><b>Odoo Online</b></td>
+                <td style="text-align:center"><img src="img/no_icon.svg" width="28"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- END For Mobile Purpose Only -->
+        
+        <div style="text-align: left; color:#fff; margin-top:20px; list-style: none!important; line-height: 37px; padding-left: 14px; font-weight: 600; font-size:14px; ">
+          <p style=" margin-bottom: 15px; line-height: 21px;"><i class="fa fa-check-circle" style="margin-right: 10px; color: #fff; font-size: 22px; line-height: 15px;"></i>Works & tested on standard installations of Odoo with no third party apps</p>
+          <p style=" margin-bottom: 15px; line-height: 21px;"><i class="fa fa-check-circle" style="margin-right: 10px; color: #fff; font-size: 22px; line-height: 15px;"></i>Free support only for odoo installations with no third party apps</p>
+          <p style=" margin-bottom: 15px; line-height: 21px;"><i class="fa fa-check-circle" style="margin-right: 10px; color: #fff; font-size: 22px; line-height: 15px;"></i>Paid support availaible for Odoo installations with third party apps.</p>
+        </div>
+      </div>
+      <!--<a class="btn  red-btn btn-lg" target="_blank"
+               href="http://www.blog.pragtech.co.in/odoo-quickbooks-desktop-connector/" style="background-color: #ff0000;
+    border-radius: 0px;
+    color: #000; text-transform:uppercase; font-size:18px; margin-bottom:15px;">Learn More</a>
+            <a class="btn yellow-btn btn-lg" style="background-color:#ffff00;
+    border-radius: 0px;
+    color: #000; text-transform:uppercase; font-size:18px; margin-bottom:15px;" target="_blank"
+               href="http://www.pragtech.co.in/company/proposal-form.html?id=103&name=quickbook-connector">View Demo </a>
+
+
+            <a class="btn yellow-btn btn-lg"
+               style="background-color:#22c273; border-radius: 0px; color: #000;  font-size:18px; margin-bottom: 15px; width:150px;"
+               target="_blank" href="https://www.pragtech.co.in/company/proposal-form.html?id=310&name=support-odoo-quickbooks-desktop-connector">Support</a>-->
+      
+      <!--<h2 class="text-white mt-4"><strong>Saaskit Deployment Options</strong></h2>-->
+      <!--<div class="table-responsive mt-4 mb-5">
+        <table class="table table-bordered bg-white table-striped">
+          <thead style="background-color: #22c273; color: #FFF; font-size: 20px;">
+            <tr>
+              <th style="vertical-align: middle">Deployment Options</th>
+              <th style="vertical-align: middle">Details</th>
+              <th style="vertical-align: middle">Pricing</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Plain setup on Single Server</td>
+            <td>Odoo is set up on a single server and the Tenant instances also on the same server. This is suitable for small SaaS setup of upto 20 clients and about 100 Odoo users</td>
+            <td>Included in Setup</td>
+          </tr>
+          <tr>
+            <td>Docker setup on single server </td>
+            <td>Odoo is set up in SaaS mode as a Docker image on a single server. This is suitable for a small SaaS setup of upto 20 clients and about 100 Odoo users. </td>
+            <td>Included in Setup</td>
+          </tr>
+          <tr>
+            <td>Docker setup on multiple server</td>
+            <td>Odoo is deployed on multiple remote servers. This is suitable for mid sized customers wanting their own environment and ability to customize the apps and use third party apps.</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>AWS Load Balancing and Auto Scaling on Multiple Servers</td>
+            <td>Odoo is set up in a Auto Scaling and load balancing mode utilizing AWS services such as RDS, Autoscaling. This can automatically scale to any number of instances. It is suitable for large setups of 1000 plus Odoo users. </td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>AWS with Kubernetes EKS service on Multiple Servers</td>
+            <td>Odoo is deployed in highly scalable and reliable environments with hundreds of kubernetes instance.It is suitable for large setups of 1000 plus Odoo users.</td>
+            <td>$1000</td>
+          </tr>
+        </table>
+      </div>-->
+      <div class="row mt-3 mb-3">
+        <div class="col-12">
+          <h3 class="text-center text-white">Our Service Offerings</h3>
+        </div>
+        <div class="col-md-4 mt-4"> <img class="img-fluid" src="img/resources.png" style="margin: auto; width: 60%;">
+          <h5 class="text-center text-white mt-2">Odoo Dedicated Resources</h5>
+        </div>
+        <div class="col-md-4 mt-4"> <img class="img-fluid" src="img/succes-pack.png" style="margin: auto; width: 60%;">
+          <h5 class="text-center text-white mt-2">Odoo Success Packs</h5>
+        </div>
+        <div class="col-md-4 mt-4"> <img class="img-fluid" src="img/project.png" style="margin: auto; width: 60%;">
+          <h5 class="text-center text-white mt-2">Odoo Turnkey Projects</h5>
+        </div>
+        <div class="col-12 mt-4">
+          <h5 class="text-center text-white">To connect with us: <a href="mailto:support@pragtech.co.in" style="color: #ff0">support@pragtech.co.in</a></h5>
+        </div>
+      </div>
+		
+		<div class="row">
+		<div class="col-md-12 mt-3 table-responsive" style="margin:auto; padding-left: 5px; padding-right: 5px;">
+          <table class="table-md" width="100%" border="1" background="#fff" style="background-color:#fff; border-color: #000">
+            <thead style="background-color: #000; color: #ff0;">
+              <tr>
+                <td colspan="11" style="padding: 15px; font-size: 23px;"><h2 style="color: #fff"><strong>SaasKit Free Apps Included</strong></h2></td>
+              </tr>
+            </thead>
+            <tbody>
+              
+			  <tr style="background-color: #f8f8f8; font-size: 14px; color: #000">
+				<td style="padding:10px;"><h4><strong>1</strong></h4></td>
+                <td style="padding:10px;"><h4><strong>Domain Masking</strong></h4></td>
+                <td style="padding:10px; background-color: #e72e28;"><h3><del><strong style="color: #fff">$249</strong></del></h3></td>
+                <td style="padding:10px; background-color: #ff0; color: #000"><h3><strong>FREE</strong></h3></td>
+				  
+				 <td rowspan="5" style="padding:10px; background-color: #ff0; color: #000" class="col-3">
+				  <div class="text-white rounded p-3" style="background-color:#e72e28 ">
+					  <img class="img img-fluid" src="https://www.pragtech.co.in/images/gift_box.png"> 
+					  
+					   
+  <h2 class="mt-4"><strong>Included Free Apps</strong></h2>
+ 
+  
+<h2><strong><del>$845</del></strong></h2>
+<h2 style="font-size: 80px; color: #ff0"><strong>$0</strong></h2>
+  
+</div>
+				  </td>
+				  
+				  
+              </tr>
+				
+				<tr style="background-color: #f8f8f8; font-size: 14px; color: #000">
+				<td style="padding:10px;"><h4><strong>2</strong></h4></td>
+                <td style="padding:10px;"><h4><strong>Free Trial</strong></h4></td>
+                <td style="padding:10px; background-color: #e72e28;"><h3><del><strong style="color: #fff">$99</strong></del></h3></td>
+                <td style="padding:10px; background-color: #ff0; color: #000"><h3><strong>FREE</strong></h3></td>
+              </tr>
+				
+				<tr style="background-color: #f8f8f8; font-size: 14px; color: #000">
+				<td style="padding:10px;"><h4><strong>3</strong></h4></td>
+                <td style="padding:10px;"><h4><strong>Single Server Deployment</strong></h4></td>
+                <td style="padding:10px; background-color: #e72e28;"><h3><del><strong style="color: #fff">$249</strong></del></h3></td>
+                <td style="padding:10px; background-color: #ff0; color: #000"><h3><strong>FREE</strong></h3></td>
+              </tr>
+				
+				<tr style="background-color: #f8f8f8; font-size: 14px; color: #000">
+				<td style="padding:10px;"><h4><strong>4</strong></h4></td>
+                <td style="padding:10px;"><h4><strong>Saaskit Backup</strong></h4></td>
+                <td style="padding:10px; background-color: #e72e28;"><h3><del><strong style="color: #fff">$149</strong></del></h3></td>
+                <td style="padding:10px; background-color: #ff0; color: #000"><h3><strong>FREE</strong></h3></td>
+              </tr>
+				
+				<tr style="background-color: #f8f8f8; font-size: 14px; color: #000">
+				<td style="padding:10px;"><h4><strong>5</strong></h4></td>
+                <td style="padding:10px;"><h4><strong>Saaskit Custom Plans</strong></h4></td>
+                <td style="padding:10px; background-color: #e72e28;"><h3><del><strong style="color: #fff">$99</strong></del></h3></td>
+                <td style="padding:10px; background-color: #ff0; color: #000"><h3><strong>FREE</strong></h3></td>
+              </tr>
+			  
+			  
+              
+            </tbody>
+          </table>
+        </div>
+		</div>
+		
+		
+    </div>
+	  <div> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave4.png"> </div>
+  </div>
+</section>
+<!--Banner Section End--> 
+
+<!--Sale Section Start-->
+<section class="oe_container" style=" padding-bottom:20px;"> </section>
+<!--Sale Section End-->
+	
+	
+	<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+	  
+	<div class="row">
+      <div class="col-12 text-center">
+        <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><b>Odoo SAAS Rocket Kit Features</b></h2>
+		  <p>Serving Odoo Clients can’t get easier than Odoo SAAS Rocket Kit</p>
+        <div class="dropdown-divider mt-3"></div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/multi_tenancy.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Multitenancy</strong></h4>
+			  <p>Our Rocket Kit Supports Multiple Tenants on Single Server</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/invoice.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Invoicing</strong></h4>
+			  <p>Supports  automatic email customers invoices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/user_impersonation.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>User Impersonation</strong></h4>
+			  <p>Customer support is a breeze with impersonation so you can login and help users with your product.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/fully_customizable.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Fully Customizable</strong></h4>
+			  <p>English is Supported out of the box.We Support Multiple Languages at additional pricing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/internationalization_icon.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Internationalization</strong></h4>
+			  <p>English is Supported out of the box.We Support Multiple Languages at additional pricing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/subscription.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Subscription Plans</strong></h4>
+			  <p>Allow your customers to select from available plans</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/domain.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Domain Masking</strong></h4>
+			  <p>Easy way to use your domains</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/trial.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Free Trial Option</strong></h4>
+			  <p>Allow your customers to take free trial</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/system_users_icon.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Manage System Users</strong></h4>
+			  <p>Ability to increase or decrease system users</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/custom_apps_icon.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Custom Apps</strong></h4>
+			  <p>Allow customers to use custom Apps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  <div class="row pl-2 pr-2 mb-5">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/multiple.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong>Odoo Multi Version Support</strong></h4>
+			  <p>Supports Multiple Odoo Versions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <!--<img class="img img-responsive" style="width:90px;" src="img/subscription.svg">--> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4><strong></strong></h4>
+			  <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  
+    <!--<div class="row mb-4 mt-5">
+      <div class="col-12 text-center">
+        <h2><b>Odoo SAAS Rocket Kit Features</b></h2>
+        <div class="dropdown-divider mt-3"></div>
+      </div>
+    </div>-->
+    <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/saas.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Odoo as a Service</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/instance.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Odoo Instance</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/accounting.svg"> </div>
+          <div class="col-md-9 text-left text-md-left">
+            <h4>Customers Website Account View</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/easy.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Convenient and Easy to use</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/import_users.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Option to Increase  / Decrease Users in Tenant Database</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/odoo_screen.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Option to Import Custom Module from Odoo screen</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/invoice-for.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Invoice for Increased number of Users</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/install-uninstall.svg"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>option to Install / uninstall modules to tenant databases from Saas Master panel it self</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pl-2 pr-2">
+      <div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <img class="img img-responsive" style="width:90px;" src="img/docker-min.png"> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4>Kubernates Docker support at additional cost</h4>
+          </div>
+        </div>
+      </div>
+		<div class="col" style="margin: 10px; padding-top: 15px; padding-bottom: 15px; margin: 10px; padding-top: 10px; padding-bottom: 10px; 
+    background-color: #fff;">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center mb-3"> <!--<img class="img img-responsive" style="width:90px;" src="img/multiple.png">--> </div>
+          <div class="col-md-9 text-center text-md-left">
+            <h4></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  
+	  
+	  
+	  
+    <div class="d-flex justify-content-center mt-4"> <a class="mr-2" style="padding:12px 32px; display:inline-block; background-color:#EC450E; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="mailto:support@pragtech.co.in"><i class="fa fa-envelope mr-1"></i>Request a Free Demo Video </a> <a style="padding:12px 32px; display:inline-block; background-color:#00AFF0; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="skype:pragtech?call"> <i class="fa fa-skype mr-1"></i> Skype Us</a> <a target="_blank" href="https://www.youtube.com/watch?v=5O_CymQFgmI&t=4s" style="padding:4px 11px; display:inline-flex; background-color:#e72e28; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" class="font-weight-normal s_figure_link deep-2 deep_hover ml-2 align-items-center"><i class="fa fa-fw fa-play o-icon border-0 mr-2" style="background-color:rgba(255, 255, 255, 0.36); width:25px; height:25px; line-height:26px; color:#fff; font-size:11px"></i> Video Tutorial </a> </div>
+	  
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+
+<section>
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 padding-none text-center mb8">
+        <div class="mt-0 mb-3"> <img class="img-fluid" src="https://www.pragtech.co.in/appstore-img/sale.jpg" style="margin:auto"> </div>
+		  
+		  <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><strong>Odoo SAAS Rocket Kit All in One</strong></h2>
+        
+        <p>
+
+Saaskit from Pragmatic has been deployed to several customers. It could be deployed to the cloud in an auto-scaling mode. This way as the load increases new instances will be launched. The auto-scaling could be done at the Odoo server and the database level. You could scale the system to thousands of users. This is generally suitable for any kind of business applications.
+</p>
+        <div class="mt-3 mb-3"> <img class="img-fluid" src="img/aws-autoscalling.jpg" style="margin:auto"> </div>
+        
+        
+        <div class="d-flex justify-content-center mt-4"> <a class="mr-2" style="padding:12px 32px; display:inline-block; background-color:#EC450E; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="mailto:support@pragtech.co.in"><i class="fa fa-envelope mr-1"></i>Request a Free Demo Video</a> <a style="padding:12px 32px; display:inline-block; background-color:#00AFF0; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="skype:pragtech?call"> <i class="fa fa-skype mr-1"></i> Skype Us</a> <a target="_blank" href="https://www.youtube.com/watch?v=5O_CymQFgmI&t=4s" style="padding:4px 11px; display:inline-flex; background-color:#e72e28; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" class="font-weight-normal s_figure_link deep-2 deep_hover ml-2 align-items-center"><i class="fa fa-fw fa-play o-icon border-0 mr-2" style="background-color:rgba(255, 255, 255, 0.36); width:25px; height:25px; line-height:26px; color:#fff; font-size:11px"></i> Video Tutorial </a> </div>
+		  
+		  <h2 class="mt-4"><strong>Saaskit Deployment Options</strong></h2>
+		  <div class="table-responsive mt-4 mb-5">
+        <table class="table table-bordered bg-white table-striped">
+          <thead style="background-color: #EC450E; color: #FFF; font-size: 20px;">
+            <tr>
+              <th style="vertical-align: middle">SaaS Infrastructure</th>
+              <th style="vertical-align: middle">Server Hosting Platforms</th>
+              <th style="vertical-align: middle; width: 25%">SaaS Infra Features</th>
+              <th style="vertical-align: middle">Business Type</th>
+              <th style="vertical-align: middle">Concurrent Users</th>
+              <th style="vertical-align: middle">Infra Deployment Price</th>
+              
+            </tr>
+          </thead>
+          <tr>
+            <td style="vertical-align: middle"><img src="img/single_system.png" class="img-fluid mb-2"/>
+				SaaS Host All-in-one On Single System</td>
+            <td style="vertical-align: middle">AnyHost</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+				<li>Odoo (SaasMaster) Application deployment on Host System</li>
+				<li>Database deployment on Host System</li>
+				<li>Nginx deployment on Host System</li>
+				<li>Database Backups Every Database/Tenant</li>
+					</ul>
+					</td>
+            <td style="vertical-align: middle">Small/startup Busness</td>
+            <td style="vertical-align: middle">0-100</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;">$0</td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/single_system_multi_container.png" class="img-fluid mb-2"/>
+				SaaS Host All-in-one On Single System multi Container</td>
+            <td style="vertical-align: middle">AnyHost</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+					<li>Odoo (SaasMaster) Application deployment on Host System</li>
+					<li>Database deployment on Host System</li>
+					<li>Nginx deployment on Host System</li>
+					<li>Database Backups Every Database/Tenant</li>
+					<li>Every SaaS Tenant create docker container (odoo app &amp; Postgres database) Isolated control</li>
+					</ul>
+					</td>
+            <td style="vertical-align: middle">Mid-Size Enterprise (SME)</td>
+            <td style="vertical-align: middle">0-100</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;">$0</td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/dedicated_multicontainer.png" class="img-fluid mb-2"/>
+				SaaS Host Dedicated multiContainer</td>
+            <td style="vertical-align: middle">AnyHost</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+				<li>Odoo (SaasMaster) Application deployment on Host System</li>
+				<li>Database deployment on Host System</li>
+				<li>Nginx deployment on Host System</li>
+				<li>Database Backups Every Database/Tenant</li>
+				<li>Every SaaS Tenant create on the dedicated system as a docker container (odoo app &amp; Postgres database) Isolated control</li>
+				</ul>
+				</td>
+            <td style="vertical-align: middle">Mid-Size Enterprise (SME)</td>
+            <td style="vertical-align: middle">0-500</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;">	
+				<a class="mr-2" style="padding:12px; width: 100%; display:inline-block; background-color:#fff; color:#EC450E; border-radius:3px; margin:14px 0px; font-weight:700" href="mailto:support@pragtech.co.in?subject= Get Quote - SaaS Host Dedicated multiContainer"><i class="fa fa-envelope mr-1"></i>Get Quote</a>
+			</td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/load_balancing_auto_scaling.png" class="img-fluid mb-2"/>
+				SaaS Host Load Balancing and Auto Scaling on Multiple Servers</td>
+            <td style="vertical-align: middle">AWS/GoogleCloud</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+					<li>Odoo (SaasMaster) Application deployment on EC2 System</li>
+					<li>Database deployment on RDS serverless service</li>
+					<li>Nginx deployment on Host System</li>
+					<li>Database Backups Every Database/Tenant</li>
+					<li>Aws ALB load balancer</li>
+					<li>AWS autoscaling</li>
+					<li>Aws Cloudwatch</li>
+					<li>AWS efs services</li>
+					<li>AWS Route 53 services</li>
+					<li>AWS SNS services</li>
+				</ul></td>
+            <td style="vertical-align: middle">Large Business</td>
+            <td style="vertical-align: middle">1000+</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;"><a class="mr-2" style="padding:12px; width: 100%; display:inline-block; background-color:#fff; color:#EC450E; border-radius:3px; margin:14px 0px; font-weight:700" href="mailto:support@pragtech.co.in?subject= Get Quote - SaaS Host Load Balancing and Auto Scaling on Multiple Servers"><i class="fa fa-envelope mr-1"></i>Get Quote</a></td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/database-auto-scaling.jpg" class="img-fluid mb-2"/>
+				SaaS Host Database Load Balancing and Auto Scaling</td>
+            <td style="vertical-align: middle">AWS</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+					<li>Odoo (SaasMaster) Application deployment on EC2 System</li>
+<li>Every SaaS Tenant create on the dedicated system as a docker container (odoo app)  Isolated control</li>
+<li>Database deployment on RDS serverless service</li>
+<li>Database loadbalacing with Isolated control</li>
+<li>AWS RDS Storage Auto Scaling.</li>
+<li>AWS RDS workload Auto Scaling dynamically adjusts the number Replicas.</li>
+<li>Nginx deployment on Host System</li>
+<li>Database Backups Every Database/Tenant</li>
+<li>Aws Cloudwatch</li>
+<li>AWS efs services</li>
+<li>AWS Route 53 services</li>
+<li>AWS SNS services</li>
+				</ul></td>
+            <td style="vertical-align: middle">Large Business</td>
+            <td style="vertical-align: middle">1000+</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;"><a class="mr-2" style="padding:12px; width: 100%; display:inline-block; background-color:#fff; color:#EC450E; border-radius:3px; margin:14px 0px; font-weight:700" href="mailto:support@pragtech.co.in?subject= Get Quote - SaaS Host Load Balancing and Auto Scaling on Multiple Servers"><i class="fa fa-envelope mr-1"></i>Get Quote</a></td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/host_load_balancing.png" class="img-fluid mb-2"/>
+				SaaS Host Load Balancing</td>
+            <td style="vertical-align: middle">AwsCloud, GoogleCloud, Digital Ocean</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+				<li>Odoo (SaasMaster) Application deployment on EC2 System</li>
+				<li>Database deployment on RDS serverless service</li>
+				<li>Nginx deployment on Host System</li>
+				<li>Database Backups Every Database/Tenant</li>
+				<li>Nginx application load balancing</li>
+				</ul></td>
+            <td style="vertical-align: middle">Mid-Size Enterprise (SME)</td>
+            <td style="vertical-align: middle">1000</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;"><a class="mr-2" style="padding:12px; width: 100%; display:inline-block; background-color:#fff; color:#EC450E; border-radius:3px; margin:14px 0px; font-weight:700" href="mailto:support@pragtech.co.in?subject= Get Quote - SaaS Host Load Balancing"><i class="fa fa-envelope mr-1"></i>Get Quote</a></td>
+            
+          </tr>
+			
+			<tr>
+            <td style="vertical-align: middle"><img src="img/eks_load_balancing.png" class="img-fluid mb-2"/>
+				SaaS Host On AWS EKS Load Balancing and Auto Scaling on Multiple Servers</td>
+            <td style="vertical-align: middle">AWSCloud</td>
+            <td style="vertical-align: middle" class="text-left">
+				<ul>
+				<li>Odoo (SaasMaster) Application deployment on EC2 System</li>
+				<li>Database deployment on RDS serverless service</li>
+				<li>Nginx deployment on Host System</li>
+				<li>Database Backups Every Database/Tenant</li>
+				<li>Aws ALB load balancer</li>
+				<li>AWS autoscaling</li>
+				<li>Aws Cloudwatch</li>
+				<li>AWS efs services</li>
+				<li>AWS Route 53 services</li>
+				<li>AWS Kubernetes services</li>
+				<li>Docker build an image</li>
+				<li>Support odoo multi version's</li>
+				<li>Networking and Security</li>
+				<li>Support Advanced Workload</li>
+				<li>Secure VPN Connection</li>
+				<li>CI/CD deployment</li>
+				<li>SaaS support multi version deployment</li>
+				</ul>
+				</td>
+            <td style="vertical-align: middle">Large Business </td>
+            <td style="vertical-align: middle">1000+</td>
+            <td style="background-color: #EC450E; vertical-align: middle; color: #fff; font-weight: bold;"><a class="mr-2" style="padding:12px; width: 100%; display:inline-block; background-color:#fff; color:#EC450E; border-radius:3px; margin:14px 0px; font-weight:700" href="mailto:support@pragtech.co.in?subject= Get Quote - SaaS Host On AWS EKS Load Balancing and Auto Scaling on Multiple Servers"><i class="fa fa-envelope mr-1"></i>Get Quote</a></td>
+            
+          </tr>
+          
+          
+          
+          
+        </table>
+      </div>
+		  
+		  
+      </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 padding-none text-center mb8">
+        <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><b>SAAS Rocket Kit Load Balancing</b></h2>
+        <p><strong>Odoo SAAS Rocket Kit</strong> helps you launch and manage odoo instances incredibly fast. It provides all the foundations you need to build an Odoo SaaS Platform</p>
+        <div class="dropdown-divider mt-4 mb-4"></div>
+        <h2 class="mt-4"><b>Our Goal is to empower Odoo Functional Consultants, Developers and Entrepreneurs to democratize the business Apps for Small and Medium Enterprises</b></h2>
+        <div class="dropdown-divider mt-3"></div>
+        <p class="text-justify mt-4">Running Odoo for customers on a SaaS environment is very challenging as it involves knowledge of framework internals and server handling.<br/>
+          <br/>
+          Something as simple as adding an App or Module to your Odoo application can get really tricky, really fast. We've learned this the hard way and that's why we built Odoo SAAS Rocket Kit. It comes with everything out of the box, it's well designed and it sticks to the Odoo Development Best Practices.<br/>
+          <br/>
+          You want to build a product on Odoo platform or host Odoo Customers on Saas environment. We are here to help you. We help you free yourself from the hassle of managing servers and installation nightmares. We give you the handholding you need to launch. This includes one time Setup, training on how to use the Saas Rocket Kit and 90 days of support. </p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="text-center"><strong>Odoo SaaS Script Software as a Service Saaskit</strong></h2>
+        <div class="dropdown-divider mt-3"></div>
+        <p class="text-justify mt-3">Are you starting to offer Odoo to your customers in the cloud. Do you want to avoid having to write the Subscription Management, Recurring Billing, and Credit Card Management code? The Odoo Saas Kit / Script gets your new Odoo software-as-a-service site to a running start by providing you a well-tested and proven site management system with PayPal payments. You also get a framework for building membership-based applications, including account signups/upgrades/downgrades, tiered pricing levels, multi-tenant data security in a single database..</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="mt-3"> <a href="https://www.youtube.com/watch?v=5O_CymQFgmI&t=4s" target="_blank"><img class="img-fluid" src="saaskit_scrrendesign.jpg"></a> </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <p><strong>Avail Odoo as a Service(SaaS) on your servers with Odoo SaaS Kit.</strong></p>
+        <ul>
+          <li>Using Odoo as a Service (SaaS) is a minimal requirement service which uses least server resources. This helps in bringing down the cost substantially.</li>
+          <li>On the other hand, Odoo Saas setup is a bit hard and providing the service to others only compounds the challenges.</li>
+          <li>With Odoo SaaS Kit, you get the necessary ready-to-use structure to start your own Odoo SaaS service.</li>
+        </ul>
+      </div>
+      <div class="col-12 mt-5">
+        <p>What is domain masking ? Domain masking or URL masking is the act of hiding the actual domain name of a website from the URL field of a user’s web browser in favor of another name.<br/>
+          <br/>
+          Pragmatic Techsoft Pvt. Ltd. provides a module for Odoo SaaS Kit. This module helps to sell Odoo modules as a services. Every new instance request shall be accessible using a subdomain of the host company domain url.<br/>
+          <br/>
+          Eg : if a new tenant database “tenant1” is created then this db can be accessible on browser using link “tenant1.hostcompanydomain.com”.<br/>
+          <br/>
+          If customer has its own domain to be used to access this database eg : xyz.com , This can be achieved using our module “domain_masking”.<br/>
+          <br/>
+          This module has a dependency of SaaS Kit Module.<br/>
+          <br/>
+          Following configurations are available for “domain_masking”</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mt-3"> <img class="img-fluid" src="img/newdiagram-multi-server-multiprocess.gif" style="margin:auto"> </div>
+      <div class="mt-3"> <img class="img-fluid" src="img/deply-containers.jpg" style="margin:auto"> </div>
+      <div class="mt-3"> <img class="img-fluid" src="img/docker-container.jpg" style="margin:auto"> </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+	
+
+<!--<section class="mt-5">
+  <div class="container shadow-lg rounded-lg p-5">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center"><strong>Saaskit Deployment Options</strong></h2>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+        <div class="table-responsive mt-4 text-center">
+          <table class="table table-bordered table-dark table-striped">
+            <tr style="background:#222 !important; color: #fff">
+              <th>Deployment Options</th>
+              <th>Details</th>
+              <th>Pricing</th>
+            </tr>
+            <tr>
+              <td>Plain setup on Single Server</td>
+              <td>Odoo is set up on a single server and the Tenant instances also on the same server. This is suitable for small SaaS setup of upto 20 clients and about 100 Odoo users</td>
+              <td>Included in Setup</td>
+            </tr>
+            <tr>
+              <td>Docker setup on single server </td>
+              <td>Odoo is set up in SaaS mode as a Docker image on a single server. This is suitable for a small SaaS setup of upto 20 clients and about 100 Odoo users. </td>
+              <td>Included in Setup</td>
+            </tr>
+            <tr>
+              <td>Docker setup on multiple server</td>
+              <td>Odoo is deployed on multiple remote servers. This is suitable for mid sized customers wanting their own environment and ability to customize the apps and use third party apps.</td>
+              <td>$400</td>
+            </tr>
+            <tr>
+              <td>AWS Load Balancing and Auto Scaling on Multiple Servers</td>
+              <td>Odoo is set up in a Auto Scaling and load balancing mode utilizing AWS services such as RDS, Autoscaling. This can automatically scale to any number of instances. It is suitable for large setups of 1000 plus Odoo users. </td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>AWS with Kubernetes EKS service on Multiple Servers</td>
+              <td>Odoo is deployed in highly scalable and reliable environments with hundreds of kubernetes instance.It is suitable for large setups of 1000 plus Odoo users.</td>
+              <td>$1000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-12">
+		  
+		  
+        <h2 class="text-center"><strong>Multitenancy</strong></h2>
+        <p class="text-center">Our Rocket Kit Supports Multiple Tenants on Single Server </p>
+        <div class="mt-3"> <img class="img-fluid" src="img/multitenancy.png" style="margin:auto"> </div>
+		  
+        <h2 class="text-center mt-5"><strong>Invoicing</strong></h2>
+        <p class="text-center">Supports  automatic email customers invoices.</p>
+        <div class="mt-3"> <img class="img-fluid" src="img/invoicing.png" style="margin:auto"> </div>
+		  
+        <h2 class="text-center mt-5"><strong>User Impersonation</strong></h2>
+        <p class="text-center">Customer support is a breeze with impersonation so you can login and help users with your product.</p>
+		  
+        <h2 class="text-center mt-5"><strong>Fully Customizable</strong></h2>
+        <p class="text-center">You can customize absolutely anything in your Odoo SAAS Rocket kit app.</p>		
+		  
+        <h2 class="text-center mt-5"><strong>Internationalization</strong></h2>
+        <p class="text-center">English is Supported out of the box.We Support Multiple Languages at additional pricing.</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/internationalization.png" style="margin:auto"> </div>
+		  
+        <h2 class="text-center mt-5"><strong>Subscription Plans</strong></h2>
+        <p class="text-center">Allow your customers to select from available plans</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/subscription_plans.png" style="margin:auto"> </div>	
+		  
+        <h2 class="text-center mt-5"><strong>Domain Masking</strong></h2>
+        <p class="text-center">Easy way to use your domains</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/domain_masking1.png" style="margin:auto"> </div>	
+		<div class="mt-3"> <img class="img-fluid" src="img/domain_masking2.png" style="margin:auto"> </div>	
+		  
+        <h2 class="text-center mt-5"><strong>Free Trial Option</strong></h2>
+        <p class="text-center">Allow your customers to take free trial</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/free_trial.png" style="margin:auto"> </div>
+		  
+        <h2 class="text-center mt-5"><strong>Manage System Users</strong></h2>
+        <p class="text-center">Ability to increase or decrease system users</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/system_users.png" style="margin:auto"> </div>
+		  
+        <h2 class="text-center mt-5"><strong>Custom Apps</strong></h2>
+        <p class="text-center">Allow customers to use custom Apps</p>
+		<div class="mt-3"> <img class="img-fluid" src="img/custom_apps.png" style="margin:auto"> </div>
+		  
+		<h2 class="text-center mt-5"><strong>Odoo Multi Version Support</strong></h2>
+        <p class="text-center">Supports Multiple Odoo Versions</p>
+				  
+        		  
+		  
+		  
+		  
+      </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+	
+<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-12 text-center mb-3">
+        <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><b>Related Products</b></h2>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+      </div>
+      <div id="slide-bottom1" class="row carousel slide mt64 mb32" data-ride="carousel"> 
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-xs-12 col-sm-4 col-md-4 mb16 mt16" style="float: left;"> <a href="https://apps.odoo.com/apps/modules/14.0/odoo_saaskit_load_balancing_auto_scaling/" target="_blank">
+              <div style="border-radius: 10px; border:1px solid #ccc"> <img class="img img-fluid center-block" style="border-top-left-radius: 10px;border-top-right-radius: 10px;" src="img/odoo_saaskitload_balancing.gif">
+                <h4 class="mt0" style="padding:6% 4%;text-align: center;white-space: normal;width: 100%;overflow: hidden;text-overflow: ellipsis;font-family: Roboto-medium;">odoo saaskit AWS load balancing auto scaling</h4>
+              </div>
+              </a> </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls --> 
+        <a class="carousel-control-prev" href="#slide-bottom1" data-slide="prev" style="left:-25px;width: 35px;color: #000;"> <span class="carousel-control-prev-icon"><i class="fa fa-chevron-left" style="font-size:24px"></i></span> </a> <a class="carousel-control-next" href="#slide-bottom1" data-slide="next" style="right:-25px;width: 35px;color: #000;"> <span class="carousel-control-next-icon"><i class="fa fa-chevron-right" style="font-size:24px"></i></span> </a> </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+	
+<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><strong>Help Support Covid Relief</strong></h2>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+        <p><strong>Pragmatic</strong> has always been contributing itswarsa social causes by exercising its Corporate Social Responsibility. We are pledged to COVID relief and have been donating a major share of our profits to COVID Pandemic Relief. By purchasing our apps and services you are becoming a part of helping the needy in these critical times. If you want to help further please connect with us and we will help you find NGOs whom you can donate directly. </p>
+        <div class="d-flex justify-content-center mt-4"> <a class="mr-2" style="padding:12px 32px; display:inline-block; background-color:#EC450E; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="mailto:support@pragtech.co.in"><i class="fa fa-envelope mr-1"></i>support@pragtech.co.in</a> </div>
+        <div class="mt-3"> <img class="img-fluid" src="img/Help_support.jpg" style="margin:auto"> </div>
+      </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+	
+<section class="mt-5">
+  <div class="container shadow-lg p-4 mt-5" style="border-radius:20px; border:1px solid #9FDAC4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="text-center mb-3" style="background-color:#00CAAB; padding:15px; border-radius:8px"><strong>Contact / Support</strong></h2>
+        <p><strong>(Monday-Friday 10am to 7pm IST)</strong></p>
+        <h3 style="color: #0aab77"><strong>Pragmatic Techsoft Pvt. Ltd.</strong></h3>
+        <div class="d-flex justify-content-center"> <a class="mr-2" style="padding:12px 32px; display:inline-block; background-color:#EC450E; color:#fff; border-radius:3px; margin:14px 0px; font-weight:400" href="mailto:support@pragtech.co.in"><i class="fa fa-envelope mr-1"></i>support@pragtech.co.in</a> </div>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+      </div>
+    </div>
+    <div class="row mt-3 p-3">
+      <div class="col-md-7">
+        <p class="text-justify" style="font-size:16px;"><b>Pragmatic</b> is a global open source enterprise software development,
+          consulting and products company. Our philosophy is to use Open Source
+          tools and technologies to provide cost effective and green solutions for our customers.</p>
+        <p class="text-justify" style="font-size:16px;">We are a dynamic and fast growing company committed towards creating
+          value for our customers. Located in Pune, India the educational and IT
+          hub of western India, we take pride in delivering rapid, customized open
+          source enterprise applications following agile and lean software methods.
+          Whether you are developing an application from scratch, working on an existing
+          application or porting your application to a new platform or framework, we can meet your business needs.</p>
+        <p class="oe_mt32 text-justify" style="font-size:16px;">If you need any help or want more additional features, you may contact us through:</p>
+        <div style="text-align: center;"><a href="http://www.pragtech.co.in"><img src="logo.png"></a></div>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center;"> <a style="color:#EC450E; font-size: 17px; font-weight: bold" href="mailto:sales@pragtech.co.in"> <i class="fa fa-envelope" style="font-size:19px;" aria-hidden="true"></i> sales@pragtech.co.in</a><br/>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center;"> <a style="color:#EC450E; font-size: 17px; font-weight: bold" href="https://www.pragtech.co.in" rel="nofollow"><i class="fa fa-globe" style="font-size:19px;" aria-hidden="true"></i> www.pragtech.co.in</a><br/>
+          </div>
+        </div>
+        <div class="dropdown-divider mt-3 mb-3"></div>
+      </div>
+      <div class="col-md-5" style="display:table-cell; background-color:#00CAAB; padding:20px">
+        <h3 style="text-align:center"><b>Our solutions focus on your problems</b></h3>
+        <div class="dropdown-divider mt-3 mb-3" style="border-color: #000"></div>
+        <ul style="line-height:30px; font-size:15px; padding-left:20px; text-decoration:none; color:#000; text-transform:uppercase">
+          <li list-style-type:=""> <span style="color:#000" target="_blank" href="http://www.pragtech.co.in/services/customization-implementation-service/odoo-openerp/odoo-openerp-implementation-methodology.html">Odoo Implementation</span></li>
+          <!--<li list-style-type:> <a style="color:#000;" href="http://www.pragtech.co.in/contact.html" target="_blank">Odoo Support</a></li>-->
+          <li list-style-type:=""> <span style="color:#000" target="_blank" href="http://www.pragtech.co.in/services/customization-implementation-service/odoo-openerp.html">Odoo Customization</span></li>
+          <li> <span style="color:#000" href="http://www.pragtech.co.in/technologies/odoo-openerp/odoo-11-features.html">ERP Development and Implementation</span></li>
+          <li> <span style="color:#000" href="https://ipaas.pragtech.co.in/">Odoo Ipass Cloud</span></li>
+          <li> <span style="color:#000" href="http://www.pragtech.co.in/products/other-products/odoo-voice-bring-artificial-intelligence-ai-to-odoo-platform.html">AI for Odoo</span></li>
+          <li> <span style="color:#000" href="https://store.pragtech.co.in/shop">Odoo Apps</span></li>
+          <li> <span style="color:#000" href="https://aws.amazon.com/marketplace/seller-profile?id=6559afc1-9219-494e-b8d0-831be5da3b1e">Aws Marketplace Products</span></li>
+          <li> <span style="color:#000" href="https://businessengines.co.in/">Business Engines</span></li>
+        </ul>
+        <h3 style="text-align:center; margin-bottom:25px"><b>Get In Touch</b></h3>
+        <h2 style="text-align:center; margin-top:12px"> <span style="color:#000; margin-right:10px" href="https://www.facebook.com/pragmatic.co.in" target="new"> <i class="fa fa-facebook-square" style="font-size:28px"></i> </span> <span style="color:#000; margin-right:10px" href="https://twitter.com/Pragmatic_Tech" target="new"> <i class="fa fa-twitter" style="font-size:28px"></i> </span> <span style="color:#000; margin-right:10px" href="https://www.linkedin.com/company/228353" target="new"> <i class="fa fa-linkedin" style="font-size:28px"></i> </span> <a style="color:#000; margin-right:10px" href="https://www.youtube.com/user/PragmaticVideos" target="new"> <i class="fa fa-youtube-play" style="font-size:28px"></i> </a> <span style="color:#000; margin-right:10px" href="https://plus.google.com/u/0/104748260070453259356" target="new" rel="publisher"> <i class="fa fa-google-plus-square" style="font-size:28px"></i> </span> <span style="color:#000; margin-right:10px" href="http://blog.pragtech.co.in/" target="new" rel="publisher"> <i class="fab fa-blogger" style="font-size:28px"></i> </span> </h2>
+      </div>
+    </div>
+	  <div style="margin:0px -25px -25px"> <img class="img-fluid w-100" src="https://www.pragtech.co.in/appstore-img/wave2.png" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px"> </div>
+  </div>
+</section>
+</html>

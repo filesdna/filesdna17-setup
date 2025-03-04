@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dms_directory_authenticator_form" model="ir.ui.view">
+        <field name="name">dms.directory.authenticator.form</field>
+        <field name="model">dms.directory.authenticator</field>
+        <field name="arch" type="xml">
+            <form string="Authenticator">
+                <sheet>
+                    <group>
+                        <field name="code" required="1" />
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="authenticate_directory" type="object" string="Authenticate"/>
+                    <!-- <button string="Cancel" class="btn-secondary" special="cancel"/> -->
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dms_directory_authenticator" model="ir.actions.act_window">
+        <field name="name">Authenticator</field>
+        <field name="res_model">dms.directory.authenticator</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="dms_directory_authenticator_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- <menuitem name="Authenticator" id="menu_dms_authenticator" parent="main_menu_dms" groups="dms.group_dms_manager" action="action_dms_authenticator" sequence="30"/> -->
+
+</odoo>

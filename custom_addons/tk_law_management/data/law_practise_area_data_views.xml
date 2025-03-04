@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="law_practise_area_1" model="law.practise.area">
+            <field name="practise_area">Arbitration</field>
+        </record>
+        <record id="law_practise_area_2" model="law.practise.area">
+            <field name="practise_area">Aviation Law</field>
+        </record>
+        <record id="law_practise_area_3" model="law.practise.area">
+            <field name="practise_area">Banking and Finance Law</field>
+        </record>
+        <record id="law_practise_area_4" model="law.practise.area">
+            <field name="practise_area">Clinical Negligence Law</field>
+        </record>
+        <record id="law_practise_area_5" model="law.practise.area">
+            <field name="practise_area">European Law</field>
+        </record>
+        <record id="law_practise_area_6" model="law.practise.area">
+            <field name="practise_area">Competition Law</field>
+        </record>
+        <record id="law_practise_area_7" model="law.practise.area">
+            <field name="practise_area">Construction Law</field>
+        </record>
+        <record id="law_practise_area_8" model="law.practise.area">
+            <field name="practise_area">Corporate Law</field>
+        </record>
+        <record id="law_practise_area_9" model="law.practise.area">
+            <field name="practise_area">Criminal Law</field>
+        </record>
+        <record id="law_practise_area_10" model="law.practise.area">
+            <field name="practise_area">Employment Law</field>
+        </record>
+        <record id="law_practise_area_11" model="law.practise.area">
+            <field name="practise_area">Energy and Infrastructure Law</field>
+        </record>
+        <record id="law_practise_area_12" model="law.practise.area">
+            <field name="practise_area">Environmental Law</field>
+        </record>
+        <record id="law_practise_area_13" model="law.practise.area">
+            <field name="practise_area">Family Law</field>
+        </record>
+        <record id="law_practise_area_14" model="law.practise.area">
+            <field name="practise_area">Human Rights Law</field>
+        </record>
+        <record id="law_practise_area_15" model="law.practise.area">
+            <field name="practise_area">Immigration Law</field>
+        </record>
+        <record id="law_practise_area_16" model="law.practise.area">
+            <field name="practise_area">Insolvency Law</field>
+        </record>
+        <record id="law_practise_area_17" model="law.practise.area">
+            <field name="practise_area">Insurance Law</field>
+        </record>
+        <record id="law_practise_area_18" model="law.practise.area">
+            <field name="practise_area">Intellectual Property Law</field>
+        </record>
+        <record id="law_practise_area_19" model="law.practise.area">
+            <field name="practise_area">Media Law</field>
+        </record>
+        <record id="law_practise_area_20" model="law.practise.area">
+            <field name="practise_area">Property Law</field>
+        </record>
+        <record id="law_practise_area_21" model="law.practise.area">
+            <field name="practise_area">Public Sector and Local Government Law</field>
+        </record>
+        <record id="law_practise_area_22" model="law.practise.area">
+            <field name="practise_area">Shipping and Maritime Law</field>
+        </record>
+        <record id="law_practise_area_23" model="law.practise.area">
+            <field name="practise_area">Sports Law</field>
+        </record>
+        <record id="law_practise_area_24" model="law.practise.area">
+            <field name="practise_area">Tax Law</field>
+        </record>
+        <record id="law_practise_area_25" model="law.practise.area">
+            <field name="practise_area">Tort Law</field>
+        </record>
+        <record id="law_practise_area_26" model="law.practise.area">
+            <field name="practise_area">Wills, Trust and Probate Law</field>
+        </record>
+    </data>
+</odoo>

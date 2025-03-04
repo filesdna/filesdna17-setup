@@ -1,0 +1,288 @@
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_needaction
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_needaction
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء مطلوب"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_exception_decoration
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_exception_decoration
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_state
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_state
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_type_icon
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_type_icon
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: workflow
+#: model:ir.actions.act_window,name:workflow.action_assigned_page
+#: model:ir.ui.menu,name:workflow.menu_assigned
+msgid "Assigned Forms"
+msgstr "النماذج المسندة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_attachment_count
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_attachment_count
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__create_uid
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__create_uid
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__create_date
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__create_date
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__display_name
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__display_name
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_follower_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_follower_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_partner_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_partner_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__activity_type_icon
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__activity_type_icon
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة رائعة مثل fa-tasks"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__has_message
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__has_message
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_exception_icon
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_exception_icon
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__activity_exception_icon
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__activity_exception_icon
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__message_needaction
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__message_needaction
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، تحتاج الرسائل الجديدة إلى انتباهك."
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__message_has_error
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__message_has_error
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، هناك خطأ في تسليم بعض الرسائل."
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_is_follower
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_is_follower
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__write_uid
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__write_uid
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__write_date
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__write_date
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_has_error
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_has_error
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__my_activity_date_deadline
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__my_activity_date_deadline
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: workflow
+#: model:ir.actions.act_window,name:workflow.action_approvals_page
+#: model:ir.ui.menu,name:workflow.menu_approvals
+msgid "My Approvals"
+msgstr "موافقاتي"
+
+#. module: workflow
+#: model:ir.actions.act_window,name:workflow.action_workflow_page
+#: model:ir.ui.menu,name:workflow.menu_workflow
+msgid "My Workflows"
+msgstr "مهامي"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_calendar_event_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_calendar_event_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "الحدث التالي في تقويم النشاط"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_date_deadline
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_date_deadline
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_summary
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_summary
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_type_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_type_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_needaction_counter
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_needaction_counter
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__message_has_error_counter
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__message_has_error_counter
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__message_needaction_counter
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__message_needaction_counter
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__message_has_error_counter
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__message_has_error_counter
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__rating_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__rating_ids
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: workflow
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_approvals__activity_user_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_assigned__activity_user_id
+#: model:ir.model.fields,field_description:workflow.field_workflow_page_home__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__activity_state
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__activity_state
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "الحالة بناءً على الأنشطة: \nمتأخر: لقد مر تاريخ الاستحقاق \nاليوم: تاريخ النشاط هو اليوم \nمخطط له: الأنشطة المستقبلية."
+
+#. module: workflow
+#: model:ir.model.fields,help:workflow.field_workflow_page_approvals__activity_exception_decoration
+#: model:ir.model.fields,help:workflow.field_workflow_page_assigned__activity_exception_decoration
+#: model:ir.model.fields,help:workflow.field_workflow_page_home__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء في السجل."
+
+#. module: workflow
+#: model:ir.model,name:workflow.model_workflow_page_approvals
+#: model:ir.model,name:workflow.model_workflow_page_assigned
+#: model:ir.model,name:workflow.model_workflow_page_home
+#: model_terms:ir.ui.view,arch_db:workflow.view_workflow_approvals
+#: model_terms:ir.ui.view,arch_db:workflow.view_workflow_assigned
+#: model_terms:ir.ui.view,arch_db:workflow.view_workflow_home
+msgid "Workflow"
+msgstr "سير العمل"
+
+#. module: workflow
+#: model:ir.ui.menu,name:workflow.menu_workflow_root
+msgid "Workflows"
+msgstr "سير العمل"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="case_matter_document_type_form" model="ir.ui.view">
+        <field name="name">case_matter_document_type.form</field>
+        <field name="model">case.matter.document.type</field>
+        <field name="arch" type="xml">
+            <form string="Case Document Type">
+                <header>
+                </header>
+                <sheet>
+                <group>
+                    <field name="name"/>
+                </group>
+                    
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="case_matter_document_type_tree" model="ir.ui.view">
+        <field name="name">case.matter.document.type.tree</field>
+        <field name="model">case.matter.document.type</field>
+        <field name="arch" type="xml">
+            <tree string="Case Document Type">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="case_matter_document_type_action" model="ir.actions.act_window">
+        <field name="name">Case Document Type</field>
+        <field name="res_model">case.matter.document.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+            </p>
+            <p>
+            </p>
+        </field>
+    </record>
+</odoo>

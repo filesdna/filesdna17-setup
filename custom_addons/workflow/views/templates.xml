@@ -1,0 +1,12 @@
+<odoo>
+    <!-- <template id="index" name="React App">
+        <div id="react_app"></div>
+        <script>
+            console.log('JavaScript code executed');
+            var path = "<t t-esc='path'/>";
+            window.history.replaceState({}, '', path);
+            console.log('Updated URL Path:', window.location.href);
+        </script>
+        <script src="/react_module/static/src/static/js/main.0eb4d906.js"></script>
+    </template> -->
+</odoo>

@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <!-- Form view for the React page -->
+        <record id="view_smartform_home" model="ir.ui.view">
+            <field name="name">Smartform</field>
+            <field name="model">smartform.page.home</field>
+            <field name="arch" type="xml">
+                <form string="Smart Forms" edit="false" create="false">
+                    <sheet>
+                        <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                        <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                        <div id="root" data-path="/dashboard/forms"/>
+                        <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <template id="view_publicform_template_home">
+            <t t-name="smartform.page.template.home">
+                <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                <link rel="stylesheet" type="text/css" href="/smartform/static/src/static/css/main.c1b30302.css"/>
+                <div id="root" data-path="/publicform"/>
+                <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+            </t>
+        </template>
+
+    </data>
+</odoo>

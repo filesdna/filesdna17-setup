@@ -1,0 +1,281 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pragmatic_tenant_db_size_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:39+0000\n"
+"PO-Revision-Date: 2023-04-05 04:51+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_tenant_volume_history
+msgid " Get Date Wise History of db and filestore volume"
+msgstr ""
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid ""
+"<br/>\n"
+"                    <span id=\"db_alert\" style=\"color:red\" type=\"hidden\">Database size must be greater than 0</span>"
+msgstr ""
+"<br/>\n"
+"<span id=\"db_alert\" style=\"color:red\" type=\"hidden\">يجب أن يكون حجم قاعدة البيانات أكبر من 0</span>"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid ""
+"<br/>\n"
+"                    <span id=\"filestore_alert\" style=\"color:red\" type=\"hidden\">Filestore size must be greater than 0</span>"
+msgstr ""
+"<br/>\n"
+"                    <span id=\"filestore_alert\" style=\"color:red\" type=\"hidden\">يجب أن يكون حجم الملف أكبر من 0</span>"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Add more space"
+msgstr "أضف مساحة أكبر"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__additional_db_size
+msgid "Additional Database Size (GB)"
+msgstr "حجم قاعدة البيانات الإضافي (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__additional_filestore_size
+msgid "Additional File Store Size (GB)"
+msgstr "حجم تخزين الملفات الإضافي (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_res_company
+msgid "Companies"
+msgstr "المنشآت"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Confirm"
+msgstr ""
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__create_uid
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__create_date
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__create_date
+msgid "Created on"
+msgstr " تم إنشاؤها على "
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_company__default_db_size
+msgid "Custom Module Path2"
+msgstr "مسار التطبيقات 2"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__tenant_db_size
+msgid "Database Size (GB)"
+msgstr "حجم قاعدة البيانات (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.db_size_control_res_config_settings_view
+msgid "Database Space Control"
+msgstr "التحكم في مساحة قاعدة البيانات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Database size(GB) :"
+msgstr "حجم قاعدة البيانات (جيجابايت):"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__tenant_db_size
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__tenant_db_size
+msgid "Default Tenant DB Size(GB)"
+msgstr "حجم قاعدة البيانات الافتراضي للمشترك (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__tenant_filestore_size
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__tenant_filestore_size
+msgid "Default Tenant Filestore Size(GB)"
+msgstr "حجم التخزين الافتراضي للمشترك (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__display_name
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__display_name
+msgid "Display Name"
+msgstr "الاسم الظاهر"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Enter size in GB"
+msgstr "أدخل الحجم بالجيجابايت"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__db_size_usage_product
+msgid "Extra DB Size Usage Product"
+msgstr "منتج زيادة حجم قاعدة البيانات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__filestore_size_usage_product
+msgid "Extra Filestore Size Usage Product"
+msgstr "منتج زيادة حجم التخزين الإضافي"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__tenant_filestore_size
+msgid "File Store Size (GB)"
+msgstr "حجم تخزين الملفات (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#. odoo-python
+#: code:addons/pragmatic_tenant_db_size_control/models/tenant_database_list.py:0
+#, python-format
+msgid "File Store not exist  '%s'"
+msgstr "مخزن الملفات غير موجود  '%s'"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__filestore_path
+msgid "Filestore Path"
+msgstr "مسار تخزين الملفات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "Filestore size(GB) :"
+msgstr "حجم مخزن الملفات (جيجابايت):"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_res_config_settings__flush_storage_history
+msgid "Flush Storage History Before(Days)"
+msgstr "إزالة سجل التخزين قبل (بالأيام)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__id
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "It takes 30 Mins approx. to update space purchase to tenant database"
+msgstr "ستسغرق العملية بعض الوقت لتحديث مساحة قاعدة البيانات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space____last_update
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__write_uid
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث من قبل"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__write_date
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.ui.menu,name:pragmatic_tenant_db_size_control.saas_service
+msgid "My Service"
+msgstr "اشتراكي"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف إعدادات سيرفر المشتركين conf"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.actions.act_window,name:pragmatic_tenant_db_size_control.purchase_additional_space_action
+msgid "Purchase Additional Space"
+msgstr "شراء مساحة إضافية"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_purchase_additional_space
+msgid "Purchase Additional space for user"
+msgstr "شراء مساحة إضافية للمستخدم"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__purchase_space
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.purchase_add_space_form
+msgid "Purchase Space"
+msgstr "شراء مساحة"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.actions.server,name:pragmatic_tenant_db_size_control.backup_volume_history_ir_actions_server
+#: model:ir.cron,cron_name:pragmatic_tenant_db_size_control.backup_volume_history
+msgid "Saas Master : Tenant DB size update"
+msgstr "مدير النظام: تحديث حجم قاعدة بيانات المشترك"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_sale_order
+msgid "Sales Order"
+msgstr "الطلب"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,help:pragmatic_tenant_db_size_control.field_res_company__default_db_size
+msgid "Set the path of Custom modules on Odoo server"
+msgstr "حدد مسار التطبيقات للمشتركين على السيرفر"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_purchase_additional_space__tenant_id
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_volume_history__tenant_id
+msgid "Tenant Database"
+msgstr "قاعدة بيانات المشترك"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model,name:pragmatic_tenant_db_size_control.model_tenant_database_list
+msgid "Tenant Database List"
+msgstr "قائمة الاشتراكات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,help:pragmatic_tenant_db_size_control.field_res_config_settings__db_size_usage_product
+msgid "This product will be used for invoicing related to extra database size usage"
+msgstr "سيتم استخدام هذا المنتج للفواتير المتعلقة بزيادة حجم قاعدة البيانات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,help:pragmatic_tenant_db_size_control.field_res_config_settings__filestore_size_usage_product
+msgid "This product will be used for invoicing related to extra filestore size usage"
+msgstr "سيتم استخدام هذا المنتج للفواتير المتعلقة بزيادة حجم تخزين الملفات"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__total_db_size_used
+msgid "Total DB Size Used (GB)"
+msgstr "إجمالي حجم قاعدة البيانات المستخدمة (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__total_filestore_size_used
+msgid "Total FileStore Size Used (GB)"
+msgstr "إجمالي حجم مخزن الملفات المستخدم (جيجابايت)"
+
+#. module: pragmatic_tenant_db_size_control
+#: model:ir.model.fields,field_description:pragmatic_tenant_db_size_control.field_tenant_database_list__volume_history
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.tenant_db_list
+msgid "Volume History"
+msgstr "سجلات الحجم"
+
+#. module: pragmatic_tenant_db_size_control
+#: model_terms:ir.ui.view,arch_db:pragmatic_tenant_db_size_control.saas_tenants_inherit
+msgid "or"
+msgstr "أو"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+    <!-- Remove odoo from website-->
+    <template id="brand_promotion_message_inherit" inherit_id="web.brand_promotion_message"
+      name="Brand Promotion Message remove">
+      <xpath expr="//t[1]" position="replace">
+        <t t-set="odoo_logo"></t>
+      </xpath>
+    </template>
+
+    <!-- Remove odoo from portal  -->
+    <template id="remove_brand_odoo_portal" inherit_id="portal.portal_record_sidebar">
+      <xpath expr="//div//div//div[2]" position="replace">
+      </xpath>
+    </template>
+
+    <template id="webclient_bootstrap" inherit_id="web.webclient_bootstrap">
+        <xpath expr="//meta[@name='theme-color']" position="replace">
+            <meta name="theme-color" t-att-content="'#242733' if request.httprequest.cookies.get('color_scheme') == 'dark' else '#714B67'" />
+        </xpath>
+        <xpath expr="//t[@t-set='body_classname']" position="after">
+        	<t t-set="body_sidebar_classname" t-value="'mk_sidebar_type_' + request.env.user.sidebar_type or 'large'"/>
+            <t t-set="body_classname" t-value="'%s %s' % (body_classname, body_sidebar_classname)"/>
+        </xpath>
+    </template>
+
+    <template id="layout" inherit_id="web.layout">
+	    <xpath expr="//link[@rel='shortcut icon']" position="before">
+	    	<t 	t-set="x_icon" t-value="x_icon or '/web/image/res.company/%s/favicon' % request.env.company.id"/>
+	    </xpath>
+    </template>
+
+  </data>
+</odoo>

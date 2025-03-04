@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="law_court_form_view" model="ir.ui.view">
+            <field name="name">law.court.form.view</field>
+            <field name="model">law.court</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="e.g.Name"/>
+                            </h1>
+                        </div>
+                        <group string="Cort Address">
+                            <group>
+                                <span class="o_form_label o_td_label" name="address_name">
+                                    <strong>Address</strong>
+                                </span>
+                                <div class="o_address_format">
+                                    <field name="street" placeholder="Street..." class="o_address_street"/>
+                                    <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                    <field name="city" placeholder="City" class="o_address_city"/>
+                                    <field name="state_id" class="o_address_state" placeholder="State"
+                                           options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                    <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                    <field name="country_id" placeholder="Country" class="o_address_country"
+                                           options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                </div>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="law_court_tree_view" model="ir.ui.view">
+            <field name="name">law.court.tree.view</field>
+            <field name="model">law.court</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="city"/>
+                    <field name="zip"/>
+                    <field name="state_id"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_law_court" model="ir.actions.act_window">
+            <field name="name">Court</field>
+            <field name="res_model">law.court</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

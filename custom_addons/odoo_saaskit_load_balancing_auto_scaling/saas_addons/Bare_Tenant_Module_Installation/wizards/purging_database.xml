@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <record id="purge_database_wizard_form_view" model="ir.ui.view">
+        <field name="name">wizard.purge.database</field>
+        <field name="model">purge.database</field>
+        <field name="arch" type="xml">
+            <form string="Purge Database">
+                    <h5>Please Remove The Database From Bare List Manually First.</h5>
+                <!-- <field name='delete_me'/> -->
+                <h6>Note: <span style="color:red;">Confirming this process will cancel the related sale order and archive the sale agreement.</span></h6>
+                <footer>
+                    <button class="btn-primary" name="purge_tenant_database" string="Confirm" type="object"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- <record id="purge_database_reminder_form_view" model="ir.ui.view">
+        <field name="name">wizard.reminder.purge.database</field>
+        <field name="model">purge.database</field>
+        <field name="arch" type="xml">
+            <form string="Reminder">
+                    <h6>System has created a job for purging the database. This will take a while. You may check the status in Job queue list.</h6>
+                <footer>
+                    <button string="Cancel" class="btn btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record> -->
+
+    <record id="purge_database_wizard_action" model="ir.actions.act_window">
+        <field name="name">Purge Database</field>
+        <field name="res_model">purge.database</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    </data>
+</odoo>

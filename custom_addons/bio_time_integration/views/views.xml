@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+    <record id="view_employee_form" model="ir.ui.view">
+      <field name="name">hr.employee.view.form.oh_hr_zk_attendance</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="arch" type="xml">
+          <xpath expr="//page[@name='hr_settings']//field[@name='user_id']"
+                 position="after">
+              <field name="device_id"/>
+          </xpath>
+      </field>
+  </record>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="bio_time_integration.list">
+      <field name="name">bio_time_integration list</field>
+      <field name="model">hr.attendance.bio</field>
+      <field name="arch" type="xml">
+        <tree create="false" default_order='punch_time'>
+          <field name="name"/>
+          <field name="punching_day"/>
+          <field name="punch_time"/>
+          <field name="attendance_type"/>
+          <field name="punch_type"/>
+          <field name="device_id"/>
+          <field name="seq_num"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="bio_time_integration_action_window">
+      <field name="name">Bio Time</field>
+      <field name="res_model">hr.attendance.bio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- menu categories -->
+
+    <menuitem name="Bio Time" id="bio_time_integration_menu_1" parent="hr_attendance.menu_hr_attendance_root" sequence='50'/>
+
+    <!-- actions -->
+
+    <menuitem name="Bio Time" id="bio_time_integration_menu_1_list" parent="bio_time_integration_menu_1"
+              action="bio_time_integration_action_window"/>
+   
+
+  </data>
+</odoo>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="court_trial_form_view" model="ir.ui.view">
+            <field name="name">court.trial.form.view</field>
+            <field name="model">court.trial</field>
+            <field name="arch" type="xml">
+                <form create="false">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button string="Close" name="appeal_close" type="object" invisible="state not in ['draft']"/>
+                        <button string="Reopen" name="appeal_open" type="object" invisible="state not in ['close']"/>
+                        <button class="oe_highlight" type="object" name="create_task" string="Create Task"
+                                invisible="task_id != False"/>
+                        <button class="oe_highlight" type="object" name="case_trial_charge" string="Trial Charge"
+                                invisible="invoice_id != False or task_id == False"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="court_trial"/>
+                            <h1>
+                                <field name="court_trial" placeholder="e.g.Trial"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group string="Court Details">
+                                <field name="law_court_id"/>
+                                <field name="judge_id"/>
+                                <field name="lawyer_id"/>
+                            </group>
+                            <group string="Trial Duration">
+                                <field name="hearing_date"/>
+                                <field name="next_hearing_date"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group string="Task Details" invisible="task_id == False">
+                                <field name="project_id" readonly="1"/>
+                                <field name="task_id" readonly="1"/>
+                            </group>
+                            <group string="Trial Charge Details">
+                                <field name="trial_charge"/>
+                                <field name="company_id" invisible="1"/>
+                                <field name="currency_id" invisible="1"/>
+                                <label for="invoice_id" string="Invoice" invisible="invoice_id == False"/>
+                                <div class="address_format">
+                                    <field name="invoice_id" invisible="invoice_id == False" readonly="1"
+                                           style="width: auto;"/>
+                                    <strong>&#160;&#160;
+                                        <field name="payment_state" widget="badge"
+                                               decoration-danger="payment_state == 'not_paid'"
+                                               decoration-warning="payment_state in ('partial', 'in_payment')"
+                                               decoration-success="payment_state in ('paid', 'reversed')"
+                                               invisible="payment_state in 'invoicing_legacy'"
+                                               optional="show" style="margin-left: 15px; width: auto;"/>
+                                    </strong>
+                                </div>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="court_trial_tree_view" model="ir.ui.view">
+            <field name="name">court.trial.tree.view</field>
+            <field name="model">court.trial</field>
+            <field name="arch" type="xml">
+                <tree create="false">
+                    <field name="case_matter_id"/>
+                    <field name="court_trial"/>
+                    <field name="hearing_date"/>
+                    <field name="next_hearing_date"/>
+                    <field name="project_id" column_invisible="True"/>
+                    <field name="task_id" invisible="task_id == False" widget="many2one_button"
+                           readonly="1"/>
+                    <field name="trial_charge" sum="trial_charge"/>
+                    <field name="company_id" column_invisible="True"/>
+                    <field name="currency_id" column_invisible="True"/>
+                    <field name="invoice_id" widget="many2one_button"/>
+                    <field name="payment_state" widget="badge"
+                           decoration-danger="payment_state == 'not_paid'"
+                           decoration-warning="payment_state in ('partial', 'in_payment')"
+                           decoration-success="payment_state in ('paid', 'reversed')"
+                           optional="show"/>
+                    <field name="state" widget="badge"
+                           decoration-info="state == 'draft'"
+                           decoration-success="state == 'close'"/>
+                </tree>
+            </field>
+        </record>
+        <record id="court_trial_calendar_view" model="ir.ui.view">
+            <field name="name">court.trial.calendar.view</field>
+            <field name="model">court.trial</field>
+            <field name="arch" type="xml">
+                <calendar string="Trial Calender"
+                          date_start="hearing_date"
+                          event_open_popup="true"
+                          mode="month"
+                          color="case_matter_id"
+                          scales="day,month,year"
+                          quick_create="False">
+                    <field name="case_matter_id"/>
+                    <field name="hearing_date"/>
+                    <field name="next_hearing_date"/>
+                    <field name="judge_id"/>
+                    <field name="lawyer_id"/>
+                    <field name="trial_charge"/>
+                    <field name="state"/>
+                    <field name="company_id" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                </calendar>
+            </field>
+        </record>
+        <record id="court_trial_search_view" model="ir.ui.view">
+            <field name="name">court.trial.search.view</field>
+            <field name="model">court.trial</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="court_trial"/>
+                    <field name="state"/>
+                    <group string="Group By">
+                        <filter name="case_matter_id" string="Case"
+                                context="{'group_by': 'case_matter_id'}"/>
+                        <filter name="state" string="Trial Status"
+                                context="{'group_by': 'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_court_trial" model="ir.actions.act_window">
+            <field name="name">Trial</field>
+            <field name="res_model">court.trial</field>
+            <field name="view_mode">tree,calendar,search</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="case_witness_form_view" model="ir.ui.view">
+            <field name="name">case.witness.form.view</field>
+            <field name="model">case.witness</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="avatar" widget="image" class="oe_avatar" nolabel="1"/>
+                        <div class="oe_title">
+                            <label for="witness_id"/>
+                            <h1>
+                                <field name="witness_id" placeholder="e.g. Name"/>
+                            </h1>
+                        </div>
+                        <group string="Witness Details">
+                            <group string="Resident Address">
+                                <span class="o_form_label o_td_label" name="address_name">
+                                    <strong>Address</strong>
+                                </span>
+                                <div class="o_address_format">
+                                    <field name="street" placeholder="Street..." class="o_address_street"/>
+                                    <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                    <field name="city" placeholder="City" class="o_address_city"/>
+                                    <field name="state_id" class="o_address_state" placeholder="State"
+                                           options="{'no_create':True,'no_create_edit':True,'no_open':True}"/>
+                                    <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                    <field name="country_id" placeholder="Country" class="o_address_country"
+                                           options="{'no_create':True,'no_create_edit':True,'no_open':True}"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="phone"/>
+                                <field name="email"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="case_witness_tree_view" model="ir.ui.view">
+            <field name="name">case.witness.tree.view</field>
+            <field name="model">case.witness</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="witness_id"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <field name="city"/>
+                    <field name="state_id"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="case_witness_kanban_view" model="ir.ui.view">
+            <field name="name">case.witness.kanban.view</field>
+            <field name="model">case.witness</field>
+            <field name="arch" type="xml">
+                <kanban string="Kanban" class="">
+                    <field name="id"/>
+                    <field name="avatar"/>
+                    <field name="witness_id"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_res_partner_kanban">
+                                <t t-if="record.avatar.raw_value">
+                                    <div class="o_kanban_image_fill_left d-none d-md-block"
+                                         t-attf-style="background-image: url(#{kanban_image('case.witness', 'avatar',record.id.raw_value)}})">
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="o_kanban_image_fill_left d-none d-md-block"
+                                         t-attf-style="background-image: url('/tk_law_management/static/src/img/default_image.png')">
+                                    </div>
+                                </t>
+                                <div class="oe_kanban_details">
+                                    <strong>
+                                        <field name="witness_id"/>
+                                    </strong>
+                                    <br/>
+                                    <field name="phone"/>
+                                    <br/>
+                                    <field name="email"/>
+                                    <br/>
+                                    <field name="city"/>
+                                    <field name="state_id"/>
+                                    <field name="country_id"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record id="case_witness_search_view" model="ir.ui.view">
+            <field name="name">case.witness.search.view</field>
+            <field name="model">case.witness</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="witness_id"/>
+                    <group string="Group By">
+                        <filter name="witness_id" string="Witness Name"
+                                context="{'group_by': 'witness_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_case_witness" model="ir.actions.act_window">
+            <field name="name">Witness</field>
+            <field name="res_model">case.witness</field>
+            <field name="view_mode">kanban,tree,form,search</field>
+        </record>
+    </data>
+</odoo>
+

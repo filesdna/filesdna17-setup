@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record id="multi_folder_form" model="ir.ui.view">
+        <field name="name">multi.folder.form</field>
+        <field name="model">multi.folder.dms</field>
+        <field name="arch" type="xml">
+            <form string="Select Multiple Documents">
+                <sheet>
+                    <group string="Select the Documents to upload">
+                        <field name="name"/>
+                        <!-- <field name="document_ids" widget="many2many_preview_attachment"/> -->
+                    </group>
+                </sheet>
+                <footer>
+                    <!-- <button name="create_documents" type="object" string="Create"/> -->
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_multi_folder" model="ir.actions.act_window">
+        <field name="name">Folder</field>
+        <field name="res_model">multi.folder.dms</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="multi_folder_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem name="Upload Multiple Folders" id="menu_multi_folder" parent="dms.main_menu_dms" groups="dms.group_dms_manager" action="action_multi_folder" sequence="30"/>
+
+  </data>
+</odoo>

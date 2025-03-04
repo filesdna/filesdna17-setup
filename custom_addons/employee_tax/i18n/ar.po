@@ -1,0 +1,107 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* employee_tax
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-25 09:33+0000\n"
+"PO-Revision-Date: 2024-08-25 09:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__amount
+msgid "Allow Amount"
+msgstr "المبلغ المسموح به"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__name
+msgid "Allow Name"
+msgstr "اسم السماح"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__amonut
+msgid "Amount to deduact from "
+msgstr "المبلغ المخصوم من"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__create_uid
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__create_date
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__create_date
+msgid "Created on"
+msgstr "أنشئت في"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__display_name
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: employee_tax
+#: model:ir.actions.act_window,name:employee_tax.employee_tax_amount_action
+msgid "Employee Tax Amount"
+msgstr "مبلغ ضريبة الموظف"
+
+#. module: employee_tax
+#: model:ir.actions.act_window,name:employee_tax.employee_tax_rule_action
+#: model:ir.model,name:employee_tax.model_employee_tax_amount
+#: model:ir.model,name:employee_tax.model_employee_tax_rule
+msgid "Employee Tax Rule"
+msgstr "قاعدة ضريبة الموظف"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__id
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__write_uid
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__write_date
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_rule__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: employee_tax
+#: model_terms:ir.ui.view,arch_db:employee_tax.employee_tax_amount_form
+#: model_terms:ir.ui.view,arch_db:employee_tax.employee_tax_amount_tree
+#: model_terms:ir.ui.view,arch_db:employee_tax.employee_tax_rule_form
+#: model_terms:ir.ui.view,arch_db:employee_tax.employee_tax_rule_tree
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: employee_tax
+#: model:ir.ui.menu,name:employee_tax.employee_tax_amount_menu
+msgid "Tax Amount"
+msgstr "مبلغ الضريبة"
+
+#. module: employee_tax
+#: model:ir.model.fields,field_description:employee_tax.field_employee_tax_amount__percentage
+msgid "Tax Percentage"
+msgstr "نسبة الضريبة"
+
+#. module: employee_tax
+#: model:ir.ui.menu,name:employee_tax.employee_tax_rule_menu
+msgid "Tax Rules"
+msgstr "قواعد الضريبة"

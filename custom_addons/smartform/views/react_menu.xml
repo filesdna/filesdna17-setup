@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="action_smartform_page" model="ir.actions.act_window">
+            <field name="name">Home</field>
+            <field name="res_model">smartform.page.home</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_smartform_home"/>
+            <field name="target">current</field>
+        </record>
+
+        <menuitem id="menu_smartform_root" action="action_smartform_page" name="Smart Forms" sequence="100" web_icon="smartform,static/src/images/icon.png"/>
+      
+    </data>
+</odoo>

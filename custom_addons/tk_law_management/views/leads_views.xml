@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="customer_case_matter_form_view" model="ir.ui.view">
+            <field name="name">customer.case.matter.form.view</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <header>
+                    <button name="%(action_create_case_matter)d" string="Create Case" type="action"
+                            class="oe_highlight" invisible="case_matter_id != False or type != 'opportunity'"/>
+                </header>
+                <xpath expr="//field[@name='date_deadline']" position="before">
+                    <field name="case_matter_id" invisible="case_matter_id == False" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

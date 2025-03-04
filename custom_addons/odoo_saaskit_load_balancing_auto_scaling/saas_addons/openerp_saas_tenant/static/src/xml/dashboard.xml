@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="openerp_saas_tenant.serviceDashboardTemplate" owl="1">
+        <div class="container">
+            <div class="row" style="position:relative;">
+                <table class="o_list_table table table-sm table-hover">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;font-size:18px;">
+                                <div id="db_size">
+                                    <b>Database Analytics</b>
+                                </div>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;font-size:18px;">
+                                <div id="fielstore_size">
+                                    <b>Filestore Analytics</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="piechart1"  ></div>
+                            </td>
+                            <td>
+                                <div id="piechart2"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </t>
+</templates>

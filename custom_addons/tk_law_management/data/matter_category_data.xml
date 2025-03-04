@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <!--Matter Category-->
+        <record id="category_criminal_cases_1" model="matter.category">
+            <field name="category">Criminal Cases</field>
+        </record>
+        <record id="category_civil_cases_2" model="matter.category">
+            <field name="category">Civil Cases</field>
+        </record>
+        <record id="category_family_law_cases_3" model="matter.category">
+            <field name="category">Family Law Cases</field>
+        </record>
+        <record id="category_employment_law_cases_4" model="matter.category">
+            <field name="category">Employment Law Cases</field>
+        </record>
+        <record id="category_intellectual_property_cases_5" model="matter.category">
+            <field name="category">Intellectual Property Cases</field>
+        </record>
+        <record id="category_immigration_law_cases_6" model="matter.category">
+            <field name="category">Immigration Law Cases</field>
+        </record>
+        <record id="category_environmental_law_cases_7" model="matter.category">
+            <field name="category">Environmental Law Cases</field>
+        </record>
+
+        <!--Matter subcategory-->
+        <record id="sub_category_1" model="matter.sub.category">
+            <field name="sub_category">Felony Cases (e.g., murder, robbery, rape)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_criminal_cases_1"/>
+        </record>
+        <record id="sub_category_2" model="matter.sub.category">
+            <field name="sub_category">Misdemeanor Cases (e.g., petty theft, disorderly conduct)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_criminal_cases_1"/>
+        </record>
+        <record id="sub_category_3" model="matter.sub.category">
+            <field name="sub_category">White Collar Crime Cases (e.g., fraud, embezzlement)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_criminal_cases_1"/>
+        </record>
+        <record id="sub_category_4" model="matter.sub.category">
+            <field name="sub_category">Drug-Related Cases (e.g., possession, trafficking)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_criminal_cases_1"/>
+        </record>
+
+        <record id="sub_category_5" model="matter.sub.category">
+            <field name="sub_category">Contract Disputes</field>
+            <field name="matter_category_id" ref="tk_law_management.category_civil_cases_2"/>
+        </record>
+        <record id="sub_category_6" model="matter.sub.category">
+            <field name="sub_category">Personal Injury Cases (e.g., car accidents, slip and fall accidents)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_civil_cases_2"/>
+        </record>
+        <record id="sub_category_7" model="matter.sub.category">
+            <field name="sub_category">Property Disputes (e.g., landlord-tenant disputes)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_civil_cases_2"/>
+        </record>
+        <record id="sub_category_8" model="matter.sub.category">
+            <field name="sub_category">Product Liability Cases (e.g., defective products)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_civil_cases_2"/>
+        </record>
+        <record id="sub_category_9" model="matter.sub.category">
+            <field name="sub_category">Insurance Claims</field>
+            <field name="matter_category_id" ref="tk_law_management.category_civil_cases_2"/>
+        </record>
+
+        <record id="sub_category_10" model="matter.sub.category">
+            <field name="sub_category">Divorce Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_family_law_cases_3"/>
+        </record>
+        <record id="sub_category_11" model="matter.sub.category">
+            <field name="sub_category">Child Custody Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_family_law_cases_3"/>
+        </record>
+        <record id="sub_category_12" model="matter.sub.category">
+            <field name="sub_category">Adoption Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_family_law_cases_3"/>
+        </record>
+        <record id="sub_category_13" model="matter.sub.category">
+            <field name="sub_category">Child Support Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_family_law_cases_3"/>
+        </record>
+        <record id="sub_category_14" model="matter.sub.category">
+            <field name="sub_category">Domestic Violence Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_family_law_cases_3"/>
+        </record>
+
+        <record id="sub_category_15" model="matter.sub.category">
+            <field name="sub_category">Discrimination Cases (e.g., age, race, gender discrimination)</field>
+            <field name="matter_category_id" ref="tk_law_management.category_employment_law_cases_4"/>
+        </record>
+        <record id="sub_category_16" model="matter.sub.category">
+            <field name="sub_category">Sexual Harassment Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_employment_law_cases_4"/>
+        </record>
+        <record id="sub_category_17" model="matter.sub.category">
+            <field name="sub_category">Wrongful Termination Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_employment_law_cases_4"/>
+        </record>
+        <record id="sub_category_18" model="matter.sub.category">
+            <field name="sub_category">Wage and Hour Disputes</field>
+            <field name="matter_category_id" ref="tk_law_management.category_employment_law_cases_4"/>
+        </record>
+        <record id="sub_category_19" model="matter.sub.category">
+            <field name="sub_category">Whistleblower Claims</field>
+            <field name="matter_category_id" ref="tk_law_management.category_employment_law_cases_4"/>
+        </record>
+
+        <record id="sub_category_20" model="matter.sub.category">
+            <field name="sub_category">Patent Infringement Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_intellectual_property_cases_5"/>
+        </record>
+        <record id="sub_category_21" model="matter.sub.category">
+            <field name="sub_category">Trademark Infringement Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_intellectual_property_cases_5"/>
+        </record>
+        <record id="sub_category_22" model="matter.sub.category">
+            <field name="sub_category">Copyright Infringement Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_intellectual_property_cases_5"/>
+        </record>
+        <record id="sub_category_23" model="matter.sub.category">
+            <field name="sub_category">Trade Secret Misappropriation Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_intellectual_property_cases_5"/>
+        </record>
+
+        <record id="sub_category_24" model="matter.sub.category">
+            <field name="sub_category">Visa Applications and Appeals</field>
+            <field name="matter_category_id" ref="tk_law_management.category_immigration_law_cases_6"/>
+        </record>
+        <record id="sub_category_25" model="matter.sub.category">
+            <field name="sub_category">Deportation and Removal Proceedings</field>
+            <field name="matter_category_id" ref="tk_law_management.category_immigration_law_cases_6"/>
+        </record>
+        <record id="sub_category_26" model="matter.sub.category">
+            <field name="sub_category">Asylum Applications and Appeals</field>
+            <field name="matter_category_id" ref="tk_law_management.category_immigration_law_cases_6"/>
+        </record>
+        <record id="sub_category_27" model="matter.sub.category">
+            <field name="sub_category">Citizenship Applications and Appeals</field>
+            <field name="matter_category_id" ref="tk_law_management.category_immigration_law_cases_6"/>
+        </record>
+
+        <record id="sub_category_28" model="matter.sub.category">
+            <field name="sub_category">Pollution Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_environmental_law_cases_7"/>
+        </record>
+        <record id="sub_category_29" model="matter.sub.category">
+            <field name="sub_category">Conservation Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_environmental_law_cases_7"/>
+        </record>
+        <record id="sub_category_30" model="matter.sub.category">
+            <field name="sub_category">Natural Resource Management Cases</field>
+            <field name="matter_category_id" ref="tk_law_management.category_environmental_law_cases_7"/>
+        </record>
+    </data>
+</odoo>
+
+
+
+
+
+

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="model_dms_file_action_delete" model="ir.actions.server">
+        <field name="name">Recycle Bin</field>
+        <field name="model_id" ref="dms.model_dms_file"/>
+        <field name="binding_model_id" ref="dms.model_dms_file"/>
+        <field name="binding_view_types">form,tree</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_delete()</field>
+    </record>
+    
+    <record id="model_dms_file_action_restore_multiple_files" model="ir.actions.server">
+        <field name="name">Restore File</field>
+        <field name="model_id" ref="dms.model_dms_file"/>
+        <field name="binding_model_id" ref="dms.model_dms_file"/>
+        <field name="binding_view_types">form,tree</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_restore_multiple_files()</field>
+    </record>
+
+    <record id="dms_file_kanban_view" model="ir.ui.view">
+        <field name="name">dms.file.kanban</field>
+        <field name="model">dms.file</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <kanban sample="1" limit="20"
+            action="action_open_kanban_authenticator" type ="object"
+            >
+            
+                <field name="id"/>
+                <field name="is_locked"/>
+                <field name="directory_id"/>
+                <field name="document_status" />
+                <field name="is_deleted" />
+                <field name="tag_ids"/>
+                <field name="content"/>
+                <field name="extension"/>
+                <field name="mimetype" />
+                <field name="size"/>
+                <field name="human_size"/>
+                <field name="image_1920"/>
+                <templates>
+                 <t t-name="kanban-menu" groups="base.group_user">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-6 o_kanban_card_manage_section o_kanban_manage_view" style="white-space: nowrap; display: inline-block;">
+                                <div role="menuitem"  style="margin-right: 10px;">
+                                        <a name="action_open_locally" type="object" style="color: #007bff; text-decoration: none; ">
+                                            <i class="fa fa-edit"></i> Edit Locally
+                                        </a>
+                                </div>
+                                <div role="menuitem" t-if="record.extension.raw_value == 'pdf'" style="margin-right: 10px;">
+                                        <a name="action_edit" type="object" style="color: #28a745; text-decoration: none;">
+                                            <i class="fa fa-cloud"></i> Edit online
+                                        </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </t>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_hr_kanban_record">
+                            <t t-if="record.image_1920.raw_value">
+                                <div class="o_kanban_image_fill_left d-none d-md-block o_kanban_image_full">
+                                    <img t-attf-src="#{kanban_image('dms.file', 'image_1920', record.id.raw_value)}" role="img" t-att-alt="record.id.value"/>
+                                </div>
+                            </t>
+
+                            <div t-else="" class="o_kanban_image_fill_left d-flex align-items-center justify-content-center bg-100 bg-gradient">
+                                <svg class="w-75 h-75 opacity-50" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="currentColor">
+                                        <path d="M 10 11 C 4.08 11 2 14 2 16 L 2 19 L 18 19 L 18 16 C 18 14 15.92 11 10 11 Z"/>
+                                        <circle cx="10" cy="5.5" r="4.5"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="oe_kanban_details">
+                            <t t-if="record.is_locked.raw_value">
+                            <widget name="web_ribbon" title="Encrypted" />
+                            </t>
+                                <div class="o_kanban_record_top">
+                                    <div class="o_kanban_record_headings">
+                                        <strong class="o_kanban_record_title">
+                                            <field name="name" placeholder="File's Name"/>
+
+                                        </strong>
+                                        
+                                        <span t-if="record.extension.raw_value" class="o_kanban_record_subtitle">
+                                        <span><strong>Extension: </strong></span>
+                                            <field name="extension"/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li t-if="record.directory_id.raw_value" class="o_text_overflow">
+                                        <span><strong>Directory: </strong></span>
+                                        <field name="directory_id" />
+                                    </li>
+                                    <li class="o_force_ltr">
+                                        <span><strong>Status: </strong></span>
+                                        <field name="document_status" widget="badge"
+                                        decoration-success="document_status == 'Completed'" decoration-info="document_status == 'Draft' or document_status == 'Preparing'" 
+                                             decoration-muted="document_status == 'Pending' or document_status == 'in_process'"/>
+                                    </li>
+                                   
+                                    <li class="hr_tags">
+                                        <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </t>
+                </templates>
+               
+                  
+            </kanban>
+        </field>
+    </record>
+
+    <record id="search_dms_file" model="ir.ui.view">
+        <field name="name">dms_file.search</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="[('name','ilike',self)]" />
+                <field name="summary"/>
+                <field name="notes"/>
+                <field name="tag_ids"/>
+                <field name="category_id"/>
+
+                <filter string="All Files" name="all" domain="['|',('active', '=',  False), ('active', '!=',  False)]" />
+                <filter string="My Files" name="filter_user" domain="[('create_uid', '=', uid)]" />
+                <separator />
+                <filter string="Archived Files" name="filter_active" domain="[('active', '=', False)]" />
+                <separator />
+                <filter string="Creation Date" name="filter_create" date="create_date" />
+                <filter string="Modification Date" name="filter_write" date="write_date" />
+                <group expand="0" string="Group By">
+                    <filter name="group_color" string="Color" domain="[]" context="{'group_by':'color'}" />
+                    <filter name="group_category" string="Category" domain="[]" context="{'group_by':'category_id'}" />
+                    <separator />
+                    <filter name="group_storage" string="Storage" domain="[]" context="{'group_by':'storage_id'}" />
+                    <filter name="group_directory" string="Directories" domain="[]" context="{'group_by':'directory_id'}" />
+                </group>
+                <searchpanel>
+                    <field name="directory_id" icon="fa-folder" limit="0" operator="=" enable_counters="1" />
+                    <field name="category_id" icon="fa-users" limit="0" enable_counters="1" />
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+      <record id="search_dms_deleted_files" model="ir.ui.view">
+        <field name="name">dms_file.search</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="[('name','ilike',self)]" />
+                <filter string="All Files" name="all" domain="['|',('active', '=',  False), ('active', '!=',  False)]" />
+                <filter string="My Files" name="filter_user" domain="[('create_uid', '=', uid)]" />
+                <separator />
+                <filter string="Archived Files" name="filter_active" domain="[('active', '=', False)]" />
+                <separator />
+                <filter string="Creation Date" name="filter_create" date="create_date" />
+                <filter string="Modification Date" name="filter_write" date="write_date" />
+                <group expand="0" string="Group By">
+                    <filter name="group_color" string="Color" domain="[]" context="{'group_by':'color'}" />
+                    <filter name="group_category" string="Category" domain="[]" context="{'group_by':'category_id'}" />
+                    <separator />
+                    <filter name="group_storage" string="Storage" domain="[]" context="{'group_by':'storage_id'}" />
+                    <filter name="group_directory" string="Directories" domain="[]" context="{'group_by':'directory_id'}" />
+                </group>
+              
+            </search>
+        </field>
+    </record>
+
+    <record id="view_dms_file_tree" model="ir.ui.view">
+        <field name="name">dms_file.tree</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <tree decoration-warning="not active" decoration-muted="(is_locked and not is_lock_editor)" multi_edit="1" limit="10" action="action_open_kanban_authenticator" type ="object" duplicate="0">
+                <field name="active" column_invisible="1" />
+                <field name="is_locked" column_invisible="1" />
+                <field name="is_lock_editor" column_invisible="1" />
+                <field name="name" />
+                <field name="document_status" widget="badge"/>
+                <field name="create_date" />
+                <field name="create_uid" />
+                <field name="write_date" />
+                <field name="write_uid" string="Edited by"/>
+                <field name="linked_fiels" />
+                <field name="sha512_hash" optional="hide"/>
+                <field name="human_size" optional="hide"/>
+                <field name="mimetype" optional="hide"/>
+                <field name="category_id" optional="hide"/>
+                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_dms_file_graph" model="ir.ui.view">
+        <field name="name">dms_file.graph</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <graph type="pie">
+                <field name="directory_id" type="row" />
+                <field name="size" type="measure" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_dms_file_pivot" model="ir.ui.view">
+        <field name="name">dms_file.pivot</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <pivot display_quantity="true">
+                <field name="storage_id" type="row" />
+                <field name="directory_id" type="row" />
+                <field name="size" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_dms_file_form" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <form string="Files" duplicate="0"> 
+                
+                <header>
+                    <field name="is_encrypted" invisible="1"/>
+                    <field name="is_deleted" invisible="1"/>
+                    <field name="is_decrypted" invisible="1"/>
+                    <field name="is_locked" invisible="1"/>
+                    <button class="oe_highlight" name="lock" type="object" string="Encrypt it" invisible="is_locked  == True or is_deleted == 1"/>
+                    <button class="oe_highlight" name="unlock" type="object" string="Decrypt it" invisible="is_locked  == False or is_deleted == 1"/>
+                    <button class="oe_highlight" name="locked_by_owner" type="object" string="Lock" invisible="owner_lock == True or is_locked == True or is_deleted == 1"/>
+                    <button class="oe_highlight" name="unlocked_by_owner" type="object" string="UnLock" invisible="owner_lock == False or is_locked == True or is_deleted == 1"/>
+                    <button class="oe_highlight" name="action_restore_file" icon="fa-rotate-left" type="object" string="Restore File" invisible="is_deleted == 0"/>
+                    <button name="%(portal.portal_share_action)d" string="Share" type="action" class="oe_highlight oe_read_only" />
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Deleted" bg_color="bg-danger" invisible="is_deleted == 0" />
+                    <div class="oe_button_box" name="button_box" />
+                    <field name="image_1920" widget="image" class="oe_avatar" nolabel="1" options="{'image_preview': 'image_128'}" readonly="is_locked == True or owner_lock==True"/>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="name" readonly="is_locked == True or owner_lock==True"/>
+                            <field name="active" invisible="1" />
+                        </h1>
+                        <h4>
+                            <field name="path_json" widget="path_json" options="{'prefix': True, 'suffix': False}" invisible="['|', ('name', '=', False), ('directory_id', '=', False)]" />
+                        </h4>
+                    </div>
+                        <group>
+                            <field name="content" filename="name" mimetype="mimetype" widget="preview_binary" invisible="content != False" />
+                        </group>
+                            <field name="attachment_ids" widget="many2many_preview_attachment" invisible="content == False or owner_lock== True"/>
+                            <button name="download_attachment" string="Download" type="object" icon="fa-download" class="oe_inline oe_button" invisible="content == False or owner_lock== True"/>
+                        <group name="content">
+                            <group>
+                                <field name="extension" />
+                                <field name="mimetype" />
+                                <field name="owner_lock" invisible="1"/>
+                               
+                            </group>
+                        </group>
+                    <group name="settings">
+                        <group>
+                            <field name="directory_id"  options="{'no_quick_create': True}" domain="[('id', 'in', directories_ids)]"   readonly="is_locked == True or owner_lock==True"/>
+                            <field name="storage_id" options="{'no_open': True}"    readonly="is_locked == True or owner_lock==True"/>
+                            <field name="document_model" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="category_id" placeholder="Internal / Human Resource" options="{'no_open': True, 'no_create': True}"    readonly="is_locked == True or owner_lock==True"/>
+                            <field name="tag_ids" widget="many2many_tags" placeholder="Tags..." options="{'color_field': 'color', 'no_create_edit': True}"    readonly="is_locked == True or owner_lock==True"/>
+                            <field name="directories_ids" widget="many2many_tags" invisible="1"    readonly="is_locked == True or owner_lock==True"/>
+                            <field name="current_version_id" readonly="1" options="{'no_open': True}"/>
+
+                        </group>
+                    </group>
+                    <group>
+                        <field name="storage_id_save_type" invisible="True" />
+                        <field name="res_model" readonly="True" invisible="storage_id_save_type != 'attachment'" />
+                        <field name="res_id" readonly="True" invisible="storage_id_save_type != 'attachment'" />
+                        <field name="record_ref" invisible="storage_id_save_type != 'attachment'" />
+                    </group>
+                    <notebook>
+                        <page string="File Versions" name='file_versions'>
+                            <field name="document_versions_ids" readonly="1" invisible="owner_lock==True">
+                                <tree editable="buttom">
+                                    <field name="name"/>
+                                    <field name="version_number"/>
+                                    <field name="attachment_ids" widget="many2many_preview_attachment" invisible="is_locked == True" readonly="1"/>
+                                    <button class="action-document" name="download_attachment" type="object" invisible="is_locked == True" icon="fa-download"/>
+                                    <button class="action-document" name="action_delete_record" type="object" invisible="is_locked == True" icon="fa-trash"/>
+                                    <field name="is_locked" column_invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="page_meta" string="Meta Information">
+                            <group>
+                                <group>
+                                    <field name="create_date" readonly="1" />
+                                    <field name="create_uid" readonly="1" />
+                                </group>
+                                <group>
+                                    <field name="write_date" readonly="1" />
+                                    <field name="write_uid" string="Edited by" readonly="1" />
+                                </group>
+                            </group>
+                        </page>
+                       
+                        <page name="page_metadata" string="Meta Data">
+                            <field name="has_summary" invisible='1'   readonly="is_locked == True or owner_lock==True"/>
+                            <field name="has_notes" invisible='1'   readonly="is_locked == True or owner_lock==True"/>
+                            <group>
+                                <field name="metadata_configuration_id"   readonly="is_locked == True or owner_lock==True" />
+                            </group>
+                            <group invisible="metadata_configuration_id == False">
+                                <field name="summary" invisible="has_summary == 'no'" required="has_summary == 'required'"  readonly="is_locked == True or owner_lock==True"/>
+                            </group>
+                            <group invisible="metadata_configuration_id == False">
+                                <field name="notes" invisible="has_notes == 'no'" required="has_notes == 'required'"   readonly="is_locked == True or owner_lock==True"/>
+                            </group>
+                        </page>
+                        <page string="Linked Files">
+                            <field name="linked_fiels_ids" readonly="is_locked == True or owner_lock==True">
+                                <tree editable="buttom">
+                                    <field name="file_id" required="1"/>
+                                    <field name="notes"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Hash">
+                            <!-- <group> -->
+                                <field name="sha512_hash"/>
+                                <!-- <field name="encription_key" readonly="1"/> -->
+                            <!-- </group> -->
+                        </page>
+                        <page name="page_technical" string="Technical Information" invisible="1">
+                            <group name="technical">
+                                <group name="technical_left">
+                                </group>
+                                <group name="technical_right">
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter" groups="dms.group_dms_manager">
+                    <field name="message_follower_ids" />
+                    <field name="activity_ids" />
+                    <field name="message_ids" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_dms_file_manager_form" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="inherit_id" ref="view_dms_file_form" />
+        <field name="arch" type="xml">
+            <field name="storage_id" position="attributes">
+                <attribute name="options">{}</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="action_dms_file" model="ir.actions.act_window">
+        <field name="name">Files</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">kanban,tree,pivot,form</field>
+        <field name="domain">[("is_deleted", "=", False),("is_template", "=", False)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new File.
+            </p>
+            <p>
+                Files are used to save content.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_dms_file_delete" model="ir.actions.act_window">
+        <field name="name">Recycle bin: Files</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">kanban,tree,graph,pivot,form</field>
+        <field name="domain">[("is_deleted", "=", True)]</field>
+        <field name="search_view_id" ref="dms.search_dms_deleted_files" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Deleted Files.
+            </p>
+            <p>
+                Your Files Recycle Bin is Empty !
+            </p>
+        </field>
+    </record>
+    <menuitem 
+        id="menu_dms_file" 
+        name="Files" 
+        sequence="20" 
+        parent="main_menu_dms" 
+        action="action_dms_file" 
+    />
+    <menuitem 
+        id="menu_dms_delete_file" 
+        name="Files" 
+        sequence="10" 
+        parent="categ_menu_deleted_dms_files" 
+        groups="dms.group_dms_manager" 
+        action="action_dms_file_delete" 
+    />
+    <record id="search_dms_file_migration" model="ir.ui.view">
+        <field name="name">dms_file.search</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="[('name','ilike',self)]" />
+                <group expand="0" string="Group By">
+                    <filter name="group_storage" string="Storage" domain="[]" context="{'group_by':'storage_id'}" />
+                </group>
+                <searchpanel>
+                    <field name="directory_id" icon="fa-folder" string="Folders" limit="0"  enable_counters="1" operator="=" />
+                    <field name="category_id" icon="fa-users" limit="0" enable_counters="1" />
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_dms_file_migration_tree" model="ir.ui.view">
+        <field name="name">dms_file.tree</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <tree decoration-muted="(is_locked and not is_lock_editor)" create="0" delete="0" duplicate="0">
+                <field name="is_locked" column_invisible="1" />
+                <field name="is_lock_editor" column_invisible="1" />
+                <field name="name" />
+                <field name="create_date" />
+                <field name="create_uid" />
+                <field name="write_date" />
+                <field name="write_uid" string="Edited by"/>
+                <field name="linked_fiels" />
+                <field name="human_size" />
+                <field name="mimetype" />
+                <!-- <field name="storage_id" /> -->
+            </tree>
+        </field>
+    </record>graph
+
+    <record id="action_dms_file_migration" model="ir.actions.act_window">
+        <field name="name">Files</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">tree</field>
+        <field name="search_view_id" ref="search_dms_file_migration" />
+        <field name="domain">[('require_migration', '=', True), '|',('active', '=', False), ('active', '!=', False)]
+        </field>
+        <field name="context">{'search_default_group_storage': 1}</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('view_dms_file_migration_tree')})]" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new File.
+            </p>
+            <p>
+                Files are used to save content directly in Odoo.
+            </p>
+        </field>
+    </record>
+
+    <record id="view_dms_file_new_form" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="inherit_id" ref="view_dms_file_form" />
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//sheet//div[hasclass('oe_button_box')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <form position="inside">
+                <footer>
+                    <button class="btn btn-primary" type="object" string="Create" name="action_save_onboarding_file_step" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dms_file_new" model="ir.actions.act_window">
+        <field name="name">New Root Directory</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_dms_file_new_form" />
+    </record>
+</odoo>

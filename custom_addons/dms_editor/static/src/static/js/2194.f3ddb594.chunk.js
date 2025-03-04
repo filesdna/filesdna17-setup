@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfilesdna=self.webpackChunkfilesdna||[]).push([[2194],{42194:(t,e,n)=>{n.r(e),n.d(e,{default:()=>l});var c=n(44414);const l=function(t){const{children:e,className:n,handleClick:l,title:s}=t;return(0,c.jsx)("button",{type:"button",onClick:l,title:s,className:"editor-btn".concat(n||""),children:e})}}}]);

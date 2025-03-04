@@ -1,0 +1,99 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dms_editor
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240924\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-24 06:32+0000\n"
+"PO-Revision-Date: 2024-10-24 06:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dms_editor
+#: model:ir.ui.menu,name:dms_editor.menu_dms_blockchain
+msgid "Blockchain"
+msgstr "سلسلة الكتل"
+
+#. module: dms_editor
+#: model:ir.model.fields,field_description:dms_editor.field_dms_file__data_path
+#: model:ir.model.fields,field_description:dms_editor.field_document_version__data_path
+msgid "Data Path"
+msgstr "مسار البيانات"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.action_delegation_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_delegation
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_delegation_home
+msgid "Delegation"
+msgstr "تفويض"
+
+#. module: dms_editor
+#: model:ir.model,name:dms_editor.model_document_version
+msgid "Document Version"
+msgstr "إصدار الوثيقة"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.action_blockchain_documents_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_blockchain_documents
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_blockchain_documents_home
+msgid "Documents"
+msgstr "الوثائق"
+
+#. module: dms_editor
+#: model:ir.actions.act_url,name:dms_editor.action_editor_page
+msgid "Editor"
+msgstr "محرر"
+
+#. module: dms_editor
+#: model:ir.actions.act_url,name:dms_editor.action_blockchain_explorer_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_blockchain_explorer
+msgid "Explorer"
+msgstr "مستكشف"
+
+#. module: dms_editor
+#: model:ir.model,name:dms_editor.model_dms_file
+msgid "File"
+msgstr "ملف"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.action_blockchain_information_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_blockchain_information
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_blockchain_information_home
+msgid "Information"
+msgstr "معلومات"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.action_sign_requests_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_sign_requests
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_sign_requests_home
+msgid "Sign Requests"
+msgstr "طلبات التوقيع"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.action_signatures_page
+#: model:ir.ui.menu,name:dms_editor.menu_dms_signatures
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_signatures_home
+msgid "Signatures"
+msgstr "التوقيعات"
+
+#. module: dms_editor
+#: model:ir.model.fields,field_description:dms_editor.field_document_version__current_time_seconds
+msgid "Time Seconds"
+msgstr "الثواني الزمنية"
+
+#. module: dms_editor
+#: model:ir.actions.act_window,name:dms_editor.dms_user_verification_action_window
+#: model:ir.ui.menu,name:dms_editor.dms_security_menu_2_list
+msgid "User Verification"
+msgstr "تحقق المستخدم"
+
+#. module: dms_editor
+#: model_terms:ir.ui.view,arch_db:dms_editor.view_user_verifications_home
+msgid "User Verifications"
+msgstr "تحققات المستخدم"

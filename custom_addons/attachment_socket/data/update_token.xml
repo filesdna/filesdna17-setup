@@ -1,0 +1,15 @@
+<!-- data/scheduled_actions.xml -->
+<odoo>
+  <data noupdate="1">
+      <record id="ir_cron_update_tokens" model="ir.cron">
+          <field name="name">Update Tokens</field>
+          <field name="model_id" ref="model_auth_token"/>
+          <field name="state">code</field>
+          <field name="code">model.cron_update_tokens()</field>
+          <field name="user_id" ref="base.user_root"/>
+          <field name="interval_number">1</field>
+          <field name="interval_type">days</field>
+          <field name="numbercall">-1</field>
+      </record>
+  </data>
+</odoo>

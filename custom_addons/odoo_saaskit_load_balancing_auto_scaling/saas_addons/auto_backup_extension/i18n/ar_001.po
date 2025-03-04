@@ -1,0 +1,131 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* auto_backup_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:41+0000\n"
+"PO-Revision-Date: 2023-05-20 16:44+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid ""
+"<span style=\"color:red; font-style: italic; font-size: 12px; margin-left: 10px;\">\n"
+"                                        (Deactivated)\n"
+"                                    </span>"
+msgstr ""
+"<span style=\"color:red; font-style: italic; font-size: 12px; margin-left: 10px;\">\n"
+"                                        (غير نشط)\n"
+"                                    </span>"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "<span>Psuedo User(Tenant Admin User)</span>"
+msgstr "<span>المستخدم الرئيسي (مدير الاشتراك)</span>"
+
+#. module: auto_backup_extension
+#: model:ir.model,name:auto_backup_extension.model_db_backup
+msgid "Backup configuration record"
+msgstr "سجل إعداد النسخ الاحتياطي"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "Creation Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "DB Backups"
+msgstr "نسخ DB الاحتياطية"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/models/tenant_db_backup.py:0
+#, python-format
+msgid "Error : %s"
+msgstr "خطأ: %s"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: auto_backup_extension
+#: model:ir.ui.menu,name:auto_backup_extension.saas_service
+msgid "My Service"
+msgstr "خدمتي"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "No backups found"
+msgstr "لم يتم العثور على نسخ احتياطية"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/models/tenant_db_backup.py:0
+#, python-format
+msgid "Please Enter Postgres Credentials...!"
+msgstr "الرجاء إدخال بيانات قاعدة البيانات...!"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/controller/main.py:0
+#, python-format
+msgid "Please Provide Brand Website In Settings!"
+msgstr "الرجاء تقديم اسم الموقع في الاعدادات!"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/controller/main.py:0
+#, python-format
+msgid "Please Provide Master Password Of Tenant In Settings!"
+msgstr "الرجاء تقديم كلمة المرور الرئيسية للمشتركين في الاعدادات!"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/models/tenant_db_backup.py:0
+#, python-format
+msgid "Postgres Connection Unsuccess...!"
+msgstr "فشل الاتصال بقاعدة بيانات Postgres..!"
+
+#. module: auto_backup_extension
+#: model:ir.model.fields,field_description:auto_backup_extension.field_db_backup__postgres_port
+msgid "Postgres Default Port"
+msgstr "منفذ Postgres الافتراضي"
+
+#. module: auto_backup_extension
+#: model:ir.model.fields,field_description:auto_backup_extension.field_db_backup__postgres_pwd
+msgid "Postgres Password"
+msgstr "كلمة مرور Postgres"
+
+#. module: auto_backup_extension
+#: model:ir.model.fields,field_description:auto_backup_extension.field_db_backup__postgres_user
+msgid "Postgres User"
+msgstr "مستخدم Postgres"
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "Restore"
+msgstr "استعادة"
+
+#. module: auto_backup_extension
+#. odoo-python
+#: code:addons/auto_backup_extension/models/tenant_db_backup.py:0
+#, python-format
+msgid "Something went Wrong..."
+msgstr "حصل خطأ..."
+
+#. module: auto_backup_extension
+#: model_terms:ir.ui.view,arch_db:auto_backup_extension.saas_tenants_inherit2
+msgid "Users"
+msgstr "المستخدمون"

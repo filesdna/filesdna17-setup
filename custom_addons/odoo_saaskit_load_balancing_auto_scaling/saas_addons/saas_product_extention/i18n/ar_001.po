@@ -1,0 +1,54 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saas_product_extention
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-28 11:10+0000\n"
+"PO-Revision-Date: 2023-05-20 17:01+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar_SA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.details_inherit
+msgid ""
+"<br/>\n"
+"                    30-day money-back guarantee<br/>\n"
+"                    Shipping: 2-3 Business Days"
+msgstr ""
+"<br/>\n"
+"                    ضمان استرداد المبلغ خلال 30 يوم<br/>\n"
+"                    التوصيل خلال: 2-3 أيام عمل"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.product_buy_now_inherit
+msgid "<i class=\"fa fa-bolt mr-2\"/>BUY NOW"
+msgstr "<i class=\"fa fa-bolt mr-2\"/>دفع الآن"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.product_inherit
+msgid "<i class=\"fa fa-shopping-cart mr-2\"/>ADD TO CART"
+msgstr "<i class=\"fa fa-shopping-cart mr-2\"/>الإضافة للسلة"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.product_quantity_inherit
+msgid "Add one"
+msgstr "إضافة واحد"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.product_quantity_inherit
+msgid "Remove one"
+msgstr "إزالة واحد"
+
+#. module: saas_product_extention
+#: model_terms:ir.ui.view,arch_db:saas_product_extention.details_inherit
+msgid "Terms and Conditions"
+msgstr "الشروط والأحكام"

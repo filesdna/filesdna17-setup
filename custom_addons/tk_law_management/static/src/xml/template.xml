@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="tk_law_management.law_management_dashboard" owl="1">
+        <section class="section law_dashboard">
+            <div class="container">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="row">
+                              <div class="col-md-12 mt32">
+                                  <h4 class="tk-primary">Case details</h4>
+                                  <hr class="border-primary"/>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewCaseMaterDetails('all')">
+                                  <div class="card info-bg p-32">
+                                      <div class="card-body info-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/1-matter.svg"/>
+                                          <h4 class="tk-st-1">Cases</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.caseMaterStats['case_matter']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewCaseMaterDetails('open')">
+                                  <div class="card danger-bg p-32">
+                                      <div class="card-body danger-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/2-open.svg"/>
+                                          <h4 class="tk-st-1">Open</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.caseMaterStats['open_case_matter']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16"
+                                   t-on-click="() => this.viewCaseMaterDetails('pending')">
+                                  <div class="card warn-bg p-32">
+                                      <div class="card-body warn-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/3-pending.svg"/>
+                                          <h4 class="tk-st-1">Pending</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.caseMaterStats['pending_case_matter']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewCaseMaterDetails('close')">
+                                  <div class="card active-bg p-32">
+                                      <div class="card-body active-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/4-closed.svg"/>
+                                          <h4 class="tk-st-1">Closed</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.caseMaterStats['close_case_matter']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-md-6">
+                          <div class="row">
+                              <div class="col-md-12 mt32">
+                                  <h4 class="tk-primary">All Static</h4>
+                                  <hr class="border-primary"/>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewLawPractiseArea()">
+                                  <div class="card purple-bg p-32">
+                                      <div class="card-body purple-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/5-practise.svg"/>
+                                          <h4 class="tk-st-1">Practise Areas</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.lawStatic['law_practise_area']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewMatterCategory()">
+                                  <div class="card warn-bg p-32">
+                                      <div class="card-body warn-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/6-category.svg"/>
+                                          <h4 class="tk-st-1">Matters Category</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.lawStatic['matter_category']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewLawCourt()">
+                                  <div class="card all-bg p-32">
+                                      <div class="card-body all-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/7-court.svg"/>
+                                          <h4 class="tk-st-1">Courts</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.lawStatic['law_court']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-4 mt8 mb16" t-on-click="() => this.viewCaseLawyers()">
+                                  <div class="card terminate-bg p-32">
+                                      <div class="card-body terminate-bg tk-card-body">
+                                          <img alt="users" width="40"
+                                               src="tk_law_management/static/src/img/dashboard/8-lawyer.svg"/>
+                                          <h4 class="tk-st-1">Lawyers</h4>
+                                          <h6 class="tk-st-2">
+                                              <t t-esc="state.lawStatic['case_lawyer']"/>
+                                          </h6>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mt32">
+                                <h4 class="tk-primary">Case matter status</h4>
+                                <hr class="border-primary"/>
+                                <div class="tk-os-chart" t-ref="case_matter_status"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mt32">
+                                <h4 class="tk-primary">Overall info</h4>
+                                <hr class="border-primary"/>
+                                <div class="tk-os-chart" t-ref="overall_info"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </t>
+</templates>

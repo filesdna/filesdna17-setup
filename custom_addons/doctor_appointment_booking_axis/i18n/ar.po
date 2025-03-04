@@ -1,0 +1,1720 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* doctor_appointment_booking_axis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240912\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-15 08:14+0000\n"
+"PO-Revision-Date: 2024-10-15 08:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/models/calendar_appointment.py:0
+#, python-format
+msgid " (copy)"
+msgstr " (نسخة)"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "#{day['today_cls'] and 'Today' or ''}"
+msgstr "#{day['today_cls'] و 'اليوم' أو ''}"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.address_on_payment_inherit
+msgid "&amp; Shipping"
+msgstr "و الشحن"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "(timezone:"
+msgstr "(المنطقة الزمنية:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "+1 (650) 691-3277"
+msgstr "+1 (650) 691-3277"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+msgid "1. Select Your Location"
+msgstr "1. اختر موقعك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+msgid "2. Select Your Service"
+msgstr "2. اختر خدمتك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+msgid "3. Select Your Provider"
+msgstr "3. اختر مقدم الخدمة الخاص بك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "4. Select Date &amp; Time"
+msgstr "4. اختر التاريخ و الوقت"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "5. Confirm your details"
+msgstr "5. أكد تفاصيلك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "<b> Address:</b>"
+msgstr "<b> العنوان:</b>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.address_on_payment_inherit
+msgid "<b>Shipping:</b>"
+msgstr "<b>الشحن:</b>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid ""
+"<br/>\n"
+"                                It's too late to cancel online, please contact the attendees another way if you really\n"
+"                                can't make it."
+msgstr ""
+"<br/>\n"
+"                                لقد تأخرت في إلغاء الموعد عبر الإنترنت، يرجى الاتصال بالحاضرين بطريقة أخرى إذا كنت لا تستطيع الحضور."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+msgid ""
+"<i class=\"fa fa-align-center\"/>\n"
+"                                                                Description:"
+msgstr ""
+"<i class=\"fa fa-align-center\"/>\n"
+"                                                                الوصف:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.address_on_payment_inherit
+msgid ""
+"<i class=\"fa fa-edit\"/>\n"
+"                        Edit"
+msgstr ""
+"<i class=\"fa fa-edit\"/>\n"
+"                        تعديل"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_kanban
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr ""
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<small class=\"text-right\">Status :</small>"
+msgstr "<small class=\"text-right\">الحالة :</small>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "<small>APPOINT/</small>"
+msgstr "<small>تعيين/</small>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                    <i class=\"fa fa-suitcase\"/>\n"
+"                                                                    Work Experience:\n"
+"                                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                                    <i class=\"fa fa-suitcase\"/>\n"
+"                                                                    الخبرة العملية:\n"
+"                                                                </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                <i class=\"fa fa-clock-o\"/>\n"
+"                                                                Duration:\n"
+"                                                            </span>"
+msgstr ""
+"<span>\n"
+"                                                                <i class=\"fa fa-clock-o\"/>\n"
+"                                                                المدة:\n"
+"                                                            </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                <i class=\"fa fa-money\"/>\n"
+"                                                                Appointment Charge:\n"
+"                                                            </span>"
+msgstr ""
+"<span>\n"
+"                                                                <i class=\"fa fa-money\"/>\n"
+"                                                                رسوم الموعد:\n"
+"                                                            </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "<span> - </span>"
+msgstr "<span> - </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span> days</span>"
+msgstr "<span> أيام</span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span> hours before</span>"
+msgstr "<span> ساعات قبل</span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span> hours</span>"
+msgstr "<span> ساعات</span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "<span>-</span>"
+msgstr "<span>-</span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+msgid "<span>Hour</span>"
+msgstr "<span>ساعة</span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span>and not after </span>"
+msgstr "<span>و ليس بعد </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span>at least </span>"
+msgstr "<span>على الأقل </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "<span>until </span>"
+msgstr "<span>حتى </span>"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Charge</strong>:"
+msgstr "<strong class=\"col-lg-3\">رسوم الموعد</strong>:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Time</strong>:"
+msgstr "<strong class=\"col-lg-3\">وقت الموعد</strong>:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Type</strong>:"
+msgstr "<strong class=\"col-lg-3\">نوع الموعد</strong>:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment With</strong>:"
+msgstr "<strong class=\"col-lg-3\">الموعد مع</strong>:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Date of Appointment</strong>:"
+msgstr "<strong class=\"col-lg-3\">تاريخ الموعد</strong>:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "<strong>Your appointment has been successfully booked!</strong>"
+msgstr "<strong>تم حجز موعدك بنجاح!</strong>"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__access_token
+msgid "Access Token"
+msgstr "رمز الوصول"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__address_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Address"
+msgstr "العنوان"
+
+#. module: doctor_appointment_booking_axis
+#: model:res.groups,name:doctor_appointment_booking_axis.group_helpdesk_admin
+msgid "Administrator"
+msgstr "المدير"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.all_appointments
+msgid "All Appointments"
+msgstr "جميع المواعيد"
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Allow Cancelling"
+msgstr "السماح بالإلغاء"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.calendar_appointment_type_action
+msgid ""
+"Allow your customers to book an appointment on your website\n"
+"                by creating appointment types here."
+msgstr ""
+"اسمح لعملائك بحجز موعد على موقعك الإلكتروني\n"
+"                من خلال إنشاء أنواع المواعيد هنا."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__name
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_answer_view_form
+msgid "Answer"
+msgstr "إجابة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.action_appointment_source_n
+msgid "Appoinment Source"
+msgstr "مصدر الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__appoint_product_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__appoint_product_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__appoint_product_id
+msgid "Appointee Product"
+msgstr "منتج المعين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__appoint_person_id
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointees
+msgid "Appointees"
+msgstr "المعينين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointees_group
+msgid "Appointees Group"
+msgstr "مجموعة المعينين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointment_timeslot
+msgid "Appointees TimeSlot"
+msgstr "الفترات الزمنية للمعينين"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointment_booking
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointment_menu
+#: model:website.menu,name:doctor_appointment_booking_axis.menu_appointment
+#, python-format
+msgid "Appointment"
+msgstr "موعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__appointment_duration
+msgid "Appointment Duration"
+msgstr "مدة الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_axis.action_appointment_group
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__appointment_group_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__appointment_group_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__appointment_group_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__appointment_group_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__appointment_group_ids
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.action_appointment_group
+msgid "Appointment Group"
+msgstr "مجموعة الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Appointment Id"
+msgstr "معرف الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Appointment Introduction"
+msgstr "مقدمة الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointmet_source_tree
+msgid "Appointment Person Source Tree"
+msgstr "شجرة مصدر شخص الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_axis.action_appointment_source_n
+msgid "Appointment Source"
+msgstr "مصدر الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_axis.action_appointment_timeslot
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointment_time_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointmet_time_tree
+msgid "Appointment TimeSlot"
+msgstr "الفترة الزمنية للموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__appointment_type_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__appointment_type_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__appointment_type
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__appointment_type
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__appointment_type
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_tree
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Appointment Type"
+msgstr "نوع الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Appointment With"
+msgstr "الموعد مع"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Appointment:"
+msgstr "الموعد:"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_my_home_appointment
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_all_appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_all_appointmet_tree
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointment_group_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointmet_group_tree
+#, python-format
+msgid "Appointments"
+msgstr "المواعيد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_calendar_event_search
+msgid "Approved Appointment"
+msgstr "الموعد المعتمد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__assignation_method
+msgid "Assignation Method"
+msgstr "طريقة التعيين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.abcd_tree_view
+msgid "Attendee"
+msgstr "الحاضر"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Attendees:"
+msgstr "الحاضرون:"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__slot_ids
+msgid "Availabilities"
+msgstr "التوافرات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__answer_ids
+msgid "Available Answers"
+msgstr "الإجابات المتاحة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Available Employees"
+msgstr "الموظفون المتاحون"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.address_on_payment_inherit
+msgid "Billing"
+msgstr "الفوترة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.action_new_appointment
+msgid "Book Appointment"
+msgstr "حجز موعد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.website_configuration_add_logo
+msgid "Booking"
+msgstr "الحجز"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.module.category,name:doctor_appointment_booking_axis.module_category_appointment
+msgid "Calendar"
+msgstr "التقويم"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_calendar_event
+msgid "Calendar Event"
+msgstr "فعالية التقويم"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__can_publish
+msgid "Can Publish"
+msgstr "يمكن النشر"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__min_cancellation_hours
+msgid "Cancel Before (hours)"
+msgstr "إلغاء قبل (ساعات)"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Charge"
+msgstr "الرسوم"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_all_appointment_form
+msgid "Charges"
+msgstr "الرسوم"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.website_configuration_add_logo
+msgid ""
+"Check this field when you want Single Booking on a single slot and \n"
+"                                    <br/>\n"
+"                                    Uncheck this field when you want Multiple Booking on a single slot."
+msgstr ""
+"حدد هذا الحقل إذا كنت تريد حجزًا واحدًا في فترة زمنية واحدة \n"
+"                                    <br/>\n"
+"                                    قم بإلغاء تحديد هذا الحقل إذا كنت تريد حجوزات متعددة في فترة زمنية واحدة."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_question__question_type__checkbox
+msgid "Checkboxes (multiple answers)"
+msgstr "مربعات اختيار (إجابات متعددة)"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_type__assignation_method__chosen
+msgid "Chosen by the Customer"
+msgstr "مختار من قبل العميل"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "City"
+msgstr "المدينة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_confirmation
+msgid "Confirmation Message"
+msgstr "رسالة التأكيد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_all_appointment_form
+msgid "Contact & Address"
+msgstr "جهة الاتصال و العنوان"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Contact / Address"
+msgstr "جهة الاتصال / العنوان"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Contact Name"
+msgstr "اسم جهة الاتصال"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Contacts & Addresses"
+msgstr "جهات الاتصال والعناوين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__country_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__country_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__country_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Country"
+msgstr "الدولة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__create_date
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.calendar_appointment_type_action
+msgid "Create a new appointment type"
+msgstr "إنشاء نوع جديد من الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__customer
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__partner_id
+msgid "Customer"
+msgstr "العميل"
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Date &amp; Time"
+msgstr "التاريخ والوقت"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__day
+msgid "Day"
+msgstr "اليوم"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Delivery"
+msgstr "التسليم"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__description
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__description
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_prduct_template_form_inherit
+msgid "Description"
+msgstr "الوصف"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Description:"
+msgstr "الوصف:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.abcd_tree_view
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Doctor"
+msgstr "الطبيب"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__doctore_id
+msgid "Doctore"
+msgstr "الطبيب"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_question__question_type__select
+msgid "Dropdown (one answer)"
+msgstr "قائمة منسدلة (إجابة واحدة)"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Duration:"
+msgstr "المدة:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_kanban
+msgid "Edit"
+msgstr "تحرير"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__email_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__employee_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "End Appointment (0:00 - 24:00)"
+msgstr "نهاية الموعد (0:00 - 24:00)"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__end_time
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__end_time
+msgid "End Time"
+msgstr "وقت النهاية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__end_date
+msgid "Ending Hour"
+msgstr "ساعة النهاية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "First Name"
+msgstr "الاسم الأول"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين (الشركاء)"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Fri"
+msgstr "الجمعة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__friday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__5
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.hr_employee_inherit_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "General Information"
+msgstr "معلومات عامة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_appointment_group_form
+msgid "Group Members"
+msgstr "أعضاء المجموعة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__name
+msgid "Group Name"
+msgstr "اسم المجموعة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__product_template_id
+msgid "Group Product"
+msgstr "منتج المجموعة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Hours"
+msgstr "ساعات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__assignation_method
+msgid ""
+"How employees will be assigned to meetings customers book on your website."
+msgstr ""
+"كيفية تعيين الموظفين للاجتماعات التي يحجزها العملاء على موقعك."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، الرسائل الجديدة تتطلب اهتمامك."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_error
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، بعض الرسائل بها خطأ في التسليم."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Individual Appointment Link"
+msgstr "رابط موعد فردي"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Internal notes..."
+msgstr "ملاحظات داخلية..."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_intro
+msgid "Introduction Message"
+msgstr "رسالة المقدمة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__is_published
+msgid "Is Published"
+msgstr "منشور"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_company__is_single_booking
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_config_settings__is_single_booking
+msgid "Is Single Booking"
+msgstr "حجز فردي"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__country_ids
+msgid ""
+"Keep empty to allow visitors from any country, otherwise you only allow "
+"visitors from selected countries"
+msgstr ""
+"اتركه فارغًا للسماح للزوار من أي بلد، وإلا ستسمح فقط للزوار من الدول المختارة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Last Name"
+msgstr "الاسم الأخير"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__full_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__last_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__full_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__last_name
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Last name"
+msgstr "الاسم الأخير"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__location
+msgid "Location"
+msgstr "الموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__location
+msgid "Location of the appointments"
+msgstr "موقع المواعيد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Location:"
+msgstr "الموقع:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Locations"
+msgstr "المواقع"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Logo"
+msgstr "الشعار"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Misc"
+msgstr "متفرقات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__mobile_number
+msgid "Mobile Number"
+msgstr "رقم الجوال"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Mobile:"
+msgstr "الجوال:"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Mon"
+msgstr "الاثنين"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__monday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__1
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Monthly Appointments"
+msgstr "المواعيد الشهرية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_question__question_type__text
+msgid "Multi-line text"
+msgstr "نص متعدد الأسطر"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.new_appointment
+msgid "New Appointment"
+msgstr "موعد جديد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_axis.action_new_appointment
+msgid "New Appointment Book"
+msgstr "سجل موعد جديد"
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Newest"
+msgstr "الأحدث"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__appointment_type_id
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.calendar_appointment_type_menu_action
+msgid "Online Appointment"
+msgstr "موعد عبر الإنترنت"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_calendar_appointment_answer
+msgid "Online Appointment : Answers"
+msgstr "موعد عبر الإنترنت: الإجابات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_calendar_appointment_question
+msgid "Online Appointment : Questions"
+msgstr "موعد عبر الإنترنت: الأسئلة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_calendar_appointment_slot
+msgid "Online Appointment : Time Slot"
+msgstr "موعد عبر الإنترنت: الفترة الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_calendar_appointment_type
+msgid "Online Appointment Type"
+msgstr "نوع الموعد عبر الإنترنت"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_axis.calendar_appointment_type_action
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointment_type_menu
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.website_appointment_type_menu
+msgid "Online Appointments"
+msgstr "المواعيد عبر الإنترنت"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot_available
+msgid "Oops!! No Slots Available For this Appointees."
+msgstr "عذرًا!! لا توجد فترات زمنية متاحة لهؤلاء المعينين."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_all_appointment_form
+msgid "Other Info"
+msgstr "معلومات أخرى"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Patients"
+msgstr "المرضى"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Pending"
+msgstr "معلق"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_calendar_event_search
+msgid "Pending Appointment"
+msgstr "موعد معلق"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Phone:"
+msgstr "الهاتف:"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__placeholder
+msgid "Placeholder"
+msgstr "النص التوضيحي"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/models/calendar_appointment.py:0
+#, python-format
+msgid "Please enter a valid hour between 0:00 to 24:00 for your slots."
+msgstr "يرجى إدخال ساعة صحيحة بين 0:00 و 24:00 لفتراتك الزمنية."
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__price_unit
+msgid "Price Unit"
+msgstr "وحدة السعر"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__pricelist_id
+msgid "Pricelist"
+msgstr "قائمة الأسعار"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Provider"
+msgstr "المزود"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Purchase"
+msgstr "الشراء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__name
+msgid "Question"
+msgstr "السؤال"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__question_type
+msgid "Question Type"
+msgstr "نوع السؤال"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_answer__question_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__question_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Questions"
+msgstr "الأسئلة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_question__question_type__radio
+msgid "Radio (one answer)"
+msgstr "زر اختيار (إجابة واحدة)"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_type__assignation_method__random
+msgid "Random"
+msgstr "عشوائي"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_calendar_event_search
+msgid "Rejected Appointment"
+msgstr "موعد مرفوض"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__reminder_ids
+msgid "Reminders"
+msgstr "التذكيرات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__question_required
+msgid "Required Answer"
+msgstr "إجابة مطلوبة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__country_ids
+msgid "Restrict Countries"
+msgstr "تقييد البلدان"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_kanban
+msgid "SCHEDULED"
+msgstr "مجدول"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__is_seo_optimized
+msgid "SEO optimized"
+msgstr "محسن لمحركات البحث"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: doctor_appointment_booking_axis
+#: model:calendar.alarm,name:doctor_appointment_booking_axis.calendar_alarm_data_1h_sms
+msgid "SMS Text Message - 1 Hours"
+msgstr "رسالة نصية قصيرة - قبل ساعة واحدة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Sales"
+msgstr "المبيعات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Sales & Purchase"
+msgstr "المبيعات والشراء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Salesperson"
+msgstr "مندوب المبيعات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Sat"
+msgstr "السبت"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__saturday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__6
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Schedule Appointment"
+msgstr "جدولة موعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__min_schedule_hours
+msgid "Schedule before (hours)"
+msgstr "الجدولة قبل (ساعات)"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__max_schedule_days
+msgid "Schedule not after (days)"
+msgstr "الجدولة ليست بعد (أيام)"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Scheduling & Availability"
+msgstr "الجدولة والتوافر"
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Search <span class=\"nolabel\"> (in Content)</span>"
+msgstr "بحث <span class=\"nolabel\"> (في المحتوى)</span>"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Search ID"
+msgstr "معرف البحث"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Search in All"
+msgstr "بحث في الكل"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Search in Customer"
+msgstr "بحث في العميل"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Search in Messages"
+msgstr "بحث في الرسائل"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+msgid "Select"
+msgstr "اختر"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__seo_name
+msgid "Seo name"
+msgstr "اسم تحسين محركات البحث"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_question__sequence
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+#, python-format
+msgid "Services"
+msgstr "الخدمات"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_question__question_type__char
+msgid "Single line text"
+msgstr "نص سطر واحد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__slot_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__slot_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__slot_ids
+msgid "Slot"
+msgstr "الفتحة الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Slots"
+msgstr "الفتحات الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__source
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_source__name
+msgid "Source"
+msgstr "المصدر"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__specialist
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__specialist
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__specialist
+msgid "Specialist"
+msgstr "الأخصائي"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__start_at
+msgid "Start At"
+msgstr "يبدأ في"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_timeslot__start_time
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__start_time
+msgid "Start Time"
+msgstr "وقت البدء"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "Starting Appointment (0:00 - 24:00)"
+msgstr "بداية الموعد (0:00 - 24:00)"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__hour
+msgid "Starting Hour"
+msgstr "ساعة البدء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment_group__state_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "State"
+msgstr "الولاية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "Status"
+msgstr "الحالة"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Street 2..."
+msgstr "الشارع 2..."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: doctor_appointment_booking_axis
+#. odoo-python
+#: code:addons/doctor_appointment_booking_axis/controllers/main.py:0
+#, python-format
+msgid "Subject"
+msgstr "الموضوع"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__price_subtotal
+msgid "Subtotal"
+msgstr "الإجمالي الفرعي"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Sun"
+msgstr "الأحد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__sunday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__7
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__tax_id
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__website_url
+msgid "The full URL to access the document through the website."
+msgstr "الرابط الكامل للوصول إلى المستند عبر الموقع الإلكتروني."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "There are currently no Appointments for your account."
+msgstr "لا توجد مواعيد لحسابك حاليًا."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+msgid "There are no records."
+msgstr "لا توجد سجلات."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_prduct_template_form_inherit
+msgid "This note is only for internal purposes."
+msgstr "هذه الملاحظة للأغراض الداخلية فقط."
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Thu"
+msgstr "الخميس"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__thursday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__4
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_appointment__time_slot
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_axis.action_appointment_timeslot
+msgid "Time Slot"
+msgstr "الفترة الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.portal_appointment_layout
+msgid "TimeSlot"
+msgstr "الفترة الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.hr_employee_inherit_form
+msgid "Timeslots"
+msgstr "الفترات الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__appointment_tz
+msgid "Timezone"
+msgstr "المنطقة الزمنية"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__appointment_tz
+msgid "Timezone where appointment take place"
+msgstr "المنطقة الزمنية حيث يتم الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__title
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__title
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__title
+msgid "Title"
+msgstr "اللقب"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Today"
+msgstr "اليوم"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_calendar_event_search
+msgid "Today Appointment"
+msgstr "موعد اليوم"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Tue"
+msgstr "الثلاثاء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__tuesday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__2
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: doctor_appointment_booking_axis
+#: model:res.groups,name:doctor_appointment_booking_axis.group_helpdesk_manager
+msgid "User: All Document"
+msgstr "المستخدم: كل الوثائق"
+
+#. module: doctor_appointment_booking_axis
+#: model:res.groups,name:doctor_appointment_booking_axis.group_helpdesk_user
+msgid "User: Own Appointments Only"
+msgstr "المستخدم: مواعيده فقط"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_published
+msgid "Visible on current website"
+msgstr "مرئي على الموقع الحالي"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_url
+msgid "Website URL"
+msgstr "رابط الموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_axis.field_calendar_appointment_type__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ الاتصال بالموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_meta_description
+msgid "Website meta description"
+msgstr "وصف الميتا للموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "الكلمات الرئيسية لميتا الموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_meta_title
+msgid "Website meta title"
+msgstr "عنوان ميتا للموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_type__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "صورة OpenGraph للموقع"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+msgid "Wed"
+msgstr "الأربعاء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__appointment_timeslot__day__wednesday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_axis.selection__calendar_appointment_slot__weekday__3
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_appointment_slot__weekday
+msgid "Week Day"
+msgstr "يوم الأسبوع"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Weekly Appointments"
+msgstr "المواعيد الأسبوعية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "When:"
+msgstr "متى:"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_hr_employee__work_exp
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_partner__work_exp
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_res_users__work_exp
+msgid "Work Experience"
+msgstr "الخبرة العملية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Your Country"
+msgstr "بلدك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Your Email"
+msgstr "بريدك الإلكتروني"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Your Message"
+msgstr "رسالتك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+msgid "Your Phone"
+msgstr "هاتفك"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "Your appointment is in less than"
+msgstr "موعدك خلال أقل من"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_appointment
+msgid "appointment"
+msgstr "الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_appointment_group
+msgid "appointment.group"
+msgstr "مجموعة الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_appointment_source
+msgid "appointment_source"
+msgstr "مصدر الموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model,name:doctor_appointment_booking_axis.model_appointment_timeslot
+msgid "appointment_timeslot"
+msgstr "الفترة الزمنية للموعد"
+
+#. module: doctor_appointment_booking_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_axis.field_calendar_event__partner_new
+msgid "attendee"
+msgstr "الحضور"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.hr_employee_inherit_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "e.g. 1-2 years"
+msgstr "مثال: 1-2 سنوات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "e.g. Mr."
+msgstr "مثال: السيد"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "e.g. Sales Director"
+msgstr "مثال: مدير المبيعات"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_form
+msgid "e.g. Schedule a demo"
+msgstr "مثال: جدولة عرض توضيحي"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "hours from now!"
+msgstr "ساعات من الآن!"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.calendar_appointment_type_view_kanban
+msgid "of"
+msgstr "من"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.view_partner_form_inherit
+msgid "rec_value"
+msgstr "قيمة التوصية"
+
+#. module: doctor_appointment_booking_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_confirm
+msgid "with"
+msgstr "مع"
+#. module: doctor_appointment_booking_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.configuration
+msgid "Configuration"
+msgstr "اﻷعدادات"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: model:ir.actions.client,name:doctor_appointment_booking_axis.appointment_dashboard_action
+#: model:ir.ui.menu,name:doctor_appointment_booking_axis.appointment_dashboard_menu
+#, python-format
+msgid "Appointment Dashboard"
+msgstr "لوح البيانات"
+
+#. module: doctor_appointment_booking_axis
+#. odoo-javascript
+#: code:addons/doctor_appointment_booking_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_axis.slot
+#, python-format
+msgid "Complete"
+msgstr "مكتمل"

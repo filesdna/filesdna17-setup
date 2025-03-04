@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+
+        <!-- Cron Pass Email template  -->
+        <record id="cron_pass_email_template" model="mail.template">
+            <field name="name">Cron Pass Email</field>
+            <field name="subject">Cron Status of - {{ (object.name) }}</field>
+            <field name="email_to">{{ (object.get_email_to()) }}</field>
+            <field name="report_template" ref="action_report_success_cron" />
+            <field name="model_id" ref="pragtech_cron_tracking.model_ir_cron" />
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear
+                        <t t-if="object.user_id">
+                            <t t-out="object.user_id.name or ''"></t>
+                        </t>
+                        <t t-else="">
+                            Support team,
+                        </t>
+                        <br /><br />
+
+                        <b>Cron Name:</b>
+                        <t t-out="object.cron_name or ''"></t>
+                        <br /><br />
+
+                        <b>Start Date:</b>
+                        <t t-out="object.start_date or ''"></t>
+                        <br /><br />
+
+                        <b>End Date:</b>
+                        <t t-out="object.end_date or ''"></t>
+                        <br /><br />
+
+                        <b>Total Time Taken (in seconds):</b>
+                        <t t-out="object.total_time_taken or ''"></t>
+                        <br /><br />
+                        <b>Last Cron Date Executed:</b>
+                        <t t-out="object.last_cron_date or ''"></t>
+                        <br /><br />
+                        <b>Status:</b>
+                            Success
+                        <br /><br />
+                    </p>
+                </div>
+            </field>
+        </record>
+
+        <!-- Cron Fail Email template  -->
+        <record id="cron_fail_email_template" model="mail.template">
+            <field name="name">Cron Fail Email</field>
+            <field name="subject">Cron Status of - {{ (object.name) }}</field>
+            <field name="email_to">{{ (object.get_email_to()) }}</field>
+            <field name="report_template" ref="action_report_failed_cron" />
+            <field name="model_id" ref="pragtech_cron_tracking.model_cron_error_log" />
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear
+                        <t t-if="object.user_id">
+                            <t t-out="object.user_id.name or ''"></t>
+                        </t>
+                        <t t-else="">
+                            Support team,
+                        </t>
+                        <br /><br />
+
+                        <b>Cron Name:</b>
+                        <t t-out="object.name or ''"></t>
+                        <br /><br />
+
+                        <b>Status:</b>
+                            Failed
+                        <br /><br />
+
+                        <b>Cron Execution Date:</b> <t t-out="object.exec_date or ''"></t>
+                        <br />
+                        <br />
+
+                        <b>Error Details:</b>
+                        <br />
+                        <t t-out="object.error_details or ''"></t>
+                        <br /><br />
+                    </p>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

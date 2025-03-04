@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+      <template id="event_time" inherit_id="website_event.index_topbar" name="Filter by Date">
+        <xpath expr="." position="replace">
+            <xpath expr="//div[hasclass('o_wevent_search')]" position="before">
+              <!-- <div class="dropdown d-none d-lg-block">
+                  <a href="#" role="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" title="Filter by Date">
+                      <t t-if="current_date" t-out="current_date"/>
+                      <t t-else="">Upcoming Events</t>
+                  </a>
+                  <div class="dropdown-menu">
+                      <t t-foreach="dates" t-as="date">
+                          <t t-if="date[3] or (date[0] in ('old','upcoming','all'))">
+                              <t t-set="is_active" t-value="searches.get('date') == date[0]"/>
+                              <a t-att-href="keep('/event', date=date[0])" t-attf-class="dropdown-item d-flex align-items-center justify-content-between #{is_active and 'active'}">
+                                  <t t-out="date[1]"/>
+                                  <span t-if="date[3]" t-out="date[3]" t-attf-class="badge rounded-pill ms-3 #{is_active and 'text-bg-light' or 'text-bg-primary'}"/>
+                              </a>
+                          </t>
+                      </t>
+                  </div>
+              </div> -->
+            </xpath>
+              <xpath expr="//span[hasclass('o_wevent_offcanvas_date')]" position="replace">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                      <button class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target=".o_wevent_offcanvas_date"
+                          aria-expanded="false"
+                          aria-controls="o_wevent_offcanvas_date">
+                          Date
+                      </button>
+                  </h2>
+                  <div id="o_wevent_offcanvas_date" class="o_wevent_offcanvas_date accordion-collapse collapse" aria-labelledby="offcanvas_date">
+                      <div class="accordion-body pt-0">
+                          <ul class="list-group list-group-flush">
+                              <t t-foreach="dates" t-as="date">
+                                  <li t-if="date[3] or (date[0] in ('old','upcoming','all'))" class="list-group-item px-0 border-0">
+                                      <t t-set="is_active" t-value="searches.get('date') == date[0]"/>
+                                      <a t-att-href="keep('/event', date=date[0])" class="d-flex align-items-center justify-content-between text-reset text-decoration-none" t-att-title="date[1]">
+                                          <div class="form-check flex-basis-100">
+                                              <input class="form-check-input pe-none" type="radio" t-attf-name="#{date[1]}" t-att-checked="is_active"/>
+                                              <label class="form-check-label" t-attf-for="#{date[1]}" t-out="date[1]"/>
+                                          </div>
+                                          <span t-if="date[3]" t-out="date[3]" class="badge rounded-pill text-bg-light"/>
+                                      </a>
+                                  </li>
+                              </t>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </xpath>
+        </xpath>
+      </template>
+    </data>
+</odoo>

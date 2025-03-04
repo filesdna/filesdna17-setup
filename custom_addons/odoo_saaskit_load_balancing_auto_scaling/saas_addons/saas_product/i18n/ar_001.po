@@ -1,0 +1,796 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saas_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-29 14:37+0000\n"
+"PO-Revision-Date: 2023-04-09 02:10+0300\n"
+"Last-Translator: azzmda@gmail.com\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: saas_product
+#: model:mail.template,body_html:saas_product.saas_user_increase_notification_template
+msgid ""
+"\n"
+"            \n"
+"\t\t   Hello <br/>\n"
+"        <p>This is to update you that, {} has recently {} the number of users  for {} Instance  by {} on {}.</p><br/>\n"
+"\n"
+"        \n"
+"        Regards\n"
+"        Thank-you!\n"
+"\t    \n"
+"\t  "
+msgstr ""
+"\n"
+"            \n"
+"\t\t   السلام عليكم <br/>\n"
+"        <p>نود إشعارك بأن {} حالياً{} عدد المستخدمين  لاشتراكك {}  بعدد {} في {}.</p><br/>\n"
+"\n"
+"        \n"
+"        مع تحيات ستريم\n"
+"        شكراً لكم!\n"
+"\t    \n"
+"\t  "
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/product_template.js:0
+#, fuzzy, python-format
+msgid " Apps"
+msgstr "التطبيقات"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"(\n"
+"                                                <i>Sub domain name</i>\n"
+"                                                )"
+msgstr ""
+"(\n"
+"                                                <i>رابط الاشتراك/الدومين الفرعي</i>\n"
+"                                                )"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "*Pricing Rule"
+msgstr "*قاعدة التسعير"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "--Select Payment Basis--"
+msgstr "- اختر طريقة الدفع -"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "/shop/payment"
+msgstr "/متجر/الدفع"
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/product_template.js:0 model_terms:ir.ui.view,arch_db:saas_product.saas_index
+#, python-format
+msgid "0 Apps"
+msgstr "0 التطبيقات"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<b>Countries:</b>"
+msgstr "<b>الدول:</b>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<b>Industries:</b>"
+msgstr "<b>المجالات:</b>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<b>Total</b>"
+msgstr "<b>الإجمالي</b>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<b>Total</b>\n"
+"                                                                / month"
+msgstr ""
+"<b>الإجمالي</b>\n"
+"                                                                / شهرياً"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<b>Total</b>\n"
+"                                                                / year"
+msgstr ""
+"<b>الإجمالي</b>\n"
+"                                                                / سنوياً"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<span id=\"user_alert\" style=\"color:red\" type=\"hidden\">Resultant user count can not be 0</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<span id=\"user_count_alert\" style=\"color:red\" type=\"hidden\">You have more number of active users, Please deactivate them.</span>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<span id=\"user_alert\" style=\"color:red\" type=\"hidden\">ناتج عدد المستخدمين لا يمكن أن يساوي 0</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<span id=\"user_count_alert\" style=\"color:red\" type=\"hidden\">لديك عدد أكثر من المستخدمين النشطين، الرجاء إلغاء تنشيطهم.</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"all_total\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"apps_price\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid ""
+"<span id=\"decrease_user_note\" style=\"color:green\" type=\"hidden\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tDecreasing users will not transfer any credit to customer.<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tWe will raise an invoice with updated number of users in next billing cycle.\n"
+"\t\t\t\t\t\t\t\t\t\t\t</span>"
+msgstr ""
+"<span id=\"decrease_user_note\" style=\"color:green\" type=\"hidden\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tفي حالة خفض عدد المستخدمين لن يتم ارجاع أي مبالغ على للمشترك.<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tسيتم تعديل الفاتورة على حسب عدد المستخدمين في الدورة التالية للفاتورة.\n"
+"\t\t\t\t\t\t\t\t\t\t\t</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"m_all_total\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"m_apps_price\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"m_num_users\">1</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"num_users\">1</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"topup_all_total\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"topup_apps_price\">0.00</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"topup_text\">Top-up</span>"
+msgstr "<span id=\"topup_text\">إضافة</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span id=\"topup_users\">1</span>"
+msgstr ""
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "<span style=\"color:red; font-style: italic; font-size: 12px; margin-left: 10px;\">(Deactivated)</span>"
+msgstr "<span style=\"color:red; font-style: italic; font-size: 12px; margin-left:10px;\">(غير مفعّل)</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<span>\n"
+"                                                                    Users\n"
+"                                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                                    المستخدمين\n"
+"                                                                </span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "<span> Psuedo User(Tenant Admin User)</span>"
+msgstr "<span> المستخدم الرئيسي (مدير الاشتراك)</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span>/month</span>"
+msgstr "<span>/شهر</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "<span>Confirmed</span>"
+msgstr "<span>مؤكد</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span>New Instance</span>"
+msgstr "<span>اشتراك جديد</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "<span>Order</span>"
+msgstr "<span>طلب</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<span>Users</span>"
+msgstr "<span>المستخدمون</span>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<strong>\n"
+"                                                        Instance Name\n"
+"                                                    </strong>"
+msgstr ""
+"<strong>\n"
+"                                                        رقم الجوال بدون رمز الدولة\n"
+"                                                    </strong>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<strong>\n"
+"                                                Select your Instance\n"
+"                                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                                حدد اشتراكك\n"
+"                                            </strong>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"<strong>Billing Frequency</strong>\n"
+"                                        <br/>"
+msgstr ""
+"<strong>شهري أو سنوي؟</strong>\n"
+"                                        <br/>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<strong>Language</strong>"
+msgstr "<strong>لغة البرنامج</strong>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid ""
+"<strong>No suitable payment option could be found.</strong>\n"
+"                            <br/>\n"
+"                            If you believe that it is an error, please contact the website administrator."
+msgstr "<strong>لم يوجد خيار دفع مناسب.</strong><br/> إذا كنت تعتقد أن هذا خطأ ، فيرجى التواصل معنا."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<strong>No. of Users</strong>"
+msgstr "<strong>عدد المستخدمين</strong>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "<strong>Please Create a New Tenant</strong>"
+msgstr "<strong>الرجاء إنشاء مشترك جديد</strong>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_dbs
+msgid "Active Instances"
+msgstr "اشتراكات نشطة"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Add more"
+msgstr "أضف المزيد"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Anually = 12 months"
+msgstr "السنوي = 12 شهر"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Apps"
+msgstr "تطبيقات"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Confirm Order"
+msgstr "أكد الطلب"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid ""
+"Confirm Order\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"أكد الطلب\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: saas_product
+#: model:ir.model,name:saas_product.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Continue with"
+msgstr "استمر بـ"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_sale_order__db_space
+msgid "DB space"
+msgstr "مساحة قاعدة الاشتراك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Days Trial"
+msgstr "يوم تجريبية"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Decrease User"
+msgstr "خفض عدد المستخدمين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Enter No. of users to add"
+msgstr "أدخل عدد المستخدمين المراد إضافتهم"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Enter No. of users to decrease"
+msgstr "أدخل عدد المستخدمين المطلوب"
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/manage_database.js:0
+#, python-format
+msgid "Error"
+msgstr "خطأ"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Expiry Date :"
+msgstr "تاريخ الانتهاء:"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.payment_tokens_list_saas
+#, fuzzy
+msgid "Fees"
+msgstr "الرسوم"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_sale_order__filestore_space
+msgid "Filestore space"
+msgstr "مساحة التخزين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Grow your Business with Us"
+msgstr "افتح آفاق جديدة لأعمالك"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_res_config_settings__hide_topup
+msgid "Hide Top Up Option"
+msgstr "إخفاء خيار التعديل على الباقة"
+
+#. module: saas_product
+#: model:ir.model.fields,help:saas_product.field_res_config_settings__show_product_filter
+msgid "If set True, It will Show filter for products on website"
+msgstr "إذا تم تعيين True ، فسيتم إظهار عامل التصفية للمنتجات على موقع الويب"
+
+#. module: saas_product
+#: model:ir.model.fields,help:saas_product.field_res_config_settings__hide_topup
+msgid "If set True, it will hide the option of 'Top-up' on the saasmaster website"
+msgstr "إذا تم تعيين True ، فسيتم إخفاء خيار 'التعديل على الباقة' على موقع الويب"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "If you already have an Instance you can install/add top up products into it"
+msgstr "إذا كان لديك اشتراك مسبق، فيمكنك تفعيل/تعديل المميزات والباقة"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_dbs
+msgid "In Grace Period"
+msgstr "في فترة المهلة"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_dbs
+msgid "Inactive Instances"
+msgstr "اشتراكات غير نشطة"
+
+#. module: saas_product
+#. odoo-python
+#: code:addons/saas_product/models/sale_order.py:0
+#, python-format
+msgid "It is forbidden to modify a sales order which is not in draft status."
+msgstr "لا يمكن تعديل أمر المبيعات إذا كانت غير مسودة."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Language"
+msgstr "اللغة"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.my_account_link
+msgid "My Instances"
+msgstr "اشراكاتي"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "No Products to display"
+msgstr "لا توجد منتجات لعرضها"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "No. of Users to be add into the tenant Instance"
+msgstr "عدد المستخدمين المراد إضافتهم إلى الاشتراك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Number of Users"
+msgstr "عدد المستخدمين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Number of Users :"
+msgstr "عدد المستخدمين:"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Order Summary"
+msgstr "ملخص الطلب"
+
+#. module: saas_product
+#: model:ir.model,name:saas_product.model_mail_mail
+msgid "Outgoing Mails"
+msgstr "الرسائل الصادرة"
+
+#. module: saas_product
+#: model:ir.model,name:saas_product.model_res_config_settings
+msgid "Path for odoorc file for bare tenant"
+msgstr "مسار ملف إعدادات السيرفر للمشتركين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Pay Now"
+msgstr "ادفع الآن"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid ""
+"Pay Now\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"ادفع الآن\n"
+"                                    <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Pay with"
+msgstr "ادفع عن طريق"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+msgid ""
+"Payment failed for\n"
+"                                    filestore space creation topup"
+msgstr ""
+"فشل الدفع لـ\n"
+"                                    تعديل مساحة التخزين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+msgid ""
+"Payment failed for Database\n"
+"                                    creation Failed."
+msgstr ""
+"فشل الدفع لقاعدة البيانات\n"
+"                                    فشل الإنشاء."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+#, fuzzy
+msgid "Payment failed for adding database space topup"
+msgstr "فشل الدفع لإضافة زيادة مساحة قاعدة البيانات"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+#, fuzzy
+msgid "Payment failed for user creation topup"
+msgstr "فشل الدفع مقابل إنشاء المستخدم"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Price"
+msgstr "السعر"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Price = Product Price * months * Users"
+msgstr "السعر=سعر المنتج × شهور × المستخدمون"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid ""
+"Proceed\n"
+"                                                        to Confirm"
+msgstr "التالي"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Product"
+msgstr "المنتج"
+
+#. module: saas_product
+#: model:ir.model,name:saas_product.model_product_product
+msgid "Product Variant"
+msgstr "موديل المنتج"
+
+#. module: saas_product
+#. odoo-python
+#: code:addons/saas_product/models/sale_order.py:0
+#, fuzzy, python-format
+msgid "Product prices have been recomputed according to pricelist <b>%s<b> "
+msgstr "تمت إعادة إحتساب أسعار المنتجات وفقًا لقائمة الأسعار <b>%s</b>"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Saas Database Details"
+msgstr "تفاصيل الاشتراك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_dbs
+msgid "Saas Databases"
+msgstr "الاشتراكات"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Saas Website"
+msgstr "ستريم"
+
+#. module: saas_product
+#: model:ir.model,name:saas_product.model_sale_order
+msgid "Sales Order"
+msgstr "الطلب"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.payment_tokens_list_saas
+#, fuzzy
+msgid "Save my payment details"
+msgstr "حفظ بيانات السداد"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Search"
+msgstr "بحث"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Search Country..."
+msgstr "البحث عن الدولة..."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Search Industry..."
+msgstr "البحث عن النشاط ..."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "Search Language..."
+msgstr "لغة البحث ..."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Select Payment Basis:"
+msgstr "حدد طريقة الدفع:"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_res_partner__seq_no model:ir.model.fields,field_description:saas_product.field_res_users__seq_no
+msgid "Seq No"
+msgstr "رقم التسلسل"
+
+#. module: saas_product
+#: model:ir.model.fields,help:saas_product.field_res_config_settings__user_product
+msgid "Set the path of Custom modules on Odoo server"
+msgstr "حدد مسار التطبيقات على السيرفر"
+
+#. module: saas_product
+#: model:website.menu,name:saas_product.website_menu1
+msgid "Shop"
+msgstr "المتجر"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+msgid "Shop - Cancelled"
+msgstr "المتجر - تم الإلغاء"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "Shop - Confirmed"
+msgstr "المتجر - مؤكد"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_res_config_settings__show_product_filter
+msgid "Show Product Filter"
+msgstr "عرض تصفية المنتجات"
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/product_template.js:0
+#, python-format
+msgid "Sorry ! You can not purchase two or more packages in one Order. You may select additional individual products instead."
+msgstr "عذراً! لا يمكنك إضافة باقتين أو أكثر في طلب واحد. ويمكنك اختيار منتجات مفردة إضافية بدلا من ذلك."
+
+#. module: saas_product
+#. odoo-python
+#: code:addons/saas_product/__init__.py:0
+#, fuzzy, python-format
+msgid "Sorry You cant Unarchive"
+msgstr "آسف لا يمكنك إلغاء الأرشفة"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Tenant Admin User :"
+msgstr "حساب مدير الاشتراك:"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_sale_order__tenant_language
+msgid "Tenant Language"
+msgstr "لغة المشترك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_dbs
+msgid "Terminated Database"
+msgstr "قاعدة بيانات تم إنهاؤها"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.payment_tokens_list_saas
+msgid "Test Mode"
+msgstr "وضع الاختبار"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "Thank you for subscribing additional space for"
+msgstr "شكرا لاشتراكك في مساحة إضافية لـ"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "Thank you for your order"
+msgstr "شكرا لطلبك"
+
+#. module: saas_product
+#. odoo-python
+#: code:addons/saas_product/models/sale_order.py:0
+#, fuzzy, python-format
+msgid "The given combination does not exist therefore it cannot be added to cart."
+msgstr "المجموعة المحددة غير موجودة وبالتالي لا يمكن إضافتها إلى سلة التسوق."
+
+#. module: saas_product
+#. odoo-python
+#: code:addons/saas_product/models/sale_order.py:0
+#, python-format
+msgid "The given product does not exist therefore it cannot be added to cart."
+msgstr "المنتج المحدد غير متوفر وبالتالي لا يمكن إضافته إلى سلة التسوق."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.website_sale_template_payment_inherit_id3
+msgid "Trial Period"
+msgstr "فترة تجريبية"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+#, fuzzy
+msgid "Try Again"
+msgstr "حاول مرة أخرى"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "URL :"
+msgstr "الرابط:"
+
+#. module: saas_product
+#: model:mail.template,subject:saas_product.saas_user_increase_notification_template
+msgid "User Increase/Decrease Notification - {} Instance"
+msgstr "الإشعار بزيادة/خفض عدد المستخدمين - الاشتراك {} "
+
+#. module: saas_product
+#: model:mail.template,name:saas_product.saas_user_increase_notification_template
+msgid "User Increase/Decrease Notification Template"
+msgstr "قالب الإشعار بزيادة/خفض عدد المستخدمين"
+
+#. module: saas_product
+#: model:ir.model.fields,field_description:saas_product.field_res_config_settings__user_product
+#: model_terms:ir.ui.view,arch_db:saas_product.user_product_res_config_settings_view
+msgid "User Product"
+msgstr "منتج عدد المستخدمين"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/manage_database.js:0
+#, fuzzy, python-format
+msgid "Value should be more than zero"
+msgstr "يجب أن تكون القيمة أكبر من الصفر"
+
+#. module: saas_product
+#. odoo-javascript
+#: code:addons/saas_product/static/src/js/manage_database.js:0
+#, python-format
+msgid "You can't decrease no of users below "
+msgstr "لا يمكنك خفض عدد المستخدمين أدناه"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_index
+msgid "You don't have any Tenant for Top-up"
+msgstr "ليس لديك أي اشتراك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "Your Database"
+msgstr "اشتراكك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.cancel_confirmation
+msgid "creation Failed."
+msgstr "فشل الإنشاء"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "database."
+msgstr "الاشتراك"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid ""
+"has been created successfully. Database credentials are sent via email to your\n"
+"                                    registered email"
+msgstr ""
+"تم إنشاؤه بنجاح. وتم إرسال بيانات الدخول لحسابك إلى\n"
+"                                    بريدك الإلكتروني"
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.confirmation1
+msgid "has been top up successfully."
+msgstr "تم الترقية بنجاح."
+
+#. module: saas_product
+#: model_terms:ir.ui.view,arch_db:saas_product.saas_tenants
+msgid "or"
+msgstr "أو"

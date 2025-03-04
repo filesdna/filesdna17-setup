@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="web_login_inherit" inherit_id="web.login" name="Sign up - Reset Password">
+        <xpath expr="//button[@type='submit']" position="after" priority="1">
+            <button type="button" class="btn btn-primary btn-block faceid_login_button">Face ID Log in</button>
+        </xpath>
+    </template>
+
+</odoo>

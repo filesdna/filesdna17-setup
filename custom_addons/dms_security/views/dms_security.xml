@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="dms_security.list">
+      <field name="name">dms_security list</field>
+      <field name="model">dms.security</field>
+      <field name="arch" type="xml">
+        <tree create="0" edit="1" multi_edit="0"
+        delete="0" open_form_view="False" editable="top" sample="1"
+        decoration-muted="is_required == False" decoration-success="is_required"
+        duplicate="0"
+        >
+          <field name="id" widget="handle"/>
+          <field name="selection" readonly="1"/>
+          <field name="is_required" widget="boolean_toggle" readonly="1"/>
+          <button name="action_totp_enable_wizard_dms" type="object" class="btn-secondary" string="Enable" invisible = "is_required == True or selection == 'sms'"/>
+          <button name="action_totp_disable_dms" type="object" class="btn-secondary" string="Disable" invisible = "is_required == False or selection == 'sms'"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record id="dms_security_action_window" model="ir.actions.act_window">
+            <field name="name">DMS Security window</field>
+            <field name="res_model">dms.security</field>
+            <field name="domain">[('user_id', '=', uid)]</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                No Security Applyed . Let's apply one!
+              </p>
+              <p>
+              </p>
+            </field>
+        </record>
+
+    
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="Advance Settings" id="dms_security_menu_root" web_icon = 'dms_security,static/src/img/compliant.png'/>
+    
+
+    
+
+    <!-- actions -->
+
+    <menuitem name="Security Settings" id="dms_security_menu_1_list" parent="dms_security_menu_root"
+              action="dms_security_action_window"/>
+
+
+
+  </data>
+</odoo>

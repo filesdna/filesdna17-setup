@@ -1,0 +1,1730 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* doctor_appointment_booking_advance_axis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-23 13:05+0000\n"
+"PO-Revision-Date: 2022-02-23 13:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/models/calendar_appointment.py:0
+#, python-format
+msgid " (copy)"
+msgstr "(copie)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "#{day['today_cls'] and 'Today' or ''}"
+msgstr ""
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.payment_inherit
+msgid "&amp; Shipping"
+msgstr "&amp; Expédition"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "(timezone:"
+msgstr "(fuseau horaire:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "+1 (650) 691-3277"
+msgstr ""
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+msgid "1. Select Your Location"
+msgstr "1. Sélectionnez votre emplacement"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+msgid "2. Select Your Service"
+msgstr "2. Sélectionnez votre service"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+msgid "3. Select Your Provider"
+msgstr "3. Sélectionnez votre fournisseur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "4. Select Date &amp; Time"
+msgstr "4. Sélectionnez Date &amp; Temps"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "5. Confirm your details"
+msgstr "5. Confirmez vos coordonnées"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "<b> Address:</b>"
+msgstr "<b> Adresse :</b>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.payment_inherit
+msgid "<b>Shipping:</b>"
+msgstr "<b>Expédition :</b>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid ""
+"<br/>\n"
+"                                It's too late to cancel online, please contact the attendees another way if you really\n"
+"                                can't make it."
+msgstr "<br/>\n  Il est trop tard pour annuler en ligne, veuillez contacter les participants d'une autre manière si vraiment\n  n'y arrive pas."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+msgid ""
+"<i class=\"fa fa-align-center\"/>\n"
+"                                                                Description:"
+msgstr "<i class=\"fa fa-align-center\"/>\n           La description:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.payment_inherit
+msgid ""
+"<i class=\"fa fa-edit\"/>\n"
+"                        Edit"
+msgstr "<i class = \ "fa fa-edit \" /> \ n Éditer"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_kanban
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr ""
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<small class=\"text-right\">Status :</small>"
+msgstr "<small class=\"text-right\">Statut :</small>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "<small>APPOINT/</small>"
+msgstr "<small>NOMMER/</small>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                    <i class=\"fa fa-suitcase\"/>\n"
+"                                                                    Work Experience:\n"
+"                                                                </span>"
+msgstr "<span>\n  <i class=\"fa fa-valise\"/>\n  Expérience professionnelle :\n  </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                <i class=\"fa fa-clock-o\"/>\n"
+"                                                                Duration:\n"
+"                                                            </span>"
+msgstr "<span>\n  <i class=\"fa fa-clock-o\"/>\n  Durée :\n  </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+msgid ""
+"<span>\n"
+"                                                                <i class=\"fa fa-money\"/>\n"
+"                                                                Appointment Charge:\n"
+"                                                            </span>"
+msgstr "<span>\n  <i class=\"fa fa-money\"/>\n  Frais de rendez-vous :\n  </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span> days</span>"
+msgstr "<span> jours</span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span> hours before</span>"
+msgstr "<span> heures avant</span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span> hours</span>"
+msgstr "<span> heures</span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+msgid "<span>Hour</span>"
+msgstr "<span>Heure</span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span>and not after </span>"
+msgstr "<span>et pas après </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span>at least </span>"
+msgstr "<span>au moins </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "<span>until </span>"
+msgstr "<span>jusqu'à </span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Charge</strong>:"
+msgstr "<strong class=\"col-lg-3\">Frais de rendez-vous</strong> :"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Time</strong>:"
+msgstr "<strong class=\"col-lg-3\">Heure du rendez-vous</strong> :"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment Type</strong>:"
+msgstr "<strong class=\"col-lg-3\">Type de rendez-vous</strong> :"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Appointment With</strong>:"
+msgstr "<strong class=\"col-lg-3\">Rendez-vous avec</strong> :"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointments_followup
+msgid "<strong class=\"col-lg-3\">Date of Appointment</strong>:"
+msgstr "<strong class=\"col-lg-3\">Date de nomination</strong> :"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "<strong>Your appointment has been successfully booked!</strong>"
+msgstr "<strong>Votre rendez-vous a été pris avec succès !</strong>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__access_token
+msgid "Access Token"
+msgstr "Jeton d'accès"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__address_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Address"
+msgstr "Adresse"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:res.groups,name:doctor_appointment_booking_advance_axis.group_helpdesk_admin
+msgid "Administrator"
+msgstr "Administrateur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.all_appointments
+msgid "All Appointments"
+msgstr "Tous les rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Allow Cancelling"
+msgstr "Autoriser l'annulation"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.calendar_appointment_type_action
+msgid ""
+"Allow your customers to book an appointment on your website\n"
+"                by creating appointment types here."
+msgstr "Autorisez vos clients à prendre rendez-vous sur votre site Web\n  en créant ici des types de rendez-vous."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__name
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_answer_view_form
+msgid "Answer"
+msgstr "Répondre"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.action_appointment_source_n
+msgid "Appoinment Source"
+msgstr "Source de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__appoint_product_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__appoint_product_id
+msgid "Appointee Product"
+msgstr "Produit désigné"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__appoint_person_id
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointees
+msgid "Appointees"
+msgstr "Nommés"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointees_group
+msgid "Appointees Group"
+msgstr "Groupe des personnes nommées"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointment_timeslot
+msgid "Appointees TimeSlot"
+msgstr "Plage horaire des personnes nommées"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointment_booking
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointment_menu
+#: model:website.menu,name:doctor_appointment_booking_advance_axis.menu_appointment
+#, python-format
+msgid "Appointment"
+msgstr "Rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__appointment_charge
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__appointment_charge
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__appointment_charge
+msgid "Appointment Charge"
+msgstr "Frais de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Appointment Confirmation"
+msgstr "Confirmation de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: model:ir.actions.client,name:doctor_appointment_booking_advance_axis.appointment_dashboard_action
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointment_dashboard_menu
+#, python-format
+msgid "Appointment Dashboard"
+msgstr "Tableau de bord des rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__appoint_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__start_datetime
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__start_datetime
+msgid "Appointment Date"
+msgstr "Date de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__appointment_duration
+msgid "Appointment Duration"
+msgstr "Durée du rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#: model:ir.actions.act_window,name:doctor_appointment_booking_advance_axis.action_appointment_group
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__appointment_group_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__appointment_group_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__appointment_group_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__appointment_group_ids
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.action_appointment_group
+#, python-format
+msgid "Appointment Group"
+msgstr "Groupe de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Appointment Id"
+msgstr "Identifiant de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Appointment Introduction"
+msgstr "Présentation du rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointmet_source_tree
+msgid "Appointment Person Source Tree"
+msgstr "Arborescence des sources de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_advance_axis.action_appointment_source_n
+msgid "Appointment Source"
+msgstr "Source de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_advance_axis.action_appointment_timeslot
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointment_time_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointmet_time_tree
+msgid "Appointment TimeSlot"
+msgstr "Plage horaire de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__appointment_type_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__appointment_type_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__appointment_type
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__appointment_type
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_tree
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Appointment Type"
+msgstr "Type de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Appointment With"
+msgstr "Rendez-vous avec"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Appointment:"
+msgstr "Rendez-vous:"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_my_home_menu_helpdesk
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_all_appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_all_appointmet_tree
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointment_group_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointmet_group_tree
+#, python-format
+msgid "Appointments"
+msgstr "Rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_calendar_event_search
+msgid "Approved Appointment"
+msgstr "Rendez-vous approuvé"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__assignation_method
+msgid "Assignation Method"
+msgstr "Méthode d'attribution"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.abcd_tree_view
+msgid "Attendee"
+msgstr "Participant"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.abcd
+msgid "Attendees"
+msgstr "Participants"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Attendees:"
+msgstr "Participants"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__slot_ids
+msgid "Availabilities"
+msgstr "Disponibilités"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__answer_ids
+msgid "Available Answers"
+msgstr "Réponses disponibles"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Available Employees"
+msgstr "Employés disponibles"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.payment_inherit
+msgid "Billing"
+msgstr "Facturation"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.action_new_appointment
+msgid "Book Appointment"
+msgstr "Prendre rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.module.category,name:doctor_appointment_booking_advance_axis.module_category_appointment
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.calendar_appointment_type_menu_action
+msgid "Calendar"
+msgstr "Calendrier"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_calendar_event
+msgid "Calendar Event"
+msgstr "Calendrier de l'événement"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__can_publish
+msgid "Can Publish"
+msgstr "Peut publier"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__min_cancellation_hours
+msgid "Cancel Before (hours)"
+msgstr "Annuler avant (heures)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Charge"
+msgstr "Charger"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_all_appointment_form
+msgid "Charges"
+msgstr "Des charges"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_question__question_type__checkbox
+msgid "Checkboxes (multiple answers)"
+msgstr "Cases à cocher (réponses multiples)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_type__assignation_method__chosen
+msgid "Chosen by the Customer"
+msgstr "Choisi par le client"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "City"
+msgstr "Ville"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__company_id
+msgid "Company"
+msgstr "Compagnie"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+#, python-format
+msgid "Complete"
+msgstr "Compléter"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_confirmation
+msgid "Confirmation Message"
+msgstr "Message de confirmation"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_all_appointment_form
+msgid "Contact & Address"
+msgstr "Adresse de contact"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Contact / Address"
+msgstr "Adresse de contact"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Contact Name"
+msgstr "Nom du contact"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Contacts & Addresses"
+msgstr "Coordonnées et adresses"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__country_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__country_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__country_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Country"
+msgstr "Pays"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__create_date
+msgid "Create Date"
+msgstr "créer un rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.calendar_appointment_type_action
+msgid "Create a new appointment type"
+msgstr "Créer un nouveau type de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__create_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__create_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__currency_id
+msgid "Currency"
+msgstr "Monnaie"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__customer
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__partner_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Date"
+msgstr "Date"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Date &amp; Time"
+msgstr "Date &amp; Temps"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__day
+msgid "Day"
+msgstr "Jour"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Delivery"
+msgstr "Livraison"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__description
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__description
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_prduct_template_form_inherit
+msgid "Description"
+msgstr "La description"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Description:"
+msgstr "La description:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Details"
+msgstr "Des détails"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__display_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.abcd_tree_view
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Doctor"
+msgstr "Médecin"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__doctore_id
+msgid "Doctore"
+msgstr "doctorat"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_question__question_type__select
+msgid "Dropdown (one answer)"
+msgstr "Liste déroulante (une réponse)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Duration:"
+msgstr "Durée:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_kanban
+msgid "Edit"
+msgstr "Éditer"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__email_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Email"
+msgstr "E-mail"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__employee_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Employees"
+msgstr "Employés"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "End Appointment (0:00 - 24:00)"
+msgstr "Fin du rendez-vous (0:00 - 24:00)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__end_time
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__end_time
+msgid "End Time"
+msgstr "Heure de fin"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__end_date
+msgid "Ending Hour"
+msgstr "Heure de fin"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "First Name"
+msgstr "Prénom"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_follower_ids
+msgid "Followers"
+msgstr "Suiveurs"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Abonnés (chaînes)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Fri"
+msgstr "ven"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__friday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__5
+msgid "Friday"
+msgstr "vendredi"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#, python-format
+msgid "Fully  Invoiced"
+msgstr "Entièrement facturé"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "General Information"
+msgstr "Informations générales"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_appointment_group_form
+msgid "Group Members"
+msgstr "Les membres du groupe"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__name
+msgid "Group Name"
+msgstr "Nom de groupe"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__product_template_id
+msgid "Group Product"
+msgstr "Produit de groupe"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Hours"
+msgstr "Les heures"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__assignation_method
+msgid ""
+"How employees will be assigned to meetings customers book on your website."
+msgstr "Comment les employés seront affectés aux réunions que les clients réservent sur votre site Web."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_sale_order__id
+msgid "ID"
+msgstr "identifiant"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_needaction
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si cette case est cochée, de nouveaux messages nécessitent votre attention."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_error
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si cette case est cochée, certains messages présentent une erreur de livraison."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Individual Appointment Link"
+msgstr "Lien de rendez-vous individuel"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Internal notes..."
+msgstr "Remarques internes..."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_intro
+msgid "Introduction Message"
+msgstr "Message d'introduction"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Invoice"
+msgstr "Facturer"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_is_follower
+msgid "Is Follower"
+msgstr "Est suiveur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__is_published
+msgid "Is Published"
+msgstr "Est publié"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__country_ids
+msgid ""
+"Keep empty to allow visitors from any country, otherwise you only allow "
+"visitors from selected countries"
+msgstr "Laissez vide pour autoriser les visiteurs de n'importe quel pays, sinon vous n'autorisez que visiteurs de pays sélectionnés"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner____last_update
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__write_uid
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__write_date
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__full_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__last_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__full_name
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__last_name
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Last name"
+msgstr "Nom de famille"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__location
+msgid "Location"
+msgstr "Lieu"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__location
+msgid "Location of the appointments"
+msgstr "Lieu des rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Location:"
+msgstr "Lieu:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Locations"
+msgstr "Emplacements"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Logo"
+msgstr "Logo"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Pièce jointe principale"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#, python-format
+msgid "Meetings"
+msgstr "Réunions"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison du message"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Messages"
+msgstr "messages"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Misc"
+msgstr "Divers"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__mobile_number
+msgid "Mobile Number"
+msgstr "Numéro de portable"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Mobile:"
+msgstr "Mobile:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Mon"
+msgstr "lun"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__monday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__1
+msgid "Monday"
+msgstr "Lundi"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Monthly Appointments"
+msgstr "Rendez-vous mensuels"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_question__question_type__text
+msgid "Multi-line text"
+msgstr "Texte multiligne"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.new_appointment
+msgid "New Appointment"
+msgstr "Nouveau rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_advance_axis.action_new_appointment
+msgid "New Appointment Book"
+msgstr "Nouveau carnet de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Newest"
+msgstr "Le plus récent"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Nombre de messages non lus"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__appointment_type_id
+msgid "Online Appointment"
+msgstr "Rendez-vous en ligne"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_calendar_appointment_answer
+msgid "Online Appointment : Answers"
+msgstr "Rendez-vous en ligne : Réponses"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_calendar_appointment_question
+msgid "Online Appointment : Questions"
+msgstr "Rendez-vous en ligne : Questions"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_calendar_appointment_slot
+msgid "Online Appointment : Time Slot"
+msgstr "Rendez-vous en ligne : Plage horaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_calendar_appointment_type
+msgid "Online Appointment Type"
+msgstr "Type de rendez-vous en ligne"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.actions.act_window,name:doctor_appointment_booking_advance_axis.calendar_appointment_type_action
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.appointment_type_menu
+#: model:ir.ui.menu,name:doctor_appointment_booking_advance_axis.website_appointment_type_menu
+msgid "Online Appointments"
+msgstr "Rendez-vous en ligne"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot_available
+msgid "Oops!! No Slots Available For this Appointees."
+msgstr "Oups!! Aucun créneau disponible pour ces personnes nommées."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_all_appointment_form
+msgid "Other Info"
+msgstr "Autre info"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__partner_new
+msgid "Partner New"
+msgstr "Partenaire Nouveau"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Patients"
+msgstr "Les patients"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Pending"
+msgstr "En attente"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_calendar_event_search
+msgid "Pending Appointment"
+msgstr "En attente de rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Phone:"
+msgstr "Téléphoner:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__placeholder
+msgid "Placeholder"
+msgstr "Espace réservé"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/models/calendar_appointment.py:0
+#, python-format
+msgid "Please enter a valid hour between 0:00 to 24:00 for your slots."
+msgstr "Veuillez entrer une heure valide entre 0:00 et 24:00 pour vos créneaux."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__price_unit
+msgid "Price Unit"
+msgstr "Prix à l'unité"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__pricelist_id
+msgid "Pricelist"
+msgstr "Liste de prix"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__product_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Provider"
+msgstr "Fournisseur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Purchase"
+msgstr "Acheter"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__name
+msgid "Question"
+msgstr "Question"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__question_type
+msgid "Question Type"
+msgstr "Type de question"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_answer__question_id
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__question_ids
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Questions"
+msgstr "Des questions"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_question__question_type__radio
+msgid "Radio (one answer)"
+msgstr "Radio (une seule réponse)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_type__assignation_method__random
+msgid "Random"
+msgstr "Aléatoire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Reference"
+msgstr "Référence"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_calendar_event_search
+msgid "Rejected Appointment"
+msgstr "Rendez-vous refusé"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__reminder_ids
+msgid "Reminders"
+msgstr "Rappels"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__question_required
+msgid "Required Answer"
+msgstr "Réponse requise"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__country_ids
+msgid "Restrict Countries"
+msgstr "Restreindre les pays"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_kanban
+msgid "SCHEDULED"
+msgstr "PROGRAMMÉ"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__is_seo_optimized
+msgid "SEO optimized"
+msgstr "Optimisé pour le référencement"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de livraison SMS"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:calendar.alarm,name:doctor_appointment_booking_advance_axis.calendar_alarm_data_1h_sms
+msgid "SMS Text Message - 1 Hours"
+msgstr "Message texte SMS - 1 heures"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Sales"
+msgstr "Ventes"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Sales & Purchase"
+msgstr "Ventes & Achat"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Salesperson"
+msgstr "Vendeur"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Sat"
+msgstr "Sam"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__saturday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__6
+msgid "Saturday"
+msgstr "samedi"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Schedule Appointment"
+msgstr "Rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__min_schedule_hours
+msgid "Schedule before (hours)"
+msgstr "Horaire avant (heures)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__max_schedule_days
+msgid "Schedule not after (days)"
+msgstr "Horaire pas après (jours)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Scheduling & Availability"
+msgstr "Planification et disponibilité"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Search <span class=\"nolabel\"> (in Content)</span>"
+msgstr "Rechercher <span class=\"nolabel\"> (dans Contenu)</span>"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Search ID"
+msgstr "ID de recherche"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Search in All"
+msgstr "Rechercher dans tout"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Search in Customer"
+msgstr "Rechercher dans le client"
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Search in Messages"
+msgstr "Rechercher dans les messages"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+msgid "Select"
+msgstr "Sélectionner"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__seo_name
+msgid "Seo name"
+msgstr "Nom de référencement"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_question__sequence
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointees_availability
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_1
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+#, python-format
+msgid "Services"
+msgstr "Prestations de service"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_question__question_type__char
+msgid "Single line text"
+msgstr "Texte sur une seule ligne"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__slot_ids
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__slot_ids
+msgid "Slot"
+msgstr "Fente"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Slots"
+msgstr "Machines à sous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__source
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_source__name
+msgid "Source"
+msgstr "La source"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__specialist
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__specialist
+msgid "Specialist"
+msgstr "Spécialiste"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__start_at
+msgid "Start At"
+msgstr "Commencer à"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_timeslot__start_time
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_event__start_time
+msgid "Start Time"
+msgstr "Heure de début"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "Starting Appointment (0:00 - 24:00)"
+msgstr "Rendez-vous de départ (0:00 - 24:00)"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__hour
+msgid "Starting Hour"
+msgstr "Heure de départ"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment_group__state_id
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "State"
+msgstr "État"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "Status"
+msgstr "Statut"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Street 2..."
+msgstr "Rue # 2..."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Street..."
+msgstr "Rue..."
+
+#. module: doctor_appointment_booking_advance_axis
+#: code:addons/doctor_appointment_booking_advance_axis/controllers/main.py:0
+#, python-format
+msgid "Subject"
+msgstr "Sujet"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Submit"
+msgstr "Nous faire parvenir"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__price_subtotal
+msgid "Subtotal"
+msgstr "Total"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Sun"
+msgstr "soleil"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__sunday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__7
+msgid "Sunday"
+msgstr "dimanche"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__tax_id
+msgid "Tax"
+msgstr "Impôt"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_url
+msgid "The full URL to access the document through the website."
+msgstr "L'URL complète pour accéder au document via le site Web."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "There are currently no Appointments for your account."
+msgstr "Il n'y a actuellement aucun rendez-vous pour votre compte."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_country
+msgid "There are no records."
+msgstr "Il n'y a pas d'enregistrements."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_prduct_template_form_inherit
+msgid "This note is only for internal purposes."
+msgstr "Cette note est uniquement à des fins internes."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Thu"
+msgstr "Collecter"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__thursday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__4
+msgid "Thursday"
+msgstr "jeudi"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_appointment__time_slot
+#: model_terms:ir.actions.act_window,help:doctor_appointment_booking_advance_axis.action_appointment_timeslot
+msgid "Time Slot"
+msgstr "Créneau horaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.portal_appointment_layout
+msgid "TimeSlot"
+msgstr "Créneau horaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "Timeslots"
+msgstr "Tranches de temps"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__appointment_tz
+msgid "Timezone"
+msgstr "Fuseau horaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__appointment_tz
+msgid "Timezone where appointment take place"
+msgstr "Fuseau horaire où le rendez-vous a lieu"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__title
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__title
+msgid "Title"
+msgstr "Titre"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/js/appointment_dashboard.js:0
+#, python-format
+msgid "To be Invoiced"
+msgstr "Être facturé"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_calendar_event_search
+msgid "Today Appointment"
+msgstr "Aujourd'hui rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Tue"
+msgstr "Mar"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__tuesday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__2
+msgid "Tuesday"
+msgstr "mardi"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_unread
+msgid "Unread Messages"
+msgstr "Messages non lus"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Compteur de messages non lus"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:res.groups,name:doctor_appointment_booking_advance_axis.group_helpdesk_manager
+msgid "User: All Document"
+msgstr "Utilisateur : Tous les documents"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:res.groups,name:doctor_appointment_booking_advance_axis.group_helpdesk_user
+msgid "User: Own Appointments Only"
+msgstr "Utilisateur : rendez-vous personnels uniquement"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_published
+msgid "Visible on current website"
+msgstr "Visible sur le site actuel"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_message_ids
+msgid "Website Messages"
+msgstr "Messagerie du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_url
+msgid "Website URL"
+msgstr "URL de site web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,help:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_meta_description
+msgid "Website meta description"
+msgstr "Méta description du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Méta-mots clés du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_meta_title
+msgid "Website meta title"
+msgstr "Méta titre du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_type__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "Image opengraph du site Web"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.slot
+msgid "Wed"
+msgstr "mer"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__appointment_timeslot__day__wednesday
+#: model:ir.model.fields.selection,name:doctor_appointment_booking_advance_axis.selection__calendar_appointment_slot__weekday__3
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_calendar_appointment_slot__weekday
+msgid "Week Day"
+msgstr "Jour de la semaine"
+
+#. module: doctor_appointment_booking_advance_axis
+#. openerp-web
+#: code:addons/doctor_appointment_booking_advance_axis/static/src/xml/appointment_dashboard.xml:0
+#, python-format
+msgid "Weekly Appointments"
+msgstr "Rendez-vous hebdomadaires"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "When:"
+msgstr "Lorsque:"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_partner__work_exp
+#: model:ir.model.fields,field_description:doctor_appointment_booking_advance_axis.field_res_users__work_exp
+msgid "Work Experience"
+msgstr "L'expérience professionnelle"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Your Country"
+msgstr "Votre pays"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Your Email"
+msgstr "Votre e-mail"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Your Message"
+msgstr "Votre message"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_form
+msgid "Your Phone"
+msgstr "Ton téléphone"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "Your appointment is in less than"
+msgstr "Votre rendez-vous est dans moins de"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "ZIP"
+msgstr "ZIP *: FRANÇAIS"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_appointment
+msgid "appointment"
+msgstr "rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_appointment_group
+msgid "appointment.group"
+msgstr "rendez-vous.groupe"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_appointment_source
+msgid "appointment_source"
+msgstr "source_rendez-vous"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model:ir.model,name:doctor_appointment_booking_advance_axis.model_appointment_timeslot
+msgid "appointment_timeslot"
+msgstr "rendez-vous_horaire"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "e.g. 1-2 years"
+msgstr "par exemple. 1-2 ans"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "e.g. Mr."
+msgstr "par exemple. Monsieur."
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "e.g. Sales Director"
+msgstr "par exemple. Directeur des ventes"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_form
+msgid "e.g. Schedule a demo"
+msgstr "par exemple. Planifier une démo"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "hours from now!"
+msgstr "heures à partir de maintenant!"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.calendar_appointment_type_view_kanban
+msgid "of"
+msgstr "de"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.view_partner_form_inherit
+msgid "rec_value"
+msgstr "rec_value"
+
+#. module: doctor_appointment_booking_advance_axis
+#: model_terms:ir.ui.view,arch_db:doctor_appointment_booking_advance_axis.appointment_confirm
+msgid "with"
+msgstr "avec"

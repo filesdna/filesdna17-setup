@@ -1,0 +1,38 @@
+<odoo>
+
+	<record model="ir.ui.view" id="view_oi_fin_data_form">
+		<field name="name">oi_fin.data form</field>
+		<field name="model">oi_fin.data</field>
+		<field name="inherit_id" ref="view_oi_fin_datatmpl_form"/>
+		<field name="mode">primary</field>
+		<field name="arch" type="xml">
+			<data>
+				<header position="replace"/>
+				<field name="menu_id" position="replace"/>
+				<field name="target_move" position="before">
+					<field name="template" options="{'no_create_edit' : True}"/>
+				</field>
+				<field name="begin_balance" position="before">
+					<field name="date_from" required="begin_balance"/>
+					<field name="date_to"/>
+				</field>
+				<field name="begin_balance" position="after">
+					<field name="cash_basis"/>
+				</field>
+				<sheet position="after">
+					<footer>
+						<button name="run_report" type="object" string="Excel" class="oe_highlight"/>
+						<button name="run_report_pdf" type="object" string="Print" class="oe_highlight" invisible="1"/>
+						<button name="create_template" type="object" string="Create Template" class="btn-primary"/>
+						<button string="Cancel" class="oe_link" special="cancel"/>
+					</footer>
+				</sheet>
+			</data>
+		</field>
+	</record>
+	
+
+<!-- 	<act_window id="act_oi_fin_data" name="Journal Entry Details" src_model="oi_fin.data" res_model="oi_fin.data" view_mode="form" -->
+<!-- 		target="new" key2="client_action_multi" /> -->
+
+</odoo>

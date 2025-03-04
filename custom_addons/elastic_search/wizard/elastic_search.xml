@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_search_wizard_form" model="ir.ui.view">
+        <field name="name">elastic_search.wizard.form</field>
+        <field name="model">elastic_search.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Elastic Search Wizard">
+                <group>
+                    <!-- <div class="o_field_widget o_field_char" name="elastic_search"/> -->
+                    <field name="elastic_search"/>
+                    <field name="operator" widget="selection"/>
+                    <field name="date_from" string="Date From"/>
+                    <field name="date_to" string="Date To"/>
+                </group>
+                <footer>
+                    <button string="Search" type="object" name="action_search" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_search_wizard" model="ir.actions.act_window">
+        <field name="name">Advance Search</field>
+        <field name="res_model">elastic_search.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_search_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- <template id="TagInputTemplate">
+        <div class="tags-container"></div>
+        <input type="text" class="o_input" placeholder="Enter search terms and press Enter"/>
+    </template> -->
+
+    <menuitem id="menu_search_wizard"
+              name="Advanced Search"
+              parent="dms.main_menu_dms"
+              sequence="55"
+              action="action_search_wizard"/>
+</odoo>

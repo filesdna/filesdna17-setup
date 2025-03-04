@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="hr_employee_inherit_form" model="ir.ui.view">
+        <field name="name">hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[2]" position="after">
+               <page string="General Information" autofocus="autofocus">
+                    <form>
+                        <sheet>
+                            <group>
+                                <group>
+                                    <field name="work_exp" placeholder="e.g. 1-2 years"/>
+                                    <field name="specialist" />
+                                </group>
+                            </group>
+                        </sheet>
+                    </form>
+                </page>
+
+             <page string="Timeslots">
+                    <form>
+                        <sheet>
+                            <group>
+                                <field name="slot_ids" />
+                            </group>
+                        </sheet>
+                    </form>
+                </page>
+            </xpath>
+
+
+
+            <xpath expr="//field[@name='coach_id']" position="after">
+                <field name="title" />
+                <field name="appointment_charge" />
+            </xpath>
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="appointment_group_ids" widget="many2many_tags"/>
+                <field name="appointment_type" widget="many2one_tags" domain="[('partner_id.name','=',name)]" options="{'no_create': True}"/>
+                <field name="start_datetime"/>
+            </xpath>
+
+        </field>
+    </record>
+  </data>
+</odoo>

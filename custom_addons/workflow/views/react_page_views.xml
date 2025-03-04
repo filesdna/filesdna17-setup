@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <!-- Form view for the React page -->
+        <record id="view_workflow_home" model="ir.ui.view">
+            <field name="name">Workflow</field>
+            <field name="model">workflow.page.home</field>
+            <field name="arch" type="xml">
+                <form string="Workflow" edit="false" create="false">
+                    <sheet>
+                        <link rel="stylesheet" type="text/css" href="/workflow/static/src/css/custom_styles.css"/>
+                        <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                        <div id="root" data-path="/dashboard/my-workflows"/>
+                        <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_workflow_assigned" model="ir.ui.view">
+            <field name="name">Workflow Assigned</field>
+            <field name="model">workflow.page.assigned</field>
+            <field name="arch" type="xml">
+                <form string="Workflow" edit="false" create="false">
+                    <sheet>
+                        <link rel="stylesheet" type="text/css" href="/workflow/static/src/css/custom_styles.css"/>
+                        <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                        <div id="root" data-path="/assigned-forms"/>
+                        <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_workflow_approvals" model="ir.ui.view">
+            <field name="name">Workflow Approvals</field>
+            <field name="model">workflow.page.approvals</field>
+            <field name="arch" type="xml">
+                <form string="Workflow" edit="false" create="false">
+                    <sheet>
+                        <link rel="stylesheet" type="text/css" href="/workflow/static/src/css/custom_styles.css"/>
+                        <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                        <div id="root" data-path="/my-approvals"/>
+                        <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+             
+    </data>
+</odoo>

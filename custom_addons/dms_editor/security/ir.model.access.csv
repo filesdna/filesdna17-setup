@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ir_actions_act_url_group_system,ir_actions_act_url_group_system,base.model_ir_actions_act_url,,1,1,1,1

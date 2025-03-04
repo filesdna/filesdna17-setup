@@ -1,0 +1,17 @@
+.bg-blue {
+  background-color: #0097A7 !important;
+  color: white;
+  padding: 28px !important;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+  margin: -16px -24px;
+}
+/* .ant-modal-header {
+  padding:0 !important;
+} */
+
+.ant-modal-close {
+  color: white !important;
+  top:10px !important;
+}

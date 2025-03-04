@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="hr_payslip_allotment_type_form" model="ir.ui.view">
+            <field name="name">hr.payslip.allotment.type.form</field>
+            <field name="model">hr.payslip.allotment.type</field>
+            <field name="arch" type="xml">
+                <form string="Allotments Type">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" 
+                            required="1"
+                            />
+                            <field name="code" 
+                            />
+                            <field name="rule_id" 
+                            required="1"
+                            />
+                            <field name="allotment_type" 
+                            />
+                            <field name="percentage"
+                            widget='percentage' 
+                            invisible="allotment_type == 'fixed_amount'"
+                            />
+                            <field name="fixed_amount"
+                            invisible="allotment_type == 'percentage'"
+                            />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_payslip_allotment_type_tree" model="ir.ui.view">
+            <field name="name">hr.payslip.allotment.type.tree</field>
+            <field name="model">hr.payslip.allotment.type</field>
+            <field name="arch" type="xml">
+                <tree string="Allotment">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_payslip_allotment_type_action" model="ir.actions.act_window">
+            <field name="name">Allotments Types</field>
+            <field name="res_model">hr.payslip.allotment.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="hr_payslip_allotment_type_menu"
+            name="Allotments Type"
+            action="hr_payslip_allotment_type_action"
+            parent="payroll.payroll_menu_configuration"
+            sequence="40"/>
+    </data>
+</odoo>

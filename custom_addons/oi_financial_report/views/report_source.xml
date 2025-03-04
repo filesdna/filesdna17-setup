@@ -1,0 +1,53 @@
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_oi_fin_report_source_tree">
+			<field name="name">oi_fin.report_source tree</field>
+			<field name="model">oi_fin.report_source</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name"/>
+					<field name="description"/>
+					<field name="source_type"/>
+					<field name="period_type"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_oi_fin_report_source">
+			<field name="name">oi_fin.report_source form</field>
+			<field name="model">oi_fin.report_source</field>
+			<field name="inherit_id" ref="view_oi_fin_filter_form"/>
+			<field name="mode">primary</field>
+			<field name="arch" type="xml">
+				<data>
+					<separator name="filters" position="before">
+						<group>
+							<group>
+								<field name="is_mandatory_type" invisible="1"/>
+								<field name="is_period_type" invisible="1"/>
+								<field name="name"/>
+								<field name="source_type"/>
+								<field name="dimension_id" options="{'no_create_edit' : True}" invisible="source_type != 'other'" required="source_type == 'other'"/>															
+								<field name="period_type" invisible="not is_period_type"/>
+								<field name="include_empty" invisible="is_mandatory_type"/>
+							</group>
+							<group>
+								<field name="description"/>
+							</group>
+						</group>
+					</separator>
+				</data>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="act_report_source_tree">
+			<field name="name">Report Source</field>
+			<field name="res_model">oi_fin.report_source</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+	</data>
+</openerp>

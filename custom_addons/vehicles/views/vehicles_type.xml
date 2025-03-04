@@ -1,0 +1,22 @@
+<odoo>
+    <record id="vehicles_type_view_tree" model="ir.ui.view">
+        <field name="name">vehicles_type tree</field>
+        <field name="model">vehicles.type</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="vehicles_type_action" model="ir.actions.act_window">
+        <field name="name">Vehicles Type</field>
+        <field name="res_model">vehicles.type</field>
+    </record>
+    <menuitem
+            id='vehicles_type_ment_items'
+            name="Vehicles Type"
+            parent="configuration_menu"
+            action="vehicles_type_action"/>
+</odoo>

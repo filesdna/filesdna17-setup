@@ -1,0 +1,1 @@
+button.editor-btn:not(.tool-btn){background-color:#0000;border:1px solid #555;border-radius:6px;display:inline-block;vertical-align:middle}button.editor-btn:not(.tool-btn) img,button.editor-btn:not(.tool-btn) svg{height:16px;vertical-align:middle;width:16px}button.editor-btn:not(.tool-btn):focus{outline:0}button{cursor:pointer}

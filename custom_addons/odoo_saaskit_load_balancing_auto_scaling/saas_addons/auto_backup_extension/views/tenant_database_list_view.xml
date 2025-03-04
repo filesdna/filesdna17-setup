@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="tenant_database_list_view_inherit_auto_backup_extension" model="ir.ui.view">
+            <field name="name">tenant.database.ssh.info.auto.backup.extension</field>
+            <field name="model">tenant.database.list</field>
+            <field name="priority" eval="90"/>
+            <field name="inherit_id" ref="saas_base.saas_admin_dblist_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[2]" position="inside">
+                    <group colspan="2" col="2" string="Tenant Database Credentials">
+                        <field name="tenant_master_password" password="True"/>
+                    </group>
+                </xpath>
+               
+            </field>
+        </record>
+
+    </data>
+</odoo>

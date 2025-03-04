@@ -1,0 +1,95 @@
+<odoo>
+  <data>
+   <record id="employee_tax_rule_form" model="ir.ui.view">
+    <field name="name">Employee Tax Rule Form</field>
+    <field name="model">employee.tax.rule</field>
+    <field name="arch" type="xml">
+      <form string="Tax">
+        <header>
+        </header>
+        <sheet>
+          <group>
+            <field name="name" 
+            required="1" style="width:50"
+            />
+            <field name="amount" 
+            required="1" style="width:20"
+            />
+          </group>
+        </sheet>
+      </form>
+    </field>
+   </record>
+   <!-- ////////////////////////////////////////////// tax amount/////////////////////////////////////////////// -->
+   <record id="employee_tax_amount_form" model="ir.ui.view">
+    <field name="name">Employee Tax Amount Form</field>
+    <field name="model">employee.tax.amount</field>
+    <field name="arch" type="xml">
+      <form string="Tax">
+        <header>
+        </header>
+        <sheet>
+          <group>
+            <field name="name" required="1" style="width:50"/>
+            <field name="amonut" required="1" style="width:20"/>
+            <field name="percentage" required="1" 
+            widget="percentage" style="width:20"
+            />
+          </group>
+        </sheet>
+      </form>
+    </field>
+   </record>
+   
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////    -->
+   
+<record id="employee_tax_rule_tree" model="ir.ui.view">
+    <field name="name">Employee Tax Rule Tree</field>
+    <field name="model">employee.tax.rule</field>
+    <field name="arch" type="xml">
+      <tree string="Tax">
+        <field name="name"/>
+        <field name="amount"/>
+      </tree>
+    </field>
+   </record>
+<!-- ////////////////////////////////////////// Tree Tax Amount /////////////////////////////////////////////////////////// -->
+   <record id="employee_tax_amount_tree" model="ir.ui.view">
+    <field name="name">Employee Tax Amount Tree</field>
+    <field name="model">employee.tax.amount</field>
+    <field name="arch" type="xml">
+      <tree string="Tax">
+        <field name="name"/>
+            <field name="amonut"/>
+            <field name="percentage"/>
+      </tree>
+    </field>
+   </record>
+
+
+<record id="employee_tax_rule_action" model="ir.actions.act_window">
+    <field name="name">Employee Tax Rule</field>
+    <field name="res_model">employee.tax.rule</field>
+    <field name="view_mode">tree,form</field>
+   </record>
+<!-- //////////////////////////////////////////// Amount Tax Action /////////////////////////////////////////////////////////    -->
+   <record id="employee_tax_amount_action" model="ir.actions.act_window">
+    <field name="name">Employee Tax Amount</field>
+    <field name="res_model">employee.tax.amount</field>
+    <field name="view_mode">tree,form</field>
+   </record>
+
+   <menuitem
+    id="employee_tax_rule_menu"
+    name="Tax Rules"
+    action="employee_tax_rule_action"
+    parent="payroll.payroll_menu_configuration"
+    sequence="60"/>
+    <menuitem
+    id="employee_tax_amount_menu"
+    name="Tax Amount"
+    action="employee_tax_amount_action"
+    parent="payroll.payroll_menu_configuration"
+    sequence="60"/>
+  </data>
+</odoo>
