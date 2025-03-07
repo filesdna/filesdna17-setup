@@ -136,5 +136,6 @@ class HrEmployeeFamily(models.Model):
     member_name = fields.Char(string='Name', help='Name of the family member')
     member_contact = fields.Char(string='Contact No',
                                  help='Contact No of the family member')
-    birth_date = fields.Date(string="DOB", tracking=True,
-                             help='Birth date of the family member')
+    birth_date = fields.Date(string="DOB",
+                         help='Birth date of the family member')
+

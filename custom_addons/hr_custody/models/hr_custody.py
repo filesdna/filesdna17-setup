@@ -181,7 +181,7 @@ class HrCustody(models.Model):
                        help='A unique code assigned to this record.')
     company_id = fields.Many2one('res.company', string='Company',
                                  readonly=True,
-                                 hhelp='The company associated'
+                                 help='The company associated'
                                        ' with this record. ',
                                  default=lambda self: self.env.user.company_id)
     rejected_reason = fields.Text(string='Rejected Reason', copy=False,
@@ -190,7 +190,7 @@ class HrCustody(models.Model):
                                         copy=False, readonly=1,
                                         help="Renew rejected reason")
     date_request = fields.Date(string='Requested Date', required=True,
-                               track_visibility='always',
+                               tracking=True,
                                help='The date when the request was made',
                                default=datetime.now().strftime('%Y-%m-%d'))
     employee_id = fields.Many2one('hr.employee', string='Employee',
@@ -199,7 +199,8 @@ class HrCustody(models.Model):
                                        'this record.',
                                   default=lambda
                                       self: self.env.user.employee_id.id, )
-    purpose = fields.Char(string='Reason', track_visibility='always',
+
+    purpose = fields.Char(string='Reason', tracking=True,
                           help='The reason or purpose of the custody')
     property_custody_id = fields.One2many('custody.property', 'hr_custody')
 
@@ -218,11 +219,11 @@ class HrCustody(models.Model):
             self.custody_property_id = [(5, 0, 0)]
 
     return_date = fields.Date(string='Return Date',
-                              track_visibility='always',
+                              tracking=True,
                               help='The date when the custody '
                                    'is expected to be returned. ')
     renew_date = fields.Date(string='Renewal Return Date',
-                             track_visibility='always',
+                             tracking=True,
                              help="Return date for the renewal", readonly=True,
                              copy=False)
     notes = fields.Html(string='Notes', help='Note for Custody')
@@ -236,11 +237,8 @@ class HrCustody(models.Model):
          ('approved', 'Approved'),
          ('returned', 'Returned'), ('rejected', 'Refused')], string='Status',
         default='draft',
-        track_visibility='always', help='Custody states visible in statusbar')
+        tracking=True, help='Custody states visible in statusbar')
     is_mail_send = fields.Boolean(string="Mail Send",
                                   help='Indicates whether an email has '
                                        'been sent or not.')
     project_id = fields.Many2one('project.project')
-
-
-
