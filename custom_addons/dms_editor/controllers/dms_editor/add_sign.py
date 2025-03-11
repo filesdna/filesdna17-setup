@@ -14,6 +14,7 @@ from odoo.addons.dms_editor.services.signature import SignatureHelper
 _logger = logging.getLogger(__name__)
  
 server_path = config['server_path']
+google_bucket = config['google_bucket']
 
 class SignatureController(http.Controller):
 
@@ -40,7 +41,7 @@ class SignatureController(http.Controller):
                     get_user = request.env['dms.file'].sudo().search([('create_uid', '=', get_dsign.user_id.id)], limit=1)
                     gcs = LocalStorageService()
                     if p_type == "initial":
-                        base64_data = gcs.read_url(get_dsign.initial_signature.split(f"{google_bucket}/"))
+                        base64_data = gcs.read_url(get_dsign.initial_signature)
                         return Response(
                             json.dumps({'success': True, 'data': base64_data}),
                             status=200,
@@ -48,7 +49,7 @@ class SignatureController(http.Controller):
                         )
 
                     if p_type == "full":
-                        url = gcs.read_url(get_dsign.full_signature.split(f"{google_bucket}/")[1])
+                        url = gcs.read_url(get_dsign.full_signature)
                         base64_data = self.url_to_base64(url)
                         return Response(
                             json.dumps({'success': True, 'data': base64_data}),

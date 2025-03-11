@@ -140,6 +140,7 @@ class SignatureHelper:
                 "width": width,
                 "height": height,
                 "zoom": 1.0,  # Control scaling
+		"transparent": "",
             }
             image_binary = from_string(html, False, options=options)
 
