@@ -1,0 +1,18 @@
+.o_search_panel {
+    position: relative;
+    width: 300px; /* Default width */
+    min-width: 150px; /* Minimum width */
+    max-width: 2500px; /* Maximum width */
+    overflow: auto;
+    border-right: 3px solid #ccc; /* Visible edge for dragging */
+}
+
+.search-panel-resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #ddd;
+}

@@ -1,0 +1,7 @@
+<templates id="template">
+    <t t-extend="SearchPanel">
+        <t t-jquery=".o_search_panel" t-operation="attributes">
+            <attribute name="class">o_search_panel resizable-panel</attribute>
+        </t>
+    </t>
+</templates>

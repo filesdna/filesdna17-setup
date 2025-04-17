@@ -1,0 +1,10 @@
+.o_technical_modal{
+    .icon_container{
+        .icon_bits{
+            &.active{
+                border: 2px solid #eee;
+                border-radius: 10px;
+            }
+        }
+    }
+}

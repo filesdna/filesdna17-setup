@@ -44,7 +44,7 @@
                         </group>
                         <group>
                             <field name="count_users"/>
-                            <field name="enable_document_filter" force_save="1" invisible="0"/>
+                            <field name="enable_document_filter" force_save="1" invisible="1"/>
                         </group>
                     </group>
                     <group string="Settings">

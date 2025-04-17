@@ -37,8 +37,7 @@ class DmsAccessGroups(models.Model):
                                               string="Document Parameters")
     enable_document_filter = fields.Boolean(
         string='Enable Document Filter',
-        store=True,
-    )
+        store=True,)
 
     @api.onchange('enable_document_filter')
     def _compute_enable_document_filter(self):

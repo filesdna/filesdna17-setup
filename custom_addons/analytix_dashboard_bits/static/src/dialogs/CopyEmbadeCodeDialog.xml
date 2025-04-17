@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+    <t t-name="CopyEmbadeCodeDialog" >
+        <Dialog size="'md'" title="props.title"> 
+            <div class="row align-items-center"> 
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+                    <div class='embade-code bg-200 h-100 bg-100 p-1 rounded'>
+                        <div class="p-2 w-100 h-100 bg-100" t-esc="props.embade_code"/>
+                    </div> 
+                </div>
+                <t t-set-slot="footer">
+                    <button class="btn btn-primary" t-on-click="(ev)=>this._onCopycode(props.embade_code)">Copy</button>
+                    <button class="btn btn-secondary" t-on-click="onClickCancel" >Cancel</button>
+                </t>
+            </div>
+        </Dialog>
+    </t>
+
+</templates>

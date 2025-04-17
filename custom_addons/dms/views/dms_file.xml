@@ -252,12 +252,11 @@
                 <button name="action_edit" type="object" icon="fa-cloud"
                         class="hover-icon" title="Edit Online"
                         invisible="not is_pdf or active_security or is_locked or owner_lock or not perm_edit_online"/>
-                <field name="access_id" column_invisible="0"/>
-                <field name="enable_document_filter" column_invisible="0"/>
-                <field name="perm_open_locally" column_invisible="0"/>
-                <field name="perm_edit_online" column_invisible="0"/>
-                <field name="perm_preview_file" column_invisible="0"/>
-                <field name="perm_download" column_invisible="0"/>
+                <field name="access_id" column_invisible="1"/>
+                <field name="perm_open_locally" column_invisible="1"/>
+                <field name="perm_edit_online" column_invisible="1"/>
+                <field name="perm_preview_file" column_invisible="1"/>
+                <field name="perm_download" column_invisible="1"/>
                 <field name="reference"/>
                 <field name="directory_id"/>
                 <field name="file_name" string="File Name"/>
@@ -418,7 +417,7 @@
                                 <field name="reference_name_start" invisible="1"/>
                                 <field name="reference_name_without_start" invisible="1"/>
                                 <field name="reference_name"/>
-                                <field name="enable_document_filter" force_save="1" invisible="0"/>
+                                <field name="enable_document_filter" force_save="1" invisible="1"/>
                                 <field name="total" invisible="1" force_save="1"/>
                                 <field name="doc_number" invisible="1" force_save="1"/>
                                 <field name="perm_lock" invisible="1"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+<!-- Emabade dashboard link template -->
+    <t t-name="DashboardEmbadeBits">
+        <div class="container bg-200">
+            <div class="row">
+                <t t-if="is_embade">
+                    <div class="col-12">
+                        <h3 id="link" class="my-4 bg-100 p-2"> 
+                        </h3>
+                    </div>
+                </t> 
+                <t t-else="">
+                    <div class="col-12">
+                        <h3 id="link" class="my-4 bg-100 p-2">
+                            <t t-esc="link"/>
+                        </h3>
+                    </div>
+                </t> 
+            </div>
+        </div>
+    </t>  
+ 
+</templates>

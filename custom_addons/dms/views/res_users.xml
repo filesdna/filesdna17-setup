@@ -9,14 +9,15 @@
             <xpath expr="//notebook" position="before">
                 <group>
                     <field name="is_auto_lock" widget="boolean_toggle"/>
-                    <field name="access_id" invisible="0"/>
-                    <field name="access_id_many" invisible="0" widget="many2many_tags"/>
+                    <!-- <field name="user_security" invisible="1"/> -->
+                    <field name="access_id" invisible="1"/>
+                    <field name="access_id_many" invisible="1" widget="many2many_tags"/>
                     <!--                    For One Access                           -->
                     <!--                    <field name="access_id" invisible="0"/>  -->
                     <!--                    <field name="perm_create" invisible="0"/>-->
                     <!--                    <field name="perm_delete" invisible="0"/>-->
-                    <field name="perm_access" invisible="0"/>
-                    <field name="perm_domain" invisible="0"/>
+                    <field name="perm_access" invisible="1"/>
+                    <field name="perm_domain" invisible="1"/>
                 </group>
             </xpath>
         </field>
