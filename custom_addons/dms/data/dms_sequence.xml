@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="dms_sequence" model="ir.sequence">
+            <field name="name">Document Sequence</field>
+            <field name="code">dms_sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</odoo>

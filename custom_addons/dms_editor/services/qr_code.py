@@ -40,7 +40,7 @@ def generate_branded_qr(hash=None):
         # Calculate the size and position of the logo
         qr_width, qr_height = qr_img.size
         logo_size = (qr_width // ratio, qr_height // ratio)
-        logo.thumbnail(logo_size, Image.ANTIALIAS)
+        logo.thumbnail(logo_size, Image.LANCZOS)
         logo_pos = ((qr_width - logo_size[0]) // 2, (qr_height - logo_size[1]) // 2)
 
         # Overlay the logo on the QR code

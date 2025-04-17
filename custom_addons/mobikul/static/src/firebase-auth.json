@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "124510041370",
+    "project_id": "shoes-f3cf8",
+    "storage_bucket": "shoes-f3cf8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124510041370:android:54598c78c0b412eb8ba8a3",
+        "android_client_info": {
+          "package_name": "com.borderlesssecurity.bazar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB50lKxtN3ndtsmTSF4n2IPdXcm7wN7eQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

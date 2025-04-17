@@ -69,7 +69,7 @@ class DmsEditor(models.Model):
         image = Image.open(barcode_buffer)
 
         # Resize the barcode while maintaining aspect ratio
-        image = image.resize((target_width, target_height), Image.ANTIALIAS)
+        image = image.resize((target_width, target_height), Image.LANCZOS)
 
         # Convert image to base64
         buffered = io.BytesIO()

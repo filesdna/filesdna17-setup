@@ -4,32 +4,32 @@
     <record id="dms_file_security_option_form" model="ir.ui.view">
         <field name="name">dms.file.security.option.form</field>
         <field name="model">dms.file</field>
-        <field name="inherit_id" ref="dms.view_dms_file_form" />
+        <field name="inherit_id" ref="dms.view_dms_file_form"/>
         <field name="arch" type="xml">
             <xpath expr="//page[@name='page_metadata']" position="after">
-            <page name="security_option" string="Security Option">
-                <group>
-                <group>
-                        <field name="dms_security_id" 
-                        options="{'no_create_edit': True ,'no_open': True,'no_create':True}"
-                        domain="[('user_id', '=', uid),('is_required','=',True)]"
-                        readonly="security_user_id != uid and dms_security_id != False"
-                        />
-                        <field name="is_security_required" widget="boolean_toggle" 
-                        invisible = "1"
-                        />
-                        <field name="security_user_id" 
-                        options="{'no_create_edit': True ,'no_open': True,'no_create':True}"
-                        invisible = "dms_security_id == False"
-                        />
-                        
-                        <field name="active_security" widget="boolean_toggle" 
-                        invisible = "dms_security_id == False"
-                        readonly="security_user_id != uid and dms_security_id != False"
-                        />
-                </group>
-                </group>
-            </page>
+                <page name="security_option" string="Security Option">
+                    <group>
+                        <group>
+                            <field name="dms_security_id"
+                                   options="{'no_create_edit': True ,'no_open': True,'no_create':True}"
+                                   domain="[('user_id', '=', uid),('is_required','=',True)]"
+                                   readonly="(security_user_id != uid and dms_security_id != False) or owner_lock == True or is_locked == True"
+                            />
+                            <field name="is_security_required" widget="boolean_toggle"
+                                   invisible="1"
+                            />
+                            <field name="security_user_id"
+                                   options="{'no_create_edit': True ,'no_open': True,'no_create':True}"
+                                   invisible="dms_security_id == False"
+                            />
+
+                            <field name="active_security" widget="boolean_toggle"
+                                   invisible="dms_security_id == False"
+                                   readonly="security_user_id != uid and dms_security_id != False"
+                            />
+                        </group>
+                    </group>
+                </page>
             </xpath>
         </field>
     </record>

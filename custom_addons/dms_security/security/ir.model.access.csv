@@ -3,3 +3,4 @@ access_dms_security,dms.security,model_dms_security,dms_security.group_dms_manag
 access_auth_totp_dms_wizard,auth_totp.dms.wizard,model_auth_totp_dms_wizard,dms_security.group_dms_manager,1,1,1,1
 access_res_users_nfc,res.users.nfc,model_res_users_nfc,base.group_user,1,1,1,1
 access_res_users_nfc_manager,res_users_nfc_manager,model_res_users_nfc,,1,1,1,1
+access_message_wizard,message_wizard,model_message_wizard,,1,1,1,1

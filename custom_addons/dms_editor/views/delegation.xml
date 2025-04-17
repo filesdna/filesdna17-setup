@@ -24,5 +24,5 @@
         </record>
 
         
-        <menuitem id="menu_dms_delegation" name="Delegation" sequence="35" parent="dms.cat_menu_dms_config" action="action_delegation_page"/>
+        <menuitem id="menu_dms_delegation" name="Delegation" sequence="35" parent="dms.menu_setting" action="action_delegation_page"/>
 </odoo>

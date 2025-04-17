@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <record id="file_extension_txt" model="dms.file.extension">
+            <field name="name">txt</field>
+            <field name="file_image" type="base64" file="dms/static/description/txt.png"/>
+        </record>
+        <record id="file_extension_pdf" model="dms.file.extension">
+            <field name="name">pdf</field>
+            <field name="file_image" type="base64" file="dms/static/description/pdf.png"/>
+        </record>
+        <record id="file_extension_zip" model="dms.file.extension">
+            <field name="name">zip</field>
+            <field name="file_image" type="base64" file="dms/static/description/zip.png"/>
+        </record>
+        <record id="file_extension_doc" model="dms.file.extension">
+            <field name="name">doc</field>
+            <field name="file_image" type="base64" file="dms/static/description/docx.png"/>
+        </record>
+        <record id="file_extension_docx" model="dms.file.extension">
+            <field name="name">docx</field>
+            <field name="file_image" type="base64" file="dms/static/description/docx.png"/>
+        </record>
+        <record id="file_extension_xls" model="dms.file.extension">
+            <field name="name">xls</field>
+            <field name="file_image" type="base64" file="dms/static/description/xlsx.png"/>
+        </record>
+        <record id="file_extension_csv" model="dms.file.extension">
+            <field name="name">csv</field>
+            <field name="file_image" type="base64" file="dms/static/description/xlsx.png"/>
+        </record>
+        <record id="file_extension_xlsx" model="dms.file.extension">
+            <field name="name">xlsx</field>
+            <field name="file_image" type="base64" file="dms/static/description/xlsx.png"/>
+        </record>
+        <record id="file_extension_pptx" model="dms.file.extension">
+            <field name="name">pptx</field>
+            <field name="file_image" type="base64" file="dms/static/description/pptx.png"/>
+        </record>
+        <record id="file_extension_png" model="dms.file.extension">
+            <field name="name">png</field>
+            <field name="file_image" type="base64" file="dms/static/description/png.png"/>
+        </record>
+        <record id="file_extension_jpeg" model="dms.file.extension">
+            <field name="name">jpeg</field>
+            <field name="file_image" type="base64" file="dms/static/description/png.png"/>
+        </record>
+        <record id="file_extension_jpg" model="dms.file.extension">
+            <field name="name">jpg</field>
+            <field name="file_image" type="base64" file="dms/static/description/png.png"/>
+        </record>
+        <record id="file_extension_no_name" model="dms.file.extension">
+            <field name="name">no_name</field>
+            <field name="file_image" type="base64" file="dms/static/description/noname.png"/>
+        </record>
+    </data>
+</odoo>

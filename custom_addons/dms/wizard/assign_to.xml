@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="assign_to_form" model="ir.ui.view">
+        <field name="name">assign_to_form</field>
+        <field name="model">assign.to</field>
+        <field name="arch" type="xml">
+            <form string="Reply">
+                <group>
+                    <group>
+                        <field name="parent_root_dms" invisible="True"/>
+                        <field name="requester_id" readonly="1"/>
+                        <field name="assign_to_id"/>
+                        <field name="parent_root_department_ids" invisible="True"/>
+                        <field name="employee_id"/>
+                        <field name="user_id" invisible="True"/>
+                        <field name="employee_department" invisible="True"/>
+                        <field name="request_message" type="html"
+                               options="{'collaborative': true, 'resizable': false}"
+                               placeholder="Add details about this task..."/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Assign" type="object" name="action_assign" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="assign_to_action" model="ir.actions.act_window">
+        <field name="name">assign_to_action</field>
+        <field name="res_model">assign.to</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

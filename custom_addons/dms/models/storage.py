@@ -1,8 +1,10 @@
 
 import logging
-
+import os
 from odoo import _, api, fields, models
 from odoo.exceptions import AccessError
+from odoo.tools import config
+from odoo.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
 
@@ -20,11 +22,11 @@ class Storage(models.Model):
 
     save_type = fields.Selection(
         selection=[
-            ("database", _("Database")),
+            # ("database", _("Database")),
             ("file", _("Filestore")),
-            ("attachment", _("Attachment")),
+            # ("attachment", _("Attachment")),
         ],
-        default="database",
+        default="file",
         required=True,
         help="""The save type is used to determine how a file is saved by the
         system. If you change this setting, you can migrate existing files
@@ -95,6 +97,31 @@ class Storage(models.Model):
         "composition process too",
     )
     model = fields.Char(search="_search_model", store=False)
+    
+    def _get_filestore_path(self):
+        """
+        Retrieve the filestore path for the current database.
+        """
+        db_name = self.env.cr.dbname
+        base_filestore = os.path.join(config.filestore(self.env.cr.dbname))
+        if not os.path.exists(base_filestore):
+            raise UserError(f"Filestore path does not exist: {base_filestore}")
+        return base_filestore
+    
+    url = fields.Char(string="Filestore Url", default=lambda self: self._get_filestore_path())
+    
+    @api.constrains('url')
+    def _check_url_validity(self):
+        """
+        Validate that the URL is not empty and corresponds to a valid directory in the system.
+        """
+        for record in self:
+            if not record.url:
+                raise ValidationError("The filestore URL cannot be empty.")
+            if not os.path.exists(record.url):
+                raise ValidationError(f"The specified filestore path does not exist: {record.url}")
+            if not os.path.isdir(record.url):
+                raise ValidationError(f"The specified filestore path is not a directory: {record.url}")
 
     def _search_model(self, operator, value):
         allowed_items = self.env["ir.model"].sudo().search([("model", operator, value)])

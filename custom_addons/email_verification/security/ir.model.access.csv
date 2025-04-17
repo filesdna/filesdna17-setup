@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_email_user,User Email verification access,model_email_verification_config,website.group_website_restricted_editor,1,1,1,1
+access_wizard_message,User Wizard Message access,model_wizard_message,website.group_website_restricted_editor,1,1,1,1

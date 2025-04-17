@@ -1,0 +1,61 @@
+<!-- views/dms_file_delete_log_view.xml -->
+<odoo>
+        <record id="view_dms_file_delete_log_tree" model="ir.ui.view">
+            <field name="name">dms.file.delete.log.tree</field>
+            <field name="model">dms.file.delete.log</field>
+            <field name="arch" type="xml">
+                <tree create='0' duplicate='0'  delete='0'>
+                    <field name="name" />
+                    <field name="extension" />
+                    <field name="created_on" />
+                    <field name="delete_date" />
+                    <field name="deleted_by" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_dms_file_delete_log" model="ir.actions.act_window">
+            <field name="name">Deleted Files Log</field>
+            <field name="res_model">dms.file.delete.log</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No deleted files found.
+                </p>
+            </field>
+        </record>
+
+        <record id="view_dms_file_delete_log_search" model="ir.ui.view">
+            <field name="name">dms.file.delete.log.search</field>
+            <field name="model">dms.file.delete.log</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="File Name" />
+                    <field name="delete_date" string="Delete Date" />
+                    <field name="deleted_by" string="Delete By" />
+    
+                    <!-- <filter string="Deleted By" name='deleted_by'
+                        date="deleted_by" /> -->
+
+                    <filter string="Deleted Date"
+                        name='delete_date' date='delete_date'/>
+
+
+                    <group expand="0" string="Group By">
+                        <filter name="group_deleted_by" string="Deleted By"
+                                context="{'group_by': 'deleted_by'}" />
+                        <filter name="group_delete_date" string="Delete Date"
+                                context="{'group_by': 'delete_date:day'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <menuitem id="menu_dms_file_delete_log"
+        name="Deleted Files Log"
+        parent="dms.main_menu_dms"
+        action="action_dms_file_delete_log"
+        sequence="20" 
+        groups='dms.group_dms_delete_log'/>
+
+</odoo>

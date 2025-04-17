@@ -1,17 +1,14 @@
-
 import ast
 import base64
 import logging
 from ast import literal_eval
 from collections import defaultdict
-
+import binascii
 from odoo import _, api, fields, models, tools
 from odoo.exceptions import UserError, ValidationError
 from odoo.osv.expression import AND, OR
 from odoo.tools import consteq, human_size
-
 from odoo.addons.http_routing.models.ir_http import slugify
-
 from ..tools.file import check_name, unique_name
 
 _logger = logging.getLogger(__name__)
@@ -20,6 +17,8 @@ _logger = logging.getLogger(__name__)
 class DmsDirectory(models.Model):
     _name = "dms.directory"
     _description = "Directory"
+    _rec_name = "complete_name"
+    # _order = "complete_name"
 
     _inherit = [
         "portal.mixin",
@@ -31,8 +30,6 @@ class DmsDirectory(models.Model):
         "abstract.dms.mixin",
     ]
 
-    _rec_name = "complete_name"
-    _order = "complete_name"
 
     _parent_store = True
     _parent_name = "parent_id"
@@ -46,13 +43,32 @@ class DmsDirectory(models.Model):
         A root directory has a settings object, while a directory with a set
         parent inherits the settings form its parent.""",
     )
-    
+    perm_root = fields.Boolean(related='group_ids.perm_is_root', default=True, )
+
     is_template = fields.Boolean(
         default=False,
-        
+
     )
-    
-    # Override acording to defined in AbstractDmsMixin
+    template_id = fields.Many2one(
+        "dms.directory.template", string="Template", help="Select a template to apply"
+    )
+
+    shortcut_ids = fields.Many2many(
+        "dms.directory",
+        "dms_directory_shortcut_rel",
+        "directory_id",
+        "shortcut_id",
+        string="Shortcuts",
+        help="Quick access to other directories."
+    )
+
+    is_shortcut = fields.Boolean(
+        string="Create Shortcut",
+        help="Check this box to create a shortcut in the parent directory.",
+        default=False
+    )
+    image_1920 = fields.Image(compute="compute_image_1920", store=True, readonly=False, max_width=128, max_height=128)
+
     storage_id = fields.Many2one(
         compute="_compute_storage_id",
         compute_sudo=True,
@@ -82,6 +98,190 @@ class DmsDirectory(models.Model):
     root_directory_id = fields.Many2one(
         "dms.directory", "Root Directory", compute="_compute_root_id", store=True
     )
+    directory_number = fields.Char("Directory #")
+    is_archive_dir = fields.Boolean('', readonly=True,
+                                    default=False
+                                    )
+
+
+    def action_apply_template(self):
+        for directory in self:
+            if not directory.template_id:
+                _logger.warning(f"Skipping directory '{directory.name}' (ID: {directory.id}) - No template selected.")
+                continue  # No template selected, do nothing
+
+            _logger.info(
+                f"Applying template '{directory.template_id.name}' to directory '{directory.name}' (ID: {directory.id})")
+
+            # Find the root directory in the template
+            root_lines = directory.template_id.line_ids.filtered(lambda l: l.is_root)
+
+            if not root_lines:
+                _logger.warning(f"No root directories found in template '{directory.template_id.name}'. Skipping.")
+                continue
+
+            for root_line in root_lines:
+                _logger.info(
+                    f"Using directory '{directory.name}' as root for template '{directory.template_id.name}', skipping '{root_line.name}'.")
+
+                # Instead of creating "Root", use the selected directory
+                child_lines = directory.template_id.line_ids.filtered(lambda l: l.parent_id == root_line)
+                for child_line in child_lines:
+                    self._create_from_template_line(child_line, directory)  # Use existing directory as root
+
+    def _create_from_template_line(self, line, parent_directory):
+        """
+        Recursively create directories based on the template structure, skipping the 'Root' directory.
+        """
+        _logger.info(f"Creating subdirectory '{line.name}' under '{parent_directory.name}'")
+
+        # Create a new directory under the given parent_directory
+        new_directory = self.create({
+            "name": line.name,
+            "parent_id": parent_directory.id,  # Attach to the correct parent
+            "is_template": False,
+        })
+
+        _logger.info(
+            f"Created directory '{new_directory.name}' (ID: {new_directory.id}) under '{parent_directory.name}' (ID: {parent_directory.id})")
+
+        # Recursively create child directories
+        child_lines = line.template_id.line_ids.filtered(lambda l: l.parent_id == line)
+        if not child_lines:
+            _logger.info(f"'{line.name}' has no child directories.")
+
+        for child_line in child_lines:
+            _logger.info(f"Processing child directory '{child_line.name}' under '{new_directory.name}'")
+            self._create_from_template_line(child_line, new_directory)
+
+    @api.model
+    def create(self, vals):
+        # Automatically make the directory a root directory if no parent is specified
+        if not vals.get("parent_id") and not vals.get("is_root_directory"):
+            vals["is_root_directory"] = True
+
+        # Ensure template handling
+        if vals.get("is_template") and vals.get("template_id"):
+            template = self.env["dms.directory.template"].browse(vals["template_id"])
+            root_name = vals.get("name", "Root Directory")
+            # Create the root directory
+            root_directory = super(DmsDirectory, self).create({
+                "name": root_name,
+                "is_root_directory": True,
+            })
+            # Apply the template to create subdirectories
+            for line in template.line_ids.filtered(lambda l: l.is_root):
+                self._create_from_template_line(line, root_directory)
+            return root_directory
+
+        return super(DmsDirectory, self).create(vals)
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        """
+        Overrides create to ensure shortcuts are created after the directory exists.
+        """
+        directories = super(DmsDirectory, self).create(vals_list)
+
+        for directory in directories:
+            if directory.is_shortcut:
+                if not directory.parent_id:
+                    raise UserError(_("You can only create shortcuts for directories that have a parent."))
+
+                shortcut = self.create({
+                    "name": directory.name + " (Shortcut)",
+                    "parent_id": directory.parent_id.id,
+                    "shortcut_ids": [(4, directory.id)],  # Link the shortcut
+                })
+
+                directory.shortcut_ids |= shortcut
+
+        return directories
+
+    def action_open_shortcut(self):
+        """ Open the first selected shortcut directory """
+        self.ensure_one()
+        if self.shortcut_ids:
+            return {
+                "type": "ir.actions.act_window",
+                "name": "Shortcut Directory",
+                "res_model": "dms.directory",
+                "view_mode": "form",
+                "res_id": self.shortcut_ids[0].id,  # Open the first shortcut
+                "target": "current",
+            }
+
+    def action_apply_template(self):
+        for directory in self:
+            if not directory.template_id:
+                _logger.warning(f"Skipping directory '{directory.name}' (ID: {directory.id}) - No template selected.")
+                continue  # No template selected, do nothing
+
+            _logger.info(
+                f"Applying template '{directory.template_id.name}' to directory '{directory.name}' (ID: {directory.id})")
+
+            # Find the root directory in the template
+            root_lines = directory.template_id.line_ids.filtered(lambda l: l.is_root)
+
+            if not root_lines:
+                _logger.warning(f"No root directories found in template '{directory.template_id.name}'. Skipping.")
+                continue
+
+            for root_line in root_lines:
+                _logger.info(
+                    f"Using directory '{directory.name}' as root for template '{directory.template_id.name}', skipping '{root_line.name}'.")
+
+                # Instead of creating "Root", use the selected directory
+                child_lines = directory.template_id.line_ids.filtered(lambda l: l.parent_id == root_line)
+                for child_line in child_lines:
+                    self._create_from_template_line(child_line, directory)  # Use existing directory as root
+
+    def _create_from_template_line(self, line, parent_directory):
+        """
+        Recursively create directories based on the template structure, skipping the 'Root' directory.
+        """
+        _logger.info(f"Creating subdirectory '{line.name}' under '{parent_directory.name}'")
+
+        # Create a new directory under the given parent_directory
+        new_directory = self.create({
+            "name": line.name,
+            "parent_id": parent_directory.id,  # Attach to the correct parent
+            "is_template": False,
+        })
+
+        _logger.info(
+            f"Created directory '{new_directory.name}' (ID: {new_directory.id}) under '{parent_directory.name}' (ID: {parent_directory.id})")
+
+        # Recursively create child directories
+        child_lines = line.template_id.line_ids.filtered(lambda l: l.parent_id == line)
+        if not child_lines:
+            _logger.info(f"'{line.name}' has no child directories.")
+
+        for child_line in child_lines:
+            _logger.info(f"Processing child directory '{child_line.name}' under '{new_directory.name}'")
+            self._create_from_template_line(child_line, new_directory)
+
+    @api.model
+    def create(self, vals):
+        # Automatically make the directory a root directory if no parent is specified
+        if not vals.get("parent_id") and not vals.get("is_root_directory"):
+            vals["is_root_directory"] = True
+
+        # Ensure template handling
+        if vals.get("is_template") and vals.get("template_id"):
+            template = self.env["dms.directory.template"].browse(vals["template_id"])
+            root_name = vals.get("name", "Root Directory")
+            # Create the root directory
+            root_directory = super(DmsDirectory, self).create({
+                "name": root_name,
+                "is_root_directory": True,
+            })
+            # Apply the template to create subdirectories
+            for line in template.line_ids.filtered(lambda l: l.is_root):
+                self._create_from_template_line(line, root_directory)
+            return root_directory
+
+        return super(DmsDirectory, self).create(vals)
 
     def _default_parent_id(self):
         context = self.env.context
@@ -110,7 +310,7 @@ class DmsDirectory(models.Model):
         recursive=True,
     )
     complete_name = fields.Char(
-        compute="_compute_complete_name", store=True, recursive=True
+        compute="_compute_complete_name", store=True
     )
     child_directory_ids = fields.One2many(
         comodel_name="dms.directory",
@@ -119,17 +319,18 @@ class DmsDirectory(models.Model):
         auto_join=False,
         copy=False,
     )
+    domain = [('type', '=', 'files')]
 
     tag_ids = fields.Many2many(
         comodel_name="dms.tag",
         relation="dms_directory_tag_rel",
         domain="""[
             '|', ['category_id', '=', False],
-            ['category_id', 'child_of', category_id]]
+            ['category_id', 'child_of', category_id], ['type', '=', 'directories']]
         """,
         column1="did",
         column2="tid",
-        string="Tags",
+        string="Tags Directories",
         compute="_compute_tags",
         readonly=False,
         store=True,
@@ -188,7 +389,7 @@ class DmsDirectory(models.Model):
     )
 
     size = fields.Float(compute="_compute_size")
-    
+
     human_size = fields.Char(compute="_compute_human_size", string="Size")
 
     inherit_group_ids = fields.Boolean(string="Inherit Groups", default=True)
@@ -207,12 +408,9 @@ class DmsDirectory(models.Model):
                 are created as files of the subdirectory.
                 """,
     )
-    
-    metadata_configuration_id = fields.Many2one(comodel_name='metadata.configuration', string='Meta Data Category')
-    has_summary = fields.Selection(related="metadata_configuration_id.has_summary")
-    has_notes = fields.Selection(related="metadata_configuration_id.has_notes")
-    summary =  fields.Html('Summary')
-    notes =  fields.Text('Notes')
+
+    summary = fields.Html('Summary')
+    notes = fields.Text('Notes')
     complete_users_ids = fields.Many2many(
         comodel_name="res.users",
         relation="dms_dir_users_rel",
@@ -231,8 +429,7 @@ class DmsDirectory(models.Model):
             users = self.env['res.users']
             for group in record.complete_group_ids:
                 users |= group.users
-        record.update({"complete_users_ids": [(6,0, users.ids)]})
-                
+        record.update({"complete_users_ids": [(6, 0, users.ids)]})
 
     @api.model
     def _get_domain_by_access_groups(self, operation):
@@ -294,13 +491,13 @@ class DmsDirectory(models.Model):
         while current_directory:
             directories.insert(0, current_directory)
             if (
-                (
-                    access_token
-                    and current_directory.access_token
-                    and consteq(current_directory.access_token, access_token)
-                )
-                or not access_token
-                and current_directory.check_access_rights("read")
+                    (
+                            access_token
+                            and current_directory.access_token
+                            and consteq(current_directory.access_token, access_token)
+                    )
+                    or not access_token
+                    and current_directory.check_access_rights("read")
             ):
                 return directories
             current_directory = current_directory.parent_id
@@ -351,8 +548,7 @@ class DmsDirectory(models.Model):
         string="Deleted",
         default=False,
         help="If a file is set to archived, it is not displayed, but still exists.")
-    
-    
+
     @api.model
     def action_restore_multiple_directories(self):
         for rec in self:
@@ -368,16 +564,16 @@ class DmsDirectory(models.Model):
         self.active = True
         for file in self.file_ids:
             file.is_deleted = False
-        
+
         return {
-                'type': 'ir.actions.act_window',
-                'view_type': 'kanban',
-                'view_mode': 'kanban,tree,form',
-                'res_model': 'dms.directory',
-                'domain': [('is_deleted', '=', False)],
-                'target': 'current',
-            } 
-    
+            'type': 'ir.actions.act_window',
+            'view_type': 'kanban',
+            'view_mode': 'kanban,tree,form',
+            'res_model': 'dms.directory',
+            'domain': [('is_deleted', '=', False)],
+            'target': 'current',
+        }
+
     def unlink_directory(self):
         """Cascade DMS related resources removal.
         Avoid executing in ir.* models (ir.mode, ir.model.fields, etc), in transient
@@ -401,7 +597,7 @@ class DmsDirectory(models.Model):
                     'domain': [('is_deleted', '=', True)],
                     'target': 'current',
                 }
-    
+
     @api.depends("res_model")
     def _compute_model_id(self):
         for record in self:
@@ -485,16 +681,18 @@ class DmsDirectory(models.Model):
             return [("user_star_ids", "in", [self.env.uid])]
         return [("user_star_ids", "not in", [self.env.uid])]
 
-    @api.depends("name", "parent_id.complete_name")
+    @api.depends("is_shortcut", "parent_id")
     def _compute_complete_name(self):
-        for category in self:
-            # if category.parent_id:
-            #     category.complete_name = "{} / {}".format(
-            #         category.parent_id.complete_name,
-            #         category.name,
-            #     )
-            # else:
-            category.complete_name = category.name
+        for rec in self:
+            parent_name = rec.parent_id.name if rec.parent_id else ''
+            parent_parent_name = rec.parent_id.parent_id.name if rec.parent_id and rec.parent_id.parent_id else ''
+            print('name=', rec.name)
+            print('path=', f'{parent_name}/{rec.name}')
+            print('full path=', parent_parent_name)
+            # print('access_groups=', rec.group_ids.name)
+            parts = [parent_parent_name, parent_name, rec.name]
+            filtered_parts = [part for part in parts if part]
+            rec.complete_name = '/'.join(filtered_parts)
 
     @api.depends("parent_id")
     def _compute_storage_id(self):
@@ -622,8 +820,8 @@ class DmsDirectory(models.Model):
     def _onchange_storage_id(self):
         for record in self:
             if (
-                record.storage_id.save_type == "attachment"
-                and record.storage_id.inherit_access_from_parent_record
+                    record.storage_id.save_type == "attachment"
+                    and record.storage_id.inherit_access_from_parent_record
             ):
                 record.group_ids = False
 
@@ -681,10 +879,10 @@ class DmsDirectory(models.Model):
             else:
                 childs = record.sudo().parent_id.child_directory_ids.name_get()
             if list(
-                filter(
-                    lambda child: child[1] == record.name and child[0] != record.id,
-                    childs,
-                )
+                    filter(
+                        lambda child: child[1] == record.name and child[0] != record.id,
+                        childs,
+                    )
             ):
                 raise ValidationError(
                     _("A directory with the same name already exists.")
@@ -778,6 +976,7 @@ class DmsDirectory(models.Model):
                 parent = self.browse([vals["parent_id"]])
                 data = next(iter(parent.sudo().read(["storage_id"])), {})
                 vals["storage_id"] = self._convert_to_write(data).get("storage_id")
+
         # Hack to prevent error related to mail_message parent not exists in some cases
         ctx = dict(self.env.context).copy()
         ctx.update({"default_parent_id": False})
@@ -790,7 +989,7 @@ class DmsDirectory(models.Model):
                 new_storage_id = vals.get("storage_id", item.storage_id.id)
                 new_parent_id = vals.get("parent_id", item.parent_id.id)
                 old_storage_id = (
-                    item.storage_id or item.root_directory_id.storage_id
+                        item.storage_id or item.root_directory_id.storage_id
                 ).id
                 if new_parent_id:
                     if old_storage_id != self.browse(new_parent_id).storage_id.id:
@@ -824,7 +1023,7 @@ class DmsDirectory(models.Model):
 
     @api.model
     def _search_panel_domain_image(
-        self, field_name, domain, set_count=False, limit=False
+            self, field_name, domain, set_count=False, limit=False
     ):
         """We need to overwrite function from directories because odoo only return
         records with childs (very weird for user perspective).
@@ -833,7 +1032,7 @@ class DmsDirectory(models.Model):
         if field_name == "parent_id":
             res = {}
             for item in self.search_read(
-                domain=domain, fields=["id", "name", "count_directories"]
+                    domain=domain, fields=["id", "name", "count_directories"]
             ):
                 res[item["id"]] = {
                     "id": item["id"],
@@ -880,3 +1079,12 @@ class DmsDirectory(models.Model):
             searchpanel_default_directory_id=self.id,
         )
         return action
+
+    @api.depends('name')
+    def compute_image_1920(self):
+        company_image = self.env['res.company.dms'].search([('file_extension', '=', 'folder')],
+                                                           limit=1
+                                                           )
+        if company_image:
+            base64.b64decode(company_image.file_image)
+            self.image_1920 = company_image.file_image

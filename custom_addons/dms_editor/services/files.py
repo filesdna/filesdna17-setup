@@ -204,7 +204,7 @@ class Files:
                                 # Add signature to blockchain
                                 bc_signature = bc.add_signature_in_blockchain(updated_file_data.sha512_hash, user_id)
                                 _logger.info(f"bc_signature:{bc_signature}")
-                            self.document_sign_bc(user_id, updated_file_data.id, updated_file_data.sha512_hash, bc_document, bc_signature['signature'], email, updated_file_data.create_uid.id)
+                                self.document_sign_bc(user_id, updated_file_data.id, updated_file_data.sha512_hash, bc_document, bc_signature['signature'], email, updated_file_data.create_uid.id)
                         else:
                             # Update file metadata for guests
                             request.env['dms.file'].sudo().search([

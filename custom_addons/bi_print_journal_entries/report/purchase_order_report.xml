@@ -1,0 +1,92 @@
+<odoo>
+    <record id="purchase_report" model="ir.actions.report">
+        <field name="name">Purchase Report</field>
+        <field name="model">purchase.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="binding_model_id" ref="purchase.model_purchase_order"/>
+        <field name="binding_type">report</field>
+        <field name="report_name">bi_print_journal_entries.purchase_report_template</field>
+    </record>
+
+    <template id="purchase_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <h1>Purchase Details</h1>
+                <t t-foreach="cost" t-as="rec">
+                    <style>
+                        table {
+                        width: 100%;
+                        border: 1px solid #b3adad;
+                        border-collapse: collapse;
+                        padding: 5px;
+                        }
+                        table th {
+                        text-align: center;
+                        border: 1px solid #b3adad;
+                        padding: 5px;
+                        background: #f0f0f0;
+                        color: #313030;
+                        }
+                        table td {
+                        padding: 10px;
+                        border: 1px solid #b3adad;
+                        text-align: left;
+                        color: #313030;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <th colspan="4">Invoices Product Profit</th>
+                        </thead>
+                        <tbody>
+                            <td>Vendor</td>
+                            <td>
+                                <t t-esc="rec['partner_id']"/>
+                            </td>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <table>
+                        <thead>
+                            <th>Reference</th>
+                            <th>Date</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Purchase Price</th>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="rec['order_lines']" t-as="order_line">
+                                <tr>
+                                    <t t-if="'display_type' not in order_line or not order_line['display_type']">
+                                        <td>
+                                            <t t-esc="rec['purchase_id']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="rec['date_planned']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['product_id']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['product_qty']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['price_unit']"/>
+                                        </td>
+                                    </t>
+                                    <br/>
+                                    <t t-if="'display_type' in order_line and order_line['display_type'] == 'line_section'">
+                                        <td name="td_section_line" colspan="99"
+                                            style="background-color: grey; color: black; font-size: 25px;">
+                                            <span t-field="order_line.name"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

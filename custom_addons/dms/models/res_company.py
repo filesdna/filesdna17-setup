@@ -135,6 +135,7 @@ class ResCompanyImages(models.Model):
         ('xls', 'Excel Spreadsheet (.xls)'),
         ('xlsx', 'Excel Spreadsheet (.xlsx)'),
         ('pptx', 'Power Point (.pptx)'),
+        ('folder', 'Folder Image'),
     ]
 
 

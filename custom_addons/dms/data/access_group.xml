@@ -1,17 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-    <record id="dms_access_group_record_1" model="dms.access.group">
-        <field name="name">Admin</field>
-        <field name="perm_create">True</field>
-        <field name="perm_write">True</field>
-        <field name="perm_download">True</field>
-        <field name="perm_lock">True</field>
-        <field name="perm_rename">True</field>
-        <field name="perm_unlink">True</field>
-        <field name="perm_full_admin">True</field>
-        <field name="explicit_user_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+        <record id="dms_access_group_record_1" model="dms.access.group">
+            <field name="name">Admin</field>
+            <field name="perm_create">True</field>
+            <field name="perm_write">True</field>
+            <field name="perm_download">True</field>
+            <field name="perm_lock">True</field>
+            <field name="perm_unlock">True</field>
+            <field name="perm_encrypt">True</field>
+            <field name="perm_rename">True</field>
+            <field name="perm_unlink">True</field>
+            <field name="perm_open_locally">True</field>
+            <field name="perm_edit_online">True</field>
+            <field name="perm_preview_file">True</field>
+            <field name="perm_full_admin">True</field>
+            <field name="explicit_user_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+        </record>
 
-    </record>
-   </data>
+<!--        <record id="dms_access_group_record_5" model="dms.access.group">-->
+<!--            <field name="name">Archive group 5</field>-->
+<!--            <field name="perm_create">False</field>-->
+<!--            <field name="perm_write">False</field>-->
+<!--            <field name="perm_download">False</field>-->
+<!--            <field name="perm_lock">False</field>-->
+<!--            <field name="perm_unlock">False</field>-->
+<!--            <field name="perm_encrypt">False</field>-->
+<!--            <field name="perm_rename">False</field>-->
+<!--            <field name="perm_unlink">False</field>-->
+<!--            <field name="perm_open_locally">False</field>-->
+<!--            <field name="perm_edit_online">False</field>-->
+<!--            <field name="perm_preview_file">False</field>-->
+<!--            <field name="perm_full_admin">False</field>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms.group_dms_archive_files')])]"/>-->
+<!--        </record>-->
+
+<!--        <record id="dms_access_group_record_10" model="dms.access.group">-->
+<!--            <field name="name">Archive group 10</field>-->
+<!--            <field name="perm_create">False</field>-->
+<!--            <field name="perm_write">False</field>-->
+<!--            <field name="perm_download">False</field>-->
+<!--            <field name="perm_lock">False</field>-->
+<!--            <field name="perm_unlock">False</field>-->
+<!--            <field name="perm_encrypt">False</field>-->
+<!--            <field name="perm_rename">False</field>-->
+<!--            <field name="perm_unlink">False</field>-->
+<!--            <field name="perm_open_locally">False</field>-->
+<!--            <field name="perm_edit_online">False</field>-->
+<!--            <field name="perm_preview_file">False</field>-->
+<!--            <field name="perm_full_admin">False</field>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms.group_dms_archive_files')])]"/>-->
+<!--        </record>-->
+
+<!--        <record id="dms_access_group_record_15" model="dms.access.group">-->
+<!--            <field name="name">Archive group 15</field>-->
+<!--            <field name="perm_create">False</field>-->
+<!--            <field name="perm_write">False</field>-->
+<!--            <field name="perm_download">False</field>-->
+<!--            <field name="perm_lock">False</field>-->
+<!--            <field name="perm_unlock">False</field>-->
+<!--            <field name="perm_encrypt">False</field>-->
+<!--            <field name="perm_rename">False</field>-->
+<!--            <field name="perm_unlink">False</field>-->
+<!--            <field name="perm_open_locally">False</field>-->
+<!--            <field name="perm_edit_online">False</field>-->
+<!--            <field name="perm_preview_file">False</field>-->
+<!--            <field name="perm_full_admin">False</field>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms.group_dms_archive_files')])]"/>-->
+<!--        </record>-->
+    </data>
 </odoo>

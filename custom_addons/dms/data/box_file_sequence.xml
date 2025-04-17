@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="box_file_sequence" model="ir.sequence">
+            <field name="name">Box File Sequence</field>
+            <field name="code">box_file_sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</odoo>

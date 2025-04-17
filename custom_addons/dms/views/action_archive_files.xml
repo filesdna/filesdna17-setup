@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="move_documents_to_archive_action" model="ir.cron">
+        <field name="name">Move Documents to Archive</field>
+        <field name="model_id" ref="model_dms_file"/> <!-- Replace with your model reference -->
+        <field name="state">code</field>
+        <field name="code">model.move_documents_to_archive()</field>
+        <field name="active">True</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+    </record>
+</odoo>

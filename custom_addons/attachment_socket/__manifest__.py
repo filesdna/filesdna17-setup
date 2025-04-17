@@ -5,7 +5,7 @@
     'description': 'This module provides functionality to manage authentication tokens and validate them for WebSocket connections.',
     'category': 'Tools',
     'author': 'Your Name',
-    'depends': ['base',"filesdna_signup",'dms'],
+    'depends': ['base', "filesdna_signup", 'dms'],
     'data': [
         'security/ir.model.access.csv',
         'views/auth_token_views.xml',

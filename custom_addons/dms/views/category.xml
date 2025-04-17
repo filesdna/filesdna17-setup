@@ -105,10 +105,10 @@
         </field>
     </record>
     
-    <menuitem
-        id="menu_dms_category"
-        name="Categories"
-        parent="cat_menu_dms_config_organizing"
-        action="action_dms_category"
-    />
+<!--    <menuitem-->
+<!--        id="menu_dms_category"-->
+<!--        name="Categories"-->
+<!--        parent="cat_menu_dms_config_organizing"-->
+<!--        action="action_dms_category"-->
+<!--    />-->
 </odoo>

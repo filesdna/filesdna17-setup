@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <record id="hr_employee_office_custom_form" model="ir.ui.view">
+            <field name="name">hr_employee_office_custom_form</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="arch" type="xml">
+<!--                <xpath expr="//field[@name='name']" position="after">-->
+<!--                    <field name="ministry" string='Ministry'/>-->
+<!--                    <field name="unit_level" string='Unit Level'/>-->
+<!--                    <field name="ref_unit" string='Reference Unit'/>-->
+<!--                    <field name="main_unit" string='Main Unit'/>-->
+<!--                    <field name="is_main" string='Is Main Unit'/>-->
+<!--                    <field name="unit_address" string='Unit Address'/>-->
+<!--                </xpath>-->
+                <!--Merge-->
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="level"/>
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="before">
+                    <field name="root_parent"/>
+                    <field name="top_formation"/>
+                    <field name="main_parent"/>
+                    <field name="parent_id_new" invisible="not top_formation "/>
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="attributes">
+                    <attribute name="invisible">top_formation</attribute>
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="after">
+                    <field name="parent_root" invisible="1"/>
+                    <field name="number"/>
+                    <field name="complete_name" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='manager_id']" position="after">
+                    <field name="deputy"/>
+                </xpath>
+                <!--Merge-->
+            </field>
+        </record>
+        <record id="view_hr_department_tree_inherit" model="ir.ui.view">
+            <field name="name">hr.department.tree.inherit</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="ministry" string='Main'/>
+                    <field name="unit_level" string='Unit Level'/>
+                    <field name="ref_unit" string='Reference Unit'/>
+                    <field name="main_unit" string='Main Unit'/>
+                    <field name="is_main" string='Is Main Unit'/>
+                    <field name="unit_address" string='Unit Address'/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

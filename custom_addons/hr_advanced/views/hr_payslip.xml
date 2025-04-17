@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="payslip_inherit_allotment_form" model="ir.ui.view">
+            <field name="name">payslip.inherit.allotments.form</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="payroll.hr_payslip_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//div[2]" position="replace">
+                    <div class="oe_title mw-75 ps-0 pe-2" name="title">
+                        <h1 class="d-flex flex-row align-items-center">
+                            <field name="employee_id" placeholder="Employee" style="width: 200%"
+                                   readonly="state not in ['draft', 'verify']"/>
+                        </h1>
+                    </div>
+                </xpath>
+                <xpath expr="//page//field[@name='dynamic_filtered_payslip_lines']" position="before">
+                    <group name="add_details" string="Salary Details">
+                        <group>
+                            <!-- <field name="wage" widget="monetary" style="width: 3%"/> -->
+                            <field name="net_salary"/>
+                            <field name="allotments"/>
+                            <field name="retirement_amount"/>
+                            <field name="social_tax"/>
+                            <field name="deductions"/>
+                        </group>
+                        <group>
+                            <field name="retirement_percentage" widget='percentage' style="width: 15%"/>
+                            <field name="akran_salary" style="width: 15%"/>
+                            <field name="marriage_salary" style="width: 15%"/>
+                            <field name="num_of_child"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//page[2]" position="before">
+                    <page name="deduction" string="Deduction">
+                        <group>
+                            <field name="total_deduction" string="Total Deduction"/>
+                        </group>
+                        <field name="link_rule_deduction">
+                            <tree editable="bottom" create="0" delete="0">
+                                <field name="slip_id" column_invisible="1"/>
+                                <field name="deduction_id"/>
+                                <field name="code"/>
+                                <field name="deduction_type"/>
+                                <field name="salary_type"/>
+                                <field name="percentage" widget="percentage"
+                                       readonly="deduction_type == 'fixed_amount'"/>
+                                <field name="fixed_amount" readonly="deduction_type == 'percentage'"/>
+                                <field name="total_amount_deduction"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//page[2]" position="before">
+                    <page name="allotments" string="Allotment">
+                        <group>
+                            <field name="total_allotments" string="Total Allotments"/>
+                        </group>
+                        <field name="link_rule">
+                            <tree editable="bottom" create="0" delete="0">
+                                <field name="slip_id" column_invisible="1"/>
+                                <field name="allotment_id"/>
+                                <field name="code"/>
+                                <field name="allotment_type"/>
+                                <field name="salary_type"/>
+                                <field name="percentage" widget="percentage"
+                                       readonly="allotment_type == 'fixed_amount'"/>
+                                <field name="fixed_amount" readonly="allotment_type == 'percentage'"/>
+                                <field name="total_amount"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,18 +1,4 @@
 # -*- coding: utf-8 -*-
-#################################################################################
-# Author      : Webkul Software Pvt. Ltd. (<https://webkul.com/>)
-# Copyright(c): 2015-Present Webkul Software Pvt. Ltd.
-# All Rights Reserved.
-#
-#
-#
-# This program is copyright property of the author mentioned above.
-# You can`t redistribute it and/or modify it.
-#
-#
-# You should have received a copy of the License along with this program.
-# If not, see <https://store.webkul.com/license.html/>
-#################################################################################
 import base64
 from odoo import api, models, fields, _
 import os
@@ -89,8 +75,8 @@ class GoogleCloudAttachment(models.Model):
                     print(blob_name,'read file')
                     read = blob.download_as_string()
                     return read
-                except Exception as e:
-                    _logger.info("ERROR 404: File not found on Google Cloud Bucket...%r",e)
+                except:
+                    print('not Found')
         return super(GoogleCloudAttachment, self)._file_read(fname)
     
    

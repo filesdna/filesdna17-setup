@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="hr_employee_grade_form" model="ir.ui.view">
+            <field name="name">hr.employee.grade.form</field>
+            <field name="model">hr.employee.grade</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="grade_type"/>
+                            <field name="steps_count"/>
+                            <field name="years_count"/>
+                            <field name="required_course"/>
+                            <field name="requre_approve"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_grade_list" model="ir.ui.view">
+            <field name="name">hr.employee.grade.tree</field>
+            <field name="model">hr.employee.grade</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="grade_type"/>
+                    <field name="steps_count"/>
+                    <field name="years_count"/>
+                    <field name="required_course"/>
+                    <field name="requre_approve"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_district_form" model="ir.ui.view">
+            <field name="name">hr.employee.district.form</field>
+            <field name="model">hr.employee.district</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="gov_id"/>
+                            <field name="city_id" domain="[('gov_id', '=', gov_id)]"/>
+                            <field name="name"/>
+                            <field name="district_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_city_form" model="ir.ui.view">
+            <field name="name">hr.employee.district.form</field>
+            <field name="model">hr.employee.district</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="gov_id"/>
+                            <field name="city_id" domain="[('gov_id', '=', gov_id)]"/>
+                            <field name="name"/>
+                            <field name="district_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_course_form" model="ir.ui.view">
+            <field name="name">hr.employee.course.form</field>
+            <field name="model">hr.employee.course</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="course_type"/>
+                            <field name="course_duration"/>
+                            <field name="is_certified"/>
+                            <field name="course_level"/>
+                            <field name="participater_limit_count"/>
+                            <field name="is_free"/>
+                            <field name="course_amount"/>
+                            <field name="course_notes"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_delegation_form" model="ir.ui.view">
+            <field name="name">hr.employee.delegation.form</field>
+            <field name="model">hr.employee.delegation</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="delegation_type"/>
+                            <field name="delegation_duration"/>
+                            <field name="is_free"/>
+                            <field name="delegation_amount"/>
+                            <field name="delegation_notes"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_delegation_list1" model="ir.ui.view">
+            <field name="name">hr.employee.delegation.list</field>
+            <field name="model">hr.employee.delegation</field>
+            <field name="arch" type="xml">
+                <tree limit="5">
+                    <field name="name"/>
+                    <field name="delegation_type"/>
+                    <field name="delegation_duration"/>
+                    <field name="is_free"/>
+                    <field name="delegation_amount"/>
+                    <field name="delegation_notes"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_punishment_list" model="ir.ui.view">
+            <field name="name">hr.employee.punishment.list</field>
+            <field name="model">hr.employee.punishment</field>
+            <field name="arch" type="xml">
+                <tree limit="5">
+                    <field name="name"/>
+                    <field name="serving_month_count"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_vacation_list" model="ir.ui.view">
+            <field name="name">hr.employee.vacation.list</field>
+            <field name="model">hr.employee.vacation</field>
+            <field name="arch" type="xml">
+                <tree limit="5">
+                    <!-- <field name="vacation_id"/> -->
+                    <field name="name"/>
+                    <field name="duration_type"/>
+                    <field name="effect_balance"/>
+                    <field name="require_approve"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_level_form" model="ir.ui.view">
+            <field name="name">hr.employee.level.form</field>
+            <field name="model">hr.employee.level</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="grade_type"/>
+                            <field name="years_count"/>
+                            <field name="requre_approve"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_specialization_form" model="ir.ui.view">
+            <field name="name">hr.employee.specialization.form</field>
+            <field name="model">hr.employee.specialization</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_employee_level_action" model="ir.actions.act_window">
+            <field name="name">Level</field>
+            <field name="res_model">hr.employee.level</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_grade_action" model="ir.actions.act_window">
+            <field name="name">Grade</field>
+            <field name="res_model">hr.employee.grade</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_specialization_action" model="ir.actions.act_window">
+            <field name="name">Specialization</field>
+            <field name="res_model">hr.employee.specialization</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_governorate_action" model="ir.actions.act_window">
+            <field name="name">Governorate</field>
+            <field name="res_model">hr.employee.governorate</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_employee_exact_specialest_action" model="ir.actions.act_window">
+            <field name="name">Exact Specialest</field>
+            <field name="res_model">hr.employee.exact_specialest</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_emp_status_action" model="ir.actions.act_window">
+            <field name="name">Employee Status</field>
+            <field name="res_model">hr.employee.emp_status</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_course_action" model="ir.actions.act_window">
+            <field name="name">Courses</field>
+            <field name="res_model">hr.employee.course</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_vacation_action" model="ir.actions.act_window">
+            <field name="name">Vacation</field>
+            <field name="res_model">hr.employee.vacation</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_delegation_action" model="ir.actions.act_window">
+            <field name="name">Delegation</field>
+            <field name="res_model">hr.employee.delegation</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_thank_action" model="ir.actions.act_window">
+            <field name="name">Thank</field>
+            <field name="res_model">hr.employee.thank</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_punishment_action" model="ir.actions.act_window">
+            <field name="name">Punishment</field>
+            <field name="res_model">hr.employee.punishment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_employee_grade_type_action" model="ir.actions.act_window">
+            <field name="name">Grade Types</field>
+            <field name="res_model">hr.employee.grade_type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_ministry_action" model="ir.actions.act_window">
+            <field name="name">Ministries</field>
+            <field name="res_model">hr.employee.ministry</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_units_action" model="ir.actions.act_window">
+            <field name="name">Units and Offices</field>
+            <field name="res_model">hr.employee.units</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_position_action" model="ir.actions.act_window">
+            <field name="name">Positions</field>
+            <field name="res_model">hr.employee.position</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_pos_job_title_action" model="ir.actions.act_window">
+            <field name="name">Position Jobtitels</field>
+            <field name="res_model">hr.employee.pos_job_title</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_class_emp_action" model="ir.actions.act_window">
+            <field name="name">Positions Classes</field>
+            <field name="res_model">hr.employee.class_emp</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_city_action" model="ir.actions.act_window">
+            <field name="name">Cities</field>
+            <field name="res_model">hr.employee.city</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="hr_employee_districts_action" model="ir.actions.act_window">
+            <field name="name">Districts</field>
+            <field name="res_model">hr.employee.district</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- <menuitem id="menu_human_resources_configuration1122" name="Configuration112222" parent="menu_hr_root" sequence="101"/> -->
+        <menuitem id="hr_employee_grade_setting_menu" name="Grade Setting" parent="hr.hr_menu_configuration"
+                  sequence="39"/>
+
+        <menuitem id="hr_employee_grade_type_action_menu" name="Grade Types" action="hr_employee_grade_type_action"
+                  parent="hr_employee_grade_setting_menu" sequence="40"/>
+        <menuitem id="hr_employee_grade_action_menu" name="Grade" action="hr_employee_grade_action"
+                  parent="hr_employee_grade_setting_menu" sequence="41"/>
+        <menuitem id="hr_employee_level_action_menu" name="Level" action="hr_employee_level_action"
+                  parent="hr_employee_grade_setting_menu" sequence="42"/>
+
+
+        <menuitem id="hr_employee_specialization_action_menu" name="Specialization"
+                  action="hr_employee_specialization_action" parent="hr.hr_menu_configuration" sequence="43"/>
+        <menuitem id="hr_employee_exact_specialest_action_menu" name="Exact Specialest"
+                  action="hr_employee_exact_specialest_action" parent="hr.hr_menu_configuration" sequence="44"/>
+        <menuitem id="hr_employee_emp_status_action_menu" name="Employee status" action="hr_employee_emp_status_action"
+                  parent="hr.hr_menu_configuration" sequence="45"/>
+        <menuitem id="hr_employee_emp_course_menu" name="Courses" action="hr_employee_course_action"
+                  parent="hr.hr_menu_configuration" sequence="46"/>
+<!--        <menuitem id="hr_employee_emp_delegation_menu" name="Delegations" action="hr_employee_delegation_action"-->
+<!--                  parent="hr.hr_menu_configuration" sequence="47"/>-->
+        <menuitem id="hr_employee_exact_ministry_action_menu" name="Ministries" action="hr_employee_ministry_action"
+                  parent="hr.hr_menu_configuration" sequence="48"/>
+        <menuitem id="hr_employee_units_action_menu" name="Units and Offices" action="hr_employee_units_action"
+                  parent="hr.hr_menu_configuration" sequence="49"/>
+        <menuitem id="hr_employee_position_menu" name="Positions" action="hr_employee_position_action"
+                  parent="hr.hr_menu_configuration" sequence="50"/>
+        <menuitem id="hr_employee_pos_job_title_action_menu" name="Position Jobtitles"
+                  action="hr_employee_pos_job_title_action" parent="hr.hr_menu_configuration" sequence="51"/>
+        <menuitem id="hr_employee_class_emp_action_menu" name="Classes of Position"
+                  action="hr_employee_class_emp_action" parent="hr.hr_menu_configuration" sequence="51"/>
+        <menuitem id="hr_employee_city_action_menu" name="Cities" action="hr_employee_city_action"
+                  parent="hr.hr_menu_configuration" sequence="52"/>
+        <menuitem id="hr_employee_districts_action_menu" name="Districts" action="hr_employee_districts_action"
+                  parent="hr.hr_menu_configuration" sequence="53"/>
+        <menuitem id="hr_employee_emp_thank_menu" name="Thanks" action="hr_employee_thank_action"
+                  parent="hr.hr_menu_configuration" sequence="54"/>
+        <menuitem id="hr_employee_emp_punishment_menu" name="Punishment" action="hr_employee_punishment_action"
+                  parent="hr.hr_menu_configuration" sequence="55"/>
+        <menuitem id="hr_employee_emp_vacation_menu" name="Vacation" action="hr_employee_vacation_action"
+                  parent="hr.hr_menu_configuration" sequence="56"/>
+
+    </data>
+</odoo>

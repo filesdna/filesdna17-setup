@@ -22,7 +22,7 @@ class VoiceRemoveController(http.Controller):
                 return self._response_error("Missing required parameters.")
 
             # Prepare API request to external service
-            url = "https://voice-reco-europe.filesdna.com/remove"
+            url = "https://voice1.filesdna.com/remove"
             headers = {'accept': 'application/json'}
             data = {'name': email, 'token': token}
 

@@ -6,21 +6,26 @@
         <field name="model">dms.access.group</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name" />
-                <field name="company_id" />
-                <field name="perm_create" />
-                <field name="perm_write" />
-                <field name="perm_download" />
-                <field name="perm_lock" />
-                <field name="perm_rename" />
-                <field name="perm_unlink" />
-                <field name="perm_full_admin" />
-                <field name="count_users" />
-                <field name="count_directories" />
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="perm_create"/>
+                <field name="perm_write"/>
+                <field name="perm_download"/>
+                <field name="perm_lock"/>
+                <field name="perm_unlock"/>
+                <field name="perm_encrypt"/>
+                <field name="perm_rename"/>
+                <field name="perm_unlink"/>
+                <field name="perm_open_locally"/>
+                <field name="perm_edit_online"/>
+                <field name="perm_preview_file"/>
+                <field name="perm_full_admin"/>
+                <field name="count_users"/>
+                <field name="count_directories"/>
             </tree>
         </field>
     </record>
-    
+
     <record id="view_dms_access_groups_form" model="ir.ui.view">
         <field name="name">dms_access.group.form</field>
         <field name="model">dms.access.group</field>
@@ -28,86 +33,109 @@
             <form>
                 <sheet>
                     <div class="oe_title">
-                        <label for="name" class="oe_edit_only" />
+                        <label for="name" class="oe_edit_only"/>
                         <h1>
-                            <field name="name" />
+                            <field name="name"/>
                         </h1>
                     </div>
                     <group name="group" string="Group">
                         <group>
-                            <field name="parent_group_id" />
+                            <field name="parent_group_id"/>
                         </group>
                         <group>
-                            <field name="count_users" />
+                            <field name="count_users"/>
+                            <field name="enable_document_filter" force_save="1" invisible="0"/>
                         </group>
                     </group>
                     <group string="Settings">
                         <group>
-                            <field name="perm_create" />
-                            <field name="perm_write" />
-                            <field name="perm_download" />
-                            <field name="perm_lock" />
+                            <field name="perm_write"/>
+                            <field name="perm_rename"/>
+                            <field name="perm_download"/>
+                            <field name="perm_lock"/>
+                            <field name="perm_unlock"/>
+                            <field name="perm_encrypt"/>
+                            <field name="perm_open_locally"/>
+                            <field name="perm_edit_online"/>
+                            <field name="perm_preview_file"/>
                         </group>
                         <group>
-                            <field name="perm_rename" />
-                            <field name="perm_unlink" />
-                            <field name="perm_full_admin" />
+                            <field name="perm_create" force_save="1"/>
+                            <field name="perm_unlink" force_save="1"/>
+                            <field name="perm_create_directory"/>
+                            <field name="perm_delete_directory"/>
+                            <field name="perm_is_root" force_save="1"/>
+                            <field name="perm_full_admin"/>
                         </group>
                     </group>
                     <notebook>
+                        <page name="parameters" string="Parameters" invisible="not enable_document_filter">
+                            <field name="parameter_values_access">
+                                <tree editable="bottom" create="0">
+                                    <field name="parameter_id" readonly="1" force_save="1"/>
+                                    <field name="selected_value_ids" widget="many2many_tags"/>
+                                    <field name="reference_value_many"/>
+                                </tree>
+                            </field>
+                        </page>
                         <page name="users" string="Users">
-                            <field name="users">
-                                <tree>
-                                    <field name="name" />
-                                    <field name="login" />
-                                    <field name="lang" />
-                                    <field name="login_date" />
+                            <field name="users" readonly='0'>
+                                <tree editable="bottom" create="0">
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="lang"/>
+                                    <field name="login_date"/>
+                                    <field name="groups_id" widget="many2many_tags" column_invisible="1"/>
+                                    <field name="groups_id" column_invisible="1"/>
                                 </tree>
                             </field>
                         </page>
                         <page name="groups" string="Groups">
                             <field name="group_ids">
                                 <tree>
-                                    <field name="name" />
-                                    <field name="comment" />
+                                    <field name="name"/>
+                                    <field name="comment"/>
                                 </tree>
                             </field>
                         </page>
                         <page name="extra_users" string="Explicit Users">
                             <field name="explicit_user_ids">
                                 <tree>
-                                    <field name="name" />
-                                    <field name="login" />
-                                    <field name="lang" />
-                                    <field name="login_date" />
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="lang"/>
+                                    <field name="login_date"/>
                                 </tree>
                             </field>
                         </page>
                         <page name="childs" string="Child Groups">
                             <field name="child_group_ids">
                                 <tree>
-                                    <field name="name" />
-                                    <field name="perm_create" />
-                                    <field name="perm_write" />
-                                    <field name="perm_download" />
-                                    <field name="perm_lock" />
-                                    <field name="perm_rename" />
-                                    <field name="perm_unlink" />
-                                    <field name="perm_full_admin" />
-                                    <field name="count_users" />
+                                    <field name="name"/>
+                                    <field name="perm_create"/>
+                                    <field name="perm_write"/>
+                                    <field name="perm_download"/>
+                                    <field name="perm_lock"/>
+                                    <field name="perm_unlock"/>
+                                    <field name="perm_encrypt"/>
+                                    <field name="perm_rename"/>
+                                    <field name="perm_unlink"/>
+                                    <field name="perm_open_locally"/>
+                                    <field name="perm_edit_online"/>
+                                    <field name="perm_preview_file"/>
+                                    <field name="perm_full_admin"/>
+                                    <field name="count_users"/>
                                 </tree>
                             </field>
                         </page>
                         <page string="Directories">
                             <field name="directory_ids">
-                                <tree>
-                                    <field name="name" />
-                                    <field
-                                        name="count_directories"
-                                        string="Directories"
-                                    />
-                                    <field name="count_files" string="Files" />
-                                    <field name="size" widget="binary_size" />
+                                <tree create="1">
+                                    <field name="name"/>
+                                    <field name="complete_name" string="Full Path"/>
+                                    <field name="count_directories" string="Directories"/>
+                                    <field name="count_files" string="Files"/>
+                                    <field name="size" widget="binary_size"/>
                                 </tree>
                             </field>
                         </page>
@@ -122,17 +150,17 @@
         <field name="res_model">dms.access.group</field>
         <field name="view_mode">tree,form</field>
         <field
-            name="view_ids"
-            eval="[(5, 0, 0),
+                name="view_ids"
+                eval="[(5, 0, 0),
             (0, 0, {'view_mode': 'tree', 'view_id': ref('view_dms_access_groups_tree')}),
             (0, 0, {'view_mode': 'form', 'view_id': ref('view_dms_access_groups_form')})]"
         />
     </record>
 
     <menuitem
-        id="menu_dms_access_groups"
-        name="Access Groups"
-        parent="dms.cat_menu_dms_config_system"
-        action="action_dms_access_groups"
+            id="menu_dms_access_groups"
+            name="Access Groups"
+            parent="dms.cat_menu_dms_config_system"
+            action="action_dms_access_groups"
     />
 </odoo>

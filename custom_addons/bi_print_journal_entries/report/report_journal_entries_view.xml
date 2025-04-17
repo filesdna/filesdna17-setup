@@ -21,7 +21,7 @@
 								<td><strong>Journal Entry : </strong></td>
 								<td><p t-field="o.name"/></td>
 								<td><strong>Journal :</strong></td>
-								<td><p t-field="o.journal_id"/></td>
+								<td><p t-field="o.name_of_journal"/></td>
 							</tr>
 							<tr>
 								<td><strong>Date :</strong></td>

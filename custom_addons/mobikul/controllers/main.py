@@ -644,7 +644,7 @@ class MobikulApi(WebServices):
             result.append(wishlist.product_id.id)
         return result
 
-    @route(['/mobikul/mycart', '/mobikul/mycart/<int:line_id>'],website=True, csrf=False, type='http', auth="none", methods=['POST', 'PUT', 'DELETE'])
+    @route(['/mobikul/mycart', '/mobikul/mycart/<int:line_id>'],website=True, csrf=False, type='http', auth="public", methods=['POST', 'PUT', 'DELETE'])
     def getMyCart(self, line_id=0, **kwargs):
         response = self._authenticate(True, **kwargs)
         if response.get('success'):
@@ -1962,8 +1962,8 @@ class MobikulApi(WebServices):
         currency_position = context.get("currencyPosition")
         product_list = []
         for product in products:
-            comb_info = product.product_tmpl_id.with_context(context)._get_combination_info(combination=False, product_id=False,add_qty=1, pricelist=pricelist, parent_combination=False, only_template=False)
-            temp = {"id":product.id,"templateId":product.product_tmpl_id.id,"productVarientCount":product.product_variant_count,"name":product.name,
+            comb_info = product_temp.with_context(context)._get_combination_info(combination=False, product_id=False,add_qty=1, pricelist=pricelist, parent_combination=False, only_template=False)
+            temp = {"id":product.id,"templateId":product_temp.id,"productVarientCount":product.product_variant_count,"name":product.name,
                     "priceUnit":_displayWithCurrency(lang_obj,comb_info['has_discounted_price'] and comb_info['list_price'] or comb_info['price'] or 0, currency_symbol, currency_position),
             "thumbNail":_get_image_url(base_url, 'product.product', product.id, 'image_1920', product.write_date)}
             product_list.append(temp)
@@ -2045,3 +2045,102 @@ class DBPortalAccount(CustomerPortal):
 
 		values = self._invoice_get_page_view_values(model_id, access_token, **kw)
 		return request.render("account.portal_invoice_page", values)
+
+
+from odoo import http
+
+class ProductAPI(http.Controller):
+    @http.route('/mobkul/products/search-variant', type='json', auth='none', methods=['POST'], csrf=False)
+    def get_products_by_variant(self, **kwargs):
+        """
+        API to get products by variant value.
+        :param search_bar: Dictionary with variant keys and values to filter products.
+        :return: JSON response with products.
+        """
+        try:
+            search_bar = kwargs.get('search_bar')
+            if not search_bar or not isinstance(search_bar, dict):
+                return {"error": "Invalid or missing 'search_bar' parameter. It must be a dictionary."}
+            keys_list = list(search_bar.keys())
+            values_list = list(search_bar.values())
+            values_list = [value.lower() if isinstance(value, str) else value for value in values_list]
+            variant_attribute = request.env['product.attribute'].sudo().search([
+                ('name', 'in', keys_list),
+            ])
+            if not variant_attribute:
+                return {"error": "Variant not found."}
+            domain = ['&',('attribute_id', 'in', variant_attribute.ids)]
+            i = 1
+            for value in values_list:
+                domain.append(('name', 'ilike', value))
+                if i != 1:
+                    domain.insert(1,'|')
+                i += 1
+            attribute_id = request.env['product.attribute.value'].sudo().search(domain)
+            products = request.env['product.template.attribute.line'].sudo().search(
+                [('value_ids', 'in', attribute_id.ids)])
+            product_data = []
+            for product in products:
+                product_temp = product.product_tmpl_id
+                for pro in product_temp.product_variant_ids:
+                    print(pro)
+                    product_value = []
+                    for value in pro.product_template_attribute_value_ids:
+                        product_value.append(value.name.lower())
+                    _logger.info("Comparsion List %s,,,,%s",product_value,values_list)
+                    if all(val in product_value for val in values_list):
+                        product_data.append([{
+                        "templateId": product_temp.id,
+                        'productId': pro.id,
+                        'name': product_temp.name,
+                        'priceReduce': "",
+                        'default_code': pro.default_code,
+                        'priceUnit': product_temp.list_price,
+                        'productId': product_temp.product_variant_id and product_temp.product_variant_id.id or '',
+                        'productCount': product_temp.product_variant_count or 0,
+                        'description': product_temp.description_sale or '',
+                        'thumbNail': '%sweb/image/%s/%s/%s?unique=%s' % ('https://bazar-iq.filesdna.com/', 'product.template', product_temp.id, 'image_1920', re.sub('[^\d]', '', fields.Datetime.to_string(product_temp.write_date))),
+                        'ribbon': {
+                                        'ribbon_message': product_temp.website_ribbon_id.html or '',
+                                        'position': product_temp.website_ribbon_id.html_class or '',
+                                        'text_color': product_temp.website_ribbon_id.text_color or '#589ff5',
+                                        'bg_color':  product_temp.website_ribbon_id.bg_color or '#f7f9fa'
+                                    }
+                        }])
+
+
+            return {"success": True, "products": product_data}
+
+        except Exception as e:
+            return {"error": str(e)}
+
+    @http.route('/mobkul/variants', type='json', auth='none', methods=['GET'], csrf=False)
+    def get_product_variants(self):
+        """
+        API to retrieve product variants and their attribute values in the format:
+        {'Brand': ['HP', 'Samsung'], 'Size': ['Small', 'Medium']}
+        """
+        try:
+            # Fetch all product variants and their attribute values
+            product_attribute_lines = request.env['product.template.attribute.line'].sudo().search([])
+            
+            # Initialize the result dictionary
+            variant_data = {}
+
+            for line in product_attribute_lines:
+                attribute_name = line.attribute_id.name
+                # Get the values for this attribute
+                values = [value.name for value in line.value_ids]
+                if attribute_name in variant_data:
+                    variant_data[attribute_name].extend(values)
+                else:
+                    variant_data[attribute_name] = values
+            
+            # Remove duplicates
+            for key in variant_data:
+                variant_data[key] = list(set(variant_data[key]))
+
+            return {'success':True, 'data': variant_data}
+
+        except Exception as e:
+            return {'success': False, 'message': str(e)}

@@ -1,0 +1,64 @@
+<odoo>
+    <record id="hr_grade_salary_tree" model="ir.ui.view">
+        <field name="name">hr_grade_salary_tree</field>
+        <field name="model">hr.grade.salary</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_grade_salary_form" model="ir.ui.view">
+        <field name="name">hr_grade_salary_tree</field>
+        <field name="model">hr.grade.salary</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class='oe_title'>
+                        <label for="name"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Basic Salary Table">
+                            <field name="basic_salary_line">
+                                <tree editable="bottom">
+                                    <field name="grade_type"/>
+                                    <field name="grade"/>
+                                    <field name="level"/>
+                                    <field name="amount"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_hr_grade_salary" model="ir.actions.act_window">
+        <field name="name">Basic Salary</field>
+        <field name="res_model">hr.grade.salary</field>
+    </record>
+
+    <record id="group_hr_grade_salary" model="res.groups">
+        <field name="name">Show Basic Salary Menu</field>
+    </record>
+
+    <menuitem
+            id="hr_grade_salary_ment_items"
+            name="Basic Salary"
+            parent="payroll.payroll_menu_configuration"
+            action="action_hr_grade_salary"
+            sequence="45"
+            groups="hr_advanced.group_hr_grade_salary"/>
+    <!--    <menuitem-->
+    <!--            id='hr_grade_salary_ment_items'-->
+    <!--            name="Basic Salary"-->
+    <!--            parent="payroll.payroll_menu_configuration"-->
+    <!--            action="action_hr_grade_salary"-->
+    <!--            sequence="45"/>-->
+</odoo>

@@ -1,7 +1,7 @@
 {
     "name": "Document Management System",
     "summary": """Document Management System for Filesdna""",
-    "version": "1.2",
+    "version": "1.5",
     "category": "Document Management",
     'author': "Borderless Security",
     "depends": [
@@ -10,8 +10,7 @@
         "portal",
         "web",
         "auth_totp",
-        "windx_attachments_preview",
-       
+        "hr",
     ],
     "data": [
         "security/security.xml",
@@ -20,13 +19,13 @@
         "data/storage.xml",
         "data/access_group.xml",
         "data/directory.xml",
+        "data/dms_sequence.xml",
+        "data/box_file_sequence.xml",
+        "data/dms_reference.xml",
+        "data/file_extenstions_images.xml",
         "views/menu.xml",
-        "views/metadata.xml",
         "views/res_users.xml",
         "views/tag.xml",
-        "wizard/multi_document.xml",
-        "wizard/authenticator.xml",
-        "wizard/directory_auth.xml",
         "views/category.xml",
         "views/dms_file.xml",
         "views/directory.xml",
@@ -35,9 +34,38 @@
         "views/res_config_settings.xml",
         "views/dms_portal_templates.xml",
         "views/template.xml",
+        'views/dms_file_delete_log_views.xml',
+        # 'views/extra_config.xml',
+        'views/dms_file_aduit.xml',
+        'views/dms_line_aduit.xml',
+        'views/action_archive_files.xml',
+        'views/dms_directory_template_views.xml',
+        'views/itrack.xml',
+        "wizard/authenticator.xml",
+        "wizard/directory_auth.xml",
+        "wizard/wizard_views.xml",
+        "wizard/action_reply.xml",
+        "wizard/action_resend.xml",
+        "wizard/dms_linked_files.xml",
+        "wizard/assign_to.xml",
+        # "wizard/advance_search.xml",
+        "views/hr_department_inherit.xml",
+        "views/seach_link_file.xml",
+        "views/itrack_assignment.xml",
+        "views/document_parameters.xml",
+        "views/dms_reference.xml",
+        "views/dms_file_extension_views.xml",
+        "views/advance_search.xml",
     ],
-   
+    'assets': {
+        'web.assets_backend': [
+            'dms/static/src/**/*',
+            'dms/static/src/discuss/core/web/**/*',
+            'dms/static/css/dms_file.css',
+
+        ],
     "images": ["static/description/icon.png"],
     "application": True,
     
+}
 }

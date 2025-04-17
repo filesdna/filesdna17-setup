@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+     <record id="res_partner_bank_more_details_form" model="ir.ui.view">
+      <field name="name">res.partner.bank.more.details</field>
+      <field name="model">res.bank</field>
+      <field name="inherit_id" ref="base.view_res_bank_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='email']" position="after">
+              <field name="payer_account"/>
+              <field name="swift_bic"/>
+        </xpath>
+      </field>
+     </record>
+    </data>
+  </odoo>

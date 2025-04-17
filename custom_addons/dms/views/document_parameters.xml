@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_document_parameters_tree" model="ir.ui.view">
+        <field name="name">view_document_parameters_tree</field>
+        <field name="model">document.parameters</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="active"/>
+                <field name="required" column_invisible="1"/>
+                <button class="oe_highlight" name="action_required" type="object" string="Required" invisible="1"/>
+                <button class="oe_highlight" name="action_not_required" type="object" string="Not Required" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_document_parameters_form" model="ir.ui.view">
+        <field name="name">view_document_parameters_form</field>
+        <field name="model">document.parameters</field>
+        <field name="arch" type="xml">
+            <form string="Tag">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="document_parameters_line" widget="many2many_tags" invisible="1"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Values">
+                            <field name="document_parameters_line">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="reference_value"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_document_parameters" model="ir.actions.act_window">
+        <field name="name">Document Parameters</field>
+        <field name="res_model">document.parameters</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context"></field>
+        <field name="domain">[('active', 'in', [True, False])]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Click to create a new tag.
+            </p>
+            <p>
+                Tags are used to categorize Documents.
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+            id="menu_document_parameters"
+            name="Document Parameters"
+            parent="cat_menu_dms_config_organizing"
+            action="action_document_parameters"
+            groups="dms.group_show_document_parameters"
+
+    />
+
+    <record id="server_action_active" model="ir.actions.server">
+        <field name="name">Active Document Parameters</field>
+        <field name="model_id" ref="model_document_parameters"/>
+        <field name="binding_model_id" ref="model_document_parameters"/>
+        <field name="state">code</field>
+        <field name="code">action = records.action_active()</field>
+    </record>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_dms_link_files_wizard_form" model="ir.ui.view">
+        <field name="name">dms.link.files.wizard.form</field>
+        <field name="model">dms.link.files.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Link Files">
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                    </group>
+                    <group>
+                        <field name="date_to"/>
+                    </group>
+                    <group>
+                        <field name="in_out"/>
+                        <field name="confidentiality_level_id"/>
+                        <field name="degree_of_secrecy"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Search" type="object" name="action_search" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

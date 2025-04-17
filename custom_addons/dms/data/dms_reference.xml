@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <!-- Reference Default -->
+        <record id="dms_reference_default" model="dms.reference">
+            <field name="name">Reference</field>
+            <field name="start">0</field>
+            <field name="is_default">True</field>
+        </record>
+    </data>
+</odoo>

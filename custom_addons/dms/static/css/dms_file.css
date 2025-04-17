@@ -1,0 +1,33 @@
+/* Hide the default checkbox */
+.o_field_icon_lock input,
+.o_field_icon_encrypt input {
+    display: none;
+}
+
+/* Lock Icon (🔒 for locked, 🔓 for unlocked) */
+.o_field_icon_lock::before {
+    font-family: "FontAwesome";
+    content: "\f023"; /* Locked icon */
+    color: #e74c3c; /* Red for locked */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.o_field_icon_lock.o_field_widget.o_boolean_false::before {
+    content: "\f3c1"; /* Open lock icon */
+    color: #27ae60; /* Green for unlocked */
+}
+
+/* Encryption Icon (🔑 for encrypted, regular file icon if not encrypted) */
+.o_field_icon_encrypt::before {
+    font-family: "FontAwesome";
+    content: "\f084"; /* Key icon for encryption */
+    color: #f1c40f; /* Yellow for encrypted */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.o_field_icon_encrypt.o_field_widget.o_boolean_false::before {
+    content: "\f15b"; /* Regular file icon */
+    color: #3498db; /* Blue for normal files */
+}

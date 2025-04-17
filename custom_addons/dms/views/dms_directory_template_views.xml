@@ -1,0 +1,96 @@
+<odoo>
+    <!-- Tree View for Directory Templates -->
+    <record id="view_dms_directory_template_tree" model="ir.ui.view">
+        <field name="name">dms.directory.template.tree</field>
+        <field name="model">dms.directory.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Directory Templates -->
+    <record id="view_dms_directory_template_form" model="ir.ui.view">
+        <field name="name">dms.directory.template.form</field>
+        <field name="model">dms.directory.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <button class="oe_highlight" name="action_hierarchy" type="object" string="Template"/>
+                    </group>
+                    <notebook>
+                        <!-- Editable Directory Structure -->
+                        <page string="Directory Structure">
+                            <field name="line_ids">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="parent_id"/>
+                                    <field name="is_root"/>
+                                    <field name="template_id"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Template Preview">
+                            <field name="line_ids">
+                                <tree string="Directory Template Structure" expand="1">
+                                    <field name="name"/>
+                                    <field name="parent_id"/>
+                                </tree>
+                            </field>
+                        </page>         <!-- Template Preview as a Directory Tree -->
+
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dms_directory_template_hierarchy" model="ir.actions.act_window">
+        <field name="name">Directory Template Preview</field>
+        <field name="res_model">dms.directory.template</field>
+        <field name="view_mode">hierarchy,tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="view_id" eval="False"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new employee
+            </p>
+            <p>
+                With just a quick glance on the Odoo employee screen, you
+                can easily find all the information you need for each person;
+                contact data, job position, availability, etc.
+            </p>
+        </field>
+    </record>
+
+    <!--    <record id="action_dms_directory_template_preview" model="ir.actions.act_window">-->
+    <!--        <field name="name">Directory Template Preview</field>-->
+    <!--        <field name="res_model">dms.directory.template.line</field>-->
+    <!--        <field name="view_mode">hierarchy</field>-->
+    <!--        <field name="view_id" ref="dms.view_dms_directory_template_hierarchy"/>-->
+    <!--        <field name="domain">[('template_id', '=', active_id)]</field>-->
+    <!--        <field name="context">{'default_template_id': active_id}</field>-->
+    <!--    </record>-->
+
+
+    <!-- Action for Directory Templates -->
+    <record id="action_dms_directory_template" model="ir.actions.act_window">
+        <field name="name">Directory Templates</field>
+        <field name="res_model">dms.directory.template</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu for Directory Templates -->
+    <menuitem id="menu_dms_directory_template"
+              name="Directory Templates"
+              parent="cat_menu_dms_directories"
+              action="action_dms_directory_template"/>
+</odoo>

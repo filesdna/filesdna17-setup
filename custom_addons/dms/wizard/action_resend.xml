@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_resend_form" model="ir.ui.view">
+        <field name="name">action_resend_form</field>
+        <field name="model">action.resend</field>
+        <field name="arch" type="xml">
+            <form string="Resend">
+                <group>
+                    <group>
+                        <field name="dms_line_id" invisible="1"/>
+                        <field name="requester_id"/>
+                        <field name="assign_to_id"/>
+                        <field name="request_date"/>
+                        <field name="response_message"/>
+                    </group>
+                    <group>
+                        <field name="request_date_new"/>
+                        <field name="request_message_new"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Submit" type="object" name="action_submit" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_resend_action" model="ir.actions.act_window">
+        <field name="name">action_resend_action</field>
+        <field name="res_model">action.resend</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

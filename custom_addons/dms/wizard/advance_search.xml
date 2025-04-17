@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="advance_search_form" model="ir.ui.view">
+        <field name="name">advance_search_form</field>
+        <field name="model">advance.search</field>
+        <field name="arch" type="xml">
+            <form string="Reply">
+                <group>
+                    <group>
+                        <field name="date_start" string="Planned Date" widget="daterange"
+                               options='{"end_date_field": "date_end", "always_range": "1"}'
+                               required="date_start or date_end"/>
+                        <field name="date_end" invisible="1" required="date_start"/>
+                        <field name="created_by"/>
+                        <field name="edite_by"/>
+
+                    </group>
+                    <group>
+                        <field name="tag_ids" widget="many2many_tags"/>
+                        <field name="operator" invisible="not tag_ids"/>
+                        <field name="reference"/>
+                    </group>
+                    <field name="parameter_values">
+                        <tree editable="bottom" create="0" delete="0">
+                            <field name="parameter_id" readonly="1" force_save="1"/>
+                            <field name="selected_value_id"/>
+                            <field name="reference_value"/>
+                        </tree>
+                    </field>
+                </group>
+                <footer>
+                    <button string="Search" type="object" name="action_search" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_advance_search" model="ir.actions.act_window">
+        <field name="name">action_advance_search</field>
+        <field name="res_model">advance.search</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_advance_search"
+              name="Advance Search"
+              parent="menu_file"
+              action="action_advance_search"/>
+</odoo>

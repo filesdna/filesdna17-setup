@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="view_user_verifications_home" model="ir.ui.view">
+          <field name="name">User Verifications</field>
+          <field name="model">dms.security</field>
+          <field name="arch" type="xml">
+              <form string="User Verifications" edit="false" create="false" delete="false">
+                  <sheet>
+                      <link rel="stylesheet" type="text/css" href="/workflow/static/src/css/custom_styles.css"/>
+                      <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                      <div id="root" data-path="user-verification"/>
+                      <script src="/dms_editor/static/src/static/js/main.c91253d0.js"></script>
+                  </sheet>
+              </form>
+          </field>
+      </record>
+
+        <record id="dms_user_verification_action_window" model="ir.actions.act_window">
+          <field name="name">User Verification</field>
+          <field name="res_model">dms.security</field>
+          <field name="view_mode">form</field>
+          <field name="view_id" ref="view_user_verifications_home"/>
+          <field name="target">current</field>
+        </record>
+
+    <menuitem name="User Verification" id="dms_security_menu_2_list" parent="dms_security.dms_security_menu_root"
+              action="dms_user_verification_action_window"/>
+
+</odoo>

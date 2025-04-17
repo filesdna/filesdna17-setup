@@ -64,7 +64,7 @@ class VoiceVerificationController(http.Controller):
                 local_file_path = converted_file
 
             # Prepare API request to external service
-            url = "https://voice-reco-europe.filesdna.com/verify"
+            url = "https://voice1.filesdna.com/verify"
             headers = {'accept': 'application/json'}
             files = {'audio': open(local_file_path, 'rb')}
             _logger.info(f"email:{email}")

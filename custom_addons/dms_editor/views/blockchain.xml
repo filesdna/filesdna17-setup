@@ -1,0 +1,61 @@
+<odoo>
+    <!--  Define the view first  -->
+    <record id="view_blockchain_documents_home" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <form string="Documents" edit="false" create="false">
+                <sheet>
+                    <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                    <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                    <div id="root" data-path="blockchain-docs"/>
+                    <script src="/dms_editor/static/src/static/js/main.c91253d0.js"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_blockchain_information_home" model="ir.ui.view">
+        <field name="name">dms_file.form</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <form string="Information" edit="false" create="false">
+                <sheet>
+                    <link rel="stylesheet" type="text/css" href="/smartform/static/src/css/custom_styles.css"/>
+                    <link rel="stylesheet" type="text/css" href="/dms_editor/static/src/static/css/main.476753da.css"/>
+                    <div id="root" data-path="blockchain-info"/>
+                    <script src="/dms_editor/static/src/static/js/main.c91253d0.js"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!--  Now reference the view  -->
+    <record id="action_blockchain_documents_page" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_blockchain_documents_home"/>
+        <field name="target">current</field>
+    </record>
+
+    <record id="action_blockchain_information_page" model="ir.actions.act_window">
+        <field name="name">Information</field>
+        <field name="res_model">dms.file</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_blockchain_information_home"/>
+        <field name="target">current</field>
+    </record>
+
+    <record id="action_blockchain_explorer_page" model="ir.actions.act_url">
+        <field name="name">Explorer</field>
+        <field name="url">https://explorer2.filesdna.com</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_dms_blockchain" sequence="80" name="Blockchain" parent="dms.main_menu_dms"/>
+    <menuitem id="menu_dms_blockchain_documents" name="Documents" sequence="10" parent="menu_dms_blockchain" action="action_blockchain_documents_page"/>
+    <menuitem id="menu_dms_blockchain_information" name="Information" sequence="20" parent="menu_dms_blockchain" action="action_blockchain_information_page"/>
+    <menuitem id="menu_dms_blockchain_explorer" name="Explorer" sequence="30" parent="menu_dms_blockchain" action="action_blockchain_explorer_page"/>
+
+</odoo>

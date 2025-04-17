@@ -118,9 +118,6 @@ class TemplateService:
             directory_storage = request.env['dms.directory'].sudo().search([('id','=',int(folder_id))]).storage_id.id
             file = request.env['dms.file'].sudo().create({
                 "name" : f"{name}.pdf",
-                "in_out": "in",
-                "confidentiality_level_id": 1,
-                "degree_of_secrecy":1,
                 'directory_id': int(folder_id),
                 'content' : template_document.content,
                 'create_uid' :  user.id,

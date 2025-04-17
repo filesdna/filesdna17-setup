@@ -24,7 +24,7 @@
     </record>
 
 
-    <menuitem id="menu_dms_signatures" name="Signatures" sequence="30" parent="dms.cat_menu_dms_config" action="action_signatures_page"/>
+    <menuitem id="menu_dms_signatures" name="Signatures" sequence="30" parent="dms.menu_setting" action="action_signatures_page"/>
 
 
 </odoo>

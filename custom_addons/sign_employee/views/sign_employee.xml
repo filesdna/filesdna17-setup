@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_employee_form_inherit" model="ir.ui.view">
+        <field name="name">view_employee_form_inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='coach_id']" position="after">
+                <field name="sign" widget="signature" style="width: 20%; height: 10%;"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_company_form_inherit_encryption_icons" model="ir.ui.view">
-        <field name="name">res.company.form.inherit.encryption_icon</field>
-        <field name="inherit_id" ref="base.view_company_form"/>
-        <field name="model">res.company</field>
-        <field name="arch" type="xml">
-
-            <xpath expr="//notebook" position="after">
-                    <notebook>
-                     <page string="File Image">
-                        <field name="encryption_icon" widget="image" class="oe_avatar"/>
-                            <field name="image_lines" widget="section_and_note_one2many" mode="tree">
-                             <tree editable="top">
-                                    <field name="file_extension"/>
-                                    <field name="file_image" widget="image" class="oe_avatar"/>
-                                </tree>
-                            </field>
-                        </page>
-                </notebook>
-            </xpath>
-
-        </field>
-    </record>
     <record id="encription_key_view_users_form" model="ir.ui.view">
         <field name="name">res.users.form.inherit</field>
         <field name="model">res.users</field>
@@ -31,6 +9,14 @@
             <xpath expr="//notebook" position="before">
                 <group>
                     <field name="is_auto_lock" widget="boolean_toggle"/>
+                    <field name="access_id" invisible="0"/>
+                    <field name="access_id_many" invisible="0" widget="many2many_tags"/>
+                    <!--                    For One Access                           -->
+                    <!--                    <field name="access_id" invisible="0"/>  -->
+                    <!--                    <field name="perm_create" invisible="0"/>-->
+                    <!--                    <field name="perm_delete" invisible="0"/>-->
+                    <field name="perm_access" invisible="0"/>
+                    <field name="perm_domain" invisible="0"/>
                 </group>
             </xpath>
         </field>

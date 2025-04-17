@@ -154,9 +154,9 @@ class CreateDocumentController(http.Controller):
             sent_by = get_data.sent_by if get_data else user_data.name
 
             sms_content = {
-                'number_fill_by': item.get('number_fill_by'),
-                'sms_country': item.get('sms_country'),
-                'sms_phone_no': item.get('sms_phone_no'),
+                'number_fill_by': item.get('number_fill_by') or '',
+                'sms_country': item.get('sms_country') or '',
+                'sms_phone_no': item.get('sms_phone_no') or '',
             }
 
             # Add document sign user

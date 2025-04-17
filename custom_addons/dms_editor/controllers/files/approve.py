@@ -129,7 +129,7 @@ class DocumentApproveController(http.Controller):
                 ], order="order_by DESC", limit=1)
 
                 if last_sign_data and last_sign_data.order_by == update_status.order_by:
-                    status = "Completed" if update_status.is_last_completed else "pending_owner"
+                    status = "Completed" if update_status.is_last_completed == "true" else "pending_owner"
                 else:
                     status = "in_process"
 
@@ -145,7 +145,7 @@ class DocumentApproveController(http.Controller):
                     ("status", "=", "Signed")
                 ]) + 1
                 if all_sign_count == signed_count:
-                    status = "Completed" if update_status.is_last_completed else "pending_owner"
+                    status = "Completed" if update_status.is_last_completed == "true" else "pending_owner"
                     pass_check = True
                 else:
                     status = "in_process"

@@ -1,15 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
     <data>
-    
-         <record id="admin_directory" model="dms.directory">
+        <record id="admin_directory" model="dms.directory">
             <field name="name">Admin Directory</field>
             <field name="res_model">dms.directory</field>
             <field name="is_root_directory">True</field>
-            <field name="storage_id" ref="dms.dms_storage_record_1"/> 
+            <field name="storage_id" ref="dms.dms_storage_record_1"/>
             <field name="group_ids" eval="[(6, 0, [ref('dms.dms_access_group_record_1')])]"/>
         </record>
-    
+
+<!--        <record id="archive_directory_5" model="dms.directory">-->
+<!--            <field name="name">Archive 5</field>-->
+<!--            <field name="res_model">dms.directory</field>-->
+<!--            <field name="is_root_directory">True</field>-->
+<!--            <field name="is_archive_dir">True</field>-->
+<!--            <field name="storage_id" ref="dms_archive_storage"/>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms_access_group_record_5')])]"/>-->
+<!--        </record>-->
+
+<!--        <record id="archive_directory_10" model="dms.directory">-->
+<!--            <field name="name">Archive 10</field>-->
+<!--            <field name="res_model">dms.directory</field>-->
+<!--            <field name="is_root_directory">True</field>-->
+<!--            <field name="is_archive_dir">True</field>-->
+<!--            <field name="storage_id" ref="dms_archive_storage"/>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms_access_group_record_10')])]"/>-->
+<!--        </record>-->
+
+<!--        <record id="archive_directory_15" model="dms.directory">-->
+<!--            <field name="name">Archive 15</field>-->
+<!--            <field name="res_model">dms.directory</field>-->
+<!--            <field name="is_root_directory">True</field>-->
+<!--            <field name="is_archive_dir">True</field>-->
+<!--            <field name="storage_id" ref="dms_archive_storage"/>-->
+<!--            <field name="group_ids" eval="[(6, 0, [ref('dms_access_group_record_15')])]"/>-->
+<!--        </record>-->
     </data>
-    
 </odoo>

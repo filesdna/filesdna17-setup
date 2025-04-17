@@ -1,0 +1,342 @@
+<odoo>
+    <data>
+        <record id="hr_employee_more_details_form" model="ir.ui.view">
+            <field name="name">hr_employee_more_details_form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <!-- <xpath expr="//header" position="inside">
+                  <button name="locked" string="Locked" type="action" groups="hr.group_hr_user" invisible="not active"/>
+                </xpath> -->
+                <xpath expr="//field[@name='mobile_phone']" position="before">
+                    <field name="employee_num" string='Employee Number'/>
+                    <label for="first_name"/>
+                    <div class="address_format">
+                        <field name="first_name" placeholder='First Name' style="width: 22%"/>
+                        <field name="second_name" placeholder='Second Name' style="width: 22%"/>
+                        <field name="third_name" placeholder='Third Name' style="width: 22%"/>
+                        <field name="fourth_name" placeholder='Fourth Name' style="width: 22%"/>
+                        <field name="fifth_name" placeholder='Fifth Name' style="width: 22%"/>
+                        <field name="last_name" placeholder='Last Name' style="width: 22%"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='work_location_id']" position="after">
+                    <label for="certificate_id"/>
+                    <div class="address_format">
+                        <field name="certificate_id" placeholder="Current Certificate" style="width: 25%"/>
+                        <field name="qualification1" placeholder="Certificate1" style="width: 25%"/>
+                        <field name="qualification2" placeholder="Certificate2" style="width: 25%"/>
+                        <field name="qualification3" placeholder="Certificate3" style="width: 25%"/>
+                    </div>
+                    <field name="certification_ids" widget="many2many_tags"/>
+
+                </xpath>
+                <xpath expr="//field[@name='marital']" position="after">
+                    <field name="previous_marriage_state"/>
+                </xpath>
+                <xpath expr="//field[@name='spouse_complete_name']" position="after">
+                    <field name="partner_job"/>
+                    <field name="partner_nationlity"/>
+                    <field name="marriage_allotment"/>
+                </xpath>
+                <xpath expr="//field[@name='marital']" position="before">
+                    <label for="mother_name"/>
+                    <div class="address_format">
+                        <field name="mother_name" placeholder="Mother Name"/>
+
+                        <!-- <field name="mother_s_name" style="width: 33%" placeholder="Second Name"/>
+                        <field name="mother_t_name" style="width: 33%" placeholder="Third Name"/> -->
+                    </div>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']/group[1]/group[2]" position="after">
+                    <group name='civilian_id' string='Civilian ID'>
+                        <field name="civilian_id" placeholder="ID Number" style="width: 25%"/>
+                        <field name="civilian_issue_date" placeholder="Issue Date" style="width: 25%"/>
+                        <field name="civilian_expire_date" placeholder="Expire Date" style="width: 25%"/>
+                        <field name="civilian_governorate_id" placeholder="State" style="width: 25%"/>
+                        <field name="civilian_page_number" placeholder="Page Number" style="width: 30%"/>
+                        <field name="civilian_record_number" placeholder="Record Number" style="width: 30%"/>
+                    </group>
+                    <group name='residence_card_no' string='Residence Card'>
+                        <field name="residence_card" placeholder="Number" style="width: 30%"/>
+                        <field name="residence_card_office" placeholder="Office" style="width: 30%"/>
+                        <field name="residence_card_governorate_id" placeholder="State" style="width: 30%"/>
+                    </group>
+                    <group name='supply_card' string='Supply Card'>
+                        <field name="supply_card" placeholder="Number" style="width: 30%"/>
+                        <field name="supply_card_center" placeholder="Center" style="width: 30%"/>
+                    </group>
+                </xpath>
+                <xpath expr="//field[@name='study_field']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='study_school']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='certificate']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='work_location_id']" position="after">
+                    <!-- <field name="transfer_from"/>
+                    <field name="transfer_to"/> -->
+                    <!-- <field name="service_status"/> -->
+                    <!-- <field name="emp_status" /> ali qahtan -->
+                    <field name="goverment_number"/>
+                    <field name="specialization"/>
+                    <!-- <field name="emp_grade_type"/> -->
+                    <!-- <field name="grade"/>
+                    <field name="level"/> -->
+                </xpath>
+                <xpath expr="//field[@name='job_title']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='category_ids']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='ssnid']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='gender']" position="before">
+                    <field name="nation"/>
+                    <field name="religion"/>
+                    <field name="doctrain"/>
+                    <field name="birth_gov"/>
+                </xpath>
+                <!-- <xpath expr="//field[@name='gender']" position="after">
+                  <field name="birth_gov"/>
+                </xpath> -->
+                <xpath expr="//field[@name='emergency_phone']" position="after">
+                    <field name="contact_id"/>
+                </xpath>
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <label for="governorate_id"/>
+                    <div class="address_format">
+                        <field name="governorate_id" style="width:25%"/>
+                        <field name="city_id" style="width:25%" domain="[('gov_id', '=', governorate_id)]"/>
+                        <field name="district_id" style="width:25%" domain="[('city_id', '=', city_id)]"/>
+                        <field name="address_details" style="width:25%"/>
+                    </div>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']/group[1]/group[2]" position="after">
+                    <group name='personal_id' string='Passport'>
+                        <field name="pass_issue_date" placeholder="Issue Date" style="width: 20%"/>
+                        <field name="pass_expire_date" placeholder="Expire Date" style="width: 20%"/>
+                        <field name="pass_governorate_id" placeholder="Issue State" style="width: 20%"/>
+                    </group>
+                    <group name="national_id" string="National ID">
+                        <field name="national_id" placeholder="National ID" style="width: 20%"/>
+                        <field name="national_issue_date" placeholder="Issue Date" style="width: 20%"/>
+                        <field name="national_expire_date" placeholder="Expire Date" style="width: 20%"/>
+                        <field name="national_governorate_id" placeholder="Issue State" style="width: 20%"/>
+                    </group>
+
+                </xpath>
+                <xpath expr="//field[@name='work_phone']" position="attributes">
+                    <attribute name="options">{"enable_sms":false}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='mobile_phone']" position="attributes">
+                    <attribute name="options">{"enable_sms":false}</attribute>
+                </xpath>
+                <xpath expr="//page[@name='personal_information']/group[1]/group[9]" position="replace">
+                    <group string="Work Permit">
+                        <field name="visa_no"/>
+                        <field name="permit_no"/>
+                        <field name="visa_expire"/>
+                        <field name="work_permit_expiration_date"/>
+                        <field name="work_permit_name" invisible="1"/>
+                        <field name="has_work_permit" widget="work_permit_upload" filename="work_permit_name"/>
+                    </group>
+                </xpath>
+                <xpath expr="//notebook/page[@name='hr_settings']" position="before">
+                    <page string="HR">
+                        <group>
+                            <group name="bouns" string="Bouns">
+                                <field name="bouns_amount"/>
+                                <field name="bouns_due_date"/>
+                                <field name="bouns_last_date"/>
+                            </group>
+                            <group name="hiring" string="Hiring Info">
+                                <group>
+                                    <field name="hiring_date"/>
+                                    <field name="hiring_order_num"/>
+                                    <field name="hiring_order"/>
+                                </group>
+                                <group>
+                                    <field name="Joining_date"/>
+                                    <field name="joing_order_number"/>
+                                    <field name="joing_order_date"/>
+                                </group>
+                            </group>
+                            <group name="services" string="Service">
+
+                                <field name="add_service_yearly" placeholder='Yearly'/>
+                                <field name="add_service_monthly" placeholder='Monthly'/>
+                                <field name="add_service_daily" placeholder='Daily'/>
+
+                                <field name="removed_service_yearly" placeholder='Yearly'/>
+                                <field name="removed_service_monthly" placeholder='Montly'/>
+                                <field name="removed_service_daily" placeholder='Daily'/>
+                                <field name="service_note"/>
+                            </group>
+
+                            <group name="employment" string="Employment Status">
+                                <field name="management_Situation"/>
+                                <field name="employment_status"/>
+                                <field name="employment_status_date"/>
+                                <field name="employment_status_number"/>
+                                <field name="resign_date"/>
+                            </group>
+                            <group name="other" string="Other">
+                                <field name="service_law"/>
+                                <field name="loan_department_id"/>
+                                <field name="universtiy"/>
+                                <field name="graduate_year"/>
+                                <field name="language" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <!--Merge-->
+                <xpath expr="//field[@name='department_id']" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                    <attribute name="force_save">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='department_id']" position="after">
+                    <label for="grade_type"/>
+                    <div class="address_format">
+                        <field name="grade_type" placeholder="Grade Type" style="width: 33%"/>
+                        <field name="grade" placeholder="Grade" domain="[('grade_type', '=', grade_type)]"
+                               style="width: 33%"/>
+                        <field name="level" placeholder="Level" domain="[('grade_type', '=', grade_type)]"
+                               style="width: 33%"/>
+                    </div>
+                    <field name="root_unit_id"/>
+                    <field name="unit_id"/>
+                </xpath>
+                <xpath expr="//field[@name='department_id']" position="before">
+                    <field name="ministry_id"/>
+                    <field name="parent_root_ministry_id" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_1" invisible=" not parent_root_ministry_id"/>
+                    <field name="parent_root_level_1" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_2" invisible=" not parent_root_ministry_id or not parent_root_level_1"/>
+                    <field name="parent_root_level_2" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_3"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2"/>
+                    <field name="parent_root_level_3" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_4"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3"/>
+                    <field name="parent_root_level_4" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_5"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4"/>
+                    <field name="parent_root_level_5" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_6"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5"/>
+                    <field name="parent_root_level_6" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_7"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6"/>
+                    <field name="parent_root_level_7" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_8"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7"/>
+                    <field name="parent_root_level_8" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_9"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7 or not parent_root_level_8"/>
+                    <field name="parent_root_level_9" widget="many2many_tags" invisible="1"/>
+
+                    <field name="level_10"
+                           invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7 or not parent_root_level_8 or not parent_root_level_9"/>
+                    <!--                <field name="office_id"/>-->
+                    <!--                <field name="directorate_id"/>-->
+                    <!--                <field name="section_id"/>-->
+                </xpath>
+                <!--Merge-->
+                <xpath expr="//notebook/page[@name='hr_settings']" position="after">
+                    <page string="Historical Info.">
+                        <group>
+                            <group name="courses" string="Courses and Traning">
+                                <field name="course_list_id">
+                                    <tree editable="bottom">
+                                        <!-- Define the columns for the related courses table -->
+                                        <field name="course_id"/>
+                                        <field name="course_start_date"/>
+                                        <field name="course_end_date"/>
+                                        <field name="order_book_no"/>
+                                        <field name="order_book_date"/>
+                                        <field name="participator_count"/>
+                                        <field name="employee_seq"/>
+                                        <field name="employee_status"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+
+                            <group name="delegations" string="Delegations and Traning">
+                                <field name="delegation_list_id">
+                                    <tree editable="bottom">
+                                        <!-- Define the columns for the related courses table -->
+                                        <field name="delegation_id"/>
+                                        <field name="delegation_start_date"/>
+                                        <field name="delegation_end_date"/>
+                                        <field name="order_book_no"/>
+                                        <field name="order_book_date"/>
+                                        <field name="participator_count"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group name="thanks" string="Thanks">
+                                <field name="thank_list_id">
+                                    <tree editable="bottom">
+                                        <!-- Define the columns for the related courses table -->
+                                        <field name="thank_id"/>
+                                        <field name="thank_book_no"/>
+                                        <field name="thank_book_date"/>
+                                        <field name="is_used"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group name="punishments" string="Punishments">
+                                <field name="punishment_list_id">
+                                    <tree editable="bottom">
+                                        <!-- Define the columns for the related courses table -->
+                                        <field name="punishment_id"/>
+                                        <field name="punishment_book_no"/>
+                                        <field name="punishment_book_date"/>
+                                        <field name="is_used"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group name="vacations" string="Vacations">
+                                <field name="vacation_list_id">
+                                    <tree editable="bottom">
+                                        <!-- Define the columns for the related courses table -->
+                                        <field name="vacation_id"/>
+                                        <field name="vacation_book_no"/>
+                                        <field name="vacation_book_date"/>
+                                        <field name="is_used"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

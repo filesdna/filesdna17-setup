@@ -1,0 +1,124 @@
+<odoo>
+    <record id="customer_product_report" model="ir.actions.report">
+        <field name="name">Invoice Profit Report</field>
+        <field name="model">sale.details</field>
+        <field name="report_type">qweb-html</field>
+        <field name="binding_model_id" ref="sale.model_sale_order"/>
+        <field name="binding_type">report</field>
+        <field name="report_name">bi_print_journal_entries.customer_product_report_template</field>
+    </record>
+
+    <template id="customer_product_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <h1>Invoices Product Profit</h1>
+                <t t-foreach="cost" t-as="rec">
+                    <style>
+                        table {
+                        width: 100%;
+                        border: 1px solid #b3adad;
+                        border-collapse: collapse;
+                        padding: 5px;
+                        }
+                        table th {
+                        text-align: center;
+                        border: 1px solid #b3adad;
+                        padding: 5px;
+                        background: #f0f0f0;
+                        color: #313030;
+                        }
+                        table td {
+                        padding: 10px;
+                        border: 1px solid #b3adad;
+                        text-align: left;
+                        color: #313030;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <th>Reference</th>
+                            <th>Date</th>
+                            <th>Customers</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Cost</th>
+                            <th>Sale Price</th>
+                            <th>Profit</th>
+                            <th>Margin%</th>
+                        </thead>
+                        <tbody>
+                            <t t-set="total_cost" t-value="0"/>
+                            <t t-set="total_sale_price" t-value="0"/>
+                            <t t-set="total_profit" t-value="0"/>
+                            <t t-set="total_margin" t-value="0"/>
+
+                            <t t-foreach="rec['order_lines']" t-as="order_line">
+                                <tr>
+                                    <t t-if="'display_type' not in order_line or not order_line['display_type']">
+                                        <td>
+                                            <t t-esc="rec['sale_id']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="rec['date_order']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="rec['partner_id']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['product_id']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['product_uom_qty']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['standard_price']"/>
+                                            <t t-set="total_cost" t-value="total_cost + order_line['standard_price']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['price_subtotal']"/>
+                                            <t t-set="total_sale_price"
+                                               t-value="total_sale_price + order_line['price_subtotal']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['profit']"/>
+                                            <t t-set="total_profit" t-value="total_profit + order_line['profit']"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="order_line['margin']"
+                                               t-options='{"widget": "float", "precision": 2}'/>
+                                            <span>%</span>
+                                        </td>
+                                    </t>
+                                    <br/>
+                                    <t t-if="'display_type' in order_line and order_line['display_type'] == 'line_section'">
+                                        <td name="td_section_line" colspan="99"
+                                            style="background-color: grey; color: black; font-size: 18px;">
+                                            <span t-field="order_line.name"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                            <tr>
+                                <td colspan="5" style="text-align: right; font-weight: bold;">Totals:</td>
+                                <td>
+                                    <t t-esc="total_cost"/>
+                                </td>
+                                <td>
+                                    <t t-esc="total_sale_price"/>
+                                </td>
+                                <td>
+                                    <t t-esc="total_profit"/>
+                                </td>
+                                <td>
+                                    <t t-esc="(total_profit / total_sale_price) *100 "
+                                       t-options='{"widget": "float", "precision": 2}'/>
+                                    <span>%</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

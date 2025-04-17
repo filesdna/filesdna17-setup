@@ -1,0 +1,51 @@
+<odoo>
+    <record id="sale_details_wizard_form" model="ir.ui.view">
+        <field name="name">Invoice Profit Wizard</field>
+        <field name="model">sale.details</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date_from" class="oe_inline"/>
+                        <field name="invoice_type" class="oe_inline" widget="radio"/>
+                        <field name="partner_id" widget="many2many_tags"
+                               invisible="report_print_by in ['product', 'invoices']"/>
+                        <field name="sale_ref"
+                               invisible="report_print_by != 'invoices'"
+                        />
+
+                    </group>
+                    <group>
+                        <field name="date_to" class="oe_inline"/>
+                        <field name="report_print_by" class="oe_inline" widget="radio"/>
+                        <field name="product_id"
+                               widget="many2many_tags"
+                               invisible="report_print_by in ['customers', 'invoices']"/>
+                        <field name="company_id"/>
+                    </group>
+                </group>
+
+                <footer>
+                    <button string="Confirm" type="object" name="action_confirm" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sale_details_action" model="ir.actions.act_window">
+        <field name="name">Invoices Product Profit</field>
+        <field name="res_model">sale.details</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sale_details_wizard_form"/>
+    </record>
+
+    <menuitem
+            id='sale_details_menu_items'
+            name="Invoices Product Profit"
+            parent="account.account_reports_management_menu"
+            action="sale_details_action"
+            sequence="22"
+    />
+</odoo>

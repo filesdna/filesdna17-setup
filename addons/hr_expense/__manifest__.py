@@ -26,7 +26,7 @@ The whole flow is implemented as:
 This module also uses analytic accounting and is compatible with the invoice on timesheet module so that you are able to automatically re-invoice your customers' expenses if your work by project.
     """,
     'website': 'https://www.filesdna.com/app/expenses',
-    'depends': ['account', 'web_tour', 'hr'],
+    'depends': ['account', 'web_tour', 'hr', 'sale_stock'],
     'data': [
         'security/hr_expense_security.xml',
         'security/ir.model.access.csv',

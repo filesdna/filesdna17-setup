@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_department_inherit_form" model="ir.ui.view">
+        <field name="name">view_department_inherit_form</field>
+        <field name="model">hr.department</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="hr.view_department_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="level"/>
+            </xpath>
+            <xpath expr="//field[@name='parent_id']" position="before">
+                <field name="root_parent"/>
+                <field name="top_formation"/>
+                <field name="main_parent"/>
+                <field name="parent_id_new" invisible="not top_formation "/>
+            </xpath>
+            <xpath expr="//field[@name='parent_id']" position="attributes">
+                <attribute name="invisible">top_formation</attribute>
+            </xpath>
+            <xpath expr="//field[@name='parent_id']" position="after">
+                <field name="parent_root" invisible="1"/>
+                <field name="number"/>
+                <field name="complete_name" invisible="1"/>
+                <!--                <field name="is_section" invisible="is_department"/>-->
+                <!--                <field name="is_department" invisible="1"/>-->
+            </xpath>
+            <xpath expr="//field[@name='manager_id']" position="after">
+                <field name="deputy"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_employee_inherit_form" model="ir.ui.view">
+        <field name="name">view_employee_inherit_form</field>
+        <field name="model">hr.employee</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='department_id']" position="attributes">
+                <attribute name="invisible">0</attribute>
+                <attribute name="force_save">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='department_id']" position="after">
+                <field name="root_unit_id"/>
+                <field name="unit_id"/>
+            </xpath>
+            <xpath expr="//field[@name='department_id']" position="before">
+                <field name="ministry_id"/>
+                <field name="parent_root_ministry_id" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_1" invisible=" not parent_root_ministry_id"/>
+                <field name="parent_root_level_1" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_2" invisible=" not parent_root_ministry_id or not parent_root_level_1"/>
+                <field name="parent_root_level_2" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_3"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2"/>
+                <field name="parent_root_level_3" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_4"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3"/>
+                <field name="parent_root_level_4" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_5"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4"/>
+                <field name="parent_root_level_5" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_6"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5"/>
+                <field name="parent_root_level_6" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_7"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6"/>
+                <field name="parent_root_level_7" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_8"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7"/>
+                <field name="parent_root_level_8" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_9"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7 or not parent_root_level_8"/>
+                <field name="parent_root_level_9" widget="many2many_tags" invisible="1"/>
+
+                <field name="level_10"
+                       invisible=" not parent_root_ministry_id or not parent_root_level_1 or not parent_root_level_2 or not parent_root_level_3 or not parent_root_level_4 or not parent_root_level_5 or not parent_root_level_6 or not parent_root_level_7 or not parent_root_level_8 or not parent_root_level_9"/>
+                <!--                <field name="office_id"/>-->
+                <!--                <field name="directorate_id"/>-->
+                <!--                <field name="section_id"/>-->
+            </xpath>
+            <xpath expr="//sheet//div" position="inside">
+                <button name="action_view_files" string="Document" type="object"
+                        class="oe_stat_button" icon="fa-file">
+                    <field name="files_count" widget="statinfo"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

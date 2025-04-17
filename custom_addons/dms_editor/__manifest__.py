@@ -10,13 +10,15 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','dms'],
+    'depends': ['base','dms','dms_security'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
         "views/delegation.xml",
         "views/signature.xml",
+        "views/user_verification.xml",
+	"views/blockchain.xml",
         "views/sign_requests.xml",
         'views/edit.xml',
         'data/ir_cron_data.xml',

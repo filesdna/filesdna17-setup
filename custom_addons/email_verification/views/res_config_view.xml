@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Copyright (c) 2018-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+    <data>
+        <record id="config_email_verification_and_guest_checkout_id" model="ir.ui.view">
+            <field name="name">Email Verification</field>
+            <field name="model">email.verification.config</field>
+            <field name="arch" type="xml">
+               <form string="Email Verification" class="oe_form_configuration">
+                   <group>
+                       <field name="website_id"/>
+                   </group>
+                    <group>
+                        <field name="restrict_unverified_users"/>
+                        <field name="token_validity"/>
+                    </group>
+
+                    <footer>
+                        <button string="Apply" type="object" name="execute" class="oe_highlight"/>
+                        or
+                        <button special="cancel" string="Cancel" class="btn-default"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_email_verification_and_guest_checkout" model="ir.actions.act_window">
+            <field name="name">Configuration</field>
+            <field name="res_model">email.verification.config</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

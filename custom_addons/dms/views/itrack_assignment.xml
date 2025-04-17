@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="itrack_assignment_tree" model="ir.ui.view">
+        <field name="name">itrack_assignment_tree</field>
+        <field name="model">itrack.assignment</field>
+        <field name="arch" type="xml">
+            <tree string="iTrack" action="action_open_itrack" type="object" create="1" delete="1" editable="bottom">
+                <field name="requester_id"/>
+                <field name="name"/>
+                <field name="parent_id"/>
+                <field name="dms_line_line_id" column_invisible="1"/>
+                <field name="request_date"/>
+                <field name="assign_to_id"/>
+                <field name="employee_id" column_invisible="1"/>
+                <field name="user_id" force_save="1"/>
+                <field name="request_message"/>
+                <field name="response_date" force_save="1"/>
+                <field name="response_message" force_save="1"/>
+                <field name="can_reply" column_invisible="1"/>
+                <field name="state" decoration-info="state == 'draft'"
+                       decoration-primary="state == 'in_progress'"
+                       decoration-success="state == 'done'"
+                       decoration-danger="state == 'pending'"
+                       widget="badge"/>
+                <button name="action_reply" string="Reply" type="object" class="oe_inline oe_button"
+                        invisible="state  in ['draft', 'done', 'pending', 'wait'] or can_reply == True"/>
+                <button name="action_resend" string="Resend" type="object"
+                        class="oe_inline oe_button"
+                        invisible="state  in ['in_progress', 'done', 'wait']"/>
+                <button name="action_accept" string="Accept" type="object"
+                        class="oe_inline oe_button"
+                        invisible="state  in ['in_progress', 'done', 'draft', 'pending']"/>
+                <field name="channel_id" column_invisible="True"/>
+                <widget name="channel_chat"/>
+                <field name="request_access" column_invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="itrack_assignment_search" model="ir.ui.view">
+        <field name="name">itrack_assignment_tree</field>
+        <field name="model">itrack.assignment</field>
+        <field name="arch" type="xml">
+            <search string="iTrack Request">
+                <field name="dms_line_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_itrack_assignment" model="ir.actions.act_window">
+        <field name="name">My Assignment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">itrack.assignment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('user_id', '=', uid)]</field>
+    </record>
+
+    <menuitem id="menu_itrack_assignment"
+              name="My Assignment"
+              parent="menu_dms_line"
+              action="action_itrack_assignment"/>
+</odoo>

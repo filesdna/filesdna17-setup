@@ -23,15 +23,26 @@
     'currency': 'EUR',
     'author': 'BrowseInfo',
     'website': 'https://www.browseinfo.com',
-    'depends': ['base','account'],
+    'depends': ['base', 'account', 'sale_management', 'purchase'],
     'data': [
-            'report/report_journal_entries.xml',
-            'report/report_journal_entries_view.xml',
+        "security/ir.model.access.csv",
+        'views/account_move_inherit.xml',
+        'report/report_journal_entries.xml',
+        'report/report_journal_entries_view.xml',
+        'report/invoice_profit_report_template.xml',
+        'report/purchase_order_report.xml',
+        'report/product_report.xml',
+        'report/customer_report.xml',
+        'report/customer_product_report.xml',
+        'report/reference_report.xml',
+        'wizard/invoice_profit_report.xml',
+        'wizard/purchase_report.xml',
+
     ],
     'installable': True,
     'auto_install': False,
-    'live_test_url':'https://youtu.be/qehLT4WOWPs',
-    "images":["static/description/Banner.gif"],
+    'live_test_url': 'https://youtu.be/qehLT4WOWPs',
+    "images": ["static/description/Banner.gif"],
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

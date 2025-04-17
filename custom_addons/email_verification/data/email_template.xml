@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- Copyright (c) 2018-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+    <!-- See LICENSE file for full copyright and licensing details. -->
+    <!-- Mail template is done in a NOUPDATE block So users can freely customize/delete them -->
+    <data noupdate="1" >
+        <record id="wk_email_verification_email_template_id" model="mail.template">
+            <field name="name">Email Verification</field>
+            <field name="email_from">{{object.company_id.email_formatted}}</field>
+            <field name="subject">Email Verification</field>
+            <field name="email_to">{{object.partner_id.email or ''}}</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="auto_delete"/>
+            <field name="lang">{{object.lang}}</field>
+            <field name="body_html" type="html">
+
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; color: rgb(34, 34, 34); background-color: #FFF;">
+                    <div style="text-align:center;width:70%;margin-left:15%">
+                        <p style="color: rgb(99, 74, 165); font-size: 22px;"> <b t-out="object.company_id.name"></b> Account Verification Email</p>
+                        <p class="text-epsilon" style="font-size: 18px;">Congratulations!! <b t-out="object.name"></b>, your account has been created successfully and you are only few seconds away from verifying your account. To verify your account click on the button.</p>
+                        <div class="btn btn-danger btn-lg">
+                            <t t-set="verificaion_url" t-value="object.get_verification_url()"/>
+                            <a t-att-href="verificaion_url">
+                                <b>Verify Your Account</b>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+            </field>
+        </record>
+    </data>
+</odoo>

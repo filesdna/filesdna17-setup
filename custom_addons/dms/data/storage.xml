@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-<data>
-    <record id="dms_storage_record_1" model="dms.storage">
-        <field name="name">Storage</field>
-        <field name="save_type">file</field>
-        <field name="company_id" ref="base.main_company"/>
-    </record>
-   </data>
+    <data>
+        <record id="dms_storage_record_1" model="dms.storage">
+            <field name="name">Storage</field>
+            <field name="save_type">file</field>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+<!--        <record id="dms_archive_storage" model="dms.storage">-->
+<!--            <field name="name">Archive Storage</field>-->
+<!--            <field name="save_type">file</field>-->
+<!--            <field name="company_id" ref="base.main_company"/>-->
+<!--        </record>-->
+    </data>
 </odoo>

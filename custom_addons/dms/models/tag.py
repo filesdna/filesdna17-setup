@@ -1,4 +1,3 @@
-
 import logging
 
 from odoo import api, fields, models
@@ -38,18 +37,23 @@ class Tag(models.Model):
         readonly=True,
     )
     company_id = fields.Many2one(
-        string='Company', 
-        comodel_name='res.company', 
-        required=True, 
+        string='Company',
+        comodel_name='res.company',
+        required=True,
         default=lambda self: self.env.user.company_id
     )
-    
+
     count_directories = fields.Integer(compute="_compute_count_directories")
     count_files = fields.Integer(compute="_compute_count_files")
 
     _sql_constraints = [
         ("name_uniq", "unique (name, category_id)", "Tag name already exists!"),
     ]
+    auto_added = fields.Boolean(string="Auto Added", default=False)
+    type = fields.Selection([
+        ('files', 'Files'),
+        ('directories', 'Directories'),
+    ], required=True)
 
     @api.depends("directory_ids")
     def _compute_count_directories(self):

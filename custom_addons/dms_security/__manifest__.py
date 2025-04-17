@@ -19,7 +19,7 @@
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','dms'],
+    'depends': ['base', 'dms'],
 
     # always loaded
     "data": [
@@ -28,9 +28,12 @@
         "views/dms_security.xml",
         "views/dms_file.xml",
         "views/res_users_nfc.xml",
+        # "views/auth_totp_wizard_view.xml",
         "views/dms_directory.xml",
         "wizard/authenticator.xml",
         "data/data.xml",
+        "wizard/message_wizard.xml",
+
     ],
     'assets': {
         'web.assets_backend': [
@@ -43,6 +46,5 @@
             'dms_security/static/src/xml/ActiveSecurity.xml',
         ],
     },
-    
-}
 
+}

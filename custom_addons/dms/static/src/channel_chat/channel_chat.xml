@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pds_document_track_eat.ChannelChat">
+        <t t-if="!props.is_section">
+            <button class="btn btn-secondary"
+                    t-if="props.showButton"
+                    t-on-click="openChat">
+                <t t-esc="props.buttonName"/>
+            </button>
+            <a t-else=""
+               title="Chat"
+               t-on-click="openChat"
+               href="#"
+               class="ml8 o_channel_chat_btn"
+               role="button">
+                <i class="fa fa-comments align-middle fs-6"/>
+            </a>
+        </t>
+    </t>
+</templates>

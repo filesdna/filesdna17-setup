@@ -2,12 +2,12 @@ from odoo import models, fields, api, Command
 import hashlib
 import base64
 
+
 class DocumentVersion(models.Model):
     _name = 'document.version'
     _description = 'Document Version'
     _rec_name = 'version_number'
 
-    
     name = fields.Char(string='Name', readonly=True)
     document_id = fields.Many2one('dms.file', string='Document', readonly=True)
     version_number = fields.Integer(string='Version Number', default=1, readonly=True)
@@ -21,11 +21,11 @@ class DocumentVersion(models.Model):
         invisible=True,
         ondelete="cascade")
     attachment_ids = fields.Many2many(comodel_name='ir.attachment', string='File')
-    
-    
+
     @api.model
     def create(self, vals):
-        last_version = self.search([('document_id', '=', vals.get('document_id'))], order='version_number desc', limit=1)
+        last_version = self.search([('document_id', '=', vals.get('document_id'))], order='version_number desc',
+                                   limit=1)
         if last_version:
             vals['version_number'] = last_version.version_number + 1
 
@@ -49,7 +49,17 @@ class DocumentVersion(models.Model):
                 'target': 'current',
             }
 
-    
-
-    
-
+    def action_open_locally(self):
+        print('action_open_locally')
+        for record in self:
+            # Ensure the record is valid
+            record.ensure_one()
+            # Define the local file path for opening
+            file_path = f"/local/path/{record.id}_{record.name}"
+            # Your logic for opening the file locally
+            # For example, triggering a local file viewer via an API or system command
+            return {
+                'type': 'ir.actions.act_url',
+                'url': file_path,
+                'target': 'self',
+            }

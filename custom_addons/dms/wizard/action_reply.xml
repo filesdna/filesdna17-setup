@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_reply_form" model="ir.ui.view">
+        <field name="name">action_reply_form</field>
+        <field name="model">action.reply</field>
+        <field name="arch" type="xml">
+            <form string="Reply">
+                <group>
+                    <group>
+                        <field name="requester_id" readonly="1"/>
+                        <field name="dms_line_line_id" invisible="0"/>
+                        <field name="response_date"/>
+                        <field name="response_message"/>
+                        <field name="state" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="transfer_date" invisible="response_message  in ['export','continue', 'save']"/>
+                        <field name="assign_to_id" invisible="response_message  in ['export','continue', 'save']"
+                               string="Transfer To"/>
+                        <field name="employee_id" invisible="response_message  in ['export','continue', 'save']"/>
+                        <field name="user_id" invisible="1"/>
+                        <field name="request_message_change"
+                               invisible="response_message  in ['export','continue', 'save']"/>
+                        <field name="parent_root_dms" invisible="1"/>
+                        <field name="parent_root_department_ids" invisible="1"/>
+                        <field name="employee_department" invisible="1"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Submit" type="object" name="action_submit" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_reply_action" model="ir.actions.act_window">
+        <field name="name">action_reply_action</field>
+        <field name="res_model">action.reply</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

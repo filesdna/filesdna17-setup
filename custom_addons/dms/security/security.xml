@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <odoo>
+    <!--Directories Settings-->
+    <record id="group_create_dms_directory" model="res.groups">
+        <field name="name">Create Directory</field>
+    </record>
+    <record id="access_create_directory" model="ir.model.access">
+        <field name="name">access_create_directory</field>
+        <field name="model_id" ref="model_dms_directory"/>
+        <field name="group_id" ref="group_create_dms_directory"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
+    <record id="group_delete_dms_directory" model="res.groups">
+        <field name="name">Delete Directory</field>
+    </record>
+    <record id="access_delete_directory" model="ir.model.access">
+        <field name="name">access_delete_directory</field>
+        <field name="model_id" ref="model_dms_directory"/>
+        <field name="group_id" ref="group_delete_dms_directory"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+    <!-- Document Parameters -->
+    <record id="group_show_document_parameters" model="res.groups">
+        <field name="name">Document Parameters</field>
+    </record>
+    <record id="access_show_document_parameters" model="ir.model.access">
+        <field name="name">access_create_directory</field>
+        <field name="model_id" ref="model_document_parameters"/>
+        <field name="group_id" ref="group_show_document_parameters"/>
+        <field name="perm_read" eval="0"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+    </record>
     <!-- Groups -->
     <record id="category_dms_security" model="ir.module.category">
         <field name="name">Documents</field>
@@ -8,18 +46,24 @@
 
     <record id="group_dms_user" model="res.groups">
         <field name="name">User</field>
-        <field name="category_id" ref="category_dms_security" />
-        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+        <field name="category_id" ref="category_dms_security"/>
+        <!--        <field name="implied_ids" eval="[(4, ref('group_show_document_parameters'))]"/>-->
     </record>
 
     <record id="group_dms_manager" model="res.groups">
         <field name="name">Manager</field>
-        <field name="implied_ids" eval="[(4, ref('group_dms_user'))]" />
-        <field name="category_id" ref="category_dms_security" />
+        <field name="implied_ids" eval="[(4, ref('group_dms_user'))]"/>
+        <field name="category_id" ref="category_dms_security"/>
     </record>
-    
     <!-- Record Rules -->
     <!-- Directory -->
+    <record id="all_directory_rule" model="ir.rule">
+        <field name="name">Directory: see all directories</field>
+        <field name="model_id" ref="dms.model_dms_directory"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4, ref('dms.group_dms_manager'))]"/>
+    </record>
+
     <record id="own_directory_rule" model="ir.rule">
         <field name="name">Directory : see own directories</field>
         <field name="model_id" ref="dms.model_dms_directory"/>
@@ -27,24 +71,109 @@
         <field name="groups" eval="[(4, ref('dms.group_dms_user'))]"/>
     </record>
 
-    <record id="all_directory_rule" model="ir.rule">
-        <field name="name">Directory: see all directories</field>
-        <field name="model_id" ref="dms.model_dms_directory"/>
+    <!-- File -->
+    <record id="all_file_rule" model="ir.rule">
+        <field name="name">Files: see all fiels</field>
+        <field name="model_id" ref="dms.model_dms_file"/>
         <field name="domain_force">[(1,'=',1)]</field>
         <field name="groups" eval="[(4, ref('dms.group_dms_manager'))]"/>
     </record>
-    <!-- File -->
+    <!--    <record id="own_file_rule" model="ir.rule">-->
+    <!--        <field name="name">Files : see own files</field>-->
+    <!--        <field name="model_id" ref="dms.model_dms_file"/>-->
+    <!--        <field name="domain_force">[-->
+    <!--            '&amp;',-->
+    <!--            ('directory_id.complete_users_ids', 'in', user.id),-->
+    <!--            '|',-->
+    <!--            '&amp;',-->
+    <!--            ('enable_document_filter', '=', False),-->
+    <!--            '|',-->
+    <!--            ('parameter_values.selected_value_id', '=', False),-->
+    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),-->
+    <!--            '&amp;',-->
+    <!--            ('enable_document_filter', '=', True),-->
+    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids)-->
+    <!--            ]-->
+    <!--        </field>-->
+    <!--        <field name="groups" eval="[(4, ref('dms.group_dms_user')),(4, ref('dms.group_show_document_parameters'))]"/>-->
+    <!--    </record>-->
     <record id="own_file_rule" model="ir.rule">
         <field name="name">Files : see own files</field>
         <field name="model_id" ref="dms.model_dms_file"/>
-        <field name="domain_force">[('directory_id.complete_users_ids', 'in', user.id)]</field>
-        <field name="groups" eval="[(4, ref('dms.group_dms_user'))]"/>
+        <field name="domain_force">[
+            '&amp;',
+            ('directory_id.complete_users_ids', 'in', user.id),
+            '|',
+            '&amp;',
+            ('enable_document_filter', '=', False),
+
+            '|','|','|',
+            ('parameter_values', '=', False),
+            ('parameter_values.selected_value_id', '=', False),
+            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),
+            ('parameter_values.selected_value_id', 'not in', user.perm_access.ids),
+            '&amp;',
+            ('enable_document_filter', '=', True),
+            ('parameter_values.selected_value_id', 'in', user.perm_access.ids)
+            ]
+        </field>
+        <field name="groups" eval="[(4, ref('dms.group_dms_user')),(4, ref('dms.group_show_document_parameters'))]"/>
+    </record>
+    <!--    <record id="with_document_parameters_file_rule" model="ir.rule">-->
+    <!--        <field name="name">Files : see own files with document parameters</field>-->
+    <!--        <field name="model_id" ref="dms.model_dms_file"/>-->
+    <!--        <field name="domain_force">[-->
+    <!--            ('directory_id.complete_users_ids', 'in', user.id),-->
+    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),-->
+    <!--            ]-->
+    <!--        </field>-->
+    <!--        <field name="groups" eval="[(4, ref('dms.group_dms_user')),(4, ref('dms.group_show_document_parameters'))]"/>-->
+    <!--    </record>-->
+    <!--    <record id="own_file_rule" model="ir.rule">-->
+    <!--        <field name="name">Files : see own files</field>-->
+    <!--        <field name="model_id" ref="dms.model_dms_file"/>-->
+    <!--        <field name="domain_force">[-->
+    <!--    '|',-->
+    <!--    '|',-->
+    <!--    '|',-->
+    <!--            ('directory_id.complete_users_ids', 'in', user.id),-->
+    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),-->
+    <!--            ('parameter_values.selected_value_id', '=', False),-->
+    <!--            ]-->
+    <!--        </field>-->
+    <!--        <field name="groups" eval="[(4, ref('dms.group_dms_user'))]"/>-->
+    <!--    </record>-->
+
+    <!--Without Document Parameters-->
+    <!--    <record id="without_document_parameters_file_rule" model="ir.rule">-->
+    <!--        <field name="name">Files : see own files without document parameters</field>-->
+    <!--        <field name="model_id" ref="dms.model_dms_file"/>-->
+    <!--        <field name="domain_force">[-->
+    <!--            ('directory_id.complete_users_ids', 'in', user.id),-->
+    <!--            ]-->
+    <!--        </field>-->
+    <!--        <field name="groups" eval="[(4, ref('dms.group_dms_user'))]"/>-->
+    <!--    </record>-->
+
+    <!--Delete+Recycle+Archive-->
+    <record id="group_dms_delete_log" model="res.groups">
+        <field name="name">DMS Delete Log</field>
     </record>
 
-    <record id="all_file_rule" model="ir.rule">
-        <field name="name">Directory: see all fiels</field>
-        <field name="model_id" ref="dms.model_dms_file"/>
-        <field name="domain_force">[(1,'=',1)]</field>
-        <field name="groups" eval="[(4, ref('dms.group_dms_manager'))]"/>
+    <record id="group_dms_recycle_bin" model="res.groups">
+        <field name="name">DMS Recycle Bin</field>
+    </record>
+
+    <record id="group_dms_archive_files" model="res.groups">
+        <field name="name">DMS Archive Files</field>
+    </record>
+    <record id="model_dms_file_change_log_access_user" model="ir.model.access">
+        <field name="name">dms.file.change.log access</field>
+        <field name="model_id" ref="model_dms_file_change_log"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
     </record>
 </odoo>

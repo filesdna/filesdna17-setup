@@ -117,8 +117,11 @@
                                             </t>
                                         </td>
                                         <td class="text-right">
+<!--                                            <t t-set="margin"-->
+<!--                                               t-value="(groups[group]['profit'] / groups[group]['sales'] * 100) if groups[group]['expense'] > 0 else 0"/>-->
+
                                             <t t-set="margin"
-                                               t-value="(groups[group]['profit'] / groups[group]['sales'] * 100) if groups[group]['expense'] > 0 else 0"/>
+                                               t-value="(groups[group]['profit'] / groups[group]['sales'] * 100) if groups[group]['sales'] > 0 else 0"/>
                                             <span t-esc="margin" t-options='{"widget": "float", "precision": 2}'/>%
                                         </td>
                                         <t t-set="i" t-value="i+1"/>

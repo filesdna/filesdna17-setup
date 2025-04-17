@@ -99,7 +99,7 @@ class VoiceEnrollmentController(http.Controller):
         Send request to external voice enrollment API.
         """
         try:
-            url = "https://voice-reco-europe.filesdna.com/enroll"
+            url = "https://voice1.filesdna.com/enroll"
             headers = {"accept": "application/json"}
             data = {"token": token, "name": name}
             files_data = [('audios', (os.path.basename(file), open(file, 'rb'), 'audio/wav')) for file in files]

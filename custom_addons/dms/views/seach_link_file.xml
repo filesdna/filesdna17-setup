@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_dms_file_search" model="ir.ui.view">
+        <field name="name">view_dms_file_search</field>
+        <field name="model">dms.file</field>
+        <field name="arch" type="xml">
+            <tree string="Link Files">
+                <header>
+                    <button string="Link Files" type="object" name="action_link_files" class="btn-primary"/>
+                </header>
+                <field name="reference"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
