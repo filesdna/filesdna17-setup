@@ -30,7 +30,6 @@ class DmsDirectory(models.Model):
         "abstract.dms.mixin",
     ]
 
-
     _parent_store = True
     _parent_name = "parent_id"
     _directory_field = _parent_name
@@ -102,7 +101,6 @@ class DmsDirectory(models.Model):
     is_archive_dir = fields.Boolean('', readonly=True,
                                     default=False
                                     )
-
 
     def action_apply_template(self):
         for directory in self:

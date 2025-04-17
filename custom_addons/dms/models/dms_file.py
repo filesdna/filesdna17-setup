@@ -440,13 +440,6 @@ class File(models.Model):
             else:
                 rec.parent_root_dms = False
             print('root=', ministry_id.name if ministry_id else 'No ministry assigned')
-            # access = self.env.user.access_id
-            # print('access=', access)
-            # if access:
-            #     rec.perm_open_locally = access.perm_open_locally
-            #     rec.perm_edit_online = user.access_id.perm_edit_online
-            #     rec.perm_preview_file = user.access_id.perm_preview_file
-            #     rec.perm_download = user.access_id.perm_download
 
             # Handle multiple groups
             if rec.directory_id.group_ids:
@@ -640,21 +633,54 @@ class File(models.Model):
     access_name = fields.Char(compute='_compute_name_group')
     perm_lock = fields.Boolean(related='access_id.perm_lock', store=True)
     perm_unlock = fields.Boolean(related='access_id.perm_unlock', store=True)
-    perm_download = fields.Boolean(related='directory_id.group_ids.perm_download', store=True)
     perm_encrypt = fields.Boolean(related='directory_id.group_ids.perm_encrypt', store=True)
-    perm_open_locally = fields.Boolean(related='directory_id.group_ids.perm_open_locally', store=True)
-    perm_edit_online = fields.Boolean(related='directory_id.group_ids.perm_edit_online', store=True)
-    perm_preview_file = fields.Boolean(related='directory_id.group_ids.perm_preview_file', store=True)
+    perm_download = fields.Boolean(compute='_compute_access_for_directory', stor=True)
+    perm_open_locally = fields.Boolean(compute='_compute_access_for_directory', stor=True)
+    perm_edit_online = fields.Boolean(compute='_compute_access_for_directory', stor=True)
+    perm_preview_file = fields.Boolean(compute='_compute_access_for_directory', stor=True)
 
-    # # @api.onchange('access_id')
-    # def _compute_access_id_perm(self):
-    #     print('user=', self.env.user.name)
-    #     user = self.env.user.access_id
-    #     for rec in self:
-    #         if user:
-    #             print('user access=', user.perm_open_locally)
-    #             rec.perm_open_locally = user.perm_open_locally
-    #             print('perm_open_locally=', self.perm_open_locally)
+    @api.onchange('directory_id')
+    def _compute_access_for_directory(self):
+        for rec in self:
+            try:
+                max_total = 0
+                max_group = None
+                if rec.directory_id.group_ids:
+                    for group in rec.directory_id.group_ids:
+                        total = 0
+                        if group.perm_download:
+                            total += 1
+                        if group.perm_open_locally:
+                            total += 1
+                        if group.perm_edit_online:
+                            total += 1
+                        if group.perm_preview_file:
+                            total += 1
+                        print('Access for directory=', group.name, ', total=', total)
+                        if total > max_total:
+                            max_total = total
+                            max_group = group
+                if max_group:
+                    rec.perm_download = max_group.perm_download
+                    rec.perm_open_locally = max_group.perm_open_locally
+                    rec.perm_edit_online = max_group.perm_edit_online
+                    rec.perm_preview_file = max_group.perm_preview_file
+                    print('Access Group perm_download=', max_group.perm_download,
+                          'Access Group perm_open_locally=', max_group.perm_open_locally,
+                          'Access Group perm_edit_online=', max_group.perm_edit_online,
+                          'Access Group perm_preview_file=', max_group.perm_preview_file,
+                          )
+                else:
+                    rec.perm_download = False
+                    rec.perm_open_locally = False
+                    rec.perm_edit_online = False
+                    rec.perm_preview_file = False
+            except Exception as e:
+                _logger.error(f"Error computing permissions: {e}")
+                rec.perm_download = False
+                rec.perm_open_locally = False
+                rec.perm_edit_online = False
+                rec.perm_preview_file = False
 
     def _compute_name_group(self):
         for rec in self:
@@ -1033,7 +1059,6 @@ class File(models.Model):
         """This method is overwritten to make it 'similar' to v13.
         The goal is that the directory searchpanel shows all directories
         (even if some folders have no files)."""
-
         if field_name == "directory_id":
             domain = [["is_hidden", "=", False]]
             # If we pass by context something, we filter more about it we filter
@@ -1041,8 +1066,7 @@ class File(models.Model):
             if self.env.context.get("active_model", False) == "dms.directory":
                 active_id = self.env.context.get("active_id")
                 files = self.env["dms.file"].search(
-                    [["directory_id", "child_of", active_id]]
-                )
+                    [["directory_id", "child_of", active_id]])
                 all_directories = files.mapped("directory_id")
                 all_directories += files.mapped("directory_id.parent_id")
                 domain.append(["id", "in", all_directories.ids])
@@ -1074,8 +1098,7 @@ class File(models.Model):
                 res = super().search_panel_select_range(field_name, **kwargs)
                 for item in res["values"]:
                     field_range[item["id"]]["__count"] = item["__count"]
-            # return {"parent_field": "parent_id", "values": list(field_range.values())}
-
+                return {"parent_field": "parent_id", "values": list(field_range.values())}
         context = {}
         if field_name == "category_id":
             context["category_short_name"] = True
@@ -1590,10 +1613,19 @@ class File(models.Model):
                 _logger.info(f"✅ Created directory template for {unit_name}")
 
             for record in created_records:
-                in_out = record.parameter_values.selected_value_id.name
+                in_out_parameter = self.env['document.parameters'].search(
+                    [('name', '=', 'In/Out')])
+                print('in_out_parameter=', in_out_parameter.mapped('name'))
+                search_parameter = self.env['dms.link.document.parameter.line'].search(
+                    [('parameter_id', '=', in_out_parameter.id)])
+                print('search_parameter=', search_parameter)
+                print('search_parameter=', search_parameter.selected_value_id.mapped('name'))
+                in_out_value = record.parameter_values.selected_value_id.name if record.parameter_values else None
+                # in_out_value = search_parameter.selected_value_id.name if search_parameter else None
+                folder_name = "in-docs" if in_out_value == "In" else "out-docs"
                 structure = {
                     "root": {"name": unit_name, "parent_id": None, "is_root_directory": True},
-                    "doc_folder": {"name": "in-docs" if in_out == "In" else "out-docs", "parent_id": "root"},
+                    "doc_folder": {"name": folder_name, "parent_id": "root"},
                     "year": {"name": str(datetime.now().year), "parent_id": "doc_folder"},
                 }
                 created_dirs = {}
@@ -1769,7 +1801,7 @@ class File(models.Model):
         try:
             fname = self.attachment_id.store_fname
             company_name = self.env.user.company_id.name
-            db_name = self._cr.dbname
+            db_name = self.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
             file_path = f"{db_name}/{fname}"
             bucket = google_bucket
 
@@ -1812,7 +1844,7 @@ class File(models.Model):
 
         try:
             fname = self.attachment_id.store_fname
-            db_name = self._cr.dbname
+            db_name = self.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
             file_path = f"{db_name}/{fname}"
             bucket = google_bucket
 
@@ -1862,7 +1894,27 @@ class File(models.Model):
             raise
 
     def action_preview(self):
-        print('action preivew')
+        print('action preview')
+        # for record in self:
+        #     if record.attachment_ids:
+        #         # Get the first attachment
+        #         attachment = record.attachment_ids[0]
+        #         print('attachment=', attachment)
+        #
+        #         # Return action to open the attachment in the many2many_preview_attachment component
+        #         return {
+        #             'type': 'ir.actions.act_window',
+        #             'res_model': 'ir.attachment',
+        #             'res_id': attachment.id,
+        #             'view_mode': 'form',  # Use 'form' to show the attachment in a detailed view
+        #             'target': 'new',  # Open in a new window
+        #             'context': {
+        #                 'default_attachment_ids': [(6, 0, record.attachment_ids.ids)],
+        #                 # Pass the attachment_ids to the context
+        #             },
+        #         }
+        #     else:
+        #         raise UserError(_('No attachments found to preview.'))
 
     def action_open_locally(self):
         print('action_open_locally')

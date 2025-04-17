@@ -1,0 +1,2289 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* analytix_dashboard_bits
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20250105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 06:58+0000\n"
+"PO-Revision-Date: 2025-01-14 06:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/add_to_board/add_to_board.js:0
+msgid "\"%s\" added to dashboard"
+msgstr "تمت إضافة \"%s\" إلى لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/listview_items_bits.xml:0
+msgid "&nbsp;"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__v_records_per_page__10
+msgid "10"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__v_records_per_page__20
+msgid "20"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__v_records_per_page__30
+msgid "30"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__v_records_per_page__40
+msgid "40"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__v_records_per_page__50
+msgid "50"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_bits_view_form
+msgid ""
+"<span style=\"font-weight: bold;\" class=\"text-success\">Open "
+"dashboard</span>"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid "ASC"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__action_id
+msgid "Action"
+msgstr "فعل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Action not found."
+msgstr "لم يتم العثور على الإجراء."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__active
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__active
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__is_active
+msgid "Active"
+msgstr "نشيط"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/add_to_board/add_to_board.xml:0
+msgid "Add"
+msgstr "يضيف"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_border
+msgid "Add Border"
+msgstr "أضف الحدود"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__is_main_menu
+msgid "Add Dashboard To Main menu"
+msgstr "إضافة لوحة التحكم إلى القائمة الرئيسية"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Add Filter"
+msgstr "إضافة عامل تصفية"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Add Theme"
+msgstr "إضافة موضوع"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__embade_code
+msgid ""
+"Add embade iframe code(youtube, vimo, website, tutorials, etc) to load "
+"source."
+msgstr "قم بإضافة كود iframe للتضمين (youtube، وvimo، وموقع الويب، والبرامج التعليمية، وما إلى ذلك) للتحميل "
+"مصدر."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__filter_ids
+msgid "Add filters to show on dashboard header."
+msgstr "إضافة عوامل تصفية لإظهارها على رأس لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.view_dashboard_theme_form
+msgid "Add logo to automatically select theme based on the image"
+msgstr "أضف شعارًا لتحديد السمة تلقائيًا بناءً على الصورة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__group_ids
+msgid ""
+"Add the group to show this dashboard only those users who has entered group "
+"access."
+msgstr "أضف المجموعة لتظهر لوحة التحكم هذه فقط للمستخدمين الذين دخلوا المجموعة "
+"وصول."
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_bits_view_search
+msgid "All"
+msgstr "الكل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.actions.client,name:analytix_dashboard_bits.action_dashboards_view_bits
+msgid "All Dashboard"
+msgstr "كل لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid "All Dashboards"
+msgstr "لوحات المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__statistics_field
+msgid "Analysis data will calculate from selected field values."
+msgstr "سيتم حساب بيانات التحليل من قيم الحقول المحددة."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Apply"
+msgstr "يتقدم"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__apply_background
+msgid "Apply On Background"
+msgstr "تنطبق على الخلفية"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboards_view_bits.js:0
+msgid "Are you sure that you want to delete this dashboard ?"
+msgstr "هل أنت متأكد أنك تريد حذف لوحة التحكم هذه؟"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "Are you sure that you want to delete this item ?"
+msgstr "هل أنت متأكد أنك تريد حذف هذا العنصر؟"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__chart_sort_by_order__asc
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_order__ascending
+msgid "Ascending"
+msgstr "تصاعدي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/add_to_board/add_to_board.xml:0
+msgid "Attach in dashboards"
+msgstr "نعلق في لوحات المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_data_type__avg
+msgid "Average"
+msgstr "متوسط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__background_color
+msgid "Background Color"
+msgstr "لون الخلفية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__bar
+msgid "Bar Chart"
+msgstr "مخطط شريطي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Bar Chart Style"
+msgstr "نمط الرسم البياني الشريطي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__bar_line_field_id
+msgid "Bar/Line"
+msgstr "شريط / خط"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Bar/line Measure"
+msgstr "شريط / قياس الخط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__bar_line_measure
+msgid "Bar/line measure"
+msgstr "شريط / قياس الخط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_base
+msgid "Base"
+msgstr "قاعدة "
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Basic Info"
+msgstr "معلومات أساسية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__border_color
+msgid "Border Color"
+msgstr "لون الحدود"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__border_position
+msgid "Border Position"
+msgstr "موقف الحدود"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__border_position__bottom
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__bottom
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__legend_position__bottom
+msgid "Bottom"
+msgstr "اسفل"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Bottom Value"
+msgstr "القيمة السفلية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_limit_record
+msgid ""
+"By enabaling this, The entered limit will considered as you want to fetch "
+"entered limit data."
+msgstr "من خلال تمكين هذا، سيتم اعتبار الحد الذي تم إدخاله كما تريد جلبه "
+"تم إدخال بيانات الحد."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/dialogs/CopyEmbadeCodeDialog.xml:0
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Capture Dashboard"
+msgstr "التقاط لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__center
+msgid "Center"
+msgstr "مركز"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Chart Configration"
+msgstr "تكوين الرسم البياني"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Chart Configuration"
+msgstr "تكوين الرسم البياني"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Chart Groups configuration"
+msgstr "تكوين مجموعات الرسم البياني"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/preview_widget/chart_preview_bits.js:0
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_preview_bits
+msgid "Chart Preview"
+msgstr "Chart Preview"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_preview_data
+msgid "Chart Preview Data"
+msgstr "بيانات معاينة الرسم البياني"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__onclick_action
+msgid "Click Action"
+msgstr "انقر فوق الإجراء"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__client_action_id
+msgid "Client Action"
+msgstr "عمل العميل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/media_widget/icon_picker.xml:0
+msgid "Close"
+msgstr "يغلق"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_1
+msgid "Color 1"
+msgstr "اللون 1"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_2
+msgid "Color 2"
+msgstr "اللون 2"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_3
+msgid "Color 3"
+msgstr "اللون 3"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_4
+msgid "Color 4"
+msgstr "اللون 4"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_5
+msgid "Color 5"
+msgstr "اللون 5"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_6
+msgid "Color 6"
+msgstr "اللون 6"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_7
+msgid "Color 7"
+msgstr "اللون 7"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__color_8
+msgid "Color 8"
+msgstr "اللون 8"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Color Themes"
+msgstr "سمات اللون"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Columns"
+msgstr "أعمدة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/widget/custom_dropdown_dynamic.js:0
+msgid "Combined Field widget"
+msgstr "القطعة الميدانية المدمجة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_bus_bus
+msgid "Communication Bus"
+msgstr "ناقل الاتصالات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__company_id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__grid_config_id
+msgid "Config Template"
+msgstr "قالب التكوين"
+
+#. module: analytix_dashboard_bits
+#: model:ir.ui.menu,name:analytix_dashboard_bits.menu_dashboard_config
+msgid "Configuration"
+msgstr "إعدادات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/dialogs/CopyEmbadeCodeDialog.xml:0
+#: code:addons/analytix_dashboard_bits/static/src/dialogs/DuplicateConfirmation.xml:0
+msgid "Copy"
+msgstr "Copy"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "Copy Dashboard Sharable Link"
+msgstr "انسخ الرابط القابل للمشاركة في لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "Copy the embed dashboard code"
+msgstr "انسخ رمز لوحة التحكم المضمنة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "Copy/Duplicate Item"
+msgstr "نسخ/تكرار العنصر"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/add_to_board/add_to_board.js:0
+msgid "Could not add filter to dashboard"
+msgstr "تعذرت إضافة الفلتر إلى لوحة التحكم"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__b_measure_type__count
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_data_type__count
+msgid "Count"
+msgstr "عداد"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid ""
+"Create\n"
+"                                        Dashboard"
+msgstr ""
+"إنشاء\n"
+"لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Create Item"
+msgstr "إنشاء عنصر"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__create_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__create_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__create_date
+msgid "Created on"
+msgstr "تم الإنشاء بتاريخ"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__custom
+msgid "Custom Range"
+msgstr "نطاق مخصص"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid "DESC"
+msgstr "وصف"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_view_mode__dark
+msgid "Dark"
+msgstr "مظلم"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboards_view_bits.js:0
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__dashboard_id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__bits_dashboard_id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__dashboard_id
+msgid "Dashboard"
+msgstr "لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.module.category,name:analytix_dashboard_bits.access_group_dashboard_bits
+msgid "Dashboard Builder Access"
+msgstr "الوصول إلى منشئ لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_dashboard_filter_bits
+msgid "Dashboard Filter"
+msgstr "مرشح لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__d_icon_bits
+msgid "Dashboard Icon"
+msgstr "أيقونة لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+#: model:ir.actions.act_window,name:analytix_dashboard_bits.action_dashboard_item_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__dashboard_item_ids
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__item_type
+msgid "Dashboard Item"
+msgstr "عنصر لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.ui.menu,name:analytix_dashboard_bits.menu_dashboard_items
+msgid "Dashboard Items"
+msgstr "عنصر لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__dashboard_menu_id
+msgid "Dashboard Menu"
+msgstr "قائمة لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__menu_name
+msgid "Dashboard Menu Name"
+msgstr "اسم قائمة لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__name
+msgid "Dashboard Name"
+msgstr "اسم لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.actions.act_window,name:analytix_dashboard_bits.action_dashboard_theme_act_window
+#: model:ir.model,name:analytix_dashboard_bits.model_dashboard_themes
+#: model:ir.ui.menu,name:analytix_dashboard_bits.menu_dashboard_themes
+msgid "Dashboard Themes"
+msgstr "سمات لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__view_data
+msgid "Dashboard action view data"
+msgstr "بيانات عرض إجراءات لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_dashboard_gird_config
+msgid "Dashboard grid configuration"
+msgstr "تكوين شبكة لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__dashboard_bits_id
+msgid "Dashboard id"
+msgstr "معرف لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__dashboard_item_bits_ids
+msgid "Dashboard item"
+msgstr "عنصر لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__default_time_frame
+msgid "Dashboard time frame"
+msgstr "الإطار الزمني للوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__default_time_frame
+msgid "Dashboard will load the data based on default time frame."
+msgstr "ستقوم لوحة المعلومات بتحميل البيانات بناءً على الإطار الزمني الافتراضي."
+
+#. module: analytix_dashboard_bits
+#: model:ir.ui.menu,name:analytix_dashboard_bits.menu_dashboards_bits
+msgid "Dashboards"
+msgstr "لوحات المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__display_order
+msgid "Data Display Order"
+msgstr "ترتيب عرض البيانات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__display_data_type
+msgid "Data Display Type"
+msgstr "نوع عرض البيانات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__item_domain
+msgid "Data Filter"
+msgstr "تصفية البيانات"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Data Operation"
+msgstr "تشغيل البيانات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Date Filters"
+msgstr "مرشحات التاريخ"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__default
+msgid "Default"
+msgstr "الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__default_base_view
+msgid "Default Base View"
+msgstr "العرض الأساسي الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__default_color_theme
+msgid "Default Color Theme"
+msgstr "موضوع اللون الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__default_end_date
+msgid "Default End Date"
+msgstr "تاريخ الانتهاء الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__default_start_date
+msgid "Default Start Date"
+msgstr "تاريخ البدء الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__default_time_frame
+msgid "Default TimeFrame"
+msgstr "الإطار الزمني الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__default_view_mode
+msgid "Default View Mode"
+msgstr "وضع العرض الافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__item_domain
+msgid "Define domain conditions to filter out data."
+msgstr "تحديد شروط المجال لتصفية البيانات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__record_limit
+msgid ""
+"Defines the limit to retrieve the data. The entered limit will considered as"
+" you want to fetch entered limit data."
+msgstr "يحدد الحد الأقصى لاسترداد البيانات. سيتم اعتبار الحد الذي تم إدخاله كـ "
+"تريد جلب بيانات الحد المدخلة."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboards_view_bits.js:0
+msgid "Delete Dashboard"
+msgstr "حذف لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_grid.xml:0
+msgid "Delete Item"
+msgstr "حذف العنصر"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__chart_sort_by_order__desc
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_order__descending
+msgid "Descending"
+msgstr "تنازلي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_builder_import_dashbord_item_view
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_builder_import_dashbord_view
+msgid "Discard"
+msgstr "تجاهل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Discard Changes"
+msgstr "تجاهل التغييرات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Discart Changes"
+msgstr "تجاهل التغييرات"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Display Border"
+msgstr "عرض الحدود"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__show_currency
+msgid "Display Currency"
+msgstr "عرض العملة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__display_name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__kpi_display_style
+msgid "Display Style"
+msgstr "نمط العرض"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__parent_menu_id
+msgid "Display under the menu"
+msgstr "عرض تحت القائمة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_grid.xml:0
+msgid "Duplicate"
+msgstr "تكرار"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Duplicate Dashboard"
+msgstr "لوحة تحكم مكررة"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid ""
+"EX\n"
+"                                        <br/>\n"
+"                                        SELECT SUM(amount_total) AS amount, partner_id FROM sale_order GROUP BY\n"
+"                                        partner_id"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_grid.xml:0
+msgid "Edit"
+msgstr "يحرر"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Edit Dashboard"
+msgstr "تحرير لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Edit Layout"
+msgstr "تحرير التخطيط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__embade_code
+msgid "Embade Code"
+msgstr "تضمين التعليمات البرمجية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__embade_iframe
+msgid "Embade Iframe"
+msgstr "تضمين إطار "
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Embed Dashboard Link"
+msgstr "تضمين رابط لوحة التحكم"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__is_public
+msgid "Enable Sharing"
+msgstr "تمكين المشاركة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__apply_background
+msgid "Enable to apply primary color on background."
+msgstr "تمكين لتطبيق اللون الأساسي على الخلفية."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__active
+msgid "Enable to display dashboard on the dashboards screen."
+msgstr "تمكين عرض لوحة المعلومات على شاشة لوحات المعلومات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_query
+msgid "Enable to get records through the sql query."
+msgstr "تمكين الحصول على السجلات من خلال استعلام SQL."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__bar_stack
+msgid "Enable to make bar stack chart."
+msgstr "تمكين إنشاء مخطط شريطي مكدس."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_bar_line
+msgid "Enable to make bar/line chart."
+msgstr "تمكين إنشاء مخطط شريطي/خطي."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__circular_chart
+msgid "Enable to make circular chart."
+msgstr "تمكين لجعل الرسم البياني الدائري."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__doughnut_chart
+msgid "Enable to make doughnut chart."
+msgstr "تمكين لجعل الرسم البياني الدائري."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__half_pie
+msgid "Enable to make half-pie chart."
+msgstr "تمكين لجعل الرسم البياني نصف دائري."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__horizontal_chart
+msgid "Enable to make horizontal chart."
+msgstr "تمكين لجعل الرسم البياني الأفقي."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_polar
+msgid "Enable to make polar chart"
+msgstr "تمكين لجعل الرسم البياني القطبي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_smooth_line
+msgid "Enable to make smooth line on chart"
+msgstr "تمكين لجعل خط سلس على الرسم البياني"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__statistics_with_trend
+msgid "Enable to make trend chart with statastics data."
+msgstr "تمكين لجعل مخطط الاتجاه مع البيانات الإحصائية."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_area_style
+msgid "Enable to set area on line."
+msgstr "تمكين لضبط المنطقة على الخط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_background
+msgid "Enable to set background on chart."
+msgstr "تمكين لتعيين الخلفية على الرسم البياني."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__is_border
+msgid "Enable to set border on statistics."
+msgstr "Enable to set border on statistics."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__onclick_action
+msgid "Enable to set onclick action on statistics item."
+msgstr "تمكين لتعيين إجراء عند النقر على عنصر الإحصائيات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__show_record_edit_button
+msgid "Enable to show edit button on the list view records."
+msgstr "تمكين إظهار زر التحرير في سجلات عرض القائمة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__show_legend
+msgid "Enable to show groups of chart data in the chart."
+msgstr "تمكين إظهار مجموعات بيانات المخطط في المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__show_lable
+msgid "Enable to show the lable on the chart."
+msgstr "nable لإظهار التسمية على الرسم البياني."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__query
+msgid "Enter Query"
+msgstr "أدخل الاستعلام"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__lable_format
+msgid ""
+"Enter the formate to show on measure(Y axis). Ex.{value}{c} here 'value' "
+"will show the comming value on axis and 'c' will show the currency if the "
+"field will monetory, Otherwise you can directely add monetory value($, INR, "
+"EUR, etc) after the value like {value} INR."
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__records_per_page
+msgid "Enter the number to show records per page on list view."
+msgstr "أدخل الرقم لإظهار السجلات لكل صفحة في عرض القائمة."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Export Dashboard"
+msgstr "لوحة تحكم التصدير"
+
+#. module: analytix_dashboard_bits
+#: model:ir.actions.server,name:analytix_dashboard_bits.action_export_dashboard
+msgid "Export Dashboard File"
+msgstr "تصدير ملف لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_grid.xml:0
+msgid "Export Data"
+msgstr "تصدير البيانات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.actions.server,name:analytix_dashboard_bits.action_export_dashboard_item
+msgid "Export Item File"
+msgstr "تصدير ملف العنصر"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Favorite"
+msgstr "مفضل"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_favorite_filter_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__fav_filter_ids
+msgid "Favorite Filters"
+msgstr "المرشحات المفضلة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Favorites"
+msgstr "المفضلة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_query
+msgid "Fetch Records By Query"
+msgstr "جلب السجلات عن طريق الاستعلام"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__field_id
+msgid "Field"
+msgstr "مجال"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__filter_ids
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_bits_view_form
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Filter"
+msgstr "فلتر"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__filter_value
+msgid "Filter Value"
+msgstr "قيمة التصفية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__media_option__fontawesome_bits
+msgid "Font Awesome Icon"
+msgstr "أيقونة الخط رهيبة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__font_color
+msgid "Font Color"
+msgstr "لون الخط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_dashboard_item_bits
+msgid "For dashboard items."
+msgstr "لعناصر لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model,name:analytix_dashboard_bits.model_dashboard_bits
+msgid "For individual dashboard records."
+msgstr "لسجلات لوحة المعلومات الفردية."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__funnel
+msgid "Funnel Chart"
+msgstr "مخطط قمع"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_bits_view_form
+msgid "General Settings"
+msgstr "الإعدادات العامة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/kpi_items_bits.xml:0
+msgid "Goal"
+msgstr "هدف"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__dashboard_grid_config_id
+msgid "Grid Configuration"
+msgstr "تكوين الشبكة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__grid_config
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__grid_config_bits
+msgid "Grid Configurations"
+msgstr "تكوينات الشبكة"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Group By"
+msgstr "المجموعة حسب"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_bits_view_search
+msgid "Group By Dashboard"
+msgstr "المجموعة حسب لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_groupby_field
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__stats_chart_y_by_qry
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__x_axis
+msgid "Group By(X axis)"
+msgstr "التجميع حسب (المحور X)"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__group_ids
+msgid "Groups"
+msgstr "المجموعات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__legend_position
+msgid "Groups Position"
+msgstr "موقف المجموعات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__id
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__id
+msgid "ID"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__icon_background
+msgid "Icon Background Color"
+msgstr "لون خلفية الرمز"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__icon_color
+msgid "Icon Color"
+msgstr "لون الرمز"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__media_option__image_bits
+msgid "Image"
+msgstr "صورة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__icon_image
+msgid "Image Icon"
+msgstr "Image Icon"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+#: model:ir.model,name:analytix_dashboard_bits.model_import_dashboard
+msgid "Import Dashboard"
+msgstr "Import Dashboard"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model,name:analytix_dashboard_bits.model_import_dashboard_item
+msgid "Import Dashboard Item"
+msgstr "استيراد عنصر لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__import_dashboard_item_doc
+msgid "Import Dashboard Item Document"
+msgstr "استيراد مستند عنصر لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__import_doc
+msgid "Import Document"
+msgstr "وثيقة الاستيراد"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__inner
+msgid "Inner"
+msgstr "داخلي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__inside
+msgid "Inside"
+msgstr "Inside"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Item Selection"
+msgstr "اختيار العنصر"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__item_title
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Item Title"
+msgstr "عنوان العنصر"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__item_title
+msgid "Item title."
+msgstr "عنوان السلعة."
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "KPI Configuration"
+msgstr "تكوين مؤشرات الأداء الرئيسية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__kpi
+msgid "KPI Progress"
+msgstr "تقدم مؤشرات الأداء الرئيسية"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "KPI Value"
+msgstr "قيمة مؤشرات الأداء الرئيسية"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "KPI View Style"
+msgstr "نمط عرض مؤشرات الأداء الرئيسية"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Label Configuration"
+msgstr "تكوين التسمية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__lable_position
+msgid "Label Position"
+msgstr "موضع التسمية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__lable_format
+msgid "Label format"
+msgstr "تنسيق التسمية"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Lable configuration"
+msgstr "تكوين التسمية"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_10
+msgid "Last 10 Days"
+msgstr "آخر 10 أيام"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_two_months
+msgid "Last 2 Months"
+msgstr "آخر شهرين"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_24_hr
+msgid "Last 24 Hours"
+msgstr "Last 24 Hours"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Last 24 hours"
+msgstr "آخر 24 ساعة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_three_months
+msgid "Last 3 Months"
+msgstr "آخر 3 أشهر"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_30
+msgid "Last 30 Days"
+msgstr "آخر 30 يومًا"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_365
+msgid "Last 365 Days"
+msgstr "آخر 365 يومًا"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_60
+msgid "Last 60 Days"
+msgstr "آخر 60 يومًا"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_90
+msgid "Last 90 Days"
+msgstr "آخر 90 يومًا"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_month
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__write_uid
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__write_date
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_week
+msgid "Last Week"
+msgstr "الأسبوع الماضي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__last_year
+msgid "Last Year"
+msgstr "العام الماضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__border_position__left
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__left
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__legend_position__left
+msgid "Left"
+msgstr "غادر"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Legends configuration"
+msgstr "تكوين الأساطير"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_view_mode__light
+msgid "Light"
+msgstr "ضوء"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__line
+msgid "Line Chart"
+msgstr "مخطط خطي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Line Chart Style"
+msgstr "نمط الرسم البياني الخطي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "List Configuration"
+msgstr "تكوين القائمة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__list_view
+msgid "List View"
+msgstr "عرض القائمة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__list_view_field_ids
+msgid "List View Fields"
+msgstr "حقول عرض القائمة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__list_view_style
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "List View Style"
+msgstr "نمط عرض القائمة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__logo
+msgid "Logo"
+msgstr "الشعار"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__dashboard_icon
+msgid "Main Menu icon"
+msgstr "أيقونة القائمة الرئيسية"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Make"
+msgstr "يصنع"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__bar_stack
+msgid "Make Bar Stack Chart"
+msgstr "إنشاء مخطط مكدس شريطي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_bar_line
+msgid "Make Bar/Line Chart"
+msgstr "إنشاء مخطط شريطي/خطي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__circular_chart
+msgid "Make Circular Polar"
+msgstr "اصنع قطبيًا دائريًا"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__doughnut_chart
+msgid "Make Doughnut Chart"
+msgstr "اصنع مخططًا دائريًا"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__half_pie
+msgid "Make Half Pie"
+msgstr "اصنع نصف فطيرة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__horizontal_chart
+msgid "Make Horizontal Chart"
+msgstr "جعل الرسم البياني الأفقي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_polar
+msgid "Make Polar Chart"
+msgstr "اصنع مخططًا قطبيًا"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Make current as default"
+msgstr "جعل الحالي كافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_measure_field_ids
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Measure"
+msgstr "يقيس"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Measure Label Format"
+msgstr "قياس تنسيق التسمية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__stats_chart_x_by_qry
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__y_axis
+msgid "Measure(Y axis)"
+msgstr "القياس (المحور ص)"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__media_option
+msgid "Media Option"
+msgstr "خيار الوسائط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__model_id
+msgid "Model"
+msgstr "نموذج"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/dialogs/DuplicateConfirmation.xml:0
+msgid "Move"
+msgstr "يتحرك"
+
+#. module: analytix_dashboard_bits
+#: model:ir.ui.menu,name:analytix_dashboard_bits.menu_all_dashboard_bits
+msgid "My Dashboards"
+msgstr "لوحات المعلومات الخاصة بي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_filter_bits__name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard__name
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_import_dashboard_item__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__name
+msgid "Name of the dashboard"
+msgstr "اسم لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboards_view_bits.js:0
+#: model:ir.actions.act_window,name:analytix_dashboard_bits.action_dashboards_bits
+msgid "New Dashboard"
+msgstr "لوحة تحكم جديدة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "New Filter"
+msgstr "مرشح جديد"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/js/dashboard_bits.js:0
+msgid "New Theme"
+msgstr "موضوع جديد"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/listview_items_bits.xml:0
+msgid "Next"
+msgstr "التالي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__next_day
+msgid "Next Day"
+msgstr "اليوم التالي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__next_month
+msgid "Next Month"
+msgstr "الشهر المقبل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__next_week
+msgid "Next Week"
+msgstr "الأسبوع المقبل"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__next_year
+msgid "Next Year"
+msgstr "العام القادم"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Next day"
+msgstr "في اليوم التالي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/statistics_items_bits.xml:0
+msgid "No data found"
+msgstr "لم يتم العثور على بيانات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/no_data_bits.xml:0
+msgid "No data found between this timeframe or invalid configurations."
+msgstr "لم يتم العثور على بيانات بين هذا الإطار الزمني أو تكوينات غير صالحة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__pie
+msgid "Pie Chart"
+msgstr "مخطط دائري"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Pie Chart Style"
+msgstr "نمط الرسم البياني الدائري"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/add_to_board/add_to_board.js:0
+msgid "Please refresh your browser for the changes to take effect."
+msgstr "يرجى تحديث المتصفح الخاص بك لتصبح التغييرات نافذة المفعول."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/listview_items_bits.xml:0
+msgid "Prev"
+msgstr "السابق"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__kpi_primary_color
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__trend_primary_color
+msgid "Primary Color"
+msgstr "اللون الأساسي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__res_query_bits
+msgid "Query Result"
+msgstr "نتيجة الاستعلام"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__radar
+msgid "Radar Chart"
+msgstr "مخطط الرادار"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Radar Chart Style"
+msgstr "نمط مخطط الرادار"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__record_limit
+msgid "Records Limit"
+msgstr "حد السجلات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__records_per_page
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__v_records_per_page
+msgid "Records Per Page"
+msgstr "السجلات لكل صفحة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Remove"
+msgstr "إزالة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Remove Dashboard"
+msgstr "إزالة لوحة القيادة"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Remove Filters"
+msgstr "إزالة عوامل التصفية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__border_position__right
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__right
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__legend_position__right
+msgid "Right"
+msgstr "يمين"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "SQL Query"
+msgstr "استعلام SQL"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Save"
+msgstr "حفظ"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Save Current Search"
+msgstr "حفظ البحث الحالي"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/media_widget/icon_picker.xml:0
+msgid "Search icons.."
+msgstr "ايقونات البحث.."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid "Search..."
+msgstr "يبحث..."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__security_token_bits
+msgid "Security Token"
+msgstr "رمز الأمان"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/media_widget/icon_picker.xml:0
+msgid "Select"
+msgstr "يختار"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__b_measure_field_id
+msgid "Select Calc Field"
+msgstr "حدد حقل الحساب"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/dialogs/DuplicateConfirmation.xml:0
+msgid "Select Dashboard"
+msgstr "حدد لوحة المعلومات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__b_show_val
+msgid "Select Field Value"
+msgstr "حدد قيمة الحقل"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__icon_bits
+msgid "Select Icon"
+msgstr "حدد أيقونة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__kpi_display_style
+msgid "Select KPI display style"
+msgstr "حدد نمط عرض مؤشرات الأداء الرئيسية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__kpi_primary_color
+msgid "Select KPI primary color"
+msgstr "حدد اللون الأساسي لمؤشر الأداء الرئيسي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__model_id
+msgid "Select Model"
+msgstr "حدد النموذج"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__model_name
+msgid "Select Model Name"
+msgstr "حدد اسم النموذج"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__border_position
+msgid "Select border position"
+msgstr "حدد موضع الحدود"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__b_measure_type
+msgid "Select calculation type perform to get data."
+msgstr "حدد إجراء نوع الحساب للحصول على البيانات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__grid_config_id
+msgid ""
+"Select configuration template to add demo data layout in the dashboard."
+msgstr "حدد قالب التكوين لإضافة تخطيط بيانات العرض التوضيحي في لوحة المعلومات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__bits_dashboard_id
+msgid "Select dashboard in which you want to show this item."
+msgstr "حدد لوحة التحكم التي تريد إظهار هذا العنصر فيها."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__display_data_type
+msgid ""
+"Select data display type. calculation will show based on data display type."
+msgstr "حدد نوع عرض البيانات. سيتم عرض الحساب بناءً على نوع عرض البيانات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__chart_sort_by_field
+msgid "Select field by which you want to sort the records."
+msgstr "حدد الحقل الذي تريد فرز السجلات من خلاله."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__chart_measure_field_ids
+msgid "Select field to measure Y axis data"
+msgstr "حدد حقلاً لقياس بيانات المحور Y"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__chart_groupby_field
+msgid "Select field to show data group by on chart."
+msgstr "حدد الحقل لإظهار مجموعة البيانات حسب المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__chart_sub_groupby_field
+msgid "Select field to show data sub-group by on chart."
+msgstr "حدد الحقل لإظهار مجموعة البيانات الفرعية حسب الرسم البياني."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__b_trend_field_id
+msgid "Select field to show data value in bottom of trend"
+msgstr "حدد الحقل لإظهار قيمة البيانات في أسفل الاتجاه"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__bar_line_field_id
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__bar_line_measure
+msgid "Select fields to make line chart with bar chart."
+msgstr "حدد الحقول لإنشاء مخطط خطي باستخدام مخطط شريطي."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__x_axis
+msgid "Select group-by field to make group by of fetched records in chart."
+msgstr "حدد حقل التجميع حسب لإنشاء مجموعة حسب السجلات التي تم جلبها في المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__stats_chart_x_by_qry
+msgid "Select group-by field to make group-by from fetched data in chart."
+msgstr "حدد حقل التجميع حسب لإجراء التجميع حسب البيانات التي تم جلبها في المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__legend_position
+msgid "Select groups position to show groups on the chart"
+msgstr "حدد موضع المجموعات لإظهار المجموعات على المخطط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__lable_position
+msgid "Select lable position to set lable on the chart."
+msgstr "حدد موضع التسمية لتعيين التسمية على الرسم البياني."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__list_view_field_ids
+msgid "Select list view style to show on dashboard."
+msgstr "حدد نمط عرض القائمة لتظهر على لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__list_view_style
+msgid "Select listview style to show on dashboard."
+msgstr "حدد نمط عرض القائمة لتظهر على لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__stats_chart_y_by_qry
+msgid "Select measer field to set measure from fetched data in chart."
+msgstr "حدد حقل القياس لتعيين القياس من البيانات التي تم جلبها في المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__y_axis
+msgid "Select measure field to set measures in chart."
+msgstr "حدد حقل القياس لتعيين القياسات في المخطط."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__media_option
+msgid ""
+"Select media option. 1)Image :To set image as icon. 2) Font Awesome Icon :To"
+" set  "
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__model_name
+msgid "Select model for which you want to generate analysist."
+msgstr "حدد النموذج الذي تريد إنشاء تحليل له."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__chart_sort_by_order
+msgid "Select order by which you want to sort the records."
+msgstr "حدد الترتيب الذي تريد فرز السجلات به."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__display_order
+msgid "Select order to show data."
+msgstr "حدد الترتيب لإظهار البيانات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__parent_menu_id
+msgid ""
+"Select parent menu id to display this dashboard menu under the selcted "
+"parent menu."
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__action_id
+msgid "Select the action to perform action on clicking statistics item."
+msgstr "حدد الإجراء لتنفيذ الإجراء عند النقر فوق عنصر الإحصائيات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__default_color_theme
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__color_theme
+msgid ""
+"Select the default color theme to load dashboard charts eith selected color "
+"theme."
+msgstr "حدد سمة اللون الافتراضية لتحميل مخططات لوحة المعلومات مع اللون المحدد "
+"سمة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__default_time_frame
+msgid ""
+"Select the default timeframe to load dashboard data between selected "
+"timeframe."
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__display_style
+msgid "Select the display style to display statistics on dashboard."
+msgstr "حدد نمط العرض لعرض الإحصائيات على لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__b_measure_field_id
+msgid ""
+"Select the field by you want to calculate the data and show under the trend."
+msgstr "حدد الحقل الذي تريد حساب البيانات فيه وإظهاره ضمن الاتجاه."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__stats_value_by_qry
+msgid ""
+"Select the field of statistics value from you have searched in the query."
+msgstr "حدد حقل قيمة الإحصائيات التي بحثت عنها في الاستعلام."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__icon_image
+msgid "Select the image to set on statistics item."
+msgstr "حدد الصورة لتعيينها على عنصر الإحصائيات."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__item_type
+msgid "Select the item type to display on dashboard."
+msgstr "حدد نوع العنصر الذي سيتم عرضه على لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__model_id
+msgid "Select the model to generate analysis."
+msgstr "حدد النموذج لتوليد التحليل."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__v_records_per_page
+msgid "Select the records to show on list view."
+msgstr "حدد السجلات التي تريد عرضها في عرض القائمة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__trend_primary_color
+msgid "Select trend chart primary color."
+msgstr "حدد اللون الأساسي لمخطط الاتجاه."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__trend_display_style
+msgid "Select trend chart style to display on dashboard."
+msgstr "حدد نمط مخطط الاتجاه لعرضه على لوحة القيادة."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__b_show_val
+msgid "Select trend field's value to show under the trend"
+msgstr "حدد قيمة حقل الاتجاه لإظهاره ضمن الاتجاه"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__default_view_mode
+msgid ""
+"Selected view mode will applied on dashboard load time either light or dark."
+msgstr "سيتم تطبيق وضع العرض المحدد على وقت تحميل لوحة القيادة سواء كان فاتحًا أو داكنًا."
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__menu_sequence
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_background
+msgid "Set Background"
+msgstr "تعيين الخلفية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__color_theme
+msgid "Set Default Color Theme"
+msgstr "تعيين سمة اللون الافتراضية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_area_style
+msgid "Set Line Area"
+msgstr "تعيين منطقة الخط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_limit_record
+msgid "Set Record Limit"
+msgstr "تعيين حد السجل"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__is_smooth_line
+msgid "Set Smooth Line"
+msgstr "ضبط الخط السلس"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__kpi_target
+msgid "Set Target"
+msgstr "تحديد الهدف"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__background_color
+msgid "Set background color"
+msgstr "تعيين لون الخلفية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__font_color
+msgid "Set font color"
+msgstr "ضبط لون الخط"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__icon_color
+msgid "Set icon color"
+msgstr "تعيين لون الرمز"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Share Dashboard Link"
+msgstr "مشاركة رابط لوحة التحكم"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboards_view_bits.xml:0
+msgid "Sharing is enabled"
+msgstr "تم تمكين المشاركة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__show_record_edit_button
+msgid "Show Edit Button"
+msgstr "إظهار زر التحرير"
+
+#. module: analytix_dashboard_bits
+#: model:res.groups,name:analytix_dashboard_bits.dashboard_builder_manager_bits
+msgid "Show Full Dashboard Features"
+msgstr "عرض ميزات لوحة المعلومات الكاملة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__show_legend
+msgid "Show Groups"
+msgstr "إظهار المجموعات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__show_lable
+msgid "Show lable"
+msgstr "إظهار التسمية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_sort_by_field
+msgid "Sort By"
+msgstr "فرز حسب"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_sort_by_order
+msgid "Sort Order"
+msgstr "ترتيب الفرز"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__item_type__statistics
+msgid "Statistics"
+msgstr "إحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Statistics Configuration"
+msgstr "تكوين الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__display_style
+msgid "Statistics Display Style"
+msgstr "نمط عرض الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__statistics_field
+msgid "Statistics Field"
+msgstr "مجال الإحصاء"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__statistics_item_title
+msgid "Statistics Item Title"
+msgstr "عنوان عنصر الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__stats_value_by_qry
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Statistics Value"
+msgstr "قيمة الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Statistics View Style"
+msgstr "نمط عرض الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__statistics_item_title
+msgid "Statistics item title"
+msgstr "عنوان عنصر الإحصائيات"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_1
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__kpi_display_style__style_1
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__list_view_style__style_1
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__trend_display_style__style_1
+msgid "Style 1"
+msgstr "النمط 1"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_2
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__kpi_display_style__style_2
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__list_view_style__style_2
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__trend_display_style__style_2
+msgid "Style 2"
+msgstr "النمط 2"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_3
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__kpi_display_style__style_3
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__list_view_style__style_3
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__trend_display_style__style_3
+msgid "Style 3"
+msgstr "النمط 3"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_4
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__list_view_style__style_4
+msgid "Style 4"
+msgstr "النمط 4"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_5
+msgid "Style 5"
+msgstr "النمط 5"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_6
+msgid "Style 6"
+msgstr "النمط 6"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_7
+msgid "Style 7"
+msgstr "النمط 7"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_8
+msgid "Style 8"
+msgstr "النمط 8"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_style__style_9
+msgid "Style 9"
+msgstr "النمط 9"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__chart_sub_groupby_field
+msgid "Sub Group By"
+msgstr "المجموعة الفرعية بواسطة"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__b_measure_type__sum
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__display_data_type__sum
+msgid "Sum"
+msgstr "مجموع"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__query
+msgid "The entered query will fetch the records from the database."
+msgstr "سيقوم الاستعلام الذي تم إدخاله بجلب السجلات من قاعدة البيانات."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__this_month
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__this_week
+msgid "This Week"
+msgstr "هذا الاسبوع"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__this_year
+msgid "This Year"
+msgstr "هذا العام"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_bits__time_frame
+msgid "Time Frame"
+msgstr "الإطار الزمني"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__today
+msgid "Today"
+msgstr "اليوم"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__border_position__top
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__lable_position__top
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_item_bits__legend_position__top
+msgid "Top"
+msgstr "قمة"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Trend Bottom Configuration"
+msgstr "تكوين الاتجاه السفلي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Trend Bottom Group"
+msgstr "مجموعة الاتجاه السفلي"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_item_view_form_bits
+msgid "Trend Bottom Measure"
+msgstr "قياس الاتجاه السفلي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__b_measure_type
+msgid "Trend Calc Type"
+msgstr "نوع حساب الاتجاه"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__trend_display_style
+msgid "Trend Display Style"
+msgstr "نمط عرض الاتجاه"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__b_trend_field_id
+msgid "Trend Field"
+msgstr "مجال الاتجاه"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_bits__dashboard_icon
+msgid "Upload Dashboard icon to show in main menu screen."
+msgstr "أيقونة تحميل لوحة المعلومات لتظهر في شاشة القائمة الرئيسية."
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "Use by default"
+msgstr "استخدم بشكل افتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_themes__is_default
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.view_dashboard_theme_form
+msgid "Use this theme as default theme"
+msgstr "استخدم هذا الموضوع كموضوع افتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_favorite_filter_bits__user_id
+msgid "User"
+msgstr "مستخدم"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "View Mode"
+msgstr "وضع العرض"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_item_bits__statistics_with_trend
+msgid "With Trend Chart"
+msgstr "مع مخطط الاتجاه"
+
+#. module: analytix_dashboard_bits
+#. odoo-python
+#: code:addons/analytix_dashboard_bits/models/dashboard_item_bits.py:0
+msgid ""
+"Wrong date variables, Please use ks_start_date and ks_end_date in custom "
+"query"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/field_widget/qry_group_select.js:0
+msgid "X Axis"
+msgstr "المحور س"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/field_widget/qry_measure_select.js:0
+msgid "Y Axis"
+msgstr "المحور ص"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+#: model:ir.model.fields.selection,name:analytix_dashboard_bits.selection__dashboard_bits__default_time_frame__yesterday
+msgid "Yesterday"
+msgstr "أمس"
+
+#. module: analytix_dashboard_bits
+#. odoo-python
+#: code:addons/analytix_dashboard_bits/models/dashboard_item_bits.py:0
+msgid "You can only read the Data from Database"
+msgstr "يمكنك فقط قراءة البيانات من قاعدة البيانات"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "as default"
+msgstr "كافتراضي"
+
+#. module: analytix_dashboard_bits
+#: model:ir.actions.act_window,name:analytix_dashboard_bits.dashboard_builder_import_dashbord_item_action
+msgid "dashboard.builder.import.dashbord.item.view"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.actions.act_window,name:analytix_dashboard_bits.dashboard_builder_import_dashbord_action
+msgid "dashboard.builder.import.dashbord.view"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.view_dashboard_theme_form
+msgid "e.g. Classic"
+msgstr ""
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__kpi_target
+msgid "enter target value to set target on specified model's value."
+msgstr "أدخل القيمة المستهدفة لتعيين الهدف على قيمة النموذج المحدد."
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_builder_import_dashbord_item_view
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_builder_import_dashbord_view
+msgid "import"
+msgstr "يستورد"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,field_description:analytix_dashboard_bits.field_dashboard_gird_config__name
+msgid "max_length"
+msgstr "الحد الأقصى للطول"
+
+#. module: analytix_dashboard_bits
+#. odoo-javascript
+#: code:addons/analytix_dashboard_bits/static/src/xml/dashboard_controller.xml:0
+msgid "search"
+msgstr "يبحث"
+
+#. module: analytix_dashboard_bits
+#: model_terms:ir.ui.view,arch_db:analytix_dashboard_bits.dashboard_bits_view_form
+msgid "security"
+msgstr "حماية"
+
+#. module: analytix_dashboard_bits
+#: model:ir.model.fields,help:analytix_dashboard_bits.field_dashboard_item_bits__border_color
+msgid "set border color"
+msgstr "تعيين لون الحدود"
