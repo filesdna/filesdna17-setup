@@ -98,8 +98,8 @@ class DocumentSignService:
         """
         Check if the email belongs to a delegate user.
         """
-        delegate = request.env['sign.delegate'].sudo().search([('delegate_email', '=', email)], limit=1)
-        return delegate.email if delegate else None
+        delegate = request.env['sign.delegate'].sudo().search([('email', '=', email)], limit=1)
+        return delegate.delegate_email if delegate else None
 
     # def send_update_event(self, user_id):
     #     """

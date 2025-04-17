@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api, _
 import logging
+from odoo.http import request
+import random
 from odoo.addons.dms_editor.services.blockchain import BlockchainService
 
 _logger = logging.getLogger(__name__)
@@ -20,7 +22,7 @@ class CreateBlockchain(models.Model):
             blockchain = BlockchainService()
             bc_acc = blockchain.create_account_in_blockchain(result.blockchain_uid)
             if bc_acc:
-                random_string = ''.join(random.choices("0123456789abcdefghiklmnopqrstuvwxyz", k=length))
+                random_string = ''.join(random.choices("0123456789abcdefghiklmnopqrstuvwxyz", k=24))
                 prefix = "filesdna|"
                 result.write({'bc_account': bc_acc,'blockchain_uid':f"{prefix}{random_string}"})
                 

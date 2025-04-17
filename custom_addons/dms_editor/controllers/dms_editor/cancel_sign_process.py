@@ -27,15 +27,14 @@ class CancelSignProcessController(http.Controller):
             user_name = user.name
 
             # Check if the document exists and belongs to the user
-            dms_file = request.env['dms.file'].sudo().search([('id', '=', document_id), ('create_uid', '=', user_id)], limit=1)
+            dms_file = request.env['dms.file'].sudo().search([('id', '=', document_id)], limit=1)
             if not dms_file:
                 return Response(json.dumps({ "message": "Document not found.", "success": False }), headers={'Content-Type': 'application/json'},status=400)
             
             # Fetch related document sign records
             document_signs = request.env['document.sign'].sudo().search([('document_id', '=', document_id)])
             
-            # Delete the document sign records
-            document_signs.sudo().unlink()
+
 
             # Remove document signer data (placeholder for custom functionality)
             # Replace 'remove_doc_signer' with your Odoo equivalent logic
@@ -55,9 +54,11 @@ class CancelSignProcessController(http.Controller):
                     subject=f"Sign Request Canceled - {dms_file.name}", 
                     email_to=receiver_data.email, 
                     header=f"Hi {receiver_data.name},", 
-                    description=f"You are requested by <b>{user_name.name}</b> to sign this document.",
-                    hash_key=hash_key, 
+                    description=f"You are requested by <b>{user_name}</b> to sign this document.",
                 )
+                
+            # Delete the document sign records
+            document_signs.unlink()
             # Log audit events
             # user_ip = request.httprequest.remote_addr
             # request.env['audit.history'].sudo().create({
@@ -78,7 +79,7 @@ class CancelSignProcessController(http.Controller):
             # })
 
             # Update the document's status to "Draft"
-            dms_file.sudo().write({'status': 'Draft'})
+            dms_file.sudo().write({'document_status': 'Draft'})
             return Response(json.dumps({ "message": "Sign process has been cancelled", "success": True }), headers={'Content-Type': 'application/json'},status=200)
 
         except Exception as e:

@@ -125,10 +125,6 @@ class FileFinishController(http.Controller):
                 blockchain_result = bc.add_document_in_blockchain(blockchain_data)
                 doc_record = request.env['dms.file'].sudo().create({
                     "name" : set_new_name,
-		    "reference_id":check_file.reference_id.id,
-                    #"in_out": "in",
-                    #"confidentiality_level_id": 1,
-                    #"degree_of_secrecy":1,
                     'directory_id': check_file.directory_id.id,
                     'content' : base64_encoded,
                     'create_uid' : user_id,

@@ -64,7 +64,10 @@ class DocumentSignController(http.Controller):
                 )
 
             # Determine the email to use (delegate or original)
-            email = check_hash.delegate_email or check_hash.email
+            if check_hash.delegate_email == request.env.user.email:
+                email = check_hash.delegate_email
+            else:
+                email = check_hash.email
 
             # Retrieve user details
             user_details = request.env["res.users"].sudo().search([
@@ -76,9 +79,7 @@ class DocumentSignController(http.Controller):
 
             # If the user exists, prepare security settings
             if user_details:
-                _logger.info(f"user_details.email:{user_details.email}")
-                _logger.info(f"request.env.user.email:{request.env.user.email}")
-                if user_details.email != request.env.user.email:
+                if email != request.env.user.email:
                     return Response(
                         json.dumps({"success": False, "message": "you dont have permission to access this document"}),
                         status=401,

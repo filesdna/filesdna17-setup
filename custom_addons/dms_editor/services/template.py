@@ -38,7 +38,7 @@ class TemplateService:
             template_document = request.env['dms.file'].sudo().search([('id', '=', template_id)], limit=1)
             if not template_document:
                 _logger.error("Template document not found.")
-                return {"id": document_id, "json_data": None}
+                return {"id": template_id, "json_data": None}
 
             location = f"{server_path}/dms_editor/static/src"
             current_time = int(datetime.now().timestamp())

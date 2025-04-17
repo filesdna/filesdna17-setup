@@ -145,6 +145,8 @@ class DocumentSendController(http.Controller):
                 )
 
             if is_registered_user:
+                reciever = request.env['res.users'].sudo().search([('email','=',item['email'])], limit=1)
+                reciever.notify_info(message=f"You are requested by {user_data.name} to sign the document {check_file.name}.")
                 notify(is_registered_user.id,f"You are requested by {user_data.name} to sign this document.", 'dms.file', check_file.id)
         
     def get_nth_tr_str(self, string, index):
