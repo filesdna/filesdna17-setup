@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="IconDialogBits" xml:space="preserve">
+        <Dialog size="'md'" title="'Select Icon'"> 
+            <div class="search-input-container p-3">
+                <input type="text" id="site-search" placeholder="Search icons.." name="fa Icon Input" class="form-control" t-on-input="(ev)=>this.onSearchInput(ev)"/>
+            </div>
+            <div class="icon_container row">
+                <t t-foreach="state.iconsList" t-as="fa_icon" t-key="fa_icon_index"> 
+                    <div t-if="!this.props.is_mid" class="icon_bits col-3 col-md-2 d-flex justify-content-center align-items-center py-2" t-att-class="state.SelectedIcon == fa_icon ? 'active':''" t-on-click="(ev)=>this.onSelectIcon(ev,fa_icon)">
+                        <span t-attf-class="fa #{'fa-'+ fa_icon} fa-4x" />
+                    </div>
+                    <div t-if="this.props.is_mid" class="icon_bits col-3 col-md-2 d-flex justify-content-center align-items-center py-2" t-att-class="state.SelectedIcon == fa_icon ? 'active':''" t-on-click="(ev)=>this.onSelectIcon(ev,fa_icon)">
+                        <span t-attf-class="i mdi-light:#{fa_icon} fa-4x" />
+                    </div>
+                </t>
+            </div>
+            <t t-set-slot="footer">
+                <button class="btn btn-primary" t-if="state.SelectedIcon" t-on-click="(ev)=>this._onSelectIcon(ev)">Select</button>
+                <button class="btn btn-secondary" t-on-click="this.props.close">Close</button>
+            </t>
+        </Dialog>
+    </t>
+    
+    <t t-name="IconSelectWidgetBits" xml:space="preserve">
+        <div class="d-flex align-items-center py-3">
+            <span t-if="props.record.data.icon_bits" t-attf-class="mx-1 fa fa-2x fa-#{props.record.data.icon_bits}"></span>
+            <t t-if="props.record.data.media_option == 'fontawesome_bits' &amp;&amp; props.readonly != true">
+                <input class="form-input w-100" t-on-click="(ev) => this.init_icon_dialog(ev)" t-att-value="props.record.data.icon_bits"/>  
+            </t> 
+            <span t-attf-class="fa fa-2x fa-trash mx-1 text-primary" t-on-click="(ev)=>this.onRemoveIcon(ev)"></span>
+        </div>
+    </t>
+    <t t-name="IconSelectWidgetBits2" xml:space="preserve">
+        <div class="d-flex align-items-center py-3">
+            <span t-if="props.record.data.d_icon_bits" t-attf-class="mx-1 fa-2x i mdi-light:#{props.record.data.d_icon_bits}"></span>
+                <input class="form-input w-100" t-on-click="(ev) => this.init_icon_dialog(ev)" t-att-value="'i mdi-light:'+props.record.data.d_icon_bits"/>  
+            <span t-attf-class="fa fa-2x fa-trash mx-1 text-primary" t-on-click="(ev)=>this.onRemoveIcon(ev)"></span>
+        </div>
+    </t>
+</templates>

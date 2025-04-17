@@ -81,33 +81,38 @@
     <!--    <record id="own_file_rule" model="ir.rule">-->
     <!--        <field name="name">Files : see own files</field>-->
     <!--        <field name="model_id" ref="dms.model_dms_file"/>-->
-    <!--        <field name="domain_force">[-->
-    <!--            '&amp;',-->
-    <!--            ('directory_id.complete_users_ids', 'in', user.id),-->
-    <!--            '|',-->
-    <!--            '&amp;',-->
-    <!--            ('enable_document_filter', '=', False),-->
-    <!--            '|',-->
-    <!--            ('parameter_values.selected_value_id', '=', False),-->
-    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),-->
-    <!--            '&amp;',-->
-    <!--            ('enable_document_filter', '=', True),-->
-    <!--            ('parameter_values.selected_value_id', 'in', user.perm_access.ids)-->
-    <!--            ]-->
+    <!--        <field name="domain_force">[
+            '&amp;',
+            ('directory_id.complete_users_ids', 'in', user.id),
+            '|',
+            '&amp;',
+            ('enable_document_filter', '=', False),
+            '|',
+            '|',
+            '|',
+            ('parameter_values', '=', False),
+            ('parameter_values.selected_value_id', '=', False),
+            ('parameter_values.selected_value_id', 'in', user.perm_access.ids),
+            ('parameter_values.selected_value_id', 'not in', user.perm_access.ids),
+            '&amp;',
+            ('enable_document_filter', '=', True),
+            ('parameter_values.selected_value_id', 'in', user.perm_access.ids)
+            ]-->
     <!--        </field>-->
     <!--        <field name="groups" eval="[(4, ref('dms.group_dms_user')),(4, ref('dms.group_show_document_parameters'))]"/>-->
     <!--    </record>-->
     <record id="own_file_rule" model="ir.rule">
         <field name="name">Files : see own files</field>
         <field name="model_id" ref="dms.model_dms_file"/>
-        <field name="domain_force">[
+        <field name="domain_force"> [
             '&amp;',
             ('directory_id.complete_users_ids', 'in', user.id),
             '|',
             '&amp;',
             ('enable_document_filter', '=', False),
-
-            '|','|','|',
+            '|',
+            '|',
+            '|',
             ('parameter_values', '=', False),
             ('parameter_values.selected_value_id', '=', False),
             ('parameter_values.selected_value_id', 'in', user.perm_access.ids),

@@ -24,6 +24,7 @@ class ResUsers(models.Model):
 
     perm_access = fields.Many2many('document.parameters.line', compute='_compute_perm_access', store=False, index=True)
     perm_domain = fields.Char(store=True, index=True)
+    # user_security = fields.Boolean()
 
     @api.onchange('access_id_many')
     def _compute_perm_access(self):

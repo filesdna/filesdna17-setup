@@ -8,6 +8,7 @@
                 <sheet>
                     <group>
                         <field name="code" required="1" />
+<!--                        <field name="directory_id"/>-->
                     </group>
                 </sheet>
                 <footer>
