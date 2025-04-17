@@ -57,7 +57,7 @@ class WorkflowUpdateController(http.Controller):
                 key = request.env.user.company_id.encription_key
 
                 gcs_service = LocalStorageService()
-                db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+                db_name = request._cr.dbname
                 destination = f"{db_name}/workflow/{json_file}.json"
                 gcs_service.upload_file(temp_path, destination, key)
 

@@ -92,7 +92,7 @@ class FileFinishController(http.Controller):
             key_file = f"{server_path}/google_cloud_storage/google_creds.json"
             # Initialize Google Cloud Storage service
             gcs_service = LocalStorageService()
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             destination = f'{db_name}/{full_name}' if action_type == 'keep' else f'{db_name}/{check_file.attachment_id.store_fname}'
 
             if sign_change:

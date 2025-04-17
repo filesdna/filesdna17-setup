@@ -127,7 +127,7 @@ class DeclineDocumentController(http.Controller):
                 return False
 
             # Upload the file to Google Cloud Storage
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             destination_path = f"{db_name}/voice/{unique_filename}"
             upload_result = gcs.upload_file(temp_file_path, destination_path,None)
 

@@ -43,7 +43,7 @@ class TemplateService:
             location = f"{server_path}/dms_editor/static/src"
             current_time = int(datetime.now().timestamp())
             full_name = f"{name}-{current_time}.json" 
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             google_bucket_destination = f"{db_name}/append_jsons/{full_name}"
 
             local_path_destination_json = f"{location}/temp/{full_name}"

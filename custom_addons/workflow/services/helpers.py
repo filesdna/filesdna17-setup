@@ -44,7 +44,7 @@ class WorkflowHelper:
             temp_dir = f"{server_path}/dms_editor/static/src/temp"
             os.makedirs(temp_dir, exist_ok=True)
             local_path = os.path.join(temp_dir, f"{json_file}.json")
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             destination = f"{db_name}/workflow/{json_file}.json"
             encription_key = user.company_id.encription_key
             gcs_service = LocalStorageService()

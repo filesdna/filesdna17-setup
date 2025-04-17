@@ -46,7 +46,7 @@ class SmartFormUpdateFormController(http.Controller):
             encryption_key = request.env.user.company_id.encription_key
 
             # Prepare upload options
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             destination_path = f"{db_name}/smartform/forms/{form.form_data}"
 
             gcs_service = LocalStorageService()

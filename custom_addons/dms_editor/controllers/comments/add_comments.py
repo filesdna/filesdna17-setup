@@ -76,7 +76,7 @@ class AddCommentReplyController(http.Controller):
                 with open(temp_file_path, 'wb') as f:
                     f.write(upload_file.read())
                 gcs = LocalStorageService()
-                db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+                db_name= request._cr.dbname
                 destination_path = f"{db_name}/voice/{unique_filename}"
 
                 upload_result = gcs.upload_file(temp_file_path, destination_path, None)

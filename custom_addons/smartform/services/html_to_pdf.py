@@ -23,7 +23,7 @@ class PDFService:
         """Fetch and decrypt form data from Google Cloud Storage."""
         try:
             # Fetch the form
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             form = request.env['smart.form'].sudo().search([('hash', '=', form_hash)], limit=1)
             if not form:
                 raise ValueError(f"No form found with hash {form_hash}")

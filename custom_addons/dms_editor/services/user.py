@@ -63,7 +63,7 @@ class User:
                 temp_file.write(base64.b64decode(base64_image))
 
             # Prepare Google Cloud Storage options
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             destination_path = f"{db_name}/{file_type}/{image_name}"
             gcs_service = LocalStorageService()
 

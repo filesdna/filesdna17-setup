@@ -86,7 +86,7 @@ class DocumentAppendDataController(http.Controller):
             # Define paths and download append JSON if not locally available
             temp_dir = f"{server_path}/dms_editor/static/src/temp"
             local_append_path = os.path.join(temp_dir, append_json)
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             destination_path = f"{db_name}/append_jsons/{append_json}"
             _logger.info(f"destination_path:{destination_path}")
             if not os.path.exists(local_append_path):

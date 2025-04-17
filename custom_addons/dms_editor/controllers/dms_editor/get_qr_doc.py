@@ -44,7 +44,7 @@ class QRDocumentController(http.Controller):
                     gcs_service = LocalStorageService()
                     temp_dir = f"{server_path}/dms_editor/static/src/temp"
                     local_pdf_path = os.path.join(temp_dir, get_doc_data.attachment_id.store_fname.split('/')[1])
-                    db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+                    db_name= request._cr.dbname
                     destination_path = f"{db_name}/{get_doc_data.attachment_id.store_fname}"
                     gcs_service.download_file(destination_path, local_pdf_path, encryption_key=None)
 

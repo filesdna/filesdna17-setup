@@ -1769,7 +1769,7 @@ class File(models.Model):
         try:
             fname = self.attachment_id.store_fname
             company_name = self.env.user.company_id.name
-            db_name = self.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = self._cr.dbname
             file_path = f"{db_name}/{fname}"
             bucket = google_bucket
 
@@ -1812,7 +1812,7 @@ class File(models.Model):
 
         try:
             fname = self.attachment_id.store_fname
-            db_name = self.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = self._cr.dbname
             file_path = f"{db_name}/{fname}"
             bucket = google_bucket
 

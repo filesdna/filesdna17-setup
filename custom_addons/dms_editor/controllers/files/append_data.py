@@ -93,7 +93,7 @@ class AppendDataController(http.Controller):
     def _upload_to_gcs(self, file_path, filename, encryption_key):
         """Upload file to Google Cloud Storage."""
         try:
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             # Prepare upload details
             key_file = f"{server_path}/google_cloud_storage/google_creds.json"
             destination = f"{db_name}/append_jsons/{filename}"
@@ -165,7 +165,7 @@ class AppendDataController(http.Controller):
             json_filepath = os.path.join(_temp, route)
             if os.path.exists(json_filepath):
                 os.remove(json_filepath)
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             key_file = f"{server_path}/google_cloud_storage/google_creds.json"
             destination_path = f"{db_name}/append_jsons/{route}"
             gcs_service = LocalStorageService()

@@ -19,7 +19,7 @@ def delete_voice(data):
     gcs = LocalStorageService()
     for element in data:
         if element.get('type') == "voice":
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             file_path = f"{db_name}/voice/{element.get('message').split('/')[-1]}"
             gcs.delete_file(file_path)
 

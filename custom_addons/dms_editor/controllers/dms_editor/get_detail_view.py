@@ -38,7 +38,7 @@ class DocumentDetailViewController(http.Controller):
             if not os.path.exists(file_path):
                 key_file = f"{server_path}/google_cloud_storage/google_creds.json"
                 gcs_service = LocalStorageService()
-                db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+                db_name= request._cr.dbname
                 destination_path = f"{db_name}/{file_data.attachment_id.store_fname}"
                 gcs_service.download_file(destination_path, file_path, encryption_key=None)
 

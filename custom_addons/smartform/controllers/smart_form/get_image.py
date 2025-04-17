@@ -19,7 +19,7 @@ class ImageRetrievalController(http.Controller):
             temp_path = f"{server_path}/smartform/static/src/images"
             file_name = f"{image}.{extension}"
             local_image_path = os.path.join(temp_path, file_name)
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             # Download from Google Cloud Storage if not present locally
             if not os.path.exists(local_image_path):
                 # Upload to Google Cloud Storage (adjust your service accordingly)

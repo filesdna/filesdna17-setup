@@ -53,7 +53,7 @@ class VoiceEnrollController(http.Controller):
             # Upload the file to Google Cloud Storage
             key_file = f"{server_path}/google_cloud_storage/google_creds.json"
             gcs_service = LocalStorageService()
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             gcs_destination = f"{db_name}/voice/{file_name}"
             upload_result = gcs_service.upload_file(local_file_path, gcs_destination, None)
 

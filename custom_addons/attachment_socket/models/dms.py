@@ -21,7 +21,7 @@ class DmsSign(models.Model):
         #         "file_id": self.id,
         #     }
         #
-        #     db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+        #     db_name = request._cr.dbname
         #     uri = f"wss://{db_name}.filesdna.com/websocketdna"
         #     async with websockets.connect(uri) as websocket:
         #         # Send authentication token first

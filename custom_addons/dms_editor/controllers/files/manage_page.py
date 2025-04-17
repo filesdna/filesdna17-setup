@@ -47,7 +47,7 @@ class ManagePageController(http.Controller):
             gcs_service = LocalStorageService()
             temp_path = f'{server_path}/dms_editor/static/src/temp'
             local_file_path = os.path.join(temp_path, get_file.attachment_id.store_fname.split('/')[1])
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             # Download PDF from Google Cloud
             gcs_service.download_file(f'{db_name}/{get_file.attachment_id.store_fname}', local_file_path, encryption_key=None)
 

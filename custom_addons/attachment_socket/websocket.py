@@ -46,7 +46,7 @@ async def handler(websocket, path):
 
 
 def validate_token(token):
-    db = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+    db = request._cr.dbname
     with Registry(db).cursor() as cr:
         env = api.Environment(cr, SUPERUSER_ID, {})
         return env['auth.token'].is_valid_token(token)

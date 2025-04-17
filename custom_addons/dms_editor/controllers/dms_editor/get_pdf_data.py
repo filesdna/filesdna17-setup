@@ -39,7 +39,7 @@ class DocumentPDFDataController(http.Controller):
                 temp_path = f"{server_path}/dms_editor/static/src/temp"
                 local_pdf_path = os.path.join(temp_path, os.path.basename(document.attachment_id.store_fname))
                 key_file = f"{server_path}/google_cloud_storage/google_creds.json"
-                db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+                db_name= request._cr.dbname
                 destination_path = f"{db_name}/{document.attachment_id.store_fname}"
 
                 # Ensure the temporary directory exists

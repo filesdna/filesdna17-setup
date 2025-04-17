@@ -34,7 +34,7 @@ class ImageRemovalController(http.Controller):
                 os.remove(local_image_path)
             
             # Remove from Google Cloud Storage
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             destination_path = f"{db_name}/smartform/images/{image_name}"
 
             gcs_service = LocalStorageService()

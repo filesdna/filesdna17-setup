@@ -38,7 +38,7 @@ class PdfEditorService:
                 local_pdf_path = os.path.join(_temp, get_file.attachment_id.store_fname.split('/')[1])
                 if os.path.exists(local_pdf_path):
                     os.remove(local_pdf_path)
-                db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]    
+                db_name= request._cr.dbname    
                 destination_path = f"{db_name}/{get_file.attachment_id.store_fname}"
                 gcs_service = LocalStorageService()
                 gcs_service.download_file(destination_path, local_pdf_path, encryption_key=None)

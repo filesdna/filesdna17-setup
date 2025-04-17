@@ -238,7 +238,7 @@ class FormNode:
             if os.path.exists(json_filepath):
                 os.remove(json_filepath)
             key = request.env.user.company_id.encription_key
-            db_name = request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[1].split(".")[0]
+            db_name = request._cr.dbname
             destination_path = f"{db_name}/append_jsons/{route}"
             gcs_service = LocalStorageService()
             gcs_service.download_file(destination_path, json_filepath, encryption_key=key)

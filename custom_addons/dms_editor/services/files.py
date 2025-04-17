@@ -150,7 +150,7 @@ class Files:
                     encryption_key = request.env.user.company_id.encription_key
 
                     # Upload the PDF to a bucket
-                    db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+                    db_name= request._cr.dbname
                     destination = f'{db_name}/{get_file_data.attachment_id.store_fname}'
                     upload_response = self.upload_to_gcs(pdf_path, destination, encription=None)
 
@@ -284,7 +284,7 @@ class Files:
             # Get all related images
             document_images = request.env['document.images'].sudo().search([('document_id', '=', document_id)])
             directory = f'{server_path}/dms_editor/static/src/assets/pdf/output'
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             for image in document_images:
                 # Remove main URL file
                 if image.url:
@@ -655,7 +655,7 @@ class Files:
 
     def generate_pdf_pages(self, set_data, key, status):
         try:
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             folder_path = f"{server_path}/dms_editor/static/src/assets/pdf/output/"
             os.makedirs(folder_path, exist_ok=True)
 
@@ -743,7 +743,7 @@ class Files:
         :return: bool - True if successful, False otherwise.
         """
         try:
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             document_id = data.id
             full_name = data.attachment_id.store_fname
             pictures = []
@@ -832,7 +832,7 @@ class Files:
         :return: bool - True if successful, False otherwise.
         """
         try:
-            db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+            db_name= request._cr.dbname
             name = data.name
             full_name = data.attachment_id.store_fname
             pdf_path = f"{server_path}/dms_editor/static/src/temp"

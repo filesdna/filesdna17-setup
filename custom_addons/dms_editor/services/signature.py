@@ -251,7 +251,7 @@ class SignatureHelper:
 
     def remove_old_signature(self,url, sign_type=""):
         """Remove old signature from storage."""
-        db_name= request.env['ir.config_parameter'].sudo().get_param('web.base.url').split("//")[-1].split(".")[0]
+        db_name= request._cr.dbname
         if url:
             if sign_type == 'choose':
                 gcs.delete_file(f"{db_name}/signature/{url.split('/').pop()}")
